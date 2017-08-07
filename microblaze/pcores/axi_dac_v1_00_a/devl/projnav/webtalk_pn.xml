@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sun Aug 06 16:59:44 2017">
+<application name="pn" timeStamp="Mon Aug 07 10:32:49 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="FE65AB4838184081BB8F40446CE03AA9" type="project"/>
-<property name="ProjectIteration" value="0" type="project"/>
+<property name="ProjectIteration" value="1" type="project"/>
 <property name="ProjectFile" value="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/axi_dac_v1_00_a/devl/projnav/axi_dac.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2017-08-06T14:50:44" type="project"/>
 </section>
@@ -18,15 +18,19 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/tb_user_logic" type="process"/>
+<property name="PROP_Simulator" value="Modelsim-SE Verilog" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
 <property name="PROP_UseSmartGuide" value="false" type="design"/>
+<property name="PROP_UserBrowsedStrategyFiles" value="G:/Xilinx/14.7/ISE_DS/ISE/data/default.xds" type="process"/>
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2017-08-06T14:50:44" type="design"/>
 <property name="PROP_intWbtProjectID" value="FE65AB4838184081BB8F40446CE03AA9" type="design"/>
+<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.tb_user_logic" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Virtex4" type="design"/>
@@ -36,7 +40,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-10" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
-<property name="FILE_VERILOG" value="1" type="source"/>
+<property name="FILE_VERILOG" value="2" type="source"/>
 <property name="FILE_VHDL" value="12" type="source"/>
 </section>
 </application>

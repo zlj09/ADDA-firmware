@@ -1,0 +1,126 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 10 -n
+3 -fastpaths -xml axi_dac.twx axi_dac.ncd -o axi_dac.twr axi_dac.pcf
+
+Design file:              axi_dac.ncd
+Physical constraint file: axi_dac.pcf
+Device,package,speed:     xc4vsx55,ff1148,-10 (PRODUCTION 1.71 2013-10-13, STEPPING level 1)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock S_AXI_ACLK
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+S_AXI_ARADDR<0>|    0.594(R)|    1.403(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARADDR<1>|   -0.432(R)|    2.035(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARADDR<2>|   -1.180(R)|    2.719(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARADDR<3>|    0.521(R)|    1.156(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARADDR<4>|    0.273(R)|    1.383(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARADDR<5>|    0.285(R)|    1.373(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARADDR<6>|    0.665(R)|    1.026(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARADDR<7>|    0.490(R)|    1.499(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARADDR<8>|    0.471(R)|    1.517(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARESETN  |   -1.001(R)|    3.369(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_ARVALID  |    1.279(R)|    3.438(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<0>|    0.734(R)|    1.275(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<1>|   -0.773(R)|    2.348(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<2>|   -1.262(R)|    2.794(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<3>|    0.502(R)|    1.173(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<4>|    0.357(R)|    1.307(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<5>|    0.520(R)|    1.160(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<6>|    0.480(R)|    1.195(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<7>|    0.687(R)|    1.317(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWADDR<8>|    0.636(R)|    1.364(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWVALID  |   -0.422(R)|    2.812(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_BREADY   |   -1.331(R)|    3.743(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_RREADY   |   -1.036(R)|    3.828(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<0> |   -0.342(R)|    3.441(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<1> |   -0.783(R)|    3.861(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<2> |   -0.245(R)|    3.118(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<3> |   -1.447(R)|    4.007(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<4> |   -2.565(R)|    4.002(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<5> |   -2.445(R)|    3.892(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<6> |   -2.004(R)|    3.487(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<7> |   -2.084(R)|    3.558(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<8> |   -2.602(R)|    4.036(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WDATA<9> |   -2.543(R)|    3.983(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WVALID   |   -0.562(R)|    2.940(R)|S_AXI_ACLK_IBUF   |   0.000|
+---------------+------------+------------+------------------+--------+
+
+Clock S_AXI_ACLK to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+S_AXI_ARREADY |   11.911(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_AWREADY |   12.396(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_BRESP<1>|   11.169(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_BVALID  |   10.750(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_RRESP<1>|   10.948(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_RVALID  |   10.577(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_AXI_WREADY  |   12.399(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<0>     |   11.122(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<1>     |   10.556(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<2>     |   10.919(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<3>     |   10.520(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<4>     |   10.497(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<5>     |   10.557(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<6>     |   10.934(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<7>     |   10.887(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<8>     |   10.709(R)|S_AXI_ACLK_IBUF   |   0.000|
+S_Data<9>     |   10.554(R)|S_AXI_ACLK_IBUF   |   0.000|
+--------------+------------+------------------+--------+
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    2.278|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+S_AXI_ACLK     |S_Clkout       |    8.371|
+S_AXI_ACLK     |S_DCLKIO       |    8.643|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Aug 07 10:34:09 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 319 MB
+
+
+

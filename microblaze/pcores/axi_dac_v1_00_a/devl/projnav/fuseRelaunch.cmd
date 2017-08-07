@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/axi_dac_v1_00_a/devl/projnav/user_logic_isim_beh.exe" -prj "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/axi_dac_v1_00_a/devl/projnav/user_logic_beh.prj" "work.user_logic" "work.glbl" 

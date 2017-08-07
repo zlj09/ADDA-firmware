@@ -1,0 +1,96 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc microblaze.ucf -bm edkBmmFile.bmm -p
+xc4vsx55-ff1148-10 microblaze_top.ngc microblaze_top.ngd
+
+Reading NGO file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.ngc"
+...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_microblaze_0_wrapper.ngc"
+...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_mb_plb_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_ilmb_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_dlmb_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_dlmb_cntlr_wrapper.ngc"..
+.
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_ilmb_cntlr_wrapper.ngc"..
+.
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_lmb_bram_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_rs232_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_clock_generator_0_wrapper
+.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_mdm_0_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_proc_sys_reset_0_wrapper.
+ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_xps_intc_0_wrapper.ngc"..
+.
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_xps_iic_0_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_plb_dac_0_wrapper.ngc"...
+Applying constraints in
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf" to module
+"microblaze_i"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "microblaze.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into DCM_ADV instance
+   clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST. The following new TNM
+   groups and period specifications were generated at the DCM_ADV output(s): 
+   CLK0: <TIMESPEC
+   TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0_0 = PERIOD
+   "microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0_0"
+   TS_sys_clk_pin HIGH 50%>
+
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   "sys_clk_pin" 50000.000000000 KHz HIGH 50.000000000 %;> is overridden by the
+   constraint <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;>
+   [microblaze.ucf(5)]. The overriden constraint usually comes from the input
+   netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
+   promote this message to an error.
+Done...
+
+Processing BMM file "edkBmmFile.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'N6' has no driver
+WARNING:NgdBuild:452 - logical net 'N7' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   3
+
+Total memory usage is 235180 kilobytes
+
+Writing NGD file "microblaze_top.ngd" ...
+Total REAL time to NGDBUILD completion:  25 sec
+Total CPU time to NGDBUILD completion:   25 sec
+
+Writing NGDBUILD log file "microblaze_top.bld"...

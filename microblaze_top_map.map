@@ -1,0 +1,82 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Map Application Log File for Design 'microblaze_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc4vsx55-ff1148-10 -global_opt off -cm
+area -ir off -pr off -c 100 -o microblaze_top_map.ncd microblaze_top.ngd
+microblaze_top.pcf 
+Target Device  : xc4vsx55
+Target Package : ff1148
+Target Speed   : -10
+Mapper Version : virtex4 -- $Revision: 1.55 $
+Mapped Date    : Mon Aug 07 15:18:48 2017
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<31>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<30>> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of Slice Flip Flops:         2,107 out of  49,152    4%
+  Number of 4 input LUTs:             3,641 out of  49,152    7%
+Logic Distribution:
+  Number of occupied Slices:          2,593 out of  24,576   10%
+    Number of Slices containing only related logic:   2,593 out of   2,593 100%
+    Number of Slices containing unrelated logic:          0 out of   2,593   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       3,788 out of  49,152    7%
+    Number used as logic:             3,106
+    Number used as a route-thru:        147
+    Number used for Dual Port RAMs:     384
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     151
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  Number of bonded IOBs:                 22 out of     640    3%
+  Number of BUFG/BUFGCTRLs:               2 out of      32    6%
+    Number used as BUFGs:                 2
+  Number of FIFO16/RAMB16s:              32 out of     320   10%
+    Number used as RAMB16s:              32
+  Number of DSP48s:                       3 out of     512    1%
+  Number of DCM_ADVs:                     1 out of       8   12%
+  Number of BSCAN_VIRTEX4s:               1 out of       4   25%
+
+Average Fanout of Non-Clock Nets:                3.97
+
+Peak Memory Usage:  498 MB
+Total REAL time to MAP completion:  18 secs 
+Total CPU time to MAP completion:   11 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "microblaze_top_map.mrp" for details.

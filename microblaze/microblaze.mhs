@@ -21,6 +21,13 @@
  PORT fpga_0_rst_1_sys_rst_pin = sys_rst_s, DIR = I, SIGIS = RST, RST_POLARITY = 0
  PORT xps_iic_0_Sda_pin = xps_iic_0_Sda, DIR = IO
  PORT xps_iic_0_Scl_pin = xps_iic_0_Scl, DIR = IO
+ PORT plb_dac_0_S_Data_pin = plb_dac_0_S_Data, DIR = O, VEC = [0:9]
+ PORT plb_dac_0_S_DCLKIO_pin = plb_dac_0_S_DCLKIO, DIR = O
+ PORT plb_dac_0_S_Clkout_pin = plb_dac_0_S_Clkout, DIR = O
+ PORT plb_dac_0_S_PinMD_pin = plb_dac_0_S_PinMD, DIR = O
+ PORT plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD, DIR = O
+ PORT plb_dac_0_S_Format_pin = plb_dac_0_S_Format, DIR = O
+ PORT plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN, DIR = O
 
 
 BEGIN microblaze
@@ -73,14 +80,14 @@ BEGIN lmb_bram_if_cntlr
  PARAMETER C_BASEADDR = 0x00000000
  PARAMETER C_HIGHADDR = 0x0000ffff
  BUS_INTERFACE SLMB = ilmb
- BUS_INTERFACE BRAM_PORT = ilmb_port
+ BUS_INTERFACE BRAM_PORT = ilmb_cntlr_BRAM_PORT
 END
 
 BEGIN bram_block
  PARAMETER INSTANCE = lmb_bram
  PARAMETER HW_VER = 1.00.a
- BUS_INTERFACE PORTA = ilmb_port
- BUS_INTERFACE PORTB = dlmb_port
+ BUS_INTERFACE PORTA = dlmb_port
+ BUS_INTERFACE PORTB = ilmb_cntlr_BRAM_PORT
 END
 
 BEGIN xps_uartlite
@@ -156,5 +163,20 @@ BEGIN xps_iic
  BUS_INTERFACE SPLB = mb_plb
  PORT Sda = xps_iic_0_Sda
  PORT Scl = xps_iic_0_Scl
+END
+
+BEGIN plb_dac
+ PARAMETER INSTANCE = plb_dac_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xc9c00000
+ PARAMETER C_HIGHADDR = 0xc9c0ffff
+ BUS_INTERFACE SPLB = mb_plb
+ PORT S_Data = plb_dac_0_S_Data
+ PORT S_DCLKIO = plb_dac_0_S_DCLKIO
+ PORT S_Clkout = plb_dac_0_S_Clkout
+ PORT S_PinMD = plb_dac_0_S_PinMD
+ PORT S_ClkMD = plb_dac_0_S_ClkMD
+ PORT S_Format = plb_dac_0_S_Format
+ PORT S_PWRDN = plb_dac_0_S_PWRDN
 END
 

@@ -1,0 +1,188 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 10 -n
+3 -fastpaths -xml plb_dac.twx plb_dac.ncd -o plb_dac.twr plb_dac.pcf
+
+Design file:              plb_dac.ncd
+Physical constraint file: plb_dac.pcf
+Device,package,speed:     xc4vsx55,ff1148,-10 (PRODUCTION 1.71 2013-10-13, STEPPING level 1)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock SPLB_Clk
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+PLB_ABus<0>    |   -2.638(R)|    4.156(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<1>    |   -2.560(R)|    4.081(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<2>    |   -2.529(R)|    4.052(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<3>    |   -2.399(R)|    3.936(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<4>    |   -2.467(R)|    3.998(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<5>    |   -2.709(R)|    4.217(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<6>    |   -2.627(R)|    4.144(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<7>    |   -2.899(R)|    4.390(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<8>    |   -2.837(R)|    4.339(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<9>    |   -2.729(R)|    4.238(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<10>   |   -2.544(R)|    4.060(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<11>   |   -2.651(R)|    4.163(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<12>   |   -2.665(R)|    4.179(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<13>   |   -2.866(R)|    4.365(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<14>   |   -2.743(R)|    4.254(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<15>   |   -2.890(R)|    4.388(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<16>   |   -2.452(R)|    3.978(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<17>   |   -2.449(R)|    3.975(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<18>   |   -2.353(R)|    3.875(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<19>   |   -2.211(R)|    3.746(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<20>   |   -2.507(R)|    4.036(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<21>   |   -2.488(R)|    4.020(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<22>   |   -2.403(R)|    3.935(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<23>   |   -2.193(R)|    3.741(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<24>   |   -2.399(R)|    3.936(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<25>   |   -1.894(R)|    3.467(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<26>   |   -1.797(R)|    3.379(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<27>   |   -1.961(R)|    3.536(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<28>   |   -1.803(R)|    3.904(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<29>   |   -1.740(R)|    3.618(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<30>   |   -2.461(R)|    3.995(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_ABus<31>   |   -2.702(R)|    4.218(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<0>      |   -2.338(R)|    3.883(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<1>      |   -2.309(R)|    3.856(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<3>      |   -2.381(R)|    3.921(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<4>      |   -2.108(R)|    3.673(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<5>      |   -2.338(R)|    3.880(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<7>      |   -1.897(R)|    3.477(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<8>      |   -2.006(R)|    3.578(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<9>      |   -2.573(R)|    4.097(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<11>     |   -2.422(R)|    3.959(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<12>     |   -2.553(R)|    4.081(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<13>     |   -2.330(R)|    3.875(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_BE<15>     |   -2.339(R)|    3.882(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_PAValid    |   -2.950(R)|    4.442(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_RNW        |   -2.871(R)|    4.368(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_masterID<0>|   -2.644(R)|    4.163(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_masterID<1>|   -2.624(R)|    4.145(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_masterID<2>|   -2.443(R)|    3.971(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_size<0>    |   -2.430(R)|    3.969(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_size<1>    |   -2.851(R)|    4.355(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_size<2>    |   -2.891(R)|    4.389(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_size<3>    |   -2.561(R)|    4.082(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_type<0>    |   -2.891(R)|    4.390(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_type<1>    |   -2.845(R)|    4.347(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_type<2>    |   -2.891(R)|    4.392(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<0>  |   -2.704(R)|    4.233(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<1>  |   -2.574(R)|    4.113(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<2>  |   -2.898(R)|    4.411(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<3>  |   -2.910(R)|    4.422(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<4>  |   -2.919(R)|    4.430(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<5>  |   -2.890(R)|    4.404(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<6>  |   -2.684(R)|    4.213(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<7>  |   -2.512(R)|    4.056(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<8>  |   -2.892(R)|    4.402(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<9>  |   -2.734(R)|    4.257(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<28> |   -2.616(R)|    4.141(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<29> |   -2.920(R)|    4.417(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<30> |   -2.927(R)|    4.420(R)|SPLB_Clk_IBUF     |   0.000|
+PLB_wrDBus<31> |   -2.930(R)|    4.425(R)|SPLB_Clk_IBUF     |   0.000|
+SPLB_Rst       |    0.885(R)|    3.240(R)|SPLB_Clk_IBUF     |   0.000|
+---------------+------------+------------+------------------+--------+
+
+Clock SPLB_Clk to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+S_Data<0>     |   10.859(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<1>     |   10.900(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<2>     |   10.882(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<3>     |   11.180(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<4>     |   11.133(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<5>     |   11.343(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<6>     |   11.123(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<7>     |   10.931(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<8>     |   10.840(R)|SPLB_Clk_IBUF     |   0.000|
+S_Data<9>     |   10.874(R)|SPLB_Clk_IBUF     |   0.000|
+S_Format      |   10.890(R)|SPLB_Clk_IBUF     |   0.000|
+S_PWRDN       |   10.889(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MBusy<0>   |   11.281(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MBusy<1>   |   11.281(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MBusy<2>   |   11.065(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MBusy<3>   |   11.304(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MBusy<4>   |   11.313(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MBusy<5>   |   11.511(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MBusy<6>   |   11.223(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MBusy<7>   |   11.067(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MRdErr<0>  |   11.764(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MRdErr<1>  |   11.661(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MRdErr<2>  |   11.115(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MRdErr<3>  |   11.857(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MRdErr<4>  |   11.294(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MRdErr<5>  |   11.741(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MRdErr<6>  |   11.472(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MRdErr<7>  |   11.518(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MWrErr<0>  |   10.939(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MWrErr<1>  |   11.240(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MWrErr<2>  |   10.890(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MWrErr<3>  |   11.061(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MWrErr<4>  |   10.916(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MWrErr<5>  |   11.080(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MWrErr<6>  |   11.766(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_MWrErr<7>  |   11.301(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_addrAck    |   11.869(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_rdComp     |   11.913(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_rdDAck     |   11.651(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_rearbitrate|   11.233(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_wrComp     |   12.331(R)|SPLB_Clk_IBUF     |   0.000|
+Sl_wrDAck     |   12.070(R)|SPLB_Clk_IBUF     |   0.000|
+--------------+------------+------------------+--------+
+
+Clock to Setup on destination clock SPLB_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SPLB_Clk       |    3.303|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SPLB_Clk       |S_Clkout       |    7.541|
+SPLB_Clk       |S_DCLKIO       |    7.794|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Aug 07 14:15:54 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 319 MB
+
+
+
