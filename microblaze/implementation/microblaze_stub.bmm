@@ -1,0 +1,42 @@
+// File: F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\implementation\microblaze_stub.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE 100
+	ADDRESS_SPACE lmb_bram_combined COMBINED [0x00000000:0x0000ffff]
+		ADDRESS_RANGE RAMB16
+		BUS_BLOCK
+			microblaze_i/lmb_bram/lmb_bram/ramb16_0 [31:31] INPUT = lmb_bram_combined_0.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_1 [30:30] INPUT = lmb_bram_combined_1.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_2 [29:29] INPUT = lmb_bram_combined_2.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_3 [28:28] INPUT = lmb_bram_combined_3.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_4 [27:27] INPUT = lmb_bram_combined_4.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_5 [26:26] INPUT = lmb_bram_combined_5.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_6 [25:25] INPUT = lmb_bram_combined_6.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_7 [24:24] INPUT = lmb_bram_combined_7.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_8 [23:23] INPUT = lmb_bram_combined_8.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_9 [22:22] INPUT = lmb_bram_combined_9.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_10 [21:21] INPUT = lmb_bram_combined_10.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_11 [20:20] INPUT = lmb_bram_combined_11.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_12 [19:19] INPUT = lmb_bram_combined_12.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_13 [18:18] INPUT = lmb_bram_combined_13.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_14 [17:17] INPUT = lmb_bram_combined_14.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_15 [16:16] INPUT = lmb_bram_combined_15.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_16 [15:15] INPUT = lmb_bram_combined_16.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_17 [14:14] INPUT = lmb_bram_combined_17.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_18 [13:13] INPUT = lmb_bram_combined_18.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_19 [12:12] INPUT = lmb_bram_combined_19.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_20 [11:11] INPUT = lmb_bram_combined_20.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_21 [10:10] INPUT = lmb_bram_combined_21.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_22 [9:9] INPUT = lmb_bram_combined_22.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_23 [8:8] INPUT = lmb_bram_combined_23.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_24 [7:7] INPUT = lmb_bram_combined_24.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_25 [6:6] INPUT = lmb_bram_combined_25.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_26 [5:5] INPUT = lmb_bram_combined_26.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_27 [4:4] INPUT = lmb_bram_combined_27.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_28 [3:3] INPUT = lmb_bram_combined_28.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_29 [2:2] INPUT = lmb_bram_combined_29.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_30 [1:1] INPUT = lmb_bram_combined_30.mem ;
+			microblaze_i/lmb_bram/lmb_bram/ramb16_31 [0:0] INPUT = lmb_bram_combined_31.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

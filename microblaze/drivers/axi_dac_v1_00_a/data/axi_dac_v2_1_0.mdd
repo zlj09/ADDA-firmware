@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze/drivers/axi_dac_v1_00_a/data/axi_dac_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Sun Aug 06 14:50:48 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER axi_dac
+
+  OPTION supported_peripherals = (axi_dac);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

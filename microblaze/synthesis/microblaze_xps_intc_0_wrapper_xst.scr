@@ -1,0 +1,14 @@
+set -tmpdir F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc4vsx55ff1148-10
+-top microblaze_xps_intc_0_wrapper
+-ifmt MIXED
+-ifn microblaze_xps_intc_0_wrapper_xst.prj
+-ofn ../implementation/microblaze_xps_intc_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\data\wizards\BsbCores\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\data\wizards\ipxact\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

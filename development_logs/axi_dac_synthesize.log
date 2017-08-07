@@ -1,0 +1,121 @@
+WARNING:Xst:821 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/axi_dac_v1_00_a/hdl/vhdl/axi_dac.vhd" line 362: Unconnected output port 'Reset2Bus_ToutSup' of component 'soft_reset'.
+WARNING:Xst:753 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" line 341: Unconnected output port 'CS_for_gaps' of component 'address_decoder'.
+WARNING:Xst:821 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
+WARNING:Xst:1872 - Variable <bit_index> is used but never assigned.
+WARNING:Xst:647 - Input <Bus2IP_Data<0:27>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_BE<0:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <error_reply> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <wrce_expnd_i1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wrce_expnd_i0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wrce_expnd_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rdce_expnd_i1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rdce_expnd_i0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rdce_expnd_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr_out_s_h<1:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <s_axi_arready_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cs_for_gaps_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ipif_Bus2IP_RdCE<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ipif_Bus2IP_RNW> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ipif_Bus2IP_Addr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1989 - Unit <address_decoder>: instances <MEM_DECODE_GEN[0].GEN_FOR_MULTI_CS.MEM_SELECT_I>, <MEM_DECODE_GEN[1].GEN_FOR_MULTI_CS.MEM_SELECT_I> of unit <pselect_f_1> are equivalent, second instance is removed
+WARNING:Xst:1293 - FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ce_out_i_1> (without init value) has a constant value of 0 in block <address_decoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ce_out_i_1> (without init value) has a constant value of 0 in block <address_decoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ce_out_i_1> (without init value) has a constant value of 0 in block <address_decoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ce_out_i_1> (without init value) has a constant value of 0 in block <address_decoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <USER_LOGIC_I/slv_reg0_29> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_31> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_30> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_28> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_27> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_26> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_25> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_24> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_23> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_22> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_21> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_20> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_19> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_18> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_17> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_16> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_15> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_14> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_13> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_12> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_11> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_10> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_9> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_8> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_7> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_6> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_5> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_4> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_3> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_2> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_1> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/slv_reg0_0> (without init value) has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_1> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_4> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_5> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_6> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_7> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_8> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_9> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_10> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_11> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_12> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_13> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_14> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_15> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_16> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_17> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_31> has a constant value of 0 in block <axi_dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_31> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_30> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_29> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_28> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_27> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_26> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_25> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_24> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_23> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_22> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_21> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_20> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_19> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_18> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_17> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_16> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_15> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_14> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_13> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_12> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_10> is unconnected in block <axi_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_11> is unconnected iProcess "Synthesize - XST" completed successfully
