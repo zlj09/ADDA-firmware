@@ -1,0 +1,52 @@
+
+**** 08/08/17 19:26:10 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ada4899.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 5ms 0.1ms 
+.STEP LIN PARAM x 0.01mA 1.99mA 0.01mA 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(*) D(*) NOISE(*) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BR0101_AD9715
+R_R1         0 N06641  681 TC=0,0 
+R_R2         N06641 N06629  1.8k TC=0,0 
+R_R3         N06673 N06665  1.8k TC=0,0 
+R_R4         0 N06673  681 TC=0,0 
+V_V1         0 N06538 5V
+V_V2         N06608 0 5V
+I_I1         0 N06641 DC {x}  
+I_I2         0 N06673 DC {2mA - x}  
+X_U2         N06693 N06641 N06608 N06538 N06629 N06629 N06608 ADA4899 
+X_U3         N06693 N06673 N06608 N06538 N06665 N06665 N06608 ADA4899 
+V_V3         N06693 0 1V
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR(ORPSIM-15167): Undefined parameter: x.
+

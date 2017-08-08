@@ -1,0 +1,142 @@
+(ExpressProject "br0101_ad9715"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library"))
+      (File "F:\Design\Circuits\OrCAD\libraries\FPGA\AD.OLB"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "br0101_ad9715.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\br0101_ad9715-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "F:\Academic\FPGA\BR0101\Development\DAC\model\ada4899.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "F:\Academic\FPGA\BR0101\Development\DAC\model\ada4899.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\br0101_ad9715-pspicefiles\schematic1\bias.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9715-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-Bias")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (F
+      (FullPartName "F.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (ADA4899
+      (FullPartName "ADA4899.Normal")
+      (LibraryName "F:\ACADEMIC\FPGA\BR0101\DEVELOPMENT\DAC\MODEL\ADA4899.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (AD9715
+      (FullPartName "AD9715.Normal")
+      (LibraryName "F:\DESIGN\CIRCUITS\ORCAD\LIBRARIES\FPGA\AD.OLB")
+      (DeviceIndex "0"))
+    (AD976/SO
+      (FullPartName "AD976/SO.Normal")
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\ATOD.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "F:\Academic\FPGA\BR0101\Development\DAC\model")
+  (MPSSessionName "admin")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 385"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1189 52 476")
+        (Scroll "12 160")
+        (Zoom "156")
+        (Occurrence "/"))
+      (Path
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\BR0101_AD9715\BR0101_AD9715.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

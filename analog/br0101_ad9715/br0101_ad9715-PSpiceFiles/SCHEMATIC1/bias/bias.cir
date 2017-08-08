@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-bias"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-pspicefiles\schematic1\bias.sim ] 
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ada4899.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 5ms 0.1ms 
+.STEP LIN PARAM x 0.01mA 1.99mA 0.01mA 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(*) D(*) NOISE(*) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
