@@ -1,0 +1,191 @@
+
+**** 08/10/17 18:02:58 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Test High Freq.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ada4899.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10us 15us 10ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Plan A with Capacitors.net" 
+
+
+
+**** INCLUDING "Plan A with Capacitors.net" ****
+* source BR0101_AD9715
+V_V2         N20482 0 5V
+X_U3         N20416 N20650 N20482 N20334 VON VON N20482 ADA4899 
+R_R5         N20416 N20188  10k TC=0,0 
+R_R4         0 N20650  681 TC=0,0 
+V_V3         N20188 0 1V
+R_R3         N20650 VON  1.8k TC=0,0 
+R_R2         N20274 VOP  1.8k TC=0,0 
+R_R1         0 N20274  681 TC=0,0 
+X_U2         N20416 N20274 N20482 N20334 VOP VOP N20482 ADA4899 
+V_V1         0 N20334 5V
+I_I1         0 N20274 DC 0Adc AC 0Aac
++SIN 1mA 1mA 1MHz 0 0 0
+I_I2         0 N20650 DC 0Adc AC 0Aac
++SIN 1mA 1mA 1MHz 0 0 180
+C_C1         N20274 VOP  0.2nF  TC=0,0 
+C_C2         N20650 VON  0.2nF  TC=0,0 
+
+**** RESUMING "Test High Freq.cir" ****
+.END
+
+**** 08/10/17 18:02:58 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.diode      X_U3.DzVoutP    X_U3.DzVoutN    X_U3.DVnoisy    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   37.500000E-18 
+          BV  100               4.3             4.3                          
+          KF                                                  323.000000E-18 
+
+
+               X_U3.DINnoisy   X_U3.DIPnoisy   X_U2.diode      X_U2.DzVoutP    
+          IS  250.000000E-18  250.000000E-18   10.000000E-15   10.000000E-15 
+          BV                                  100               4.3          
+          KF  986.000000E-18  986.000000E-18                                 
+
+
+               X_U2.DzVoutN    X_U2.DVnoisy    X_U2.DINnoisy   X_U2.DIPnoisy   
+          IS   10.000000E-15   37.500000E-18  250.000000E-18  250.000000E-18 
+          BV    4.3                                                          
+          KF                  323.000000E-18  986.000000E-18  986.000000E-18 
+
+
+**** 08/10/17 18:02:58 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Rideal     X_U2.Rideal     
+  T_Measured   27              27            
+   T_Current -273            -273            
+           R    1               1            
+
+
+**** 08/10/17 18:02:58 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Switch     X_U3.Sswitch    X_U2.Switch     X_U2.Sswitch    
+         RON    1.000000E-03    1.000000E+03    1.000000E-03    1.000000E+03 
+        ROFF    1.000000E+06    1.000000E+06    1.000000E+06    1.000000E+06 
+         VON     .105           4.5              .105           4.5          
+        VOFF     .095            .1              .095            .1          
+
+
+ERROR(ORPSIM-15413): Transient Stop time 1e-005 s is less than Print Start time 1.5e-005 s.
+
+
+ABORTING SIMULATION
+**** 08/10/17 18:02:58 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           9
+  External (NCNODS)                 =         171
+  Total (NUMNOD)                    =         171
+
+Total device count (NUMEL)          =         318
+  Capacitors (C)                    =          30
+  Diodes (D)                        =          42
+  VCVS (E)                          =          22
+  CCCS (F)                          =          12
+  VCCS (G)                          =          32
+  CCVS (H)                          =           6
+  Current Sources (I)               =           8
+  Inductors (L)                     =           6
+  Resistors (R)                     =          85
+  VSwitches (S)                     =          12
+  Voltage Sources (V)               =          57
+
+Number of subcircuits (X)           =           2
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         262
+  Initial no. elements (NTTAR)      =         915
+  No. elements w/ fillin (NTTBR)    =         915
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =           0
+  No. LU operations (IOPS)          =           0
+  Percent sparsity (PERSPA)         =      98.667
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               1
+  Readin                            =         .02
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .05
+  Total job time (using Solver 1)   =         .06
+

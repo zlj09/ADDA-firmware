@@ -1,0 +1,381 @@
+
+**** 08/10/17 18:53:28 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Test High Freq.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ada4899.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 30us 10us 10ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Plan A with Capacitors.net" 
+
+
+
+**** INCLUDING "Plan A with Capacitors.net" ****
+* source BR0101_AD9715
+V_V2         N20482 0 5V
+X_U3         N20416 N20650 N20482 N20334 VON VON N20482 ADA4899 
+R_R5         N20416 N20188  10k TC=0,0 
+R_R4         0 N20650  681 TC=0,0 
+V_V3         N20188 0 1V
+R_R3         N20650 VON  1.8k TC=0,0 
+R_R2         N20274 VOP  1.8k TC=0,0 
+R_R1         0 N20274  681 TC=0,0 
+X_U2         N20416 N20274 N20482 N20334 VOP VOP N20482 ADA4899 
+V_V1         0 N20334 5V
+I_I1         0 N20274 DC 0Adc AC 0Aac
++SIN 1mA 1mA 442k 0 0 0
+I_I2         0 N20650 DC 0Adc AC 0Aac
++SIN 1mA 1mA 442k 0 0 180
+
+**** RESUMING "Test High Freq.cir" ****
+.END
+
+**** 08/10/17 18:53:28 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.diode      X_U3.DzVoutP    X_U3.DzVoutN    X_U3.DVnoisy    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   37.500000E-18 
+          BV  100               4.3             4.3                          
+          KF                                                  323.000000E-18 
+
+
+               X_U3.DINnoisy   X_U3.DIPnoisy   X_U2.diode      X_U2.DzVoutP    
+          IS  250.000000E-18  250.000000E-18   10.000000E-15   10.000000E-15 
+          BV                                  100               4.3          
+          KF  986.000000E-18  986.000000E-18                                 
+
+
+               X_U2.DzVoutN    X_U2.DVnoisy    X_U2.DINnoisy   X_U2.DIPnoisy   
+          IS   10.000000E-15   37.500000E-18  250.000000E-18  250.000000E-18 
+          BV    4.3                                                          
+          KF                  323.000000E-18  986.000000E-18  986.000000E-18 
+
+
+**** 08/10/17 18:53:28 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Rideal     X_U2.Rideal     
+  T_Measured   27              27            
+   T_Current -273            -273            
+           R    1               1            
+
+
+**** 08/10/17 18:53:28 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Switch     X_U3.Sswitch    X_U2.Switch     X_U2.Sswitch    
+         RON    1.000000E-03    1.000000E+03    1.000000E-03    1.000000E+03 
+        ROFF    1.000000E+06    1.000000E+06    1.000000E+06    1.000000E+06 
+         VON     .105           4.5              .105           4.5          
+        VOFF     .095            .1              .095            .1          
+
+
+**** 08/10/17 18:53:28 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VON)    1.4131  (  VOP)    1.4131  (N20188)    1.0000 (N20274)     .8789     
+
+(N20334)   -5.0000 (N20416)     .8791 (N20482)    5.0000 (N20650)     .8789     
+
+(X_U2.1)     .8791 (X_U2.2)     .8790 (X_U2.3)     .8790 (X_U2.5)     .8790     
+
+(X_U2.6)     .8812 (X_U2.7)     .8790 (X_U2.9)     .8789 (X_U3.1)     .8791     
+
+(X_U3.2)     .8790 (X_U3.3)     .8790 (X_U3.5)     .8790 (X_U3.6)     .8812     
+
+(X_U3.7)     .8790 (X_U3.9)     .8789 (X_U2.10)     .8790                       
+
+(X_U2.11) 87.90E-09                   (X_U2.12) 87.90E-09                       
+
+(X_U2.20)    0.0000                   (X_U2.21)     .6500                       
+
+(X_U2.22)    0.0000                   (X_U2.23)     .6500                       
+
+(X_U2.30)     .6500                   (X_U2.31)    0.0000                       
+
+(X_U2.32)     .6500                   (X_U2.33)    0.0000                       
+
+(X_U2.40)     .8790                   (X_U2.41)    3.2400                       
+
+(X_U2.42)   -3.2400                   (X_U2.50)     .6500                       
+
+(X_U2.51)    0.0000                   (X_U2.52)     .6500                       
+
+(X_U2.53)    0.0000                   (X_U2.60)    1.4199                       
+
+(X_U2.61)    -.8629                   (X_U2.62)    1.3349                       
+
+(X_U2.63)   -1.0020                   (X_U2.64)    1.0020                       
+
+(X_U2.65)    6.1500                   (X_U2.66)   -6.1500                       
+
+(X_U2.73)    2.6150                   (X_U2.74)   -2.6150                       
+
+(X_U2.75)    1.4131                   (X_U2.80)    2.6000                       
+
+(X_U2.81)     .1000                   (X_U2.82)     .1000                       
+
+(X_U2.83)    5.0000                   (X_U2.96)    1.0000                       
+
+(X_U2.97)    2.0000                   (X_U2.98)   -5.0000                       
+
+(X_U2.99)    0.0000                   (X_U3.10)     .8790                       
+
+(X_U3.11) 87.90E-09                   (X_U3.12) 87.90E-09                       
+
+(X_U3.20)    0.0000                   (X_U3.21)     .6500                       
+
+(X_U3.22)    0.0000                   (X_U3.23)     .6500                       
+
+(X_U3.30)     .6500                   (X_U3.31)    0.0000                       
+
+(X_U3.32)     .6500                   (X_U3.33)    0.0000                       
+
+(X_U3.40)     .8790                   (X_U3.41)    3.2400                       
+
+(X_U3.42)   -3.2400                   (X_U3.50)     .6500                       
+
+(X_U3.51)    0.0000                   (X_U3.52)     .6500                       
+
+(X_U3.53)    0.0000                   (X_U3.60)    1.4199                       
+
+(X_U3.61)    -.8629                   (X_U3.62)    1.3349                       
+
+(X_U3.63)   -1.0020                   (X_U3.64)    1.0020                       
+
+(X_U3.65)    6.1500                   (X_U3.66)   -6.1500                       
+
+(X_U3.73)    2.6150                   (X_U3.74)   -2.6150                       
+
+(X_U3.75)    1.4131                   (X_U3.80)    2.6000                       
+
+(X_U3.81)     .1000                   (X_U3.82)     .1000                       
+
+(X_U3.83)    5.0000                   (X_U3.96)    1.0000                       
+
+(X_U3.97)    2.0000                   (X_U3.98)   -5.0000                       
+
+(X_U3.99)    0.0000                   (X_U2.110)    0.0000                      
+
+(X_U2.111)    5.0000                  (X_U2.112)   -5.0000                      
+
+(X_U2.113)    2.5000                  (X_U2.200)-126.6E-06                      
+
+(X_U2.210)    1.4199                  (X_U2.220)   -1.4199                      
+
+(X_U2.230)    1.4199                  (X_U2.240)   -1.4199                      
+
+(X_U2.245)    1.4199                  (X_U2.250)   -1.4199                      
+
+(X_U2.255)    1.4199                  (X_U2.260)   -1.4199                      
+
+(X_U2.265)    1.4199                  (X_U2.270)   -1.4199                      
+
+(X_U2.280)   -1.4199                  (X_U2.281)   -1.4199                      
+
+(X_U2.282)    0.0000                  (X_U2.285)   -1.4199                      
+
+(X_U2.290)   -1.4199                  (X_U2.292)   -1.4199                      
+
+(X_U2.295)   -1.4199                  (X_U2.300)    1.4199                      
+
+(X_U2.301)    1.4199                  (X_U2.302)    1.4199                      
+
+(X_U2.303)    1.4131                  (X_U2.304)    1.3902                      
+
+(X_U2.305)    9.2262                  (X_U2.306)   -5.2458                      
+
+(X_U2.307)    1.4199                  (X_U2.310)    1.4131                      
+
+(X_U2.311)    1.4131                  (X_U2.312)    1.4131                      
+
+(X_U2.313)    1.4131                  (X_U2.314)    4.3763                      
+
+(X_U2.315) -100.3900                  (X_U3.110)    0.0000                      
+
+(X_U3.111)    5.0000                  (X_U3.112)   -5.0000                      
+
+(X_U3.113)    2.5000                  (X_U3.200)-126.6E-06                      
+
+(X_U3.210)    1.4199                  (X_U3.220)   -1.4199                      
+
+(X_U3.230)    1.4199                  (X_U3.240)   -1.4199                      
+
+(X_U3.245)    1.4199                  (X_U3.250)   -1.4199                      
+
+(X_U3.255)    1.4199                  (X_U3.260)   -1.4199                      
+
+(X_U3.265)    1.4199                  (X_U3.270)   -1.4199                      
+
+(X_U3.280)   -1.4199                  (X_U3.281)   -1.4199                      
+
+(X_U3.282)    0.0000                  (X_U3.285)   -1.4199                      
+
+(X_U3.290)   -1.4199                  (X_U3.292)   -1.4199                      
+
+(X_U3.295)   -1.4199                  (X_U3.300)    1.4199                      
+
+(X_U3.301)    1.4199                  (X_U3.302)    1.4199                      
+
+(X_U3.303)    1.4131                  (X_U3.304)    1.3902                      
+
+(X_U3.305)    9.2262                  (X_U3.306)   -5.2458                      
+
+(X_U3.307)    1.4199                  (X_U3.310)    1.4131                      
+
+(X_U3.311)    1.4131                  (X_U3.312)    1.4131                      
+
+(X_U3.313)    1.4131                  (X_U3.314)    4.3763                      
+
+(X_U3.315) -100.3900                  (X_U2.1020)    5.0000                     
+
+(X_U2.1030)   -5.0000                 (X_U3.1020)    5.0000                     
+
+(X_U3.1030)   -5.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.999E-02
+    V_V3        -1.209E-05
+    V_V1        -2.940E-02
+    X_U3.V2     -1.000E-03
+    X_U3.VOS     6.047E-06
+    X_U3.VinP    2.371E-12
+    X_U3.VinN    4.129E-12
+    X_U3.Vmeas1   3.079E-06
+    X_U3.Vvn    -3.079E-06
+    X_U3.Vmeas2   3.079E-06
+    X_U3.Vvn1   -3.079E-06
+    X_U3.Vmeas3   2.053E-05
+    X_U3.VnIN   -2.053E-05
+    X_U3.Vmeas4   2.053E-05
+    X_U3.VnIN1  -2.053E-05
+    X_U3.Vmeas5   2.053E-05
+    X_U3.VnIP   -2.053E-05
+    X_U3.Vmeas6   2.053E-05
+    X_U3.VnIP1  -2.053E-05
+    X_U3.VPD    -1.250E-11
+    X_U3.VPD1   -1.000E-04
+    X_U3.VoutP  -2.293E-12
+    X_U3.VoutN   3.429E-13
+    X_U3.Vsense1   2.968E-04
+    X_U3.VIoutP  -7.816E-12
+    X_U3.VIoutN  -6.676E-12
+    X_U3.VoutP1   1.212E-12
+    X_U3.VoutN1   4.038E-12
+    X_U3.Vmeas8   2.968E-04
+    X_U3.Vmeas9   2.968E-04
+    X_U2.V2     -1.000E-03
+    X_U2.VOS     6.047E-06
+    X_U2.VinP    2.371E-12
+    X_U2.VinN    4.129E-12
+    X_U2.Vmeas1   3.079E-06
+    X_U2.Vvn    -3.079E-06
+    X_U2.Vmeas2   3.079E-06
+    X_U2.Vvn1   -3.079E-06
+    X_U2.Vmeas3   2.053E-05
+    X_U2.VnIN   -2.053E-05
+    X_U2.Vmeas4   2.053E-05
+    X_U2.VnIN1  -2.053E-05
+    X_U2.Vmeas5   2.053E-05
+    X_U2.VnIP   -2.053E-05
+    X_U2.Vmeas6   2.053E-05
+    X_U2.VnIP1  -2.053E-05
+    X_U2.VPD    -1.250E-11
+    X_U2.VPD1   -1.000E-04
+    X_U2.VoutP  -2.293E-12
+    X_U2.VoutN   3.429E-13
+    X_U2.Vsense1   2.968E-04
+    X_U2.VIoutP  -7.816E-12
+    X_U2.VIoutN  -6.676E-12
+    X_U2.VoutP1   1.212E-12
+    X_U2.VoutN1   4.038E-12
+    X_U2.Vmeas8   2.968E-04
+    X_U2.Vmeas9   2.968E-04
+
+    TOTAL POWER DISSIPATION   3.01E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/10/17 18:53:28 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Capacitors-Test High Freq"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.33
+

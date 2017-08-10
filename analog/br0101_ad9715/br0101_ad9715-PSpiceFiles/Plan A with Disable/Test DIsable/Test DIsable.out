@@ -1,0 +1,431 @@
+
+**** 08/10/17 19:39:11 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Disable-Test DIsable"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\Plan 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Test DIsable.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ada4899.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 5ms 0.05ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Plan A with Disable.net" 
+
+
+
+**** INCLUDING "Plan A with Disable.net" ****
+* source BR0101_AD9715
+V_V2         VDD50 0 5V
+V_V1         0 VDD-50 5V
+R_R4         0 N15119  681 TC=0,0 
+R_R5         N14885 N14657  10k TC=0,0 
+R_R2         N14743 VOP  1.8k TC=0,0 
+I_IN         0 N15119 DC 2mA  
+X_U3         N14885 N15119 VDD50 VDD-50 VON VON DISABLE2 ADA4899 
+R_R3         N15119 VON  1.8k TC=0,0 
+I_IP         0 N14743 DC 0mA  
+V_V3         N14657 0 1V
+X_U2         N14885 N14743 VDD50 VDD-50 VOP VOP DISABLE1 ADA4899 
+R_R1         0 N14743  681 TC=0,0 
+R_R10         ODAP1ID N17853  4.7k TC=0,0 
+R_R7         ODAP1ID N17831  4.7k TC=0,0 
+R_R8         0 N17831  20k TC=0,0 
+V_V4         ODAP1ID 0 5.0V
+R_R9         DISABLE2 VDD50  4.7k TC=0,0 
+R_R11         0 N17853  20k TC=0,0 
+Q_Q2         DISABLE2 N17853 0 QbreakN 
+Q_Q1         DISABLE1 N17831 0 QbreakN 
+R_R6         DISABLE1 VDD50  4.7k TC=0,0 
+
+**** RESUMING "Test DIsable.cir" ****
+.END
+
+**** 08/10/17 19:39:11 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Disable-Test DIsable"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\Plan 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.diode      X_U3.DzVoutP    X_U3.DzVoutN    X_U3.DVnoisy    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   37.500000E-18 
+          BV  100               4.3             4.3                          
+          KF                                                  323.000000E-18 
+
+
+               X_U3.DINnoisy   X_U3.DIPnoisy   X_U2.diode      X_U2.DzVoutP    
+          IS  250.000000E-18  250.000000E-18   10.000000E-15   10.000000E-15 
+          BV                                  100               4.3          
+          KF  986.000000E-18  986.000000E-18                                 
+
+
+               X_U2.DzVoutN    X_U2.DVnoisy    X_U2.DINnoisy   X_U2.DIPnoisy   
+          IS   10.000000E-15   37.500000E-18  250.000000E-18  250.000000E-18 
+          BV    4.3                                                          
+          KF                  323.000000E-18  986.000000E-18  986.000000E-18 
+
+
+**** 08/10/17 19:39:11 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Disable-Test DIsable"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\Plan 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 08/10/17 19:39:11 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Disable-Test DIsable"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\Plan 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Rideal     X_U2.Rideal     
+  T_Measured   27              27            
+   T_Current -273            -273            
+           R    1               1            
+
+
+**** 08/10/17 19:39:11 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Disable-Test DIsable"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\Plan 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Switch     X_U3.Sswitch    X_U2.Switch     X_U2.Sswitch    
+         RON    1.000000E-03    1.000000E+03    1.000000E-03    1.000000E+03 
+        ROFF    1.000000E+06    1.000000E+06    1.000000E+06    1.000000E+06 
+         VON     .105           4.5              .105           4.5          
+        VOFF     .095            .1              .095            .1          
+
+
+**** 08/10/17 19:39:11 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Disable-Test DIsable"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\Plan 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VON)    1.3631  (  VOP)     .0050  (VDD50)    5.0000  (N14657)    1.0000     
+
+(N14743)    -.0011 (N14885)     .8900 (N15119)    1.3595 (N17831)     .8002     
+
+(N17853)     .8002 (VDD-50)   -5.0000 (X_U2.1)   -4.9084 (X_U2.2)   -4.9084     
+
+(X_U2.3)   -3.8954 (X_U2.5)   -3.8954 (X_U2.6)   -3.8933 (X_U2.7)   -3.8954     
+
+(X_U2.9)   -4.9106 (X_U3.1)   -4.3086 (X_U3.2)   -4.3086 (X_U3.3)   -3.8736     
+
+(X_U3.5)   -3.8736 (X_U3.6)   -3.8714 (X_U3.7)   -3.8736 (X_U3.9)   -4.3081     
+
+(ODAP1ID)    5.0000                   (X_U2.10)   -4.4030                       
+
+(X_U2.11)-440.3E-09                   (X_U2.12)-440.3E-09                       
+
+(X_U2.20)    0.0000                   (X_U2.21)     .6500                       
+
+(X_U2.22)    0.0000                   (X_U2.23)     .6500                       
+
+(X_U2.30)     .6500                   (X_U2.31)    0.0000                       
+
+(X_U2.32)     .6500                   (X_U2.33)    0.0000                       
+
+(X_U2.40)   -3.8954                   (X_U2.41)    3.2400                       
+
+(X_U2.42)   -3.2400                   (X_U2.50)     .6500                       
+
+(X_U2.51)    0.0000                   (X_U2.52)     .6500                       
+
+(X_U2.53)    0.0000                   (X_U2.60)    4.3104                       
+
+(X_U2.61)    -.3767                   (X_U2.62)    4.1626                       
+
+(X_U2.63)   -1.0020                   (X_U2.64)    1.0020                       
+
+(X_U2.65)    6.1500                   (X_U2.66)   -6.1500                       
+
+(X_U2.73)    2.6150                   (X_U2.74)   -2.6150                       
+
+(X_U2.75)    3.3662                   (X_U2.80)    2.6000                       
+
+(X_U2.81)     .1000                   (X_U2.82) 99.90E-06                       
+
+(X_U2.83)     .0309                   (X_U2.96)    1.0000                       
+
+(X_U2.97)    2.0000                   (X_U2.98)    5.7212                       
+
+(X_U2.99)    0.0000                   (X_U3.10)   -4.0908                       
+
+(X_U3.11)-409.1E-09                   (X_U3.12)-409.1E-09                       
+
+(X_U3.20)    0.0000                   (X_U3.21)     .6500                       
+
+(X_U3.22)    0.0000                   (X_U3.23)     .6500                       
+
+(X_U3.30)     .6500                   (X_U3.31)    0.0000                       
+
+(X_U3.32)     .6500                   (X_U3.33)    0.0000                       
+
+(X_U3.40)   -3.8736                   (X_U3.41)    3.2400                       
+
+(X_U3.42)   -3.2400                   (X_U3.50)     .6500                       
+
+(X_U3.51)    0.0000                   (X_U3.52)     .6500                       
+
+(X_U3.53)    0.0000                   (X_U3.60)    4.3104                       
+
+(X_U3.61)    -.3767                   (X_U3.62)    4.1626                       
+
+(X_U3.63)   -1.0020                   (X_U3.64)    1.0020                       
+
+(X_U3.65)    6.1500                   (X_U3.66)   -6.1500                       
+
+(X_U3.73)    2.6150                   (X_U3.74)   -2.6150                       
+
+(X_U3.75)    3.3662                   (X_U3.80)    2.6000                       
+
+(X_U3.81)     .1000                   (X_U3.82) 99.90E-06                       
+
+(X_U3.83)     .0309                   (X_U3.96)    1.0000                       
+
+(X_U3.97)    2.0000                   (X_U3.98)    5.7212                       
+
+(X_U3.99)    0.0000                   (DISABLE1)     .0309                      
+
+(DISABLE2)     .0309                  (X_U2.110)    0.0000                      
+
+(X_U2.111)    5.0000                  (X_U2.112)   -5.0000                      
+
+(X_U2.113)    2.5999                  (X_U2.200)   -1.0152                      
+
+(X_U2.210)    4.3104                  (X_U2.220)   -4.3104                      
+
+(X_U2.230)    4.3104                  (X_U2.240)   -4.3104                      
+
+(X_U2.245)    4.3104                  (X_U2.250)   -4.3104                      
+
+(X_U2.255)    4.3104                  (X_U2.260)   -4.3104                      
+
+(X_U2.265)    4.3104                  (X_U2.270)   -4.3104                      
+
+(X_U2.280)   -4.3104                  (X_U2.281)   -4.3104                      
+
+(X_U2.282)    0.0000                  (X_U2.285)   -4.3104                      
+
+(X_U2.290)   -4.3104                  (X_U2.292)   -4.3104                      
+
+(X_U2.295)   -4.3104                  (X_U2.300)    4.3104                      
+
+(X_U2.301)    4.3104                  (X_U2.302)    4.3104                      
+
+(X_U2.303)    3.3662                  (X_U2.304)     .2052                      
+
+(X_U2.305)    8.0412                  (X_U2.306)   -6.4308                      
+
+(X_U2.307)    4.3104                  (X_U2.310)    3.3662                      
+
+(X_U2.311)    3.3662                  (X_U2.312)    3.3662                      
+
+(X_U2.313)    3.3662                  (X_U2.314)    4.4922                      
+
+(X_U2.315) -100.2700                  (X_U3.110)    0.0000                      
+
+(X_U3.111)    5.0000                  (X_U3.112)   -5.0000                      
+
+(X_U3.113)    2.5999                  (X_U3.200)    -.4345                      
+
+(X_U3.210)    4.3104                  (X_U3.220)   -4.3104                      
+
+(X_U3.230)    4.3104                  (X_U3.240)   -4.3104                      
+
+(X_U3.245)    4.3104                  (X_U3.250)   -4.3104                      
+
+(X_U3.255)    4.3104                  (X_U3.260)   -4.3104                      
+
+(X_U3.265)    4.3104                  (X_U3.270)   -4.3104                      
+
+(X_U3.280)   -4.3104                  (X_U3.281)   -4.3104                      
+
+(X_U3.282)    0.0000                  (X_U3.285)   -4.3104                      
+
+(X_U3.290)   -4.3104                  (X_U3.292)   -4.3104                      
+
+(X_U3.295)   -4.3104                  (X_U3.300)    4.3104                      
+
+(X_U3.301)    4.3104                  (X_U3.302)    4.3104                      
+
+(X_U3.303)    3.3662                  (X_U3.304)     .2052                      
+
+(X_U3.305)    8.0412                  (X_U3.306)   -6.4308                      
+
+(X_U3.307)    4.3104                  (X_U3.310)    3.3662                      
+
+(X_U3.311)    3.3662                  (X_U3.312)    3.3662                      
+
+(X_U3.313)    3.3662                  (X_U3.314)    4.5055                      
+
+(X_U3.315) -100.2500                  (X_U2.1020)    5.0000                     
+
+(X_U2.1030)   -5.0000                 (X_U3.1020)    5.0000                     
+
+(X_U3.1030)   -5.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -5.742E-03
+    V_V1        -3.622E-03
+    V_V3        -1.100E-05
+    V_V4        -1.787E-03
+    X_U3.V2     -1.000E-03
+    X_U3.VOS     5.199E-06
+    X_U3.VinP    7.124E-12
+    X_U3.VinN   -4.350E-04
+    X_U3.Vmeas1   3.079E-06
+    X_U3.Vvn    -3.079E-06
+    X_U3.Vmeas2   3.079E-06
+    X_U3.Vvn1   -3.079E-06
+    X_U3.Vmeas3   2.053E-05
+    X_U3.VnIN   -2.053E-05
+    X_U3.Vmeas4   2.053E-05
+    X_U3.VnIN1  -2.053E-05
+    X_U3.Vmeas5   2.053E-05
+    X_U3.VnIP   -2.053E-05
+    X_U3.Vmeas6   2.053E-05
+    X_U3.VnIP1  -2.053E-05
+    X_U3.VPD     1.285E-11
+    X_U3.VPD1   -9.990E-08
+    X_U3.VoutP  -3.163E-04
+    X_U3.VoutN   3.171E-12
+    X_U3.Vsense1   4.105E-02
+    X_U3.VIoutP  -3.741E-12
+    X_U3.VIoutN  -1.075E-11
+    X_U3.VoutP1  -4.105E-02
+    X_U3.VoutN1   5.991E-12
+    X_U3.Vmeas8   2.003E-06
+    X_U3.Vmeas9   2.003E-06
+    X_U2.V2     -1.000E-03
+    X_U2.VOS     5.798E-06
+    X_U2.VinP    7.145E-12
+    X_U2.VinN   -1.013E-03
+    X_U2.Vmeas1   3.079E-06
+    X_U2.Vvn    -3.079E-06
+    X_U2.Vmeas2   3.079E-06
+    X_U2.Vvn1   -3.079E-06
+    X_U2.Vmeas3   2.053E-05
+    X_U2.VnIN   -2.053E-05
+    X_U2.Vmeas4   2.053E-05
+    X_U2.VnIN1  -2.053E-05
+    X_U2.Vmeas5   2.053E-05
+    X_U2.VnIP   -2.053E-05
+    X_U2.Vmeas6   2.053E-05
+    X_U2.VnIP1  -2.053E-05
+    X_U2.VPD     1.285E-11
+    X_U2.VPD1   -9.990E-08
+    X_U2.VoutP  -3.163E-04
+    X_U2.VoutN   3.171E-12
+    X_U2.Vsense1   4.105E-02
+    X_U2.VIoutP  -3.741E-12
+    X_U2.VIoutN  -1.075E-11
+    X_U2.VoutP1  -4.105E-02
+    X_U2.VoutN1   5.991E-12
+    X_U2.Vmeas8   3.361E-06
+    X_U2.Vmeas9   3.361E-06
+
+    TOTAL POWER DISSIPATION   2.63E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/10/17 19:39:11 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A with Disable-Test DIsable"  [ F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715-PSpiceFiles\Plan 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .16
+

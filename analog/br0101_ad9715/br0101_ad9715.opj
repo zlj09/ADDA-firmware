@@ -24,6 +24,8 @@
            "G:\Cadence\SPB_17_0\tools\capture\library\pspice\special.olb")
         (Type "Schematic Library"))
       (File "F:\Design\Circuits\OrCAD\libraries\FPGA\AD.OLB"
+        (Type "Schematic Library"))
+      (File "F:\Academic\FPGA\BR0101\Development\DAC\model\AD9715.OLB"
         (Type "Schematic Library")))
     (NoModify)
     (File "br0101_ad9715.dsn"
@@ -36,9 +38,22 @@
     (ANNOTATE_Reset_References_to_1 "FALSE")
     (ANNOTATE_No_Page_Number_Change "TRUE")
     (ANNOTATE_Property_Combine "{Value}{Source Package}")
-    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
   (Folder "Outputs"
     (File ".\br0101_ad9715-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\br0101_ad9715-pspicefiles\schematic3\schematic3.net"
+      (Type "Report"))
+    (File ".\br0101_ad9715-pspicefiles\schematic4\schematic4.net"
+      (Type "Report"))
+    (File ".\br0101_ad9715-pspicefiles\output plan b\output plan b.net"
+      (Type "Report"))
+    (File
+       ".\br0101_ad9715-pspicefiles\plan a with capacitors\plan a with capacitors.net"
+      (Type "Report"))
+    (File
+       ".\br0101_ad9715-pspicefiles\plan a with disable\plan a with disable.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Model Libraries"
@@ -52,20 +67,103 @@
     (Folder "Include Files"
       (Sort User))
     (Folder "Simulation Profiles"
-      (ActiveProfile ".\br0101_ad9715-pspicefiles\schematic1\bias.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\br0101_ad9715-pspicefiles\schematic1\bias.sim"
-        (DisplayName "SCHEMATIC1-Bias")
+         ".\br0101_ad9715-pspicefiles\output plan a\bias.sim"
+        (DisplayName "Output Plan A-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9715-pspicefiles\optional combination\test plan b.sim"
+        (DisplayName "Optional Combination-Test Plan B")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9715-pspicefiles\output plan b\test plan c.sim"
+        (DisplayName "Output Plan B-Test Plan C")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9715-pspicefiles\output plan a\test high freq.sim"
+        (DisplayName "Output Plan A-Test High Freq")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9715-pspicefiles\output plan b\test plan b.sim"
+        (DisplayName "Output Plan B-Test Plan B")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9715-pspicefiles\plan a with capacitors\test high freq.sim"
+        (DisplayName "Plan A with Capacitors-Test High Freq")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\br0101_ad9715-pspicefiles\plan a with disable\test disable.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9715-pspicefiles\plan a with disable\test disable.sim"
+        (DisplayName "Plan A with Disable-Test DIsable")
         (Type "PSpice Profile"))))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (F
-      (FullPartName "F.Normal")
+    (0
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (QbreakN
+      (FullPartName "QbreakN.Normal")
       (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (IAC
+      (FullPartName "IAC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (ISIN
+      (FullPartName "ISIN.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (ISFFM
+      (FullPartName "ISFFM.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (AD9715
+      (FullPartName "AD9715.Normal")
+      (LibraryName "F:\ACADEMIC\FPGA\BR0101\DEVELOPMENT\DAC\MODEL\AD9715.OLB")
+      (DeviceIndex "0"))
+    (F
+      (FullPartName "F.Normal")
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
@@ -73,30 +171,14 @@
       (FullPartName "ADA4899.Normal")
       (LibraryName "F:\ACADEMIC\FPGA\BR0101\DEVELOPMENT\DAC\MODEL\ADA4899.OLB")
       (DeviceIndex "0"))
-    (IDC
-      (FullPartName "IDC.Normal")
-      (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (0
-      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     (VDC
       (FullPartName "VDC.Normal")
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
-    (AD9715
-      (FullPartName "AD9715.Normal")
-      (LibraryName "F:\DESIGN\CIRCUITS\ORCAD\LIBRARIES\FPGA\AD.OLB")
-      (DeviceIndex "0"))
     (AD976/SO
       (FullPartName "AD976/SO.Normal")
       (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\ATOD.OLB")
-      (DeviceIndex "0"))
-    (C
-      (FullPartName "C.Normal")
-      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (L
       (FullPartName "L.Normal")
@@ -116,27 +198,43 @@
          "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn")
       (Path "Design Resources"
          "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
-         "SCHEMATIC1")
+         "Plan A with Disable")
       (Path "Design Resources"
          "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
-         "Design Cache")
+         "Optional Combination")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
+         "Optional Output Circut")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
+         "Output Plan A")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
+         "Output Plan B")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
+         "Plan A with Capacitors")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "F:\Academic\FPGA\BR0101\Development\DAC\model\AD9715.OLB")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Model Libraries"))
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 385"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 385"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1189 52 476")
-        (Scroll "12 160")
+        (Placement "44 2 3 -1 -1 -8 -31 0 844 0 424")
+        (Scroll "244 269")
         (Zoom "156")
         (Occurrence "/"))
       (Path
          "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\BR0101_AD9715\BR0101_AD9715.DSN")
-      (Schematic "SCHEMATIC1")
+      (Schematic "Plan A with Disable")
       (Page "PAGE1"))))

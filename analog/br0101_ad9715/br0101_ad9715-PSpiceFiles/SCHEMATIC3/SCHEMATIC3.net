@@ -1,0 +1,15 @@
+* source BR0101_AD9715
+R_R3         N15119 VON  1.8k TC=0,0 
+X_U3         N14889 N15119 N14951 N14803 VON VON N14951 ADA4899 
+X_U2         N14889 N14743 N14951 N14803 VOP VOP N14951 ADA4899 
+V_V2         N14951 0 5V
+R_R1         0 N14743  1.6k TC=0,0 
+I_IN         0 N15119 DC {2m - x}  
+V_V1         0 N14803 5V
+R_R4         0 N15119  1.6k TC=0,0 
+R_R2         N14743 VOP  1.8k TC=0,0 
+I_IP         0 N14743 DC {x}  
+R_R5         N14889 0  10k TC=0,0 
+R_R6         0 N14743  1.6k TC=0,0 
+R_R7         0 N15119  1.6k TC=0,0 
+.PARAM  x=1m
