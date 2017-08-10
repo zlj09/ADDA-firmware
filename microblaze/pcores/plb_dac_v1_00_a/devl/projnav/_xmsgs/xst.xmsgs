@@ -23,7 +23,7 @@
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">byte_index</arg>&gt; in unit &lt;<arg fmt="%s" index="2">user_logic</arg>&gt; has a constant value of <arg fmt="%s" index="3">100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="1872" delta="new" >Variable &lt;<arg fmt="%s" index="1">bit_index</arg>&gt; is used but never assigned.
+<msg type="warning" file="Xst" num="1872" delta="old" >Variable &lt;<arg fmt="%s" index="1">bit_index</arg>&gt; is used but never assigned.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Bus2IP_Data&lt;0:27&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -419,196 +419,130 @@
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_9</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_16</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_16</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_16</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_17</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_17</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_17</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_18</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_18</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_18</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_19</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_19</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_19</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_20</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_20</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_20</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_21</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_21</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_21</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_22</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_22</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_22</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_23</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_23</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_23</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_24</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_24</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_24</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_25</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_25</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_25</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_27</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_27</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_27</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_28</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_27</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_27</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_28</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_29</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_28</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_29</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_30</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_29</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_30</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_31</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_30</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_31</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg1_31</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;.
 </msg>
 
 </messages>

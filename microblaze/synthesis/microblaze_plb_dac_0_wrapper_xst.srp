@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.78 secs
  
 --> 
 TABLE OF CONTENTS
@@ -509,11 +509,13 @@ INFO:Xst:2679 - Register <byte_index> in unit <user_logic> has a constant value 
 Synthesizing Unit <user_logic>.
     Related source file is "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a/hdl/verilog/user_logic.v".
 WARNING:Xst:1872 - Variable <bit_index> is used but never assigned.
+    Found 1-bit register for signal <dac_clk_reg>.
+    Found 10-bit register for signal <dac_data_reg>.
     Found 32-bit 4-to-1 multiplexer for signal <slv_ip2bus_data>.
     Found 32-bit register for signal <slv_reg0>.
     Found 32-bit register for signal <slv_reg1>.
     Summary:
-	inferred  64 D-type flip-flop(s).
+	inferred  75 D-type flip-flop(s).
 	inferred  32 Multiplexer(s).
 Unit <user_logic> synthesized.
 
@@ -688,8 +690,9 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  9-bit subtractor                                      : 1
-# Registers                                            : 107
- 1-bit register                                        : 97
+# Registers                                            : 109
+ 1-bit register                                        : 98
+ 10-bit register                                       : 1
  3-bit register                                        : 2
  32-bit register                                       : 4
  4-bit register                                        : 3
@@ -712,8 +715,8 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  9-bit subtractor                                      : 1
-# Registers                                            : 255
- Flip-Flops                                            : 255
+# Registers                                            : 266
+ Flip-Flops                                            : 266
 # Multiplexers                                         : 1
  32-bit 4-to-1 multiplexer                             : 1
 
@@ -787,8 +790,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 214
- Flip-Flops                                            : 214
+# Registers                                            : 225
+ Flip-Flops                                            : 225
 
 =========================================================================
 
@@ -816,24 +819,26 @@ Design Statistics
 # IOs                              : 217
 
 Cell Usage :
-# BELS                             : 196
+# BELS                             : 183
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 52
-#      LUT3                        : 19
-#      LUT3_D                      : 2
-#      LUT3_L                      : 3
-#      LUT4                        : 69
-#      LUT4_D                      : 7
-#      LUT4_L                      : 3
+#      INV                         : 2
+#      LUT2                        : 31
+#      LUT2_D                      : 1
+#      LUT3                        : 43
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 80
+#      LUT4_D                      : 3
+#      LUT4_L                      : 2
 #      MUXCY                       : 6
-#      MUXF5                       : 32
+#      MUXF5                       : 11
 #      VCC                         : 1
-# FlipFlops/Latches                : 214
-#      FD                          : 56
-#      FDR                         : 80
-#      FDRE                        : 72
-#      FDRS                        : 1
+# FlipFlops/Latches                : 225
+#      FD                          : 20
+#      FD_1                        : 10
+#      FDR                         : 112
+#      FDRE                        : 76
+#      FDRS                        : 2
 #      FDRSE                       : 5
 =========================================================================
 
@@ -842,9 +847,9 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                      168  out of  24576     0%  
- Number of Slice Flip Flops:            214  out of  49152     0%  
- Number of 4 input LUTs:                156  out of  49152     0%  
+ Number of Slices:                      157  out of  24576     0%  
+ Number of Slice Flip Flops:            225  out of  49152     0%  
+ Number of 4 input LUTs:                164  out of  49152     0%  
  Number of IOs:                         217
  Number of bonded IOBs:                   0  out of    640     0%  
 
@@ -869,7 +874,7 @@ Clock Information:
 -----------------------------------+---------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                     | Load  |
 -----------------------------------+---------------------------------------------------------------------------+-------+
-S_Clkout                           | NONE(plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_31)| 214   |
+SPLB_Clk                           | NONE(plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_31)| 225   |
 -----------------------------------+---------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -881,107 +886,86 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 3.733ns (Maximum Frequency: 267.910MHz)
-   Minimum input arrival time before clock: 2.535ns
-   Maximum output required time after clock: 1.095ns
-   Maximum combinational path delay: 0.000ns
+   Minimum period: 5.099ns (Maximum Frequency: 196.132MHz)
+   Minimum input arrival time before clock: 2.680ns
+   Maximum output required time after clock: 1.333ns
+   Maximum combinational path delay: No path found
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'S_Clkout'
-  Clock period: 3.733ns (frequency: 267.910MHz)
-  Total number of paths / destination ports: 1425 / 290
+Timing constraint: Default period analysis for Clock 'SPLB_Clk'
+  Clock period: 5.099ns (frequency: 196.132MHz)
+  Total number of paths / destination ports: 1463 / 343
 -------------------------------------------------------------------------
-Delay:               3.733ns (Levels of Logic = 9)
-  Source:            plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7 (FF)
-  Destination:       plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1 (FF)
-  Source Clock:      S_Clkout rising
-  Destination Clock: S_Clkout rising
+Delay:               2.549ns (Levels of Logic = 2)
+  Source:            plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (FF)
+  Destination:       plb_dac_0/USER_LOGIC_I/dac_data_reg_9 (FF)
+  Source Clock:      SPLB_Clk rising
+  Destination Clock: SPLB_Clk falling
 
-  Data Path: plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7 to plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1
+  Data Path: plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS to plb_dac_0/USER_LOGIC_I/dac_data_reg_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.360   0.741  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7 (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7)
-     LUT4:I0->O            1   0.195   0.000  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_lut<0> (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_lut<0>)
-     MUXCY:S->O            1   0.366   0.000  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<0> (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<0>)
-     MUXCY:CI->O           1   0.045   0.000  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<1> (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<1>)
-     MUXCY:CI->O           1   0.045   0.000  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<2> (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<2>)
-     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<3> (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<3>)
-     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<4> (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<4>)
-     MUXCY:CI->O           9   0.263   0.632  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<5> (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I/CS1_wg_cy<5>)
-     LUT3_D:I2->O          1   0.195   0.585  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I/CS1 (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i<0>)
-     LUT4:I2->O            1   0.195   0.000  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0_rstpot (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0_rstpot)
-     FD:D                      0.022          plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0
+     FDRSE:C->Q            3   0.360   0.538  plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (plb_dac_0/SOFT_RESET_I/flop_q_chain<4>)
+     LUT2:I1->O           70   0.195   1.239  plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 (plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1)
+     LUT4:I3->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot (plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot)
+     FD_1:D                    0.022          plb_dac_0/USER_LOGIC_I/dac_data_reg_9
     ----------------------------------------
-    Total                      3.733ns (1.774ns logic, 1.958ns route)
-                                       (47.5% logic, 52.5% route)
+    Total                      2.549ns (0.772ns logic, 1.777ns route)
+                                       (30.3% logic, 69.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'S_Clkout'
-  Total number of paths / destination ports: 276 / 276
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 287 / 287
 -------------------------------------------------------------------------
-Offset:              2.535ns (Levels of Logic = 1)
+Offset:              2.680ns (Levels of Logic = 2)
   Source:            SPLB_Rst (PAD)
-  Destination:       plb_dac_0/USER_LOGIC_I/slv_reg0_2 (FF)
-  Destination Clock: S_Clkout rising
+  Destination:       plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1 (FF)
+  Destination Clock: SPLB_Clk rising
 
-  Data Path: SPLB_Rst to plb_dac_0/USER_LOGIC_I/slv_reg0_2
+  Data Path: SPLB_Rst to plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT2:I0->O           64   0.195   1.053  plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1 (plb_dac_0/rst_Bus2IP_Reset)
-     FDRE:R                    1.062          plb_dac_0/USER_LOGIC_I/slv_reg0_2
+     LUT2:I1->O            1   0.195   0.688  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/data_ack1_SW1 (N109)
+     LUT4:I1->O            2   0.195   0.377  plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_clr1 (plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_clr)
+     FDRE:R                    1.062          plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0
     ----------------------------------------
-    Total                      2.535ns (1.482ns logic, 1.053ns route)
-                                       (58.5% logic, 41.5% route)
+    Total                      2.680ns (1.615ns logic, 1.065ns route)
+                                       (60.3% logic, 39.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'S_Clkout'
-  Total number of paths / destination ports: 56 / 56
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 71 / 58
 -------------------------------------------------------------------------
-Offset:              1.095ns (Levels of Logic = 1)
+Offset:              1.333ns (Levels of Logic = 1)
   Source:            plb_dac_0/USER_LOGIC_I/slv_reg0_0 (FF)
-  Destination:       S_PWRDN (PAD)
-  Source Clock:      S_Clkout rising
-
-  Data Path: plb_dac_0/USER_LOGIC_I/slv_reg0_0 to S_PWRDN
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE:C->Q             2   0.360   0.377  plb_dac_0/USER_LOGIC_I/slv_reg0_0 (plb_dac_0/USER_LOGIC_I/slv_reg0_0)
-     INV:I->O              0   0.358   0.000  plb_dac_0/USER_LOGIC_I/IP2DAC_PWRDN1_INV_0 (S_PWRDN)
-    ----------------------------------------
-    Total                      1.095ns (0.718ns logic, 0.377ns route)
-                                       (65.6% logic, 34.4% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2 / 2
--------------------------------------------------------------------------
-Delay:               0.000ns (Levels of Logic = 0)
-  Source:            SPLB_Clk (PAD)
   Destination:       S_DCLKIO (PAD)
+  Source Clock:      SPLB_Clk rising
 
-  Data Path: SPLB_Clk to S_DCLKIO
+  Data Path: plb_dac_0/USER_LOGIC_I/slv_reg0_0 to S_DCLKIO
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
+     FDRE:C->Q            14   0.360   0.778  plb_dac_0/USER_LOGIC_I/slv_reg0_0 (plb_dac_0/USER_LOGIC_I/slv_reg0_0)
+     LUT2:I0->O            0   0.195   0.000  plb_dac_0/USER_LOGIC_I/IP2DAC_Format1 (S_Format)
     ----------------------------------------
-    Total                      0.000ns (0.000ns logic, 0.000ns route)
+    Total                      1.333ns (0.555ns logic, 0.778ns route)
+                                       (41.6% logic, 58.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 15.15 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.62 secs
  
 --> 
 
-Total memory usage is 429024 kilobytes
+Total memory usage is 427872 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   98 (   0 filtered)

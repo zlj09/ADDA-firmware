@@ -85,6 +85,7 @@ netlistclean:
 	rm -f $(WRAPPER_NGC_FILES)
 	rm -f platgen.log
 	rm -f __xps/ise/_xmsgs/platgen.xmsgs
+	touch __xps/ise/$(SYSTEM).xpssyn
 	rm -f $(BMM_FILE)
 	rm -rf implementation/cache
 
@@ -100,6 +101,7 @@ simclean:
 	rm -rf simulation/behavioral
 	rm -f simgen.log
 	rm -f __xps/ise/_xmsgs/simgen.xmsgs
+	touch __xps/ise/$(SYSTEM).xpssim
 
 #################################################################
 # BOOTLOOP ELF FILES
@@ -128,6 +130,7 @@ $(POSTSYN_NETLIST): $(WRAPPER_NGC_FILES)
 	cd synthesis & synthesis.cmd
 
 $(SYSTEM_BIT): 
+	@echo "This project has been instantiated in Xilinx ISE Project Navigator. Please use ProjNav to generate the bitstream. "
 
 $(DOWNLOAD_BIT): $(SYSTEM_BIT) $(BRAMINIT_ELF_IMP_FILES) __xps/bitinit.opt
 	@cp -f implementation/$(SYSTEM)_bd.bmm .
@@ -151,11 +154,6 @@ $(SYSTEM_HW_HANDOFF): $(MHSFILE) __xps/platgen.opt
 	IF NOT EXIST "$(SDK_EXPORT_DIR)" @mkdir "$(SDK_EXPORT_DIR)"
 	psf2Edward -inp $(SYSTEM).xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml $(SDK_EXPORT_DIR)/$(SYSTEM).xml $(GLOBAL_SEARCHPATHOPT)
 	xdsgen -inp $(SYSTEM).xmp -report $(SDK_EXPORT_DIR)/$(SYSTEM).html $(GLOBAL_SEARCHPATHOPT) -make_docs_local
-	@echo ""
-	@echo "WARNING: The option to export bit and bmm files to SDK is set to false. Existing bit and bmm files in the $(SDK_EXPORT_DIR) directory (if any) will be deleted."
-	@rm -rf $(SYSTEM_HW_HANDOFF_BIT)
-	@rm -rf $(SYSTEM_HW_HANDOFF_BMM)
-	@echo ""
 
 #################################################################
 # SIMULATION FLOW
@@ -173,24 +171,14 @@ $(BEHAVIORAL_SIM_SCRIPT): $(MHSFILE) __xps/simgen.opt \
 
 ################## STRUCTURAL SIMULATION ##################
 
-$(STRUCTURAL_SIM_SCRIPT): $(WRAPPER_NGC_FILES) __xps/simgen.opt \
-                          $(BRAMINIT_ELF_SIM_FILES)
-	@echo "*********************************************"
-	@echo "Creating structural simulation models..."
-	@echo "*********************************************"
-	simgen $(SIMGEN_OPTIONS) -sd implementation -m structural $(MHSFILE)
+$(STRUCTURAL_SIM_SCRIPT):
+	@echo "Structural simulation of complete design (including toplevel) flow should be done in ProjNav"
 
 
 ################## TIMING SIMULATION ##################
 
-implementation/$(SYSTEM).ncd: __xps/$(SYSTEM)_routed
-
-$(TIMING_SIM_SCRIPT): implementation/$(SYSTEM).ncd __xps/simgen.opt \
-                      $(BRAMINIT_ELF_SIM_FILES)
-	@echo "*********************************************"
-	@echo "Creating timing simulation models..."
-	@echo "*********************************************"
-	simgen $(SIMGEN_OPTIONS) -sd implementation -m timing $(MHSFILE)
+$(TIMING_SIM_SCRIPT):
+	@echo "Timing simulation of complete design (including toplevel) flow should be done in ProjNav"
 
 dummy:
 	@echo ""

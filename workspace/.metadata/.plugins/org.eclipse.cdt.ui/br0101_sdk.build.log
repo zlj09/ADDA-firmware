@@ -1,9 +1,14 @@
-16:03:01 **** Auto Build of configuration Debug for project br0101_sdk ****
+14:32:56 **** Auto Build of configuration Debug for project br0101_sdk ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_sdk_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
 Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_sdk_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
  
 Building target: br0101_sdk.elf
 Invoking: MicroBlaze gcc linker
@@ -30,5 +35,5 @@ elfcheck passed.
 Finished building: br0101_sdk.elf.elfcheck
  
 
-16:03:03 Build Finished (took 2s.157ms)
+14:33:06 Build Finished (took 10s.198ms)
 

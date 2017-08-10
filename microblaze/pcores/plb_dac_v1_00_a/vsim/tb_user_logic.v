@@ -83,39 +83,39 @@ module tb_user_logic;
 
 		Bus2IP_BE = 4'b1111;
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b10;
 		Bus2IP_Data = {2'b10, 30'b0};
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b01;
-		Bus2IP_Data = {10'h00f, 22'b0};
+		Bus2IP_Data = {10'h00f, 6'b0, 10'h00a, 6'b0};
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b01;
-		Bus2IP_Data = {10'h0ff, 22'b0};
+		Bus2IP_Data = {10'h0ff, 6'b0, 10'h0aa, 6'b0};
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b01;
-		Bus2IP_Data = {10'h3ff, 22'b0};
+		Bus2IP_Data = {10'h3ff, 6'b0, 10'h3aa, 6'b0};
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b10;
 		Bus2IP_Data = {2'b11, 30'b0};
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b01;
-		Bus2IP_Data = {10'h00f, 22'b0};
+		Bus2IP_Data = {10'h00f, 6'b0, 10'h00a, 6'b0};
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b01;
-		Bus2IP_Data = {10'h0ff, 22'b0};
+		Bus2IP_Data = {10'h0ff, 6'b0, 10'h0aa, 6'b0};
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b01;
-		Bus2IP_Data = {10'h3ff, 22'b0};
+		Bus2IP_Data = {10'h3ff, 6'b0, 10'h3aa, 6'b0};
 
-		#20;
+		#40;
 		Bus2IP_WrCE = 2'b10;
 		Bus2IP_Data = 32'h0000_0000;
 

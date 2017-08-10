@@ -53,7 +53,7 @@ int main()
     for (i = 0; i < (1 << 10) - 1 ; i++)
     {
     	*dac_data = i;
-    	for (delay_cnt = 0; delay_cnt < 10000; delay_cnt++) ;
+    	for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
     }
 
     return 0;

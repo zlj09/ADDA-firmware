@@ -117,6 +117,8 @@ output                                    IP2Bus_Error;
 //----------------------------------------------------------------------------
 
   // --USER nets declarations added here, as needed for user logic
+  reg                                       dac_clk_reg;
+  reg        [0 : DAC_WIDTH-1]              dac_data_reg;
 
   // Nets for user logic slave model s/w accessible register example
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg0;
@@ -191,6 +193,25 @@ output                                    IP2Bus_Error;
 
     end // SLAVE_REG_READ_PROC
 
+
+  // generate DAC clock here, with a frequency divider imposed on the bus clock
+  always @(posedge Bus2IP_Clk)
+    begin
+      if (Bus2IP_Reset == 1)
+        dac_clk_reg <= 1'b0;
+      else 
+        dac_clk_reg <= ~dac_clk_reg;
+    end
+
+  always @(negedge Bus2IP_Clk)
+    begin
+      if (Bus2IP_Reset == 1)
+        dac_data_reg <= 10'b0;
+      else begin
+        dac_data_reg <= (dac_clk_reg) ? (slv_reg1[16: 25]) : (slv_reg1[0 : 9]);
+      end
+    end
+
   // ------------------------------------------------------------
   // Example code to drive IP to Bus signals
   // ------------------------------------------------------------
@@ -206,18 +227,18 @@ output                                    IP2Bus_Error;
   //A strange error occurs with the following line. Reasons are not clear.
   //assign IP2DAC_Data[9 : 0] = slv_reg1[9 : 0];
   //Try to write in reverse
-  assign IP2DAC_Data[0 : 9] = slv_reg1[0 : 9];
+  assign IP2DAC_Data = (IP2DAC_PWRDN) ? (10'b0) : (dac_data_reg);
 
   //The LSB of slv_reg0 is used as DAC_EN, an enable signal. If DAC_EN = 0, DAC powers down.
   assign IP2DAC_PWRDN = ~slv_reg0[0];
 
   //The 2nd LSB of slv_reg0 is used as FRMT_CTL, a format control bit.
   //If FRMT_CTL=0, unsigned binary format will be selected. Otherwise, 2's complement format will be selected.
-  assign IP2DAC_Format = slv_reg0[1];
+  assign IP2DAC_Format = (IP2DAC_PWRDN) ? (1'b0) : (slv_reg0[1]);
 
   //The digital clock and analog clock are both tied to bus clock, with CLKMD=0.
-  assign IP2DAC_DCLKIO = Bus2IP_Clk;
-  assign IP2DAC_Clkout = Bus2IP_Clk;
+  assign IP2DAC_DCLKIO = (IP2DAC_PWRDN) ? (1'b0) : (dac_clk_reg);
+  assign IP2DAC_Clkout = (IP2DAC_PWRDN) ? (1'b0) : (dac_clk_reg);
   assign IP2DAC_ClkMD = 1'b0;
 
   //The DAC should be fixed to work in pin mode.
