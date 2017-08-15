@@ -10,22 +10,22 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Wed Aug 09 10:59:16 2017
+Mapped Date    : Mon Aug 14 18:25:20 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    2
 Logic Utilization:
-  Number of Slice Flip Flops:         2,107 out of  49,152    4%
-  Number of 4 input LUTs:             3,641 out of  49,152    7%
+  Number of Slice Flip Flops:         2,118 out of  49,152    4%
+  Number of 4 input LUTs:             3,628 out of  49,152    7%
 Logic Distribution:
-  Number of occupied Slices:          2,593 out of  24,576   10%
-    Number of Slices containing only related logic:   2,593 out of   2,593 100%
-    Number of Slices containing unrelated logic:          0 out of   2,593   0%
+  Number of occupied Slices:          2,579 out of  24,576   10%
+    Number of Slices containing only related logic:   2,579 out of   2,579 100%
+    Number of Slices containing unrelated logic:          0 out of   2,579   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       3,788 out of  49,152    7%
-    Number used as logic:             3,106
+  Total Number of 4 input LUTs:       3,775 out of  49,152    7%
+    Number used as logic:             3,093
     Number used as a route-thru:        147
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
@@ -44,9 +44,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.97
 
-Peak Memory Usage:  501 MB
-Total REAL time to MAP completion:  15 secs 
-Total CPU time to MAP completion:   10 secs 
+Peak Memory Usage:  502 MB
+Total REAL time to MAP completion:  19 secs 
+Total CPU time to MAP completion:   11 secs 
 
 NOTES:
 
@@ -323,6 +323,9 @@ derr_i_1_rstpot" (ROM) removed.
 has been removed.
        Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error" (ROM)
 removed.
+        The signal "microblaze_i/plb_dac_0/N97" is loadless and has been removed.
+         Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error_SW0"
+(ROM) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
 derr_i_1_or0000" is loadless and has been removed.
@@ -526,10 +529,6 @@ rerr_i_1_rstpot" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
 rerr_i_1_rstpot" (ROM) removed.
-      The signal "microblaze_i/plb_dac_0/N135" is loadless and has been removed.
-       Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_rstpot_SW0" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRdErr<0>" is loadless and has been removed.
  Loadless block
 "microblaze_i/mb_plb/mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/MRDERR_OR/Y_0_or0000_f5"
@@ -666,6 +665,10 @@ rerr_i_0_rstpot" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
 rerr_i_0_rstpot" (ROM) removed.
+      The signal "microblaze_i/plb_dac_0/N136" is loadless and has been removed.
+       Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
+rerr_i_0_rstpot_SW0" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRearbitrate<0>" is loadless and has been
 removed.
  Loadless block
@@ -6170,14 +6173,10 @@ TTACHMENT/sl_mwrerr_i_1_or00001/O" is unused and has been removed.
  Unused block
 "microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_PLB_SLAVE_IF/I_SLAVE_A
 TTACHMENT/sl_mwrerr_i_1_or00001" (ROM) removed.
-The signal "microblaze_i/plb_dac_0/N141" is unused and has been removed.
+The signal "microblaze_i/plb_dac_0/N142" is unused and has been removed.
  Unused block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
 derr_i_0_or00001_SW0" (ROM) removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error_SW0/O" is
-unused and has been removed.
- Unused block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error_SW0"
-(ROM) removed.
 The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
 derr_i_1_or00001_SW0/O" is unused and has been removed.

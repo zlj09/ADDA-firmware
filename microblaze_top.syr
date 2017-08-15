@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.45 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.45 secs
  
 --> Reading design: microblaze_top.prj
 
@@ -258,40 +258,41 @@ Design Statistics
 # IOs                              : 22
 
 Cell Usage :
-# BELS                             : 4783
+# BELS                             : 4770
 #      GND                         : 16
-#      INV                         : 59
+#      INV                         : 60
 #      LUT1                        : 123
-#      LUT2                        : 359
-#      LUT2_D                      : 13
+#      LUT2                        : 338
+#      LUT2_D                      : 14
 #      LUT2_L                      : 15
-#      LUT3                        : 1116
-#      LUT3_D                      : 97
-#      LUT3_L                      : 28
-#      LUT4                        : 1614
-#      LUT4_D                      : 90
-#      LUT4_L                      : 75
+#      LUT3                        : 1140
+#      LUT3_D                      : 96
+#      LUT3_L                      : 26
+#      LUT4                        : 1625
+#      LUT4_D                      : 86
+#      LUT4_L                      : 74
 #      MULT_AND                    : 34
 #      MUXCY                       : 182
 #      MUXCY_L                     : 183
-#      MUXF5                       : 575
+#      MUXF5                       : 554
 #      MUXF6                       : 6
 #      MUXF7                       : 2
 #      MUXF8                       : 1
 #      VCC                         : 10
 #      XORCY                       : 185
-# FlipFlops/Latches                : 2906
-#      FD                          : 235
+# FlipFlops/Latches                : 2917
+#      FD                          : 199
+#      FD_1                        : 10
 #      FDC                         : 21
 #      FDC_1                       : 5
 #      FDCE                        : 15
 #      FDE                         : 338
 #      FDE_1                       : 8
 #      FDP                         : 9
-#      FDR                         : 1152
-#      FDRE                        : 948
+#      FDR                         : 1184
+#      FDRE                        : 952
 #      FDRE_1                      : 1
-#      FDRS                        : 32
+#      FDRS                        : 33
 #      FDRSE                       : 23
 #      FDS                         : 65
 #      FDSE                        : 54
@@ -322,10 +323,10 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                     2986  out of  24576    12%  
- Number of Slice Flip Flops:           2906  out of  49152     5%  
- Number of 4 input LUTs:               4126  out of  49152     8%  
-    Number used as logic:              3589
+ Number of Slices:                     2966  out of  24576    12%  
+ Number of Slice Flip Flops:           2917  out of  49152     5%  
+ Number of 4 input LUTs:               4134  out of  49152     8%  
+    Number used as logic:              3597
     Number used as Shift registers:     153
     Number used as RAMs:                384
  Number of IOs:                          22
@@ -357,7 +358,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                           | Load  |
 -----------------------------------+-----------------------------------------------------------------+-------+
-fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0     | 3030  |
+fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0     | 3041  |
 microblaze_i/mdm_0/mdm_0/drck_i    | BUFG                                                            | 212   |
 microblaze_i/mdm_0/mdm_0/update1   | BUFG                                                            | 43    |
 microblaze_i/RS232/Interrupt       | NONE(microblaze_i/xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)| 1     |
@@ -401,7 +402,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
   Clock period: 8.026ns (frequency: 124.599MHz)
-  Total number of paths / destination ports: 412280 / 9980
+  Total number of paths / destination ports: 412329 / 10033
 -------------------------------------------------------------------------
 Delay:               8.026ns (Levels of Logic = 7)
   Source:            microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[8].Gen_Instr_DFF (FF)
@@ -552,7 +553,7 @@ Offset:              2.753ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 22 / 15
+  Total number of paths / destination ports: 37 / 17
 -------------------------------------------------------------------------
 Offset:              6.173ns (Levels of Logic = 4)
   Source:            microblaze_i/xps_iic_0/xps_iic_0/X_IIC/IIC_CONTROL_I/master_slave (FF)
@@ -640,12 +641,12 @@ Offset:              5.861ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 20.59 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.05 secs
  
 --> 
 
-Total memory usage is 360292 kilobytes
+Total memory usage is 392484 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

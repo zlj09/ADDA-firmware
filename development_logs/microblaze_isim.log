@@ -1,0 +1,1044 @@
+
+Started : "Simulate Behavioral Model".
+
+Determining files marked for global include in the design...
+
+Creating XPS script for generating simulation models...
+
+Running xps...
+Command Line: G:/Xilinx/14.7/ISE_DS/EDK/bin/nt/xps.exe -nw -scr F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/microblaze.makebehavdo.tcl
+Qt: Untested Windows version 6.2 detected!
+
+Xilinx Platform Studio
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+XPS% Evaluating file
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.makebehavdo.tcl
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81600000-0x8160ffff) xps_iic_0	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_0	mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: xps_iic, INSTANCE:xps_iic_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_iic_v2_03_a\data
+   \xps_iic_v2_1_0.mpd line 85 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+"*********************************************"
+"Creating behavioral simulation models..."
+"*********************************************"
+simgen -p xc4vsx55ff1148-10 -lang verilog -intstyle ise   -pe microblaze_0 ../workspace/br0101_sdk/Debug/br0101_sdk.elf -msg __xps/ise/xmsgprops.lst -s isim -tb -X F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/ -m behavioral microblaze.mhs
+
+Release 14.7 - Simulation Model Generator Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+INFO:EDK - Option '-X' is ignored, ISIM does not require pre-compiled libraries
+   for ise flow.
+Command Line: simgen -p xc4vsx55ff1148-10 -lang verilog -intstyle ise -pe
+microblaze_0 ../workspace/br0101_sdk/Debug/br0101_sdk.elf -msg
+__xps/ise/xmsgprops.lst -s isim -tb -X
+F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/ -m behavioral
+microblaze.mhs 
+
+MHS file              : \...\test_br0101\microblaze\microblaze.mhs
+Language (-lang)      : Verilog 
+Flow (-flow)      : ISE 
+Simulation Model (-m) : Behavioral
+Simulator (-s)        : ISE Simulator (ISIM)
+Part (-p) [ family ]  : xc4vsx55ff1148-10 [ virtex4 ]
+External memory simulation (-external_mem_sim) : FALSE 
+
+Output directory (-od): F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\
+
+
+Simulation Model Generator started ...
+
+Reading MHS file ...
+
+Reading MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81600000-0x8160ffff) xps_iic_0	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_0	mb_plb
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: xps_iic, INSTANCE:xps_iic_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_iic_v2_03_a\data
+   \xps_iic_v2_1_0.mpd line 85 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 5 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+   floating connection -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 145
+    
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_INTERRUPT value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 401 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x80000000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x80000000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_NUM_INTR_INPUTS value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 87 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 88 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 89 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_LVL value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 90 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION SIMGEN_SYSLEVEL_UPDATE_PROC...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:lmb_bram -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 86 -
+elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 108 -
+elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Generating simulation files ...
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+
+Constructing platform-level signal connectivity ...
+
+Writing HDL ...
+
+Writing BMM ...
+
+Writing memory initialization files ...
+
+Generating Memory Initialization Files ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81600000-0x8160ffff) xps_iic_0	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_0	mb_plb
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: xps_iic, INSTANCE:xps_iic_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_iic_v2_03_a\data
+   \xps_iic_v2_1_0.mpd line 85 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+Running Data2Mem with the following command:
+data2mem -bm "microblaze_sim.bmm"  -bd
+"F:\Programs\Verilog\FPGA_Group\test_br0101\workspace\br0101_sdk\Debug\br0101_sd
+k.elf" tag microblaze_0  -bx
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\simulation\behavioral -u  
+-p xc4vsx55ff1148-10 
+
+Generating simulator compile script ...
+
+Generating simulator helper scripts ...
+Simulation Model Generator done!
+
+
+INFO: Simulation models generated successfully.
+
+Copying XPS generated files from "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/simulation/behavioral/" to the project dir...
+ >copying simulation model files...
+ >copying prj files...
+ >copying ini files...
+ >copying elaborate directory files...
+ >copying wave files...
+ >copying setup files...
+ >copying mem files...
+XPS generated files copied successfully.
+Running fuse...
+Command Line: fuse -intstyle ise -incremental -lib unisims_ver -lib xilinxcorelib_ver -lib secureip -o F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_isim_beh.exe -prj F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_beh.prj work.testbench work.glbl {}
+Running: G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib xilinxcorelib_ver -lib secureip -o F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_isim_beh.exe -prj F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_beh.prj work.testbench work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_types_pkg.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_types_pkg_body.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_isa_be_pkg.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_primitives.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mux_bus.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/parity.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/comparator.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/carry_and.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/carry_or.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/carry_equal.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/carry_compare.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/carry_compare_mask.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/carry_compare_const.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/find_first_bit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mux4_8.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mux4.vhd" into library microblaze_v8_50_c
+
+Started : "Launching ISE Text Editor to edit pn_microblaze_testbench_tb.v".
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/vec_mux.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/gen_srlfifo.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/alu_bit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/alu.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/msr_reg_bit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/msr_reg.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/msr_reg_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/dsp_module.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mul_unit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/div_unit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/div_unit_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/operand_select_bit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/operand_select.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/operand_select_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/pc_bit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/pc_module.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/pc_module_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/prefetch_buffer.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/prefetch_buffer_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/register_file_bit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/register_file.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/register_file_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/count_leading_zero.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/shift_logic_bit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/shift_logic.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/shift_logic_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/zero_detect.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/zero_detect_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/barrel_shifter.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/barrel_shifter_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/wb_mux_bit_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/wb_mux_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/data_read_steering.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/byte_doublet_handle.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/byte_doublet_handle_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/data_flow_logic_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/fsl_module.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/streaming_axi.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/exception_registers.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/exception_registers_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/fpu_addsub.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/fpu_div.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/fpu_mul.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/fpu_conv.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/fpu_sqrt.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/fpu.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/pvr.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/result_mux_bit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/result_mux.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/stack_protection.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/data_flow.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/data_flow_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/jump_logic_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/decode.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/decode_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/address_hit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/address_data_hit.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/debug.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/iplb_interface.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/dplb_interface.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/daxi_interface.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/iaxi_interface.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/ram_module.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/victim_cache.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/stream_cache.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/cache_interface.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/icache.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/dcache.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/dcache_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/cache_valid_bit_detect.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/cachehit_detect.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/dcache_wb.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/instr_mux.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/read_data_mux_gti.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/interrupt_mode_converter.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mmu_types_pkg.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mmu_tlb.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mmu_utlb_ram.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mmu_utlb.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/mmu.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_core.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze.vhd" into library microblaze_v8_50_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_bits.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_gate.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/arb_control_sm.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/dcr_regs.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/gen_qual_req.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/muxed_signals.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/pend_request.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/qual_priority.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/pending_priority.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/qual_request.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/priority_encoder.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/rr_select.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_arb_encoder.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/watchdog_timer.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_wr_datapath.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_rd_datapath.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_addrpath.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_slave_ors.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_interrupt.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_arbiter_logic.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_p2p.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_v46.vhd" into library plb_v46_v1_05_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" into library lmb_v10_v2_00_b
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_bram_if_funcs.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/xor18.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/parity.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/parityenable.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/checkbit_handler.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/correct_one_bit.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/pselect.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/pselect_mask.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/plb_interface.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/axi_interface.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_mux.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_bram_if_cntlr.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/elaborate/lmb_bram_elaborate_v1_00_a/hdl/verilog/lmb_bram_elaborate.v" into library lmb_bram_elaborate_v1_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" into library plbv46_slave_single_v1_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" into library plbv46_slave_single_v1_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" into library plbv46_slave_single_v1_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/hdl/vhdl/baudrate.vhd" into library xps_uartlite_v1_02_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/hdl/vhdl/uartlite_rx.vhd" into library xps_uartlite_v1_02_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/hdl/vhdl/uartlite_tx.vhd" into library xps_uartlite_v1_02_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/hdl/vhdl/uartlite_core.vhd" into library xps_uartlite_v1_02_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/hdl/vhdl/xps_uartlite.vhd" into library xps_uartlite_v1_02_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" into library clock_generator_v4_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/pll_module.vhd" into library clock_generator_v4_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd" into library clock_generator_v4_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd" into library clock_generator_v4_03_a
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" into library clock_generator_0_v4_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_10_a/hdl/vhdl/srl_fifo.vhd" into library mdm_v2_10_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_10_a/hdl/vhdl/jtag_control.vhd" into library mdm_v2_10_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_10_a/hdl/vhdl/mdm_core.vhd" into library mdm_v2_10_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_10_a/hdl/vhdl/mdm.vhd" into library mdm_v2_10_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/upcnt_n.vhd" into library proc_sys_reset_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/lpf.vhd" into library proc_sys_reset_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/sequence.vhd" into library proc_sys_reset_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v3_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/intc_core.vhd" into library xps_intc_v2_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/xps_intc.vhd" into library xps_intc_v2_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" into library interrupt_control_v2_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/upcnt_n.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/shift8.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/iic_pkg.vhd" into library xps_iic_v2_03_a
+WARNING:HDLCompiler:443 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/iic_pkg.vhd" Line 275: Function gpo_bit_used does not always return a value.
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/reg_interface.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/xps_ipif_ssp1.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/iic_control.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/dynamic_master.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/debounce.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/filter.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/iic.vhd" into library xps_iic_v2_03_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/xps_iic.vhd" into library xps_iic_v2_03_a
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/verilog/user_logic.v" into library plb_dac_v1_00_a
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/vhdl/plb_dac.vhd" into library plb_dac_v1_00_a
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_microblaze_0_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_mb_plb_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_ilmb_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_dlmb_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_dlmb_cntlr_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_ilmb_cntlr_wrapper.vhd" into library work
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_lmb_bram_wrapper.v" into library work
+      Resolving module lmb_bram_elaborate
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_rs232_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_clock_generator_0_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_mdm_0_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_proc_sys_reset_0_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_xps_intc_0_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_xps_iic_0_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_0_wrapper.vhd" into library work
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze.v" into library work
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_tb.v" into library work
+Analyzing Verilog file "G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v" into library work
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/pn_microblaze_testbench_tb.v" into library work
+Analyzing Verilog file "G:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "G:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+WARNING:HDLCompiler:746 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/debug.vhd" Line 1975: Range is empty (null range)
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1171: Element index 7 into mem is out of bounds
+
+
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1204: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1210: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1216: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1226: Element index 7 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1232: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1238: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1244: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1250: Element index 39 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1256: Element index 47 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1262: Element index 55 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1268: Element index 63 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1329: Element index 7 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1343: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1358: Element index 7 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1364: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1370: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1376: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1386: Element index 7 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1392: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1398: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1404: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1183: Element index 15 into mem is out of boundsWARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1198: Element index 7 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1416: Element index 47 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1422: Element index 55 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index 63 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 2580: Element index 7 into dopb_buf is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1410: Element index 39 into mem is out of boundsCompleted static elaboration
+Fuse Memory Usage: 265764 KB
+Fuse CPU Usage: 13280 ms
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
+Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
+Compiling module lmb_bram_elaborate
+Compiling module microblaze_lmb_bram_wrapper
+Compiling module user_logic(10,32,2)
+Compiling module IOBUF
+Compiling module microblaze
+Compiling module testbench
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package vcomponents
+Compiling package numeric_std
+Compiling package microblaze_types
+Compiling package microblaze_isa
+Compiling package mmu_types
+Compiling architecture imp of entity interrupt_mode_converter [\interrupt_mode_converter(false,...]
+Compiling architecture muxcy_l_v of entity MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity XORCY [xorcy_default]
+Compiling architecture muxf5_v of entity MUXF5 [muxf5_default]
+Compiling architecture fdr_v of entity FDR [\FDR('0')\]
+Compiling architecture imp of entity PC_Module_gti [\PC_Module_gti(virtex4,true,0,fa...]
+Compiling architecture imp of entity PreFetch_Buffer_gti [\PreFetch_Buffer_gti(true,virtex...]
+Compiling architecture imp of entity carry_and [\carry_and(virtex4)\]
+Compiling architecture imp of entity jump_logic [\jump_logic(virtex4)\]
+Compiling architecture fdre_v of entity FDRE [\FDRE('0')\]
+Compiling architecture imp of entity carry_or [\carry_or(virtex4)\]
+Compiling architecture imp of entity Decode_gti [\Decode_gti(virtex4,true,('0','0...]
+Compiling architecture imp of entity Register_File_gti [\Register_File_gti(virtex4,"yes"...]
+Compiling architecture imp of entity Operand_Select_gti [\Operand_Select_gti(true,virtex4...]
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture lut3_v of entity LUT3 [\LUT3("11110000")(0,7)\]
+Compiling architecture mult_and_v of entity MULT_AND [mult_and_default]
+Compiling architecture lut4_v of entity LUT4 [\LUT4("1010011001111000")(0,15)\]
+Compiling architecture imp of entity ALU_Bit [\ALU_Bit(virtex4,true,false)\]
+Compiling architecture imp of entity ALU_Bit [\ALU_Bit(virtex4,true,true)\]
+Compiling architecture imp of entity ALU [\ALU(0,true,virtex4)\]
+Compiling architecture imp of entity count_leading_zeros [count_leading_zeros_default]
+Compiling architecture imp of entity carry_equal [\carry_equal(virtex4,8)\]
+Compiling architecture imp of entity Shift_Logic_Module_gti [\Shift_Logic_Module_gti(true,tru...]
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling architecture dsp48_v of entity DSP48 [\DSP48(0,"DIRECT",0,0,0,0,"MULT1...]
+Compiling architecture imp of entity dsp_module [\dsp_module(virtex4,18,18,48,0,0...]
+Compiling architecture dsp48_v of entity DSP48 [\DSP48(0,"DIRECT",0,0,0,0,"MULT1...]
+Compiling architecture imp of entity dsp_module [\dsp_module(virtex4,18,18,48,0,1...]
+Compiling architecture dsp48_v of entity DSP48 [\DSP48(1,"DIRECT",1,0,0,0,"MULT1...]
+Compiling architecture imp of entity dsp_module [\dsp_module(virtex4,18,18,48,1,1...]
+Compiling architecture imp of entity mul_unit [\mul_unit(virtex4,true,false)\]
+Compiling architecture imp of entity Barrel_Shifter_gti [\Barrel_Shifter_gti(virtex4,true...]
+Compiling architecture imp of entity WB_Mux_Bit [\WB_Mux_Bit(virtex4,4,3)\]
+Compiling architecture imp of entity WB_Mux [\WB_Mux(virtex4,false,false,fals...]
+Compiling architecture imp of entity Zero_Detect_gti [\Zero_Detect_gti(virtex4)\]
+Compiling architecture imp of entity Byte_Doublet_Handle_gti [\Byte_Doublet_Handle_gti(virtex4...]
+Compiling architecture imp of entity Data_Flow_Logic [\Data_Flow_Logic(virtex4,0,16)\]
+Compiling architecture msr_reg of entity msr_reg_gti [\msr_reg_gti(virtex4,('0','0','0...]
+Compiling architecture imp of entity exception_registers_gti [\exception_registers_gti(virtex4...]
+Compiling architecture imp of entity Fpu [\Fpu(virtex4,0,0,"yes")(1,3)\]
+Compiling architecture imp of entity PVR [\PVR(0,('0','0','0','1','1','1',...]
+Compiling architecture imp of entity Data_Flow_gti [\Data_Flow_gti(32,virtex4,true,0...]
+Compiling architecture imp of entity read_data_mux [\read_data_mux(true,true,false)\]
+Compiling architecture imp of entity DPLB_Interface [\DPLB_Interface(32,false,false)\]
+Compiling architecture imp of entity instr_mux [\instr_mux(virtex4,true,true,fal...]
+Compiling architecture imp of entity IPLB_Interface [\IPLB_Interface(32)\]
+Compiling architecture srl16e_v of entity SRL16E [\SRL16E("0000000000011011")(15,0...]
+Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000000000...]
+Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000000100...]
+Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"111111111...]
+Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"001111111...]
+Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000000000...]
+Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000010000...]
+Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000111100...]
+Compiling architecture srlc16e_v of entity SRLC16E [\SRLC16E("0000000000000000")(0,1...]
+Compiling architecture imp of entity MB_SRLC16E [\MB_SRLC16E("yes","0000000000000...]
+Compiling architecture muxcy_v of entity MUXCY [muxcy_default]
+Compiling architecture imp of entity address_hit [\address_hit(virtex4,true,"yes",...]
+Compiling architecture imp of entity Debug [\Debug(('0','0','0','0','0','0',...]
+Compiling architecture imp of entity MMU [\MMU(virtex4,true,0,0,4,2,false,...]
+Compiling architecture imp of entity MicroBlaze_Core [\MicroBlaze_Core(0,50000000,0,0,...]
+Compiling architecture imp of entity MicroBlaze [\MicroBlaze(0,50000000,0,0,0,0,0...]
+Compiling architecture structure of entity microblaze_microblaze_0_wrapper [microblaze_microblaze_0_wrapper_...]
+Compiling package std_logic_unsigned
+Compiling package proc_common_pkg
+Compiling architecture fds_v of entity FDS [\FDS('1')\]
+Compiling package family_support
+Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(32,2,"virtex4")(1,...]
+Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(4,2,"virtex4")(1,7...]
+Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(3,2,"virtex4")(1,7...]
+Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(16,2,"virtex4")(1,...]
+Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(1,2,"virtex4")(1,7...]
+Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(2,2,"virtex4")(1,7...]
+Compiling architecture implementation of entity plb_addrpath [\plb_addrpath(2,32,32,"virtex4")...]
+Compiling architecture simulation of entity plb_wr_datapath [\plb_wr_datapath(2,32,"virtex4")...]
+Compiling architecture simulation of entity plb_rd_datapath [\plb_rd_datapath(2,32)\]
+Compiling architecture imp of entity or_gate [\or_gate(5,1,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(5,2,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(5,32,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(5,4,true)\]
+Compiling architecture implementation of entity plb_slave_ors [\plb_slave_ors(2,5,32,"virtex4")...]
+Compiling architecture simulation of entity qual_request [qual_request_default]
+Compiling architecture simulation of entity priority_encoder [\priority_encoder(4)\]
+Compiling architecture qual_priority of entity qual_priority [qual_priority_default]
+Compiling architecture simulation of entity pending_priority [\pending_priority(2)\]
+Compiling architecture simulation of entity pend_request [\pend_request(2)\]
+Compiling architecture implementation of entity plb_arb_encoder [\plb_arb_encoder(2,4,true,"virte...]
+Compiling architecture simulation of entity arb_control_sm [\arb_control_sm(2,true,1,0)\]
+Compiling architecture simulation of entity gen_qual_req [\gen_qual_req(2)\]
+Compiling architecture implementation of entity or_bits [\or_bits(2,2,4)\]
+Compiling architecture implementation of entity or_bits [\or_bits(1,1,4)\]
+Compiling architecture implementation of entity or_bits [\or_bits(1,3,4)\]
+Compiling architecture implementation of entity muxed_signals [\muxed_signals(2,4,1,"virtex4")(...]
+Compiling architecture simulation of entity down_counter [\down_counter(4)\]
+Compiling architecture simulation of entity watchdog_timer [\watchdog_timer(4)\]
+Compiling architecture plb_interrupt of entity plb_interrupt [\plb_interrupt('1')\]
+Compiling architecture implementation of entity plb_arbiter_logic [\plb_arbiter_logic(2,5,1,32,32,0...]
+Compiling architecture simulation of entity plb_v46 [\plb_v46(2,5,1,32,32,0,('1','1',...]
+Compiling architecture structure of entity microblaze_mb_plb_wrapper [microblaze_mb_plb_wrapper_defaul...]
+Compiling architecture imp of entity lmb_v10 [\lmb_v10(1,32,32,1)\]
+Compiling architecture structure of entity microblaze_ilmb_wrapper [microblaze_ilmb_wrapper_default]
+Compiling architecture structure of entity microblaze_dlmb_wrapper [microblaze_dlmb_wrapper_default]
+Compiling package lmb_bram_if_funcs
+Compiling architecture imp of entity pselect_mask [\pselect_mask(32,('0','0','0','0...]
+Compiling architecture imp of entity lmb_mux [\lmb_mux(('0','0','0','0','0','0...]
+Compiling architecture imp of entity lmb_bram_if_cntlr [\lmb_bram_if_cntlr("virtex4",('0...]
+Compiling architecture structure of entity microblaze_dlmb_cntlr_wrapper [microblaze_dlmb_cntlr_wrapper_de...]
+Compiling architecture structure of entity microblaze_ilmb_cntlr_wrapper [microblaze_ilmb_cntlr_wrapper_de...]
+Compiling package ipif_pkg
+Compiling package attributes
+Compiling package std_logic_misc
+Compiling architecture imp of entity baudrate [\baudrate(326)\]
+Compiling architecture behavioral of entity dynshreg_i_f [\dynshreg_i_f(16,1,"0","virtex4"...]
+Compiling architecture imp of entity cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(5,"virtex...]
+Compiling architecture behavioral of entity dynshreg_f [\dynshreg_f(16,8,"virtex4")(1,7)...]
+Compiling architecture imp of entity srl_fifo_rbu_f [\srl_fifo_rbu_f(8,16,"virtex4")(...]
+Compiling architecture imp of entity srl_fifo_f [\srl_fifo_f(8,16,"virtex4")(1,7)...]
+Compiling architecture imp of entity uartlite_rx [\uartlite_rx(8,0,0,"virtex4")(1,...]
+Compiling architecture behavioral of entity dynshreg_i_f [\dynshreg_i_f(16,1,"100000000000...]
+Compiling architecture imp of entity uartlite_tx [\uartlite_tx(8,0,0,"virtex4")(1,...]
+Compiling architecture imp of entity uartlite_core [\uartlite_core(8,50000000,9600,0...]
+Compiling architecture imp of entity pselect_f [\pselect_f(28,32,('1','0','0','0...]
+Compiling architecture imp of entity pselect_f [\pselect_f(2,2,('0','0'),"nofami...]
+Compiling architecture imp of entity pselect_f [\pselect_f(2,2,('0','1'),"nofami...]
+Compiling architecture imp of entity pselect_f [\pselect_f(2,2,('1','0'),"nofami...]
+Compiling architecture imp of entity pselect_f [\pselect_f(2,2,('1','1'),"nofami...]
+Compiling architecture implementation of entity or_muxcy [\or_muxcy(1)\]
+Compiling architecture imp of entity or_gate128 [\or_gate128(1,1,false)\]
+Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
+Compiling architecture imp of entity counter_f [\counter_f(8,"nofamily")(1,8)\]
+Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
+Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
+Compiling architecture imp of entity xps_uartlite [\xps_uartlite("virtex4",50000000...]
+Compiling architecture structure of entity microblaze_rs232_wrapper [microblaze_rs232_wrapper_default]
+Compiling architecture dcm_adv_clock_divide_by_2_v of entity dcm_adv_clock_divide_by_2 [dcm_adv_clock_divide_by_2_defaul...]
+Compiling architecture dcm_adv_maximum_period_check_v of entity dcm_adv_maximum_period_check [\dcm_adv_maximum_period_check(" ...]
+Compiling architecture dcm_adv_maximum_period_check_v of entity dcm_adv_maximum_period_check [\dcm_adv_maximum_period_check(" ...]
+Compiling architecture dcm_adv_clock_lost_v of entity dcm_adv_clock_lost [dcm_adv_clock_lost_default]
+Compiling architecture dcm_adv_v of entity DCM_ADV [\DCM_ADV(true," ",true,false,2.0...]
+Compiling architecture struct of entity dcm_module [\dcm_module("LOW","LOW",true,fal...]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture structure of entity clock_generator [\clock_generator("virtex4","4vsx...]
+Compiling architecture structure of entity microblaze_clock_generator_0_wrapper [microblaze_clock_generator_0_wra...]
+Compiling architecture bscan_virtex4_v of entity BSCAN_VIRTEX4 [\BSCAN_VIRTEX4(2)\]
+Compiling architecture imp of entity pselect [\pselect(16,32,('1','0','0','0',...]
+Compiling architecture fdc_1_v of entity FDC_1 [\FDC_1('0')\]
+Compiling architecture fdre_1_v of entity FDRE_1 [\FDRE_1('0')\]
+Compiling architecture fdrse_v of entity FDRSE [\FDRSE('0')\]
+Compiling architecture imp of entity SRL_FIFO [\SRL_FIFO(8,16)\]
+Compiling architecture imp of entity JTAG_CONTROL [\JTAG_CONTROL(1,0,1,8,1)\]
+Compiling architecture imp of entity MDM_Core [\MDM_Core(0,('1','0','0','0','0'...]
+Compiling architecture imp of entity MDM [\MDM("virtex4",2,0,0,1,('1','0',...]
+Compiling architecture structure of entity microblaze_mdm_0_wrapper [microblaze_mdm_0_wrapper_default]
+Compiling architecture imp of entity upcnt_n [\upcnt_n(4)\]
+Compiling architecture srl16_v of entity SRL16 [\SRL16("1111111111111111")(0,15)...]
+Compiling architecture imp of entity lpf [\lpf(4,4,'0','1')\]
+Compiling architecture imp of entity upcnt_n [\upcnt_n(6)\]
+Compiling architecture imp of entity sequence [sequence_default]
+Compiling architecture imp of entity proc_sys_reset [\proc_sys_reset(4,4,'0','1',1,1,...]
+Compiling architecture structure of entity microblaze_proc_sys_reset_0_wrapper [microblaze_proc_sys_reset_0_wrap...]
+Compiling architecture imp of entity intc_core [\intc_core(32,1,('1','1','1','1'...]
+Compiling architecture imp of entity pselect_f [\pselect_f(27,32,('1','0','0','0...]
+Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('0','0','0'),"no...]
+Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('0','0','1'),"no...]
+Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('0','1','0'),"no...]
+Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('0','1','1'),"no...]
+Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('1','0','0'),"no...]
+Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('1','0','1'),"no...]
+Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('1','1','0'),"no...]
+Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('1','1','1'),"no...]
+Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
+Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
+Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
+Compiling architecture imp of entity xps_intc [\xps_intc("virtex4",('1','0','0'...]
+Compiling architecture structure of entity microblaze_xps_intc_0_wrapper [microblaze_xps_intc_0_wrapper_de...]
+Compiling package iic_pkg
+Compiling architecture imp of entity pselect_f [\pselect_f(26,32,('1','0','0','0...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','0','0','0')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','0','0','1')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','0','1','0')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','0','1','1')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','1','0','0')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','1','0','1')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','1','1','0')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','1','1','1')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','0','0','0')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','0','0','1')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','0','1','0')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','0','1','1')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','1','0','0')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','1','0','1')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','1','1','0')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','1','1','1')...]
+Compiling architecture imp of entity pselect_f [\pselect_f(30,32,('1','0','0','0...]
+Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','0','0','0...]
+Compiling architecture implementation of entity or_muxcy [\or_muxcy(3)\]
+Compiling architecture imp of entity or_gate128 [\or_gate128(3,1,false)\]
+Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
+Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
+Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
+Compiling architecture implementation of entity interrupt_control [\interrupt_control(16,1,(3,3,3,3...]
+Compiling architecture implementation of entity soft_reset [\soft_reset(32,4)\]
+Compiling architecture imp of entity xps_ipif_ssp1 [\xps_ipif_ssp1(('1','0','0','0',...]
+Compiling architecture implementation of entity or_muxcy [\or_muxcy(10)\]
+Compiling architecture imp of entity reg_interface [\reg_interface(true,4,true,4,0,1...]
+Compiling architecture imp of entity debounce [\debounce(5,'1')\]
+Compiling architecture imp of entity filter [\filter(5,5)\]
+Compiling architecture imp of entity upcnt_n [\upcnt_n(9)\]
+Compiling architecture imp of entity shift8 [shift8_default]
+Compiling architecture imp of entity upcnt_n [\upcnt_n(4)\]
+Compiling architecture imp of entity iic_control [\iic_control(50000000,100000,0)\]
+Compiling architecture imp of entity SRL_FIFO [\SRL_FIFO(8,4,false)\]
+Compiling architecture imp of entity dynamic_master [dynamic_master_default]
+Compiling architecture imp of entity SRL_FIFO [\SRL_FIFO(2,4,false)\]
+Compiling architecture imp of entity iic [\iic(('1','0','0','0','0','0','0...]
+Compiling architecture imp of entity xps_iic [\xps_iic("virtex4",('1','0','0',...]
+Compiling architecture structure of entity microblaze_xps_iic_0_wrapper [microblaze_xps_iic_0_wrapper_def...]
+Compiling package vl_types
+Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','1','0','0...]
+Compiling architecture imp of entity pselect_f [\pselect_f(1,1,('0'),"nofamily")...]
+Compiling architecture imp of entity pselect_f [\pselect_f(1,1,('1'),"nofamily")...]
+Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','1','0','0...]
+Compiling architecture implementation of entity or_muxcy [\or_muxcy(2)\]
+Compiling architecture imp of entity or_gate128 [\or_gate128(2,1,false)\]
+Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
+Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
+Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
+Compiling architecture imp of entity plb_dac [\plb_dac(10,('1','1','0','0','1'...]
+Compiling architecture structure of entity microblaze_plb_dac_0_wrapper [microblaze_plb_dac_0_wrapper_def...]
+Time Resolution for simulation is 100fs.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:861 - Failed to link the design
+
+Process "Simulate Behavioral Model" failed

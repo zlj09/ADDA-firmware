@@ -27,9 +27,12 @@
 # Top level modules:
 # 	glbl
 # vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.tb_user_logic glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
 # Loading work.tb_user_logic(fast)
 # Loading work.user_logic(fast)
 # Loading work.glbl(fast)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
+quit

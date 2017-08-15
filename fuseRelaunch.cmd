@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_isim_beh.exe" -prj "F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_beh.prj" "work.testbench" "work.glbl" 

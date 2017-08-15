@@ -34,25 +34,33 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xparameters.h"
+#include "xbasic_types.h"
+#include "xil_io.h"
 
 void print(char *str);
 
 int main()
 {
-	unsigned int i, delay_cnt, *dac_ctl, *dac_data;
-
-	dac_ctl = (unsigned int*)XPAR_XPS_IIC_0_BASEADDR;
-	dac_data = (unsigned int*)(XPAR_XPS_IIC_0_BASEADDR + 4);
-
     init_platform();
 
     print("Hello World\n\r");
 
-    *dac_ctl = 0x00000001;
-    *dac_data = 0;
-    for (i = 0; i < (1 << 10) - 1 ; i++)
+	u32 i, delay_cnt;
+	//u32 *dac_ctl, *dac_data;
+
+	//dac_ctl = (u32*)XPAR_PLB_DAC_0_BASEADDR;
+	//dac_data = (u32*)(XPAR_PLB_DAC_0_BASEADDR + 4);
+
+    //*dac_ctl = 0x00000001;
+    //*dac_data = 0;
+	Xil_Out32(XPAR_PLB_DAC_0_BASEADDR, 0x00000001);
+	Xil_Out32(XPAR_PLB_DAC_0_BASEADDR + 4, 0);
+    i = 0;
+    while(1)
     {
-    	*dac_data = i;
+    	if (++i == (1 << 10))
+    		i = 0;
+    	Xil_Out32(XPAR_PLB_DAC_0_BASEADDR + 4, i);
     	for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
     }
 

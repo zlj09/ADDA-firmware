@@ -1,0 +1,42 @@
+ISim log file
+Running: F:\Programs\Verilog\FPGA_Group\test_br0101\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_isim_beh.wdb 
+ISim P.20131013 (signature 0x8ef4fb42)
+This is a Full version of ISim.
+Time resolution is 100 fs
+# onerror resume
+# wave add /
+# variable tbpath /testbench/dut
+# variable xcmdc 1
+# variable xcmds 1
+# source microblaze_setup.tcl
+# w_top
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 fs, Instance /testbench/dut/microblaze_0/microblaze_0/MicroBlaze_Core_I/performance/Decode_I/PC_Module_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs, Instance /testbench/dut/microblaze_0/microblaze_0/MicroBlaze_Core_I/performance/Decode_I/PreFetch_Buffer_I1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs, Instance /testbench/dut/microblaze_0/microblaze_0/MicroBlaze_Core_I/performance/Data_Flow_I/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 fs, Instance /testbench/dut/microblaze_0/microblaze_0/MicroBlaze_Core_I/performance/Data_Flow_I/Register_File_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs, Instance /testbench/dut/microblaze_0/microblaze_0/MicroBlaze_Core_I/performance/Data_Flow_I/Register_File_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs, Instance /testbench/dut/microblaze_0/microblaze_0/MicroBlaze_Core_I/performance/Data_Flow_I/Register_File_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs, Instance /testbench/dut/mb_plb/mb_plb/gen_shared/I_PLB_ARBITER_LOGIC/I_WDT/WDT_TIMEOUT_CNTR_I/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 fs, Instance /testbench/dut/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs, Instance /testbench/dut/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs, Instance /testbench/dut/RS232/RS232/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs, Instance /testbench/dut/RS232/RS232/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 fs: Note: xps_iic configured for SCL inertial delay of 5 clocks. (/testbench/dut/xps_iic_0/xps_iic_0/X_IIC/FILTER_I/).
+at 0 fs: Note: xps_iic configured for SDA inertial delay of 5 clocks. (/testbench/dut/xps_iic_0/xps_iic_0/X_IIC/FILTER_I/).
+Finished circuit initialization process.
+at 0 fs, Instance /testbench/dut/microblaze_0/microblaze_0/MicroBlaze_Core_I/performance/Data_Flow_I/MUL_Unit_I/use_hw_mul/using_dsp48_architectures/dsp_module_I1/using_dsp48/DSP48_I1/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 430 ns(14), Instance /testbench/dut/mb_plb/mb_plb/gen_shared/I_PLB_ARBITER_LOGIC/I_WDT/WDT_TIMEOUT_CNTR_I/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 430100 ps(2), Instance /testbench/dut/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 430100 ps(2), Instance /testbench/dut/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 430100 ps(2), Instance /testbench/dut/RS232/RS232/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 430100 ps(2), Instance /testbench/dut/RS232/RS232/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 490 ns(13), Instance /testbench/dut/RS232/RS232/PLBV46_I/I_SLAVE_ATTACHMENT/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 490 ns(13), Instance /testbench/dut/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 490 ns(13), Instance /testbench/dut/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_PLB_SLAVE_IF/I_SLAVE_ATTACHMENT/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 490 ns(13), Instance /testbench/dut/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# run all
+Stopped at time : 29550 ns : File "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/alu_bit.vhd" Line 216
+# run all
+Stopped at time : 26115610 ns : File "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/hdl/vhdl/baudrate.vhd" Line 165

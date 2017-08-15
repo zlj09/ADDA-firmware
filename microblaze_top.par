@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-IDEA-PC::  Wed Aug 09 10:59:36 2017
+IDEA-PC::  Mon Aug 14 18:25:44 2017
 
 par -w -intstyle ise -ol high -t 1 microblaze_top_map.ncd microblaze_top.ncd
 microblaze_top.pcf 
@@ -34,7 +34,7 @@ Device Utilization Summary:
 
    Number of OLOGICs                         1 out of 640     1%
    Number of RAMB16s                        32 out of 320    10%
-   Number of Slices                       2593 out of 24576  10%
+   Number of Slices                       2579 out of 24576  10%
       Number of SLICEMs                    276 out of 12288   2%
 
 
@@ -44,60 +44,60 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 12 secs 
-Finished initial Timing Analysis.  REAL time: 12 secs 
+Starting initial Timing Analysis.  REAL time: 13 secs 
+Finished initial Timing Analysis.  REAL time: 13 secs 
 
 WARNING:Par:288 - The signal microblaze_i/dlmb_LMB_ABus<31> has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal microblaze_i/dlmb_LMB_ABus<30> has no load.  PAR will not attempt to route this signal.
 
 Starting Placer
-Total REAL time at the beginning of Placer: 12 secs 
+Total REAL time at the beginning of Placer: 13 secs 
 Total CPU  time at the beginning of Placer: 11 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:36158a) REAL time: 14 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:358451) REAL time: 17 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:36158a) REAL time: 14 secs 
+Phase 2.7  Design Feasibility Check (Checksum:358451) REAL time: 17 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:25d19dba) REAL time: 14 secs 
+Phase 3.31  Local Placement Optimization (Checksum:25d10c81) REAL time: 17 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-.............
-Phase 4.2  Initial Clock and IO Placement (Checksum:ee10d5fb) REAL time: 15 secs 
+...........
+Phase 4.2  Initial Clock and IO Placement (Checksum:ee1044c2) REAL time: 18 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:ee10d5fb) REAL time: 15 secs 
+Phase 5.36  Local Placement Optimization (Checksum:ee1044c2) REAL time: 18 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:ee10d5fb) REAL time: 15 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:ee1044c2) REAL time: 18 secs 
 
 Phase 7.3  Local Placement Optimization
-..............
-Phase 7.3  Local Placement Optimization (Checksum:3bbb2eb2) REAL time: 16 secs 
+.............
+Phase 7.3  Local Placement Optimization (Checksum:561b1f14) REAL time: 19 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:3bbb2eb2) REAL time: 16 secs 
+Phase 8.5  Local Placement Optimization (Checksum:561b1f14) REAL time: 19 secs 
 
 Phase 9.8  Global Placement
-......................................................................................................................................................................................................................
-......................................
-Phase 9.8  Global Placement (Checksum:7b31d8fe) REAL time: 19 secs 
+................................................................................................................................................................................................................
+..................................................................................
+Phase 9.8  Global Placement (Checksum:8e4bdced) REAL time: 23 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:7b31d8fe) REAL time: 19 secs 
+Phase 10.5  Local Placement Optimization (Checksum:8e4bdced) REAL time: 23 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:80f1b5da) REAL time: 24 secs 
+Phase 11.18  Placement Optimization (Checksum:8a6741bd) REAL time: 28 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:80f1b5da) REAL time: 24 secs 
+Phase 12.5  Local Placement Optimization (Checksum:8a6741bd) REAL time: 28 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:80f1b5da) REAL time: 24 secs 
+Phase 13.34  Placement Validation (Checksum:8a6741bd) REAL time: 28 secs 
 
-Total REAL time to Placer completion: 25 secs 
+Total REAL time to Placer completion: 28 secs 
 Total CPU  time to Placer completion: 22 secs 
 Writing design to file microblaze_top.ncd
 
@@ -106,29 +106,29 @@ Writing design to file microblaze_top.ncd
 Starting Router
 
 
-Phase  1  : 20189 unrouted;      REAL time: 28 secs 
+Phase  1  : 20250 unrouted;      REAL time: 32 secs 
 
-Phase  2  : 17677 unrouted;      REAL time: 28 secs 
+Phase  2  : 17729 unrouted;      REAL time: 32 secs 
 
-Phase  3  : 5922 unrouted;      REAL time: 30 secs 
+Phase  3  : 5955 unrouted;      REAL time: 35 secs 
 
-Phase  4  : 5922 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
+Phase  4  : 5955 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 38 secs 
 
 Updating file: microblaze_top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 38 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:117, Component Switching Limit:0)     REAL time: 43 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 38 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:117, Component Switching Limit:0)     REAL time: 43 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 38 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:117, Component Switching Limit:0)     REAL time: 43 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 38 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:117, Component Switching Limit:0)     REAL time: 43 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 38 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 43 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 39 secs 
-Total REAL time to Router completion: 39 secs 
-Total CPU time to Router completion: 35 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Total REAL time to Router completion: 44 secs 
+Total CPU time to Router completion: 36 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -147,19 +147,19 @@ Generating Clock Report
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_i/clk_50_ |              |      |      |            |             |
-|             0000MHz | BUFGCTRL_X0Y0| No   | 1669 |  0.651     |  3.262      |
+|             0000MHz | BUFGCTRL_X0Y0| No   | 1678 |  0.846     |  3.418      |
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_i/mdm_0/D |              |      |      |            |             |
-|            bg_Clk_1 |BUFGCTRL_X0Y31| No   |  115 |  0.510     |  3.088      |
+|            bg_Clk_1 |BUFGCTRL_X0Y31| No   |  115 |  0.455     |  3.063      |
 +---------------------+--------------+------+------+------------+-------------+
 |fpga_0_clk_1_sys_clk |              |      |      |            |             |
-|          _pin_IBUFG |         Local|      |    4 |  0.157     |  2.692      |
+|          _pin_IBUFG |         Local|      |    4 |  0.704     |  2.646      |
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_i/mdm_0/D |              |      |      |            |             |
-|         bg_Update_1 |         Local|      |   28 |  1.675     |  2.781      |
+|         bg_Update_1 |         Local|      |   28 |  2.058     |  3.152      |
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_i/RS232_I |              |      |      |            |             |
-|            nterrupt |         Local|      |    1 |  0.000     |  0.945      |
+|            nterrupt |         Local|      |    1 |  0.000     |  1.072      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -179,14 +179,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_microblaze_i_clock_generator_0_clock_g | SETUP       |     7.302ns|    12.698ns|       0|           0
-  enerator_0_SIG_DCM0_CLK0_0 = PERIOD       | HOLD        |     0.455ns|            |       0|           0
+  TS_microblaze_i_clock_generator_0_clock_g | SETUP       |     6.784ns|    13.216ns|       0|           0
+  enerator_0_SIG_DCM0_CLK0_0 = PERIOD       | HOLD        |     0.473ns|            |       0|           0
      TIMEGRP         "microblaze_i_clock_ge |             |            |            |        |            
   nerator_0_clock_generator_0_SIG_DCM0_CLK0 |             |            |            |        |            
   _0"         TS_sys_clk_pin HIGH 50%       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    18.813ns|     1.187ns|       0|           0
-  pin" 50 MHz HIGH 50%                      | HOLD        |     0.538ns|            |       0|           0
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    17.482ns|     2.518ns|       0|           0
+  pin" 50 MHz HIGH 50%                      | HOLD        |     0.516ns|            |       0|           0
                                             | MINPERIOD   |    13.334ns|     6.666ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
 
@@ -201,8 +201,8 @@ Derived Constraints for TS_sys_clk_pin
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk_pin                 |     20.000ns|      6.666ns|     12.698ns|            0|            0|            3|       360166|
-| TS_microblaze_i_clock_generato|     20.000ns|     12.698ns|          N/A|            0|            0|       360166|            0|
+|TS_sys_clk_pin                 |     20.000ns|      6.666ns|     13.216ns|            0|            0|            3|       360215|
+| TS_microblaze_i_clock_generato|     20.000ns|     13.216ns|          N/A|            0|            0|       360215|            0|
 | r_0_clock_generator_0_SIG_DCM0|             |             |             |             |             |             |             |
 | _CLK0_0                       |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -216,10 +216,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 44 secs 
-Total CPU time to PAR completion: 40 secs 
+Total REAL time to PAR completion: 50 secs 
+Total CPU time to PAR completion: 41 secs 
 
-Peak Memory Usage:  762 MB
+Peak Memory Usage:  761 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.
