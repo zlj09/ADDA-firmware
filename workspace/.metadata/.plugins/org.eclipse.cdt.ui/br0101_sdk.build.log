@@ -1,4 +1,4 @@
-19:45:04 **** Auto Build of configuration Debug for project br0101_sdk ****
+13:50:04 **** Auto Build of configuration Debug for project br0101_sdk ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: MicroBlaze gcc compiler
@@ -7,13 +7,13 @@ Finished building: ../src/helloworld.c
  
 Building target: br0101_sdk.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_sdk_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101_sdk.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_sdk_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101_sdk.elf"  ./src/helloworld.o ./src/platform.o ./src/test_plb_dac.o ./src/test_plb_dac_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: br0101_sdk.elf
  
 Invoking: MicroBlaze Print Size
 mb-size br0101_sdk.elf  |tee "br0101_sdk.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2518	    308	   2084	   4910	   132e	br0101_sdk.elf
+   2402	    308	   2090	   4800	   12c0	br0101_sdk.elf
 Finished building: br0101_sdk.elf.size
  
 Invoking: Xilinx ELF Check
@@ -30,5 +30,5 @@ elfcheck passed.
 Finished building: br0101_sdk.elf.elfcheck
  
 
-19:45:08 Build Finished (took 4s.532ms)
+13:50:11 Build Finished (took 7s.375ms)
 

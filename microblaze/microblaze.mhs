@@ -19,8 +19,6 @@
  PORT fpga_0_RS232_TX_pin = fpga_0_RS232_TX_pin, DIR = O
  PORT fpga_0_clk_1_sys_clk_pin = CLK_S, DIR = I, SIGIS = CLK, CLK_FREQ = 50000000
  PORT fpga_0_rst_1_sys_rst_pin = sys_rst_s, DIR = I, SIGIS = RST, RST_POLARITY = 0
- PORT xps_iic_0_Sda_pin = xps_iic_0_Sda, DIR = IO
- PORT xps_iic_0_Scl_pin = xps_iic_0_Scl, DIR = IO
  PORT plb_dac_0_S_Data_pin = plb_dac_0_S_Data, DIR = O, VEC = [0:9]
  PORT plb_dac_0_S_DCLKIO_pin = plb_dac_0_S_DCLKIO, DIR = O
  PORT plb_dac_0_S_Clkout_pin = plb_dac_0_S_Clkout, DIR = O
@@ -153,16 +151,6 @@ BEGIN xps_intc
  BUS_INTERFACE SPLB = mb_plb
  PORT Intr = RS232_Interrupt
  PORT Irq = microblaze_0_Interrupt
-END
-
-BEGIN xps_iic
- PARAMETER INSTANCE = xps_iic_0
- PARAMETER HW_VER = 2.03.a
- PARAMETER C_BASEADDR = 0x81600000
- PARAMETER C_HIGHADDR = 0x8160ffff
- BUS_INTERFACE SPLB = mb_plb
- PORT Sda = xps_iic_0_Sda
- PORT Scl = xps_iic_0_Scl
 END
 
 BEGIN plb_dac

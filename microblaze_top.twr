@@ -35,14 +35,14 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
  Minimum period is   6.666ns.
 --------------------------------------------------------------------------------
 
-Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti (SLICE_X49Y104.BY), 1 path
+Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti (SLICE_X36Y129.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     17.482ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     16.683ns (requirement - (data path - clock path skew + uncertainty))
   Source:               microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (FF)
   Destination:          microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti (FF)
   Requirement:          20.000ns
-  Data Path Delay:      2.518ns (Levels of Logic = 0)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      1.900ns (Levels of Logic = 0)
+  Clock Path Skew:      -1.417ns (0.119 - 1.536)
   Source Clock:         fpga_0_clk_1_sys_clk_pin_IBUFG rising at 0.000ns
   Destination Clock:    fpga_0_clk_1_sys_clk_pin_IBUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
@@ -51,25 +51,25 @@ Slack (setup path):     17.482ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X48Y108.YQ     Tcko                  0.360   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
+    SLICE_X28Y139.YQ     Tcko                  0.360   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2
-    SLICE_X49Y104.BY     net (fanout=1)        1.866   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
-    SLICE_X49Y104.CLK    Tdick                 0.292   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti
+    SLICE_X36Y129.BY     net (fanout=1)        1.260   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
+    SLICE_X36Y129.CLK    Tdick                 0.280   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti
     -------------------------------------------------  ---------------------------
-    Total                                      2.518ns (0.652ns logic, 1.866ns route)
-                                                       (25.9% logic, 74.1% route)
+    Total                                      1.900ns (0.640ns logic, 1.260ns route)
+                                                       (33.7% logic, 66.3% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (SLICE_X48Y108.BY), 1 path
+Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (SLICE_X28Y139.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     19.048ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     18.529ns (requirement - (data path - clock path skew + uncertainty))
   Source:               microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 (FF)
   Destination:          microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      0.941ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.011ns (0.108 - 0.119)
+  Data Path Delay:      1.389ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.082ns (0.867 - 0.949)
   Source Clock:         fpga_0_clk_1_sys_clk_pin_IBUFG rising at 0.000ns
   Destination Clock:    fpga_0_clk_1_sys_clk_pin_IBUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
@@ -78,18 +78,18 @@ Slack (setup path):     19.048ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X49Y109.XQ     Tcko                  0.340   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
+    SLICE_X29Y145.XQ     Tcko                  0.340   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1
-    SLICE_X48Y108.BY     net (fanout=1)        0.321   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
-    SLICE_X48Y108.CLK    Tdick                 0.280   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
+    SLICE_X28Y139.BY     net (fanout=1)        0.769   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
+    SLICE_X28Y139.CLK    Tdick                 0.280   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2
     -------------------------------------------------  ---------------------------
-    Total                                      0.941ns (0.620ns logic, 0.321ns route)
-                                                       (65.9% logic, 34.1% route)
+    Total                                      1.389ns (0.620ns logic, 0.769ns route)
+                                                       (44.6% logic, 55.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 (SLICE_X49Y109.BX), 1 path
+Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 (SLICE_X29Y145.BX), 1 path
 --------------------------------------------------------------------------------
 Slack (setup path):     19.064ns (requirement - (data path - clock path skew + uncertainty))
   Source:               microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_0 (FF)
@@ -105,10 +105,10 @@ Slack (setup path):     19.064ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X49Y109.YQ     Tcko                  0.340   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
+    SLICE_X29Y145.YQ     Tcko                  0.340   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_0
-    SLICE_X49Y109.BX     net (fanout=1)        0.315   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<0>
-    SLICE_X49Y109.CLK    Tdick                 0.281   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
+    SLICE_X29Y145.BX     net (fanout=1)        0.315   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<0>
+    SLICE_X29Y145.CLK    Tdick                 0.281   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1
     -------------------------------------------------  ---------------------------
     Total                                      0.936ns (0.621ns logic, 0.315ns route)
@@ -119,34 +119,7 @@ Slack (setup path):     19.064ns (requirement - (data path - clock path skew + u
 Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (SLICE_X48Y108.BY), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.516ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 (FF)
-  Destination:          microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.527ns (Levels of Logic = 0)
-  Clock Path Skew:      0.011ns (0.119 - 0.108)
-  Source Clock:         fpga_0_clk_1_sys_clk_pin_IBUFG rising at 20.000ns
-  Destination Clock:    fpga_0_clk_1_sys_clk_pin_IBUFG rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 to microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X49Y109.XQ     Tcko                  0.313   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
-                                                       microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1
-    SLICE_X48Y108.BY     net (fanout=1)        0.295   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
-    SLICE_X48Y108.CLK    Tckdi       (-Th)     0.081   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
-                                                       microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2
-    -------------------------------------------------  ---------------------------
-    Total                                      0.527ns (0.232ns logic, 0.295ns route)
-                                                       (44.0% logic, 56.0% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 (SLICE_X49Y109.BX), 1 path
+Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 (SLICE_X29Y145.BX), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.523ns (requirement - (clock path skew + uncertainty - data path))
   Source:               microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_0 (FF)
@@ -162,10 +135,10 @@ Slack (hold path):      0.523ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X49Y109.YQ     Tcko                  0.313   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
+    SLICE_X29Y145.YQ     Tcko                  0.313   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_0
-    SLICE_X49Y109.BX     net (fanout=1)        0.289   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<0>
-    SLICE_X49Y109.CLK    Tckdi       (-Th)     0.079   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
+    SLICE_X29Y145.BX     net (fanout=1)        0.289   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<0>
+    SLICE_X29Y145.CLK    Tckdi       (-Th)     0.079   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1
     -------------------------------------------------  ---------------------------
     Total                                      0.523ns (0.234ns logic, 0.289ns route)
@@ -173,14 +146,41 @@ Slack (hold path):      0.523ns (requirement - (clock path skew + uncertainty - 
 
 --------------------------------------------------------------------------------
 
-Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti (SLICE_X49Y104.BY), 1 path
+Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (SLICE_X28Y139.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.265ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      0.871ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 (FF)
+  Destination:          microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.939ns (Levels of Logic = 0)
+  Clock Path Skew:      0.068ns (0.942 - 0.874)
+  Source Clock:         fpga_0_clk_1_sys_clk_pin_IBUFG rising at 20.000ns
+  Destination Clock:    fpga_0_clk_1_sys_clk_pin_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1 to microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y145.XQ     Tcko                  0.313   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
+                                                       microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_1
+    SLICE_X28Y139.BY     net (fanout=1)        0.707   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<1>
+    SLICE_X28Y139.CLK    Tckdi       (-Th)     0.081   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
+                                                       microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.939ns (0.232ns logic, 0.707ns route)
+                                                       (24.7% logic, 75.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti (SLICE_X36Y129.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      2.693ns (requirement - (clock path skew + uncertainty - data path))
   Source:               microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2 (FF)
   Destination:          microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.980ns (Levels of Logic = 0)
-  Clock Path Skew:      0.715ns (0.823 - 0.108)
+  Data Path Delay:      1.409ns (Levels of Logic = 0)
+  Clock Path Skew:      -1.284ns (0.129 - 1.413)
   Source Clock:         fpga_0_clk_1_sys_clk_pin_IBUFG rising at 20.000ns
   Destination Clock:    fpga_0_clk_1_sys_clk_pin_IBUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
@@ -189,14 +189,14 @@ Slack (hold path):      1.265ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X48Y108.YQ     Tcko                  0.331   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
+    SLICE_X28Y139.YQ     Tcko                  0.331   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_2
-    SLICE_X49Y104.BY     net (fanout=1)        1.717   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
-    SLICE_X49Y104.CLK    Tckdi       (-Th)     0.068   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti
+    SLICE_X36Y129.BY     net (fanout=1)        1.159   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay<2>
+    SLICE_X36Y129.CLK    Tckdi       (-Th)     0.081   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti
                                                        microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti
     -------------------------------------------------  ---------------------------
-    Total                                      1.980ns (0.263ns logic, 1.717ns route)
-                                                       (13.3% logic, 86.7% route)
+    Total                                      1.409ns (0.250ns logic, 1.159ns route)
+                                                       (17.7% logic, 82.3% route)
 
 --------------------------------------------------------------------------------
 
@@ -235,21 +235,21 @@ TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0_0 = PERIOD
 TS_sys_clk_pin HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 360215 paths analyzed, 11956 endpoints analyzed, 0 failing endpoints
+ 353001 paths analyzed, 10500 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  13.216ns.
+ Minimum period is  12.938ns.
 --------------------------------------------------------------------------------
 
-Paths for end point microblaze_i/lmb_bram/lmb_bram/ramb16_21 (RAMB16_X1Y1.ADDRB3), 113 paths
+Paths for end point microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0 (SLICE_X12Y138.G1), 2 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     6.784ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_21 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      13.156ns (Levels of Logic = 5)
+Slack (setup path):     6.347ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (FF)
+  Destination:          microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.593ns (Levels of Logic = 2)
   Clock Path Skew:      0.000ns
   Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
+  Destination Clock:    microblaze_i/clk_50_0000MHz falling at 10.000ns
   Clock Uncertainty:    0.060ns
 
   Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -258,45 +258,32 @@ Slack (setup path):     6.784ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.120ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_21
+  Maximum Data Path: microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS to microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y47.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0
-    SLICE_X27Y24.F3      net (fanout=11)       2.403   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-    SLICE_X27Y24.X       Tilo                  0.194   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI21
-    SLICE_X16Y25.F2      net (fanout=1)        1.145   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-    SLICE_X16Y25.COUT    Topcyf                0.465   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X23Y54.F1      net (fanout=49)       3.158   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X23Y54.X       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<58>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<26>1
-    RAMB16_X1Y1.ADDRB3   net (fanout=33)       4.323   microblaze_i/ilmb_LMB_ABus<26>
-    RAMB16_X1Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_21
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_21
+    SLICE_X20Y158.XQ     Tcko                  0.360   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/flop_q_chain<4>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS
+    SLICE_X14Y128.G1     net (fanout=3)        1.759   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/flop_q_chain<4>
+    SLICE_X14Y128.Y      Tilo                  0.195   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<4>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1
+    SLICE_X12Y138.G1     net (fanout=5)        1.017   microblaze_i/plb_dac_0/plb_dac_0/rst_Bus2IP_Reset
+    SLICE_X12Y138.CLK    Tgck                  0.262   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<1>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0_rstpot
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0
     -------------------------------------------------  ---------------------------
-    Total                                     13.156ns (2.127ns logic, 11.029ns route)
-                                                       (16.2% logic, 83.8% route)
+    Total                                      3.593ns (0.817ns logic, 2.776ns route)
+                                                       (22.7% logic, 77.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.618ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_21 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      12.322ns (Levels of Logic = 5)
+Slack (setup path):     6.544ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST (FF)
+  Destination:          microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.396ns (Levels of Logic = 2)
   Clock Path Skew:      0.000ns
   Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
+  Destination Clock:    microblaze_i/clk_50_0000MHz falling at 10.000ns
   Clock Uncertainty:    0.060ns
 
   Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -305,45 +292,35 @@ Slack (setup path):     7.618ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.120ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_21
+  Maximum Data Path: microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST to microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X34Y35.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_jump
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0
-    SLICE_X27Y24.F1      net (fanout=14)       1.569   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_jump
-    SLICE_X27Y24.X       Tilo                  0.194   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI21
-    SLICE_X16Y25.F2      net (fanout=1)        1.145   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-    SLICE_X16Y25.COUT    Topcyf                0.465   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X23Y54.F1      net (fanout=49)       3.158   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X23Y54.X       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<58>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<26>1
-    RAMB16_X1Y1.ADDRB3   net (fanout=33)       4.323   microblaze_i/ilmb_LMB_ABus<26>
-    RAMB16_X1Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_21
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_21
+    SLICE_X25Y141.YQ     Tcko                  0.340   microblaze_i/mb_plb_SPLB_Rst<3>
+                                                       microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST
+    SLICE_X14Y128.G4     net (fanout=50)       1.582   microblaze_i/mb_plb_SPLB_Rst<3>
+    SLICE_X14Y128.Y      Tilo                  0.195   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<4>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1
+    SLICE_X12Y138.G1     net (fanout=5)        1.017   microblaze_i/plb_dac_0/plb_dac_0/rst_Bus2IP_Reset
+    SLICE_X12Y138.CLK    Tgck                  0.262   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<1>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0_rstpot
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0
     -------------------------------------------------  ---------------------------
-    Total                                     12.322ns (2.127ns logic, 10.195ns route)
-                                                       (17.3% logic, 82.7% route)
+    Total                                      3.396ns (0.797ns logic, 2.599ns route)
+                                                       (23.5% logic, 76.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.908ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_21 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      12.032ns (Levels of Logic = 4)
+
+Paths for end point microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1 (SLICE_X12Y138.F1), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.348ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (FF)
+  Destination:          microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.592ns (Levels of Logic = 2)
   Clock Path Skew:      0.000ns
   Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
+  Destination Clock:    microblaze_i/clk_50_0000MHz falling at 10.000ns
   Clock Uncertainty:    0.060ns
 
   Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -352,46 +329,32 @@ Slack (setup path):     7.908ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.120ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_21
+  Maximum Data Path: microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS to microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y47.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0
-    SLICE_X16Y25.F3      net (fanout=11)       2.507   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-    SLICE_X16Y25.COUT    Topcyf                0.576   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_jump21
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X23Y54.F1      net (fanout=49)       3.158   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X23Y54.X       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<58>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<26>1
-    RAMB16_X1Y1.ADDRB3   net (fanout=33)       4.323   microblaze_i/ilmb_LMB_ABus<26>
-    RAMB16_X1Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_21
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_21
+    SLICE_X20Y158.XQ     Tcko                  0.360   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/flop_q_chain<4>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS
+    SLICE_X14Y128.G1     net (fanout=3)        1.759   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/flop_q_chain<4>
+    SLICE_X14Y128.Y      Tilo                  0.195   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<4>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1
+    SLICE_X12Y138.F1     net (fanout=5)        1.014   microblaze_i/plb_dac_0/plb_dac_0/rst_Bus2IP_Reset
+    SLICE_X12Y138.CLK    Tfck                  0.264   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<1>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1_rstpot
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1
     -------------------------------------------------  ---------------------------
-    Total                                     12.032ns (2.044ns logic, 9.988ns route)
-                                                       (17.0% logic, 83.0% route)
+    Total                                      3.592ns (0.819ns logic, 2.773ns route)
+                                                       (22.8% logic, 77.2% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point microblaze_i/lmb_bram/lmb_bram/ramb16_20 (RAMB16_X2Y1.ADDRB4), 120 paths
---------------------------------------------------------------------------------
-Slack (setup path):     6.977ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_20 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      12.963ns (Levels of Logic = 5)
+Slack (setup path):     6.545ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST (FF)
+  Destination:          microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.395ns (Levels of Logic = 2)
   Clock Path Skew:      0.000ns
   Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
+  Destination Clock:    microblaze_i/clk_50_0000MHz falling at 10.000ns
   Clock Uncertainty:    0.060ns
 
   Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -400,45 +363,35 @@ Slack (setup path):     6.977ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.120ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_20
+  Maximum Data Path: microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST to microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y47.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0
-    SLICE_X27Y24.F3      net (fanout=11)       2.403   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-    SLICE_X27Y24.X       Tilo                  0.194   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI21
-    SLICE_X16Y25.F2      net (fanout=1)        1.145   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-    SLICE_X16Y25.COUT    Topcyf                0.465   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X23Y54.G1      net (fanout=49)       3.158   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X23Y54.Y       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<58>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<25>1
-    RAMB16_X2Y1.ADDRB4   net (fanout=33)       4.130   microblaze_i/ilmb_LMB_ABus<25>
-    RAMB16_X2Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_20
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_20
+    SLICE_X25Y141.YQ     Tcko                  0.340   microblaze_i/mb_plb_SPLB_Rst<3>
+                                                       microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST
+    SLICE_X14Y128.G4     net (fanout=50)       1.582   microblaze_i/mb_plb_SPLB_Rst<3>
+    SLICE_X14Y128.Y      Tilo                  0.195   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<4>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1
+    SLICE_X12Y138.F1     net (fanout=5)        1.014   microblaze_i/plb_dac_0/plb_dac_0/rst_Bus2IP_Reset
+    SLICE_X12Y138.CLK    Tfck                  0.264   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<1>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1_rstpot
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1
     -------------------------------------------------  ---------------------------
-    Total                                     12.963ns (2.127ns logic, 10.836ns route)
-                                                       (16.4% logic, 83.6% route)
+    Total                                      3.395ns (0.799ns logic, 2.596ns route)
+                                                       (23.5% logic, 76.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.811ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_20 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      12.129ns (Levels of Logic = 5)
+
+Paths for end point microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8 (SLICE_X12Y152.G3), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.391ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (FF)
+  Destination:          microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.549ns (Levels of Logic = 2)
   Clock Path Skew:      0.000ns
   Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
+  Destination Clock:    microblaze_i/clk_50_0000MHz falling at 10.000ns
   Clock Uncertainty:    0.060ns
 
   Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -447,45 +400,32 @@ Slack (setup path):     7.811ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.120ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_20
+  Maximum Data Path: microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS to microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X34Y35.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_jump
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0
-    SLICE_X27Y24.F1      net (fanout=14)       1.569   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_jump
-    SLICE_X27Y24.X       Tilo                  0.194   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI21
-    SLICE_X16Y25.F2      net (fanout=1)        1.145   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-    SLICE_X16Y25.COUT    Topcyf                0.465   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X23Y54.G1      net (fanout=49)       3.158   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X23Y54.Y       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<58>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<25>1
-    RAMB16_X2Y1.ADDRB4   net (fanout=33)       4.130   microblaze_i/ilmb_LMB_ABus<25>
-    RAMB16_X2Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_20
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_20
+    SLICE_X20Y158.XQ     Tcko                  0.360   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/flop_q_chain<4>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS
+    SLICE_X15Y128.G1     net (fanout=3)        1.756   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/flop_q_chain<4>
+    SLICE_X15Y128.Y      Tilo                  0.194   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<5>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1
+    SLICE_X12Y152.G3     net (fanout=38)       0.977   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1
+    SLICE_X12Y152.CLK    Tgck                  0.262   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<9>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8_rstpot
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8
     -------------------------------------------------  ---------------------------
-    Total                                     12.129ns (2.127ns logic, 10.002ns route)
-                                                       (17.5% logic, 82.5% route)
+    Total                                      3.549ns (0.816ns logic, 2.733ns route)
+                                                       (23.0% logic, 77.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     8.101ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_20 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      11.839ns (Levels of Logic = 4)
+Slack (setup path):     6.598ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST (FF)
+  Destination:          microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.342ns (Levels of Logic = 2)
   Clock Path Skew:      0.000ns
   Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
+  Destination Clock:    microblaze_i/clk_50_0000MHz falling at 10.000ns
   Clock Uncertainty:    0.060ns
 
   Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -494,175 +434,22 @@ Slack (setup path):     8.101ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.120ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_20
+  Maximum Data Path: microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST to microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y47.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0
-    SLICE_X16Y25.F3      net (fanout=11)       2.507   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-    SLICE_X16Y25.COUT    Topcyf                0.576   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_jump21
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X23Y54.G1      net (fanout=49)       3.158   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X23Y54.Y       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<58>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<25>1
-    RAMB16_X2Y1.ADDRB4   net (fanout=33)       4.130   microblaze_i/ilmb_LMB_ABus<25>
-    RAMB16_X2Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_20
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_20
+    SLICE_X25Y141.YQ     Tcko                  0.340   microblaze_i/mb_plb_SPLB_Rst<3>
+                                                       microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST
+    SLICE_X15Y128.G4     net (fanout=50)       1.569   microblaze_i/mb_plb_SPLB_Rst<3>
+    SLICE_X15Y128.Y      Tilo                  0.194   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<5>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1
+    SLICE_X12Y152.G3     net (fanout=38)       0.977   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1
+    SLICE_X12Y152.CLK    Tgck                  0.262   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg<9>
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8_rstpot
+                                                       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8
     -------------------------------------------------  ---------------------------
-    Total                                     11.839ns (2.044ns logic, 9.795ns route)
-                                                       (17.3% logic, 82.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point microblaze_i/lmb_bram/lmb_bram/ramb16_21 (RAMB16_X1Y1.ADDRB7), 141 paths
---------------------------------------------------------------------------------
-Slack (setup path):     7.036ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_21 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      12.904ns (Levels of Logic = 5)
-  Clock Path Skew:      0.000ns
-  Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
-  Clock Uncertainty:    0.060ns
-
-  Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.000ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.120ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_21
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y47.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0
-    SLICE_X27Y24.F3      net (fanout=11)       2.403   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-    SLICE_X27Y24.X       Tilo                  0.194   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI21
-    SLICE_X16Y25.F2      net (fanout=1)        1.145   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-    SLICE_X16Y25.COUT    Topcyf                0.465   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X25Y51.F4      net (fanout=49)       2.480   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X25Y51.X       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<54>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<22>1
-    RAMB16_X1Y1.ADDRB7   net (fanout=33)       4.749   microblaze_i/ilmb_LMB_ABus<22>
-    RAMB16_X1Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_21
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_21
-    -------------------------------------------------  ---------------------------
-    Total                                     12.904ns (2.127ns logic, 10.777ns route)
-                                                       (16.5% logic, 83.5% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     7.870ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_21 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      12.070ns (Levels of Logic = 5)
-  Clock Path Skew:      0.000ns
-  Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
-  Clock Uncertainty:    0.060ns
-
-  Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.000ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.120ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_21
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X34Y35.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_jump
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_0
-    SLICE_X27Y24.F1      net (fanout=14)       1.569   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_valid_jump
-    SLICE_X27Y24.X       Tilo                  0.194   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI21
-    SLICE_X16Y25.F2      net (fanout=1)        1.145   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_DI2
-    SLICE_X16Y25.COUT    Topcyf                0.465   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X25Y51.F4      net (fanout=49)       2.480   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X25Y51.X       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<54>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<22>1
-    RAMB16_X1Y1.ADDRB7   net (fanout=33)       4.749   microblaze_i/ilmb_LMB_ABus<22>
-    RAMB16_X1Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_21
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_21
-    -------------------------------------------------  ---------------------------
-    Total                                     12.070ns (2.127ns logic, 9.943ns route)
-                                                       (17.6% logic, 82.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     8.160ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 (FF)
-  Destination:          microblaze_i/lmb_bram/lmb_bram/ramb16_21 (RAM)
-  Requirement:          20.000ns
-  Data Path Delay:      11.780ns (Levels of Logic = 4)
-  Clock Path Skew:      0.000ns
-  Source Clock:         microblaze_i/clk_50_0000MHz rising at 0.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
-  Clock Uncertainty:    0.060ns
-
-  Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.000ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.120ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0 to microblaze_i/lmb_bram/lmb_bram/ramb16_21
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y47.YQ      Tcko                  0.360   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_0
-    SLICE_X16Y25.F3      net (fanout=11)       2.507   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc<0>
-    SLICE_X16Y25.COUT    Topcyf                0.576   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/force_jump21
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY2
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3
-    SLICE_X16Y26.CIN     net (fanout=2)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY3/O
-    SLICE_X16Y26.COUT    Tbyp                  0.089   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY4
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY5/O
-    SLICE_X16Y27.XB      Tcinxb                0.399   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/ex_jump_q<0>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6
-    SLICE_X25Y51.F4      net (fanout=49)       2.480   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1/FPGA_TARGET.MUXCY_JUMP_CARRY6/O
-    SLICE_X25Y51.X       Tilo                  0.194   microblaze_i/mb_plb_M_ABus<54>
-                                                       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I/new_pc<22>1
-    RAMB16_X1Y1.ADDRB7   net (fanout=33)       4.749   microblaze_i/ilmb_LMB_ABus<22>
-    RAMB16_X1Y1.CLKB     Trcck_ADDRB           0.426   microblaze_i/lmb_bram/lmb_bram/ramb16_21
-                                                       microblaze_i/lmb_bram/lmb_bram/ramb16_21
-    -------------------------------------------------  ---------------------------
-    Total                                     11.780ns (2.044ns logic, 9.736ns route)
-                                                       (17.4% logic, 82.6% route)
+    Total                                      3.342ns (0.796ns logic, 2.546ns route)
+                                                       (23.8% logic, 76.2% route)
 
 --------------------------------------------------------------------------------
 
@@ -672,35 +459,63 @@ Hold Paths: TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0_0 
         TS_sys_clk_pin HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3 (SLICE_X26Y88.F4), 1 path
+Paths for end point microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_2 (SLICE_X54Y32.G4), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.473ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg_3 (FF)
-  Destination:          microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3 (FF)
+Slack (hold path):      0.490ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_0 (FF)
+  Destination:          microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_2 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.480ns (Levels of Logic = 1)
-  Clock Path Skew:      0.007ns (1.099 - 1.092)
+  Data Path Delay:      0.490ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
   Source Clock:         microblaze_i/clk_50_0000MHz rising at 20.000ns
   Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg_3 to microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3
+  Minimum Data Path: microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_0 to microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X25Y88.XQ      Tcko                  0.313   microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg<3>
-                                                       microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg_3
-    SLICE_X26Y88.F4      net (fanout=1)        0.308   microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg<3>
-    SLICE_X26Y88.CLK     Tckf        (-Th)     0.141   microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i<3>
-                                                       microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3_rstpot
-                                                       microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3
+    SLICE_X55Y32.YQ      Tcko                  0.313   microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec<0>
+                                                       microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_0
+    SLICE_X54Y32.G4      net (fanout=1)        0.320   microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec<0>
+    SLICE_X54Y32.CLK     Tckg        (-Th)     0.143   microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/bsr_dec<2>
+                                                       microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_2_and00001
+                                                       microblaze_i/proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_2
     -------------------------------------------------  ---------------------------
-    Total                                      0.480ns (0.172ns logic, 0.308ns route)
-                                                       (35.8% logic, 64.2% route)
+    Total                                      0.490ns (0.170ns logic, 0.320ns route)
+                                                       (34.7% logic, 65.3% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30 (SLICE_X34Y38.G4), 1 path
+Paths for end point microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/start_Edge_Detected_0 (SLICE_X22Y203.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.490ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/previous_rx (FF)
+  Destination:          microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/start_Edge_Detected_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.490ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         microblaze_i/clk_50_0000MHz rising at 20.000ns
+  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/previous_rx to microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/start_Edge_Detected_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y202.YQ     Tcko                  0.313   microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/previous_rx
+                                                       microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/previous_rx
+    SLICE_X22Y203.G4     net (fanout=1)        0.320   microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/previous_rx
+    SLICE_X22Y203.CLK    Tckg        (-Th)     0.143   microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/start_Edge_Detected<0>
+                                                       microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/start_Edge_Detected_0_and00001
+                                                       microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/start_Edge_Detected_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.490ns (0.170ns logic, 0.320ns route)
+                                                       (34.7% logic, 65.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30 (SLICE_X34Y75.G4), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.490ns (requirement - (clock path skew + uncertainty - data path))
   Source:               microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[30].MEM_EX_Result_Inst (FF)
@@ -716,40 +531,12 @@ Slack (hold path):      0.490ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X35Y38.YQ      Tcko                  0.313   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_exception_kind_i<31>
+    SLICE_X35Y75.YQ      Tcko                  0.313   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_exception_kind_i<31>
                                                        microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[30].MEM_EX_Result_Inst
-    SLICE_X34Y38.G4      net (fanout=1)        0.320   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_exception_kind_i<30>
-    SLICE_X34Y38.CLK     Tckg        (-Th)     0.143   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i<31>
+    SLICE_X34Y75.G4      net (fanout=1)        0.320   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_exception_kind_i<30>
+    SLICE_X34Y75.CLK     Tckg        (-Th)     0.143   microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i<31>
                                                        microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_exception_kind<30>1
                                                        microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30
-    -------------------------------------------------  ---------------------------
-    Total                                      0.490ns (0.170ns logic, 0.320ns route)
-                                                       (34.7% logic, 65.3% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/RESET_FLOPS[2].RST_FLOPS (SLICE_X28Y147.G4), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.490ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/RESET_FLOPS[1].RST_FLOPS (FF)
-  Destination:          microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/RESET_FLOPS[2].RST_FLOPS (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.490ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         microblaze_i/clk_50_0000MHz rising at 20.000ns
-  Destination Clock:    microblaze_i/clk_50_0000MHz rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/RESET_FLOPS[1].RST_FLOPS to microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/RESET_FLOPS[2].RST_FLOPS
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X29Y146.XQ     Tcko                  0.313   microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/flop_q_chain<2>
-                                                       microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/RESET_FLOPS[1].RST_FLOPS
-    SLICE_X28Y147.G4     net (fanout=1)        0.320   microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/flop_q_chain<2>
-    SLICE_X28Y147.CLK    Tckg        (-Th)     0.143   microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/flop_q_chain<4>
-                                                       microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/flop_q_chain<2>_rt
-                                                       microblaze_i/xps_iic_0/xps_iic_0/X_IIC/X_XPS_IPIF_SSP1/X_SOFT_RESET/RESET_FLOPS[2].RST_FLOPS
     -------------------------------------------------  ---------------------------
     Total                                      0.490ns (0.170ns logic, 0.320ns route)
                                                        (34.7% logic, 65.3% route)
@@ -766,7 +553,7 @@ Slack: 17.500ns (period - min period limit)
   Min period limit: 2.500ns (400.000MHz) (Tdspper_BML)
   Physical resource: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48.DSP48_I1/CLK
   Logical resource: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48.DSP48_I1/CLK
-  Location pin: DSP48_X1Y6.CLK
+  Location pin: DSP48_X1Y14.CLK
   Clock network: microblaze_i/clk_50_0000MHz
 --------------------------------------------------------------------------------
 Slack: 17.500ns (period - min period limit)
@@ -774,7 +561,7 @@ Slack: 17.500ns (period - min period limit)
   Min period limit: 2.500ns (400.000MHz) (Tdspper_MPL)
   Physical resource: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48.DSP48_I1/CLK
   Logical resource: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48.DSP48_I1/CLK
-  Location pin: DSP48_X1Y5.CLK
+  Location pin: DSP48_X1Y13.CLK
   Clock network: microblaze_i/clk_50_0000MHz
 --------------------------------------------------------------------------------
 Slack: 17.500ns (period - min period limit)
@@ -782,7 +569,7 @@ Slack: 17.500ns (period - min period limit)
   Min period limit: 2.500ns (400.000MHz) (Trper_CLKA)
   Physical resource: microblaze_i/lmb_bram/lmb_bram/ramb16_10/CLKA
   Logical resource: microblaze_i/lmb_bram/lmb_bram/ramb16_10/CLKA
-  Location pin: RAMB16_X4Y0.CLKA
+  Location pin: RAMB16_X2Y7.CLKA
   Clock network: microblaze_i/clk_50_0000MHz
 --------------------------------------------------------------------------------
 
@@ -794,8 +581,8 @@ Derived Constraints for TS_sys_clk_pin
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk_pin                 |     20.000ns|      6.666ns|     13.216ns|            0|            0|            3|       360215|
-| TS_microblaze_i_clock_generato|     20.000ns|     13.216ns|          N/A|            0|            0|       360215|            0|
+|TS_sys_clk_pin                 |     20.000ns|      6.666ns|     12.938ns|            0|            0|            3|       353001|
+| TS_microblaze_i_clock_generato|     20.000ns|     12.938ns|          N/A|            0|            0|       353001|            0|
 | r_0_clock_generator_0_SIG_DCM0|             |             |             |             |             |             |             |
 | _CLK0_0                       |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -812,7 +599,7 @@ Clock to Setup on destination clock fpga_0_clk_1_sys_clk_pin
                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
-fpga_0_clk_1_sys_clk_pin|   13.216|         |    2.697|         |
+fpga_0_clk_1_sys_clk_pin|   12.938|         |    3.653|         |
 ------------------------+---------+---------+---------+---------+
 
 
@@ -821,23 +608,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 360218 paths, 0 nets, and 18478 connections
+Constraints cover 353004 paths, 0 nets, and 15707 connections
 
 Design statistics:
-   Minimum period:  13.216ns{1}   (Maximum frequency:  75.666MHz)
+   Minimum period:  12.938ns{1}   (Maximum frequency:  77.292MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Mon Aug 14 18:26:51 2017 
+Analysis completed Wed Aug 16 13:04:17 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 363 MB
+Peak Memory Usage: 357 MB
 
 
 

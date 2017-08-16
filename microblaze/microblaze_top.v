@@ -8,8 +8,6 @@ module microblaze_top
     fpga_0_RS232_TX_pin,
     fpga_0_clk_1_sys_clk_pin,
     fpga_0_rst_1_sys_rst_pin,
-    xps_iic_0_Sda_pin,
-    xps_iic_0_Scl_pin,
     plb_dac_0_S_Data_pin,
     plb_dac_0_S_DCLKIO_pin,
     plb_dac_0_S_Clkout_pin,
@@ -22,8 +20,6 @@ module microblaze_top
   output fpga_0_RS232_TX_pin;
   input fpga_0_clk_1_sys_clk_pin;
   input fpga_0_rst_1_sys_rst_pin;
-  inout xps_iic_0_Sda_pin;
-  inout xps_iic_0_Scl_pin;
   output [0:9] plb_dac_0_S_Data_pin;
   output plb_dac_0_S_DCLKIO_pin;
   output plb_dac_0_S_Clkout_pin;
@@ -39,8 +35,6 @@ module microblaze_top
       .fpga_0_RS232_TX_pin ( fpga_0_RS232_TX_pin ),
       .fpga_0_clk_1_sys_clk_pin ( fpga_0_clk_1_sys_clk_pin ),
       .fpga_0_rst_1_sys_rst_pin ( fpga_0_rst_1_sys_rst_pin ),
-      .xps_iic_0_Sda_pin ( xps_iic_0_Sda_pin ),
-      .xps_iic_0_Scl_pin ( xps_iic_0_Scl_pin ),
       .plb_dac_0_S_Data_pin ( plb_dac_0_S_Data_pin ),
       .plb_dac_0_S_DCLKIO_pin ( plb_dac_0_S_DCLKIO_pin ),
       .plb_dac_0_S_Clkout_pin ( plb_dac_0_S_Clkout_pin ),

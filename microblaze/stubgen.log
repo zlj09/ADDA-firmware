@@ -25,7 +25,6 @@ Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
 Address Map for Processor microblaze_0
   (0000000000-0x0000ffff) dlmb_cntlr	dlmb
   (0000000000-0x0000ffff) ilmb_cntlr	ilmb
-  (0x81600000-0x8160ffff) xps_iic_0	mb_plb
   (0x81800000-0x8180ffff) xps_intc_0	mb_plb
   (0x84000000-0x8400ffff) RS232	mb_plb
   (0x84400000-0x8440ffff) mdm_0	mb_plb
@@ -35,7 +34,7 @@ INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
    G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 79 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
-   C_PLBV46_NUM_SLAVES value to 5 -
+   C_PLBV46_NUM_SLAVES value to 4 -
    G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 80 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
@@ -74,10 +73,6 @@ INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding
    PARAMETER C_SPLB_NUM_MASTERS value to 2 -
    G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
    a\xps_intc_v2_1_0.mpd line 83 
-INFO:EDK:4130 - IPNAME: xps_iic, INSTANCE:xps_iic_0 - tool is overriding
-   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_iic_v2_03_a\data
-   \xps_iic_v2_1_0.mpd line 85 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
    PARAMETER C_SPLB_DWIDTH value to 32 -
    F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
@@ -99,7 +94,7 @@ Creating stub ...
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:lmb_bram -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 86 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 84 -
 elaborating IP
 
 Inserting wrapper level ...
@@ -108,4 +103,4 @@ Writing (stub) BMM ...
 
 Writing top-level HDL ...
 
-Total run time: 8.00 seconds
+Total run time: 7.00 seconds

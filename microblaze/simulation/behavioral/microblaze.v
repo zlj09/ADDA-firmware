@@ -12,8 +12,6 @@ module microblaze
     fpga_0_RS232_TX_pin,
     fpga_0_clk_1_sys_clk_pin,
     fpga_0_rst_1_sys_rst_pin,
-    xps_iic_0_Sda_pin,
-    xps_iic_0_Scl_pin,
     plb_dac_0_S_Data_pin,
     plb_dac_0_S_DCLKIO_pin,
     plb_dac_0_S_Clkout_pin,
@@ -26,8 +24,6 @@ module microblaze
   output fpga_0_RS232_TX_pin;
   input fpga_0_clk_1_sys_clk_pin;
   input fpga_0_rst_1_sys_rst_pin;
-  inout xps_iic_0_Sda_pin;
-  inout xps_iic_0_Scl_pin;
   output [0:9] plb_dac_0_S_Data_pin;
   output plb_dac_0_S_DCLKIO_pin;
   output plb_dac_0_S_Clkout_pin;
@@ -147,7 +143,7 @@ module microblaze
   wire mb_plb_PLB_rdBurst;
   wire [0:1] mb_plb_PLB_rdPendPri;
   wire mb_plb_PLB_rdPendReq;
-  wire [0:4] mb_plb_PLB_rdPrim;
+  wire [0:3] mb_plb_PLB_rdPrim;
   wire [0:1] mb_plb_PLB_reqPri;
   wire [0:3] mb_plb_PLB_size;
   wire [0:2] mb_plb_PLB_type;
@@ -155,24 +151,24 @@ module microblaze
   wire [0:31] mb_plb_PLB_wrDBus;
   wire [0:1] mb_plb_PLB_wrPendPri;
   wire mb_plb_PLB_wrPendReq;
-  wire [0:4] mb_plb_PLB_wrPrim;
-  wire [0:4] mb_plb_SPLB_Rst;
-  wire [0:9] mb_plb_Sl_MBusy;
-  wire [0:9] mb_plb_Sl_MIRQ;
-  wire [0:9] mb_plb_Sl_MRdErr;
-  wire [0:9] mb_plb_Sl_MWrErr;
-  wire [0:9] mb_plb_Sl_SSize;
-  wire [0:4] mb_plb_Sl_addrAck;
-  wire [0:4] mb_plb_Sl_rdBTerm;
-  wire [0:4] mb_plb_Sl_rdComp;
-  wire [0:4] mb_plb_Sl_rdDAck;
-  wire [0:159] mb_plb_Sl_rdDBus;
-  wire [0:19] mb_plb_Sl_rdWdAddr;
-  wire [0:4] mb_plb_Sl_rearbitrate;
-  wire [0:4] mb_plb_Sl_wait;
-  wire [0:4] mb_plb_Sl_wrBTerm;
-  wire [0:4] mb_plb_Sl_wrComp;
-  wire [0:4] mb_plb_Sl_wrDAck;
+  wire [0:3] mb_plb_PLB_wrPrim;
+  wire [0:3] mb_plb_SPLB_Rst;
+  wire [0:7] mb_plb_Sl_MBusy;
+  wire [0:7] mb_plb_Sl_MIRQ;
+  wire [0:7] mb_plb_Sl_MRdErr;
+  wire [0:7] mb_plb_Sl_MWrErr;
+  wire [0:7] mb_plb_Sl_SSize;
+  wire [0:3] mb_plb_Sl_addrAck;
+  wire [0:3] mb_plb_Sl_rdBTerm;
+  wire [0:3] mb_plb_Sl_rdComp;
+  wire [0:3] mb_plb_Sl_rdDAck;
+  wire [0:127] mb_plb_Sl_rdDBus;
+  wire [0:15] mb_plb_Sl_rdWdAddr;
+  wire [0:3] mb_plb_Sl_rearbitrate;
+  wire [0:3] mb_plb_Sl_wait;
+  wire [0:3] mb_plb_Sl_wrBTerm;
+  wire [0:3] mb_plb_Sl_wrComp;
+  wire [0:3] mb_plb_Sl_wrDAck;
   wire mb_reset;
   wire microblaze_0_Interrupt;
   wire microblaze_0_mdm_bus_Dbg_Capture;
@@ -202,12 +198,6 @@ module microblaze
   wire plb_dac_0_S_PinMD;
   wire [0:0] sys_bus_reset;
   wire sys_rst_s;
-  wire xps_iic_0_Scl_I;
-  wire xps_iic_0_Scl_O;
-  wire xps_iic_0_Scl_T;
-  wire xps_iic_0_Sda_I;
-  wire xps_iic_0_Sda_O;
-  wire xps_iic_0_Sda_T;
 
   // Internal assignments
 
@@ -1791,16 +1781,8 @@ module microblaze
       .Irq ( microblaze_0_Interrupt )
     );
 
-  microblaze_xps_iic_0_wrapper
-    xps_iic_0 (
-      .Sda_I ( xps_iic_0_Sda_I ),
-      .Sda_O ( xps_iic_0_Sda_O ),
-      .Sda_T ( xps_iic_0_Sda_T ),
-      .Scl_I ( xps_iic_0_Scl_I ),
-      .Scl_O ( xps_iic_0_Scl_O ),
-      .Scl_T ( xps_iic_0_Scl_T ),
-      .Gpo (  ),
-      .IIC2INTC_Irpt (  ),
+  microblaze_plb_dac_0_wrapper
+    plb_dac_0 (
       .SPLB_Clk ( clk_50_0000MHz ),
       .SPLB_Rst ( mb_plb_SPLB_Rst[3] ),
       .PLB_ABus ( mb_plb_PLB_ABus ),
@@ -1842,53 +1824,7 @@ module microblaze
       .Sl_MBusy ( mb_plb_Sl_MBusy[6:7] ),
       .Sl_MWrErr ( mb_plb_Sl_MWrErr[6:7] ),
       .Sl_MRdErr ( mb_plb_Sl_MRdErr[6:7] ),
-      .Sl_MIRQ ( mb_plb_Sl_MIRQ[6:7] )
-    );
-
-  microblaze_plb_dac_0_wrapper
-    plb_dac_0 (
-      .SPLB_Clk ( clk_50_0000MHz ),
-      .SPLB_Rst ( mb_plb_SPLB_Rst[4] ),
-      .PLB_ABus ( mb_plb_PLB_ABus ),
-      .PLB_UABus ( mb_plb_PLB_UABus ),
-      .PLB_PAValid ( mb_plb_PLB_PAValid ),
-      .PLB_SAValid ( mb_plb_PLB_SAValid ),
-      .PLB_rdPrim ( mb_plb_PLB_rdPrim[4] ),
-      .PLB_wrPrim ( mb_plb_PLB_wrPrim[4] ),
-      .PLB_masterID ( mb_plb_PLB_masterID[0:0] ),
-      .PLB_abort ( mb_plb_PLB_abort ),
-      .PLB_busLock ( mb_plb_PLB_busLock ),
-      .PLB_RNW ( mb_plb_PLB_RNW ),
-      .PLB_BE ( mb_plb_PLB_BE ),
-      .PLB_MSize ( mb_plb_PLB_MSize ),
-      .PLB_size ( mb_plb_PLB_size ),
-      .PLB_type ( mb_plb_PLB_type ),
-      .PLB_lockErr ( mb_plb_PLB_lockErr ),
-      .PLB_wrDBus ( mb_plb_PLB_wrDBus ),
-      .PLB_wrBurst ( mb_plb_PLB_wrBurst ),
-      .PLB_rdBurst ( mb_plb_PLB_rdBurst ),
-      .PLB_wrPendReq ( mb_plb_PLB_wrPendReq ),
-      .PLB_rdPendReq ( mb_plb_PLB_rdPendReq ),
-      .PLB_wrPendPri ( mb_plb_PLB_wrPendPri ),
-      .PLB_rdPendPri ( mb_plb_PLB_rdPendPri ),
-      .PLB_reqPri ( mb_plb_PLB_reqPri ),
-      .PLB_TAttribute ( mb_plb_PLB_TAttribute ),
-      .Sl_addrAck ( mb_plb_Sl_addrAck[4] ),
-      .Sl_SSize ( mb_plb_Sl_SSize[8:9] ),
-      .Sl_wait ( mb_plb_Sl_wait[4] ),
-      .Sl_rearbitrate ( mb_plb_Sl_rearbitrate[4] ),
-      .Sl_wrDAck ( mb_plb_Sl_wrDAck[4] ),
-      .Sl_wrComp ( mb_plb_Sl_wrComp[4] ),
-      .Sl_wrBTerm ( mb_plb_Sl_wrBTerm[4] ),
-      .Sl_rdDBus ( mb_plb_Sl_rdDBus[128:159] ),
-      .Sl_rdWdAddr ( mb_plb_Sl_rdWdAddr[16:19] ),
-      .Sl_rdDAck ( mb_plb_Sl_rdDAck[4] ),
-      .Sl_rdComp ( mb_plb_Sl_rdComp[4] ),
-      .Sl_rdBTerm ( mb_plb_Sl_rdBTerm[4] ),
-      .Sl_MBusy ( mb_plb_Sl_MBusy[8:9] ),
-      .Sl_MWrErr ( mb_plb_Sl_MWrErr[8:9] ),
-      .Sl_MRdErr ( mb_plb_Sl_MRdErr[8:9] ),
-      .Sl_MIRQ ( mb_plb_Sl_MIRQ[8:9] ),
+      .Sl_MIRQ ( mb_plb_Sl_MIRQ[6:7] ),
       .S_Data ( plb_dac_0_S_Data ),
       .S_DCLKIO ( plb_dac_0_S_DCLKIO ),
       .S_Clkout ( plb_dac_0_S_Clkout ),
@@ -1896,22 +1832,6 @@ module microblaze
       .S_ClkMD ( plb_dac_0_S_ClkMD ),
       .S_Format ( plb_dac_0_S_Format ),
       .S_PWRDN ( plb_dac_0_S_PWRDN )
-    );
-
-  IOBUF
-    iobuf_0 (
-      .I ( xps_iic_0_Sda_O ),
-      .IO ( xps_iic_0_Sda_pin ),
-      .O ( xps_iic_0_Sda_I ),
-      .T ( xps_iic_0_Sda_T )
-    );
-
-  IOBUF
-    iobuf_1 (
-      .I ( xps_iic_0_Scl_O ),
-      .IO ( xps_iic_0_Scl_pin ),
-      .O ( xps_iic_0_Scl_I ),
-      .T ( xps_iic_0_Scl_T )
     );
 
 endmodule

@@ -139,7 +139,6 @@ implementation/microblaze_clock_generator_0_wrapper.ngc \
 implementation/microblaze_mdm_0_wrapper.ngc \
 implementation/microblaze_proc_sys_reset_0_wrapper.ngc \
 implementation/microblaze_xps_intc_0_wrapper.ngc \
-implementation/microblaze_xps_iic_0_wrapper.ngc \
 implementation/microblaze_plb_dac_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc

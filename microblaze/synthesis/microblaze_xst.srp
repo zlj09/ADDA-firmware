@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.88 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> 
 TABLE OF CONTENTS
@@ -72,7 +72,6 @@ Module <microblaze_clock_generator_0_wrapper> compiled
 Module <microblaze_mdm_0_wrapper> compiled
 Module <microblaze_proc_sys_reset_0_wrapper> compiled
 Module <microblaze_xps_intc_0_wrapper> compiled
-Module <microblaze_xps_iic_0_wrapper> compiled
 Module <microblaze_plb_dac_0_wrapper> compiled
 No errors in compilation
 Analysis of file <"microblaze_xst.prj"> succeeded.
@@ -90,20 +89,6 @@ Analyzing hierarchy for module <microblaze> in library <work>.
 Analyzing top module <microblaze>.
 Module <microblaze> is correct for synthesis.
  
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_0> in unit <microblaze>.
-    Set user-defined property "DRIVE =  12" for instance <iobuf_0> in unit <microblaze>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_0> in unit <microblaze>.
-    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_0> in unit <microblaze>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_0> in unit <microblaze>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_0> in unit <microblaze>.
-    Set user-defined property "SLEW =  SLOW" for instance <iobuf_0> in unit <microblaze>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_1> in unit <microblaze>.
-    Set user-defined property "DRIVE =  12" for instance <iobuf_1> in unit <microblaze>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_1> in unit <microblaze>.
-    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_1> in unit <microblaze>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_1> in unit <microblaze>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_1> in unit <microblaze>.
-    Set user-defined property "SLEW =  SLOW" for instance <iobuf_1> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <RS232> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <clock_generator_0> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <dlmb> in unit <microblaze>.
@@ -116,7 +101,6 @@ Module <microblaze> is correct for synthesis.
     Set property "BOX_TYPE = user_black_box" for instance <microblaze_0> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <plb_dac_0> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <proc_sys_reset_0> in unit <microblaze>.
-    Set property "BOX_TYPE = user_black_box" for instance <xps_iic_0> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <xps_intc_0> in unit <microblaze>.
 
 =========================================================================
@@ -152,7 +136,6 @@ Reading core <../implementation/microblaze_clock_generator_0_wrapper.ngc>.
 Reading core <../implementation/microblaze_mdm_0_wrapper.ngc>.
 Reading core <../implementation/microblaze_proc_sys_reset_0_wrapper.ngc>.
 Reading core <../implementation/microblaze_xps_intc_0_wrapper.ngc>.
-Reading core <../implementation/microblaze_xps_iic_0_wrapper.ngc>.
 Reading core <../implementation/microblaze_plb_dac_0_wrapper.ngc>.
 Loading core <microblaze_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
 Loading core <microblaze_mb_plb_wrapper> for timing and area information for instance <mb_plb>.
@@ -166,7 +149,6 @@ Loading core <microblaze_clock_generator_0_wrapper> for timing and area informat
 Loading core <microblaze_mdm_0_wrapper> for timing and area information for instance <mdm_0>.
 Loading core <microblaze_proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
 Loading core <microblaze_xps_intc_0_wrapper> for timing and area information for instance <xps_intc_0>.
-Loading core <microblaze_xps_iic_0_wrapper> for timing and area information for instance <xps_iic_0>.
 Loading core <microblaze_plb_dac_0_wrapper> for timing and area information for instance <plb_dac_0>.
 
 =========================================================================
@@ -185,7 +167,7 @@ Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
-INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 6 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
@@ -196,7 +178,7 @@ INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODE
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
-INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 6 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
 
 Final Macro Processing ...
 
@@ -227,58 +209,56 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 22
+# IOs                              : 20
 
 Cell Usage :
-# BELS                             : 4770
-#      GND                         : 16
-#      INV                         : 60
-#      LUT1                        : 123
-#      LUT2                        : 338
-#      LUT2_D                      : 14
-#      LUT2_L                      : 15
-#      LUT3                        : 1140
-#      LUT3_D                      : 96
-#      LUT3_L                      : 26
-#      LUT4                        : 1625
-#      LUT4_D                      : 86
-#      LUT4_L                      : 74
+# BELS                             : 3972
+#      GND                         : 15
+#      INV                         : 49
+#      LUT1                        : 107
+#      LUT2                        : 266
+#      LUT2_D                      : 11
+#      LUT2_L                      : 9
+#      LUT3                        : 1027
+#      LUT3_D                      : 79
+#      LUT3_L                      : 17
+#      LUT4                        : 1344
+#      LUT4_D                      : 51
+#      LUT4_L                      : 62
 #      MULT_AND                    : 34
-#      MUXCY                       : 182
-#      MUXCY_L                     : 183
-#      MUXF5                       : 554
+#      MUXCY                       : 104
+#      MUXCY_L                     : 171
+#      MUXF5                       : 479
 #      MUXF6                       : 6
 #      MUXF7                       : 2
 #      MUXF8                       : 1
-#      VCC                         : 10
-#      XORCY                       : 185
-# FlipFlops/Latches                : 2917
-#      FD                          : 199
+#      VCC                         : 9
+#      XORCY                       : 129
+# FlipFlops/Latches                : 2518
+#      FD                          : 131
 #      FD_1                        : 10
 #      FDC                         : 21
 #      FDC_1                       : 5
 #      FDCE                        : 15
-#      FDE                         : 338
+#      FDE                         : 318
 #      FDE_1                       : 8
 #      FDP                         : 9
-#      FDR                         : 1184
-#      FDRE                        : 952
+#      FDR                         : 1039
+#      FDRE                        : 826
 #      FDRE_1                      : 1
-#      FDRS                        : 33
-#      FDRSE                       : 23
-#      FDS                         : 65
-#      FDSE                        : 54
+#      FDRS                        : 16
+#      FDRSE                       : 11
+#      FDS                         : 53
+#      FDSE                        : 55
 # RAMS                             : 224
 #      RAM16X1D                    : 192
 #      RAMB16                      : 32
-# Shift Registers                  : 153
-#      SRL16                       : 9
-#      SRL16E                      : 136
+# Shift Registers                  : 133
+#      SRL16                       : 7
+#      SRL16E                      : 118
 #      SRLC16E                     : 8
 # Clock Buffers                    : 6
 #      BUFG                        : 6
-# IO Buffers                       : 2
-#      IOBUF                       : 2
 # DCM_ADVs                         : 1
 #      DCM_ADV                     : 1
 # DSPs                             : 3
@@ -292,14 +272,14 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                     2966  out of  24576    12%  
- Number of Slice Flip Flops:           2917  out of  49152     5%  
- Number of 4 input LUTs:               4134  out of  49152     8%  
-    Number used as logic:              3597
-    Number used as Shift registers:     153
+ Number of Slices:                     2593  out of  24576    10%  
+ Number of Slice Flip Flops:           2518  out of  49152     5%  
+ Number of 4 input LUTs:               3539  out of  49152     7%  
+    Number used as logic:              3022
+    Number used as Shift registers:     133
     Number used as RAMs:                384
- Number of IOs:                          22
- Number of bonded IOBs:                   2  out of    640     0%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                   0  out of    640     0%  
  Number of FIFO16/RAMB16s:               32  out of    320    10%  
     Number used as RAMB16s:              32
  Number of GCLKs:                         6  out of     32    18%  
@@ -327,7 +307,7 @@ Clock Information:
 -----------------------------------+------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                      | Load  |
 -----------------------------------+------------------------------------------------------------+-------+
-fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0| 3041  |
+fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0| 2622  |
 mdm_0/mdm_0/drck_i                 | BUFG                                                       | 212   |
 mdm_0/mdm_0/update1                | BUFG                                                       | 43    |
 RS232/Interrupt                    | NONE(xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)        | 1     |
@@ -360,7 +340,7 @@ Timing Summary:
 Speed Grade: -10
 
    Minimum period: 9.456ns (Maximum Frequency: 105.755MHz)
-   Minimum input arrival time before clock: 3.867ns
+   Minimum input arrival time before clock: 3.293ns
    Maximum output required time after clock: 8.978ns
    Maximum combinational path delay: No path found
 
@@ -371,7 +351,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
   Clock period: 8.026ns (frequency: 124.599MHz)
-  Total number of paths / destination ports: 412329 / 10033
+  Total number of paths / destination ports: 405334 / 9072
 -------------------------------------------------------------------------
 Delay:               8.026ns (Levels of Logic = 7)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[8].Gen_Instr_DFF (FF)
@@ -478,25 +458,23 @@ Offset:              3.293ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 133 / 43
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              3.867ns (Levels of Logic = 4)
-  Source:            xps_iic_0_Sda_pin (PAD)
-  Destination:       xps_iic_0/xps_iic_0/X_IIC/FILTER_I/SDA_DEBOUNCE/debounce_ct_0 (FF)
+Offset:              0.740ns (Levels of Logic = 2)
+  Source:            fpga_0_rst_1_sys_rst_pin (PAD)
+  Destination:       proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1 (FF)
   Destination Clock: fpga_0_clk_1_sys_clk_pin rising
 
-  Data Path: xps_iic_0_Sda_pin to xps_iic_0/xps_iic_0/X_IIC/FILTER_I/SDA_DEBOUNCE/debounce_ct_0
+  Data Path: fpga_0_rst_1_sys_rst_pin to proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O          12   0.965   0.745  iobuf_0 (xps_iic_0_Sda_I)
-     begin scope: 'xps_iic_0'
-     LUT2:I0->O            2   0.195   0.758  xps_iic_0/X_IIC/FILTER_I/SDA_DEBOUNCE/debounce_ct_not00011 (xps_iic_0/X_IIC/FILTER_I/SDA_DEBOUNCE/debounce_ct_not0001)
-     LUT4:I0->O            9   0.195   0.469  xps_iic_0/X_IIC/FILTER_I/SDA_DEBOUNCE/debounce_ct_not00021 (xps_iic_0/X_IIC/FILTER_I/SDA_DEBOUNCE/debounce_ct_not0002)
-     FDE:CE                    0.540          xps_iic_0/X_IIC/FILTER_I/SDA_DEBOUNCE/debounce_ct_0
+     begin scope: 'proc_sys_reset_0'
+     INV:I->O              1   0.358   0.360  proc_sys_reset_0/EXT_LPF/exr_d1_or000011_INV_0 (proc_sys_reset_0/EXT_LPF/exr_d1_or00001)
+     FDS:D                     0.022          proc_sys_reset_0/EXT_LPF/exr_d1
     ----------------------------------------
-    Total                      3.867ns (1.895ns logic, 1.972ns route)
-                                       (49.0% logic, 51.0% route)
+    Total                      0.740ns (0.380ns logic, 0.360ns route)
+                                       (51.4% logic, 48.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/mdm_0/update1'
@@ -522,25 +500,23 @@ Offset:              2.753ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 37 / 17
+  Total number of paths / destination ports: 28 / 15
 -------------------------------------------------------------------------
-Offset:              6.173ns (Levels of Logic = 4)
-  Source:            xps_iic_0/xps_iic_0/X_IIC/IIC_CONTROL_I/master_slave (FF)
-  Destination:       xps_iic_0_Sda_pin (PAD)
+Offset:              1.333ns (Levels of Logic = 2)
+  Source:            plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_0 (FF)
+  Destination:       plb_dac_0_S_Clkout_pin (PAD)
   Source Clock:      fpga_0_clk_1_sys_clk_pin rising
 
-  Data Path: xps_iic_0/xps_iic_0/X_IIC/IIC_CONTROL_I/master_slave to xps_iic_0_Sda_pin
+  Data Path: plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_0 to plb_dac_0_S_Clkout_pin
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            15   0.360   0.919  xps_iic_0/X_IIC/IIC_CONTROL_I/master_slave (xps_iic_0/X_IIC/IIC_CONTROL_I/master_slave)
-     LUT4:I1->O            1   0.195   0.000  xps_iic_0/X_IIC/IIC_CONTROL_I/Sda_T1 (xps_iic_0/X_IIC/IIC_CONTROL_I/Sda_T)
-     MUXF5:I0->O           1   0.382   0.360  xps_iic_0/X_IIC/IIC_CONTROL_I/Sda_T_f5 (Sda_T)
-     end scope: 'xps_iic_0'
-     IOBUF:T->IO               3.957          iobuf_0 (xps_iic_0_Sda_pin)
+     FDRE:C->Q            14   0.360   0.778  plb_dac_0/USER_LOGIC_I/slv_reg0_0 (plb_dac_0/USER_LOGIC_I/slv_reg0<0>)
+     LUT2:I0->O            0   0.195   0.000  plb_dac_0/USER_LOGIC_I/IP2DAC_Format1 (S_Format)
+     end scope: 'plb_dac_0'
     ----------------------------------------
-    Total                      6.173ns (4.894ns logic, 1.279ns route)
-                                       (79.3% logic, 20.7% route)
+    Total                      1.333ns (0.555ns logic, 0.778ns route)
+                                       (41.6% logic, 58.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'mdm_0/mdm_0/drck_i'
@@ -609,12 +585,12 @@ Offset:              5.861ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 35.00 secs
-Total CPU time to Xst completion: 35.58 secs
+Total REAL time to Xst completion: 36.00 secs
+Total CPU time to Xst completion: 36.51 secs
  
 --> 
 
-Total memory usage is 390688 kilobytes
+Total memory usage is 389280 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

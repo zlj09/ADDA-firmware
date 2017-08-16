@@ -34,16 +34,18 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xparameters.h"
-#include "xbasic_types.h"
-#include "xil_io.h"
+//#include "xbasic_types.h"
+//#include "xil_io.h"
 
-void print(char *str);
+#include "test_plb_dac.h"
+
+//void print(char *str);
 
 int main()
 {
     init_platform();
 
-    print("Hello World\n\r");
+    //print("H");
 
 	u32 i, delay_cnt;
 	//u32 *dac_ctl, *dac_data;
@@ -53,14 +55,37 @@ int main()
 
     //*dac_ctl = 0x00000001;
     //*dac_data = 0;
-	Xil_Out32(XPAR_PLB_DAC_0_BASEADDR, 0x00000001);
-	Xil_Out32(XPAR_PLB_DAC_0_BASEADDR + 4, 0);
+
+	//Xil_Out32(XPAR_PLB_DAC_0_BASEADDR, 0x00000001);
+	//Xil_Out32(XPAR_PLB_DAC_0_BASEADDR + 4, 0);
+
+	//print("H");
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000001);
+	//for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
+
+	//print("e");
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0xabcdef98);
+	//for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
+	//print("l");
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x00000001);
+	//for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
+	//print("l");
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x55555555);
+	//for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
+	//print("o");
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0xaaaaaaaa);
+	//for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
+	//print("\n");
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x00000000);
+	//for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
+
     i = 0;
     while(1)
     {
     	if (++i == (1 << 10))
     		i = 0;
-    	Xil_Out32(XPAR_PLB_DAC_0_BASEADDR + 4, i);
+    	//Xil_Out32(XPAR_PLB_DAC_0_BASEADDR + 4, i);
+    	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, i);
     	for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
     }
 

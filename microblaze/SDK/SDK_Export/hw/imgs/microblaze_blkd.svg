@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/svg11-tiny.dtd">
 
-<svg width="952" height="1499">
+<svg width="952" height="1385">
   <defs>
     <g xmlns:svg="http://www.w3.org/2000/svg" id="G_IOPort">
       <rect x="0" y="0" width="16" height="16" fill="#CCCCFF" stroke="#000088" stroke-width="1"/>
@@ -605,15 +605,6 @@
       <use xmlns:xlink="http://www.w3.org/1999/xlink" x="33" y="0" xlink:href="#PLBV46_busconn_SLAVE"/>
       <text x="45" y="39" fill="#000000" stroke="none" font-size="10pt" font-style="italic" font-weight="900" text-anchor="middle" font-family="Verdana Courier Arial Helvetica san-serif">SPLB</text>
     </g>
-    <g id="sbsbktmodule_xps_iic_0">
-      <rect x="0" y="24" rx="6" ry="6" width="90" height="74" style="fill:#CCCCCC; stroke:#FFFFFF; stroke-width:2"/>
-      <rect x="11" y="56" rx="3" ry="3" width="68" height="38" style="fill:#FFFFFF; stroke:none;"/>
-      <text x="45" y="64" fill="#AA0017" stroke="none" font-size="10pt" font-style="italic" font-weight="900" text-anchor="middle" font-family="Verdana Arial Helvetica san-serif">xps_iic</text>
-      <text x="45" y="74" fill="#000000" stroke="none" font-size="10pt" font-style="italic" font-weight="900" text-anchor="middle" font-family="Courier Arial Helvetica san-serif">xps_iic_0</text>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" x="29" y="28" xlink:href="#PLBV46_BifLabel"/>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" x="33" y="0" xlink:href="#PLBV46_busconn_SLAVE"/>
-      <text x="45" y="39" fill="#000000" stroke="none" font-size="10pt" font-style="italic" font-weight="900" text-anchor="middle" font-family="Verdana Courier Arial Helvetica san-serif">SPLB</text>
-    </g>
     <g id="sbsbktmodule_xps_intc_0">
       <rect x="0" y="24" rx="6" ry="6" width="90" height="74" style="fill:#CCCCCC; stroke:#FFFFFF; stroke-width:2"/>
       <rect x="11" y="56" rx="3" ry="3" width="68" height="38" style="fill:#FFFFFF; stroke:none;"/>
@@ -640,16 +631,13 @@
       <text x="83" y="32" fill="#000000" stroke="none" font-size="10pt" font-weight="900" text-anchor="start" font-family="Arial Helvetica san-serif">0</text>
     </g>
     <g id="sbsbucket_mb_plb">
-      <rect x="0" y="0" rx="4" ry="4" width="334" height="244" style="stroke-width:2; stroke:#BB9955; fill:#FFFFDD"/>
+      <rect x="0" y="0" rx="4" ry="4" width="334" height="130" style="stroke-width:2; stroke:#BB9955; fill:#FFFFDD"/>
       <use xmlns:xlink="http://www.w3.org/1999/xlink" x="16" y="16" xlink:href="#sbsbktmodule_plb_dac_0"/>
       <rect x="0" y="24" width="61" height="8" style="fill:#BB9955"/>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" x="122" y="16" xlink:href="#sbsbktmodule_xps_iic_0"/>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" x="122" y="16" xlink:href="#sbsbktmodule_xps_intc_0"/>
       <rect x="61" y="24" width="106" height="8" style="fill:#BB9955"/>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" x="228" y="16" xlink:href="#sbsbktmodule_xps_intc_0"/>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" x="228" y="16" xlink:href="#sbsbktmodule_RS232"/>
       <rect x="167" y="24" width="106" height="8" style="fill:#BB9955"/>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" x="16" y="130" xlink:href="#sbsbktmodule_RS232"/>
-      <rect x="0" y="138" width="61" height="8" style="fill:#BB9955"/>
-      <rect x="0" y="24" width="8" height="114" style="fill:#BB9955"/>
     </g>
     <g id="ipbktmodule_clock_generator_0">
       <rect x="0" y="0" rx="6" ry="6" width="90" height="74" style="fill:#CCCCCC; stroke:#000000; stroke-width:2"/>
@@ -744,7 +732,7 @@
       <text x="83" y="20" fill="#000000" stroke="none" font-size="10pt" font-weight="900" text-anchor="start" font-family="Arial Helvetica san-serif">0</text>
     </g>
     <g id="symbol_STACK_0">
-      <rect x="0" y="0" rx="6" ry="6" width="334" height="676" style="fill:#CCCCCC; stroke:none;"/>
+      <rect x="0" y="0" rx="6" ry="6" width="334" height="562" style="fill:#CCCCCC; stroke:none;"/>
       <use xmlns:xlink="http://www.w3.org/1999/xlink" x="77" y="0" xlink:href="#symbol_STACK_0_SHAPE_0"/>
       <use xmlns:xlink="http://www.w3.org/1999/xlink" x="122" y="448" xlink:href="#symbol_STACK_0_SHAPE_2"/>
       <use xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="538" xlink:href="#sbsbucket_mb_plb"/>
@@ -871,18 +859,18 @@
       <text x="241" y="72" fill="#000000" stroke="none" font-size="10pt" font-style="italic" font-weight="bold" text-anchor="middle" font-family="Courier Arial Helvetica san-serif">xc4vsx55ff1148-10</text>
       <rect x="0" y="80" width="300" height="16" style="fill:#EEEEEE; stroke:none;"/>
       <text x="4" y="92" fill="#000000" stroke="none" font-size="10pt" font-weight="bold" text-anchor="start" font-family="Arial Helvetica san-serif">GENERATED</text>
-      <text x="217" y="92" fill="#000000" stroke="none" font-size="10pt" font-style="italic" font-weight="bold" text-anchor="middle" font-family="Courier Arial Helvetica san-serif">Mon Aug 07 15:27:21 2017</text>
+      <text x="217" y="92" fill="#000000" stroke="none" font-size="10pt" font-style="italic" font-weight="bold" text-anchor="middle" font-family="Courier Arial Helvetica san-serif">Wed Aug 16 13:05:37 2017</text>
     </g>
   </defs>
-  <rect x="0" y="0" width="952" height="1499" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
-  <rect x="48" y="40" width="856" height="1158" style="fill:#000088"/>
-  <rect x="64" y="56" rx="8" ry="8" width="824" height="1126" fill="#CCCCCC"/>
+  <rect x="0" y="0" width="952" height="1385" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+  <rect x="48" y="40" width="856" height="1044" style="fill:#000088"/>
+  <rect x="64" y="56" rx="8" ry="8" width="824" height="1012" fill="#CCCCCC"/>
   <use xmlns:xlink="http://www.w3.org/1999/xlink" x="389" y="101" xlink:href="#symbol_STACK_0"/>
   <use xmlns:xlink="http://www.w3.org/1999/xlink" x="269" y="101" xlink:href="#symbol_SPACE_WEST_NONE_EAST_0"/>
   <use xmlns:xlink="http://www.w3.org/1999/xlink" x="556" y="101" xlink:href="#symbol_SPACE_WEST_0_EAST_NONE"/>
   <use xmlns:xlink="http://www.w3.org/1999/xlink" x="109" y="443" xlink:href="#group_sharedBusses"/>
-  <text x="362" y="969" fill="#000000" stroke="none" font-size="9pt" font-style="normal" font-weight="900" text-anchor="start" font-family="Arial Helvetica san-serif">IP</text>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" x="362" y="973" xlink:href="#ipbucket"/>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" x="436" y="1241" xlink:href="#BlkDiagram_Key"/>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" x="48" y="1241" xlink:href="#BlkDiagram_Specs"/>
+  <text x="362" y="855" fill="#000000" stroke="none" font-size="9pt" font-style="normal" font-weight="900" text-anchor="start" font-family="Arial Helvetica san-serif">IP</text>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" x="362" y="859" xlink:href="#ipbucket"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" x="436" y="1127" xlink:href="#BlkDiagram_Key"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" x="48" y="1127" xlink:href="#BlkDiagram_Specs"/>
 </svg>

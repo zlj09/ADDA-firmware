@@ -221,19 +221,6 @@ Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc
 Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v3_00_a
 Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/intc_core.vhd" into library xps_intc_v2_01_a
 Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/xps_intc.vhd" into library xps_intc_v2_01_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" into library interrupt_control_v2_01_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/upcnt_n.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/shift8.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/iic_pkg.vhd" into library xps_iic_v2_03_a
-WARNING:HDLCompiler:443 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/iic_pkg.vhd" Line 275: Function gpo_bit_used does not always return a value.
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/reg_interface.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/xps_ipif_ssp1.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/iic_control.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/dynamic_master.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/debounce.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/filter.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/iic.vhd" into library xps_iic_v2_03_a
-Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/hdl/vhdl/xps_iic.vhd" into library xps_iic_v2_03_a
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/verilog/user_logic.v" into library plb_dac_v1_00_a
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/vhdl/plb_dac.vhd" into library plb_dac_v1_00_a
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_microblaze_0_wrapper.vhd" into library work
@@ -249,7 +236,6 @@ Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_clock_g
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_mdm_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_proc_sys_reset_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_xps_intc_0_wrapper.vhd" into library work
-Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_xps_iic_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_0_wrapper.vhd" into library work
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze.v" into library work
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_tb.v" into library work
@@ -289,8 +275,8 @@ WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERN
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index 63 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 2580: Element index 7 into dopb_buf is out of bounds
 Completed static elaboration
-Fuse Memory Usage: 266468 KB
-Fuse CPU Usage: 13968 ms
+Fuse Memory Usage: 263204 KB
+Fuse CPU Usage: 13655 ms
 Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
 Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
 Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
@@ -358,7 +344,6 @@ Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
 Compiling module lmb_bram_elaborate
 Compiling module microblaze_lmb_bram_wrapper
 Compiling module user_logic(10,32,2)
-Compiling module IOBUF
 Compiling module microblaze
 Compiling module testbench
 Compiling module glbl
@@ -450,11 +435,11 @@ Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(2,2,"virtex4")(
 Compiling architecture implementation of entity plb_addrpath [\plb_addrpath(2,32,32,"virtex4")...]
 Compiling architecture simulation of entity plb_wr_datapath [\plb_wr_datapath(2,32,"virtex4")...]
 Compiling architecture simulation of entity plb_rd_datapath [\plb_rd_datapath(2,32)\]
-Compiling architecture imp of entity or_gate [\or_gate(5,1,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(5,2,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(5,32,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(5,4,true)\]
-Compiling architecture implementation of entity plb_slave_ors [\plb_slave_ors(2,5,32,"virtex4")...]
+Compiling architecture imp of entity or_gate [\or_gate(4,1,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(4,2,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(4,32,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(4,4,true)\]
+Compiling architecture implementation of entity plb_slave_ors [\plb_slave_ors(2,4,32,"virtex4")...]
 Compiling architecture simulation of entity qual_request [qual_request_default]
 Compiling architecture simulation of entity priority_encoder [\priority_encoder(4)\]
 Compiling architecture qual_priority of entity qual_priority [qual_priority_default]
@@ -470,8 +455,8 @@ Compiling architecture implementation of entity muxed_signals [\muxed_signals(2,
 Compiling architecture simulation of entity down_counter [\down_counter(4)\]
 Compiling architecture simulation of entity watchdog_timer [\watchdog_timer(4)\]
 Compiling architecture plb_interrupt of entity plb_interrupt [\plb_interrupt('1')\]
-Compiling architecture implementation of entity plb_arbiter_logic [\plb_arbiter_logic(2,5,1,32,32,0...]
-Compiling architecture simulation of entity plb_v46 [\plb_v46(2,5,1,32,32,0,('1','1',...]
+Compiling architecture implementation of entity plb_arbiter_logic [\plb_arbiter_logic(2,4,1,32,32,0...]
+Compiling architecture simulation of entity plb_v46 [\plb_v46(2,4,1,32,32,0,('1','1',...]
 Compiling architecture structure of entity microblaze_mb_plb_wrapper [microblaze_mb_plb_wrapper_defaul...]
 Compiling architecture imp of entity lmb_v10 [\lmb_v10(1,32,32,1)\]
 Compiling architecture structure of entity microblaze_ilmb_wrapper [microblaze_ilmb_wrapper_default]
@@ -549,48 +534,6 @@ Compiling architecture implementation of entity plb_slave_attachment [\plb_slave
 Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
 Compiling architecture imp of entity xps_intc [\xps_intc("virtex4",('1','0','0'...]
 Compiling architecture structure of entity microblaze_xps_intc_0_wrapper [microblaze_xps_intc_0_wrapper_de...]
-Compiling package iic_pkg
-Compiling architecture imp of entity pselect_f [\pselect_f(26,32,('1','0','0','0...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','0','0','0')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','0','0','1')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','0','1','0')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','0','1','1')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','1','0','0')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','1','0','1')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','1','1','0')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('0','1','1','1')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','0','0','0')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','0','0','1')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','0','1','0')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','0','1','1')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','1','0','0')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','1','0','1')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','1','1','0')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(4,4,('1','1','1','1')...]
-Compiling architecture imp of entity pselect_f [\pselect_f(30,32,('1','0','0','0...]
-Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','0','0','0...]
-Compiling architecture implementation of entity or_muxcy [\or_muxcy(3)\]
-Compiling architecture imp of entity or_gate128 [\or_gate128(3,1,false)\]
-Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
-Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
-Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
-Compiling architecture implementation of entity interrupt_control [\interrupt_control(16,1,(3,3,3,3...]
-Compiling architecture implementation of entity soft_reset [\soft_reset(32,4)\]
-Compiling architecture imp of entity xps_ipif_ssp1 [\xps_ipif_ssp1(('1','0','0','0',...]
-Compiling architecture implementation of entity or_muxcy [\or_muxcy(10)\]
-Compiling architecture imp of entity reg_interface [\reg_interface(true,4,true,4,0,1...]
-Compiling architecture imp of entity debounce [\debounce(5,'1')\]
-Compiling architecture imp of entity filter [\filter(5,5)\]
-Compiling architecture imp of entity upcnt_n [\upcnt_n(9)\]
-Compiling architecture imp of entity shift8 [shift8_default]
-Compiling architecture imp of entity upcnt_n [\upcnt_n(4)\]
-Compiling architecture imp of entity iic_control [\iic_control(50000000,100000,0)\]
-Compiling architecture imp of entity SRL_FIFO [\SRL_FIFO(8,4,false)\]
-Compiling architecture imp of entity dynamic_master [dynamic_master_default]
-Compiling architecture imp of entity SRL_FIFO [\SRL_FIFO(2,4,false)\]
-Compiling architecture imp of entity iic [\iic(('1','0','0','0','0','0','0...]
-Compiling architecture imp of entity xps_iic [\xps_iic("virtex4",('1','0','0',...]
-Compiling architecture structure of entity microblaze_xps_iic_0_wrapper [microblaze_xps_iic_0_wrapper_def...]
 Compiling package vl_types
 Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','1','0','0...]
 Compiling architecture imp of entity pselect_f [\pselect_f(1,1,('0'),"nofamily")...]
@@ -601,12 +544,13 @@ Compiling architecture imp of entity or_gate128 [\or_gate128(2,1,false)\]
 Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
 Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
 Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
+Compiling architecture implementation of entity soft_reset [\soft_reset(32,4)\]
 Compiling architecture imp of entity plb_dac [\plb_dac(10,('1','1','0','0','1'...]
 Compiling architecture structure of entity microblaze_plb_dac_0_wrapper [microblaze_plb_dac_0_wrapper_def...]
 Time Resolution for simulation is 100fs.
-Waiting for 249 sub-compilation(s) to finish...
-Compiled 498 VHDL Units
-Compiled 71 Verilog Units
+Waiting for 227 sub-compilation(s) to finish...
+Compiled 415 VHDL Units
+Compiled 70 Verilog Units
 Built simulation executable F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_isim_beh.exe
-Fuse Memory Usage: 347308 KB
-Fuse CPU Usage: 37765 ms
+Fuse Memory Usage: 342892 KB
+Fuse CPU Usage: 38562 ms

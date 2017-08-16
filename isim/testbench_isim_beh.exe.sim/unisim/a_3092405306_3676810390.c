@@ -919,12 +919,3 @@ extern void unisim_a_3373517694_3676810390_init()
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
-
-extern void unisim_a_0025669909_3676810390_init()
-{
-	static char *pe[] = {(void *)unisim_a_3092405306_3676810390_p_0};
-	static char *se[] = {(void *)unisim_a_3092405306_3676810390_sub_655425482_336668464};
-	xsi_register_didat("unisim_a_0025669909_3676810390", "isim/testbench_isim_beh.exe.sim/unisim/a_0025669909_3676810390.didat");
-	xsi_register_executes(pe);
-	xsi_register_subprogram_executes(se);
-}
