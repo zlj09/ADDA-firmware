@@ -18,7 +18,8 @@ module microblaze
     plb_dac_0_S_PinMD_pin,
     plb_dac_0_S_ClkMD_pin,
     plb_dac_0_S_Format_pin,
-    plb_dac_0_S_PWRDN_pin
+    plb_dac_0_S_PWRDN_pin,
+    xps_gpio_0_GPIO_IO_pin
   );
   input fpga_0_RS232_RX_pin;
   output fpga_0_RS232_TX_pin;
@@ -31,6 +32,7 @@ module microblaze
   output plb_dac_0_S_ClkMD_pin;
   output plb_dac_0_S_Format_pin;
   output plb_dac_0_S_PWRDN_pin;
+  inout [0:31] xps_gpio_0_GPIO_IO_pin;
 
   // Internal signals
 
@@ -143,7 +145,7 @@ module microblaze
   wire mb_plb_PLB_rdBurst;
   wire [0:1] mb_plb_PLB_rdPendPri;
   wire mb_plb_PLB_rdPendReq;
-  wire [0:3] mb_plb_PLB_rdPrim;
+  wire [0:4] mb_plb_PLB_rdPrim;
   wire [0:1] mb_plb_PLB_reqPri;
   wire [0:3] mb_plb_PLB_size;
   wire [0:2] mb_plb_PLB_type;
@@ -151,24 +153,24 @@ module microblaze
   wire [0:31] mb_plb_PLB_wrDBus;
   wire [0:1] mb_plb_PLB_wrPendPri;
   wire mb_plb_PLB_wrPendReq;
-  wire [0:3] mb_plb_PLB_wrPrim;
-  wire [0:3] mb_plb_SPLB_Rst;
-  wire [0:7] mb_plb_Sl_MBusy;
-  wire [0:7] mb_plb_Sl_MIRQ;
-  wire [0:7] mb_plb_Sl_MRdErr;
-  wire [0:7] mb_plb_Sl_MWrErr;
-  wire [0:7] mb_plb_Sl_SSize;
-  wire [0:3] mb_plb_Sl_addrAck;
-  wire [0:3] mb_plb_Sl_rdBTerm;
-  wire [0:3] mb_plb_Sl_rdComp;
-  wire [0:3] mb_plb_Sl_rdDAck;
-  wire [0:127] mb_plb_Sl_rdDBus;
-  wire [0:15] mb_plb_Sl_rdWdAddr;
-  wire [0:3] mb_plb_Sl_rearbitrate;
-  wire [0:3] mb_plb_Sl_wait;
-  wire [0:3] mb_plb_Sl_wrBTerm;
-  wire [0:3] mb_plb_Sl_wrComp;
-  wire [0:3] mb_plb_Sl_wrDAck;
+  wire [0:4] mb_plb_PLB_wrPrim;
+  wire [0:4] mb_plb_SPLB_Rst;
+  wire [0:9] mb_plb_Sl_MBusy;
+  wire [0:9] mb_plb_Sl_MIRQ;
+  wire [0:9] mb_plb_Sl_MRdErr;
+  wire [0:9] mb_plb_Sl_MWrErr;
+  wire [0:9] mb_plb_Sl_SSize;
+  wire [0:4] mb_plb_Sl_addrAck;
+  wire [0:4] mb_plb_Sl_rdBTerm;
+  wire [0:4] mb_plb_Sl_rdComp;
+  wire [0:4] mb_plb_Sl_rdDAck;
+  wire [0:159] mb_plb_Sl_rdDBus;
+  wire [0:19] mb_plb_Sl_rdWdAddr;
+  wire [0:4] mb_plb_Sl_rearbitrate;
+  wire [0:4] mb_plb_Sl_wait;
+  wire [0:4] mb_plb_Sl_wrBTerm;
+  wire [0:4] mb_plb_Sl_wrComp;
+  wire [0:4] mb_plb_Sl_wrDAck;
   wire mb_reset;
   wire microblaze_0_Interrupt;
   wire microblaze_0_mdm_bus_Dbg_Capture;
@@ -198,6 +200,9 @@ module microblaze
   wire plb_dac_0_S_PinMD;
   wire [0:0] sys_bus_reset;
   wire sys_rst_s;
+  wire [0:31] xps_gpio_0_GPIO_IO_I;
+  wire [0:31] xps_gpio_0_GPIO_IO_O;
+  wire [0:31] xps_gpio_0_GPIO_IO_T;
 
   // Internal assignments
 
@@ -1832,6 +1837,315 @@ module microblaze
       .S_ClkMD ( plb_dac_0_S_ClkMD ),
       .S_Format ( plb_dac_0_S_Format ),
       .S_PWRDN ( plb_dac_0_S_PWRDN )
+    );
+
+  microblaze_xps_gpio_0_wrapper
+    xps_gpio_0 (
+      .SPLB_Clk ( clk_50_0000MHz ),
+      .SPLB_Rst ( mb_plb_SPLB_Rst[4] ),
+      .PLB_ABus ( mb_plb_PLB_ABus ),
+      .PLB_UABus ( mb_plb_PLB_UABus ),
+      .PLB_PAValid ( mb_plb_PLB_PAValid ),
+      .PLB_SAValid ( mb_plb_PLB_SAValid ),
+      .PLB_rdPrim ( mb_plb_PLB_rdPrim[4] ),
+      .PLB_wrPrim ( mb_plb_PLB_wrPrim[4] ),
+      .PLB_masterID ( mb_plb_PLB_masterID[0:0] ),
+      .PLB_abort ( mb_plb_PLB_abort ),
+      .PLB_busLock ( mb_plb_PLB_busLock ),
+      .PLB_RNW ( mb_plb_PLB_RNW ),
+      .PLB_BE ( mb_plb_PLB_BE ),
+      .PLB_MSize ( mb_plb_PLB_MSize ),
+      .PLB_size ( mb_plb_PLB_size ),
+      .PLB_type ( mb_plb_PLB_type ),
+      .PLB_lockErr ( mb_plb_PLB_lockErr ),
+      .PLB_wrDBus ( mb_plb_PLB_wrDBus ),
+      .PLB_wrBurst ( mb_plb_PLB_wrBurst ),
+      .PLB_rdBurst ( mb_plb_PLB_rdBurst ),
+      .PLB_wrPendReq ( mb_plb_PLB_wrPendReq ),
+      .PLB_rdPendReq ( mb_plb_PLB_rdPendReq ),
+      .PLB_wrPendPri ( mb_plb_PLB_wrPendPri ),
+      .PLB_rdPendPri ( mb_plb_PLB_rdPendPri ),
+      .PLB_reqPri ( mb_plb_PLB_reqPri ),
+      .PLB_TAttribute ( mb_plb_PLB_TAttribute ),
+      .Sl_addrAck ( mb_plb_Sl_addrAck[4] ),
+      .Sl_SSize ( mb_plb_Sl_SSize[8:9] ),
+      .Sl_wait ( mb_plb_Sl_wait[4] ),
+      .Sl_rearbitrate ( mb_plb_Sl_rearbitrate[4] ),
+      .Sl_wrDAck ( mb_plb_Sl_wrDAck[4] ),
+      .Sl_wrComp ( mb_plb_Sl_wrComp[4] ),
+      .Sl_wrBTerm ( mb_plb_Sl_wrBTerm[4] ),
+      .Sl_rdDBus ( mb_plb_Sl_rdDBus[128:159] ),
+      .Sl_rdWdAddr ( mb_plb_Sl_rdWdAddr[16:19] ),
+      .Sl_rdDAck ( mb_plb_Sl_rdDAck[4] ),
+      .Sl_rdComp ( mb_plb_Sl_rdComp[4] ),
+      .Sl_rdBTerm ( mb_plb_Sl_rdBTerm[4] ),
+      .Sl_MBusy ( mb_plb_Sl_MBusy[8:9] ),
+      .Sl_MWrErr ( mb_plb_Sl_MWrErr[8:9] ),
+      .Sl_MRdErr ( mb_plb_Sl_MRdErr[8:9] ),
+      .Sl_MIRQ ( mb_plb_Sl_MIRQ[8:9] ),
+      .IP2INTC_Irpt (  ),
+      .GPIO_IO_I ( xps_gpio_0_GPIO_IO_I ),
+      .GPIO_IO_O ( xps_gpio_0_GPIO_IO_O ),
+      .GPIO_IO_T ( xps_gpio_0_GPIO_IO_T ),
+      .GPIO2_IO_I ( net_gnd32 ),
+      .GPIO2_IO_O (  ),
+      .GPIO2_IO_T (  )
+    );
+
+  IOBUF
+    iobuf_0 (
+      .I ( xps_gpio_0_GPIO_IO_O[0] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[0] ),
+      .O ( xps_gpio_0_GPIO_IO_I[0] ),
+      .T ( xps_gpio_0_GPIO_IO_T[0] )
+    );
+
+  IOBUF
+    iobuf_1 (
+      .I ( xps_gpio_0_GPIO_IO_O[1] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[1] ),
+      .O ( xps_gpio_0_GPIO_IO_I[1] ),
+      .T ( xps_gpio_0_GPIO_IO_T[1] )
+    );
+
+  IOBUF
+    iobuf_2 (
+      .I ( xps_gpio_0_GPIO_IO_O[2] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[2] ),
+      .O ( xps_gpio_0_GPIO_IO_I[2] ),
+      .T ( xps_gpio_0_GPIO_IO_T[2] )
+    );
+
+  IOBUF
+    iobuf_3 (
+      .I ( xps_gpio_0_GPIO_IO_O[3] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[3] ),
+      .O ( xps_gpio_0_GPIO_IO_I[3] ),
+      .T ( xps_gpio_0_GPIO_IO_T[3] )
+    );
+
+  IOBUF
+    iobuf_4 (
+      .I ( xps_gpio_0_GPIO_IO_O[4] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[4] ),
+      .O ( xps_gpio_0_GPIO_IO_I[4] ),
+      .T ( xps_gpio_0_GPIO_IO_T[4] )
+    );
+
+  IOBUF
+    iobuf_5 (
+      .I ( xps_gpio_0_GPIO_IO_O[5] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[5] ),
+      .O ( xps_gpio_0_GPIO_IO_I[5] ),
+      .T ( xps_gpio_0_GPIO_IO_T[5] )
+    );
+
+  IOBUF
+    iobuf_6 (
+      .I ( xps_gpio_0_GPIO_IO_O[6] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[6] ),
+      .O ( xps_gpio_0_GPIO_IO_I[6] ),
+      .T ( xps_gpio_0_GPIO_IO_T[6] )
+    );
+
+  IOBUF
+    iobuf_7 (
+      .I ( xps_gpio_0_GPIO_IO_O[7] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[7] ),
+      .O ( xps_gpio_0_GPIO_IO_I[7] ),
+      .T ( xps_gpio_0_GPIO_IO_T[7] )
+    );
+
+  IOBUF
+    iobuf_8 (
+      .I ( xps_gpio_0_GPIO_IO_O[8] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[8] ),
+      .O ( xps_gpio_0_GPIO_IO_I[8] ),
+      .T ( xps_gpio_0_GPIO_IO_T[8] )
+    );
+
+  IOBUF
+    iobuf_9 (
+      .I ( xps_gpio_0_GPIO_IO_O[9] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[9] ),
+      .O ( xps_gpio_0_GPIO_IO_I[9] ),
+      .T ( xps_gpio_0_GPIO_IO_T[9] )
+    );
+
+  IOBUF
+    iobuf_10 (
+      .I ( xps_gpio_0_GPIO_IO_O[10] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[10] ),
+      .O ( xps_gpio_0_GPIO_IO_I[10] ),
+      .T ( xps_gpio_0_GPIO_IO_T[10] )
+    );
+
+  IOBUF
+    iobuf_11 (
+      .I ( xps_gpio_0_GPIO_IO_O[11] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[11] ),
+      .O ( xps_gpio_0_GPIO_IO_I[11] ),
+      .T ( xps_gpio_0_GPIO_IO_T[11] )
+    );
+
+  IOBUF
+    iobuf_12 (
+      .I ( xps_gpio_0_GPIO_IO_O[12] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[12] ),
+      .O ( xps_gpio_0_GPIO_IO_I[12] ),
+      .T ( xps_gpio_0_GPIO_IO_T[12] )
+    );
+
+  IOBUF
+    iobuf_13 (
+      .I ( xps_gpio_0_GPIO_IO_O[13] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[13] ),
+      .O ( xps_gpio_0_GPIO_IO_I[13] ),
+      .T ( xps_gpio_0_GPIO_IO_T[13] )
+    );
+
+  IOBUF
+    iobuf_14 (
+      .I ( xps_gpio_0_GPIO_IO_O[14] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[14] ),
+      .O ( xps_gpio_0_GPIO_IO_I[14] ),
+      .T ( xps_gpio_0_GPIO_IO_T[14] )
+    );
+
+  IOBUF
+    iobuf_15 (
+      .I ( xps_gpio_0_GPIO_IO_O[15] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[15] ),
+      .O ( xps_gpio_0_GPIO_IO_I[15] ),
+      .T ( xps_gpio_0_GPIO_IO_T[15] )
+    );
+
+  IOBUF
+    iobuf_16 (
+      .I ( xps_gpio_0_GPIO_IO_O[16] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[16] ),
+      .O ( xps_gpio_0_GPIO_IO_I[16] ),
+      .T ( xps_gpio_0_GPIO_IO_T[16] )
+    );
+
+  IOBUF
+    iobuf_17 (
+      .I ( xps_gpio_0_GPIO_IO_O[17] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[17] ),
+      .O ( xps_gpio_0_GPIO_IO_I[17] ),
+      .T ( xps_gpio_0_GPIO_IO_T[17] )
+    );
+
+  IOBUF
+    iobuf_18 (
+      .I ( xps_gpio_0_GPIO_IO_O[18] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[18] ),
+      .O ( xps_gpio_0_GPIO_IO_I[18] ),
+      .T ( xps_gpio_0_GPIO_IO_T[18] )
+    );
+
+  IOBUF
+    iobuf_19 (
+      .I ( xps_gpio_0_GPIO_IO_O[19] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[19] ),
+      .O ( xps_gpio_0_GPIO_IO_I[19] ),
+      .T ( xps_gpio_0_GPIO_IO_T[19] )
+    );
+
+  IOBUF
+    iobuf_20 (
+      .I ( xps_gpio_0_GPIO_IO_O[20] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[20] ),
+      .O ( xps_gpio_0_GPIO_IO_I[20] ),
+      .T ( xps_gpio_0_GPIO_IO_T[20] )
+    );
+
+  IOBUF
+    iobuf_21 (
+      .I ( xps_gpio_0_GPIO_IO_O[21] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[21] ),
+      .O ( xps_gpio_0_GPIO_IO_I[21] ),
+      .T ( xps_gpio_0_GPIO_IO_T[21] )
+    );
+
+  IOBUF
+    iobuf_22 (
+      .I ( xps_gpio_0_GPIO_IO_O[22] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[22] ),
+      .O ( xps_gpio_0_GPIO_IO_I[22] ),
+      .T ( xps_gpio_0_GPIO_IO_T[22] )
+    );
+
+  IOBUF
+    iobuf_23 (
+      .I ( xps_gpio_0_GPIO_IO_O[23] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[23] ),
+      .O ( xps_gpio_0_GPIO_IO_I[23] ),
+      .T ( xps_gpio_0_GPIO_IO_T[23] )
+    );
+
+  IOBUF
+    iobuf_24 (
+      .I ( xps_gpio_0_GPIO_IO_O[24] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[24] ),
+      .O ( xps_gpio_0_GPIO_IO_I[24] ),
+      .T ( xps_gpio_0_GPIO_IO_T[24] )
+    );
+
+  IOBUF
+    iobuf_25 (
+      .I ( xps_gpio_0_GPIO_IO_O[25] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[25] ),
+      .O ( xps_gpio_0_GPIO_IO_I[25] ),
+      .T ( xps_gpio_0_GPIO_IO_T[25] )
+    );
+
+  IOBUF
+    iobuf_26 (
+      .I ( xps_gpio_0_GPIO_IO_O[26] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[26] ),
+      .O ( xps_gpio_0_GPIO_IO_I[26] ),
+      .T ( xps_gpio_0_GPIO_IO_T[26] )
+    );
+
+  IOBUF
+    iobuf_27 (
+      .I ( xps_gpio_0_GPIO_IO_O[27] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[27] ),
+      .O ( xps_gpio_0_GPIO_IO_I[27] ),
+      .T ( xps_gpio_0_GPIO_IO_T[27] )
+    );
+
+  IOBUF
+    iobuf_28 (
+      .I ( xps_gpio_0_GPIO_IO_O[28] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[28] ),
+      .O ( xps_gpio_0_GPIO_IO_I[28] ),
+      .T ( xps_gpio_0_GPIO_IO_T[28] )
+    );
+
+  IOBUF
+    iobuf_29 (
+      .I ( xps_gpio_0_GPIO_IO_O[29] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[29] ),
+      .O ( xps_gpio_0_GPIO_IO_I[29] ),
+      .T ( xps_gpio_0_GPIO_IO_T[29] )
+    );
+
+  IOBUF
+    iobuf_30 (
+      .I ( xps_gpio_0_GPIO_IO_O[30] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[30] ),
+      .O ( xps_gpio_0_GPIO_IO_I[30] ),
+      .T ( xps_gpio_0_GPIO_IO_T[30] )
+    );
+
+  IOBUF
+    iobuf_31 (
+      .I ( xps_gpio_0_GPIO_IO_O[31] ),
+      .IO ( xps_gpio_0_GPIO_IO_pin[31] ),
+      .O ( xps_gpio_0_GPIO_IO_I[31] ),
+      .T ( xps_gpio_0_GPIO_IO_T[31] )
     );
 
 endmodule

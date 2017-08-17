@@ -3,7 +3,7 @@ REM  Simulation Model Generator
 REM  Xilinx EDK 14.7 EDK_P.20131013
 REM  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 REM
-REM  File     microblaze_fuse.cmd (Wed Aug 16 13:16:04 2017)
+REM  File     microblaze_fuse.cmd (Thu Aug 17 16:35:24 2017)
 REM
 REM  ISE Simulator Fuse Script File
 REM

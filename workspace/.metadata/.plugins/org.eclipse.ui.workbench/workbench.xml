@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
-<window height="728" maximized="true" width="1024" x="-6" y="0">
+<window height="728" maximized="true" width="1024" x="156" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -26,7 +26,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1502091001881" focus="true" label="Workspace - C/C++">
+<page aggregateWorkingSetId="Aggregate for window 1502958333358" focus="true" label="Workspace - C/C++">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -41,25 +41,23 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101_sdk/src/helloworld.c" title="helloworld.c" tooltip="br0101_sdk/src/helloworld.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101_sdk/src/helloworld.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1515" selectionTopPixel="209"/>
+<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/microblaze_hw_platform/system.xml" title="system.xml" tooltip="microblaze_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/microblaze_hw_platform/system.xml"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101_sdk_bsp/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="br0101_sdk_bsp/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101_sdk_bsp/microblaze_0/include/xparameters.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="4992" selectionTopPixel="2023"/>
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101_bsp/system.mss" title="system.mss" tooltip="br0101_bsp/system.mss" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101_bsp/system.mss"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xbasic_types.h" partName="xbasic_types.h" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101_sdk_bsp/microblaze_0/include/xbasic_types.h" title="xbasic_types.h" tooltip="br0101_sdk_bsp/microblaze_0/include/xbasic_types.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101_sdk_bsp/microblaze_0/include/xbasic_types.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="4210" selectionTopPixel="1717"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101/src/helloworld.c" title="helloworld.c" tooltip="br0101/src/helloworld.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101/src/helloworld.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1971" selectionTopPixel="379"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" partName="xil_io.h" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101_sdk_bsp/microblaze_0/include/xil_io.h" title="xil_io.h" tooltip="br0101_sdk_bsp/microblaze_0/include/xil_io.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101_sdk_bsp/microblaze_0/include/xil_io.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="7128" selectionTopPixel="2465"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101_bsp/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="br0101_bsp/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101_bsp/microblaze_0/include/xparameters.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="test_plb_dac.h" partName="test_plb_dac.h" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101_sdk/src/test_plb_dac.h" title="test_plb_dac.h" tooltip="br0101_sdk/src/test_plb_dac.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101_sdk/src/test_plb_dac.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="929" selectionTopPixel="204"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="plb_dac.h" partName="plb_dac.h" path="F:/Programs/Verilog/FPGA_Group/test_br0101/workspace/br0101_bsp/microblaze_0/include/plb_dac.h" title="plb_dac.h" tooltip="br0101_bsp/microblaze_0/include/plb_dac.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/br0101_bsp/microblaze_0/include/plb_dac.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="80" selectionTopPixel="51"/>
 </editor>
 </editors>
 <views>
@@ -71,10 +69,6 @@
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors (2 items)"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -161,7 +155,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@912767" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@3aabc1" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
@@ -203,157 +197,31 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_sdk/src/helloworld.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_sdk_bsp/microblaze_0/include/xparameters.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_sdk_bsp/microblaze_0/include/xparameters.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_sdk_bsp/microblaze_0/include/xbasic_types.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_sdk_bsp/microblaze_0/include/xil_io.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/br0101_sdk_bsp/system.mss"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_sdk/src/test_plb_dac.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_sdk/src/test_plb_dac.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_sdk/src/test_plb_dac_selftest.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/microblaze_hw_platform/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/br0101_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_bsp/microblaze_0/include/xparameters.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/br0101_bsp/microblaze_0/include/plb_dac.h"/>
 </editors>
-<item historyLabel="xparameters.h" index="1">
-<position info="not_deleted" x="5070" y="0"/>
+<item historyLabel="system.xml" index="0"/>
+<item historyLabel="system.mss" index="1"/>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1597" y="0"/>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1396" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="1">
-<position info="not_deleted" x="5070" y="0"/>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1422" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1515" y="23"/>
+<item historyLabel="xparameters.h" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="1">
-<position info="not_deleted" x="4992" y="23"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1515" y="23"/>
-</item>
-<item historyLabel="xparameters.h" index="2">
-<position info="not_deleted" x="4992" y="23"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1709" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1375" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1540" y="0"/>
-</item>
-<item historyLabel="xbasic_types.h" index="3">
-<position info="not_deleted" x="4214" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1540" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1541" y="0"/>
-</item>
-<item historyLabel="xbasic_types.h" index="3">
-<position info="not_deleted" x="4210" y="3"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1537" y="0"/>
-</item>
-<item historyLabel="xbasic_types.h" index="3">
-<position info="not_deleted" x="4210" y="3"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1537" y="0"/>
-</item>
-<item historyLabel="xil_io.h" index="4">
-<position info="not_deleted" x="7128" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1696" y="0"/>
-</item>
-<item historyLabel="xil_io.h" index="4">
-<position info="not_deleted" x="7128" y="9"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1696" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1425" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1778" y="0"/>
-</item>
-<item historyLabel="xparameters.h" index="2">
-<position info="not_deleted" x="4992" y="23"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1778" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1487" y="0"/>
-</item>
-<item historyLabel="system.mss" index="5"/>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1487" y="0"/>
-</item>
-<item historyLabel="system.mss" index="5"/>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1467" y="0"/>
-</item>
-<item historyLabel="system.mss" index="5"/>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1503" y="0"/>
-</item>
-<item historyLabel="system.mss" index="5"/>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1503" y="0"/>
-</item>
-<item historyLabel="test_plb_dac.h" index="6">
-<position info="not_deleted" x="5128" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1660" y="0"/>
-</item>
-<item historyLabel="test_plb_dac.h" index="6">
-<position info="not_deleted" x="5128" y="0"/>
-</item>
-<item historyLabel="test_plb_dac.c" index="7">
-<position info="not_deleted" x="540" y="0"/>
-</item>
-<item historyLabel="test_plb_dac.h" index="6">
-<position info="not_deleted" x="5128" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1660" y="0"/>
-</item>
-<item historyLabel="test_plb_dac_selftest.c" index="8">
-<position info="not_deleted" x="586" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1660" y="0"/>
-</item>
-<item historyLabel="test_plb_dac.h" index="6">
+<item historyLabel="plb_dac.h" index="4">
 <position info="not_deleted" x="80" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1660" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2016" y="0"/>
-</item>
-<item historyLabel="test_plb_dac.h" index="6">
-<position info="not_deleted" x="2878" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2016" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1941" y="0"/>
-</item>
-<item historyLabel="test_plb_dac.h" index="6">
-<position info="not_deleted" x="929" y="23"/>
-</item>
-<item active="true" historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="1941" y="0"/>
+<item active="true" historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1422" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -372,38 +240,17 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test_plb_dac.h" tooltip="br0101_sdk/src/test_plb_dac.h">
-<persistable path="/br0101_sdk/src/test_plb_dac.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="plb_dac.h" tooltip="br0101_bsp/microblaze_0/include/plb_dac.h">
+<persistable path="/br0101_bsp/microblaze_0/include/plb_dac.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test_plb_dac_selftest.c" tooltip="br0101_sdk/src/test_plb_dac_selftest.c">
-<persistable path="/br0101_sdk/src/test_plb_dac_selftest.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="br0101_bsp/microblaze_0/include/xparameters.h">
+<persistable path="/br0101_bsp/microblaze_0/include/xparameters.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test_plb_dac.c" tooltip="br0101_sdk/src/test_plb_dac.c">
-<persistable path="/br0101_sdk/src/test_plb_dac.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="br0101/src/helloworld.c">
+<persistable path="/br0101/src/helloworld.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="br0101_sdk_bsp/system.mss">
-<persistable path="/br0101_sdk_bsp/system.mss"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" tooltip="br0101_sdk_bsp/microblaze_0/include/xil_io.h">
-<persistable path="/br0101_sdk_bsp/microblaze_0/include/xil_io.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xbasic_types.h" tooltip="br0101_sdk_bsp/microblaze_0/include/xbasic_types.h">
-<persistable path="/br0101_sdk_bsp/microblaze_0/include/xbasic_types.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="br0101_sdk_bsp/microblaze_0/include/xparameters.h">
-<persistable path="/br0101_sdk_bsp/microblaze_0/include/xparameters.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="br0101_sdk/src/helloworld.c">
-<persistable path="/br0101_sdk/src/helloworld.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_printf.h" tooltip="br0101_sdk_bsp/microblaze_0/include/xil_printf.h">
-<persistable path="/br0101_sdk_bsp/microblaze_0/include/xil_printf.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform.c" tooltip="br0101_sdk/src/platform.c">
-<persistable path="/br0101_sdk/src/platform.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform.h" tooltip="br0101_sdk/src/platform.h">
-<persistable path="/br0101_sdk/src/platform.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="br0101_bsp/system.mss">
+<persistable path="/br0101_bsp/system.mss"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="microblaze_hw_platform/system.xml">
 <persistable path="/microblaze_hw_platform/system.xml"/>

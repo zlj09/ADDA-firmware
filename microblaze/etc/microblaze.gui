@@ -14,9 +14,10 @@
       <VARIABLE COL_INDEX="6" IS_VISIBLE="FALSE" VIEWDISP="Type" VIEWTYPE="HEADER"/>
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="129,950,200" VERSION="0"/>
+    <SET ID="xps_gpio_0" IS_EXPANDED="TRUE"/>
     <STATUS>
       <SELECTIONS>
-        <VARIABLE ID="plb_dac_0"/>
+        <VARIABLE ID="SPLB" PARENT="xps_gpio_0"/>
       </SELECTIONS>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
@@ -27,12 +28,13 @@
       <VARIABLE ID="dlmb_cntlr" ROW_INDEX="5"/>
       <VARIABLE ID="ilmb_cntlr" ROW_INDEX="6"/>
       <VARIABLE ID="lmb_bram" ROW_INDEX="4"/>
-      <VARIABLE ID="RS232" ROW_INDEX="10"/>
-      <VARIABLE ID="clock_generator_0" ROW_INDEX="11"/>
+      <VARIABLE ID="RS232" ROW_INDEX="11"/>
+      <VARIABLE ID="clock_generator_0" ROW_INDEX="12"/>
       <VARIABLE ID="mdm_0" ROW_INDEX="7"/>
-      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="12"/>
+      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="13"/>
       <VARIABLE ID="xps_intc_0" ROW_INDEX="8"/>
       <VARIABLE ID="plb_dac_0" ROW_INDEX="9"/>
+      <VARIABLE ID="xps_gpio_0" IS_EXPANDED="TRUE" ROW_INDEX="10"/>
     </SEQUENCES>
   </SET>
 
@@ -78,7 +80,7 @@
   </SET>
 
   <SET CLASS="PROJECT" DISPLAYMODE="TREE" VIEW_ID="PORT">
-    <HEADERS HSCROLL="0" VSCROLL="127">
+    <HEADERS HSCROLL="0" VSCROLL="0">
       <VARIABLE COL_INDEX="0" COL_WIDTH="100" IS_VISIBLE="TRUE" VIEWDISP="Name" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="1" COL_WIDTH="241" IS_VISIBLE="TRUE" VIEWDISP="Connected Port" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="2" IS_VISIBLE="FALSE" VIEWDISP="Net" VIEWTYPE="HEADER"/>
@@ -93,11 +95,14 @@
       <VARIABLE COL_INDEX="11" IS_VISIBLE="TRUE" VIEWDISP="IP Classification" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="11" COL_WIDTH="158" IS_VISIBLE="TRUE" VIEWDISP="Differential Polarity" VIEWTYPE="HEADER"/>
     </HEADERS>
-    <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="62,630,200" VERSION="0"/>
+    <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="129,950,200" VERSION="0"/>
     <SET ID="ExternalPorts" IS_EXPANDED="TRUE"/>
     <SET ID="plb_dac_0" IS_EXPANDED="TRUE"/>
+    <SET ID="xps_gpio_0" IS_EXPANDED="TRUE"/>
     <STATUS>
-      <SELECTIONS/>
+      <SELECTIONS>
+        <VARIABLE ID="gpio_0" PARENT="xps_gpio_0"/>
+      </SELECTIONS>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
       <VARIABLE ID="ExternalPorts" IS_EXPANDED="TRUE" ROW_INDEX="0"/>
@@ -108,12 +113,13 @@
       <VARIABLE ID="dlmb_cntlr" ROW_INDEX="6"/>
       <VARIABLE ID="ilmb_cntlr" ROW_INDEX="7"/>
       <VARIABLE ID="lmb_bram" ROW_INDEX="5"/>
-      <VARIABLE ID="RS232" ROW_INDEX="11"/>
-      <VARIABLE ID="clock_generator_0" ROW_INDEX="12"/>
+      <VARIABLE ID="RS232" ROW_INDEX="12"/>
+      <VARIABLE ID="clock_generator_0" ROW_INDEX="13"/>
       <VARIABLE ID="mdm_0" ROW_INDEX="8"/>
-      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="13"/>
+      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="14"/>
       <VARIABLE ID="xps_intc_0" ROW_INDEX="9"/>
       <VARIABLE ID="plb_dac_0" IS_EXPANDED="TRUE" ROW_INDEX="10"/>
+      <VARIABLE ID="xps_gpio_0" IS_EXPANDED="TRUE" ROW_INDEX="11"/>
     </SEQUENCES>
   </SET>
 

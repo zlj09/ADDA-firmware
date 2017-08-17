@@ -40,6 +40,7 @@ module microblaze_tb
   wire plb_dac_0_S_Format_pin;
   wire plb_dac_0_S_PWRDN_pin;
   wire plb_dac_0_S_PinMD_pin;
+  wire [0:31] xps_gpio_0_GPIO_IO_pin;
 
   microblaze
     dut (
@@ -53,7 +54,8 @@ module microblaze_tb
       .plb_dac_0_S_PinMD_pin ( plb_dac_0_S_PinMD_pin ),
       .plb_dac_0_S_ClkMD_pin ( plb_dac_0_S_ClkMD_pin ),
       .plb_dac_0_S_Format_pin ( plb_dac_0_S_Format_pin ),
-      .plb_dac_0_S_PWRDN_pin ( plb_dac_0_S_PWRDN_pin )
+      .plb_dac_0_S_PWRDN_pin ( plb_dac_0_S_PWRDN_pin ),
+      .xps_gpio_0_GPIO_IO_pin ( xps_gpio_0_GPIO_IO_pin )
     );
 
   // Clock generator for fpga_0_clk_1_sys_clk_pin

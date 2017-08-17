@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> 
 TABLE OF CONTENTS
@@ -73,6 +73,7 @@ Module <microblaze_mdm_0_wrapper> compiled
 Module <microblaze_proc_sys_reset_0_wrapper> compiled
 Module <microblaze_xps_intc_0_wrapper> compiled
 Module <microblaze_plb_dac_0_wrapper> compiled
+Module <microblaze_xps_gpio_0_wrapper> compiled
 No errors in compilation
 Analysis of file <"microblaze_xst.prj"> succeeded.
  
@@ -89,6 +90,230 @@ Analyzing hierarchy for module <microblaze> in library <work>.
 Analyzing top module <microblaze>.
 Module <microblaze> is correct for synthesis.
  
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_0> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_0> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_0> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_0> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_0> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_0> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_0> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_1> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_1> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_1> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_1> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_1> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_1> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_1> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_2> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_2> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_2> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_2> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_2> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_2> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_2> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_3> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_3> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_3> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_3> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_3> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_3> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_3> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_4> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_4> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_4> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_4> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_4> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_4> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_4> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_5> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_5> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_5> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_5> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_5> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_5> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_5> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_6> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_6> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_6> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_6> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_6> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_6> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_6> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_7> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_7> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_7> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_7> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_7> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_7> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_7> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_8> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_8> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_8> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_8> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_8> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_8> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_8> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_9> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_9> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_9> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_9> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_9> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_9> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_9> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_10> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_10> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_10> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_10> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_10> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_10> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_10> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_11> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_11> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_11> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_11> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_11> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_11> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_11> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_12> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_12> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_12> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_12> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_12> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_12> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_12> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_13> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_13> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_13> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_13> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_13> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_13> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_13> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_14> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_14> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_14> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_14> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_14> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_14> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_14> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_15> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_15> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_15> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_15> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_15> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_15> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_15> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_16> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_16> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_16> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_16> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_16> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_16> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_16> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_17> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_17> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_17> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_17> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_17> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_17> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_17> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_18> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_18> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_18> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_18> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_18> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_18> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_18> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_19> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_19> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_19> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_19> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_19> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_19> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_19> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_20> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_20> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_20> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_20> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_20> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_20> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_20> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_21> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_21> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_21> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_21> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_21> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_21> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_21> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_22> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_22> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_22> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_22> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_22> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_22> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_22> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_23> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_23> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_23> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_23> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_23> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_23> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_23> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_24> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_24> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_24> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_24> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_24> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_24> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_24> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_25> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_25> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_25> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_25> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_25> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_25> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_25> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_26> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_26> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_26> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_26> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_26> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_26> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_26> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_27> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_27> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_27> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_27> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_27> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_27> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_27> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_28> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_28> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_28> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_28> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_28> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_28> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_28> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_29> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_29> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_29> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_29> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_29> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_29> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_29> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_30> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_30> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_30> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_30> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_30> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_30> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_30> in unit <microblaze>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf_31> in unit <microblaze>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf_31> in unit <microblaze>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf_31> in unit <microblaze>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf_31> in unit <microblaze>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf_31> in unit <microblaze>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf_31> in unit <microblaze>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf_31> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <RS232> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <clock_generator_0> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <dlmb> in unit <microblaze>.
@@ -101,6 +326,7 @@ Module <microblaze> is correct for synthesis.
     Set property "BOX_TYPE = user_black_box" for instance <microblaze_0> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <plb_dac_0> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <proc_sys_reset_0> in unit <microblaze>.
+    Set property "BOX_TYPE = user_black_box" for instance <xps_gpio_0> in unit <microblaze>.
     Set property "BOX_TYPE = user_black_box" for instance <xps_intc_0> in unit <microblaze>.
 
 =========================================================================
@@ -137,6 +363,7 @@ Reading core <../implementation/microblaze_mdm_0_wrapper.ngc>.
 Reading core <../implementation/microblaze_proc_sys_reset_0_wrapper.ngc>.
 Reading core <../implementation/microblaze_xps_intc_0_wrapper.ngc>.
 Reading core <../implementation/microblaze_plb_dac_0_wrapper.ngc>.
+Reading core <../implementation/microblaze_xps_gpio_0_wrapper.ngc>.
 Loading core <microblaze_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
 Loading core <microblaze_mb_plb_wrapper> for timing and area information for instance <mb_plb>.
 Loading core <microblaze_ilmb_wrapper> for timing and area information for instance <ilmb>.
@@ -150,6 +377,7 @@ Loading core <microblaze_mdm_0_wrapper> for timing and area information for inst
 Loading core <microblaze_proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
 Loading core <microblaze_xps_intc_0_wrapper> for timing and area information for instance <xps_intc_0>.
 Loading core <microblaze_plb_dac_0_wrapper> for timing and area information for instance <plb_dac_0>.
+Loading core <microblaze_xps_gpio_0_wrapper> for timing and area information for instance <xps_gpio_0>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -167,7 +395,7 @@ Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
-INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 6 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
@@ -178,7 +406,7 @@ INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODE
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
-INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 6 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
 
 Final Macro Processing ...
 
@@ -209,33 +437,33 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 20
+# IOs                              : 52
 
 Cell Usage :
-# BELS                             : 3972
-#      GND                         : 15
-#      INV                         : 49
+# BELS                             : 4195
+#      GND                         : 16
+#      INV                         : 50
 #      LUT1                        : 107
-#      LUT2                        : 266
-#      LUT2_D                      : 11
+#      LUT2                        : 311
+#      LUT2_D                      : 12
 #      LUT2_L                      : 9
-#      LUT3                        : 1027
-#      LUT3_D                      : 79
-#      LUT3_L                      : 17
-#      LUT4                        : 1344
-#      LUT4_D                      : 51
-#      LUT4_L                      : 62
+#      LUT3                        : 1031
+#      LUT3_D                      : 81
+#      LUT3_L                      : 18
+#      LUT4                        : 1414
+#      LUT4_D                      : 59
+#      LUT4_L                      : 90
 #      MULT_AND                    : 34
-#      MUXCY                       : 104
+#      MUXCY                       : 112
 #      MUXCY_L                     : 171
-#      MUXF5                       : 479
+#      MUXF5                       : 532
 #      MUXF6                       : 6
 #      MUXF7                       : 2
 #      MUXF8                       : 1
-#      VCC                         : 9
+#      VCC                         : 10
 #      XORCY                       : 129
-# FlipFlops/Latches                : 2518
-#      FD                          : 131
+# FlipFlops/Latches                : 2784
+#      FD                          : 240
 #      FD_1                        : 10
 #      FDC                         : 21
 #      FDC_1                       : 5
@@ -243,22 +471,24 @@ Cell Usage :
 #      FDE                         : 318
 #      FDE_1                       : 8
 #      FDP                         : 9
-#      FDR                         : 1039
-#      FDRE                        : 826
+#      FDR                         : 1122
+#      FDRE                        : 863
 #      FDRE_1                      : 1
-#      FDRS                        : 16
+#      FDRS                        : 18
 #      FDRSE                       : 11
-#      FDS                         : 53
-#      FDSE                        : 55
+#      FDS                         : 60
+#      FDSE                        : 83
 # RAMS                             : 224
 #      RAM16X1D                    : 192
 #      RAMB16                      : 32
-# Shift Registers                  : 133
-#      SRL16                       : 7
+# Shift Registers                  : 165
+#      SRL16                       : 39
 #      SRL16E                      : 118
 #      SRLC16E                     : 8
 # Clock Buffers                    : 6
 #      BUFG                        : 6
+# IO Buffers                       : 32
+#      IOBUF                       : 32
 # DCM_ADVs                         : 1
 #      DCM_ADV                     : 1
 # DSPs                             : 3
@@ -272,14 +502,14 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                     2593  out of  24576    10%  
- Number of Slice Flip Flops:           2518  out of  49152     5%  
- Number of 4 input LUTs:               3539  out of  49152     7%  
-    Number used as logic:              3022
-    Number used as Shift registers:     133
+ Number of Slices:                     2770  out of  24576    11%  
+ Number of Slice Flip Flops:           2784  out of  49152     5%  
+ Number of 4 input LUTs:               3731  out of  49152     7%  
+    Number used as logic:              3182
+    Number used as Shift registers:     165
     Number used as RAMs:                384
- Number of IOs:                          20
- Number of bonded IOBs:                   0  out of    640     0%  
+ Number of IOs:                          52
+ Number of bonded IOBs:                  32  out of    640     5%  
  Number of FIFO16/RAMB16s:               32  out of    320    10%  
     Number used as RAMB16s:              32
  Number of GCLKs:                         6  out of     32    18%  
@@ -307,7 +537,7 @@ Clock Information:
 -----------------------------------+------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                      | Load  |
 -----------------------------------+------------------------------------------------------------+-------+
-fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0| 2622  |
+fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0| 2920  |
 mdm_0/mdm_0/drck_i                 | BUFG                                                       | 212   |
 mdm_0/mdm_0/update1                | BUFG                                                       | 43    |
 RS232/Interrupt                    | NONE(xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)        | 1     |
@@ -351,7 +581,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
   Clock period: 8.026ns (frequency: 124.599MHz)
-  Total number of paths / destination ports: 405334 / 9072
+  Total number of paths / destination ports: 406980 / 9562
 -------------------------------------------------------------------------
 Delay:               8.026ns (Levels of Logic = 7)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[8].Gen_Instr_DFF (FF)
@@ -458,23 +688,23 @@ Offset:              3.293ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 34 / 34
 -------------------------------------------------------------------------
-Offset:              0.740ns (Levels of Logic = 2)
-  Source:            fpga_0_rst_1_sys_rst_pin (PAD)
-  Destination:       proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1 (FF)
+Offset:              2.853ns (Levels of Logic = 2)
+  Source:            xps_gpio_0_GPIO_IO_pin<31> (PAD)
+  Destination:       xps_gpio_0/xps_gpio_0/gpio_core_1/Mshreg_gpio_Data_In_31 (FF)
   Destination Clock: fpga_0_clk_1_sys_clk_pin rising
 
-  Data Path: fpga_0_rst_1_sys_rst_pin to proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1
+  Data Path: xps_gpio_0_GPIO_IO_pin<31> to xps_gpio_0/xps_gpio_0/gpio_core_1/Mshreg_gpio_Data_In_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     begin scope: 'proc_sys_reset_0'
-     INV:I->O              1   0.358   0.360  proc_sys_reset_0/EXT_LPF/exr_d1_or000011_INV_0 (proc_sys_reset_0/EXT_LPF/exr_d1_or00001)
-     FDS:D                     0.022          proc_sys_reset_0/EXT_LPF/exr_d1
+     IOBUF:IO->O           1   0.965   0.360  iobuf_31 (xps_gpio_0_GPIO_IO_I<31>)
+     begin scope: 'xps_gpio_0'
+     SRL16:D                   1.528          xps_gpio_0/gpio_core_1/Mshreg_gpio_Data_In_31
     ----------------------------------------
-    Total                      0.740ns (0.380ns logic, 0.360ns route)
-                                       (51.4% logic, 48.6% route)
+    Total                      2.853ns (2.493ns logic, 0.360ns route)
+                                       (87.4% logic, 12.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/mdm_0/update1'
@@ -500,23 +730,23 @@ Offset:              2.753ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 28 / 15
+  Total number of paths / destination ports: 92 / 47
 -------------------------------------------------------------------------
-Offset:              1.333ns (Levels of Logic = 2)
-  Source:            plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_0 (FF)
-  Destination:       plb_dac_0_S_Clkout_pin (PAD)
+Offset:              4.694ns (Levels of Logic = 2)
+  Source:            xps_gpio_0/xps_gpio_0/gpio_core_1/gpio_OE_0 (FF)
+  Destination:       xps_gpio_0_GPIO_IO_pin<0> (PAD)
   Source Clock:      fpga_0_clk_1_sys_clk_pin rising
 
-  Data Path: plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_0 to plb_dac_0_S_Clkout_pin
+  Data Path: xps_gpio_0/xps_gpio_0/gpio_core_1/gpio_OE_0 to xps_gpio_0_GPIO_IO_pin<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            14   0.360   0.778  plb_dac_0/USER_LOGIC_I/slv_reg0_0 (plb_dac_0/USER_LOGIC_I/slv_reg0<0>)
-     LUT2:I0->O            0   0.195   0.000  plb_dac_0/USER_LOGIC_I/IP2DAC_Format1 (S_Format)
-     end scope: 'plb_dac_0'
+     FDSE:C->Q             2   0.360   0.377  xps_gpio_0/gpio_core_1/gpio_OE_0 (GPIO_IO_T<0>)
+     end scope: 'xps_gpio_0'
+     IOBUF:T->IO               3.957          iobuf_0 (xps_gpio_0_GPIO_IO_pin<0>)
     ----------------------------------------
-    Total                      1.333ns (0.555ns logic, 0.778ns route)
-                                       (41.6% logic, 58.4% route)
+    Total                      4.694ns (4.317ns logic, 0.377ns route)
+                                       (92.0% logic, 8.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'mdm_0/mdm_0/drck_i'
@@ -585,12 +815,12 @@ Offset:              5.861ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 36.00 secs
-Total CPU time to Xst completion: 36.51 secs
+Total REAL time to Xst completion: 35.00 secs
+Total CPU time to Xst completion: 35.13 secs
  
 --> 
 
-Total memory usage is 389280 kilobytes
+Total memory usage is 391392 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

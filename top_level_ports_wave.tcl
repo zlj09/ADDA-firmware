@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     top_level_ports_wave.tcl (Wed Aug 16 13:16:04 2017)
+#  File     top_level_ports_wave.tcl (Thu Aug 17 16:35:24 2017)
 #
 if { [info exists PathSeparator] } { set ps $PathSeparator } else { set ps "/" }
 if { ![info exists tbpath] } { set tbpath "microblaze_tb${ps}dut" }
@@ -18,4 +18,5 @@ wave add $tbpath${ps}plb_dac_0_S_PinMD_pin -into $id
 wave add $tbpath${ps}plb_dac_0_S_ClkMD_pin -into $id 
 wave add $tbpath${ps}plb_dac_0_S_Format_pin -into $id 
 wave add $tbpath${ps}plb_dac_0_S_PWRDN_pin -into $id 
+wave add $tbpath${ps}xps_gpio_0_GPIO_IO_pin -into $id 
 

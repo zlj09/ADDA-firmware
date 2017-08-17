@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     microblaze_wave.tcl (Wed Aug 16 13:16:04 2017)
+#  File     microblaze_wave.tcl (Thu Aug 17 16:35:24 2017)
 #
 #  ISE Simulator Trace Script File
 #
@@ -70,6 +70,8 @@ source proc_sys_reset_0_wave.tcl
 source xps_intc_0_wave.tcl
 
 source plb_dac_0_wave.tcl
+
+source xps_gpio_0_wave.tcl
 
 #
 #  Trace setup complete. Start tracing the signals.

@@ -26,6 +26,7 @@
  PORT plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD, DIR = O
  PORT plb_dac_0_S_Format_pin = plb_dac_0_S_Format, DIR = O
  PORT plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN, DIR = O
+ PORT xps_gpio_0_GPIO_IO_pin = xps_gpio_0_GPIO_IO, DIR = IO, VEC = [0:31]
 
 
 BEGIN microblaze
@@ -166,5 +167,14 @@ BEGIN plb_dac
  PORT S_ClkMD = plb_dac_0_S_ClkMD
  PORT S_Format = plb_dac_0_S_Format
  PORT S_PWRDN = plb_dac_0_S_PWRDN
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = xps_gpio_0
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_BASEADDR = 0x81400000
+ PARAMETER C_HIGHADDR = 0x8140ffff
+ BUS_INTERFACE SPLB = mb_plb
+ PORT GPIO_IO = xps_gpio_0_GPIO_IO
 END
 

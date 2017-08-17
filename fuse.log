@@ -223,6 +223,9 @@ Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_
 Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/xps_intc.vhd" into library xps_intc_v2_01_a
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/verilog/user_logic.v" into library plb_dac_v1_00_a
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/vhdl/plb_dac.vhd" into library plb_dac_v1_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" into library interrupt_control_v2_01_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/hdl/vhdl/gpio_core.vhd" into library xps_gpio_v2_00_a
+Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/hdl/vhdl/xps_gpio.vhd" into library xps_gpio_v2_00_a
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_microblaze_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_mb_plb_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_ilmb_wrapper.vhd" into library work
@@ -237,6 +240,7 @@ Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_mdm_0_w
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_proc_sys_reset_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_xps_intc_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_0_wrapper.vhd" into library work
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_xps_gpio_0_wrapper.vhd" into library work
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze.v" into library work
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_tb.v" into library work
 Analyzing Verilog file "G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v" into library work
@@ -275,8 +279,8 @@ WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERN
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index 63 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 2580: Element index 7 into dopb_buf is out of bounds
 Completed static elaboration
-Fuse Memory Usage: 263204 KB
-Fuse CPU Usage: 13655 ms
+Fuse Memory Usage: 264868 KB
+Fuse CPU Usage: 13890 ms
 Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
 Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
 Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
@@ -344,6 +348,7 @@ Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
 Compiling module lmb_bram_elaborate
 Compiling module microblaze_lmb_bram_wrapper
 Compiling module user_logic(10,32,2)
+Compiling module IOBUF
 Compiling module microblaze
 Compiling module testbench
 Compiling module glbl
@@ -435,11 +440,11 @@ Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(2,2,"virtex4")(
 Compiling architecture implementation of entity plb_addrpath [\plb_addrpath(2,32,32,"virtex4")...]
 Compiling architecture simulation of entity plb_wr_datapath [\plb_wr_datapath(2,32,"virtex4")...]
 Compiling architecture simulation of entity plb_rd_datapath [\plb_rd_datapath(2,32)\]
-Compiling architecture imp of entity or_gate [\or_gate(4,1,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(4,2,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(4,32,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(4,4,true)\]
-Compiling architecture implementation of entity plb_slave_ors [\plb_slave_ors(2,4,32,"virtex4")...]
+Compiling architecture imp of entity or_gate [\or_gate(5,1,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(5,2,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(5,32,true)\]
+Compiling architecture imp of entity or_gate [\or_gate(5,4,true)\]
+Compiling architecture implementation of entity plb_slave_ors [\plb_slave_ors(2,5,32,"virtex4")...]
 Compiling architecture simulation of entity qual_request [qual_request_default]
 Compiling architecture simulation of entity priority_encoder [\priority_encoder(4)\]
 Compiling architecture qual_priority of entity qual_priority [qual_priority_default]
@@ -455,8 +460,8 @@ Compiling architecture implementation of entity muxed_signals [\muxed_signals(2,
 Compiling architecture simulation of entity down_counter [\down_counter(4)\]
 Compiling architecture simulation of entity watchdog_timer [\watchdog_timer(4)\]
 Compiling architecture plb_interrupt of entity plb_interrupt [\plb_interrupt('1')\]
-Compiling architecture implementation of entity plb_arbiter_logic [\plb_arbiter_logic(2,4,1,32,32,0...]
-Compiling architecture simulation of entity plb_v46 [\plb_v46(2,4,1,32,32,0,('1','1',...]
+Compiling architecture implementation of entity plb_arbiter_logic [\plb_arbiter_logic(2,5,1,32,32,0...]
+Compiling architecture simulation of entity plb_v46 [\plb_v46(2,5,1,32,32,0,('1','1',...]
 Compiling architecture structure of entity microblaze_mb_plb_wrapper [microblaze_mb_plb_wrapper_defaul...]
 Compiling architecture imp of entity lmb_v10 [\lmb_v10(1,32,32,1)\]
 Compiling architecture structure of entity microblaze_ilmb_wrapper [microblaze_ilmb_wrapper_default]
@@ -547,10 +552,17 @@ Compiling architecture implementation of entity plbv46_slave_single [\plbv46_sla
 Compiling architecture implementation of entity soft_reset [\soft_reset(32,4)\]
 Compiling architecture imp of entity plb_dac [\plb_dac(10,('1','1','0','0','1'...]
 Compiling architecture structure of entity microblaze_plb_dac_0_wrapper [microblaze_plb_dac_0_wrapper_def...]
+Compiling architecture imp of entity pselect_f [\pselect_f(28,32,('1','0','0','0...]
+Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
+Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
+Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
+Compiling architecture imp of entity GPIO_Core [\GPIO_Core(32,32,32,32,32,0,('0'...]
+Compiling architecture imp of entity xps_gpio [\xps_gpio(('1','0','0','0','0','...]
+Compiling architecture structure of entity microblaze_xps_gpio_0_wrapper [microblaze_xps_gpio_0_wrapper_de...]
 Time Resolution for simulation is 100fs.
-Waiting for 227 sub-compilation(s) to finish...
-Compiled 415 VHDL Units
-Compiled 70 Verilog Units
+Waiting for 217 sub-compilation(s) to finish...
+Compiled 429 VHDL Units
+Compiled 71 Verilog Units
 Built simulation executable F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_isim_beh.exe
-Fuse Memory Usage: 342892 KB
-Fuse CPU Usage: 38562 ms
+Fuse Memory Usage: 344556 KB
+Fuse CPU Usage: 37327 ms

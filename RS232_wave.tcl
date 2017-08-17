@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     RS232_wave.tcl (Wed Aug 16 13:16:05 2017)
+#  File     RS232_wave.tcl (Thu Aug 17 16:35:24 2017)
 #
 #  Module   microblaze_rs232_wrapper
 #  Instance RS232
