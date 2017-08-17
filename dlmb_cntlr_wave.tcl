@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     dlmb_cntlr_wave.tcl (Thu Aug 17 16:35:24 2017)
+#  File     dlmb_cntlr_wave.tcl (Thu Aug 17 19:28:12 2017)
 #
 #  Module   microblaze_dlmb_cntlr_wrapper
 #  Instance dlmb_cntlr

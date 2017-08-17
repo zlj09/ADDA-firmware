@@ -1,42 +1,6 @@
-16:27:19 **** Build of project br0101_bsp ****
+19:17:05 **** Auto Build of project br0101_bsp ****
 make -k all 
-libgen -hw ../microblaze_hw_platform/system.xml\
-	       -lp C:/edk_user_repository/MyProcessorIPLib\
-	       -pe microblaze_0 \
-	       -log libgen.log \
-	       system.mss
-libgen
-Xilinx EDK 14.7 Build EDK_P.20131013
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Command Line: libgen -hw ../microblaze_hw_platform/system.xml -lp
-C:/edk_user_repository/MyProcessorIPLib -pe microblaze_0 -log libgen.log
-system.mss 
-
-
-Staging source files.
-Running DRCs.
-Running generate.
-Running post_generate.
-Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
-"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
--mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
--fdata-sections"'.
-
-Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
-"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
--mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
--fdata-sections"'.
-Compiling common
-Compiling standalone
-Compiling bram
-Compiling uartlite
-Compiling plb_dac
-Compiling gpio
-Compiling intc
-Compiling cpu
-Running execs_generate.
 Finished building libraries
 
-16:27:53 Build Finished (took 34s.258ms)
+19:17:06 Build Finished (took 1s.21ms)
 

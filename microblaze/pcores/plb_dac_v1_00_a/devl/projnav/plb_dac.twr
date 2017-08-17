@@ -36,92 +36,88 @@ Setup/Hold to clock SPLB_Clk
                |Max Setup to|Max Hold to |                  | Clock  |
 Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ---------------+------------+------------+------------------+--------+
-PLB_ABus<0>    |   -2.512(R)|    3.947(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<1>    |   -2.531(R)|    3.965(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<2>    |   -2.632(R)|    4.053(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<3>    |   -2.597(R)|    4.021(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<4>    |   -2.227(R)|    3.680(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<5>    |   -2.563(R)|    3.991(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<6>    |   -2.397(R)|    3.840(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<7>    |   -2.549(R)|    3.981(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<8>    |   -2.170(R)|    3.630(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<9>    |   -1.704(R)|    3.201(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<10>   |   -2.373(R)|    3.812(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<11>   |   -2.131(R)|    3.590(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<12>   |   -2.423(R)|    3.860(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<13>   |   -2.568(R)|    3.996(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<14>   |   -2.173(R)|    3.626(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<15>   |   -2.186(R)|    3.640(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<16>   |   -2.167(R)|    3.626(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<17>   |   -2.102(R)|    3.569(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<18>   |   -2.118(R)|    3.580(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<19>   |   -2.167(R)|    3.622(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<20>   |   -1.984(R)|    3.439(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<21>   |   -1.853(R)|    3.320(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<22>   |   -1.930(R)|    3.407(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<23>   |   -1.978(R)|    3.449(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<24>   |   -2.152(R)|    3.607(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<25>   |   -2.160(R)|    3.621(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<26>   |   -1.951(R)|    3.425(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<27>   |   -1.903(R)|    3.383(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<28>   |    2.678(R)|    3.860(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<29>   |    0.783(R)|    3.488(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<30>   |   -2.562(R)|    3.992(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_ABus<31>   |   -2.386(R)|    3.833(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<0>      |   -2.027(R)|    3.597(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<1>      |   -2.160(R)|    3.733(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<2>      |    0.712(R)|    0.976(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<3>      |   -2.223(R)|    3.778(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<4>      |   -2.168(R)|    3.729(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<5>      |   -2.065(R)|    3.649(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<6>      |    0.418(R)|    1.247(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<7>      |   -2.053(R)|    3.621(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<8>      |   -2.007(R)|    3.580(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<9>      |   -1.919(R)|    3.514(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<10>     |    0.390(R)|    1.271(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<11>     |   -2.043(R)|    3.609(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<12>     |   -2.068(R)|    3.636(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<13>     |   -2.012(R)|    3.596(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<14>     |    0.505(R)|    1.167(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_BE<15>     |   -2.076(R)|    3.641(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_PAValid    |   -2.214(R)|    3.665(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_RNW        |   -1.866(R)|    3.327(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_masterID<0>|   -1.880(R)|    3.447(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_masterID<1>|   -2.169(R)|    3.711(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_masterID<2>|   -2.143(R)|    3.686(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_size<0>    |   -2.138(R)|    3.599(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_size<1>    |   -2.094(R)|    3.556(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_size<2>    |   -2.614(R)|    4.033(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_size<3>    |   -2.163(R)|    3.621(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_type<0>    |   -2.192(R)|    3.644(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_type<1>    |   -2.159(R)|    3.614(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_type<2>    |   -2.217(R)|    3.668(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<0>  |   -2.263(R)|    3.717(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<1>  |   -2.383(R)|    3.824(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<2>  |   -1.973(R)|    3.448(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<3>  |   -2.137(R)|    3.600(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<4>  |   -2.340(R)|    3.789(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<5>  |   -2.123(R)|    3.590(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<6>  |   -2.120(R)|    3.585(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<7>  |   -2.584(R)|    4.010(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<8>  |   -1.972(R)|    3.453(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<9>  |   -1.969(R)|    3.451(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<16> |   -2.144(R)|    3.610(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<17> |   -2.048(R)|    3.518(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<18> |   -2.573(R)|    4.005(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<19> |   -2.207(R)|    3.664(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<20> |   -2.146(R)|    3.609(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<21> |   -2.135(R)|    3.599(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<22> |   -2.602(R)|    4.019(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<23> |   -2.216(R)|    3.669(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<24> |   -1.939(R)|    3.413(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<25> |   -2.200(R)|    3.652(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<28> |   -1.682(R)|    3.179(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<29> |   -1.930(R)|    3.406(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<30> |   -2.380(R)|    3.818(R)|SPLB_Clk_BUFGP    |   0.000|
-PLB_wrDBus<31> |   -1.718(R)|    3.209(R)|SPLB_Clk_BUFGP    |   0.000|
-SPLB_Rst       |    3.244(R)|    3.081(R)|SPLB_Clk_BUFGP    |   0.000|
-               |    0.943(F)|    1.167(F)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<0>    |   -2.521(R)|    3.948(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<1>    |   -2.132(R)|    3.588(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<2>    |   -2.557(R)|    3.984(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<3>    |   -2.529(R)|    3.961(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<4>    |   -2.383(R)|    3.822(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<5>    |   -2.223(R)|    3.674(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<6>    |   -2.582(R)|    4.008(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<7>    |   -2.114(R)|    3.578(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<8>    |   -2.587(R)|    4.006(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<9>    |   -2.565(R)|    3.985(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<10>   |   -1.767(R)|    3.253(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<11>   |   -1.526(R)|    3.034(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<12>   |   -1.730(R)|    3.222(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<13>   |   -1.517(R)|    3.025(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<14>   |   -1.406(R)|    2.908(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<15>   |   -1.979(R)|    3.433(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<16>   |   -2.178(R)|    3.634(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<17>   |   -1.990(R)|    3.462(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<18>   |   -1.883(R)|    3.362(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<19>   |   -1.939(R)|    3.415(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<20>   |   -1.791(R)|    3.274(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<21>   |   -1.728(R)|    3.216(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<22>   |   -1.714(R)|    3.194(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<23>   |   -1.631(R)|    3.117(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<24>   |   -1.893(R)|    3.368(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<25>   |   -1.840(R)|    3.319(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<26>   |   -1.924(R)|    3.401(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<27>   |   -1.731(R)|    3.225(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<28>   |    0.177(R)|    3.218(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<29>   |    0.580(R)|    3.019(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<30>   |   -1.715(R)|    3.205(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_ABus<31>   |   -1.942(R)|    3.416(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<0>      |   -1.853(R)|    3.340(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<1>      |   -1.864(R)|    3.352(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<2>      |   -2.150(R)|    3.616(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<3>      |   -1.903(R)|    3.383(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<4>      |   -2.124(R)|    3.591(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<5>      |   -2.075(R)|    3.547(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<6>      |   -2.064(R)|    3.536(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<7>      |   -2.187(R)|    3.644(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<8>      |   -1.948(R)|    3.426(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<9>      |   -2.325(R)|    3.773(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<10>     |   -1.896(R)|    3.382(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<11>     |   -2.060(R)|    3.529(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<12>     |   -1.709(R)|    3.205(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<13>     |   -2.099(R)|    3.565(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<14>     |   -2.264(R)|    3.721(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_BE<15>     |   -1.963(R)|    3.437(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_PAValid    |   -2.094(R)|    3.545(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_RNW        |   -1.720(R)|    3.214(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_masterID<0>|   -2.558(R)|    3.982(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_masterID<1>|   -2.142(R)|    3.597(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_masterID<2>|   -2.285(R)|    3.726(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_size<0>    |   -1.971(R)|    3.534(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_size<1>    |   -1.993(R)|    3.556(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_size<2>    |   -1.917(R)|    3.408(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_size<3>    |   -0.676(R)|    2.269(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_type<0>    |   -2.322(R)|    3.755(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_type<1>    |   -1.988(R)|    3.447(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_type<2>    |   -2.381(R)|    3.807(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<6>  |   -2.178(R)|    3.629(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<7>  |   -2.206(R)|    3.655(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<8>  |   -1.706(R)|    3.219(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<9>  |   -1.707(R)|    3.221(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<10> |   -2.305(R)|    3.748(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<11> |   -1.981(R)|    3.452(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<12> |   -2.142(R)|    3.602(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<13> |   -2.171(R)|    3.628(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<14> |   -2.012(R)|    3.482(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<15> |   -2.175(R)|    3.633(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<22> |   -2.363(R)|    3.802(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<23> |   -2.350(R)|    3.791(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<24> |   -2.365(R)|    3.804(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<25> |   -2.373(R)|    3.813(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<26> |   -2.134(R)|    3.601(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<27> |   -1.982(R)|    3.460(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<28> |   -2.166(R)|    3.624(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<29> |   -1.696(R)|    3.189(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<30> |   -1.717(R)|    3.210(R)|SPLB_Clk_BUFGP    |   0.000|
+PLB_wrDBus<31> |   -1.686(R)|    3.181(R)|SPLB_Clk_BUFGP    |   0.000|
+SPLB_Rst       |    3.374(R)|    2.737(R)|SPLB_Clk_BUFGP    |   0.000|
+               |    1.593(F)|    0.747(F)|SPLB_Clk_BUFGP    |   0.000|
 ---------------+------------+------------+------------------+--------+
 
 Clock SPLB_Clk to Pad
@@ -129,60 +125,60 @@ Clock SPLB_Clk to Pad
               | clk (edge) |                  | Clock  |
 Destination   |   to PAD   |Internal Clock(s) | Phase  |
 --------------+------------+------------------+--------+
-S_Clkout      |   12.781(R)|SPLB_Clk_BUFGP    |   0.000|
-S_DCLKIO      |   12.525(R)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<0>     |   12.365(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.168(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<1>     |   12.729(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.238(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<2>     |   12.548(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.066(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<3>     |   12.570(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.195(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<4>     |   12.527(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.079(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<5>     |   12.471(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.214(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<6>     |   12.301(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.250(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<7>     |   12.096(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.174(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<8>     |   12.527(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.067(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Data<9>     |   12.529(R)|SPLB_Clk_BUFGP    |   0.000|
-              |   12.309(F)|SPLB_Clk_BUFGP    |   0.000|
-S_Format      |   11.641(R)|SPLB_Clk_BUFGP    |   0.000|
-S_PWRDN       |   11.594(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MBusy<0>   |   11.252(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MBusy<1>   |   11.083(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MBusy<2>   |   10.868(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MBusy<3>   |   10.859(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MBusy<4>   |   11.267(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MBusy<5>   |   11.045(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MBusy<6>   |   11.751(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MBusy<7>   |   11.237(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MRdErr<0>  |   11.492(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MRdErr<1>  |   11.657(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MRdErr<2>  |   11.377(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MRdErr<3>  |   11.307(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MRdErr<4>  |   11.493(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MRdErr<5>  |   11.625(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MRdErr<6>  |   10.885(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MRdErr<7>  |   10.642(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MWrErr<0>  |   10.864(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MWrErr<1>  |   10.648(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MWrErr<2>  |   10.861(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MWrErr<3>  |   10.730(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MWrErr<4>  |   11.220(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MWrErr<5>  |   10.681(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MWrErr<6>  |   10.636(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_MWrErr<7>  |   10.806(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_addrAck    |   12.621(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_rdComp     |   11.425(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_rdDAck     |   11.154(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_rearbitrate|   10.498(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_wrComp     |   11.840(R)|SPLB_Clk_BUFGP    |   0.000|
-Sl_wrDAck     |   12.113(R)|SPLB_Clk_BUFGP    |   0.000|
+S_Clkout      |   12.895(R)|SPLB_Clk_BUFGP    |   0.000|
+S_DCLKIO      |   12.638(R)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<0>     |   13.323(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   13.039(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<1>     |   12.804(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   12.638(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<2>     |   12.160(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   11.810(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<3>     |   12.056(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   11.658(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<4>     |   13.339(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   12.936(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<5>     |   12.990(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   12.700(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<6>     |   13.074(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   13.106(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<7>     |   12.572(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   12.617(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<8>     |   13.230(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   12.767(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Data<9>     |   13.028(R)|SPLB_Clk_BUFGP    |   0.000|
+              |   12.845(F)|SPLB_Clk_BUFGP    |   0.000|
+S_Format      |   12.457(R)|SPLB_Clk_BUFGP    |   0.000|
+S_PWRDN       |   12.299(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MBusy<0>   |   10.796(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MBusy<1>   |   10.903(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MBusy<2>   |   11.044(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MBusy<3>   |   11.090(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MBusy<4>   |   11.310(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MBusy<5>   |   11.090(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MBusy<6>   |   11.306(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MBusy<7>   |   11.156(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MRdErr<0>  |   11.148(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MRdErr<1>  |   10.842(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MRdErr<2>  |   10.932(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MRdErr<3>  |   10.613(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MRdErr<4>  |   10.844(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MRdErr<5>  |   10.682(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MRdErr<6>  |   10.862(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MRdErr<7>  |   10.699(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MWrErr<0>  |   11.243(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MWrErr<1>  |   11.392(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MWrErr<2>  |   11.152(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MWrErr<3>  |   11.175(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MWrErr<4>  |   11.129(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MWrErr<5>  |   11.548(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MWrErr<6>  |   10.427(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_MWrErr<7>  |   10.648(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_addrAck    |   11.956(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_rdComp     |   11.624(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_rdDAck     |   11.884(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_rearbitrate|   12.061(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_wrComp     |   11.996(R)|SPLB_Clk_BUFGP    |   0.000|
+Sl_wrDAck     |   12.256(R)|SPLB_Clk_BUFGP    |   0.000|
 --------------+------------+------------------+--------+
 
 Clock to Setup on destination clock SPLB_Clk
@@ -190,11 +186,11 @@ Clock to Setup on destination clock SPLB_Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SPLB_Clk       |    3.658|         |    1.827|         |
+SPLB_Clk       |    3.739|         |    1.867|         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Aug 09 10:34:37 2017 
+Analysis completed Thu Aug 17 18:40:13 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

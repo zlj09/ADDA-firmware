@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="plb_dac.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -64,6 +65,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="plb_dac_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="plb_dac_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_user_logic.fdo"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="user_logic.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="user_logic.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="user_logic.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
@@ -76,7 +80,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502245325" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1502245325">
+    <transform xil_pn:end_ts="1502965763" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1502965763">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../hdl/verilog/user_logic.v"/>
@@ -106,7 +110,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502245325" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1502245325">
+    <transform xil_pn:end_ts="1502965763" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1502965763">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../hdl/verilog/user_logic.v"/>
@@ -124,7 +128,7 @@
       <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd"/>
       <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1502512927" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="3997889518973425108" xil_pn:start_ts="1502512915">
+    <transform xil_pn:end_ts="1502965768" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="3997889518973425108" xil_pn:start_ts="1502965763">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -161,12 +165,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502245800" xil_pn:in_ck="-8480864555117231581" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="-8147819639906983812" xil_pn:start_ts="1502245785">
+    <transform xil_pn:end_ts="1502965486" xil_pn:in_ck="-8480864555117231581" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="-8147819639906983812" xil_pn:start_ts="1502965473">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="plb_dac.lso"/>
       <outfile xil_pn:name="plb_dac.ngc"/>
@@ -184,7 +189,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502245981" xil_pn:in_ck="176691296523812235" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8817592313973797940" xil_pn:start_ts="1502245975">
+    <transform xil_pn:end_ts="1502966274" xil_pn:in_ck="176691296523812235" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8817592313973797940" xil_pn:start_ts="1502966262">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -193,7 +198,7 @@
       <outfile xil_pn:name="plb_dac.ngd"/>
       <outfile xil_pn:name="plb_dac_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1502246004" xil_pn:in_ck="176691296523812236" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1502245981">
+    <transform xil_pn:end_ts="1502966301" xil_pn:in_ck="176691296523812236" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1502966274">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -206,7 +211,7 @@
       <outfile xil_pn:name="plb_dac_summary.xml"/>
       <outfile xil_pn:name="plb_dac_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1502246078" xil_pn:in_ck="5353133635927356069" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1502246004">
+    <transform xil_pn:end_ts="1502966415" xil_pn:in_ck="5353133635927356069" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1502966301">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -220,7 +225,7 @@
       <outfile xil_pn:name="plb_dac_pad.txt"/>
       <outfile xil_pn:name="plb_dac_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1502246078" xil_pn:in_ck="176691296523812104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1502246064">
+    <transform xil_pn:end_ts="1502966415" xil_pn:in_ck="176691296523812104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1502966403">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

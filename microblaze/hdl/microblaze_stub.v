@@ -14,8 +14,7 @@ module microblaze_stub
     plb_dac_0_S_PinMD_pin,
     plb_dac_0_S_ClkMD_pin,
     plb_dac_0_S_Format_pin,
-    plb_dac_0_S_PWRDN_pin,
-    xps_gpio_0_GPIO_IO_pin
+    plb_dac_0_S_PWRDN_pin
   );
   input fpga_0_RS232_RX_pin;
   output fpga_0_RS232_TX_pin;
@@ -28,7 +27,6 @@ module microblaze_stub
   output plb_dac_0_S_ClkMD_pin;
   output plb_dac_0_S_Format_pin;
   output plb_dac_0_S_PWRDN_pin;
-  inout [0:31] xps_gpio_0_GPIO_IO_pin;
 
   (* BOX_TYPE = "user_black_box" *)
   microblaze
@@ -43,8 +41,7 @@ module microblaze_stub
       .plb_dac_0_S_PinMD_pin ( plb_dac_0_S_PinMD_pin ),
       .plb_dac_0_S_ClkMD_pin ( plb_dac_0_S_ClkMD_pin ),
       .plb_dac_0_S_Format_pin ( plb_dac_0_S_Format_pin ),
-      .plb_dac_0_S_PWRDN_pin ( plb_dac_0_S_PWRDN_pin ),
-      .xps_gpio_0_GPIO_IO_pin ( xps_gpio_0_GPIO_IO_pin )
+      .plb_dac_0_S_PWRDN_pin ( plb_dac_0_S_PWRDN_pin )
     );
 
 endmodule
@@ -61,8 +58,7 @@ module microblaze
     plb_dac_0_S_PinMD_pin,
     plb_dac_0_S_ClkMD_pin,
     plb_dac_0_S_Format_pin,
-    plb_dac_0_S_PWRDN_pin,
-    xps_gpio_0_GPIO_IO_pin
+    plb_dac_0_S_PWRDN_pin
   );
   input fpga_0_RS232_RX_pin;
   output fpga_0_RS232_TX_pin;
@@ -75,6 +71,5 @@ module microblaze
   output plb_dac_0_S_ClkMD_pin;
   output plb_dac_0_S_Format_pin;
   output plb_dac_0_S_PWRDN_pin;
-  inout [0:31] xps_gpio_0_GPIO_IO_pin;
 endmodule
 

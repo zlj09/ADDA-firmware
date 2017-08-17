@@ -508,6 +508,9 @@ INFO:Xst:2679 - Register <byte_index> in unit <user_logic> has a constant value 
 
 Synthesizing Unit <user_logic>.
     Related source file is "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a/hdl/verilog/user_logic.v".
+WARNING:Xst:646 - Signal <cvt_reg1<31:26>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cvt_reg1<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cvt_reg0<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1872 - Variable <bit_index> is used but never assigned.
     Found 1-bit register for signal <dac_clk_reg>.
     Found 10-bit register for signal <dac_data_reg>.
@@ -943,15 +946,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
   Total number of paths / destination ports: 71 / 58
 -------------------------------------------------------------------------
 Offset:              1.333ns (Levels of Logic = 1)
-  Source:            plb_dac_0/USER_LOGIC_I/slv_reg0_0 (FF)
+  Source:            plb_dac_0/USER_LOGIC_I/slv_reg0_31 (FF)
   Destination:       S_DCLKIO (PAD)
   Source Clock:      SPLB_Clk rising
 
-  Data Path: plb_dac_0/USER_LOGIC_I/slv_reg0_0 to S_DCLKIO
+  Data Path: plb_dac_0/USER_LOGIC_I/slv_reg0_31 to S_DCLKIO
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            14   0.360   0.778  plb_dac_0/USER_LOGIC_I/slv_reg0_0 (plb_dac_0/USER_LOGIC_I/slv_reg0_0)
+     FDRE:C->Q            14   0.360   0.778  plb_dac_0/USER_LOGIC_I/slv_reg0_31 (plb_dac_0/USER_LOGIC_I/slv_reg0_31)
      LUT2:I0->O            0   0.195   0.000  plb_dac_0/USER_LOGIC_I/IP2DAC_Format1 (S_Format)
     ----------------------------------------
     Total                      1.333ns (0.555ns logic, 0.778ns route)
@@ -960,14 +963,14 @@ Offset:              1.333ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 14.67 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.15 secs
  
 --> 
 
-Total memory usage is 428640 kilobytes
+Total memory usage is 428768 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   98 (   0 filtered)
+Number of warnings :  101 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

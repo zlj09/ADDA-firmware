@@ -14,7 +14,7 @@
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 79</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">5</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 80</arg> 
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">4</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 80</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 81</arg> 
@@ -53,10 +53,7 @@
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">plb_dac</arg>, INSTANCE:<arg fmt="%s" index="2">plb_dac_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\data\plb_dac_v2_1_0.mpd line 29</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_gpio</arg>, INSTANCE:<arg fmt="%s" index="2">xps_gpio_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\data\xps_gpio_v2_1_0.mpd line 82</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">Peripheral_Reset</arg>, CONNECTOR: <arg fmt="%s" index="2">sys_periph_reset</arg> - floating connection - <arg fmt="%s" index="3">F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 144</arg> 
+<msg type="warning" file="EDK" num="4181" delta="old" >PORT: <arg fmt="%s" index="1">Peripheral_Reset</arg>, CONNECTOR: <arg fmt="%s" index="2">sys_periph_reset</arg> - floating connection - <arg fmt="%s" index="3">F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 143</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_D_PLB</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\data\microblaze_v2_1_0.mpd line 233</arg> 
@@ -107,7 +104,7 @@
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 79</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">5</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 80</arg> 
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">4</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 80</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 81</arg> 
@@ -144,9 +141,6 @@
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">plb_dac</arg>, INSTANCE:<arg fmt="%s" index="2">plb_dac_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\data\plb_dac_v2_1_0.mpd line 29</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_gpio</arg>, INSTANCE:<arg fmt="%s" index="2">xps_gpio_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\data\xps_gpio_v2_1_0.mpd line 82</arg> 
 </msg>
 
 </messages>

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: microblaze_top.prj
 
@@ -319,7 +319,7 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                     2593  out of  24576    10%  
+ Number of Slices:                     2591  out of  24576    10%  
  Number of Slice Flip Flops:           2518  out of  49152     5%  
  Number of 4 input LUTs:               3539  out of  49152     7%  
     Number used as logic:              3022
@@ -552,15 +552,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_clk_1_sys_clk_pin'
   Total number of paths / destination ports: 28 / 15
 -------------------------------------------------------------------------
 Offset:              5.667ns (Levels of Logic = 3)
-  Source:            microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_0 (FF)
+  Source:            microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_31 (FF)
   Destination:       plb_dac_0_S_Clkout_pin (PAD)
   Source Clock:      fpga_0_clk_1_sys_clk_pin rising
 
-  Data Path: microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_0 to plb_dac_0_S_Clkout_pin
+  Data Path: microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_31 to plb_dac_0_S_Clkout_pin
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            14   0.360   0.778  plb_dac_0/USER_LOGIC_I/slv_reg0_0 (plb_dac_0/USER_LOGIC_I/slv_reg0<0>)
+     FDRE:C->Q            14   0.360   0.778  plb_dac_0/USER_LOGIC_I/slv_reg0_31 (plb_dac_0/USER_LOGIC_I/slv_reg0<31>)
      LUT2:I0->O            2   0.195   0.377  plb_dac_0/USER_LOGIC_I/IP2DAC_DCLKIO1 (S_Clkout)
      end scope: 'plb_dac_0'
      end scope: 'microblaze_i'
@@ -636,12 +636,12 @@ Offset:              5.861ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 20.72 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.20 secs
  
 --> 
 
-Total memory usage is 359524 kilobytes
+Total memory usage is 358500 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
