@@ -223,6 +223,9 @@
     <transform xil_pn:end_ts="1503023675" xil_pn:in_ck="1302186946475522384" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1611078788037281396" xil_pn:start_ts="1503023473">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="RS232_wave.tcl"/>
       <outfile xil_pn:name="clock_generator_0_wave.tcl"/>
       <outfile xil_pn:name="dlmb_cntlr_wave.tcl"/>
@@ -303,6 +306,10 @@
     <transform xil_pn:end_ts="1503023675" xil_pn:in_ck="7130759491340027311" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9211711184173307305" xil_pn:start_ts="1503023675">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testbench_isim_beh.wdb"/>
