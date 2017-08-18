@@ -29,6 +29,10 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="plb_dac.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="plb_dac.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="plb_dac.lso"/>
@@ -64,53 +68,28 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="plb_dac_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="plb_dac_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="plb_dac_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="soft_reset_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_user_logic.fdo"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_user_logic_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_user_logic_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_user_logic_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="user_logic.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="user_logic.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="user_logic.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1502079947" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1502079947">
+    <transform xil_pn:end_ts="1503019821" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1503019821">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502965763" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1502965763">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../hdl/verilog/user_logic.v"/>
-      <outfile xil_pn:name="../../hdl/vhdl/plb_dac.vhd"/>
-      <outfile xil_pn:name="../../vsim/tb_user_logic.v"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd"/>
-      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1502079947" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8132384804081249624" xil_pn:start_ts="1502079947">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1502079947" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3782461217645100836" xil_pn:start_ts="1502079947">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1502079947" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3023832169905720564" xil_pn:start_ts="1502079947">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1502965763" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1502965763">
+    <transform xil_pn:end_ts="1503021614" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1503021614">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../hdl/verilog/user_logic.v"/>
@@ -128,14 +107,56 @@
       <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd"/>
       <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1502965768" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="3997889518973425108" xil_pn:start_ts="1502965763">
+    <transform xil_pn:end_ts="1503019821" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8132384804081249624" xil_pn:start_ts="1503019821">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1503019821" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3782461217645100836" xil_pn:start_ts="1503019821">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1503019821" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3023832169905720564" xil_pn:start_ts="1503019821">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1503021614" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1503021614">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../hdl/verilog/user_logic.v"/>
+      <outfile xil_pn:name="../../hdl/vhdl/plb_dac.vhd"/>
+      <outfile xil_pn:name="../../vsim/tb_user_logic.v"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd"/>
+      <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1503021617" xil_pn:in_ck="-6375610268677135700" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4672253284542659882" xil_pn:start_ts="1503021614">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="tb_user_logic.fdo"/>
-      <outfile xil_pn:name="vsim.wlf"/>
-      <outfile xil_pn:name="work"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_user_logic_beh.prj"/>
+      <outfile xil_pn:name="tb_user_logic_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1503021875" xil_pn:in_ck="231878467968183421" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3052265280140248359" xil_pn:start_ts="1503021874">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_user_logic_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1502078497" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1502078497">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -165,7 +186,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502965486" xil_pn:in_ck="-8480864555117231581" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="-8147819639906983812" xil_pn:start_ts="1502965473">
+    <transform xil_pn:end_ts="1503021448" xil_pn:in_ck="-8480864555117231581" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="-8147819639906983812" xil_pn:start_ts="1503021435">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -189,7 +210,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502966274" xil_pn:in_ck="176691296523812235" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8817592313973797940" xil_pn:start_ts="1502966262">
+    <transform xil_pn:end_ts="1503022076" xil_pn:in_ck="176691296523812235" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8817592313973797940" xil_pn:start_ts="1503022064">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -198,7 +219,7 @@
       <outfile xil_pn:name="plb_dac.ngd"/>
       <outfile xil_pn:name="plb_dac_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1502966301" xil_pn:in_ck="176691296523812236" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1502966274">
+    <transform xil_pn:end_ts="1503022097" xil_pn:in_ck="176691296523812236" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1503022076">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -211,7 +232,7 @@
       <outfile xil_pn:name="plb_dac_summary.xml"/>
       <outfile xil_pn:name="plb_dac_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1502966415" xil_pn:in_ck="5353133635927356069" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1502966301">
+    <transform xil_pn:end_ts="1503022181" xil_pn:in_ck="5353133635927356069" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1503022097">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -225,7 +246,7 @@
       <outfile xil_pn:name="plb_dac_pad.txt"/>
       <outfile xil_pn:name="plb_dac_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1502966415" xil_pn:in_ck="176691296523812104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1502966403">
+    <transform xil_pn:end_ts="1503022181" xil_pn:in_ck="176691296523812104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1503022169">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

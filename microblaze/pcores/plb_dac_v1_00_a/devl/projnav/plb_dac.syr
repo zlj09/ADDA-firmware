@@ -370,9 +370,6 @@ INFO:Xst:2679 - Register <byte_index> in unit <user_logic> has a constant value 
 
 Synthesizing Unit <user_logic>.
     Related source file is "../../hdl/verilog/user_logic.v".
-WARNING:Xst:646 - Signal <cvt_reg1<31:26>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <cvt_reg1<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <cvt_reg0<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1872 - Variable <bit_index> is used but never assigned.
     Found 1-bit register for signal <dac_clk_reg>.
     Found 10-bit register for signal <dac_data_reg>.
@@ -912,14 +909,14 @@ Offset:              5.641ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.96 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.63 secs
  
 --> 
 
-Total memory usage is 406112 kilobytes
+Total memory usage is 406624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  182 (   0 filtered)
+Number of warnings :  179 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 
