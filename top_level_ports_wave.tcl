@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     top_level_ports_wave.tcl (Thu Aug 17 19:28:12 2017)
+#  File     top_level_ports_wave.tcl (Fri Aug 18 10:26:58 2017)
 #
 if { [info exists PathSeparator] } { set ps $PathSeparator } else { set ps "/" }
 if { ![info exists tbpath] } { set tbpath "microblaze_tb${ps}dut" }

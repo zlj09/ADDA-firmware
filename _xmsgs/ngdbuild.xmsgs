@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
 <arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0_0 = PERIOD &quot;microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0_0&quot; TS_sys_clk_pin HIGH 50%&gt;</arg>
 </msg>
 

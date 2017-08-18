@@ -55,7 +55,7 @@ int main()
     PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x12342345);
     for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
 
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000011);
+    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000003);
     for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
 
     PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x00001234);

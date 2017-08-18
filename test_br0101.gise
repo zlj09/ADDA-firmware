@@ -194,18 +194,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502969266" xil_pn:in_ck="4682119182750506676" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1502969266">
+    <transform xil_pn:end_ts="1503023473" xil_pn:in_ck="4682119182750506676" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1503023473">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="microblaze/microblaze.xmp"/>
       <outfile xil_pn:name="microblaze/microblaze_top.v"/>
       <outfile xil_pn:name="pn_microblaze_testbench_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1502969266" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1854889385420917559" xil_pn:start_ts="1502969266">
+    <transform xil_pn:end_ts="1503023473" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1854889385420917559" xil_pn:start_ts="1503023473">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502969266" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1865115719096551613" xil_pn:start_ts="1502969266">
+    <transform xil_pn:end_ts="1503023473" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1865115719096551613" xil_pn:start_ts="1503023473">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -213,19 +213,16 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502969266" xil_pn:in_ck="4682119182750506676" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1502969266">
+    <transform xil_pn:end_ts="1503023473" xil_pn:in_ck="4682119182750506676" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1503023473">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="microblaze/microblaze.xmp"/>
       <outfile xil_pn:name="microblaze/microblaze_top.v"/>
       <outfile xil_pn:name="pn_microblaze_testbench_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1502969463" xil_pn:in_ck="1302186946475522384" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1611078788037281396" xil_pn:start_ts="1502969266">
+    <transform xil_pn:end_ts="1503023675" xil_pn:in_ck="1302186946475522384" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1611078788037281396" xil_pn:start_ts="1503023473">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="RS232_wave.tcl"/>
       <outfile xil_pn:name="clock_generator_0_wave.tcl"/>
       <outfile xil_pn:name="dlmb_cntlr_wave.tcl"/>
@@ -303,11 +300,9 @@
       <outfile xil_pn:name="xps_iic_0_wave.tcl"/>
       <outfile xil_pn:name="xps_intc_0_wave.tcl"/>
     </transform>
-    <transform xil_pn:end_ts="1502969463" xil_pn:in_ck="7130759491340027311" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9211711184173307305" xil_pn:start_ts="1502969463">
+    <transform xil_pn:end_ts="1503023675" xil_pn:in_ck="7130759491340027311" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9211711184173307305" xil_pn:start_ts="1503023675">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testbench_isim_beh.wdb"/>
@@ -363,12 +358,10 @@
       <outfile xil_pn:name="microblaze_xps_iic_0_wrapper.ngc"/>
       <outfile xil_pn:name="microblaze_xps_intc_0_wrapper.ngc"/>
     </transform>
-    <transform xil_pn:end_ts="1502968422" xil_pn:in_ck="8895586743438979285" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="1827746143291061842" xil_pn:start_ts="1502968400">
+    <transform xil_pn:end_ts="1503022600" xil_pn:in_ck="8895586743438979285" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="1827746143291061842" xil_pn:start_ts="1503022577">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="microblaze_top.lso"/>
@@ -386,11 +379,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1502968450" xil_pn:in_ck="1283270618379494960" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7071410598792602934" xil_pn:start_ts="1502968422">
+    <transform xil_pn:end_ts="1503022628" xil_pn:in_ck="1283270618379494960" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7071410598792602934" xil_pn:start_ts="1503022600">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="microblaze.ncf"/>
@@ -398,11 +390,10 @@
       <outfile xil_pn:name="microblaze_top.ngd"/>
       <outfile xil_pn:name="microblaze_top_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1502968469" xil_pn:in_ck="187386646448590357" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1502968450">
+    <transform xil_pn:end_ts="1503022644" xil_pn:in_ck="187386646448590357" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1503022628">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -415,11 +406,10 @@
       <outfile xil_pn:name="microblaze_top_summary.xml"/>
       <outfile xil_pn:name="microblaze_top_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1502968516" xil_pn:in_ck="-2166710933450121298" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1502968469">
+    <transform xil_pn:end_ts="1503022703" xil_pn:in_ck="-2166710933450121298" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1503022644">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="microblaze_top.ncd"/>
       <outfile xil_pn:name="microblaze_top.pad"/>
@@ -431,11 +421,10 @@
       <outfile xil_pn:name="microblaze_top_pad.txt"/>
       <outfile xil_pn:name="microblaze_top_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1502968571" xil_pn:in_ck="-1982953399006320131" xil_pn:name="TRANEXT_bitFile_virtex4" xil_pn:prop_ck="-5292315604690234831" xil_pn:start_ts="1502968516">
+    <transform xil_pn:end_ts="1503022760" xil_pn:in_ck="-1982953399006320131" xil_pn:name="TRANEXT_bitFile_virtex4" xil_pn:prop_ck="-5292315604690234831" xil_pn:start_ts="1503022703">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="microblaze_top.bgn"/>
       <outfile xil_pn:name="microblaze_top.bit"/>
@@ -445,17 +434,13 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1502968607" xil_pn:in_ck="-2558171203062321156" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="4296800" xil_pn:start_ts="1502968571">
+    <transform xil_pn:end_ts="1503022769" xil_pn:in_ck="-2558171203062321156" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="4296800" xil_pn:start_ts="1503022760">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1502958166" xil_pn:in_ck="187386646448590225" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1502958151">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1503022703" xil_pn:in_ck="187386646448590225" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1503022688">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="microblaze_top.twr"/>
       <outfile xil_pn:name="microblaze_top.twx"/>
