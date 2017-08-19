@@ -37,11 +37,115 @@
 #include "plb_dac.h"
 #include "xparameters.h"
 
+void print(char *str);
+void testDACBasic();
+void testDAC();
+void printDACTestInfo(int wave, int channel, int delay_time);
+void genSowWave(int channel, int delay_time);
+void genSqrWave(int channel, int delay_time);
+void genSinWave(int channel, int delay_time);
+void delayDAC(int delay_time);
+
 int main()
 {
-	u32 delay_cnt;
-
     init_platform();
+
+    print("Hello World\n\r");
+
+    testDAC();
+
+    return 0;
+}
+
+void testDAC()
+{
+	print("**********************DAC test********************\n\r");
+	void (*genWave[])(int, int) = {genSowWave, genSqrWave, genSinWave};
+
+	int wave = 0, channel = 3, delay_time = 10;
+	while(1)
+	{
+		printDACTestInfo(wave, channel, delay_time);
+		(*genWave[wave])(channel, delay_time);
+	}
+}
+
+void printDACTestInfo(int wave, int channel, int delay_time)
+{
+	print("DAC Test Information:\n\r");
+	switch(wave)
+	{
+	case 0:
+		print("Sawtooth Wave, ");
+		break;
+	case 1:
+		print("Square Wave, ");
+		break;
+	case 2:
+		print("Sinusoidal Wave, ");
+		break;
+	default:
+		print("Wave Form Error, ");
+	}
+	switch(channel)
+	{
+	case 0:
+		print("Both Q and I Channels Closed");
+		break;
+	case 1:
+		print("I Channel Opened, Q Channel Closed, ");
+		break;
+	case 2:
+		print("Q Channel Opened, I Channel Closed, ");
+		break;
+	case 3:
+		print("Both Q and I Channels Opened, ");
+		break;
+	default:
+		print("Channel Error, ");
+	}
+
+	xil_printf("Delay Time %d\r\n", delay_time);
+}
+
+void genSowWave(int channel, int delay_time)
+{
+	u32 i, dac_data;
+	while(1)
+	{
+		if (++i == (1 << 10))
+			i = 0;
+		//dac_data = 0;
+		//if (channel & 0x1)
+			//dac_data |= i;
+		//if (channel & 0x2)
+			//dac_data |= (i << 16);
+		dac_data = i;
+		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
+		delayDAC(delay_time);
+	}
+}
+
+void genSqrWave(int channel, int delay_time)
+{
+	while(1) ;
+}
+void genSinWave(int channel, int delay_time)
+{
+	while(1) ;
+}
+
+void delayDAC(int delay_time)
+{
+	u32 i;
+	for (i = delay_time; i > 0; --i) ;
+}
+
+void testDACBasic()
+{
+	print("********************Basic DAC test********************\n\r");
+
+	u32 delay_cnt;
 
     PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000001);
     for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
@@ -67,9 +171,7 @@ int main()
     PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x12342345);
     for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
 
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000000);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
+    //PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000000);
+    //for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
 
-
-    return 0;
 }

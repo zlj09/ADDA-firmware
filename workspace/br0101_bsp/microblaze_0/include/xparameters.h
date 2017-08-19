@@ -150,29 +150,6 @@
 
 /******************************************************************/
 
-/* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 1
-
-/* Definitions for peripheral XPS_GPIO_0 */
-#define XPAR_XPS_GPIO_0_BASEADDR 0x81400000
-#define XPAR_XPS_GPIO_0_HIGHADDR 0x8140FFFF
-#define XPAR_XPS_GPIO_0_DEVICE_ID 0
-#define XPAR_XPS_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_XPS_GPIO_0_IS_DUAL 0
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral XPS_GPIO_0 */
-#define XPAR_GPIO_0_BASEADDR 0x81400000
-#define XPAR_GPIO_0_HIGHADDR 0x8140FFFF
-#define XPAR_GPIO_0_DEVICE_ID XPAR_XPS_GPIO_0_DEVICE_ID
-#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_0_IS_DUAL 0
-
-
-/******************************************************************/
-
 #define XPAR_INTC_MAX_NUM_INTR_INPUTS 1
 #define XPAR_XINTC_HAS_IPR 1
 #define XPAR_XINTC_HAS_SIE 1

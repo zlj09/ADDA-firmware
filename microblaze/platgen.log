@@ -196,9 +196,6 @@ Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
 F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 31 -
 Copying cache implementation netlist
-IPNAME:plb_v46 INSTANCE:mb_plb -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 45 -
-Copying cache implementation netlist
 IPNAME:lmb_v10 INSTANCE:ilmb -
 F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 52 -
 Copying cache implementation netlist
@@ -244,7 +241,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -260,14 +257,15 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:mb_plb -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 45 -
+Running XST synthesis
 INSTANCE:clock_generator_0 -
 F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 106 -
 Running XST synthesis
 INSTANCE:plb_dac_0 -
 F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 156 -
 Running XST synthesis
-WARNING:EDK:2631 - Unable to remove directory
-   'F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst\'
 
 Running NGCBUILD ...
 IPNAME:microblaze_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
@@ -279,4 +277,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 46.00 seconds
+Total run time: 51.00 seconds

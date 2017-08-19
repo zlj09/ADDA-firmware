@@ -98,9 +98,6 @@
 <msg type="info" file="EDK" num="4211" delta="new" >The following instances are synthesized with <arg fmt="%s" index="1">XST</arg>. The MPD option IMP_NETLIST=TRUE indicates that a NGC file is to be produced using <arg fmt="%s" index="2">XST</arg> synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
 </msg>
 
-<msg type="warning" file="EDK" num="2631" delta="new" >Unable to remove directory &apos;<arg fmt="%s" index="1">F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst\</arg>&apos;
-</msg>
-
 <msg type="info" file="EDK" num="3509" delta="new" >NCF files should not be modified as they will be regenerated.
 If any constraint needs to be overridden, this should be done by modifying the data/<arg fmt="%s" index="1">microblaze</arg>.ucf file.
 </msg>
