@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Sun Aug 20 11:56:20 2017
+#Sun Aug 20 12:24:46 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -604,7 +604,7 @@ D10,,IOBS,IO_L7N_6,UNUSED,,6,,,,,,,,,
 D11,,IOBM,IO_L7P_6,UNUSED,,6,,,,,,,,,
 D12,,IOBM,IO_L1P_6,UNUSED,,6,,,,,,,,,
 D13,,,VCCO_6,,,6,,,,,2.50,,,,
-D14,plb_dac_0_S_Clkout_pin,IOB,IO_L29N_6,OUTPUT,LVCMOS25*,6,12,SLOW,NONE**,,,UNLOCATED,NO,NONE,
+D14,,IOBS,IO_L29N_6,UNUSED,,6,,,,,,,,,
 D15,,,TDP_0,,,,,,,,,,,,
 D16,,LOWCAPIOB,IO_L14P_GC_LC_1,UNUSED,,1,,,,,,,,,
 D17,,LOWCAPIOB,IO_L12N_GC_VREF_LC_1,UNUSED,,1,,,,,,,,,
@@ -767,7 +767,7 @@ J3,,,GND,,,,,,,,,,,,
 J4,,IOBM,IO_L18P_10,UNUSED,,10,,,,,,,,,
 J5,,IOBS,IO_L10N_10,UNUSED,,10,,,,,,,,,
 J6,,IOBM,IO_L10P_10,UNUSED,,10,,,,,,,,,
-J7,,IOBS,IO_L32N_6,UNUSED,,6,,,,,,,,,
+J7,plb_dac_0_S_Clkout_pin,IOB,IO_L32N_6,OUTPUT,LVCMOS25*,6,12,SLOW,NONE**,,,UNLOCATED,NO,NONE,
 J8,,,VCCO_6,,,6,,,,,2.50,,,,
 J9,,LOWCAPIOB,IO_L24P_CC_LC_6,UNUSED,,6,,,,,,,,,
 J10,,,VCCAUX,,,,,,,,2.5,,,,

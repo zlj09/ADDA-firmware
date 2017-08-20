@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     lmb_bram_wave.tcl (Sun Aug 20 12:06:26 2017)
+#  File     lmb_bram_wave.tcl (Sun Aug 20 12:33:54 2017)
 #
 #  Module   microblaze_lmb_bram_wrapper
 #  Instance lmb_bram

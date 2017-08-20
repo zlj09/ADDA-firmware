@@ -51,7 +51,7 @@ int main()
 {
     init_platform();
 
-    //print("Hello World\n\r");
+    print("Hello World\n\r");
 
     initDAC(0);
 

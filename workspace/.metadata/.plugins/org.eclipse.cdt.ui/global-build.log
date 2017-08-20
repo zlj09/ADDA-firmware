@@ -773,3 +773,39 @@ ELF file	: br0101.elf
 elfcheck passed.
 Finished building: br0101.elf.elfcheck
  
+12:26:49 **** Auto Build of project br0101_bsp ****
+make -k all 
+Finished building libraries
+12:27:06 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'testDAC':
+../src/helloworld.c:74:6: warning: unused variable 'wave' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: br0101.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3118	    308	   2084	   5510	   1586	br0101.elf
+Finished building: br0101.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+Finished building: br0101.elf.elfcheck
+ 

@@ -86,7 +86,7 @@ Checking platform address map ...
 Initializing Memory...
 Running Data2Mem with the following command:
 data2mem -bm "implementation/microblaze_bd" -p xc4vsx55ff1148-10 -bt
-"implementation/microblaze.bit"  -bd "bootloops/microblaze_0.elf" tag
+"implementation/microblaze.bit"  -bd "../workspace/br0101/Debug/br0101.elf" tag
 microblaze_0  -o b implementation/download.bit 
 Memory Initialization completed successfully.
 
