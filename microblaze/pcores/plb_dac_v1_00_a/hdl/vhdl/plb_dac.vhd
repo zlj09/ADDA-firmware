@@ -169,6 +169,8 @@ entity plb_dac is
     S_ClkMD                        : out std_logic;
     S_Format                       : out std_logic;
     S_PWRDN                        : out std_logic;
+    S_OpEnI                        : out std_logic;
+    S_OpEnQ                        : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -345,6 +347,8 @@ architecture IMP of plb_dac is
       IP2DAC_ClkMD                   : out std_logic;
       IP2DAC_Format                  : out std_logic;
       IP2DAC_PWRDN                   : out std_logic;
+      IP2DAC_OpEnI                   : out std_logic;
+      IP2DAC_OpEnQ                   : out std_logic; 
       -- ADD USER PORTS ABOVE THIS LINE ------------------
 
       -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -489,6 +493,8 @@ begin
       IP2DAC_ClkMD                   => S_ClkMD, 
       IP2DAC_Format                  => S_Format, 
       IP2DAC_PWRDN                   => S_PWRDN,
+      IP2DAC_OpEnI                   => S_OpEnI,
+      IP2DAC_OpEnQ                   => S_OpEnQ,      
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

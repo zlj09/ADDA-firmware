@@ -38,6 +38,8 @@ module microblaze_tb
   wire plb_dac_0_S_DCLKIO_pin;
   wire [0:9] plb_dac_0_S_Data_pin;
   wire plb_dac_0_S_Format_pin;
+  wire plb_dac_0_S_OpEnI_pin;
+  wire plb_dac_0_S_OpEnQ_pin;
   wire plb_dac_0_S_PWRDN_pin;
   wire plb_dac_0_S_PinMD_pin;
 
@@ -53,7 +55,9 @@ module microblaze_tb
       .plb_dac_0_S_PinMD_pin ( plb_dac_0_S_PinMD_pin ),
       .plb_dac_0_S_ClkMD_pin ( plb_dac_0_S_ClkMD_pin ),
       .plb_dac_0_S_Format_pin ( plb_dac_0_S_Format_pin ),
-      .plb_dac_0_S_PWRDN_pin ( plb_dac_0_S_PWRDN_pin )
+      .plb_dac_0_S_PWRDN_pin ( plb_dac_0_S_PWRDN_pin ),
+      .plb_dac_0_S_OpEnI_pin ( plb_dac_0_S_OpEnI_pin ),
+      .plb_dac_0_S_OpEnQ_pin ( plb_dac_0_S_OpEnQ_pin )
     );
 
   // Clock generator for fpga_0_clk_1_sys_clk_pin

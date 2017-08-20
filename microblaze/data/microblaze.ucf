@@ -1,8 +1,70 @@
-#  Generic Template
-## Net fpga_0_RS232_RX_pin LOC=;
-## Net fpga_0_RS232_TX_pin LOC=;
 Net fpga_0_clk_1_sys_clk_pin TNM_NET = sys_clk_pin;
-TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
-## Net fpga_0_clk_1_sys_clk_pin LOC=;
-Net fpga_0_rst_1_sys_rst_pin TIG;
-## Net fpga_0_rst_1_sys_rst_pin LOC=;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+
+Net fpga_0_clk_1_sys_clk_pin LOC = F18;
+Net fpga_0_clk_1_sys_clk_pin IOSTANDARD = LVCMOS33;
+
+Net fpga_0_RS232_TX_pin LOC = AG21;
+Net fpga_0_RS232_TX_pin IOSTANDARD = LVCMOS25;
+
+Net fpga_0_RS232_RX_pin LOC = AF20;
+Net fpga_0_RS232_RX_pin IOSTANDARD = LVCMOS25;
+
+Net plb_dac_0_S_Data_pin<0> LOC = G5;
+Net plb_dac_0_S_Data_pin<0> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<1> LOC = J14;
+Net plb_dac_0_S_Data_pin<1> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<2> LOC = G1;
+Net plb_dac_0_S_Data_pin<2> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<3> LOC = F1;
+Net plb_dac_0_S_Data_pin<3> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<4> LOC = E1;
+Net plb_dac_0_S_Data_pin<4> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<5> LOC = D1;
+Net plb_dac_0_S_Data_pin<5> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<6> LOC = D2;
+Net plb_dac_0_S_Data_pin<6> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<7> LOC = F3;
+Net plb_dac_0_S_Data_pin<7> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<8> LOC = F4;
+Net plb_dac_0_S_Data_pin<8> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Data_pin<9> LOC = G15;
+Net plb_dac_0_S_Data_pin<9> IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_DCLKIO_pin LOC = M6;
+Net plb_dac_0_S_DCLKIO_pin IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Clkout_pin LOC = P5;
+Net plb_dac_0_S_Clkout_pin IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_PinMD_pin LOC = M10;
+Net plb_dac_0_S_PinMD_pin IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_ClkMD_pin LOC = E2;
+Net plb_dac_0_S_ClkMD_pin IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_Format_pin LOC = J1;
+Net plb_dac_0_S_Format_pin IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_PWRDN_pin LOC = J2;
+Net plb_dac_0_S_PWRDN_pin IOSTANDARD = LVCMOS33;
+
+Net plb_dac_0_S_OpEnI_pin LOC = AB12;
+Net plb_dac_0_S_OpEnI_pin IOSTANDARD = LVCMOS15;
+Net plb_dac_0_S_OpEnI_pin Drive = 2;
+Net plb_dac_0_S_OpEnQ_pin LOC = AA8;
+Net plb_dac_0_S_OpEnQ_pin IOSTANDARD = LVCMOS15;
+Net plb_dac_0_S_OpEnQ_pin Drive = 2;
+
+Net fpga_0_rst_1_sys_rst_pin LOC = A5;
+Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;
+Net fpga_0_rst_1_sys_rst_pin Drive = 2;

@@ -2,8 +2,8 @@ Release 14.7 ngdbuild P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
-ise -dd _ngo -nt timestamp -uc microblaze.ucf -bm edkBmmFile.bmm -p
-xc4vsx55-ff1148-10 microblaze_top.ngc microblaze_top.ngd
+ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc4vsx55-ff1148-10
+microblaze_top.ngc microblaze_top.ngd
 
 Reading NGO file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.ngc"
 ...
@@ -48,7 +48,6 @@ Checking Constraint Associations...
 Gathering constraint information from source properties...
 Done.
 
-Annotating constraints to design from ucf file "microblaze.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
@@ -56,20 +55,20 @@ INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
    clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST. The following new TNM
    groups and period specifications were generated at the DCM_ADV output(s): 
    CLK0: <TIMESPEC
-   TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0_0 = PERIOD
-   "microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0_0"
+   TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PERIOD
+   "microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0"
    TS_sys_clk_pin HIGH 50%>
 
-WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_sys_clk_pin = PERIOD
-   "sys_clk_pin" 50000.000000000 KHz HIGH 50.000000000 %;> is overridden by the
-   constraint <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;>
-   [microblaze.ucf(5)]. The overriden constraint usually comes from the input
-   netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
-   promote this message to an error.
 Done...
 
 Processing BMM file "edkBmmFile.bmm" ...
 
+WARNING:NgdBuild:1212 - User specified non-default attribute value
+   (20.0000000000000000) was detected for the CLKIN_PERIOD attribute on DCM
+   "clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST".  This does not
+   match the PERIOD constraint value (100000 KHz.).  The uncertainty calculation
+   will use the non-default attribute value.  This could result in incorrect
+   uncertainty calculated for DCM output clocks.
 Checking expanded design ...
 
 Partition Implementation Status

@@ -60,7 +60,9 @@ entity microblaze_plb_dac_0_wrapper is
     S_PinMD : out std_logic;
     S_ClkMD : out std_logic;
     S_Format : out std_logic;
-    S_PWRDN : out std_logic
+    S_PWRDN : out std_logic;
+    S_OpEnI : out std_logic;
+    S_OpEnQ : out std_logic
   );
 end microblaze_plb_dac_0_wrapper;
 
@@ -132,7 +134,9 @@ architecture STRUCTURE of microblaze_plb_dac_0_wrapper is
       S_PinMD : out std_logic;
       S_ClkMD : out std_logic;
       S_Format : out std_logic;
-      S_PWRDN : out std_logic
+      S_PWRDN : out std_logic;
+      S_OpEnI : out std_logic;
+      S_OpEnQ : out std_logic
     );
   end component;
 
@@ -204,7 +208,9 @@ begin
       S_PinMD => S_PinMD,
       S_ClkMD => S_ClkMD,
       S_Format => S_Format,
-      S_PWRDN => S_PWRDN
+      S_PWRDN => S_PWRDN,
+      S_OpEnI => S_OpEnI,
+      S_OpEnQ => S_OpEnQ
     );
 
 end architecture STRUCTURE;

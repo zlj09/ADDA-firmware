@@ -1,4 +1,5 @@
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sat Aug 19 09:38:12 2017">
+
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sun Aug 20 09:46:09 2017">
 
   <SYSTEMINFO ARCH="virtex4" DEVICE="xc4vsx55" PACKAGE="ff1148" PART="xc4vsx55ff1148-10" SOURCE="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/microblaze.xmp" SPEEDGRADE="-10"/>
 
@@ -6930,6 +6931,16 @@
             <CONNECTION INSTANCE="mb_plb" PORT="Sl_MIRQ"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="49" NAME="S_OpEnI" SIGNAME="plb_dac_0_S_OpEnI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="plb_dac_0_S_OpEnI_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="50" NAME="S_OpEnQ" SIGNAME="plb_dac_0_S_OpEnQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="plb_dac_0_S_OpEnQ_pin"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="mb_plb" BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="SPLB" TYPE="SLAVE">
@@ -7045,6 +7056,16 @@
     <PORT DIR="O" MHS_INDEX="10" NAME="plb_dac_0_S_PWRDN_pin" SIGNAME="plb_dac_0_S_PWRDN">
       <CONNECTIONS>
         <CONNECTION INSTANCE="plb_dac_0" PORT="S_PWRDN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="11" NAME="plb_dac_0_S_OpEnI_pin" SIGNAME="plb_dac_0_S_OpEnI">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="plb_dac_0" PORT="S_OpEnI"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="12" NAME="plb_dac_0_S_OpEnQ_pin" SIGNAME="plb_dac_0_S_OpEnQ">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="plb_dac_0" PORT="S_OpEnQ"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

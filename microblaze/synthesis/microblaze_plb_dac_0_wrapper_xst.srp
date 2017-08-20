@@ -390,7 +390,7 @@ Analyzing generic Entity <plb_dac> in library <plb_dac_v1_00_a> (Architecture <I
 	DAC_WIDTH = 10
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/vhdl/plb_dac.vhd" line 448: Unconnected output port 'Reset2Bus_ToutSup' of component 'soft_reset'.
+WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/vhdl/plb_dac.vhd" line 452: Unconnected output port 'Reset2Bus_ToutSup' of component 'soft_reset'.
 Entity <plb_dac> analyzed. Unit <plb_dac> generated.
 
 Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
@@ -816,7 +816,7 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 217
+# IOs                              : 219
 
 Cell Usage :
 # BELS                             : 183
@@ -850,7 +850,7 @@ Selected Device : 4vsx55ff1148-10
  Number of Slices:                      157  out of  24576     0%  
  Number of Slice Flip Flops:            225  out of  49152     0%  
  Number of 4 input LUTs:                164  out of  49152     0%  
- Number of IOs:                         217
+ Number of IOs:                         219
  Number of bonded IOBs:                   0  out of    640     0%  
 
 ---------------------------
@@ -940,7 +940,7 @@ Offset:              2.680ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 71 / 58
+  Total number of paths / destination ports: 73 / 60
 -------------------------------------------------------------------------
 Offset:              1.333ns (Levels of Logic = 1)
   Source:            plb_dac_0/USER_LOGIC_I/slv_reg0_31 (FF)
@@ -960,12 +960,12 @@ Offset:              1.333ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.89 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.62 secs
  
 --> 
 
-Total memory usage is 428768 kilobytes
+Total memory usage is 444768 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   98 (   0 filtered)

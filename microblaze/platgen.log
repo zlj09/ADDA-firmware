@@ -96,7 +96,7 @@ IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s)
 Checking port drivers...
 WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
    floating connection -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 143
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 145
     
 
 Performing Clock DRCs...
@@ -194,45 +194,48 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 31 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 33 -
+Copying cache implementation netlist
+IPNAME:plb_v46 INSTANCE:mb_plb -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 47 -
 Copying cache implementation netlist
 IPNAME:lmb_v10 INSTANCE:ilmb -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 52 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 54 -
 Copying cache implementation netlist
 IPNAME:lmb_v10 INSTANCE:dlmb -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 59 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 61 -
 Copying cache implementation netlist
 IPNAME:lmb_bram_if_cntlr INSTANCE:dlmb_cntlr -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 66 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 68 -
 Copying cache implementation netlist
 IPNAME:lmb_bram_if_cntlr INSTANCE:ilmb_cntlr -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 75 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 77 -
 Copying cache implementation netlist
 IPNAME:bram_block INSTANCE:lmb_bram -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 84 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 86 -
 Copying cache implementation netlist
 IPNAME:xps_uartlite INSTANCE:rs232 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 91 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 93 -
 Copying cache implementation netlist
 IPNAME:mdm INSTANCE:mdm_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 121 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 123 -
 Copying cache implementation netlist
 IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 133 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 135 -
 Copying cache implementation netlist
 IPNAME:xps_intc INSTANCE:xps_intc_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 146 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 148 -
 Copying cache implementation netlist
 IPNAME:plb_dac INSTANCE:plb_dac_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 156 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 158 -
 Copying cache implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:lmb_bram -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 84 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 86 -
 elaborating IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 106 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 108 -
 elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
@@ -241,7 +244,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -257,19 +260,16 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:mb_plb -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 45 -
-Running XST synthesis
 INSTANCE:clock_generator_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 106 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 108 -
 Running XST synthesis
 INSTANCE:plb_dac_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 156 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 158 -
 Running XST synthesis
 
 Running NGCBUILD ...
 IPNAME:microblaze_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 106 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 108 -
 Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
@@ -277,4 +277,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 51.00 seconds
+Total run time: 62.00 seconds

@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     microblaze_wave.tcl (Fri Aug 18 10:26:58 2017)
+#  File     microblaze_wave.tcl (Sun Aug 20 12:06:26 2017)
 #
 #  ISE Simulator Trace Script File
 #

@@ -55,10 +55,12 @@ module user_logic
   IP2DAC_Data,               //IP to DAC data bus
   IP2DAC_DCLKIO,             //IP to DAC digital clock
   IP2DAC_Clkout,             //IP to DAC analog clock
-  IP2DAC_PinMD,            //IP to DAC pin mode control
-  IP2DAC_ClkMD,            //IP to DAC clock mode control
+  IP2DAC_PinMD,              //IP to DAC pin mode control
+  IP2DAC_ClkMD,              //IP to DAC clock mode control
   IP2DAC_Format,             //IP to DAC format control
-  IP2DAC_PWRDN,            //IP to DAC power down control
+  IP2DAC_PWRDN,              //IP to DAC power down control
+  IP2DAC_OpEnI,              //IP to DAC output op amp I enable
+  IP2DAC_OpEnQ,              //IP to DAC output op amp Q enable
   // -- ADD USER PORTS ABOVE THIS LINE ---------------
 
   // -- DO NOT EDIT BELOW THIS LINE ------------------
@@ -96,6 +98,8 @@ output                                    IP2DAC_PinMD;
 output                                    IP2DAC_ClkMD;
 output                                    IP2DAC_Format;
 output                                    IP2DAC_PWRDN;
+output                                    IP2DAC_OpEnI;
+output                                    IP2DAC_OpEnQ;
 // -- ADD USER PORTS ABOVE THIS LINE -----------------
 
 // -- DO NOT EDIT BELOW THIS LINE --------------------
@@ -119,9 +123,6 @@ output                                    IP2Bus_Error;
   // --USER nets declarations added here, as needed for user logic
   reg                                       dac_clk_reg;
   reg        [0 : DAC_WIDTH-1]              dac_data_reg;
-  //wire       [C_SLV_DWIDTH-1 : 0]           rev_slv_reg0;
-  //wire       [C_SLV_DWIDTH-1 : 0]           rev_slv_reg1;
-  //wire       [DAC_WIDTH-1 : 0]              rev_dac_data_reg;
 
   // Nets for user logic slave model s/w accessible register example
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg0;
@@ -206,6 +207,9 @@ output                                    IP2Bus_Error;
         dac_clk_reg <= ~dac_clk_reg;
     end
 
+  //Get DAC data from slv_reg1. slv_reg1[0] is MSB. slv_reg1[31] is LSB.
+  //slv_reg1[6 : 15] is for Q DAC, output when DCLKIO is at high voltage, latched at the negative edge.
+  //slv_reg1[22 : 31] is for I DAC, output when DCLKIO is at low voltage, latched at the positive edge.
   always @(negedge Bus2IP_Clk)
     begin
       if (Bus2IP_Reset == 1)
@@ -224,10 +228,6 @@ output                                    IP2Bus_Error;
   assign IP2Bus_RdAck   = slv_read_ack;
   assign IP2Bus_Error   = 0;
 
-  //Convert registers into normal order
-  //assign rev_slv_reg0 = slv_reg0;
-  //assign rev_slv_reg1 = slv_reg1;
-  //assign rev_dac_data_reg = dac_data_reg;
 
   //Implement DAC control signals  
 
@@ -247,6 +247,11 @@ output                                    IP2Bus_Error;
   //The digital clock and analog clock are both tied to bus clock, with CLKMD=0.
   assign IP2DAC_DCLKIO = (IP2DAC_PWRDN) ? (1'b0) : (dac_clk_reg);
   assign IP2DAC_Clkout = (IP2DAC_PWRDN) ? (1'b0) : (dac_clk_reg);
+
+  //The 3rd and 4th LSB of slv_reg0, OpEnI and OpEnQ, are used to control the op amps in the DAC output circuit.
+  //0 is for enable (default), 1 is for disable. 
+  assign IP2DAC_OpEnI = slv_reg0[29];
+  assign IP2DAC_OpEnQ = slv_reg0[28];  
   assign IP2DAC_ClkMD = 1'b0;
 
   //The DAC should be fixed to work in pin mode.

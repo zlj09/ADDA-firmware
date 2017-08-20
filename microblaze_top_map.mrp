@@ -10,30 +10,30 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Sat Aug 19 09:43:25 2017
+Mapped Date    : Sun Aug 20 11:55:18 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    2
 Logic Utilization:
-  Number of Slice Flip Flops:         1,731 out of  49,152    3%
-  Number of 4 input LUTs:             3,061 out of  49,152    6%
+  Number of Slice Flip Flops:         1,742 out of  49,152    3%
+  Number of 4 input LUTs:             3,066 out of  49,152    6%
 Logic Distribution:
-  Number of occupied Slices:          2,141 out of  24,576    8%
-    Number of Slices containing only related logic:   2,141 out of   2,141 100%
-    Number of Slices containing unrelated logic:          0 out of   2,141   0%
+  Number of occupied Slices:          2,151 out of  24,576    8%
+    Number of Slices containing only related logic:   2,151 out of   2,151 100%
+    Number of Slices containing unrelated logic:          0 out of   2,151   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       3,174 out of  49,152    6%
-    Number used as logic:             2,546
-    Number used as a route-thru:        113
+  Total Number of 4 input LUTs:       3,188 out of  49,152    6%
+    Number used as logic:             2,551
+    Number used as a route-thru:        122
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:     131
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
-  Number of bonded IOBs:                 20 out of     640    3%
+  Number of bonded IOBs:                 22 out of     640    3%
   Number of BUFG/BUFGCTRLs:               2 out of      32    6%
     Number used as BUFGs:                 2
   Number of FIFO16/RAMB16s:              32 out of     320   10%
@@ -42,9 +42,9 @@ Logic Distribution:
   Number of DCM_ADVs:                     1 out of       8   12%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                4.06
+Average Fanout of Non-Clock Nets:                4.05
 
-Peak Memory Usage:  497 MB
+Peak Memory Usage:  496 MB
 Total REAL time to MAP completion:  10 secs 
 Total CPU time to MAP completion:   9 secs 
 
@@ -126,7 +126,7 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 Section 4 - Removed Logic Summary
 ---------------------------------
 1153 block(s) removed
- 106 block(s) optimized away
+ 108 block(s) optimized away
 1210 signal(s) removed
 
 Section 5 - Removed Logic
@@ -5945,6 +5945,8 @@ E" (SRLC16E) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
 FDR 		microblaze_i/RS232/RS232/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_0
    optimized to 0
 FDR 		microblaze_i/RS232/RS232/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_1
@@ -6233,24 +6235,26 @@ Section 6 - IOB Properties
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | fpga_0_RS232_RX_pin                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | fpga_0_RS232_TX_pin                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| fpga_0_clk_1_sys_clk_pin           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| fpga_0_rst_1_sys_rst_pin           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| plb_dac_0_S_ClkMD_pin              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| fpga_0_clk_1_sys_clk_pin           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| fpga_0_rst_1_sys_rst_pin           | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              |          |          |
+| plb_dac_0_S_ClkMD_pin              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | plb_dac_0_S_Clkout_pin             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_DCLKIO_pin             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<0>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<1>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<2>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<3>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<4>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<5>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<6>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<7>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<8>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Data_pin<9>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_Format_pin             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_PWRDN_pin              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| plb_dac_0_S_PinMD_pin              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_DCLKIO_pin             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<0>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<1>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<2>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<3>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<4>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<5>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<6>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<7>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<8>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Data_pin<9>            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_Format_pin             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_OpEnI_pin              | IOB              | OUTPUT    | LVCMOS15             |       | 2        | SLOW |              |          |          |
+| plb_dac_0_S_OpEnQ_pin              | IOB              | OUTPUT    | LVCMOS15             |       | 2        | SLOW |              |          |          |
+| plb_dac_0_S_PWRDN_pin              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| plb_dac_0_S_PinMD_pin              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

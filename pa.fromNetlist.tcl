@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Post-Synthesis pin planning, created by Project Navigator
 
-create_project -name test_br0101 -dir "F:/Programs/Verilog/FPGA_Group/test_br0101/planAhead_run_2" -part xc4vsx55ff1148-10
+create_project -name test_br0101 -dir "F:/Programs/Verilog/FPGA_Group/test_br0101/planAhead_run_3" -part xc4vsx55ff1148-10
 set_property design_mode GateLvl [get_property srcset [current_run -impl]]
 set_property edif_top_file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.ngc" [ get_property srcset [ current_run ] ]
 add_files -norecurse { {F:/Programs/Verilog/FPGA_Group/test_br0101} }

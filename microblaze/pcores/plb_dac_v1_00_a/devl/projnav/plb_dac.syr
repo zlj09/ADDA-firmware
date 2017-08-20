@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: plb_dac.prj
 
@@ -258,7 +258,7 @@ Analyzing generic Entity <plb_dac> in library <work> (Architecture <imp>).
 	DAC_WIDTH = 10
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/vhdl/plb_dac.vhd" line 448: Unconnected output port 'Reset2Bus_ToutSup' of component 'soft_reset'.
+WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/hdl/vhdl/plb_dac.vhd" line 452: Unconnected output port 'Reset2Bus_ToutSup' of component 'soft_reset'.
 Entity <plb_dac> analyzed. Unit <plb_dac> generated.
 
 Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
@@ -718,8 +718,6 @@ WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_24> 
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_25> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_26> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_27> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_28> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_29> is unconnected in block <plb_dac>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -731,8 +729,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 164
- Flip-Flops                                            : 164
+# Registers                                            : 166
+ Flip-Flops                                            : 166
 
 =========================================================================
 
@@ -758,7 +756,7 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 447
+# IOs                              : 449
 
 Cell Usage :
 # BELS                             : 167
@@ -776,18 +774,18 @@ Cell Usage :
 #      MUXCY                       : 9
 #      MUXF5                       : 4
 #      VCC                         : 1
-# FlipFlops/Latches                : 164
+# FlipFlops/Latches                : 166
 #      FD                          : 34
 #      FD_1                        : 10
 #      FDR                         : 77
-#      FDRE                        : 36
+#      FDRE                        : 38
 #      FDRS                        : 2
 #      FDRSE                       : 5
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 272
+# IO Buffers                       : 274
 #      IBUF                        : 81
-#      OBUF                        : 191
+#      OBUF                        : 193
 =========================================================================
 
 Device utilization summary:
@@ -795,11 +793,11 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                      125  out of  24576     0%  
- Number of Slice Flip Flops:            164  out of  49152     0%  
+ Number of Slices:                      126  out of  24576     0%  
+ Number of Slice Flip Flops:            166  out of  49152     0%  
  Number of 4 input LUTs:                152  out of  49152     0%  
- Number of IOs:                         447
- Number of bonded IOBs:                 273  out of    640    42%  
+ Number of IOs:                         449
+ Number of bonded IOBs:                 275  out of    640    42%  
  Number of GCLKs:                         1  out of     32     3%  
 
 ---------------------------
@@ -823,7 +821,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-SPLB_Clk                           | BUFGP                  | 164   |
+SPLB_Clk                           | BUFGP                  | 166   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -834,8 +832,8 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 4.760ns (Maximum Frequency: 210.082MHz)
-   Minimum input arrival time before clock: 4.545ns
+   Minimum period: 4.776ns (Maximum Frequency: 209.394MHz)
+   Minimum input arrival time before clock: 4.553ns
    Maximum output required time after clock: 5.641ns
    Maximum combinational path delay: No path found
 
@@ -845,10 +843,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 4.760ns (frequency: 210.082MHz)
-  Total number of paths / destination ports: 1215 / 165
+  Clock period: 4.776ns (frequency: 209.394MHz)
+  Total number of paths / destination ports: 1225 / 171
 -------------------------------------------------------------------------
-Delay:               2.380ns (Levels of Logic = 2)
+Delay:               2.388ns (Levels of Logic = 2)
   Source:            SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (FF)
   Destination:       USER_LOGIC_I/dac_data_reg_5 (FF)
   Source Clock:      SPLB_Clk rising
@@ -859,18 +857,18 @@ Delay:               2.380ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRSE:C->Q            4   0.360   0.537  SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (SOFT_RESET_I/flop_q_chain<4>)
-     LUT2:I1->O           27   0.195   1.071  SOFT_RESET_I/Reset2IP_Reset1_2 (SOFT_RESET_I/Reset2IP_Reset1_1)
+     LUT2:I1->O           29   0.195   1.079  SOFT_RESET_I/Reset2IP_Reset1_2 (SOFT_RESET_I/Reset2IP_Reset1_1)
      LUT4:I3->O            1   0.195   0.000  USER_LOGIC_I/dac_data_reg_5_rstpot (USER_LOGIC_I/dac_data_reg_5_rstpot)
      FD_1:D                    0.022          USER_LOGIC_I/dac_data_reg_5
     ----------------------------------------
-    Total                      2.380ns (0.772ns logic, 1.608ns route)
-                                       (32.4% logic, 67.6% route)
+    Total                      2.388ns (0.772ns logic, 1.616ns route)
+                                       (32.3% logic, 67.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 247 / 223
+  Total number of paths / destination ports: 249 / 225
 -------------------------------------------------------------------------
-Offset:              4.545ns (Levels of Logic = 2)
+Offset:              4.553ns (Levels of Logic = 2)
   Source:            SPLB_Rst (PAD)
   Destination:       USER_LOGIC_I/slv_reg1_31 (FF)
   Destination Clock: SPLB_Clk rising
@@ -880,15 +878,15 @@ Offset:              4.545ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            99   0.965   1.415  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
-     LUT2:I0->O           27   0.195   0.908  SOFT_RESET_I/Reset2IP_Reset1_2 (SOFT_RESET_I/Reset2IP_Reset1_1)
-     FDRE:R                    1.062          USER_LOGIC_I/slv_reg0_30
+     LUT2:I0->O           29   0.195   0.916  SOFT_RESET_I/Reset2IP_Reset1_2 (SOFT_RESET_I/Reset2IP_Reset1_1)
+     FDRE:R                    1.062          USER_LOGIC_I/slv_reg0_28
     ----------------------------------------
-    Total                      4.545ns (2.222ns logic, 2.323ns route)
-                                       (48.9% logic, 51.1% route)
+    Total                      4.553ns (2.222ns logic, 2.331ns route)
+                                       (48.8% logic, 51.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 57 / 44
+  Total number of paths / destination ports: 59 / 46
 -------------------------------------------------------------------------
 Offset:              5.641ns (Levels of Logic = 2)
   Source:            USER_LOGIC_I/slv_reg0_31 (FF)
@@ -909,14 +907,14 @@ Offset:              5.641ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.63 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.88 secs
  
 --> 
 
-Total memory usage is 406624 kilobytes
+Total memory usage is 405984 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  179 (   0 filtered)
+Number of warnings :  177 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

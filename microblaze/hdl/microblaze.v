@@ -14,7 +14,9 @@ module microblaze
     plb_dac_0_S_PinMD_pin,
     plb_dac_0_S_ClkMD_pin,
     plb_dac_0_S_Format_pin,
-    plb_dac_0_S_PWRDN_pin
+    plb_dac_0_S_PWRDN_pin,
+    plb_dac_0_S_OpEnI_pin,
+    plb_dac_0_S_OpEnQ_pin
   );
   input fpga_0_RS232_RX_pin;
   output fpga_0_RS232_TX_pin;
@@ -27,6 +29,8 @@ module microblaze
   output plb_dac_0_S_ClkMD_pin;
   output plb_dac_0_S_Format_pin;
   output plb_dac_0_S_PWRDN_pin;
+  output plb_dac_0_S_OpEnI_pin;
+  output plb_dac_0_S_OpEnQ_pin;
 
   // Internal signals
 
@@ -190,6 +194,8 @@ module microblaze
   wire plb_dac_0_S_DCLKIO;
   wire [0:9] plb_dac_0_S_Data;
   wire plb_dac_0_S_Format;
+  wire plb_dac_0_S_OpEnI;
+  wire plb_dac_0_S_OpEnQ;
   wire plb_dac_0_S_PWRDN;
   wire plb_dac_0_S_PinMD;
   wire [0:0] sys_bus_reset;
@@ -206,6 +212,8 @@ module microblaze
   assign plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD;
   assign plb_dac_0_S_Format_pin = plb_dac_0_S_Format;
   assign plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN;
+  assign plb_dac_0_S_OpEnI_pin = plb_dac_0_S_OpEnI;
+  assign plb_dac_0_S_OpEnQ_pin = plb_dac_0_S_OpEnQ;
   assign net_gnd0 = 1'b0;
   assign net_gnd1[0:0] = 1'b0;
   assign net_gnd10[0:9] = 10'b0000000000;
@@ -1840,7 +1848,9 @@ module microblaze
       .S_PinMD ( plb_dac_0_S_PinMD ),
       .S_ClkMD ( plb_dac_0_S_ClkMD ),
       .S_Format ( plb_dac_0_S_Format ),
-      .S_PWRDN ( plb_dac_0_S_PWRDN )
+      .S_PWRDN ( plb_dac_0_S_PWRDN ),
+      .S_OpEnI ( plb_dac_0_S_OpEnI ),
+      .S_OpEnQ ( plb_dac_0_S_OpEnQ )
     );
 
 endmodule
@@ -4979,7 +4989,9 @@ module microblaze_plb_dac_0_wrapper
     S_PinMD,
     S_ClkMD,
     S_Format,
-    S_PWRDN
+    S_PWRDN,
+    S_OpEnI,
+    S_OpEnQ
   );
   input SPLB_Clk;
   input SPLB_Rst;
@@ -5030,5 +5042,7 @@ module microblaze_plb_dac_0_wrapper
   output S_ClkMD;
   output S_Format;
   output S_PWRDN;
+  output S_OpEnI;
+  output S_OpEnQ;
 endmodule
 

@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   12:24:12 08/07/2017
+// Create Date:   09:32:46 08/20/2017
 // Design Name:   user_logic
 // Module Name:   F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v1_00_a/vsim/tb_user_logic.v
 // Project Name:  plb_dac
@@ -40,6 +40,8 @@ module tb_user_logic;
 	wire IP2DAC_ClkMD;
 	wire IP2DAC_Format;
 	wire IP2DAC_PWRDN;
+	wire IP2DAC_OpEnI;
+	wire IP2DAC_OpEnQ;
 	wire [0:31] IP2Bus_Data;
 	wire IP2Bus_RdAck;
 	wire IP2Bus_WrAck;
@@ -54,6 +56,8 @@ module tb_user_logic;
 		.IP2DAC_ClkMD(IP2DAC_ClkMD), 
 		.IP2DAC_Format(IP2DAC_Format), 
 		.IP2DAC_PWRDN(IP2DAC_PWRDN), 
+		.IP2DAC_OpEnI(IP2DAC_OpEnI), 
+		.IP2DAC_OpEnQ(IP2DAC_OpEnQ), 
 		.Bus2IP_Clk(Bus2IP_Clk), 
 		.Bus2IP_Reset(Bus2IP_Reset), 
 		.Bus2IP_Data(Bus2IP_Data), 
@@ -77,8 +81,10 @@ module tb_user_logic;
 
 		// Wait 100 ns for global reset to finish
 		#100;
+		Bus2IP_Reset = 0;
         
 		// Add stimulus here
+				// Add stimulus here
 		Bus2IP_Reset = 1'b0;
 
 		Bus2IP_BE = 4'b1111;

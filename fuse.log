@@ -240,11 +240,13 @@ Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze.v" into library work
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_tb.v" into library work
 Analyzing Verilog file "G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v" into library work
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/microblaze_top.v" into library work
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/pn_microblaze_testbench_tb.v" into library work
 Analyzing Verilog file "G:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 WARNING:HDLCompiler:687 - "G:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
 Starting static elaboration
 WARNING:HDLCompiler:746 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/debug.vhd" Line 1975: Range is empty (null range)
+WARNING:HDLCompiler:329 - "F:/Programs/Verilog/FPGA_Group/test_br0101/pn_microblaze_testbench_tb.v" Line 75: Target <fpga_0_rst_1_sys_rst_pin> of concurrent assignment or output port connection should be a net type.
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1171: Element index 7 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1183: Element index 15 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1198: Element index 7 into mem is out of bounds
@@ -275,8 +277,8 @@ WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERN
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index 63 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 2580: Element index 7 into dopb_buf is out of bounds
 Completed static elaboration
-Fuse Memory Usage: 262692 KB
-Fuse CPU Usage: 14156 ms
+Fuse Memory Usage: 262628 KB
+Fuse CPU Usage: 13936 ms
 Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
 Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
 Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
@@ -345,6 +347,7 @@ Compiling module lmb_bram_elaborate
 Compiling module microblaze_lmb_bram_wrapper
 Compiling module user_logic(10,32,2)
 Compiling module microblaze
+Compiling module rst_generator
 Compiling module testbench
 Compiling module glbl
 Compiling package standard
@@ -548,9 +551,9 @@ Compiling architecture implementation of entity soft_reset [\soft_reset(32,4)\]
 Compiling architecture imp of entity plb_dac [\plb_dac(10,('1','1','0','0','1'...]
 Compiling architecture structure of entity microblaze_plb_dac_0_wrapper [microblaze_plb_dac_0_wrapper_def...]
 Time Resolution for simulation is 100fs.
-Waiting for 208 sub-compilation(s) to finish...
+Waiting for 224 sub-compilation(s) to finish...
 Compiled 415 VHDL Units
-Compiled 70 Verilog Units
+Compiled 71 Verilog Units
 Built simulation executable F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_isim_beh.exe
-Fuse Memory Usage: 343340 KB
-Fuse CPU Usage: 38546 ms
+Fuse Memory Usage: 342252 KB
+Fuse CPU Usage: 38999 ms

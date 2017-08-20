@@ -209,7 +209,7 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 20
+# IOs                              : 22
 
 Cell Usage :
 # BELS                             : 3972
@@ -278,7 +278,7 @@ Selected Device : 4vsx55ff1148-10
     Number used as logic:              3022
     Number used as Shift registers:     133
     Number used as RAMs:                384
- Number of IOs:                          20
+ Number of IOs:                          22
  Number of bonded IOBs:                   0  out of    640     0%  
  Number of FIFO16/RAMB16s:               32  out of    320    10%  
     Number used as RAMB16s:              32
@@ -500,7 +500,7 @@ Offset:              2.753ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 28 / 15
+  Total number of paths / destination ports: 30 / 17
 -------------------------------------------------------------------------
 Offset:              1.333ns (Levels of Logic = 2)
   Source:            plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_31 (FF)
@@ -586,11 +586,11 @@ Offset:              5.861ns (Levels of Logic = 10)
 
 
 Total REAL time to Xst completion: 33.00 secs
-Total CPU time to Xst completion: 33.25 secs
+Total CPU time to Xst completion: 33.43 secs
  
 --> 
 
-Total memory usage is 388832 kilobytes
+Total memory usage is 388448 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
