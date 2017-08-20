@@ -10,7 +10,7 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Sun Aug 20 12:23:36 2017
+Mapped Date    : Sun Aug 20 14:46:13 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -21,23 +21,28 @@ WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<31>> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<30>> is
    incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:1245 - Unexpected DCM_ADV configuration. The signal
+   clk_generator_0/clk_reg on the CLKIN pin of DCM_ADV comp
+   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_
+   ADV_INST is not driven by an IOB, BUFG or BUFGCTRL therefore the phase
+   relationship of output clocks to CLKIN cannot be guaranteed.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    2
+Number of warnings:    3
 Logic Utilization:
-  Number of Slice Flip Flops:         1,743 out of  49,152    3%
-  Number of 4 input LUTs:             3,067 out of  49,152    6%
+  Number of Slice Flip Flops:         1,744 out of  49,152    3%
+  Number of 4 input LUTs:             3,066 out of  49,152    6%
 Logic Distribution:
-  Number of occupied Slices:          2,152 out of  24,576    8%
-    Number of Slices containing only related logic:   2,152 out of   2,152 100%
-    Number of Slices containing unrelated logic:          0 out of   2,152   0%
+  Number of occupied Slices:          2,154 out of  24,576    8%
+    Number of Slices containing only related logic:   2,154 out of   2,154 100%
+    Number of Slices containing unrelated logic:          0 out of   2,154   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       3,189 out of  49,152    6%
-    Number used as logic:             2,552
+  Total Number of 4 input LUTs:       3,188 out of  49,152    6%
+    Number used as logic:             2,551
     Number used as a route-thru:        122
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
@@ -45,9 +50,9 @@ Logic Distribution:
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
-  Number of bonded IOBs:                 22 out of     640    3%
-  Number of BUFG/BUFGCTRLs:               2 out of      32    6%
-    Number used as BUFGs:                 2
+  Number of bonded IOBs:                 26 out of     640    4%
+  Number of BUFG/BUFGCTRLs:               3 out of      32    9%
+    Number used as BUFGs:                 3
   Number of FIFO16/RAMB16s:              32 out of     320   10%
     Number used as RAMB16s:              32
   Number of DSP48s:                       3 out of     512    1%
@@ -56,9 +61,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                4.05
 
-Peak Memory Usage:  498 MB
-Total REAL time to MAP completion:  13 secs 
-Total CPU time to MAP completion:   10 secs 
+Peak Memory Usage:  330 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
 
 NOTES:
 

@@ -1,0 +1,453 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Aug 20 14:04:55 2017
+# Process ID: 4608
+# Log file: H:/ljzhu/test_br0101/planAhead_run_4/planAhead.log
+# Journal file: H:/ljzhu/test_br0101/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from F:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [F:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source H:/ljzhu/test_br0101/pa.fromNetlist.tcl
+# create_project -name test_br0101 -dir "H:/ljzhu/test_br0101/planAhead_run_4" -part xc4vsx55ff1148-10
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "H:/ljzhu/test_br0101/microblaze_top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {H:/ljzhu/test_br0101} }
+# add_files [list {H:/ljzhu/test_br0101/microblaze.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {H:/ljzhu/test_br0101/microblaze_clock_generator_0_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {H:/ljzhu/test_br0101/microblaze_dlmb_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {H:/ljzhu/test_br0101/microblaze_ilmb_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {H:/ljzhu/test_br0101/microblaze_microblaze_0_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "microblaze_top.ucf" [current_fileset -constrset]
+Adding file 'H:/ljzhu/test_br0101/microblaze_top.ucf' to fileset 'constrs_1'
+# add_files [list {microblaze_top.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc4vsx55ff1148-10
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to microblaze_top.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_top.edif ...
+ngc2edif: Total memory usage is 61376 kilobytes
+
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_top_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze.ngc ...
+WARNING:NetListWriters:298 - No output is written to microblaze.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze.edif ...
+ngc2edif: Total memory usage is 65152 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze.ngc' for (cell view 'microblaze', library 'microblaze_top_lib', file 'microblaze_top.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_microblaze_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_microblaze_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus microblaze_0/LOCKSTEP_Out<3818 : 2> on
+   block microblaze_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I/of_op
+   2_mux0000<31 : 8> on block microblaze_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/ex_MSR_i<31
+   : 17> on block microblaze_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/mem_MSR_i<31
+   : 17> on block microblaze_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/of_MSR_i<31
+   : 17> on block microblaze_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_cmb<3
+   0 : 28> on block microblaze_microblaze_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/srl16<
+   42 : 0> on block microblaze_microblaze_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<9 : 1>
+   on block microblaze_microblaze_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_pipe_ctrl<10 : 2> on
+   block microblaze_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/control_reg<8 : 0> on block microblaze_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/status_reg<27 : 0> on block microblaze_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/tdo_config_word1<15 : 0> on block microblaze_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus microblaze_0/MicroBlaze_Core_I/ex_MSR<30
+   : 0> on block microblaze_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/mem_MSR<30 : 0> on block
+   microblaze_microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_microblaze_0_wrapper.edif ...
+ngc2edif: Total memory usage is 68992 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_microblaze_0_wrapper.ngc' for (cell view 'microblaze_microblaze_0_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_microblaze_0_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_microblaze_0_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_mb_plb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_mb_plb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/GTR_ONE_MASTER.FIXED_ARB_
+   GEN.I_PRIOR_ENC/lutout<6 : 0> on block microblaze_mb_plb_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_mb_plb_wrapper.edif ...
+ngc2edif: Total memory usage is 62272 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_mb_plb_wrapper.ngc' for (cell view 'microblaze_mb_plb_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_mb_plb_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_mb_plb_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_ilmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_ilmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_ilmb_wrapper.edif ...
+ngc2edif: Total memory usage is 61312 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_ilmb_wrapper.ngc' for (cell view 'microblaze_ilmb_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_ilmb_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_ilmb_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_dlmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_dlmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_dlmb_wrapper.edif ...
+ngc2edif: Total memory usage is 62144 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_dlmb_wrapper.ngc' for (cell view 'microblaze_dlmb_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_dlmb_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_dlmb_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_dlmb_cntlr_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_dlmb_cntlr_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_dlmb_cntlr_wrapper.edif ...
+ngc2edif: Total memory usage is 61888 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_dlmb_cntlr_wrapper.ngc' for (cell view 'microblaze_dlmb_cntlr_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_dlmb_cntlr_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_dlmb_cntlr_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_ilmb_cntlr_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_ilmb_cntlr_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_ilmb_cntlr_wrapper.edif ...
+ngc2edif: Total memory usage is 61376 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_ilmb_cntlr_wrapper.ngc' for (cell view 'microblaze_ilmb_cntlr_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_ilmb_cntlr_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_ilmb_cntlr_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_lmb_bram_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_lmb_bram_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_lmb_bram_wrapper.edif ...
+ngc2edif: Total memory usage is 62400 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_lmb_bram_wrapper.ngc' for (cell view 'microblaze_lmb_bram_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_lmb_bram_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_lmb_bram_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_rs232_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_rs232_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   RS232/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icoun
+   t_out_sub0000<6 : 3> on block microblaze_rs232_wrapper is not reconstructed,
+   because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_rs232_wrapper.edif ...
+ngc2edif: Total memory usage is 62144 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_rs232_wrapper.ngc' for (cell view 'microblaze_rs232_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_rs232_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_rs232_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_clock_generator_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_clock_generator_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_clock_generator_0_wrapper.edif ...
+ngc2edif: Total memory usage is 61376 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_clock_generator_0_wrapper.ngc' for (cell view 'microblaze_clock_generator_0_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_clock_generator_0_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_clock_generator_0_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_mdm_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_mdm_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Config_Reg<31 : 0> on block MDM_Core is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_mdm_0_wrapper.edif ...
+ngc2edif: Total memory usage is 61376 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_mdm_0_wrapper.ngc' for (cell view 'microblaze_mdm_0_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_mdm_0_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_mdm_0_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_proc_sys_reset_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_proc_sys_reset_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/core_dec<2 : 0> on
+   block microblaze_proc_sys_reset_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/pr_dec<2 : 0> on
+   block microblaze_proc_sys_reset_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_proc_sys_reset_0_wrapper.edif ...
+ngc2edif: Total memory usage is 61376 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_proc_sys_reset_0_wrapper.ngc' for (cell view 'microblaze_proc_sys_reset_0_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_proc_sys_reset_0_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_proc_sys_reset_0_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_xps_intc_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_xps_intc_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/
+   icount_out_sub0000<6 : 3> on block microblaze_xps_intc_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_xps_intc_0_wrapper.edif ...
+ngc2edif: Total memory usage is 62400 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_xps_intc_0_wrapper.ngc' for (cell view 'microblaze_xps_intc_0_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_xps_intc_0_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_xps_intc_0_wrapper_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_plb_dac_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_plb_dac_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg<29 : 0> on
+   block microblaze_plb_dac_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_plb_dac_0_wrapper.edif ...
+ngc2edif: Total memory usage is 62400 kilobytes
+
+Reading core file 'H:/ljzhu/test_br0101/microblaze_plb_dac_0_wrapper.ngc' for (cell view 'microblaze_plb_dac_0_wrapper', library 'microblaze_lib', file 'microblaze.ngc')
+Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_plb_dac_0_wrapper_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/test_br0101.data/cache/microblaze_plb_dac_0_wrapper_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library F:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn
+Parsing EDIF File [F:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn]
+Finished Parsing EDIF File [F:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/hd_int_macros.edn]
+INFO: [Device 21-21] Reading bus macro file F:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/pr_bus_macros.xml
+Loading clock regions from F:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4sx/xc4vsx55/ClockRegion.xml
+Loading clock buffers from F:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4sx/xc4vsx55/ClockBuffers.xml
+Loading package from F:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4sx/xc4vsx55/ff1148/Package.xml
+Loading io standards from F:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from F:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4sx/xc4vsx55/ff1148/SSORules.xml
+Loading list of drcs for the architecture : F:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex4/drc.xml
+INFO: [Timing 38-77] Reading timing library F:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4sx/virtex4sx-10.lib.
+INFO: [Timing 38-34] Done reading timing library F:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex4/virtex4sx/virtex4sx-10.lib.
+Parsing UCF File [H:/ljzhu/test_br0101/microblaze.ncf]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/fpga_0_clk_1_sys_clk_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:5]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS25 for net microblaze_i/fpga_0_RS232_TX_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:8]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS25 for net microblaze_i/fpga_0_RS232_RX_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:11]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[0] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:14]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[1] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:17]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[2] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:20]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[3] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:23]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[4] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:26]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[5] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:29]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[6] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:32]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[7] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:35]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[8] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:38]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Data_pin[9] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:41]
+CRITICAL WARNING: [Designutils 20-1397] We found multiple IO primitives connected to net 'microblaze_i/plb_dac_0_S_DCLKIO_pin'. It is ambiguous to apply a single loc constraint on multiple IO primitives; we will keep the constraint on the instance 'microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/IP2DAC_DCLKIO1' driving the net 'microblaze_i/plb_dac_0_S_DCLKIO_pin'. [H:/ljzhu/test_br0101/microblaze.ncf:43]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/IP2DAC_DCLKIO1' at site M6, Illegal to place instance microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/IP2DAC_DCLKIO1 on site M6 [H:/ljzhu/test_br0101/microblaze.ncf:43]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_DCLKIO_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:44]
+CRITICAL WARNING: [Designutils 20-1397] We found multiple IO primitives connected to net 'microblaze_i/plb_dac_0_S_Clkout_pin'. It is ambiguous to apply a single loc constraint on multiple IO primitives; we will keep the constraint on the instance 'microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/IP2DAC_DCLKIO1' driving the net 'microblaze_i/plb_dac_0_S_Clkout_pin'. [H:/ljzhu/test_br0101/microblaze.ncf:46]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/IP2DAC_DCLKIO1' at site P5, Illegal to place instance microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/IP2DAC_DCLKIO1 on site P5 [H:/ljzhu/test_br0101/microblaze.ncf:46]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Clkout_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:47]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_PinMD_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:50]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_ClkMD_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:53]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_Format_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:56]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS33 for net microblaze_i/plb_dac_0_S_PWRDN_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:59]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS15 for net microblaze_i/plb_dac_0_S_OpEnI_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:62]
+INFO: [Constraints 18-98] IO constraint Drive with a setting of 2 for net microblaze_i/plb_dac_0_S_OpEnI_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:63]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS15 for net microblaze_i/plb_dac_0_S_OpEnQ_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:65]
+INFO: [Constraints 18-98] IO constraint Drive with a setting of 2 for net microblaze_i/plb_dac_0_S_OpEnQ_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:66]
+INFO: [Constraints 18-98] IO constraint IOSTANDARD with a setting of LVCMOS25 for net microblaze_i/fpga_0_rst_1_sys_rst_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:69]
+INFO: [Constraints 18-98] IO constraint Drive with a setting of 2 for net microblaze_i/fpga_0_rst_1_sys_rst_pin will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [H:/ljzhu/test_br0101/microblaze.ncf:70]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'sys_clk_50m' [H:/ljzhu/test_br0101/microblaze.ncf:72]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'sys_clk_50m' [H:/ljzhu/test_br0101/microblaze.ncf:73]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'sys_clk_50m' [H:/ljzhu/test_br0101/microblaze.ncf:74]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'sys_clk_100m' [H:/ljzhu/test_br0101/microblaze.ncf:76]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'sys_clk_100m' [H:/ljzhu/test_br0101/microblaze.ncf:77]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'sys_clk_100m' [H:/ljzhu/test_br0101/microblaze.ncf:78]
+Finished Parsing UCF File [H:/ljzhu/test_br0101/microblaze.ncf]
+Parsing UCF File [H:/ljzhu/test_br0101/microblaze_clock_generator_0_wrapper.ncf]
+Finished Parsing UCF File [H:/ljzhu/test_br0101/microblaze_clock_generator_0_wrapper.ncf]
+Parsing UCF File [H:/ljzhu/test_br0101/microblaze_dlmb_wrapper.ncf]
+Finished Parsing UCF File [H:/ljzhu/test_br0101/microblaze_dlmb_wrapper.ncf]
+Parsing UCF File [H:/ljzhu/test_br0101/microblaze_ilmb_wrapper.ncf]
+Finished Parsing UCF File [H:/ljzhu/test_br0101/microblaze_ilmb_wrapper.ncf]
+Parsing UCF File [H:/ljzhu/test_br0101/microblaze_microblaze_0_wrapper.ncf]
+Finished Parsing UCF File [H:/ljzhu/test_br0101/microblaze_microblaze_0_wrapper.ncf]
+Parsing UCF File [H:/ljzhu/test_br0101/microblaze_top.ucf]
+Finished Parsing UCF File [H:/ljzhu/test_br0101/microblaze_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8707443b
+link_design: Time (s): elapsed = 00:00:27 . Memory (MB): peak = 530.371 ; gain = 106.453
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See H:/ljzhu/test_br0101\planAhead_pid4608.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Aug 20 14:10:32 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

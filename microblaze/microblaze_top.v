@@ -16,7 +16,12 @@ module microblaze_top
     plb_dac_0_S_Format_pin,
     plb_dac_0_S_PWRDN_pin,
     plb_dac_0_S_OpEnI_pin,
-    plb_dac_0_S_OpEnQ_pin
+    plb_dac_0_S_OpEnQ_pin,
+	 
+	 sys_clk_50m,
+	 dac_pwrdn,
+	 dac_dclkio,
+	 dac_data_lsb
   );
   input fpga_0_RS232_RX_pin;
   output fpga_0_RS232_TX_pin;
@@ -32,13 +37,18 @@ module microblaze_top
   output plb_dac_0_S_PWRDN_pin;
   output plb_dac_0_S_OpEnI_pin;
   output plb_dac_0_S_OpEnQ_pin;
+  
+  output sys_clk_50m;
+  output dac_pwrdn;
+  output dac_dclkio;
+  output dac_data_lsb;
 
   (* BOX_TYPE = "user_black_box" *)
   microblaze
     microblaze_i (
       .fpga_0_RS232_RX_pin ( fpga_0_RS232_RX_pin ),
       .fpga_0_RS232_TX_pin ( fpga_0_RS232_TX_pin ),
-      .fpga_0_clk_1_sys_clk_pin ( fpga_0_clk_1_sys_clk_pin ),
+      .fpga_0_clk_1_sys_clk_pin (sys_clk_50m),
       .fpga_0_rst_1_sys_rst_pin ( fpga_0_rst_1_sys_rst_pin ),
       .plb_dac_0_S_Data_pin ( plb_dac_0_S_Data_pin ),
       .plb_dac_0_S_DCLKIO_pin ( plb_dac_0_S_DCLKIO_pin ),
@@ -57,6 +67,18 @@ module microblaze_top
       .rst ( fpga_0_rst_1_sys_rst_pin )
     );
 
+
+  assign dac_pwrdn = plb_dac_0_S_PWRDN_pin;
+  assign dac_dclkio = plb_dac_0_S_DCLKIO_pin;
+  assign dac_data_lsb = plb_dac_0_S_Data_pin[9];
+	 
+  clk_generator
+	 clk_generator_0(
+	   .clk_in ( fpga_0_clk_1_sys_clk_pin),
+		.rst_in ( fpga_0_rst_1_sys_rst_pin),
+		.clk_out ( sys_clk_50m )
+  );
+
 endmodule
 
 module rst_generator
@@ -74,7 +96,7 @@ module rst_generator
   initial
   begin
     rst_cnt = 10'd0;
-    rst_reg = 1'b1;
+    rst_reg = 1'b0;
     cnt_start = 1'b0;
   end
 
@@ -84,10 +106,13 @@ module rst_generator
     begin
       cnt_start <= 1'b1;
       rst_cnt <= 10'd0;
-      rst_reg <= 1'b1;
-    end
-    if (rst_cnt == 10'd100)
       rst_reg <= 1'b0;
+    end
+    if (rst_cnt >= 10'd100)
+	 begin
+      rst_reg <= 1'b1;
+		rst_cnt  <= rst_cnt;
+	 end
     else begin
       rst_cnt <= rst_cnt + 1'd1;
     end
@@ -96,4 +121,26 @@ module rst_generator
   assign rst = rst_reg;
 
 endmodule
+
+module clk_generator
+(
+  clk_in,
+  rst_in,
+  clk_out
+);
+  input clk_in;
+  input rst_in;
+  output clk_out;
+  
+  reg clk_reg;
+  
+  always @(posedge clk_in)
+  //if (rst_in == 1'b0)
+	// clk_reg <= 1'b0;
+  //else
+    clk_reg <= ~clk_reg;
+	 
+ assign clk_out = clk_reg;
+endmodule
+
 

@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Aug 20 12:24:46 2017
+Sun Aug 20 14:47:09 2017
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -527,12 +527,12 @@ B1|||GND||||||||||||
 B2||IOBS|IO_L30N_6|UNUSED||6|||||||||
 B3||IOBM|IO_L30P_6|UNUSED||6|||||||||
 B4|||GND||||||||||||
-B5||IOBS|IO_L22N_6|UNUSED||6|||||||||
+B5|sys_clk_50m|IOB|IO_L22N_6|OUTPUT|LVCMOS25*|6|2|SLOW|NONE**|||LOCATED|NO|NONE|
 B6||IOBS|IO_L12N_VREF_6|UNUSED||6|||||||||
-B7||IOBM|IO_L14P_6|UNUSED||6|||||||||
+B7|dac_data_lsb|IOB|IO_L14P_6|OUTPUT|LVCMOS25*|6|2|SLOW|NONE**|||LOCATED|NO|NONE|
 B8||IOBS|IO_L10N_6|UNUSED||6|||||||||
 B9|||VCCO_6|||6|||||2.50||||
-B10||IOBM|IO_L2P_6|UNUSED||6|||||||||
+B10|dac_pwrdn|IOB|IO_L2P_6|OUTPUT|LVCMOS25*|6|2|SLOW|NONE**|||LOCATED|YES|NONE|
 B11||IOBS|IO_L3N_6|UNUSED||6|||||||||
 B12||LOWCAPIOB|IO_L9N_CC_LC_6|UNUSED||6|||||||||
 B13||LOWCAPIOB|IO_L9P_CC_LC_6|UNUSED||6|||||||||
@@ -566,7 +566,7 @@ C6|||VCCO_6|||6|||||2.50||||
 C7||IOBS|IO_L14N_6|UNUSED||6|||||||||
 C8||IOBS|IO_L4N_VREF_6|UNUSED||6|||||||||
 C9||IOBM|IO_L4P_6|UNUSED||6|||||||||
-C10||IOBS|IO_L2N_6|UNUSED||6|||||||||
+C10|dac_dclkio|IOB|IO_L2N_6|OUTPUT|LVCMOS25*|6|2|SLOW|NONE**|||LOCATED|NO|NONE|
 C11|||GND||||||||||||
 C12||IOBS|IO_L1N_6|UNUSED||6|||||||||
 C13||LOWCAPIOB|IO_L25N_CC_LC_6|UNUSED||6|||||||||
@@ -767,7 +767,7 @@ J3|||GND||||||||||||
 J4||IOBM|IO_L18P_10|UNUSED||10|||||||||
 J5||IOBS|IO_L10N_10|UNUSED||10|||||||||
 J6||IOBM|IO_L10P_10|UNUSED||10|||||||||
-J7|plb_dac_0_S_Clkout_pin|IOB|IO_L32N_6|OUTPUT|LVCMOS25*|6|12|SLOW|NONE**|||UNLOCATED|NO|NONE|
+J7||IOBS|IO_L32N_6|UNUSED||6|||||||||
 J8|||VCCO_6|||6|||||2.50||||
 J9||LOWCAPIOB|IO_L24P_CC_LC_6|UNUSED||6|||||||||
 J10|||VCCAUX||||||||2.5||||
@@ -868,7 +868,7 @@ M2||IOBS|IO_L28N_VREF_10|UNUSED||10|||||||||
 M3||IOBM|IO_L28P_10|UNUSED||10|||||||||
 M4|||GND||||||||||||
 M5||IOBS|IO_L27N_10|UNUSED||10|||||||||
-M6||IOBM|IO_L27P_10|UNUSED||10|||||||||
+M6|plb_dac_0_S_DCLKIO_pin|IOB|IO_L27P_10|OUTPUT|LVCMOS33|10|12|SLOW|NONE**|||LOCATED|NO|NONE|
 M7||IOBM|IO_L21P_10|UNUSED||10|||||||||
 M8||IOBS|IO_L15N_10|UNUSED||10|||||||||
 M9|||VCCO_10|||10|||||3.30||||
@@ -935,7 +935,7 @@ P1|||NC||||||||||||
 P2|||NC||||||||||||
 P3|||NC||||||||||||
 P4|||NC||||||||||||
-P5|plb_dac_0_S_DCLKIO_pin|IOB|IO_L30N_10|OUTPUT|LVCMOS33|10|12|SLOW|NONE**|||LOCATED|NO|NONE|
+P5|plb_dac_0_S_Clkout_pin|IOB|IO_L30N_10|OUTPUT|LVCMOS33|10|12|SLOW|NONE**|||LOCATED|NO|NONE|
 P6||IOBS|IO_L31N_10|UNUSED||10|||||||||
 P7||IOBM|IO_L31P_10|UNUSED||10|||||||||
 P8|||GND||||||||||||

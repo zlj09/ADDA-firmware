@@ -51,7 +51,7 @@ int main()
 {
     init_platform();
 
-    print("Hello World\n\r");
+    //print("Hello World\n\r");
 
     initDAC(0);
 
@@ -121,18 +121,19 @@ void printDACTestInfo(u32 wave, u32 channel, u32 delay_time)
 
 void genSowWave(u32 channel, u32 delay_time)
 {
-	u32 i, dac_data;
-	while(1)
+	u32 i = 0, dac_data, j, k;
+
+
+	for (i = 10000; i >= 4500; i--)
+    for (k = 0; k < 10; k++)
 	{
-		if (++i == (1 << 10))
-			i = 0;
-		dac_data = 0;
-		//if (channel & 0x1)
-			dac_data |= i;
-		//if (channel & 0x2)
-			dac_data |= (i << 16);
+		dac_data = 0x2ff;
 		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
-		delayDAC(delay_time);
+		for (j = 0; j < i; j++);
+
+		dac_data = 0x0ff;
+		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
+		for (j = 0; j < i; j++) ;
 	}
 }
 

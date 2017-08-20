@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Aug 20 12:56:05 2017
+Sun Aug 20 14:47:32 2017
 
 drc -z microblaze_top.ncd microblaze_top.pcf
 
@@ -9,5 +9,10 @@ WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<31>> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<30>> is
    incomplete. The signal does not drive any load pins in the design.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:1245 - Unexpected DCM_ADV configuration. The signal
+   clk_generator_0/clk_reg on the CLKIN pin of DCM_ADV comp
+   microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_
+   ADV_INST is not driven by an IOB, BUFG or BUFGCTRL therefore the phase
+   relationship of output clocks to CLKIN cannot be guaranteed.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

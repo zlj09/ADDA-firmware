@@ -1,55 +1,144 @@
 Release 14.7 ngdbuild P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
-ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc4vsx55-ff1148-10
-microblaze_top.ngc microblaze_top.ngd
+Command Line: f:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc microblaze_top.ucf -bm edkBmmFile.bmm -p
+xc4vsx55-ff1148-10 microblaze_top.ngc microblaze_top.ngd
 
-Reading NGO file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.ngc"
-...
+Reading NGO file "H:/ljzhu/test_br0101/microblaze_top.ngc" ...
+Loading design module "H:\ljzhu\test_br0101/microblaze.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ngc"...
+"H:\ljzhu\test_br0101/microblaze_microblaze_0_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_mb_plb_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_ilmb_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_dlmb_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_microblaze_0_wrapper.ngc"
-...
+"H:\ljzhu\test_br0101/microblaze_dlmb_cntlr_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_mb_plb_wrapper.ngc"...
+"H:\ljzhu\test_br0101/microblaze_ilmb_cntlr_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_lmb_bram_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_rs232_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_ilmb_wrapper.ngc"...
+"H:\ljzhu\test_br0101/microblaze_clock_generator_0_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_mdm_0_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_dlmb_wrapper.ngc"...
+"H:\ljzhu\test_br0101/microblaze_proc_sys_reset_0_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_dlmb_cntlr_wrapper.ngc"..
-.
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_ilmb_cntlr_wrapper.ngc"..
-.
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_lmb_bram_wrapper.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_rs232_wrapper.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_clock_generator_0_wrapper
-.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_mdm_0_wrapper.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_proc_sys_reset_0_wrapper.
-ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_xps_intc_0_wrapper.ngc"..
-.
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_plb_dac_0_wrapper.ngc"...
-Applying constraints in
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf" to module
+"H:\ljzhu\test_br0101/microblaze_xps_intc_0_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_plb_dac_0_wrapper.ngc"...
+Applying constraints in "H:\ljzhu\test_br0101/microblaze.ncf" to module
 "microblaze_i"...
 Checking Constraint Associations...
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<Net sys_clk_50m LOC = B5;> [H:\ljzhu\test_br0101/microblaze.ncf(72)]'
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<Net sys_clk_50m IOSTANDARD = LVCMOS25;>
+   [H:\ljzhu\test_br0101/microblaze.ncf(73)]'
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<Net sys_clk_50m Drive = 2;> [H:\ljzhu\test_br0101/microblaze.ncf(74)]'
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<Net sys_clk_100m LOC = B10;> [H:\ljzhu\test_br0101/microblaze.ncf(76)]'
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<Net sys_clk_100m IOSTANDARD = LVCMOS25;>
+   [H:\ljzhu\test_br0101/microblaze.ncf(77)]'
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<Net sys_clk_100m Drive = 2;> [H:\ljzhu\test_br0101/microblaze.ncf(78)]'
 Gathering constraint information from source properties...
 Done.
 
+Annotating constraints to design from ucf file "microblaze_top.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "rst_generator_0/rst_reg" LOC = A5>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_PinMD_pin_OBUF" LOC = M10>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_PWRDN_pin_OBUF" LOC = J2>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_OpEnQ_pin_OBUF" LOC = AA8>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_OpEnI_pin_OBUF" LOC = AB12>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Format_pin_OBUF" LOC = J1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_9_OBUF" LOC = G15>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_8_OBUF" LOC = F4>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_7_OBUF" LOC = F3>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_6_OBUF" LOC = D2>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_5_OBUF" LOC = D1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_4_OBUF" LOC = E1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_3_OBUF" LOC = F1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_2_OBUF" LOC = G1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_1_OBUF" LOC = J14>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_0_OBUF" LOC = G5>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Clkout_pin_OBUF" LOC = P5>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_ClkMD_pin_OBUF" LOC = E2>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "fpga_0_RS232_TX_pin_OBUF" LOC = AG21>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "fpga_0_RS232_RX_pin_IBUF" LOC = AF20>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "clk_generator_0/clk_reg" LOC = F18>' could not be found and so the
+   Locate constraint will be removed.
+
 INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
    'TS_sys_clk_pin', was traced into DCM_ADV instance
    clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST. The following new TNM
@@ -59,6 +148,167 @@ INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
    "microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0"
    TS_sys_clk_pin HIGH 50%>
 
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   "sys_clk_pin" 100000.000000000 KHz HIGH 50.000000000 %;> is overridden by the
+   constraint <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;>
+   [microblaze_top.ucf(2)]. The overriden constraint usually comes from the
+   input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
+   promote this message to an error.
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" DRIVE = 2>
+   is overridden on the design object fpga_0_rst_1_sys_rst_pin by the constraint
+   <Net fpga_0_rst_1_sys_rst_pin Drive = 2;> [microblaze_top.ucf(70)].
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" IOSTANDARD
+   = "LVCMOS25"> is overridden on the design object fpga_0_rst_1_sys_rst_pin by
+   the constraint <Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;>
+   [microblaze_top.ucf(69)].
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" LOC = A5>
+   is overridden on the design object fpga_0_rst_1_sys_rst_pin by the constraint
+   <Net fpga_0_rst_1_sys_rst_pin LOC = A5;> [microblaze_top.ucf(68)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PinMD_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_PinMD_pin by the constraint <Net plb_dac_0_S_PinMD_pin IOSTANDARD
+   = LVCMOS33;> [microblaze_top.ucf(50)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PinMD_pin_OBUF" LOC =
+   M10> is overridden on the design object plb_dac_0_S_PinMD_pin by the
+   constraint <Net plb_dac_0_S_PinMD_pin LOC = M10;> [microblaze_top.ucf(49)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PWRDN_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_PWRDN_pin by the constraint <Net plb_dac_0_S_PWRDN_pin IOSTANDARD
+   = LVCMOS33;> [microblaze_top.ucf(59)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PWRDN_pin_OBUF" LOC =
+   J2> is overridden on the design object plb_dac_0_S_PWRDN_pin by the
+   constraint <Net plb_dac_0_S_PWRDN_pin LOC = J2;> [microblaze_top.ucf(58)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnQ_pin_OBUF" DRIVE =
+   2> is overridden on the design object plb_dac_0_S_OpEnQ_pin by the constraint
+   <Net plb_dac_0_S_OpEnQ_pin Drive = 2;> [microblaze_top.ucf(66)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnQ_pin_OBUF"
+   IOSTANDARD = "LVCMOS15"> is overridden on the design object
+   plb_dac_0_S_OpEnQ_pin by the constraint <Net plb_dac_0_S_OpEnQ_pin IOSTANDARD
+   = LVCMOS15;> [microblaze_top.ucf(65)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnQ_pin_OBUF" LOC =
+   AA8> is overridden on the design object plb_dac_0_S_OpEnQ_pin by the
+   constraint <Net plb_dac_0_S_OpEnQ_pin LOC = AA8;> [microblaze_top.ucf(64)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnI_pin_OBUF" DRIVE =
+   2> is overridden on the design object plb_dac_0_S_OpEnI_pin by the constraint
+   <Net plb_dac_0_S_OpEnI_pin Drive = 2;> [microblaze_top.ucf(63)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnI_pin_OBUF"
+   IOSTANDARD = "LVCMOS15"> is overridden on the design object
+   plb_dac_0_S_OpEnI_pin by the constraint <Net plb_dac_0_S_OpEnI_pin IOSTANDARD
+   = LVCMOS15;> [microblaze_top.ucf(62)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnI_pin_OBUF" LOC =
+   AB12> is overridden on the design object plb_dac_0_S_OpEnI_pin by the
+   constraint <Net plb_dac_0_S_OpEnI_pin LOC = AB12;> [microblaze_top.ucf(61)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Format_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Format_pin by the constraint <Net plb_dac_0_S_Format_pin
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(56)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Format_pin_OBUF" LOC =
+   J1> is overridden on the design object plb_dac_0_S_Format_pin by the
+   constraint <Net plb_dac_0_S_Format_pin LOC = J1;> [microblaze_top.ucf(55)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_9_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<9> by the constraint <Net plb_dac_0_S_Data_pin<9>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(41)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_9_OBUF" LOC =
+   G15> is overridden on the design object plb_dac_0_S_Data_pin<9> by the
+   constraint <Net plb_dac_0_S_Data_pin<9> LOC = G15;> [microblaze_top.ucf(40)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_8_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<8> by the constraint <Net plb_dac_0_S_Data_pin<8>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(38)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_8_OBUF" LOC =
+   F4> is overridden on the design object plb_dac_0_S_Data_pin<8> by the
+   constraint <Net plb_dac_0_S_Data_pin<8> LOC = F4;> [microblaze_top.ucf(37)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_7_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<7> by the constraint <Net plb_dac_0_S_Data_pin<7>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(35)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_7_OBUF" LOC =
+   F3> is overridden on the design object plb_dac_0_S_Data_pin<7> by the
+   constraint <Net plb_dac_0_S_Data_pin<7> LOC = F3;> [microblaze_top.ucf(34)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_6_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<6> by the constraint <Net plb_dac_0_S_Data_pin<6>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(32)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_6_OBUF" LOC =
+   D2> is overridden on the design object plb_dac_0_S_Data_pin<6> by the
+   constraint <Net plb_dac_0_S_Data_pin<6> LOC = D2;> [microblaze_top.ucf(31)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_5_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<5> by the constraint <Net plb_dac_0_S_Data_pin<5>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(29)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_5_OBUF" LOC =
+   D1> is overridden on the design object plb_dac_0_S_Data_pin<5> by the
+   constraint <Net plb_dac_0_S_Data_pin<5> LOC = D1;> [microblaze_top.ucf(28)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_4_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<4> by the constraint <Net plb_dac_0_S_Data_pin<4>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(26)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_4_OBUF" LOC =
+   E1> is overridden on the design object plb_dac_0_S_Data_pin<4> by the
+   constraint <Net plb_dac_0_S_Data_pin<4> LOC = E1;> [microblaze_top.ucf(25)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_3_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<3> by the constraint <Net plb_dac_0_S_Data_pin<3>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(23)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_3_OBUF" LOC =
+   F1> is overridden on the design object plb_dac_0_S_Data_pin<3> by the
+   constraint <Net plb_dac_0_S_Data_pin<3> LOC = F1;> [microblaze_top.ucf(22)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_2_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<2> by the constraint <Net plb_dac_0_S_Data_pin<2>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(20)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_2_OBUF" LOC =
+   G1> is overridden on the design object plb_dac_0_S_Data_pin<2> by the
+   constraint <Net plb_dac_0_S_Data_pin<2> LOC = G1;> [microblaze_top.ucf(19)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_1_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<1> by the constraint <Net plb_dac_0_S_Data_pin<1>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(17)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_1_OBUF" LOC =
+   J14> is overridden on the design object plb_dac_0_S_Data_pin<1> by the
+   constraint <Net plb_dac_0_S_Data_pin<1> LOC = J14;> [microblaze_top.ucf(16)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_0_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<0> by the constraint <Net plb_dac_0_S_Data_pin<0>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(14)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_0_OBUF" LOC =
+   G5> is overridden on the design object plb_dac_0_S_Data_pin<0> by the
+   constraint <Net plb_dac_0_S_Data_pin<0> LOC = G5;> [microblaze_top.ucf(13)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Clkout_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_DCLKIO_pin by the constraint <Net plb_dac_0_S_DCLKIO_pin
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(44)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Clkout_pin_OBUF" LOC =
+   P5> is overridden on the design object plb_dac_0_S_DCLKIO_pin by the
+   constraint <Net plb_dac_0_S_DCLKIO_pin LOC = M6;> [microblaze_top.ucf(43)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_ClkMD_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_ClkMD_pin by the constraint <Net plb_dac_0_S_ClkMD_pin IOSTANDARD
+   = LVCMOS33;> [microblaze_top.ucf(53)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_ClkMD_pin_OBUF" LOC =
+   E2> is overridden on the design object plb_dac_0_S_ClkMD_pin by the
+   constraint <Net plb_dac_0_S_ClkMD_pin LOC = E2;> [microblaze_top.ucf(52)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_TX_pin_OBUF"
+   IOSTANDARD = "LVCMOS25"> is overridden on the design object
+   fpga_0_RS232_TX_pin by the constraint <Net fpga_0_RS232_TX_pin IOSTANDARD =
+   LVCMOS25;> [microblaze_top.ucf(8)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_TX_pin_OBUF" LOC =
+   AG21> is overridden on the design object fpga_0_RS232_TX_pin by the
+   constraint <Net fpga_0_RS232_TX_pin LOC = AG21;> [microblaze_top.ucf(7)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_RX_pin_IBUF"
+   IOSTANDARD = "LVCMOS25"> is overridden on the design object
+   fpga_0_RS232_RX_pin by the constraint <Net fpga_0_RS232_RX_pin IOSTANDARD =
+   LVCMOS25;> [microblaze_top.ucf(11)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_RX_pin_IBUF" LOC =
+   AF20> is overridden on the design object fpga_0_RS232_RX_pin by the
+   constraint <Net fpga_0_RS232_RX_pin LOC = AF20;> [microblaze_top.ucf(10)].
+WARNING:NgdBuild:1012 - The constraint <NET "clk_generator_0/clk_reg" IOSTANDARD
+   = "LVCMOS33"> is overridden on the design object sys_clk_50m by the
+   constraint <Net sys_clk_50m IOSTANDARD = LVCMOS25;> [microblaze_top.ucf(73)].
+WARNING:NgdBuild:1012 - The constraint <NET "clk_generator_0/clk_reg" LOC = F18>
+   is overridden on the design object sys_clk_50m by the constraint <Net
+   sys_clk_50m LOC = B5;> [microblaze_top.ucf(72)].
 Done...
 
 Processing BMM file "edkBmmFile.bmm" ...
@@ -80,12 +330,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   1
+  Number of warnings:  68
 
-Total memory usage is 235728 kilobytes
+Total memory usage is 161720 kilobytes
 
 Writing NGD file "microblaze_top.ngd" ...
-Total REAL time to NGDBUILD completion:  25 sec
-Total CPU time to NGDBUILD completion:   24 sec
+Total REAL time to NGDBUILD completion:  23 sec
+Total CPU time to NGDBUILD completion:   23 sec
 
 Writing NGDBUILD log file "microblaze_top.bld"...

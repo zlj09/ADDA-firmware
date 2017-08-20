@@ -68,3 +68,11 @@ Net plb_dac_0_S_OpEnQ_pin Drive = 2;
 Net fpga_0_rst_1_sys_rst_pin LOC = A5;
 Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;
 Net fpga_0_rst_1_sys_rst_pin Drive = 2;
+
+Net sys_clk_50m LOC = B5;
+Net sys_clk_50m IOSTANDARD = LVCMOS25;
+Net sys_clk_50m Drive = 2;
+
+Net sys_clk_100m LOC = B10;
+Net sys_clk_100m IOSTANDARD = LVCMOS25;
+Net sys_clk_100m Drive = 2;

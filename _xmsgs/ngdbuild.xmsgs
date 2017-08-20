@@ -5,8 +5,233 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m LOC = B5;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(72)]</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m IOSTANDARD = LVCMOS25;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(73)]</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m Drive = 2;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(74)]</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m LOC = B10;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(76)]</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m IOSTANDARD = LVCMOS25;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(77)]</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m Drive = 2;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(78)]</arg>&apos;
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;rst_generator_0/rst_reg&quot; LOC = A5&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_PinMD_pin_OBUF&quot; LOC = M10&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_PWRDN_pin_OBUF&quot; LOC = J2&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_OpEnQ_pin_OBUF&quot; LOC = AA8&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_OpEnI_pin_OBUF&quot; LOC = AB12&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Format_pin_OBUF&quot; LOC = J1&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_9_OBUF&quot; LOC = G15&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_8_OBUF&quot; LOC = F4&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_7_OBUF&quot; LOC = F3&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_6_OBUF&quot; LOC = D2&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_5_OBUF&quot; LOC = D1&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_4_OBUF&quot; LOC = E1&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_3_OBUF&quot; LOC = F1&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_2_OBUF&quot; LOC = G1&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_1_OBUF&quot; LOC = J14&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Data_pin_0_OBUF&quot; LOC = G5&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_Clkout_pin_OBUF&quot; LOC = P5&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;plb_dac_0_S_ClkMD_pin_OBUF&quot; LOC = E2&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;fpga_0_RS232_TX_pin_OBUF&quot; LOC = AG21&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;fpga_0_RS232_RX_pin_IBUF&quot; LOC = AF20&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;clk_generator_0/clk_reg&quot; LOC = F18&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
 <arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PERIOD &quot;microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0&quot; TS_sys_clk_pin HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1345" delta="old" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sys_clk_pin = PERIOD &quot;sys_clk_pin&quot; 100000.000000000 KHz HIGH 50.000000000 %;&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;&gt; [microblaze_top.ucf(2)]</arg>. The overriden constraint usually comes from the input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an error.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; DRIVE = 2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin Drive = 2;&gt; [microblaze_top.ucf(70)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; IOSTANDARD = &quot;LVCMOS25&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;&gt; [microblaze_top.ucf(69)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; LOC = A5&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin LOC = A5;&gt; [microblaze_top.ucf(68)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_PinMD_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_PinMD_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_PinMD_pin IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(50)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_PinMD_pin_OBUF&quot; LOC = M10&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_PinMD_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_PinMD_pin LOC = M10;&gt; [microblaze_top.ucf(49)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_PWRDN_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_PWRDN_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_PWRDN_pin IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(59)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_PWRDN_pin_OBUF&quot; LOC = J2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_PWRDN_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_PWRDN_pin LOC = J2;&gt; [microblaze_top.ucf(58)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_OpEnQ_pin_OBUF&quot; DRIVE = 2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_OpEnQ_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_OpEnQ_pin Drive = 2;&gt; [microblaze_top.ucf(66)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_OpEnQ_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS15&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_OpEnQ_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_OpEnQ_pin IOSTANDARD = LVCMOS15;&gt; [microblaze_top.ucf(65)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_OpEnQ_pin_OBUF&quot; LOC = AA8&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_OpEnQ_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_OpEnQ_pin LOC = AA8;&gt; [microblaze_top.ucf(64)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_OpEnI_pin_OBUF&quot; DRIVE = 2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_OpEnI_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_OpEnI_pin Drive = 2;&gt; [microblaze_top.ucf(63)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_OpEnI_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS15&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_OpEnI_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_OpEnI_pin IOSTANDARD = LVCMOS15;&gt; [microblaze_top.ucf(62)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_OpEnI_pin_OBUF&quot; LOC = AB12&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_OpEnI_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_OpEnI_pin LOC = AB12;&gt; [microblaze_top.ucf(61)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Format_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Format_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Format_pin IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(56)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Format_pin_OBUF&quot; LOC = J1&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Format_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Format_pin LOC = J1;&gt; [microblaze_top.ucf(55)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_9_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;9&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;9&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(41)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_9_OBUF&quot; LOC = G15&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;9&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;9&gt; LOC = G15;&gt; [microblaze_top.ucf(40)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_8_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;8&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;8&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(38)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_8_OBUF&quot; LOC = F4&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;8&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;8&gt; LOC = F4;&gt; [microblaze_top.ucf(37)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_7_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;7&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(35)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_7_OBUF&quot; LOC = F3&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;7&gt; LOC = F3;&gt; [microblaze_top.ucf(34)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_6_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;6&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(32)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_6_OBUF&quot; LOC = D2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;6&gt; LOC = D2;&gt; [microblaze_top.ucf(31)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_5_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;5&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(29)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_5_OBUF&quot; LOC = D1&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;5&gt; LOC = D1;&gt; [microblaze_top.ucf(28)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_4_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;4&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(26)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_4_OBUF&quot; LOC = E1&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;4&gt; LOC = E1;&gt; [microblaze_top.ucf(25)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_3_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;3&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(23)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_3_OBUF&quot; LOC = F1&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;3&gt; LOC = F1;&gt; [microblaze_top.ucf(22)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_2_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;2&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(20)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_2_OBUF&quot; LOC = G1&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;2&gt; LOC = G1;&gt; [microblaze_top.ucf(19)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_1_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;1&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(17)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_1_OBUF&quot; LOC = J14&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;1&gt; LOC = J14;&gt; [microblaze_top.ucf(16)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_0_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;0&gt; IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(14)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Data_pin_0_OBUF&quot; LOC = G5&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_Data_pin&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_Data_pin&lt;0&gt; LOC = G5;&gt; [microblaze_top.ucf(13)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Clkout_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_DCLKIO_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_DCLKIO_pin IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(44)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_Clkout_pin_OBUF&quot; LOC = P5&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_DCLKIO_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_DCLKIO_pin LOC = M6;&gt; [microblaze_top.ucf(43)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_ClkMD_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_ClkMD_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_ClkMD_pin IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(53)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_ClkMD_pin_OBUF&quot; LOC = E2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_ClkMD_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_ClkMD_pin LOC = E2;&gt; [microblaze_top.ucf(52)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;fpga_0_RS232_TX_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS25&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_RS232_TX_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_RS232_TX_pin IOSTANDARD = LVCMOS25;&gt; [microblaze_top.ucf(8)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;fpga_0_RS232_TX_pin_OBUF&quot; LOC = AG21&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_RS232_TX_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_RS232_TX_pin LOC = AG21;&gt; [microblaze_top.ucf(7)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;fpga_0_RS232_RX_pin_IBUF&quot; IOSTANDARD = &quot;LVCMOS25&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_RS232_RX_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_RS232_RX_pin IOSTANDARD = LVCMOS25;&gt; [microblaze_top.ucf(11)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;fpga_0_RS232_RX_pin_IBUF&quot; LOC = AF20&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_RS232_RX_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_RS232_RX_pin LOC = AF20;&gt; [microblaze_top.ucf(10)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;clk_generator_0/clk_reg&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">sys_clk_50m</arg> by the constraint <arg fmt="%s" index="3">&lt;Net sys_clk_50m IOSTANDARD = LVCMOS25;&gt; [microblaze_top.ucf(73)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;clk_generator_0/clk_reg&quot; LOC = F18&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">sys_clk_50m</arg> by the constraint <arg fmt="%s" index="3">&lt;Net sys_clk_50m LOC = B5;&gt; [microblaze_top.ucf(72)]</arg>.
 </msg>
 
 <msg type="warning" file="NgdBuild" num="1212" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">20.0000000000000000</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">100000 KHz.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.

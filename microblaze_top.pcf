@@ -1,13 +1,18 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Aug 20 12:23:47 2017
+// Written by: Map P.20131013 on Sun Aug 20 14:46:21 2017
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "plb_dac_0_S_OpEnI_pin" LOCATE = SITE "AB12" LEVEL 1;
+COMP "plb_dac_0_S_Clkout_pin" LOCATE = SITE "P5" LEVEL 1;
 COMP "plb_dac_0_S_OpEnQ_pin" LOCATE = SITE "AA8" LEVEL 1;
+COMP "dac_pwrdn" LOCATE = SITE "B10" LEVEL 1;
+COMP "dac_dclkio" LOCATE = SITE "C10" LEVEL 1;
 COMP "plb_dac_0_S_PinMD_pin" LOCATE = SITE "M10" LEVEL 1;
-COMP "plb_dac_0_S_DCLKIO_pin" LOCATE = SITE "P5" LEVEL 1;
+COMP "plb_dac_0_S_DCLKIO_pin" LOCATE = SITE "M6" LEVEL 1;
 COMP "plb_dac_0_S_Format_pin" LOCATE = SITE "J1" LEVEL 1;
+COMP "sys_clk_50m" LOCATE = SITE "B5" LEVEL 1;
+COMP "dac_data_lsb" LOCATE = SITE "B7" LEVEL 1;
 COMP "plb_dac_0_S_Data_pin<0>" LOCATE = SITE "G5" LEVEL 1;
 COMP "plb_dac_0_S_Data_pin<1>" LOCATE = SITE "J14" LEVEL 1;
 COMP "plb_dac_0_S_Data_pin<2>" LOCATE = SITE "G1" LEVEL 1;
@@ -30,12 +35,13 @@ PIN
         "microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST"
         PINNAME CLKIN;
 TIMEGRP sys_clk_pin = BEL "rst_generator_0/rst_reg" BEL
-        "rst_generator_0/cnt_start" BEL "rst_generator_0/rst_cnt_0" BEL
-        "rst_generator_0/rst_cnt_1" BEL "rst_generator_0/rst_cnt_2" BEL
-        "rst_generator_0/rst_cnt_3" BEL "rst_generator_0/rst_cnt_4" BEL
-        "rst_generator_0/rst_cnt_5" BEL "rst_generator_0/rst_cnt_6" BEL
-        "rst_generator_0/rst_cnt_7" BEL "rst_generator_0/rst_cnt_8" BEL
-        "rst_generator_0/rst_cnt_9" PIN
+        "rst_generator_0/cnt_start" BEL "clk_generator_0/clk_reg" BEL
+        "rst_generator_0/rst_cnt_0" BEL "rst_generator_0/rst_cnt_1" BEL
+        "rst_generator_0/rst_cnt_2" BEL "rst_generator_0/rst_cnt_3" BEL
+        "rst_generator_0/rst_cnt_4" BEL "rst_generator_0/rst_cnt_5" BEL
+        "rst_generator_0/rst_cnt_6" BEL "rst_generator_0/rst_cnt_7" BEL
+        "rst_generator_0/rst_cnt_8" BEL "rst_generator_0/rst_cnt_9" BEL
+        "sys_clk_50m" BEL "fpga_0_clk_1_sys_clk_pin_BUFGP/BUFG" PIN
         "microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST_pins<2>"
         BEL "microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti"
         BEL
