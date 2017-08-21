@@ -140,12 +140,18 @@
 /******************************************************************/
 
 /* Definitions for driver PLB_DAC */
-#define XPAR_PLB_DAC_NUM_INSTANCES 1
+#define XPAR_PLB_DAC_NUM_INSTANCES 2
 
 /* Definitions for peripheral PLB_DAC_0 */
 #define XPAR_PLB_DAC_0_DEVICE_ID 0
-#define XPAR_PLB_DAC_0_BASEADDR 0xC9C00000
-#define XPAR_PLB_DAC_0_HIGHADDR 0xC9C0FFFF
+#define XPAR_PLB_DAC_0_BASEADDR 0xC9C20000
+#define XPAR_PLB_DAC_0_HIGHADDR 0xC9C2FFFF
+
+
+/* Definitions for peripheral PLB_DAC_1 */
+#define XPAR_PLB_DAC_1_DEVICE_ID 1
+#define XPAR_PLB_DAC_1_BASEADDR 0xC9C00000
+#define XPAR_PLB_DAC_1_HIGHADDR 0xC9C0FFFF
 
 
 /******************************************************************/

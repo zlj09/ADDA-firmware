@@ -144,8 +144,8 @@ begin
 
   plb_dac_0 : plb_dac
     generic map (
-      C_BASEADDR => X"c9c00000",
-      C_HIGHADDR => X"c9c0ffff",
+      C_BASEADDR => X"c9c20000",
+      C_HIGHADDR => X"c9c2ffff",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,

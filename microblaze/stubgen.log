@@ -28,13 +28,14 @@ Address Map for Processor microblaze_0
   (0x81800000-0x8180ffff) xps_intc_0	mb_plb
   (0x84000000-0x8400ffff) RS232	mb_plb
   (0x84400000-0x8440ffff) mdm_0	mb_plb
-  (0xc9c00000-0xc9c0ffff) plb_dac_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1	mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0	mb_plb
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
    C_PLBV46_NUM_MASTERS value to 2 -
    G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 79 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
-   C_PLBV46_NUM_SLAVES value to 4 -
+   C_PLBV46_NUM_SLAVES value to 5 -
    G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 80 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
@@ -85,6 +86,18 @@ INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
    PARAMETER C_SPLB_MID_WIDTH value to 1 -
    F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
    data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
 
 Checking platform address map ...
 
@@ -94,7 +107,7 @@ Creating stub ...
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:lmb_bram -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 86 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 95 -
 elaborating IP
 
 Inserting wrapper level ...

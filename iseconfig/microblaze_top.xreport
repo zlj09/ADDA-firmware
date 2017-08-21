@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-08-20T14:04:25</DateModified>
+  <DateModified>2017-08-21T09:30:46</DateModified>
   <ModuleName>microblaze_top</ModuleName>
   <SummaryTimeStamp>2017-08-20T13:55:26</SummaryTimeStamp>
-  <SavedFilePath>H:/ljzhu/test_br0101/iseconfig/microblaze_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>H:/ljzhu/test_br0101\</ImplementationReportsDirectory>
+  <SavedFilePath>F:/Programs/Verilog/FPGA_Group/test_br0101/iseconfig/microblaze_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>F:/Programs/Verilog/FPGA_Group/test_br0101\</ImplementationReportsDirectory>
   <DateInitialized>2017-08-06T13:28:22</DateInitialized>
-  <XMP_File>H:/ljzhu/test_br0101/microblaze/microblaze.xmp</XMP_File>
+  <XMP_File>F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/microblaze.xmp</XMP_File>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
@@ -31,15 +31,15 @@
    <view inputState="Fitted" program="taengine" contextTags="CPLD_ONLY,EDK_OFF" hidden="true" type="EXTERNAL_HTML" file="microblaze_top_html/tim/report.htm" label="CPLD Timing Report" />
   </viewgroup>
   <viewgroup label="XPS Errors and Warnings" >
-   <view program="platgen" WrapMessages="true" contextTags="EDK_ON" hidden="false" type="MessageList" hideColumns="Filtered" file="H:/ljzhu/test_br0101/microblaze\__xps\ise\_xmsgs\platgen.xmsgs" label="Platgen Messages" />
-   <view program="simgen" WrapMessages="true" contextTags="EDK_ON" hidden="false" type="MessageList" hideColumns="Filtered" file="H:/ljzhu/test_br0101/microblaze\__xps\ise\_xmsgs\simgen.xmsgs" label="Simgen Messages" />
-   <view program="bitinit" WrapMessages="true" contextTags="EDK_ON" hidden="false" type="MessageList" hideColumns="Filtered" file="H:/ljzhu/test_br0101/microblaze\__xps\ise\_xmsgs\bitinit.xmsgs" label="BitInit Messages" />
+   <view program="platgen" WrapMessages="true" contextTags="EDK_ON" hidden="false" type="MessageList" hideColumns="Filtered" file="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze\__xps\ise\_xmsgs\platgen.xmsgs" label="Platgen Messages" />
+   <view program="simgen" WrapMessages="true" contextTags="EDK_ON" hidden="false" type="MessageList" hideColumns="Filtered" file="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze\__xps\ise\_xmsgs\simgen.xmsgs" label="Simgen Messages" />
+   <view program="bitinit" WrapMessages="true" contextTags="EDK_ON" hidden="false" type="MessageList" hideColumns="Filtered" file="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze\__xps\ise\_xmsgs\bitinit.xmsgs" label="BitInit Messages" />
   </viewgroup>
   <viewgroup label="XPS Reports" >
-   <view inputState="PreSynthesized" program="platgen" contextTags="EDK_ON" hidden="false" type="Secondary_Report" file="H:/ljzhu/test_br0101/microblaze\platgen.log" label="Platgen Log File" />
-   <view inputState="PreSynthesized" program="simgen" contextTags="EDK_ON" hidden="false" type="Secondary_Report" file="H:/ljzhu/test_br0101/microblaze\simgen.log" label="Simgen Log File" />
-   <view inputState="PreSynthesized" program="bitinit" contextTags="EDK_ON" hidden="false" type="Secondary_Report" file="H:/ljzhu/test_br0101/microblaze\bitinit.log" label="BitInit Log File" />
-   <view inputState="PreSynthesized" program="system" contextTags="EDK_ON" hidden="false" type="Secondary_Report" file="H:/ljzhu/test_br0101/microblaze\microblaze_top.log" label="System Log File" />
+   <view inputState="PreSynthesized" program="platgen" contextTags="EDK_ON" hidden="false" type="Secondary_Report" file="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze\platgen.log" label="Platgen Log File" />
+   <view inputState="PreSynthesized" program="simgen" contextTags="EDK_ON" hidden="false" type="Secondary_Report" file="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze\simgen.log" label="Simgen Log File" />
+   <view inputState="PreSynthesized" program="bitinit" contextTags="EDK_ON" hidden="false" type="Secondary_Report" file="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze\bitinit.log" label="BitInit Log File" />
+   <view inputState="PreSynthesized" program="system" contextTags="EDK_ON" hidden="false" type="Secondary_Report" file="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze\microblaze_top.log" label="System Log File" />
   </viewgroup>
   <viewgroup label="Errors and Warnings" >
    <view program="pn" WrapMessages="true" contextTags="EDK_OFF" type="MessageList" hideColumns="Filtered, New" file="_xmsgs/pn_parser.xmsgs" label="Parser Messages" />

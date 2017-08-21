@@ -252,9 +252,12 @@ output                                    IP2Bus_Error;
   //0 is for enable (default), 1 is for disable. 
   assign IP2DAC_OpEnI = slv_reg0[29];
   assign IP2DAC_OpEnQ = slv_reg0[28];  
-  assign IP2DAC_ClkMD = 1'b0;
 
   //The DAC should be fixed to work in pin mode.
-  assign IP2DAC_PinMD = 1'b1;
+  //The 5th LSB of slv_reg0, PMD_CTL, is used to control Pin Mode and SPI mode
+  assign IP2DAC_PinMD = ~slv_reg0[27];
+
+  //The 6th LSB of slv_reg0, CLK_CTL, is used to control clock mode
+  assign IP2DAC_ClkMD = slv_reg0[26];
 
 endmodule

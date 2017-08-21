@@ -76,7 +76,10 @@
     <file xil_pn:fileType="FILE_TCL" xil_pn:name="mb_plb_wave.tcl"/>
     <file xil_pn:fileType="FILE_TCL" xil_pn:name="mdm_0_wave.tcl"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="microblaze.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="microblaze.prj"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="microblaze.v"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITINIT_OPT" xil_pn:name="microblaze/__xps/bitinit.opt" xil_pn:origination="imported" xil_pn:subbranch="FPGAConfiguration"/>
@@ -94,32 +97,72 @@
     </file>
     <file xil_pn:fileType="FILE_TCL" xil_pn:name="microblaze_0_wave.tcl"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="microblaze_clock_generator_0_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_clock_generator_0_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_clock_generator_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_clock_generator_0_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_dlmb_cntlr_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_dlmb_cntlr_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_dlmb_cntlr_wrapper.vhd"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="microblaze_dlmb_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_dlmb_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_dlmb_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_dlmb_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_ilmb_cntlr_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_ilmb_cntlr_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_ilmb_cntlr_wrapper.vhd"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="microblaze_ilmb_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_ilmb_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_ilmb_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_ilmb_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_lmb_bram_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_lmb_bram_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="microblaze_lmb_bram_wrapper.v"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_mb_plb_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_mb_plb_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_mb_plb_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_mdm_0_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_mdm_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_mdm_0_wrapper.vhd"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="microblaze_microblaze_0_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_microblaze_0_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_microblaze_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_microblaze_0_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_plb_dac_0_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_plb_dac_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_plb_dac_0_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_proc_sys_reset_0_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_plb_dac_1_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_proc_sys_reset_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_proc_sys_reset_0_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_rs232_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_rs232_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_rs232_wrapper.vhd"/>
     <file xil_pn:fileType="FILE_TCL" xil_pn:name="microblaze_setup.tcl"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="microblaze_tb.v"/>
@@ -162,11 +205,20 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="microblaze_top_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="microblaze_top_xst.xrpt"/>
     <file xil_pn:fileType="FILE_TCL" xil_pn:name="microblaze_wave.tcl"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_xps_gpio_0_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_xps_gpio_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_xps_gpio_0_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_xps_iic_0_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_xps_iic_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_xps_iic_0_wrapper.vhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_xps_intc_0_wrapper.ngc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="microblaze_xps_intc_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="microblaze_xps_intc_0_wrapper.vhd"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
@@ -348,12 +400,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1503195122" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="7480728271909770058" xil_pn:start_ts="1503195122">
+    <transform xil_pn:end_ts="1503288285" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="7480728271909770058" xil_pn:start_ts="1503288285">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1503206453" xil_pn:in_ck="-6172246470216933969" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1714143295736313172" xil_pn:start_ts="1503206444">
+    <transform xil_pn:end_ts="1503288295" xil_pn:in_ck="-6172246470216933969" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1714143295736313172" xil_pn:start_ts="1503288285">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -373,13 +426,14 @@
       <outfile xil_pn:name="microblaze_microblaze_0_wrapper.ncf"/>
       <outfile xil_pn:name="microblaze_microblaze_0_wrapper.ngc"/>
       <outfile xil_pn:name="microblaze_plb_dac_0_wrapper.ngc"/>
+      <outfile xil_pn:name="microblaze_plb_dac_1_wrapper.ngc"/>
       <outfile xil_pn:name="microblaze_proc_sys_reset_0_wrapper.ngc"/>
       <outfile xil_pn:name="microblaze_rs232_wrapper.ngc"/>
       <outfile xil_pn:name="microblaze_xps_gpio_0_wrapper.ngc"/>
       <outfile xil_pn:name="microblaze_xps_iic_0_wrapper.ngc"/>
       <outfile xil_pn:name="microblaze_xps_intc_0_wrapper.ngc"/>
     </transform>
-    <transform xil_pn:end_ts="1503211545" xil_pn:in_ck="8895586743438979285" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="1827746143291061842" xil_pn:start_ts="1503211506">
+    <transform xil_pn:end_ts="1503288336" xil_pn:in_ck="8895586743438979285" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="1827746143291061842" xil_pn:start_ts="1503288295">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -397,11 +451,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1503211545" xil_pn:in_ck="-1982953399006312506" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="750667104348657020" xil_pn:start_ts="1503211545">
+    <transform xil_pn:end_ts="1503283824" xil_pn:in_ck="-1982953399006312506" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="750667104348657020" xil_pn:start_ts="1503283824">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1503211571" xil_pn:in_ck="-7296680720563565982" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7071410598792602934" xil_pn:start_ts="1503211545">
+    <transform xil_pn:end_ts="1503288365" xil_pn:in_ck="720405285304984836" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7071410598792602934" xil_pn:start_ts="1503288336">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -412,12 +466,10 @@
       <outfile xil_pn:name="microblaze_top.ngd"/>
       <outfile xil_pn:name="microblaze_top_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1503211584" xil_pn:in_ck="-4750817036178130809" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1503211571">
+    <transform xil_pn:end_ts="1503288387" xil_pn:in_ck="-4750817036178130809" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1503288365">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="microblaze_top.pcf"/>
       <outfile xil_pn:name="microblaze_top_map.map"/>
@@ -428,7 +480,7 @@
       <outfile xil_pn:name="microblaze_top_summary.xml"/>
       <outfile xil_pn:name="microblaze_top_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1503211646" xil_pn:in_ck="659924303052972640" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1503211584">
+    <transform xil_pn:end_ts="1503288462" xil_pn:in_ck="659924303052972640" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1503288387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -443,7 +495,7 @@
       <outfile xil_pn:name="microblaze_top_pad.txt"/>
       <outfile xil_pn:name="microblaze_top_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1503211694" xil_pn:in_ck="-1982953399006320131" xil_pn:name="TRANEXT_bitFile_virtex4" xil_pn:prop_ck="-5292315604690234831" xil_pn:start_ts="1503211646">
+    <transform xil_pn:end_ts="1503288515" xil_pn:in_ck="-1982953399006320131" xil_pn:name="TRANEXT_bitFile_virtex4" xil_pn:prop_ck="-5292315604690234831" xil_pn:start_ts="1503288462">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -456,7 +508,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1503211699" xil_pn:in_ck="-2558171203062321156" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="4296800" xil_pn:start_ts="1503211694">
+    <transform xil_pn:end_ts="1503288548" xil_pn:in_ck="-2558171203062321156" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="4296800" xil_pn:start_ts="1503288515">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -466,7 +518,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1503211646" xil_pn:in_ck="-338131537883185405" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1503211632">
+    <transform xil_pn:end_ts="1503288462" xil_pn:in_ck="-338131537883185405" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1503288446">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

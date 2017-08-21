@@ -39,7 +39,6 @@
 
 void print(char *str);
 void initDAC(u32 format);
-void testDACBasic();
 void testDAC();
 void printDACTestInfo(u32 wave, u32 channel, u32 delay_time);
 void genSowWave(u32 channel, u32 delay_time);
@@ -123,17 +122,28 @@ void genSowWave(u32 channel, u32 delay_time)
 {
 	u32 i = 0, dac_data, j, k;
 
+	//PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000011); //010001
+	//PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000003); //000011
 
-	for (i = 10000; i >= 4500; i--)
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000001);
+
     for (k = 0; k < 10; k++)
 	{
 		dac_data = 0x2ff;
 		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
-		for (j = 0; j < i; j++);
+		for (j = 0; j < 10; j++);
 
 		dac_data = 0x0ff;
 		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
-		for (j = 0; j < i; j++) ;
+		for (j = 0; j < 10; j++) ;
+
+		dac_data = 0x000;
+		PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
+		for (j = 0; j < 10; j++);
+
+		dac_data = 0x3ff;
+		PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
+		for (j = 0; j < 10; j++) ;
 	}
 }
 
@@ -150,39 +160,4 @@ void delayDAC(u32 delay_time)
 {
 	u32 i;
 	for (i = delay_time; i > 0; --i) ;
-}
-
-void testDACBasic()
-{
-	print("********************Basic DAC test********************\n\r");
-
-	u32 delay_cnt;
-
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000001);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x00001234);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x12340000);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x12342345);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000003);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x00001234);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x12340000);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x12342345);
-    for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
-    //PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000000);
-    //for (delay_cnt = 0; delay_cnt < 10; delay_cnt++) ;
-
 }

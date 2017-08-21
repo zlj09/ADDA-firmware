@@ -28,6 +28,15 @@
  PORT plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN, DIR = O
  PORT plb_dac_0_S_OpEnI_pin = plb_dac_0_S_OpEnI, DIR = O
  PORT plb_dac_0_S_OpEnQ_pin = plb_dac_0_S_OpEnQ, DIR = O
+ PORT plb_dac_1_S_Data_pin = plb_dac_1_S_Data, DIR = O, VEC = [0:9]
+ PORT plb_dac_1_S_DCLKIO_pin = plb_dac_1_S_DCLKIO, DIR = O
+ PORT plb_dac_1_S_Clkout_pin = plb_dac_1_S_Clkout, DIR = O
+ PORT plb_dac_1_S_PinMD_pin = plb_dac_1_S_PinMD, DIR = O
+ PORT plb_dac_1_S_ClkMD_pin = plb_dac_1_S_ClkMD, DIR = O
+ PORT plb_dac_1_S_Format_pin = plb_dac_1_S_Format, DIR = O
+ PORT plb_dac_1_S_PWRDN_pin = plb_dac_1_S_PWRDN, DIR = O
+ PORT plb_dac_1_S_OpEnI_pin = plb_dac_1_S_OpEnI, DIR = O
+ PORT plb_dac_1_S_OpEnQ_pin = plb_dac_1_S_OpEnQ, DIR = O
 
 
 BEGIN microblaze
@@ -158,8 +167,8 @@ END
 BEGIN plb_dac
  PARAMETER INSTANCE = plb_dac_0
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0xc9c00000
- PARAMETER C_HIGHADDR = 0xc9c0ffff
+ PARAMETER C_BASEADDR = 0xc9c20000
+ PARAMETER C_HIGHADDR = 0xc9c2ffff
  BUS_INTERFACE SPLB = mb_plb
  PORT S_Data = plb_dac_0_S_Data
  PORT S_DCLKIO = plb_dac_0_S_DCLKIO
@@ -170,5 +179,22 @@ BEGIN plb_dac
  PORT S_PWRDN = plb_dac_0_S_PWRDN
  PORT S_OpEnI = plb_dac_0_S_OpEnI
  PORT S_OpEnQ = plb_dac_0_S_OpEnQ
+END
+
+BEGIN plb_dac
+ PARAMETER INSTANCE = plb_dac_1
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xc9c00000
+ PARAMETER C_HIGHADDR = 0xc9c0ffff
+ BUS_INTERFACE SPLB = mb_plb
+ PORT S_Data = plb_dac_1_S_Data
+ PORT S_DCLKIO = plb_dac_1_S_DCLKIO
+ PORT S_Clkout = plb_dac_1_S_Clkout
+ PORT S_PinMD = plb_dac_1_S_PinMD
+ PORT S_ClkMD = plb_dac_1_S_ClkMD
+ PORT S_Format = plb_dac_1_S_Format
+ PORT S_PWRDN = plb_dac_1_S_PWRDN
+ PORT S_OpEnI = plb_dac_1_S_OpEnI
+ PORT S_OpEnQ = plb_dac_1_S_OpEnQ
 END
 
