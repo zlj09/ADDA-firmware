@@ -1264,3 +1264,910 @@ Done writing filter settings to:
 	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.filters
 Done writing Tab View settings to:
 	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Assigned Driver spi 3.06.a for instance xps_spi_0
+xps_spi_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: xps_spi, INSTANCE: xps_spi_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_spi, INSTANCE: xps_spi_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_spi_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_spi_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:3967 - xps_spi (xps_spi_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 188 
+xps_spi_0 has been deleted from the project
+Writing filter settings....
+Done writing filter settings to:
+	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.filters
+Done writing Tab View settings to:
+	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.gui
+Writing filter settings....
+Done writing filter settings to:
+	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.filters
+Done writing Tab View settings to:
+	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Writing filter settings....
+Done writing filter settings to:
+	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.filters
+Done writing Tab View settings to:
+	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Wed Aug 23 16:05:56 2017
+ make -f microblaze.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc4vsx55ff1148-10 -lang verilog -intstyle ise   -toplevel no -ti microblaze_i -msg __xps/ise/xmsgprops.lst microblaze.mhs
+
+Command Line: platgen -p xc4vsx55ff1148-10 -lang verilog -intstyle ise -toplevel
+no -ti microblaze_i -msg __xps/ise/xmsgprops.lst microblaze.mhs 
+
+Parse F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/microblaze.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1	mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0	mb_plb
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 5 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+   floating connection -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 154
+    
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_INTERRUPT value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 401 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x80000000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x80000000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_NUM_INTR_INPUTS value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 87 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 88 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 89 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_LVL value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 90 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The ilmb core has constraints automatically generated by XPS in
+implementation/ilmb_wrapper/ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The dlmb core has constraints automatically generated by XPS in
+implementation/dlmb_wrapper/dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 42 -
+Copying cache implementation netlist
+IPNAME:plb_v46 INSTANCE:mb_plb -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 56 -
+Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:ilmb -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 63 -
+Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:dlmb -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 70 -
+Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:dlmb_cntlr -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 77 -
+Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:ilmb_cntlr -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 86 -
+Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:lmb_bram -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 95 -
+Copying cache implementation netlist
+IPNAME:xps_uartlite INSTANCE:rs232 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 102 -
+Copying cache implementation netlist
+IPNAME:mdm INSTANCE:mdm_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 132 -
+Copying cache implementation netlist
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 144 -
+Copying cache implementation netlist
+IPNAME:xps_intc INSTANCE:xps_intc_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 157 -
+Copying cache implementation netlist
+IPNAME:plb_dac INSTANCE:plb_dac_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 167 -
+Copying cache implementation netlist
+IPNAME:plb_dac INSTANCE:plb_dac_1 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 184 -
+Copying cache implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:lmb_bram -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 95 -
+elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 117 -
+elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:clock_generator_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 117 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<G:/Xilinx/14.7/ISE_DS/EDK/virtex4/data/virtex4.acd> with local file
+<G:/Xilinx/14.7/ISE_DS/ISE/virtex4/data/virtex4.acd>
+INSTANCE:plb_dac_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 167 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<G:/Xilinx/14.7/ISE_DS/EDK/virtex4/data/virtex4.acd> with local file
+<G:/Xilinx/14.7/ISE_DS/ISE/virtex4/data/virtex4.acd>
+INSTANCE:plb_dac_1 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 184 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<G:/Xilinx/14.7/ISE_DS/EDK/virtex4/data/virtex4.acd> with local file
+<G:/Xilinx/14.7/ISE_DS/ISE/virtex4/data/virtex4.acd>
+
+Running NGCBUILD ...
+IPNAME:microblaze_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 117 -
+Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<G:/Xilinx/14.7/ISE_DS/EDK/virtex4/data/virtex4.acd> with local file
+<G:/Xilinx/14.7/ISE_DS/ISE/virtex4/data/virtex4.acd>
+
+Command Line: G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+xc4vsx55ff1148-10 -intstyle silent -i -sd ..
+microblaze_clock_generator_0_wrapper.ngc ../microblaze_clock_generator_0_wrapper
+
+Reading NGO file
+"F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/implementation/clock_gene
+rator_0_wrapper/microblaze_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../microblaze_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   3 sec
+
+Writing NGCBUILD log file "../microblaze_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/microblaze.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 92.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "microblaze_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<G:/Xilinx/14.7/ISE_DS/EDK/virtex4/data/virtex4.acd> with local file
+<G:/Xilinx/14.7/ISE_DS/ISE/virtex4/data/virtex4.acd>
+"XST completed"
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.filters
+Done writing Tab View settings to:
+	F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\etc\microblaze.gui
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1	mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0	mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1	mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0	mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1	mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0	mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1	mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0	mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1	mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0	mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 28 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   data\plb_dac_v2_1_0.mpd line 29 
+
+Checking platform address map ...

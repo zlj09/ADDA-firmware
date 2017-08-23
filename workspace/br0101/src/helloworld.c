@@ -129,19 +129,19 @@ void genSowWave(u32 channel, u32 delay_time)
 
     for (k = 0; k < 10; k++)
 	{
-		dac_data = 0x2ff;
+		dac_data = 0x0ff;
 		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
 		for (j = 0; j < 10; j++);
 
-		dac_data = 0x0ff;
+		dac_data = 0x2ff;
 		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
 		for (j = 0; j < 10; j++) ;
 
-		dac_data = 0x000;
+		dac_data = 0x0ff;
 		PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
 		for (j = 0; j < 10; j++);
 
-		dac_data = 0x3ff;
+		dac_data = 0x2ff;
 		PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
 		for (j = 0; j < 10; j++) ;
 	}

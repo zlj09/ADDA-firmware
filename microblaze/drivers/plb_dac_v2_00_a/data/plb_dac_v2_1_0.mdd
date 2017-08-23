@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze/drivers/plb_dac_v2_00_a/data/plb_dac_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Mon Aug 21 18:16:56 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER plb_dac
+
+  OPTION supported_peripherals = (plb_dac);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER
