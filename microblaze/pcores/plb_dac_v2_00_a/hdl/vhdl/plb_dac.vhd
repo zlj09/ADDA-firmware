@@ -138,6 +138,7 @@ entity plb_dac is
   (
     -- ADD USER GENERICS BELOW THIS LINE ---------------
     --USER generics added here
+    DAC_WIDTH                      : integer              := 10;
     -- ADD USER GENERICS ABOVE THIS LINE ---------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -161,6 +162,15 @@ entity plb_dac is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
+    S_Data                         : out std_logic_vector(0 to DAC_WIDTH-1);
+    S_DCLKIO                       : out std_logic;
+    S_Clkout                       : out std_logic;
+    S_PinMD                        : out std_logic;
+    S_ClkMD                        : out std_logic;
+    S_Format                       : inout std_logic;
+    S_PWRDN                        : out std_logic;
+    S_OpEnI                        : out std_logic;
+    S_OpEnQ                        : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -317,8 +327,8 @@ architecture IMP of plb_dac is
     (
       -- ADD USER GENERICS BELOW THIS LINE ---------------
       --USER generics added here
+      DAC_WIDTH                      : integer              := 10;
       -- ADD USER GENERICS ABOVE THIS LINE ---------------
-
       -- DO NOT EDIT BELOW THIS LINE ---------------------
       -- Bus protocol parameters, do not add to or delete
       C_SLV_DWIDTH                   : integer              := 32;
@@ -329,6 +339,15 @@ architecture IMP of plb_dac is
     (
       -- ADD USER PORTS BELOW THIS LINE ------------------
       --USER ports added here
+      IP2DAC_Data                    : out std_logic_vector(0 to DAC_WIDTH-1);
+      IP2DAC_DCLKIO                  : out std_logic;
+      IP2DAC_Clkout                  : out std_logic;
+      IP2DAC_PinMD                   : out std_logic;
+      IP2DAC_ClkMD                   : out std_logic;
+      IP2DAC_Format                  : inout std_logic;
+      IP2DAC_PWRDN                   : out std_logic;
+      IP2DAC_OpEnI                   : out std_logic;
+      IP2DAC_OpEnQ                   : out std_logic; 
       -- ADD USER PORTS ABOVE THIS LINE ------------------
 
       -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -456,6 +475,7 @@ begin
     (
       -- MAP USER GENERICS BELOW THIS LINE ---------------
       --USER generics mapped here
+      DAC_WIDTH                      => DAC_WIDTH,
       -- MAP USER GENERICS ABOVE THIS LINE ---------------
 
       C_SLV_DWIDTH                   => USER_SLV_DWIDTH,
@@ -465,6 +485,15 @@ begin
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
       --USER ports mapped here
+      IP2DAC_Data                    => S_Data,   
+      IP2DAC_DCLKIO                  => S_DCLKIO, 
+      IP2DAC_Clkout                  => S_Clkout,
+      IP2DAC_PinMD                   => S_PinMD,
+      IP2DAC_ClkMD                   => S_ClkMD, 
+      IP2DAC_Format                  => S_Format, 
+      IP2DAC_PWRDN                   => S_PWRDN,
+      IP2DAC_OpEnI                   => S_OpEnI,
+      IP2DAC_OpEnQ                   => S_OpEnQ,  
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

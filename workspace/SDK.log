@@ -22,3 +22,8 @@
 		 C:\edk_user_repository\MyProcessorIPLib 
 16:18:17.266 INFO  - Updating hardware inferred compiler options for br0101. 
 16:18:17.286 INFO  - Clearing existing target manager status. 
+17:43:07.253 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+17:43:07.254 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

@@ -160,7 +160,7 @@ BEGIN xps_intc
  PARAMETER C_BASEADDR = 0x81800000
  PARAMETER C_HIGHADDR = 0x8180ffff
  BUS_INTERFACE SPLB = mb_plb
- PORT Intr = RS232_Interrupt
+ PORT Intr = RS232_Interrupt & xps_spi_0_IP2INTC_Irpt
  PORT Irq = microblaze_0_Interrupt
 END
 
@@ -196,5 +196,14 @@ BEGIN plb_dac
  PORT S_PWRDN = plb_dac_1_S_PWRDN
  PORT S_OpEnI = plb_dac_1_S_OpEnI
  PORT S_OpEnQ = plb_dac_1_S_OpEnQ
+END
+
+BEGIN xps_spi
+ PARAMETER INSTANCE = xps_spi_0
+ PARAMETER HW_VER = 2.02.a
+ PARAMETER C_BASEADDR = 0xFFFFFFFF
+ PARAMETER C_HIGHADDR = 0x00000000
+ BUS_INTERFACE SPLB = mb_plb
+ PORT IP2INTC_Irpt = xps_spi_0_IP2INTC_Irpt
 END
 

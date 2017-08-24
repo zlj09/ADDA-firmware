@@ -127,14 +127,16 @@ output                                    IP2Bus_Error;
   reg                                       cs_reg;
   reg                                       sdio_reg;
   reg        [2 : 0]                        state_reg;
-  reg        [1 : 0]                        spi_state;
-  reg                                       spi_flag;
+  reg                                       dac_en;
+  reg                                       spi_state;
+  reg                                       spi_start_flag;
+  reg        [4 : 0]                        spi_cnt;
   // Nets for user logic slave model s/w accessible register example
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg0;
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg1;
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg2;
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg3;
-  reg        [0 : C_SLV_DWIDTH-1]           sslv_reg4;
+  reg        [0 : C_SLV_DWIDTH-1]           slv_reg4;
   wire       [0 : 4]                        slv_reg_write_sel;
   wire       [0 : 4]                        slv_reg_read_sel;
   reg        [0 : C_SLV_DWIDTH-1]           slv_ip2bus_data;
@@ -181,7 +183,7 @@ output                                    IP2Bus_Error;
           slv_reg3 <= 0;
           slv_reg4 <= 0;
         end
-      else
+      else begin
         case ( slv_reg_write_sel )
           5'b10000 :
             for ( byte_index = 0; byte_index <= (C_SLV_DWIDTH/8)-1; byte_index = byte_index+1 )
@@ -210,6 +212,12 @@ output                                    IP2Bus_Error;
                   slv_reg4[bit_index] <= Bus2IP_Data[bit_index];
           default : ;
         endcase
+
+        if (state_reg == 3'd3 && sclk_reg == 1'b0 && spi_cnt >= 5'd8)
+          slv_reg3[16 + spi_cnt] <= IP2DAC_Format;
+
+        slv_reg0[30] <= spi_state;
+      end
 
     end // SLAVE_REG_WRITE_PROC
 
@@ -249,44 +257,108 @@ output                                    IP2Bus_Error;
       end
     end
 
-  always @(posedge Bus2IP_Clk)
-    begin
-      if (Bus2IP_Reset == 1)
-        sclk_reg <= 1'b1;
-      else 
-        sclk_reg <= ~sclk_reg;
-    end
-
   always @( posedge Bus2IP_Clk )
-    if ( Bus2IP_Reset == 1 )
-      spi_state <= 2'd0;
-    else begin
-      case ( spi_reg )
-        2'd0 : begin
-            if (slv_reg_write_sel == 5'b00010)
-              
-          end
-        3'd1 : state_reg <= 3'd0;
-        3'd2 : state_reg <= 3'd0;
-        3'd3 : state_reg <= 3'd0;
-        3'd4 : state_reg <= 3'd0;
-        default : state_reg <= 3'd0;
-      endcase
-    end
-
-  always @( posedge Bus2IP_Clk )
-    if ( Bus2IP_Reset == 1 )
+    if ( Bus2IP_Reset == 1 ) begin
       state_reg <= 3'd0;
+      dac_en <= 1'b0;
+      reset_reg <= 1'b0;
+      sclk_reg <= 1'b1;
+      sdio_reg <= 1'b0;
+      cs_reg <= 1'b1;
+      spi_cnt <= 5'd0;
+      spi_state <= 1'b0;
+    end
     else begin
       case ( state_reg )
-        3'd0 : state_reg <= (slv_reg0[0]) ? (3'd1) : (3'd0);
-        3'd1 : state_reg <= 3'd0;
-        3'd2 : state_reg <= 3'd0;
-        3'd3 : state_reg <= 3'd0;
-        3'd4 : state_reg <= 3'd0;
+        3'd0 : begin
+          if (slv_reg0[31] == 1'b1) begin
+            state_reg <= 3'd1;
+            dac_en <= 1'b1;
+            reset_reg <= 1'b1;
+          end
+          else begin
+            state_reg <= state_reg;
+            dac_en <= dac_en;
+            reset_reg <= reset_reg;
+          end
+        end
+        3'd1 : begin
+          reset_reg <= 1'b0;
+          sclk_reg <= 1'b1;
+          cs_reg <= 1'b1;
+          sdio_reg <= 1'b0;
+          spi_cnt <= 5'd0;
+          spi_state <= 1'b0;
+          if (slv_reg0[31] == 1'b0) begin
+            state_reg <= 3'd0;
+            dac_en <= 1'b0;
+          end
+          else begin
+            if (slv_reg_write_sel == 5'b00010) begin
+              state_reg <= 3'd2;
+              dac_en <= dac_en;
+            end
+            else begin
+              state_reg <= state_reg;
+              dac_en <= dac_en;
+            end
+          end
+        end
+        3'd2 : begin
+          spi_state <= 1'b1;
+          if (slv_reg3[16] == 1'b1) begin
+            state_reg <= 3'd3;
+            cs_reg <= 1'b0;
+          end
+          else begin
+            state_reg <= 3'd4;
+            cs_reg <= 1'b0;
+          end
+        end
+        3'd3 : begin
+          if (sclk_reg == 1'b1) begin
+            if (spi_cnt == 5'd16) begin
+              state_reg <= 3'd1;
+            end
+            else begin
+              sclk_reg <= ~sclk_reg;
+              if (spi_cnt < 5'd8)
+                sdio_reg <= slv_reg3[16 + spi_cnt];
+              else begin
+                sdio_reg <= 1'dz;
+              end
+            end
+          end
+          else begin
+            state_reg <= state_reg;
+            sclk_reg <= ~sclk_reg;
+            sdio_reg <= sdio_reg;
+            spi_cnt <= spi_cnt + 1'b1;
+          end
+        end
+        3'd4 : begin
+          if (sclk_reg == 1'b1) begin
+            if (spi_cnt == 5'd16) begin
+              state_reg <= 3'd1;
+            end
+            else begin
+              sclk_reg <= ~sclk_reg;
+              sdio_reg <= slv_reg3[16 + spi_cnt];
+            end
+          end
+          else begin
+            state_reg <= state_reg;
+            sclk_reg <= ~sclk_reg;
+            sdio_reg <= sdio_reg;
+            spi_cnt <= spi_cnt + 1'b1;
+          end
+        end
         default : state_reg <= 3'd0;
       endcase
     end
+
+
+
 
   // ------------------------------------------------------------
   // Example code to drive IP to Bus signals
@@ -295,12 +367,17 @@ output                                    IP2Bus_Error;
   assign IP2Bus_Data    = slv_ip2bus_data;
   assign IP2Bus_WrAck   = slv_write_ack;
   assign IP2Bus_RdAck   = slv_read_ack;
-  assign IP2Bus_Error   = 0;
+  assign IP2Bus_Error   = 0; 
 
+  assign IP2DAC_Data =  (dac_en) ? (dac_data_reg) : (10'b0);
+  assign IP2DAC_DCLKIO = (dac_en) ? (dac_clk_reg) : (1'b0);
+  assign IP2DAC_Clkout = (dac_en) ? (dac_clk_reg) : (1'b0);
 
-  assign IP2DAC_Data = (IP2DAC_PWRDN) ? (10'b0) : (dac_data_reg);
-  assign IP2DAC_DCLKIO = (IP2DAC_PWRDN) ? (1'b0) : (dac_clk_reg);
-  assign IP2DAC_Clkout = (IP2DAC_PWRDN) ? (1'b0) : (dac_clk_reg);
-
+  assign IP2DAC_PinMD = reset_reg;
+  assign IP2DAC_ClkMD = sclk_reg;
+  assign IP2DAC_Format = sdio_reg;
+  assign IP2DAC_PWRDN = cs_reg;
+  assign IP2DAC_OpEnI = slv_reg0[29];
+  assign IP2DAC_OpEnQ = slv_reg0[28]; 
 
 endmodule
