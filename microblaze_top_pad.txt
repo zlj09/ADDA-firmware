@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Aug 27 09:38:50 2017
+Sun Aug 27 13:41:24 2017
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -23,7 +23,7 @@ Pinout by Pin Number:
 |A2        |                        |         |VCCO_6              |         |           |6             |          |         |           |         |2.50     |          |           |                |
 |A3        |                        |IOBS     |IO_L20N_VREF_6      |UNUSED   |           |6             |          |         |           |         |         |          |           |                |
 |A4        |                        |IOBM     |IO_L20P_6           |UNUSED   |           |6             |          |         |           |         |         |          |           |                |
-|A5        |fpga_0_rst_1_sys_rst_pin|IOB      |IO_L22P_6           |INPUT    |LVCMOS25*  |6             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|A5        |fpga_0_rst_1_sys_rst_pin|IOB      |IO_L22P_6           |OUTPUT   |LVCMOS25*  |6             |2         |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |A6        |                        |IOBM     |IO_L12P_6           |UNUSED   |           |6             |          |         |           |         |         |          |           |                |
 |A7        |                        |         |GND                 |         |           |              |          |         |           |         |         |          |           |                |
 |A8        |                        |IOBM     |IO_L10P_6           |UNUSED   |           |6             |          |         |           |         |         |          |           |                |

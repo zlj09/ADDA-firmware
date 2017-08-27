@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Aug 27 09:37:36 2017
+// Written by: Map P.20131013 on Sun Aug 27 13:40:22 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -52,8 +52,14 @@ PIN
         = BEL
         "microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST"
         PINNAME CLKIN;
-TIMEGRP sys_clk_pin = BEL "clk_generator_0/clk_reg" BEL "sys_clk_50m" BEL
-        "fpga_0_clk_1_sys_clk_pin_BUFGP/BUFG" PIN
+TIMEGRP sys_clk_pin = BEL "rst_generator_0/rst_reg" BEL
+        "rst_generator_0/cnt_start" BEL "clk_generator_0/clk_reg" BEL
+        "rst_generator_0/rst_cnt_0" BEL "rst_generator_0/rst_cnt_1" BEL
+        "rst_generator_0/rst_cnt_2" BEL "rst_generator_0/rst_cnt_3" BEL
+        "rst_generator_0/rst_cnt_4" BEL "rst_generator_0/rst_cnt_5" BEL
+        "rst_generator_0/rst_cnt_6" BEL "rst_generator_0/rst_cnt_7" BEL
+        "rst_generator_0/rst_cnt_8" BEL "rst_generator_0/rst_cnt_9" BEL
+        "sys_clk_50m" BEL "fpga_0_clk_1_sys_clk_pin_BUFGP/BUFG" PIN
         "microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST_pins<2>"
         BEL "microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rsti"
         BEL

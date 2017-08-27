@@ -1,76 +1,55 @@
 Release 14.7 ngdbuild P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+Command Line: f:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
 ise -dd _ngo -nt timestamp -uc microblaze_top.ucf -bm edkBmmFile.bmm -p
 xc4vsx55-ff1148-10 microblaze_top.ngc microblaze_top.ngd
 
-Reading NGO file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.ngc"
-...
+Reading NGO file "H:/ljzhu/test_br0101/microblaze_top.ngc" ...
+Loading design module "H:\ljzhu\test_br0101/microblaze.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ngc"...
+"H:\ljzhu\test_br0101/microblaze_microblaze_0_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_mb_plb_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_ilmb_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_dlmb_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_microblaze_0_wrapper.ngc"
-...
+"H:\ljzhu\test_br0101/microblaze_dlmb_cntlr_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_mb_plb_wrapper.ngc"...
+"H:\ljzhu\test_br0101/microblaze_ilmb_cntlr_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_lmb_bram_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_rs232_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_ilmb_wrapper.ngc"...
+"H:\ljzhu\test_br0101/microblaze_clock_generator_0_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_mdm_0_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_dlmb_wrapper.ngc"...
+"H:\ljzhu\test_br0101/microblaze_proc_sys_reset_0_wrapper.ngc"...
 Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_dlmb_cntlr_wrapper.ngc"..
-.
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_ilmb_cntlr_wrapper.ngc"..
-.
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_lmb_bram_wrapper.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_rs232_wrapper.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_clock_generator_0_wrapper
-.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_mdm_0_wrapper.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_proc_sys_reset_0_wrapper.
-ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_xps_intc_0_wrapper.ngc"..
-.
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_plb_dac_0_wrapper.ngc"...
-Loading design module
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_plb_dac_1_wrapper.ngc"...
-Applying constraints in
-"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf" to module
+"H:\ljzhu\test_br0101/microblaze_xps_intc_0_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_plb_dac_0_wrapper.ngc"...
+Loading design module "H:\ljzhu\test_br0101/microblaze_plb_dac_1_wrapper.ngc"...
+Applying constraints in "H:\ljzhu\test_br0101/microblaze.ncf" to module
 "microblaze_i"...
 Checking Constraint Associations...
 INFO:NgdBuild:981 - Could not find any associations for the following
    constraint:
-       '<Net sys_clk_50m LOC = B5;>
-   [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(72)]'
+       '<Net sys_clk_50m LOC = B5;> [H:\ljzhu\test_br0101/microblaze.ncf(72)]'
 INFO:NgdBuild:981 - Could not find any associations for the following
    constraint:
        '<Net sys_clk_50m IOSTANDARD = LVCMOS25;>
-   [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(73)]'
+   [H:\ljzhu\test_br0101/microblaze.ncf(73)]'
 INFO:NgdBuild:981 - Could not find any associations for the following
    constraint:
-       '<Net sys_clk_50m Drive = 2;>
-   [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(74)]'
+       '<Net sys_clk_50m Drive = 2;> [H:\ljzhu\test_br0101/microblaze.ncf(74)]'
 INFO:NgdBuild:981 - Could not find any associations for the following
    constraint:
-       '<Net sys_clk_100m LOC = B10;>
-   [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(76)]'
+       '<Net sys_clk_100m LOC = B10;> [H:\ljzhu\test_br0101/microblaze.ncf(76)]'
 INFO:NgdBuild:981 - Could not find any associations for the following
    constraint:
        '<Net sys_clk_100m IOSTANDARD = LVCMOS25;>
-   [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(77)]'
+   [H:\ljzhu\test_br0101/microblaze.ncf(77)]'
 INFO:NgdBuild:981 - Could not find any associations for the following
    constraint:
-       '<Net sys_clk_100m Drive = 2;>
-   [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(78)]'
+       '<Net sys_clk_100m Drive = 2;> [H:\ljzhu\test_br0101/microblaze.ncf(78)]'
 Gathering constraint information from source properties...
 Done.
 
@@ -81,6 +60,10 @@ INFO:NgdBuild:928 - A pullup 'plb_dac_1_S_Format_O.PULLUP' was added to net
    'microblaze_i/plb_dac_1_S_Format_O'
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "rst_generator_0/rst_reg" LOC = A5>' could not be found and so the
+   Locate constraint will be removed.
+
 WARNING:ConstraintSystem - A target design object for the Locate constraint
    '<NET "plb_dac_0_S_PinMD_pin_OBUF" LOC = M10>' could not be found and so the
    Locate constraint will be removed.
@@ -150,10 +133,6 @@ WARNING:ConstraintSystem - A target design object for the Locate constraint
    Locate constraint will be removed.
 
 WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "fpga_0_rst_1_sys_rst_pin_IBUF" LOC = A5>' could not be found and so
-   the Locate constraint will be removed.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
    '<NET "fpga_0_RS232_TX_pin_OBUF" LOC = AG21>' could not be found and so the
    Locate constraint will be removed.
 
@@ -180,6 +159,16 @@ WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_sys_clk_pin = PERIOD
    [microblaze_top.ucf(2)]. The overriden constraint usually comes from the
    input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
    promote this message to an error.
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" DRIVE = 2>
+   is overridden on the design object fpga_0_rst_1_sys_rst_pin by the constraint
+   <Net fpga_0_rst_1_sys_rst_pin Drive = 2;> [microblaze_top.ucf(129)].
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" IOSTANDARD
+   = "LVCMOS25"> is overridden on the design object fpga_0_rst_1_sys_rst_pin by
+   the constraint <Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;>
+   [microblaze_top.ucf(128)].
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" LOC = A5>
+   is overridden on the design object fpga_0_rst_1_sys_rst_pin by the constraint
+   <Net fpga_0_rst_1_sys_rst_pin LOC = A5;> [microblaze_top.ucf(127)].
 WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PinMD_pin_OBUF"
    IOSTANDARD = "LVCMOS33"> is overridden on the design object
    plb_dac_0_S_PinMD_pin by the constraint <Net plb_dac_0_S_PinMD_pin IOSTANDARD
@@ -305,18 +294,6 @@ WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_ClkMD_pin_OBUF"
 WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_ClkMD_pin_OBUF" LOC =
    E2> is overridden on the design object plb_dac_0_S_ClkMD_pin by the
    constraint <Net plb_dac_0_S_ClkMD_pin LOC = E2;> [microblaze_top.ucf(52)].
-WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_rst_1_sys_rst_pin_IBUF"
-   DRIVE = 2> is overridden on the design object fpga_0_rst_1_sys_rst_pin by the
-   constraint <Net fpga_0_rst_1_sys_rst_pin Drive = 2;>
-   [microblaze_top.ucf(129)].
-WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_rst_1_sys_rst_pin_IBUF"
-   IOSTANDARD = "LVCMOS25"> is overridden on the design object
-   fpga_0_rst_1_sys_rst_pin by the constraint <Net fpga_0_rst_1_sys_rst_pin
-   IOSTANDARD = LVCMOS25;> [microblaze_top.ucf(128)].
-WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_rst_1_sys_rst_pin_IBUF" LOC
-   = A5> is overridden on the design object fpga_0_rst_1_sys_rst_pin by the
-   constraint <Net fpga_0_rst_1_sys_rst_pin LOC = A5;>
-   [microblaze_top.ucf(127)].
 WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_TX_pin_OBUF"
    IOSTANDARD = "LVCMOS25"> is overridden on the design object
    fpga_0_RS232_TX_pin by the constraint <Net fpga_0_RS232_TX_pin IOSTANDARD =
@@ -349,8 +326,8 @@ WARNING:NgdBuild:1212 - User specified non-default attribute value
    will use the non-default attribute value.  This could result in incorrect
    uncertainty calculated for DCM output clocks.
 Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'N3' has no driver
 WARNING:NgdBuild:452 - logical net 'N4' has no driver
-WARNING:NgdBuild:452 - logical net 'N5' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -363,10 +340,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  70
 
-Total memory usage is 239116 kilobytes
+Total memory usage is 164920 kilobytes
 
 Writing NGD file "microblaze_top.ngd" ...
-Total REAL time to NGDBUILD completion:  32 sec
-Total CPU time to NGDBUILD completion:   27 sec
+Total REAL time to NGDBUILD completion:  25 sec
+Total CPU time to NGDBUILD completion:   25 sec
 
 Writing NGDBUILD log file "microblaze_top.bld"...
