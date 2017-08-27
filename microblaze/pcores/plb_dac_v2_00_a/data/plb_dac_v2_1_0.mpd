@@ -36,6 +36,8 @@ PARAMETER C_SPLB_CLK_PERIOD_PS = 10000, DT = INTEGER, BUS = SPLB
 PARAMETER C_INCLUDE_DPHASE_TIMER = 1, DT = INTEGER, RANGE = (0, 1)
 PARAMETER C_FAMILY = virtex6, DT = STRING
 
+PARAMETER DAC_WIDTH = 10, DT = INTEGER
+
 ## Ports
 PORT SPLB_Clk = "", DIR = I, SIGIS = CLK, BUS = SPLB
 PORT SPLB_Rst = SPLB_Rst, DIR = I, SIGIS = RST, BUS = SPLB
@@ -79,5 +81,18 @@ PORT Sl_MBusy = Sl_MBusy, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT Sl_MWrErr = Sl_MWrErr, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT Sl_MRdErr = Sl_MRdErr, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT Sl_MIRQ = Sl_MIRQ, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
+
+PORT S_Data   = "", DIR = O, VEC = [0 : (DAC_WIDTH-1)]
+PORT S_DCLKIO = "", DIR = O
+PORT S_Clkout = "", DIR = O
+PORT S_PinMD  = "", DIR = O
+PORT S_ClkMD  = "", DIR = O
+PORT S_Format = "", DIR = IO, THREE_STATE = TRUE, TRI_I = S_Format_I, TRI_O = S_Format_O, TRI_T = S_Format_T, ENABLE = SINGLE
+PORT S_Format_I = "", DIR = I
+PORT S_Format_O = "", DIR = O
+PORT S_Format_T = "", DIR = O
+PORT S_PWRDN  = "", DIR = O
+PORT S_OpEnI  = "", DIR = O
+PORT S_OpEnQ  = "", DIR = O
 
 END

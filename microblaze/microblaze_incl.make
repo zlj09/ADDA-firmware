@@ -124,8 +124,8 @@ G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd \
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd \
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd \
-pcores/plb_dac_v1_00_a/hdl/verilog/user_logic.v \
-pcores/plb_dac_v1_00_a/hdl/vhdl/plb_dac.vhd
+pcores/plb_dac_v2_00_a/hdl/verilog/user_logic.v \
+pcores/plb_dac_v2_00_a/hdl/vhdl/plb_dac.vhd
 
 WRAPPER_NGC_FILES = implementation/microblaze_microblaze_0_wrapper.ngc \
 implementation/microblaze_mb_plb_wrapper.ngc \

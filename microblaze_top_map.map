@@ -10,9 +10,13 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Wed Aug 23 16:13:20 2017
+Mapped Date    : Sun Aug 27 09:37:17 2017
 
 Mapping design into LUTs...
+WARNING:MapLib:163 - Bus microblaze_i/plb_dac_1_S_Format_O driven by tbufs will
+   be transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus microblaze_i/plb_dac_0_S_Format_O driven by tbufs will
+   be transformed to use combinational drivers.
 Running directed packing...
 Running delay-based LUT packing...
 Running related packing...
@@ -32,18 +36,18 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    3
+Number of warnings:    5
 Logic Utilization:
-  Number of Slice Flip Flops:         1,955 out of  49,152    3%
-  Number of 4 input LUTs:             3,261 out of  49,152    6%
+  Number of Slice Flip Flops:         2,187 out of  49,152    4%
+  Number of 4 input LUTs:             3,800 out of  49,152    7%
 Logic Distribution:
-  Number of occupied Slices:          2,322 out of  24,576    9%
-    Number of Slices containing only related logic:   2,322 out of   2,322 100%
-    Number of Slices containing unrelated logic:          0 out of   2,322   0%
+  Number of occupied Slices:          2,672 out of  24,576   10%
+    Number of Slices containing only related logic:   2,672 out of   2,672 100%
+    Number of Slices containing unrelated logic:          0 out of   2,672   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       3,384 out of  49,152    6%
-    Number used as logic:             2,746
-    Number used as a route-thru:        123
+  Total Number of 4 input LUTs:       3,914 out of  49,152    7%
+    Number used as logic:             3,285
+    Number used as a route-thru:        114
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:     131
@@ -59,10 +63,10 @@ Logic Distribution:
   Number of DCM_ADVs:                     1 out of       8   12%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                3.97
+Average Fanout of Non-Clock Nets:                3.95
 
 Peak Memory Usage:  498 MB
-Total REAL time to MAP completion:  20 secs 
+Total REAL time to MAP completion:  22 secs 
 Total CPU time to MAP completion:   11 secs 
 
 NOTES:

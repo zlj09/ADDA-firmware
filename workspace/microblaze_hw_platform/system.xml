@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Wed Aug 23 16:16:32 2017">
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sun Aug 27 09:41:17 2017">
 
   <SYSTEMINFO ARCH="virtex4" DEVICE="xc4vsx55" PACKAGE="ff1148" PART="xc4vsx55ff1148-10" SOURCE="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/microblaze.xmp" SPEEDGRADE="-10"/>
 
@@ -50,7 +50,7 @@
         <CONNECTION INSTANCE="plb_dac_0" PORT="S_ClkMD"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="9" NAME="plb_dac_0_S_Format_pin" SIGNAME="plb_dac_0_S_Format">
+    <PORT DIR="IO" MHS_INDEX="9" NAME="plb_dac_0_S_Format_pin" SIGNAME="plb_dac_0_S_Format">
       <CONNECTIONS>
         <CONNECTION INSTANCE="plb_dac_0" PORT="S_Format"/>
       </CONNECTIONS>
@@ -95,7 +95,7 @@
         <CONNECTION INSTANCE="plb_dac_1" PORT="S_ClkMD"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="18" NAME="plb_dac_1_S_Format_pin" SIGNAME="plb_dac_1_S_Format">
+    <PORT DIR="IO" MHS_INDEX="18" NAME="plb_dac_1_S_Format_pin" SIGNAME="plb_dac_1_S_Format">
       <CONNECTIONS>
         <CONNECTION INSTANCE="plb_dac_1" PORT="S_Format"/>
       </CONNECTIONS>
@@ -7241,8 +7241,9 @@
         <TARGET INSTANCE="microblaze_0"/>
       </INTERRUPTINFO>
     </MODULE>
-    <MODULE HWVERSION="1.00.a" INSTANCE="plb_dac_0" IPTYPE="PERIPHERAL" MHS_INDEX="12" MODCLASS="PERIPHERAL" MODTYPE="plb_dac">
+    <MODULE HWVERSION="2.00.a" INSTANCE="plb_dac_0" IPTYPE="PERIPHERAL" MHS_INDEX="12" MODCLASS="PERIPHERAL" MODTYPE="plb_dac">
       <DESCRIPTION TYPE="SHORT">PLB_DAC</DESCRIPTION>
+      <DESCRIPTION TYPE="LONG">Use SPI to control the DAC AD9715</DESCRIPTION>
       <LICENSEINFO ICON_NAME="ps_core_local"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="OPTIONAL" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0xc9c20000"/>
@@ -7286,22 +7287,22 @@
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_0_S_ClkMD_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="5" MPD_INDEX="47" NAME="S_Format" SIGNAME="plb_dac_0_S_Format">
+        <PORT DIR="IO" IS_INSTANTIATED="TRUE" IS_THREE_STATE="TRUE" MHS_INDEX="5" MPD_INDEX="47" NAME="S_Format" SIGNAME="plb_dac_0_S_Format" TRI_I="S_Format_I" TRI_O="S_Format_O" TRI_T="S_Format_T">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_0_S_Format_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="6" MPD_INDEX="48" NAME="S_PWRDN" SIGNAME="plb_dac_0_S_PWRDN">
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="6" MPD_INDEX="51" NAME="S_PWRDN" SIGNAME="plb_dac_0_S_PWRDN">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_0_S_PWRDN_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="7" MPD_INDEX="49" NAME="S_OpEnI" SIGNAME="plb_dac_0_S_OpEnI">
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="7" MPD_INDEX="52" NAME="S_OpEnI" SIGNAME="plb_dac_0_S_OpEnI">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_0_S_OpEnI_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="8" MPD_INDEX="50" NAME="S_OpEnQ" SIGNAME="plb_dac_0_S_OpEnQ">
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="8" MPD_INDEX="53" NAME="S_OpEnQ" SIGNAME="plb_dac_0_S_OpEnQ">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_0_S_OpEnQ_pin"/>
           </CONNECTIONS>
@@ -7516,6 +7517,9 @@
             <CONNECTION INSTANCE="mb_plb" PORT="Sl_MIRQ"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" MPD_INDEX="48" NAME="S_Format_I" SIGNAME="__NOC__"/>
+        <PORT DIR="O" MPD_INDEX="49" NAME="S_Format_O" SIGNAME="__NOC__"/>
+        <PORT DIR="O" MPD_INDEX="50" NAME="S_Format_T" SIGNAME="__NOC__"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="mb_plb" BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="SPLB" TYPE="SLAVE">
@@ -7573,8 +7577,9 @@
         </MEMRANGE>
       </MEMORYMAP>
     </MODULE>
-    <MODULE HWVERSION="1.00.a" INSTANCE="plb_dac_1" IPTYPE="PERIPHERAL" MHS_INDEX="13" MODCLASS="PERIPHERAL" MODTYPE="plb_dac">
+    <MODULE HWVERSION="2.00.a" INSTANCE="plb_dac_1" IPTYPE="PERIPHERAL" MHS_INDEX="13" MODCLASS="PERIPHERAL" MODTYPE="plb_dac">
       <DESCRIPTION TYPE="SHORT">PLB_DAC</DESCRIPTION>
+      <DESCRIPTION TYPE="LONG">Use SPI to control the DAC AD9715</DESCRIPTION>
       <LICENSEINFO ICON_NAME="ps_core_local"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="OPTIONAL" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0xc9c00000"/>
@@ -7618,22 +7623,22 @@
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_1_S_ClkMD_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="5" MPD_INDEX="47" NAME="S_Format" SIGNAME="plb_dac_1_S_Format">
+        <PORT DIR="IO" IS_INSTANTIATED="TRUE" IS_THREE_STATE="TRUE" MHS_INDEX="5" MPD_INDEX="47" NAME="S_Format" SIGNAME="plb_dac_1_S_Format" TRI_I="S_Format_I" TRI_O="S_Format_O" TRI_T="S_Format_T">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_1_S_Format_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="6" MPD_INDEX="48" NAME="S_PWRDN" SIGNAME="plb_dac_1_S_PWRDN">
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="6" MPD_INDEX="51" NAME="S_PWRDN" SIGNAME="plb_dac_1_S_PWRDN">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_1_S_PWRDN_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="7" MPD_INDEX="49" NAME="S_OpEnI" SIGNAME="plb_dac_1_S_OpEnI">
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="7" MPD_INDEX="52" NAME="S_OpEnI" SIGNAME="plb_dac_1_S_OpEnI">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_1_S_OpEnI_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="8" MPD_INDEX="50" NAME="S_OpEnQ" SIGNAME="plb_dac_1_S_OpEnQ">
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="8" MPD_INDEX="53" NAME="S_OpEnQ" SIGNAME="plb_dac_1_S_OpEnQ">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_1_S_OpEnQ_pin"/>
           </CONNECTIONS>
@@ -7848,6 +7853,9 @@
             <CONNECTION INSTANCE="mb_plb" PORT="Sl_MIRQ"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" MPD_INDEX="48" NAME="S_Format_I" SIGNAME="__NOC__"/>
+        <PORT DIR="O" MPD_INDEX="49" NAME="S_Format_O" SIGNAME="__NOC__"/>
+        <PORT DIR="O" MPD_INDEX="50" NAME="S_Format_T" SIGNAME="__NOC__"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="mb_plb" BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="SPLB" TYPE="SLAVE">

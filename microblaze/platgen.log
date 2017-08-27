@@ -76,28 +76,28 @@ INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding
    a\xps_intc_v2_1_0.mpd line 83 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
    PARAMETER C_SPLB_DWIDTH value to 32 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
-   data\plb_dac_v2_1_0.mpd line 27 
-INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
-   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
    data\plb_dac_v2_1_0.mpd line 28 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
-   PARAMETER C_SPLB_MID_WIDTH value to 1 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
    data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
+   data\plb_dac_v2_1_0.mpd line 30 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
    PARAMETER C_SPLB_DWIDTH value to 32 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
-   data\plb_dac_v2_1_0.mpd line 27 
-INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
-   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
    data\plb_dac_v2_1_0.mpd line 28 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
-   PARAMETER C_SPLB_MID_WIDTH value to 1 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v1_00_a\
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
    data\plb_dac_v2_1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
+   data\plb_dac_v2_1_0.mpd line 30 
 
 Checking platform address map ...
 
@@ -239,12 +239,6 @@ Copying cache implementation netlist
 IPNAME:xps_intc INSTANCE:xps_intc_0 -
 F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 157 -
 Copying cache implementation netlist
-IPNAME:plb_dac INSTANCE:plb_dac_0 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 167 -
-Copying cache implementation netlist
-IPNAME:plb_dac INSTANCE:plb_dac_1 -
-F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 184 -
-Copying cache implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:lmb_bram -
@@ -260,7 +254,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -296,4 +290,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 92.00 seconds
+Total run time: 100.00 seconds

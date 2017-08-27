@@ -1,12 +1,8 @@
-17:03:46 **** Auto Build of configuration Debug for project br0101 ****
+10:01:56 **** Auto Build of configuration Debug for project br0101 ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'testDAC':
-../src/helloworld.c:73:6: warning: unused variable 'wave' [-Wunused-variable]
-../src/helloworld.c: In function 'genSowWave':
-../src/helloworld.c:123:6: warning: unused variable 'i' [-Wunused-variable]
 Finished building: ../src/helloworld.c
  
 Building target: br0101.elf
@@ -17,7 +13,7 @@ Finished building target: br0101.elf
 Invoking: MicroBlaze Print Size
 mb-size br0101.elf  |tee "br0101.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2646	    308	   2084	   5038	   13ae	br0101.elf
+   5570	    312	   2086	   7968	   1f20	br0101.elf
 Finished building: br0101.elf.size
  
 Invoking: Xilinx ELF Check
@@ -34,5 +30,5 @@ elfcheck passed.
 Finished building: br0101.elf.elfcheck
  
 
-17:03:50 Build Finished (took 4s.1ms)
+10:02:02 Build Finished (took 6s.434ms)
 

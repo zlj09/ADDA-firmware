@@ -42,6 +42,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_plbdac200a_ul_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_plbdac200a_ul_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_plbdac200a_ul_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="user_logic_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
@@ -52,7 +53,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1503565768" xil_pn:in_ck="-2767963754041735207" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1503565768">
+    <transform xil_pn:end_ts="1503796665" xil_pn:in_ck="-2767963754041735207" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1503796665">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../hdl/verilog/user_logic.v"/>
@@ -70,11 +71,11 @@
       <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd"/>
       <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1503565460" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3633624039559068955" xil_pn:start_ts="1503565460">
+    <transform xil_pn:end_ts="1503796518" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3633624039559068955" xil_pn:start_ts="1503796518">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1503565460" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5826117031790082191" xil_pn:start_ts="1503565460">
+    <transform xil_pn:end_ts="1503796518" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5826117031790082191" xil_pn:start_ts="1503796518">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -82,7 +83,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1503565768" xil_pn:in_ck="-2767963754041735207" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1503565768">
+    <transform xil_pn:end_ts="1503796665" xil_pn:in_ck="-2767963754041735207" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1503796665">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../hdl/verilog/user_logic.v"/>
@@ -100,9 +101,11 @@
       <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd"/>
       <outfile xil_pn:name="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1503565772" xil_pn:in_ck="-2767963754041735207" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2135727744921015824" xil_pn:start_ts="1503565768">
+    <transform xil_pn:end_ts="1503796668" xil_pn:in_ck="-2767963754041735207" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2135727744921015824" xil_pn:start_ts="1503796665">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -110,9 +113,11 @@
       <outfile xil_pn:name="tb_plbdac200a_ul_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1503565772" xil_pn:in_ck="3151696281965432157" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8382790483599861683" xil_pn:start_ts="1503565772">
+    <transform xil_pn:end_ts="1503796668" xil_pn:in_ck="-3335942282565245224" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8382790483599861683" xil_pn:start_ts="1503796668">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_plbdac200a_ul_isim_beh.wdb"/>
@@ -145,12 +150,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1503561738" xil_pn:in_ck="-8480864555117231581" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="-8147819639906983812" xil_pn:start_ts="1503561718">
+    <transform xil_pn:end_ts="1503796351" xil_pn:in_ck="-8480864555117231581" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="-8147819639906983812" xil_pn:start_ts="1503796312">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="plb_dac.lso"/>
       <outfile xil_pn:name="plb_dac.ngc"/>

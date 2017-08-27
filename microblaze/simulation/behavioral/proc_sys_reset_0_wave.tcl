@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     proc_sys_reset_0_wave.tcl (Sun Aug 20 12:33:54 2017)
+#  File     proc_sys_reset_0_wave.tcl (Sun Aug 27 10:07:55 2017)
 #
 #  Module   microblaze_proc_sys_reset_0_wrapper
 #  Instance proc_sys_reset_0

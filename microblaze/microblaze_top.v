@@ -35,13 +35,14 @@ module microblaze_top
   input fpga_0_RS232_RX_pin;
   output fpga_0_RS232_TX_pin;
   input fpga_0_clk_1_sys_clk_pin;
-  output fpga_0_rst_1_sys_rst_pin;
+  input fpga_0_rst_1_sys_rst_pin;
+  //output fpga_0_rst_1_sys_rst_pin;
   output [0:9] plb_dac_0_S_Data_pin;
   output plb_dac_0_S_DCLKIO_pin;
   output plb_dac_0_S_Clkout_pin;
   output plb_dac_0_S_PinMD_pin;
   output plb_dac_0_S_ClkMD_pin;
-  output plb_dac_0_S_Format_pin;
+  inout plb_dac_0_S_Format_pin;
   output plb_dac_0_S_PWRDN_pin;
   output plb_dac_0_S_OpEnI_pin;
   output plb_dac_0_S_OpEnQ_pin;
@@ -50,7 +51,7 @@ module microblaze_top
   output plb_dac_1_S_Clkout_pin;
   output plb_dac_1_S_PinMD_pin;
   output plb_dac_1_S_ClkMD_pin;
-  output plb_dac_1_S_Format_pin;
+  inout plb_dac_1_S_Format_pin;
   output plb_dac_1_S_PWRDN_pin;
   output plb_dac_1_S_OpEnI_pin;
   output plb_dac_1_S_OpEnQ_pin;
@@ -87,11 +88,11 @@ module microblaze_top
       .plb_dac_1_S_OpEnQ_pin ( plb_dac_1_S_OpEnQ_pin )
     );
   
-  rst_generator
-    rst_generator_0(
-      .clk ( fpga_0_clk_1_sys_clk_pin ),
-      .rst ( fpga_0_rst_1_sys_rst_pin )
-    );
+  //rst_generator
+  //  rst_generator_0(
+  //    .clk ( fpga_0_clk_1_sys_clk_pin ),
+  //    .rst ( fpga_0_rst_1_sys_rst_pin )
+  //  );
    
   clk_generator
    clk_generator_0(
@@ -160,9 +161,9 @@ module clk_generator
   reg clk_reg;
   
   always @(posedge clk_in)
-  //if (rst_in == 1'b0)
-  // clk_reg <= 1'b0;
-  //else
+  if (rst_in == 1'b0)
+   clk_reg <= 1'b0;
+  else
     clk_reg <= ~clk_reg;
    
  assign clk_out = clk_reg;

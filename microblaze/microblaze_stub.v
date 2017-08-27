@@ -36,7 +36,7 @@ module microblaze_stub
   output plb_dac_0_S_Clkout_pin;
   output plb_dac_0_S_PinMD_pin;
   output plb_dac_0_S_ClkMD_pin;
-  output plb_dac_0_S_Format_pin;
+  inout plb_dac_0_S_Format_pin;
   output plb_dac_0_S_PWRDN_pin;
   output plb_dac_0_S_OpEnI_pin;
   output plb_dac_0_S_OpEnQ_pin;
@@ -45,7 +45,7 @@ module microblaze_stub
   output plb_dac_1_S_Clkout_pin;
   output plb_dac_1_S_PinMD_pin;
   output plb_dac_1_S_ClkMD_pin;
-  output plb_dac_1_S_Format_pin;
+  inout plb_dac_1_S_Format_pin;
   output plb_dac_1_S_PWRDN_pin;
   output plb_dac_1_S_OpEnI_pin;
   output plb_dac_1_S_OpEnQ_pin;

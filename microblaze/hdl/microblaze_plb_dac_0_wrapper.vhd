@@ -7,8 +7,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 
-library plb_dac_v1_00_a;
-use plb_dac_v1_00_a.all;
+library plb_dac_v2_00_a;
+use plb_dac_v2_00_a.all;
 
 entity microblaze_plb_dac_0_wrapper is
   port (
@@ -59,7 +59,9 @@ entity microblaze_plb_dac_0_wrapper is
     S_Clkout : out std_logic;
     S_PinMD : out std_logic;
     S_ClkMD : out std_logic;
-    S_Format : out std_logic;
+    S_Format_I : in std_logic;
+    S_Format_O : out std_logic;
+    S_Format_T : out std_logic;
     S_PWRDN : out std_logic;
     S_OpEnI : out std_logic;
     S_OpEnQ : out std_logic
@@ -133,7 +135,9 @@ architecture STRUCTURE of microblaze_plb_dac_0_wrapper is
       S_Clkout : out std_logic;
       S_PinMD : out std_logic;
       S_ClkMD : out std_logic;
-      S_Format : out std_logic;
+      S_Format_I : in std_logic;
+      S_Format_O : out std_logic;
+      S_Format_T : out std_logic;
       S_PWRDN : out std_logic;
       S_OpEnI : out std_logic;
       S_OpEnQ : out std_logic
@@ -207,7 +211,9 @@ begin
       S_Clkout => S_Clkout,
       S_PinMD => S_PinMD,
       S_ClkMD => S_ClkMD,
-      S_Format => S_Format,
+      S_Format_I => S_Format_I,
+      S_Format_O => S_Format_O,
+      S_Format_T => S_Format_T,
       S_PWRDN => S_PWRDN,
       S_OpEnI => S_OpEnI,
       S_OpEnQ => S_OpEnQ

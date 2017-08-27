@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     plb_dac_0_wave.tcl (Sun Aug 20 12:33:54 2017)
+#  File     plb_dac_0_wave.tcl (Sun Aug 27 10:07:55 2017)
 #
 #  Module   microblaze_plb_dac_0_wrapper
 #  Instance plb_dac_0
@@ -56,7 +56,9 @@ if { ![info exists tbpath] } { set tbpath "microblaze_tb${ps}dut" }
   wave add $tbpath${ps}plb_dac_0${ps}S_Clkout -into $id
   wave add $tbpath${ps}plb_dac_0${ps}S_PinMD -into $id
   wave add $tbpath${ps}plb_dac_0${ps}S_ClkMD -into $id
-  wave add $tbpath${ps}plb_dac_0${ps}S_Format -into $id
+  wave add $tbpath${ps}plb_dac_0${ps}S_Format_I -into $id
+  wave add $tbpath${ps}plb_dac_0${ps}S_Format_O -into $id
+  wave add $tbpath${ps}plb_dac_0${ps}S_Format_T -into $id
   wave add $tbpath${ps}plb_dac_0${ps}S_PWRDN -into $id
   wave add $tbpath${ps}plb_dac_0${ps}S_OpEnI -into $id
   wave add $tbpath${ps}plb_dac_0${ps}S_OpEnQ -into $id

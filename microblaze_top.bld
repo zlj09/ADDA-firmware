@@ -75,12 +75,12 @@ Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "microblaze_top.ucf" ...
+INFO:NgdBuild:928 - A pullup 'plb_dac_0_S_Format_O.PULLUP' was added to net
+   'microblaze_i/plb_dac_0_S_Format_O'
+INFO:NgdBuild:928 - A pullup 'plb_dac_1_S_Format_O.PULLUP' was added to net
+   'microblaze_i/plb_dac_1_S_Format_O'
 Resolving constraint associations...
 Checking Constraint Associations...
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "rst_generator_0/rst_reg" LOC = A5>' could not be found and so the
-   Locate constraint will be removed.
-
 WARNING:ConstraintSystem - A target design object for the Locate constraint
    '<NET "plb_dac_0_S_PinMD_pin_OBUF" LOC = M10>' could not be found and so the
    Locate constraint will be removed.
@@ -98,7 +98,7 @@ WARNING:ConstraintSystem - A target design object for the Locate constraint
    Locate constraint will be removed.
 
 WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "plb_dac_0_S_Format_pin_OBUF" LOC = J1>' could not be found and so the
+   '<NET "plb_dac_0_S_Format_pin" LOC = J1>' could not be found and so the
    Locate constraint will be removed.
 
 WARNING:ConstraintSystem - A target design object for the Locate constraint
@@ -150,6 +150,10 @@ WARNING:ConstraintSystem - A target design object for the Locate constraint
    Locate constraint will be removed.
 
 WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "fpga_0_rst_1_sys_rst_pin_IBUF" LOC = A5>' could not be found and so
+   the Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
    '<NET "fpga_0_RS232_TX_pin_OBUF" LOC = AG21>' could not be found and so the
    Locate constraint will be removed.
 
@@ -176,16 +180,6 @@ WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_sys_clk_pin = PERIOD
    [microblaze_top.ucf(2)]. The overriden constraint usually comes from the
    input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
    promote this message to an error.
-WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" DRIVE = 2>
-   is overridden on the design object fpga_0_rst_1_sys_rst_pin by the constraint
-   <Net fpga_0_rst_1_sys_rst_pin Drive = 2;> [microblaze_top.ucf(129)].
-WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" IOSTANDARD
-   = "LVCMOS25"> is overridden on the design object fpga_0_rst_1_sys_rst_pin by
-   the constraint <Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;>
-   [microblaze_top.ucf(128)].
-WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" LOC = A5>
-   is overridden on the design object fpga_0_rst_1_sys_rst_pin by the constraint
-   <Net fpga_0_rst_1_sys_rst_pin LOC = A5;> [microblaze_top.ucf(127)].
 WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PinMD_pin_OBUF"
    IOSTANDARD = "LVCMOS33"> is overridden on the design object
    plb_dac_0_S_PinMD_pin by the constraint <Net plb_dac_0_S_PinMD_pin IOSTANDARD
@@ -220,13 +214,13 @@ WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnI_pin_OBUF"
 WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnI_pin_OBUF" LOC =
    AB12> is overridden on the design object plb_dac_0_S_OpEnI_pin by the
    constraint <Net plb_dac_0_S_OpEnI_pin LOC = AB12;> [microblaze_top.ucf(61)].
-WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Format_pin_OBUF"
-   IOSTANDARD = "LVCMOS33"> is overridden on the design object
-   plb_dac_0_S_Format_pin by the constraint <Net plb_dac_0_S_Format_pin
-   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(56)].
-WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Format_pin_OBUF" LOC =
-   J1> is overridden on the design object plb_dac_0_S_Format_pin by the
-   constraint <Net plb_dac_0_S_Format_pin LOC = J1;> [microblaze_top.ucf(55)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Format_pin" IOSTANDARD
+   = "LVCMOS33"> is overridden on the design object plb_dac_0_S_Format_pin by
+   the constraint <Net plb_dac_0_S_Format_pin IOSTANDARD = LVCMOS33;>
+   [microblaze_top.ucf(56)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Format_pin" LOC = J1>
+   is overridden on the design object plb_dac_0_S_Format_pin by the constraint
+   <Net plb_dac_0_S_Format_pin LOC = J1;> [microblaze_top.ucf(55)].
 WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_9_OBUF"
    IOSTANDARD = "LVCMOS33"> is overridden on the design object
    plb_dac_0_S_Data_pin<9> by the constraint <Net plb_dac_0_S_Data_pin<9>
@@ -311,6 +305,18 @@ WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_ClkMD_pin_OBUF"
 WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_ClkMD_pin_OBUF" LOC =
    E2> is overridden on the design object plb_dac_0_S_ClkMD_pin by the
    constraint <Net plb_dac_0_S_ClkMD_pin LOC = E2;> [microblaze_top.ucf(52)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_rst_1_sys_rst_pin_IBUF"
+   DRIVE = 2> is overridden on the design object fpga_0_rst_1_sys_rst_pin by the
+   constraint <Net fpga_0_rst_1_sys_rst_pin Drive = 2;>
+   [microblaze_top.ucf(129)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_rst_1_sys_rst_pin_IBUF"
+   IOSTANDARD = "LVCMOS25"> is overridden on the design object
+   fpga_0_rst_1_sys_rst_pin by the constraint <Net fpga_0_rst_1_sys_rst_pin
+   IOSTANDARD = LVCMOS25;> [microblaze_top.ucf(128)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_rst_1_sys_rst_pin_IBUF" LOC
+   = A5> is overridden on the design object fpga_0_rst_1_sys_rst_pin by the
+   constraint <Net fpga_0_rst_1_sys_rst_pin LOC = A5;>
+   [microblaze_top.ucf(127)].
 WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_TX_pin_OBUF"
    IOSTANDARD = "LVCMOS25"> is overridden on the design object
    fpga_0_RS232_TX_pin by the constraint <Net fpga_0_RS232_TX_pin IOSTANDARD =
@@ -343,6 +349,8 @@ WARNING:NgdBuild:1212 - User specified non-default attribute value
    will use the non-default attribute value.  This could result in incorrect
    uncertainty calculated for DCM output clocks.
 Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'N4' has no driver
+WARNING:NgdBuild:452 - logical net 'N5' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -353,12 +361,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  68
+  Number of warnings:  70
 
-Total memory usage is 237008 kilobytes
+Total memory usage is 239116 kilobytes
 
 Writing NGD file "microblaze_top.ngd" ...
-Total REAL time to NGDBUILD completion:  25 sec
-Total CPU time to NGDBUILD completion:   24 sec
+Total REAL time to NGDBUILD completion:  32 sec
+Total CPU time to NGDBUILD completion:   27 sec
 
 Writing NGDBUILD log file "microblaze_top.bld"...

@@ -36,7 +36,7 @@ module microblaze
   output plb_dac_0_S_Clkout_pin;
   output plb_dac_0_S_PinMD_pin;
   output plb_dac_0_S_ClkMD_pin;
-  output plb_dac_0_S_Format_pin;
+  inout plb_dac_0_S_Format_pin;
   output plb_dac_0_S_PWRDN_pin;
   output plb_dac_0_S_OpEnI_pin;
   output plb_dac_0_S_OpEnQ_pin;
@@ -45,7 +45,7 @@ module microblaze
   output plb_dac_1_S_Clkout_pin;
   output plb_dac_1_S_PinMD_pin;
   output plb_dac_1_S_ClkMD_pin;
-  output plb_dac_1_S_Format_pin;
+  inout plb_dac_1_S_Format_pin;
   output plb_dac_1_S_PWRDN_pin;
   output plb_dac_1_S_OpEnI_pin;
   output plb_dac_1_S_OpEnQ_pin;
@@ -211,7 +211,9 @@ module microblaze
   wire plb_dac_0_S_Clkout;
   wire plb_dac_0_S_DCLKIO;
   wire [0:9] plb_dac_0_S_Data;
-  wire plb_dac_0_S_Format;
+  wire plb_dac_0_S_Format_I;
+  wire plb_dac_0_S_Format_O;
+  wire plb_dac_0_S_Format_T;
   wire plb_dac_0_S_OpEnI;
   wire plb_dac_0_S_OpEnQ;
   wire plb_dac_0_S_PWRDN;
@@ -220,7 +222,9 @@ module microblaze
   wire plb_dac_1_S_Clkout;
   wire plb_dac_1_S_DCLKIO;
   wire [0:9] plb_dac_1_S_Data;
-  wire plb_dac_1_S_Format;
+  wire plb_dac_1_S_Format_I;
+  wire plb_dac_1_S_Format_O;
+  wire plb_dac_1_S_Format_T;
   wire plb_dac_1_S_OpEnI;
   wire plb_dac_1_S_OpEnQ;
   wire plb_dac_1_S_PWRDN;
@@ -237,7 +241,6 @@ module microblaze
   assign plb_dac_0_S_Clkout_pin = plb_dac_0_S_Clkout;
   assign plb_dac_0_S_PinMD_pin = plb_dac_0_S_PinMD;
   assign plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD;
-  assign plb_dac_0_S_Format_pin = plb_dac_0_S_Format;
   assign plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN;
   assign plb_dac_0_S_OpEnI_pin = plb_dac_0_S_OpEnI;
   assign plb_dac_0_S_OpEnQ_pin = plb_dac_0_S_OpEnQ;
@@ -246,7 +249,6 @@ module microblaze
   assign plb_dac_1_S_Clkout_pin = plb_dac_1_S_Clkout;
   assign plb_dac_1_S_PinMD_pin = plb_dac_1_S_PinMD;
   assign plb_dac_1_S_ClkMD_pin = plb_dac_1_S_ClkMD;
-  assign plb_dac_1_S_Format_pin = plb_dac_1_S_Format;
   assign plb_dac_1_S_PWRDN_pin = plb_dac_1_S_PWRDN;
   assign plb_dac_1_S_OpEnI_pin = plb_dac_1_S_OpEnI;
   assign plb_dac_1_S_OpEnQ_pin = plb_dac_1_S_OpEnQ;
@@ -1883,7 +1885,9 @@ module microblaze
       .S_Clkout ( plb_dac_0_S_Clkout ),
       .S_PinMD ( plb_dac_0_S_PinMD ),
       .S_ClkMD ( plb_dac_0_S_ClkMD ),
-      .S_Format ( plb_dac_0_S_Format ),
+      .S_Format_I ( plb_dac_0_S_Format_I ),
+      .S_Format_O ( plb_dac_0_S_Format_O ),
+      .S_Format_T ( plb_dac_0_S_Format_T ),
       .S_PWRDN ( plb_dac_0_S_PWRDN ),
       .S_OpEnI ( plb_dac_0_S_OpEnI ),
       .S_OpEnQ ( plb_dac_0_S_OpEnQ )
@@ -1939,10 +1943,28 @@ module microblaze
       .S_Clkout ( plb_dac_1_S_Clkout ),
       .S_PinMD ( plb_dac_1_S_PinMD ),
       .S_ClkMD ( plb_dac_1_S_ClkMD ),
-      .S_Format ( plb_dac_1_S_Format ),
+      .S_Format_I ( plb_dac_1_S_Format_I ),
+      .S_Format_O ( plb_dac_1_S_Format_O ),
+      .S_Format_T ( plb_dac_1_S_Format_T ),
       .S_PWRDN ( plb_dac_1_S_PWRDN ),
       .S_OpEnI ( plb_dac_1_S_OpEnI ),
       .S_OpEnQ ( plb_dac_1_S_OpEnQ )
+    );
+
+  IOBUF
+    iobuf_0 (
+      .I ( plb_dac_0_S_Format_O ),
+      .IO ( plb_dac_0_S_Format_pin ),
+      .O ( plb_dac_0_S_Format_I ),
+      .T ( plb_dac_0_S_Format_T )
+    );
+
+  IOBUF
+    iobuf_1 (
+      .I ( plb_dac_1_S_Format_O ),
+      .IO ( plb_dac_1_S_Format_pin ),
+      .O ( plb_dac_1_S_Format_I ),
+      .T ( plb_dac_1_S_Format_T )
     );
 
 endmodule
@@ -5080,7 +5102,9 @@ module microblaze_plb_dac_0_wrapper
     S_Clkout,
     S_PinMD,
     S_ClkMD,
-    S_Format,
+    S_Format_I,
+    S_Format_O,
+    S_Format_T,
     S_PWRDN,
     S_OpEnI,
     S_OpEnQ
@@ -5132,7 +5156,9 @@ module microblaze_plb_dac_0_wrapper
   output S_Clkout;
   output S_PinMD;
   output S_ClkMD;
-  output S_Format;
+  input S_Format_I;
+  output S_Format_O;
+  output S_Format_T;
   output S_PWRDN;
   output S_OpEnI;
   output S_OpEnQ;
@@ -5187,7 +5213,9 @@ module microblaze_plb_dac_1_wrapper
     S_Clkout,
     S_PinMD,
     S_ClkMD,
-    S_Format,
+    S_Format_I,
+    S_Format_O,
+    S_Format_T,
     S_PWRDN,
     S_OpEnI,
     S_OpEnQ
@@ -5239,7 +5267,9 @@ module microblaze_plb_dac_1_wrapper
   output S_Clkout;
   output S_PinMD;
   output S_ClkMD;
-  output S_Format;
+  input S_Format_I;
+  output S_Format_O;
+  output S_Format_T;
   output S_PWRDN;
   output S_OpEnI;
   output S_OpEnQ;

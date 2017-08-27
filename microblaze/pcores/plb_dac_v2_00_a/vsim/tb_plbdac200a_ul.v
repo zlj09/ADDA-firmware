@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   16:06:27 08/24/2017
+// Create Date:   09:14:09 08/27/2017
 // Design Name:   user_logic
 // Module Name:   F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v2_00_a/vsim/tb_plbdac200a_ul.v
 // Project Name:  plb_dac
@@ -25,6 +25,7 @@
 module tb_plbdac200a_ul;
 
 	// Inputs
+	reg IP2DAC_Format_I;
 	reg Bus2IP_Clk;
 	reg Bus2IP_Reset;
 	reg [0:31] Bus2IP_Data;
@@ -38,6 +39,8 @@ module tb_plbdac200a_ul;
 	wire IP2DAC_Clkout;
 	wire IP2DAC_PinMD;
 	wire IP2DAC_ClkMD;
+	wire IP2DAC_Format_O;
+	wire IP2DAC_Format_T;
 	wire IP2DAC_PWRDN;
 	wire IP2DAC_OpEnI;
 	wire IP2DAC_OpEnQ;
@@ -46,14 +49,6 @@ module tb_plbdac200a_ul;
 	wire IP2Bus_WrAck;
 	wire IP2Bus_Error;
 
-	// Bidirs
-	wire IP2DAC_Format;
-
-	reg	 sdio_reg;
-	reg	 write_spi;
-
-	assign IP2DAC_Format = (write_spi) ? (sdio_reg) : (1'bz);
-
 	// Instantiate the Unit Under Test (UUT)
 	user_logic uut (
 		.IP2DAC_Data(IP2DAC_Data), 
@@ -61,7 +56,9 @@ module tb_plbdac200a_ul;
 		.IP2DAC_Clkout(IP2DAC_Clkout), 
 		.IP2DAC_PinMD(IP2DAC_PinMD), 
 		.IP2DAC_ClkMD(IP2DAC_ClkMD), 
-		.IP2DAC_Format(IP2DAC_Format), 
+		.IP2DAC_Format_I(IP2DAC_Format_I), 
+		.IP2DAC_Format_O(IP2DAC_Format_O), 
+		.IP2DAC_Format_T(IP2DAC_Format_T), 
 		.IP2DAC_PWRDN(IP2DAC_PWRDN), 
 		.IP2DAC_OpEnI(IP2DAC_OpEnI), 
 		.IP2DAC_OpEnQ(IP2DAC_OpEnQ), 
@@ -85,8 +82,7 @@ module tb_plbdac200a_ul;
 		Bus2IP_BE = 0;
 		Bus2IP_RdCE = 0;
 		Bus2IP_WrCE = 0;
-		write_spi = 0;
-		sdio_reg = 1'b0;
+		IP2DAC_Format_I = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
@@ -134,8 +130,7 @@ module tb_plbdac200a_ul;
 		Bus2IP_Data = 32'h0000_0000;
 
 		#350;
-		write_spi = 1'b1;
-		sdio_reg = 1'b1;		
+		IP2DAC_Format_I = 1'b1;	
 
 		#350;
 		Bus2IP_RdCE = 5'b00010;

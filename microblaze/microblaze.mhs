@@ -24,7 +24,7 @@
  PORT plb_dac_0_S_Clkout_pin = plb_dac_0_S_Clkout, DIR = O
  PORT plb_dac_0_S_PinMD_pin = plb_dac_0_S_PinMD, DIR = O
  PORT plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD, DIR = O
- PORT plb_dac_0_S_Format_pin = plb_dac_0_S_Format, DIR = O
+ PORT plb_dac_0_S_Format_pin = plb_dac_0_S_Format, DIR = IO
  PORT plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN, DIR = O
  PORT plb_dac_0_S_OpEnI_pin = plb_dac_0_S_OpEnI, DIR = O
  PORT plb_dac_0_S_OpEnQ_pin = plb_dac_0_S_OpEnQ, DIR = O
@@ -33,7 +33,7 @@
  PORT plb_dac_1_S_Clkout_pin = plb_dac_1_S_Clkout, DIR = O
  PORT plb_dac_1_S_PinMD_pin = plb_dac_1_S_PinMD, DIR = O
  PORT plb_dac_1_S_ClkMD_pin = plb_dac_1_S_ClkMD, DIR = O
- PORT plb_dac_1_S_Format_pin = plb_dac_1_S_Format, DIR = O
+ PORT plb_dac_1_S_Format_pin = plb_dac_1_S_Format, DIR = IO
  PORT plb_dac_1_S_PWRDN_pin = plb_dac_1_S_PWRDN, DIR = O
  PORT plb_dac_1_S_OpEnI_pin = plb_dac_1_S_OpEnI, DIR = O
  PORT plb_dac_1_S_OpEnQ_pin = plb_dac_1_S_OpEnQ, DIR = O
@@ -160,13 +160,13 @@ BEGIN xps_intc
  PARAMETER C_BASEADDR = 0x81800000
  PARAMETER C_HIGHADDR = 0x8180ffff
  BUS_INTERFACE SPLB = mb_plb
- PORT Intr = RS232_Interrupt & xps_spi_0_IP2INTC_Irpt
+ PORT Intr = RS232_Interrupt
  PORT Irq = microblaze_0_Interrupt
 END
 
 BEGIN plb_dac
  PARAMETER INSTANCE = plb_dac_0
- PARAMETER HW_VER = 1.00.a
+ PARAMETER HW_VER = 2.00.a
  PARAMETER C_BASEADDR = 0xc9c20000
  PARAMETER C_HIGHADDR = 0xc9c2ffff
  BUS_INTERFACE SPLB = mb_plb
@@ -183,7 +183,7 @@ END
 
 BEGIN plb_dac
  PARAMETER INSTANCE = plb_dac_1
- PARAMETER HW_VER = 1.00.a
+ PARAMETER HW_VER = 2.00.a
  PARAMETER C_BASEADDR = 0xc9c00000
  PARAMETER C_HIGHADDR = 0xc9c0ffff
  BUS_INTERFACE SPLB = mb_plb
@@ -196,14 +196,5 @@ BEGIN plb_dac
  PORT S_PWRDN = plb_dac_1_S_PWRDN
  PORT S_OpEnI = plb_dac_1_S_OpEnI
  PORT S_OpEnQ = plb_dac_1_S_OpEnQ
-END
-
-BEGIN xps_spi
- PARAMETER INSTANCE = xps_spi_0
- PARAMETER HW_VER = 2.02.a
- PARAMETER C_BASEADDR = 0xFFFFFFFF
- PARAMETER C_HIGHADDR = 0x00000000
- BUS_INTERFACE SPLB = mb_plb
- PORT IP2INTC_Irpt = xps_spi_0_IP2INTC_Irpt
 END
 

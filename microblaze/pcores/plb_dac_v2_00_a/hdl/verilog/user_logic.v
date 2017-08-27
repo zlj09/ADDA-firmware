@@ -58,7 +58,10 @@ module user_logic
   IP2DAC_Clkout,             //IP to DAC analog clock
   IP2DAC_PinMD,              //IP to DAC SPI reset
   IP2DAC_ClkMD,              //IP to DAC SPI SCLK
-  IP2DAC_Format,             //IP to DAC SPI SDIO
+  //IP2DAC_Format,             //IP to DAC SPI SDIO
+  IP2DAC_Format_I,
+  IP2DAC_Format_O,
+  IP2DAC_Format_T,
   IP2DAC_PWRDN,              //IP to DAC SPI CS
   IP2DAC_OpEnI,              //IP to DAC output op amp I enable
   IP2DAC_OpEnQ,              //IP to DAC output op amp Q enable
@@ -95,7 +98,9 @@ output                                    IP2DAC_DCLKIO;
 output                                    IP2DAC_Clkout;
 output                                    IP2DAC_PinMD;
 output                                    IP2DAC_ClkMD;
-inout                                     IP2DAC_Format;
+input                                     IP2DAC_Format_I;
+output                                    IP2DAC_Format_O;
+output                                    IP2DAC_Format_T;
 output                                    IP2DAC_PWRDN;
 output                                    IP2DAC_OpEnI;
 output                                    IP2DAC_OpEnQ;
@@ -125,7 +130,8 @@ output                                    IP2Bus_Error;
   reg                                       reset_reg;
   reg                                       sclk_reg;
   reg                                       cs_reg;
-  reg                                       sdio_reg;
+  reg                                       sdio_reg_o;
+  reg                                       sdio_reg_t;
   reg        [2 : 0]                        state_reg;
   reg                                       dac_en;
   reg                                       spi_state;
@@ -214,7 +220,7 @@ output                                    IP2Bus_Error;
         endcase
 
         if (state_reg == 3'd3 && sclk_reg == 1'b0 && spi_cnt >= 5'd8)
-          slv_reg3[16 + spi_cnt] <= IP2DAC_Format;
+          slv_reg3[16 + spi_cnt] <= IP2DAC_Format_I;
 
         slv_reg0[30] <= spi_state;
       end
@@ -263,7 +269,8 @@ output                                    IP2Bus_Error;
       dac_en <= 1'b0;
       reset_reg <= 1'b0;
       sclk_reg <= 1'b1;
-      sdio_reg <= 1'b0;
+      sdio_reg_o <= 1'b0;
+      sdio_reg_t <= 1'b0;
       cs_reg <= 1'b1;
       spi_cnt <= 5'd0;
       spi_state <= 1'b0;
@@ -286,7 +293,8 @@ output                                    IP2Bus_Error;
           reset_reg <= 1'b0;
           sclk_reg <= 1'b1;
           cs_reg <= 1'b1;
-          sdio_reg <= 1'b0;
+          sdio_reg_o <= 1'b0;
+          sdio_reg_t <= 1'b0;
           spi_cnt <= 5'd0;
           spi_state <= 1'b0;
           if (slv_reg0[31] == 1'b0) begin
@@ -322,17 +330,21 @@ output                                    IP2Bus_Error;
             end
             else begin
               sclk_reg <= ~sclk_reg;
-              if (spi_cnt < 5'd8)
-                sdio_reg <= slv_reg3[16 + spi_cnt];
+              if (spi_cnt < 5'd8) begin
+                sdio_reg_o <= slv_reg3[16 + spi_cnt];
+                sdio_reg_t <= 1'b0;
+              end
               else begin
-                sdio_reg <= 1'dz;
+                sdio_reg_o <= 1'dz;
+                sdio_reg_t <= 1'b1;
               end
             end
           end
           else begin
             state_reg <= state_reg;
             sclk_reg <= ~sclk_reg;
-            sdio_reg <= sdio_reg;
+            sdio_reg_o <= sdio_reg_o;
+            sdio_reg_t <= sdio_reg_t;
             spi_cnt <= spi_cnt + 1'b1;
           end
         end
@@ -343,13 +355,15 @@ output                                    IP2Bus_Error;
             end
             else begin
               sclk_reg <= ~sclk_reg;
-              sdio_reg <= slv_reg3[16 + spi_cnt];
+              sdio_reg_o <= slv_reg3[16 + spi_cnt];
+              sdio_reg_t <= 1'b0;
             end
           end
           else begin
             state_reg <= state_reg;
             sclk_reg <= ~sclk_reg;
-            sdio_reg <= sdio_reg;
+            sdio_reg_o <= sdio_reg_o;
+            sdio_reg_t <= sdio_reg_t;
             spi_cnt <= spi_cnt + 1'b1;
           end
         end
@@ -375,7 +389,8 @@ output                                    IP2Bus_Error;
 
   assign IP2DAC_PinMD = reset_reg;
   assign IP2DAC_ClkMD = sclk_reg;
-  assign IP2DAC_Format = sdio_reg;
+  assign IP2DAC_Format_O = sdio_reg_o;
+  assign IP2DAC_Format_T = sdio_reg_t;
   assign IP2DAC_PWRDN = cs_reg;
   assign IP2DAC_OpEnI = slv_reg0[29];
   assign IP2DAC_OpEnQ = slv_reg0[28]; 
