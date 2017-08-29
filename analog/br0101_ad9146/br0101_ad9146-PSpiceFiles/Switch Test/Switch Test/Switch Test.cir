@@ -1,0 +1,20 @@
+** Profile: "Switch Test-Switch Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Switch Test\Switch Test.sim ] 
+
+** Creating circuit file "Switch Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ad8000p.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 5ms 0.05ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Switch Test.net" 
+
+
+.END

@@ -1,0 +1,20 @@
+** Profile: "Sine Freq Test-Sine Freq Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Sine Freq Test\Sine Freq Test.sim ] 
+
+** Creating circuit file "Sine Freq Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ad8000p.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2500ns 500ns 10ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Sine Freq Test.net" 
+
+
+.END

@@ -1,0 +1,3793 @@
+
+**** 08/29/17 18:15:07 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "OpAmp DC Sweep-Test DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Test DC Sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM x -3.63 3.57 0.05 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\OpAmp DC Sweep.net" 
+
+
+
+**** INCLUDING "OpAmp DC Sweep.net" ****
+* source BR0101_AD9286
+R_R4         0 N01622  21k TC=0,0 
+V_V1         N01612 0 {x}
+R_R6         0 N01546  16.9k TC=0,0 
+R_R7         N01434 N01442  84.5k TC=0,0 
+V_V2         N01656 0 5V
+R_R8         VO+ VO-  1G TC=0,0 
+R_R3         N01518 N01526  84.5k TC=0,0 
+R_R2         N01612 N01622  84.5k TC=0,0 
+R_R5         N01546 N01434  84.5k TC=0,0 
+V_V3         0 N01468 0Vdc
+R_R1         N01622 N01518  84.5k TC=0,0 
+V_V4         N01646 0 1.4V
+X_U1         N01442 N01526 N01434 N01518 N01656 N01468 VO+ VO- N01646 ADA4937 
+.PARAM  x=1
+
+**** RESUMING "Test DC Sweep.cir" ****
+.END
+
+**** 08/29/17 18:15:07 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "OpAmp DC Sweep-Test DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFi
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Dx         
+          IS   10.000000E-15 
+
+
+**** 08/29/17 18:15:07 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "OpAmp DC Sweep-Test DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFi
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               PNP             
+       LEVEL    1            
+          IS    1.000000E-15 
+          BF  228            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF   10.000000E-12 
+          AF    1.07         
+          CN    2.2          
+           D     .52         
+
+
+**** 08/29/17 18:15:07 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "OpAmp DC Sweep-Test DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFi
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.RX1        X_U1.RX2        
+  T_Measured   27              27            
+   T_Current  -70             -70            
+           R    1               1            
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.63
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.58
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.53
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.48
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.43
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.38
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.33
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.28
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.23
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.18
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.13
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.08
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -3.03
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.98
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.93
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.88
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.83
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.78
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.73
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.68
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.63
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.58
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.53
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.48
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.43
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.38
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.33
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.28
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.23
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.18
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.13
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.08
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -2.03
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.98
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.93
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.88
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.83
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.78
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.73
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.68
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.63
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.58
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.53
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.48
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.43
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.38
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.33
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.28
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.23
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.18
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.13
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.08
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -1.03
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.98
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.93
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.88
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.83
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.78
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.73
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.68
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.63
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.58
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.53
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.48
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.43
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.38
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.33
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.28
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.23
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.18
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.13
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.08
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = -0.03
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.02
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.07
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.12
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.17
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.22
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.27
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.32
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.37
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.42
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.47
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.52
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.57
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.62
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.67
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.72
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.77
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.82
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.87
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.92
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 0.97
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.02
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.07
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.12
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.17
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.22
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.27
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.32
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.37
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.42
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.47
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.52
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.57
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.62
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.67
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.72
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.77
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.82
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.87
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.92
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 1.97
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.02
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.07
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.12
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.17
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.22
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.27
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.32
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.37
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.42
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.47
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.52
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.57
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.62
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.67
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.72
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.77
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.82
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.87
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.92
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2.97
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.02
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.07
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.12
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.17
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.22
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.27
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.32
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.37
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.42
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.47
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.52
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 3.57
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures After Sweep  Param value = 1
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+
+          JOB CONCLUDED
+
+**** 08/29/17 18:15:07 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "OpAmp DC Sweep-Test DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

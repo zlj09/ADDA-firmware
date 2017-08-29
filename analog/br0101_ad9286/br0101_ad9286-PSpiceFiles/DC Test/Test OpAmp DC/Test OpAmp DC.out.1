@@ -1,0 +1,53 @@
+
+**** 08/29/17 17:53:30 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Test OpAmp DC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 5ms 0.05ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BR0101_AD9286
+X_U1         N00605 N00467 N00584 N00405 N00767 N00817 N00925 N00929 N00869
++  ADA4937 
+R_R1         N00409 N00405  84.5k TC=0,0 
+R_R2         N00413 N00409  84.5k TC=0,0 
+R_R3         N00405 N00467  84.5k TC=0,0 
+R_R4         0 N00409  21k TC=0,0 
+R_R5         N00588 N00584  84.5k TC=0,0 
+R_R6         0 N00588  16.9k TC=0,0 
+R_R7         N00584 N00605  84.5k TC=0,0 
+V_V1         N00413 0 -3.6V
+V_V2         N00767 0 5V
+V_V3         0 N00817 0Vdc
+V_V4         N00869 0 1.4V
+R_R8         N00925 N00929  1G TC=0,0 
+
+**** RESUMING "Test OpAmp DC.cir" ****
+.END
+
+ERROR(ORPSIM-15108): Subcircuit ADA4937 used by X_U1 is undefined
+

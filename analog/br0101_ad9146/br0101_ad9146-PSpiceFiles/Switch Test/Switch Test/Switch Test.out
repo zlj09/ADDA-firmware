@@ -1,0 +1,341 @@
+
+**** 08/28/17 19:43:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Switch Test-Switch Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Switch Test\Sw
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Switch Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ad8000p.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 5ms 0.05ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Switch Test.net" 
+
+
+
+**** INCLUDING "Switch Test.net" ****
+* source BR0101_AD9146
+I_I2         0 N02984 DC 20.16mA  
+X_U1         N02720 N02608 VCC VDD VOP PWRDN_N AD8000 
+R_R3         0 N02984  66.5 TC=0,0 
+I_I1         0 N02608 DC 0mA  
+R_R4         N02984 VON  178 TC=0,0 
+V_V1         VCC 0 5V
+V_V3         N04599 0 1.2V
+X_U2         N02720 N02984 VCC VDD VON N03020 AD8000 
+V_V2         0 VDD 5V
+R_R1         0 N02608  66.5 TC=0,0 
+R_R2         N02608 VOP  178 TC=0,0 
+Q_Q1         PWRDN_N N03759 0 QbreakN 
+R_R5         PWRDN_N VCC  4.7k TC=0,0 
+R_R6         N03759 ODAHV1PD  4.7k TC=0,0 
+R_R7         0 N03759  2.4k TC=0,0 
+R_R10         0 N04313  2.4k TC=0,0 
+R_R8         N03020 VCC  4.7k TC=0,0 
+R_R9         N04313 ODAHV1PD  4.7k TC=0,0 
+Q_Q2         N03020 N04313 0 QbreakN 
+V_V4         ODAHV1PD 0 5V
+R_R11         N04599 N02720  10k TC=0,0 
+.PARAM  x=10m
+
+**** RESUMING "Switch Test.cir" ****
+.END
+
+**** 08/28/17 19:43:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Switch Test-Switch Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Switch Test\Sw
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1._D1_mod    X_U1._Diode     X_U1._D8_mod    X_U1._DI_mod    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          KF                                    1.000000E-09   20.000000E-09 
+
+
+               X_U2._D1_mod    X_U2._Diode     X_U2._D8_mod    X_U2._DI_mod    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          KF                                    1.000000E-09   20.000000E-09 
+
+
+**** 08/28/17 19:43:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Switch Test-Switch Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Switch Test\Sw
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         X_U1._Q         X_U1._Q1        X_U2._Q         
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF  100             100             100             100            
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+               X_U2._Q1        
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 08/28/17 19:43:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Switch Test-Switch Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Switch Test\Sw
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X1.SMOOTHSW 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_U2.X1.SMOOTHSW 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 08/28/17 19:43:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Switch Test-Switch Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Switch Test\Sw
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    5.0000  (  VDD)   -5.0000  (  VON)    1.3407  (  VOP) 361.0E-09      
+
+(N02608)-244.1E-06 (N02720)    1.0991 (N02984)    1.3404 (N03020)     .0355     
+
+(N03759)     .7939 (N04313)     .7939 (N04599)    1.2000 (X_U1.3)    1.1001     
+
+(X_U1.4)-244.1E-06 (X_U1.5)     .3794 (X_U1.6)     .8160 (X_U1.7)    1.3736     
+
+(X_U1.8)    3.3300 (X_U1.9)   -3.3300 (X_U2.3)    1.1001 (X_U2.4)    1.3404     
+
+(X_U2.5)    1.1666 (X_U2.6)     .9357 (X_U2.7)    3.0492 (X_U2.8)    3.3300     
+
+(X_U2.9)   -3.3300 (PWRDN_N)     .0355                   (X_U1.10)     .9286    
+
+(X_U1.11)    1.3736                   (X_U1.12)    1.8186                       
+
+(X_U1.13)    1.3736                   (X_U1.14)    1.3736                       
+
+(X_U1.15)    1.3736                   (X_U1.16)     .2427                       
+
+(X_U1.17) 26.25E-12                   (X_U1.18)    0.0000                       
+
+(X_U1.19)    0.0000                   (X_U1.20)-7.933E-06                       
+
+(X_U1.21)     .5300                   (X_U1.22)    0.0000                       
+
+(X_U1.23)-45.19E-06                   (X_U1.24)     .5750                       
+
+(X_U1.26)    0.0000                   (X_U1.27)    0.0000                       
+
+(X_U1.28)     .6000                   (X_U1.30)     .5494                       
+
+(X_U1.34)   -3.5000                   (X_U1.40)     .5026                       
+
+(X_U1.43)    3.5000                   (X_U1.46)    2.5000                       
+
+(X_U1.47)    1.3736                   (X_U1.90)    5.0000                       
+
+(X_U1.91)   -5.0000                   (X_U1.98)    0.0000                       
+
+(X_U2.10)    2.6042                   (X_U2.11)    3.0492                       
+
+(X_U2.12)    3.4942                   (X_U2.13)    3.0492                       
+
+(X_U2.14)    3.0492                   (X_U2.15)    3.0492                       
+
+(X_U2.16)    -.2680                   (X_U2.17)-69.63E-12                       
+
+(X_U2.18)    0.0000                   (X_U2.19)    0.0000                       
+
+(X_U2.20)-7.933E-06                   (X_U2.21)     .5300                       
+
+(X_U2.22)    0.0000                   (X_U2.23)-45.19E-06                       
+
+(X_U2.24)     .5750                   (X_U2.26)    0.0000                       
+
+(X_U2.27)    0.0000                   (X_U2.28)     .6000                       
+
+(X_U2.30)    1.2198                   (X_U2.34)   -3.5000                       
+
+(X_U2.40)     .5168                   (X_U2.43)    3.5000                       
+
+(X_U2.46)    2.5000                   (X_U2.47)    3.0492                       
+
+(X_U2.90)    5.0000                   (X_U2.91)   -5.0000                       
+
+(X_U2.98)    0.0000                   (ODAHV1PD)    5.0000                      
+
+(X_U1.X1.8)    0.0000                 (X_U2.X1.8)    0.0000                     
+
+(X_U1.Pdown)    2.5000                (X_U1.VRVAR) 1.000E+06                    
+
+(X_U2.Pdown)    2.5000                (X_U2.VRVAR) 1.000E+06                    
+
+(X_U1.X1.REF)    1.0000               (X_U2.X1.REF)    1.0000                   
+
+(X_U1.X1.REF1)    3.1000              (X_U2.X1.REF1)    3.1000                  
+
+(X_U1.XRout.106) 361.0E-09            (X_U1.XRout.301) 1.374E-06                
+
+(X_U2.XRout.106)    1.3407            (X_U2.XRout.301) 1.709E-06            
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.125E-03
+    V_V3        -1.009E-05
+    V_V2        -1.993E-03
+    V_V4        -1.790E-03
+    X_U1.V1      2.389E-10
+    X_U1.vsl     1.193E-10
+    X_U1.Vcl1    1.966E-12
+    X_U1.Vcl2    4.714E-12
+    X_U1.vnoise1   7.933E-06
+    X_U1.vnoise2  -7.933E-06
+    X_U1.vnoise3   4.519E-05
+    X_U1.vnoise4  -4.519E-05
+    X_U1.vcur1   2.747E-06
+    X_U1.vcur2  -5.126E-13
+    X_U1.vo1     1.374E-06
+    X_U1.vo2     1.374E-06
+    X_U1.voc     2.747E-06
+    X_U1.Vcl3    2.966E-07
+    X_U1.Vcl4    2.966E-07
+    X_U1.Vcmm    2.061E-11
+    X_U1.Vcmp    2.573E-10
+    X_U1.Vh      0.000E+00
+    X_U1.Vt      0.000E+00
+    X_U2.V1     -6.333E-10
+    X_U2.vsl    -3.165E-10
+    X_U2.Vcl1    2.908E-13
+    X_U2.Vcl2    6.389E-12
+    X_U2.vnoise1   7.933E-06
+    X_U2.vnoise2  -7.933E-06
+    X_U2.vnoise3   4.519E-05
+    X_U2.vnoise4  -4.519E-05
+    X_U2.vcur1   4.758E-06
+    X_U2.vcur2  -5.268E-13
+    X_U2.vo1     2.379E-06
+    X_U2.vo2     2.379E-06
+    X_U2.voc     4.758E-06
+    X_U2.Vcl3    2.966E-07
+    X_U2.Vcl4    2.965E-07
+    X_U2.Vcmm    6.473E-10
+    X_U2.Vcmp    1.185E-11
+    X_U2.Vh      0.000E+00
+    X_U2.Vt      0.000E+00
+    X_U1.XRout.vsense   1.374E-06
+    X_U2.XRout.vsense   1.709E-06
+
+    TOTAL POWER DISSIPATION   3.96E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/28/17 19:43:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Switch Test-Switch Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Switch Test\Sw
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .13
+

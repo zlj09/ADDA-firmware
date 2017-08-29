@@ -1,0 +1,155 @@
+
+**** 08/28/17 16:35:13 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ad8000p.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM x 0.06m 20.16m 0.1m 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(*) D(*) NOISE(*) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BR0101_AD9146
+X_U1         N00780 N00686 VCC VDD VOP VCC AD8000 
+I_I1         0 N00686 DC {x}  
+I_I2         0 N00803 DC {20.16m - x}  
+R_R1         0 N00686  66.5 TC=0,0 
+R_R2         N00686 VOP  178 TC=0,0 
+R_R3         0 N00803  66.5 TC=0,0 
+R_R4         N00803 VON  178 TC=0,0 
+X_U2         N00780 N00803 VCC VDD VON VCC AD8000 
+V_V1         VCC 0 5V
+V_V2         0 VDD 5V
+V_V3         N00780 0 1.2V
+.PARAM  x=10m
+
+**** RESUMING bias.cir ****
+.END
+
+**** 08/28/17 16:35:13 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1._D1_mod    X_U1._Diode     X_U1._D8_mod    X_U1._DI_mod    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          KF                                    1.000000E-09   20.000000E-09 
+
+
+               X_U2._D1_mod    X_U2._Diode     X_U2._D8_mod    X_U2._DI_mod    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          KF                                    1.000000E-09   20.000000E-09 
+
+
+**** 08/28/17 16:35:13 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1._Q         X_U1._Q1        X_U2._Q         X_U2._Q1        
+               PNP             NPN             PNP             NPN             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF  100             100             100             100            
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.2             2.42            2.2             2.42         
+           D     .52             .87             .52             .87         
+
+
+**** 08/28/17 16:35:13 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X1.SMOOTHSW 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_U2.X1.SMOOTHSW 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+
+          JOB CONCLUDED
+
+**** 08/28/17 16:35:13 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .14
+

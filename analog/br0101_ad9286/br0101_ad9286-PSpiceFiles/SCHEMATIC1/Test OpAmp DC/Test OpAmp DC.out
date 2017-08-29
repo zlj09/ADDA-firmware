@@ -1,0 +1,242 @@
+
+**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Test OpAmp DC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 5ms 0.05ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BR0101_AD9286
+X_U1         N00605 N00467 N00584 N00405 N00767 N00817 N00925 N00929 N00869
++  ADA4937 
+R_R1         N00409 N00405  84.5k TC=0,0 
+R_R2         N00413 N00409  84.5k TC=0,0 
+R_R3         N00405 N00467  84.5k TC=0,0 
+R_R4         0 N00409  21k TC=0,0 
+R_R5         N00588 N00584  84.5k TC=0,0 
+R_R6         0 N00588  16.9k TC=0,0 
+R_R7         N00584 N00605  84.5k TC=0,0 
+V_V1         N00413 0 -3.6V
+V_V2         N00767 0 5V
+V_V3         0 N00817 0Vdc
+V_V4         N00869 0 1.4V
+R_R8         N00925 N00929  1G TC=0,0 
+
+**** RESUMING "Test OpAmp DC.cir" ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file ada4937.ind for library file ada4937.lib.
+
+INFO(ORPSIM-15422): Making new index file ada4937.ind for library file ada4937.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Dx         
+          IS   10.000000E-15 
+
+
+**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               PNP             
+       LEVEL    1            
+          IS    1.000000E-15 
+          BF  228            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF   10.000000E-12 
+          AF    1.07         
+          CN    2.2          
+           D     .52         
+
+
+**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.RX1        X_U1.RX2        
+  T_Measured   27              27            
+   T_Current  -70             -70            
+           R    1               1            
+
+
+**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00405)     .7222 (N00409)    -.4777 (N00413)   -3.6000 (N00467)    1.7007     
+
+(N00584)     .7205 (N00588)     .1201 (N00605)    1.0995 (N00767)    5.0000     
+
+(N00817)    0.0000 (N00869)    1.4000 (N00925)    1.7007 (N00929)    1.0995     
+
+(X_U1.2)     .7224 (X_U1.5)    1.4238 (X_U1.6)    1.4235 (X_U1.13)    2.1984    
+
+(X_U1.14)    2.8016                   (X_U1.70)    1.0995                       
+
+(X_U1.75)    1.7016                   (X_U1.76)    1.1009                       
+
+(X_U1.84)    1.2765                   (X_U1.85)     .9225                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6165                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.7007                      
+
+(X_U1.75a)    1.7016                  (X_U1.76a)    1.1009                      
+
+(X_U1.84b)    1.8777                  (X_U1.85b)    1.5237                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6161                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         3.695E-05
+    V_V2        -4.082E-02
+    V_V3         4.231E-02
+    V_V4         5.559E-06
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.528E-12
+    X_U1.Vlim   -2.756E-13
+    X_U1.Vlim-  -2.527E-03
+    X_U1.Vlim-B   2.129E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -2.250E-04
+    X_U1.VIOUT2  -2.295E-04
+    X_U1.VIOUT3   4.485E-06
+    X_U1.VO1b   -1.861E-13
+    X_U1.VO2b   -1.879E-13
+    X_U1.VIOUTB1  -2.215E-04
+    X_U1.VIOUTB2  -2.331E-04
+    X_U1.VIOUTB3   1.158E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.265E-13
+    X_U1.VI2     2.250E-04
+    X_U1.VIB1   -6.261E-13
+    X_U1.VIB2    2.215E-04
+    X_U1.Vfd+   -1.158E-05
+    X_U1.Vfd-   -4.485E-06
+    X_U1.Vbf1   -2.527E-03
+    X_U1.Vbf2   -1.803E-12
+
+    TOTAL POWER DISSIPATION   2.09E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .22
+

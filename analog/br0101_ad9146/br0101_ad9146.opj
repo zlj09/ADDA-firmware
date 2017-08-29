@@ -1,0 +1,191 @@
+(ExpressProject "br0101_ad9146"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File "G:\Cadence\SPB_17_0\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "G:\Cadence\SPB_17_0\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library"))
+      (File "f:\academic\fpga\br0101\development\dac\model\ad8000p.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "br0101_ad9146.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\br0101_ad9146-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\br0101_ad9146-pspicefiles\sine freq test\sine freq test.net"
+      (Type "Report"))
+    (File ".\br0101_ad9146-pspicefiles\switch test\switch test.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "F:\Academic\FPGA\BR0101\Development\DAC\model\ad8000p.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "F:\Academic\FPGA\BR0101\Development\DAC\model\ad8000p.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9146-pspicefiles\dc current sweep\bias.sim"
+        (DisplayName "DC Current Sweep-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9146-pspicefiles\sine freq test\sine freq test.sim"
+        (DisplayName "Sine Freq Test-Sine Freq Test")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\br0101_ad9146-pspicefiles\switch test\switch test.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9146-pspicefiles\switch test\switch test.sim"
+        (DisplayName "Switch Test-Switch Test")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (QbreakN
+      (FullPartName "QbreakN.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (ISIN
+      (FullPartName "ISIN.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (AD8000
+      (FullPartName "AD8000.Normal")
+      (LibraryName "F:\ACADEMIC\FPGA\BR0101\DEVELOPMENT\DAC\MODEL\AD8000P.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "LIBRARY\PSPICE")
+  (MPSSessionName "admin")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146.dsn")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146.dsn"
+         "Switch Test")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146.dsn"
+         "DC Current Sweep")
+      (Path "Design Resources"
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146.dsn"
+         "Sine Freq Test")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146.dsn"
+         "Sine Freq Test" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 385"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 844 0 424")
+        (Scroll "0 30")
+        (Zoom "100"))
+      (Path
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\BR0101_AD9146\BR0101_AD9146.DSN")
+      (Schematic "DC Current Sweep")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 26 870 26 450")
+        (Scroll "-12 30")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\BR0101_AD9146\BR0101_AD9146.DSN")
+      (Schematic "Switch Test")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 896 52 476")
+        (Scroll "0 0")
+        (Zoom "100"))
+      (Path
+         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\BR0101_AD9146\BR0101_AD9146.DSN")
+      (Schematic "Sine Freq Test")
+      (Page "PAGE1"))))

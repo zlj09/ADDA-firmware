@@ -1,0 +1,306 @@
+
+**** 08/28/17 16:51:55 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Sine Freq Test-Sine Freq Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Sine Fre
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Sine Freq Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ad8000p.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2500ns 500ns 10ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Sine Freq Test.net" 
+
+
+
+**** INCLUDING "Sine Freq Test.net" ****
+* source BR0101_AD9146
+V_V1         VCC 0 5V
+R_R4         N02990 VON  178 TC=0,0 
+V_V2         0 VDD 5V
+X_U1         N02720 N02608 VCC VDD VOP VCC AD8000 
+R_R3         0 N02990  66.5 TC=0,0 
+V_V3         N02798 0 1.2V
+X_U2         N02720 N02990 VCC VDD VON VCC AD8000 
+R_R2         N02608 VOP  178 TC=0,0 
+R_R1         0 N02608  66.5 TC=0,0 
+I_I1         0 N02608 DC 0Adc AC 0Aac
++SIN 10.8m 10.8m 4.4mega 0 0 0
+I_I2         0 N02990 DC 0Adc AC 0Aac
++SIN 10.8m 10.8m 4.4mega 0 0 180
+R_R5         N02798 N02720  10k TC=0,0 
+.PARAM  x=10m
+
+**** RESUMING "Sine Freq Test.cir" ****
+.END
+
+**** 08/28/17 16:51:55 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Sine Freq Test-Sine Freq Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Sine Fre
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1._D1_mod    X_U1._Diode     X_U1._D8_mod    X_U1._DI_mod    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          KF                                    1.000000E-09   20.000000E-09 
+
+
+               X_U2._D1_mod    X_U2._Diode     X_U2._D8_mod    X_U2._DI_mod    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          KF                                    1.000000E-09   20.000000E-09 
+
+
+**** 08/28/17 16:51:55 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Sine Freq Test-Sine Freq Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Sine Fre
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1._Q         X_U1._Q1        X_U2._Q         X_U2._Q1        
+               PNP             NPN             PNP             NPN             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF  100             100             100             100            
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.2             2.42            2.2             2.42         
+           D     .52             .87             .52             .87         
+
+
+**** 08/28/17 16:51:55 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Sine Freq Test-Sine Freq Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Sine Fre
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X1.SMOOTHSW 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_U2.X1.SMOOTHSW 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 08/28/17 16:51:55 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Sine Freq Test-Sine Freq Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Sine Fre
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    5.0000  (  VDD)   -5.0000  (  VON)    2.1237  (  VOP)    2.1237      
+
+(N02608)    1.1001 (N02720)    1.0991 (N02798)    1.2000 (N02990)    1.1001     
+
+(X_U1.3)    1.1001 (X_U1.4)    1.1001 (X_U1.5)    1.8863 (X_U1.6)     .3138     
+
+(X_U1.7)    2.1295 (X_U1.8)    3.3300 (X_U1.9)   -3.3300 (X_U2.3)    1.1001     
+
+(X_U2.4)    1.1001 (X_U2.5)    1.8863 (X_U2.6)     .3138 (X_U2.7)    2.1295     
+
+(X_U2.8)    3.3300 (X_U2.9)   -3.3300 (X_U1.10)    1.6787                       
+
+(X_U1.11)    2.1237                   (X_U1.12)    2.5687                       
+
+(X_U1.13)    2.1295                   (X_U1.14)    2.1295                       
+
+(X_U1.15)    2.1295                   (X_U1.16)    -.4820                       
+
+(X_U1.17)-272.6E-09                   (X_U1.18)    0.0000                       
+
+(X_U1.19)    0.0000                   (X_U1.20)-7.933E-06                       
+
+(X_U1.21)     .5300                   (X_U1.22)    0.0000                       
+
+(X_U1.23)-45.19E-06                   (X_U1.24)     .5750                       
+
+(X_U1.26)    0.0000                   (X_U1.27)    0.0000                       
+
+(X_U1.28)     .6000                   (X_U1.30)    1.0996                       
+
+(X_U1.34)   -3.5000                   (X_U1.40)     .7004                       
+
+(X_U1.43)    3.5000                   (X_U1.46)    2.5000                       
+
+(X_U1.47)    2.1237                   (X_U1.90)    5.0000                       
+
+(X_U1.91)   -5.0000                   (X_U1.98)    0.0000                       
+
+(X_U2.10)    1.6787                   (X_U2.11)    2.1237                       
+
+(X_U2.12)    2.5687                   (X_U2.13)    2.1295                       
+
+(X_U2.14)    2.1295                   (X_U2.15)    2.1295                       
+
+(X_U2.16)    -.4820                   (X_U2.17)-272.6E-09                       
+
+(X_U2.18)    0.0000                   (X_U2.19)    0.0000                       
+
+(X_U2.20)-7.933E-06                   (X_U2.21)     .5300                       
+
+(X_U2.22)    0.0000                   (X_U2.23)-45.19E-06                       
+
+(X_U2.24)     .5750                   (X_U2.26)    0.0000                       
+
+(X_U2.27)    0.0000                   (X_U2.28)     .6000                       
+
+(X_U2.30)    1.0996                   (X_U2.34)   -3.5000                       
+
+(X_U2.40)     .7004                   (X_U2.43)    3.5000                       
+
+(X_U2.46)    2.5000                   (X_U2.47)    2.1237                       
+
+(X_U2.90)    5.0000                   (X_U2.91)   -5.0000                       
+
+(X_U2.98)    0.0000                   (X_U1.X1.8)    1.0000                     
+
+(X_U2.X1.8)    1.0000                 (X_U1.Pdown)    5.0000                    
+
+(X_U1.VRVAR)     .0010                (X_U2.Pdown)    5.0000                    
+
+(X_U2.VRVAR)     .0010                (X_U1.X1.REF)    1.0000                   
+
+(X_U2.X1.REF)    1.0000               (X_U1.X1.REF1)    1.9000                  
+
+(X_U2.X1.REF1)    1.9000              (X_U1.XRout.106)    2.1237                
+
+(X_U1.XRout.301)     .0058            (X_U2.XRout.106)    2.1237                
+
+(X_U2.XRout.301)     .0058            
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.874E-02
+    V_V2        -1.572E-02
+    V_V3        -1.009E-05
+    X_U1.V1     -2.478E-06
+    X_U1.vsl    -1.239E-06
+    X_U1.Vcl1    1.211E-12
+    X_U1.Vcl2    5.469E-12
+    X_U1.vnoise1   7.933E-06
+    X_U1.vnoise2  -7.933E-06
+    X_U1.vnoise3   4.519E-05
+    X_U1.vnoise4  -4.519E-05
+    X_U1.vcur1   5.753E-03
+    X_U1.vcur2  -7.104E-13
+    X_U1.vo1     2.876E-03
+    X_U1.vo2     2.876E-03
+    X_U1.voc     5.753E-03
+    X_U1.Vcl3    3.705E-07
+    X_U1.Vcl4    2.374E-07
+    X_U1.Vcmm    4.813E-03
+    X_U1.Vcmp    4.810E-03
+    X_U1.Vh      0.000E+00
+    X_U1.Vt      0.000E+00
+    X_U2.V1     -2.478E-06
+    X_U2.vsl    -1.239E-06
+    X_U2.Vcl1    1.211E-12
+    X_U2.Vcl2    5.469E-12
+    X_U2.vnoise1   7.933E-06
+    X_U2.vnoise2  -7.933E-06
+    X_U2.vnoise3   4.519E-05
+    X_U2.vnoise4  -4.519E-05
+    X_U2.vcur1   5.753E-03
+    X_U2.vcur2  -7.104E-13
+    X_U2.vo1     2.876E-03
+    X_U2.vo2     2.876E-03
+    X_U2.voc     5.753E-03
+    X_U2.Vcl3    3.705E-07
+    X_U2.Vcl4    2.374E-07
+    X_U2.Vcmm    4.813E-03
+    X_U2.Vcmp    4.810E-03
+    X_U2.Vh      0.000E+00
+    X_U2.Vt      0.000E+00
+    X_U1.XRout.vsense   5.751E-03
+    X_U2.XRout.vsense   5.751E-03
+
+    TOTAL POWER DISSIPATION   2.43E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/28/17 16:51:55 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Sine Freq Test-Sine Freq Test"  [ F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\br0101_ad9146\br0101_ad9146-PSpiceFiles\Sine Fre
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .20
+

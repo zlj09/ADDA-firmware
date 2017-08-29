@@ -1,0 +1,13 @@
+* source BR0101_AD9146
+X_U1         N00780 N00686 VCC VDD VOP VCC AD8000 
+I_I1         0 N00686 DC {x}  
+I_I2         0 N00803 DC {20.16m - x}  
+R_R1         0 N00686  66.5 TC=0,0 
+R_R2         N00686 VOP  178 TC=0,0 
+R_R3         0 N00803  66.5 TC=0,0 
+R_R4         N00803 VON  178 TC=0,0 
+X_U2         N00780 N00803 VCC VDD VON VCC AD8000 
+V_V1         VCC 0 5V
+V_V2         0 VDD 5V
+V_V3         N00780 0 1.2V
+.PARAM  x=10m

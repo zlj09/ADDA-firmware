@@ -1,0 +1,16 @@
+* source BR0101_AD9146
+V_V1         VCC 0 5V
+R_R4         N02990 VON  178 TC=0,0 
+V_V2         0 VDD 5V
+X_U1         N02720 N02608 VCC VDD VOP VCC AD8000 
+R_R3         0 N02990  66.5 TC=0,0 
+V_V3         N02798 0 1.2V
+X_U2         N02720 N02990 VCC VDD VON VCC AD8000 
+R_R2         N02608 VOP  178 TC=0,0 
+R_R1         0 N02608  66.5 TC=0,0 
+I_I1         0 N02608 DC 0Adc AC 0Aac
++SIN 10.8m 10.8m 4.4mega 0 0 0
+I_I2         0 N02990 DC 0Adc AC 0Aac
++SIN 10.8m 10.8m 4.4mega 0 0 180
+R_R5         N02798 N02720  10k TC=0,0 
+.PARAM  x=10m

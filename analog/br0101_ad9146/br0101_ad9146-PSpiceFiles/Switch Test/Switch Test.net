@@ -1,0 +1,23 @@
+* source BR0101_AD9146
+I_I2         0 N02984 DC 20.16mA  
+X_U1         N02720 N02608 VCC VDD VOP PWRDN_N AD8000 
+R_R3         0 N02984  66.5 TC=0,0 
+I_I1         0 N02608 DC 0mA  
+R_R4         N02984 VON  178 TC=0,0 
+V_V1         VCC 0 5V
+V_V3         N04599 0 1.2V
+X_U2         N02720 N02984 VCC VDD VON N03020 AD8000 
+V_V2         0 VDD 5V
+R_R1         0 N02608  66.5 TC=0,0 
+R_R2         N02608 VOP  178 TC=0,0 
+Q_Q1         PWRDN_N N03759 0 QbreakN 
+R_R5         PWRDN_N VCC  4.7k TC=0,0 
+R_R6         N03759 ODAHV1PD  4.7k TC=0,0 
+R_R7         0 N03759  2.4k TC=0,0 
+R_R10         0 N04313  2.4k TC=0,0 
+R_R8         N03020 VCC  4.7k TC=0,0 
+R_R9         N04313 ODAHV1PD  4.7k TC=0,0 
+Q_Q2         N03020 N04313 0 QbreakN 
+V_V4         ODAHV1PD 0 5V
+R_R11         N04599 N02720  10k TC=0,0 
+.PARAM  x=10m
