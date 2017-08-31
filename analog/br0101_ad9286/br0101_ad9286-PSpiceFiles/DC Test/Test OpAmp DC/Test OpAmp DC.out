@@ -1,7 +1,7 @@
-
-**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+**** 08/30/17 09:46:33 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "DC Test-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\dc 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -26,11 +26,11 @@
 .TRAN  0 10ms 5ms 0.05ms 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
-.INC "..\SCHEMATIC1.net" 
+.INC "..\DC Test.net" 
 
 
 
-**** INCLUDING SCHEMATIC1.net ****
+**** INCLUDING "DC Test.net" ****
 * source BR0101_AD9286
 X_U1         N00605 N00467 N00584 N00405 N00767 N00817 N00925 N00929 N00869
 +  ADA4937 
@@ -49,16 +49,10 @@ R_R8         N00925 N00929  1G TC=0,0
 
 **** RESUMING "Test OpAmp DC.cir" ****
 .END
-
-INFO(ORPSIM-15423): Unable to find index file ada4937.ind for library file ada4937.lib.
-
-INFO(ORPSIM-15422): Making new index file ada4937.ind for library file ada4937.lib.
-
-Index has 1 entries from 1 file(s).
 
-**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 08/30/17 09:46:33 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+ ** Profile: "DC Test-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\dc 
 
 
  ****     Diode MODEL PARAMETERS
@@ -73,9 +67,9 @@ Index has 1 entries from 1 file(s).
           IS   10.000000E-15 
 
 
-**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 08/30/17 09:46:33 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+ ** Profile: "DC Test-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\dc 
 
 
  ****     BJT MODEL PARAMETERS
@@ -111,9 +105,9 @@ Index has 1 entries from 1 file(s).
            D     .52         
 
 
-**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 08/30/17 09:46:33 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+ ** Profile: "DC Test-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\dc 
 
 
  ****     Resistor MODEL PARAMETERS
@@ -130,9 +124,9 @@ Index has 1 entries from 1 file(s).
            R    1               1            
 
 
-**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 08/30/17 09:46:33 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+ ** Profile: "DC Test-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\dc 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -226,9 +220,9 @@ Index has 1 entries from 1 file(s).
 
           JOB CONCLUDED
 
-**** 08/29/17 17:54:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 08/30/17 09:46:33 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\
+ ** Profile: "DC Test-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\dc 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -238,5 +232,5 @@ Index has 1 entries from 1 file(s).
 
 
 
-  Total job time (using Solver 1)   =         .22
+  Total job time (using Solver 1)   =         .19
 

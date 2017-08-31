@@ -1,0 +1,51 @@
+
+**** 08/30/17 10:49:59 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Sin End  - Daul End Freq-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PS
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Freq Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 200 1kHz 1GHz
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Sin End  - Daul End Freq.net" 
+
+
+
+**** INCLUDING "Sin End  - Daul End Freq.net" ****
+* source BR0101_AD9286
+R_R9         N02125 N02084  33 TC=0,0 
+R_R10         N02084 N02070  100 TC=0,0 
+R_R8         N02054 N02070  33 TC=0,0 
+C_C1         N02084 N02070  4.7pF  TC=0,0 
+V_Vi         N02054 N02125 DC 0Vdc AC 3.6V 
+
+**** RESUMING "Freq Test.cir" ****
+.END
+
+ERROR(ORPSIM-15142): Node N02125 is floating
+
+ERROR(ORPSIM-15142): Node N02084 is floating
+
+ERROR(ORPSIM-15142): Node N02070 is floating
+
+ERROR(ORPSIM-15142): Node N02054 is floating
+

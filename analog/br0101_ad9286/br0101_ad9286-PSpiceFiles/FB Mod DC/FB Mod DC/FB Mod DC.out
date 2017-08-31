@@ -1,0 +1,197 @@
+
+**** 08/30/17 15:22:20 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod DC-FB Mod DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mo
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "FB Mod DC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vi -3.63V 3.57V 0.05V 
+.STEP LIN PARAM x 1700 2200 500 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\FB Mod DC.net" 
+
+
+
+**** INCLUDING "FB Mod DC.net" ****
+* source BR0101_AD9286
+V_V3         0 N02333 0Vdc
+R_R7         N02299 N02307  {x} TC=0,0 
+V_V2         N02523 0 5V
+R_R5         N02411 N02299  {x} TC=0,0 
+R_R6         0 N02411  16.8199k TC=0,0 
+R_R2         N02477 N02487  21k TC=0,0 
+R_R4         0 N02487  84.5k TC=0,0 
+V_V4         N02513 0 1.4V
+R_R1         N02487 N02383  {x} TC=0,0 
+R_R8         N02397 N02403  1G TC=0,0 
+R_R3         N02383 N02391  {x} TC=0,0 
+X_U1         N02307 N02391 N02299 N02383 N02523 N02333 N02397 N02403 N02513
++  ADA4937 
+V_Vi         N02477 0 0V
+.PARAM  x=200
+
+**** RESUMING "FB Mod DC.cir" ****
+.END
+
+**** 08/30/17 15:22:20 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod DC-FB Mod DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mo
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Dx         
+          IS   10.000000E-15 
+
+
+**** 08/30/17 15:22:20 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod DC-FB Mod DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mo
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               PNP             
+       LEVEL    1            
+          IS    1.000000E-15 
+          BF  228            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF   10.000000E-12 
+          AF    1.07         
+          CN    2.2          
+           D     .52         
+
+
+**** 08/30/17 15:22:20 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod DC-FB Mod DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mo
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.RX1        X_U1.RX2        
+  T_Measured   27              27            
+   T_Current  -70             -70            
+           R    1               1            
+
+
+Model-Specific Temperatures During Sweep  Param value = 1700
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+Model-Specific Temperatures During Sweep  Param value = 2200
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+
+          JOB CONCLUDED
+
+**** 08/30/17 15:22:20 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod DC-FB Mod DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mo
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM X =    2.2000E+03
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

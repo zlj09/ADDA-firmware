@@ -14,6 +14,21 @@
     (File ".\br0101_ad9286-pspicefiles\schematic1\schematic1.net"
       (Type "Report"))
     (File ".\br0101_ad9286-pspicefiles\opamp dc sweep\opamp dc sweep.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\dc test\dc test.net"
+      (Type "Report"))
+    (File
+       ".\br0101_ad9286-pspicefiles\sin end  - daul end freq\sin end  - daul end freq.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\basic test\basic test.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\fb mod\fb mod.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\fb mod dc\fb mod dc.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\new design dc\new design dc.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\plan a ac\plan a ac.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -21,11 +36,34 @@
          ".\br0101_ad9286-pspicefiles\dc test\test opamp dc.sim"
         (DisplayName "DC Test-Test OpAmp DC")
         (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\br0101_ad9286-pspicefiles\opamp dc sweep\test dc sweep.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\br0101_ad9286-pspicefiles\opamp dc sweep\test dc sweep.sim"
         (DisplayName "OpAmp DC Sweep-Test DC Sweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9286-pspicefiles\sin end  - daul end freq\freq test.sim"
+        (DisplayName "Sin End  - Daul End Freq-Freq Test")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9286-pspicefiles\basic test\basic test.sim"
+        (DisplayName "Basic Test-Basic Test")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9286-pspicefiles\fb mod\freq test.sim"
+        (DisplayName "FB Mod-Freq Test")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9286-pspicefiles\fb mod dc\fb mod dc.sim"
+        (DisplayName "FB Mod DC-FB Mod DC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9286-pspicefiles\plan a dc\dc sweep.sim"
+        (DisplayName "Plan A DC-DC Sweep")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\br0101_ad9286-pspicefiles\plan a ac\ac sweep.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9286-pspicefiles\plan a ac\ac sweep.sim"
+        (DisplayName "Plan A AC-AC Sweep")
         (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User)
@@ -38,6 +76,11 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (PARAM
       (FullPartName "PARAM.Normal")
       (LibraryName
@@ -48,14 +91,19 @@
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
-    (0
+    (C
+      (FullPartName "C.Normal")
       (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (ADA4937
       (FullPartName "ADA4937.Normal")
@@ -72,31 +120,28 @@
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn")
       (Path "Design Resources"
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
-         "OpAmp DC Sweep")
+         "Plan A AC")
       (Path "Design Resources"
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
-         "DC Test")
+         "Plan A DC")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Model Libraries")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "Design Resources"
-         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
-         "OpAmp DC Sweep" "PAGE1"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 385"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 385"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 156 1000 156 580")
-        (Scroll "-12 0")
+        (Placement "44 0 1 -1 -1 -8 -31 156 1000 156 580")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "F:\PROGRAMS\VERILOG\FPGA_GROUP\TEST_BR0101\ANALOG\BR0101_AD9286\BR0101_AD9286.DSN")
-      (Schematic "OpAmp DC Sweep")
+      (Schematic "Plan A AC")
       (Page "PAGE1"))))

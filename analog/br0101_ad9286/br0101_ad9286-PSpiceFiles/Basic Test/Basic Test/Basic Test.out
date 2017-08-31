@@ -1,0 +1,236 @@
+
+**** 08/30/17 11:02:59 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Basic Test-Basic Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Bas
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Basic Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 200 1kHz 10GHz
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Basic Test.net" 
+
+
+
+**** INCLUDING "Basic Test.net" ****
+* source BR0101_AD9286
+V_V2         N01656 0 5V
+X_U1         N01442 N01526 N01434 N01518 N01656 N01468 N01532 N01538 N01646
++  ADA4937 
+V_V4         N01646 0 2.5V
+R_R3         N01518 N01526  200 TC=0,0 
+R_R5         N01546 N01434  200 TC=0,0 
+R_R8         N01532 N01538  1G TC=0,0 
+R_R6         0 N01546  61.9 TC=0,0 
+V_V3         0 N01468 0Vdc
+R_R1         N01628 N01518  200 TC=0,0 
+R_R4         0 N01628  27.5 TC=0,0 
+R_R7         N01434 N01442  200 TC=0,0 
+R_R9         N01981 N01546  50 TC=0,0 
+V_V5         0 N01981 DC 0Vdc AC 1Vac 
+
+**** RESUMING "Basic Test.cir" ****
+.END
+
+**** 08/30/17 11:02:59 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Basic Test-Basic Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Bas
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Dx         
+          IS   10.000000E-15 
+
+
+**** 08/30/17 11:02:59 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Basic Test-Basic Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Bas
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               PNP             
+       LEVEL    1            
+          IS    1.000000E-15 
+          BF  228            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF   10.000000E-12 
+          AF    1.07         
+          CN    2.2          
+           D     .52         
+
+
+**** 08/30/17 11:02:59 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Basic Test-Basic Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Bas
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.RX1        X_U1.RX2        
+  T_Measured   27              27            
+   T_Current  -70             -70            
+           R    1               1            
+
+
+**** 08/30/17 11:02:59 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Basic Test-Basic Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Bas
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3130 (N01442)    2.4660 (N01468)    0.0000 (N01518)    1.3150     
+
+(N01526)    2.4705 (N01532)    2.4705 (N01538)    2.4660 (N01546)     .1595     
+
+(N01628)     .1590 (N01646)    2.5000 (N01656)    5.0000 (N01981)    0.0000     
+
+(X_U1.2)    1.3150 (X_U1.5)    2.0163 (X_U1.6)    2.0163 (X_U1.13)    2.4977    
+
+(X_U1.14)    2.5023                   (X_U1.70)    2.4660                       
+
+(X_U1.75)    2.5023                   (X_U1.76)    2.4977                       
+
+(X_U1.84)    2.6430                   (X_U1.85)    2.2890                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    2.4990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)     .6804                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    2.4705                      
+
+(X_U1.75a)    2.5023                  (X_U1.76a)    2.4978                      
+
+(X_U1.84b)    2.6475                  (X_U1.85b)    2.2935                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)     .6804                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -4.613E-02
+    V_V4         5.000E-09
+    V_V3         5.086E-02
+    V_V5        -3.190E-03
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   7.277E-13
+    X_U1.Vlim    7.323E-13
+    X_U1.Vlim-   7.278E-13
+    X_U1.Vlim-B   7.322E-13
+    X_U1.VOCMa   7.110E-13
+    X_U1.VOCMb   7.090E-13
+    X_U1.VO1    -1.553E-13
+    X_U1.VO2    -2.187E-13
+    X_U1.VIOUT1   2.655E-03
+    X_U1.VIOUT2  -3.110E-03
+    X_U1.VIOUT3   5.765E-03
+    X_U1.VO1b   -1.552E-13
+    X_U1.VO2b   -2.188E-13
+    X_U1.VIOUTB1   2.661E-03
+    X_U1.VIOUTB2  -3.116E-03
+    X_U1.VIOUTB3   5.778E-03
+    X_U1.Voffset   5.000E-09
+    X_U1.VI1     2.655E-03
+    X_U1.VI2    -6.904E-13
+    X_U1.VIB1    2.661E-03
+    X_U1.VIB2   -6.904E-13
+    X_U1.Vfd+   -5.778E-03
+    X_U1.Vfd-   -5.765E-03
+    X_U1.Vbf1   -4.441E-15
+    X_U1.Vbf2    4.441E-15
+
+    TOTAL POWER DISSIPATION   2.31E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/30/17 11:02:59 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Basic Test-Basic Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Bas
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

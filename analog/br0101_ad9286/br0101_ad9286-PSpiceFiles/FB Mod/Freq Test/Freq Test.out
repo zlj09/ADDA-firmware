@@ -1,0 +1,1467 @@
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Freq Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 200 10MegaHz 10GHz
+.STEP LIN PARAM x 200 400 20 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\FB Mod.net" 
+
+
+
+**** INCLUDING "FB Mod.net" ****
+* source BR0101_AD9286
+V_V3         0 N01468 0Vdc
+R_R3         N01518 N01526  {x} TC=0,0 
+R_R4         0 N01622  84.5k TC=0,0 
+R_R2         N01612 N01622  21k TC=0,0 
+R_R5         N01546 N01434  {x} TC=0,0 
+R_R7         N01434 N01442  {x} TC=0,0 
+V_V2         N01656 0 5V
+R_R1         N01622 N01518  {x} TC=0,0 
+R_R8         N01532 N01538  1G TC=0,0 
+V_V4         N01646 0 1.4V
+R_R6         0 N01546  16.9k TC=0,0 
+X_U1         N01442 N01526 N01434 N01518 N01656 N01468 N01532 N01538 N01646
++  ADA4937 
+V_V5         N01612 0 DC 0Vdc AC 3.6V 
+.PARAM  x=200
+
+**** RESUMING "Freq Test.cir" ****
+.END
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Dx         
+          IS   10.000000E-15 
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               PNP             
+       LEVEL    1            
+          IS    1.000000E-15 
+          BF  228            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF   10.000000E-12 
+          AF    1.07         
+          CN    2.2          
+           D     .52         
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.RX1        X_U1.RX2        
+  T_Measured   27              27            
+   T_Current  -70             -70            
+           R    1               1            
+
+
+Model-Specific Temperatures During Sweep  Param value = 200
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  200   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3818 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3838     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3656     
+
+(N01612)    0.0000 (N01622)    1.3675 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3838 (X_U1.5)    2.0851 (X_U1.6)    2.0851 (X_U1.13)    2.4990    
+
+(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.512E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.309E-08
+    X_U1.Vlim-  -2.500E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.882E-04
+    X_U1.VIOUT2  -2.664E-04
+    X_U1.VIOUT3   7.819E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.879E-04
+    X_U1.VIOUTB2  -2.666E-04
+    X_U1.VIOUTB3   7.868E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.219E-13
+    X_U1.VI2     1.882E-04
+    X_U1.VIB1   -6.219E-13
+    X_U1.VIB2    1.879E-04
+    X_U1.Vfd+   -7.868E-05
+    X_U1.Vfd-   -7.819E-05
+    X_U1.Vbf1   -2.500E-08
+    X_U1.Vbf2   -2.310E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 220
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  220   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3803 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3822     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3625     
+
+(N01612)    0.0000 (N01622)    1.3644 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3822 (X_U1.5)    2.0836 (X_U1.6)    2.0836 (X_U1.13)    2.4990    
+
+(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.497E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.309E-08
+    X_U1.Vlim-  -2.500E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.883E-04
+    X_U1.VIOUT2  -2.663E-04
+    X_U1.VIOUT3   7.800E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.880E-04
+    X_U1.VIOUTB2  -2.665E-04
+    X_U1.VIOUTB3   7.850E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.219E-13
+    X_U1.VI2     1.883E-04
+    X_U1.VIB1   -6.219E-13
+    X_U1.VIB2    1.880E-04
+    X_U1.Vfd+   -7.850E-05
+    X_U1.Vfd-   -7.800E-05
+    X_U1.Vbf1   -2.501E-08
+    X_U1.Vbf2   -2.309E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 240
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  240   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3788 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3807     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3595     
+
+(N01612)    0.0000 (N01622)    1.3613 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3807 (X_U1.5)    2.0820 (X_U1.6)    2.0820 (X_U1.13)    2.4990    
+
+(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.482E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.309E-08
+    X_U1.Vlim-  -2.501E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.884E-04
+    X_U1.VIOUT2  -2.662E-04
+    X_U1.VIOUT3   7.782E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.881E-04
+    X_U1.VIOUTB2  -2.664E-04
+    X_U1.VIOUTB3   7.831E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.219E-13
+    X_U1.VI2     1.884E-04
+    X_U1.VIB1   -6.219E-13
+    X_U1.VIB2    1.881E-04
+    X_U1.Vfd+   -7.831E-05
+    X_U1.Vfd-   -7.782E-05
+    X_U1.Vbf1   -2.501E-08
+    X_U1.Vbf2   -2.309E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 260
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  260   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3772 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3792     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3564     
+
+(N01612)    0.0000 (N01622)    1.3582 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3792 (X_U1.5)    2.0805 (X_U1.6)    2.0805 (X_U1.13)    2.4990    
+
+(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.468E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.308E-08
+    X_U1.Vlim-  -2.501E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.885E-04
+    X_U1.VIOUT2  -2.661E-04
+    X_U1.VIOUT3   7.764E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.882E-04
+    X_U1.VIOUTB2  -2.663E-04
+    X_U1.VIOUTB3   7.813E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.219E-13
+    X_U1.VI2     1.885E-04
+    X_U1.VIB1   -6.219E-13
+    X_U1.VIB2    1.882E-04
+    X_U1.Vfd+   -7.813E-05
+    X_U1.Vfd-   -7.764E-05
+    X_U1.Vbf1   -2.501E-08
+    X_U1.Vbf2   -2.308E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 280
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  280   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3757 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3777     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3533     
+
+(N01612)    0.0000 (N01622)    1.3551 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3777 (X_U1.5)    2.0790 (X_U1.6)    2.0790 (X_U1.13)    2.4990    
+
+(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.453E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.308E-08
+    X_U1.Vlim-  -2.502E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.885E-04
+    X_U1.VIOUT2  -2.660E-04
+    X_U1.VIOUT3   7.746E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.883E-04
+    X_U1.VIOUTB2  -2.662E-04
+    X_U1.VIOUTB3   7.795E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.219E-13
+    X_U1.VI2     1.885E-04
+    X_U1.VIB1   -6.219E-13
+    X_U1.VIB2    1.883E-04
+    X_U1.Vfd+   -7.795E-05
+    X_U1.Vfd-   -7.746E-05
+    X_U1.Vbf1   -2.502E-08
+    X_U1.Vbf2   -2.308E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 300
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  300   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3742 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3762     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3503     
+
+(N01612)    0.0000 (N01622)    1.3521 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3762 (X_U1.5)    2.0775 (X_U1.6)    2.0775 (X_U1.13)    2.4990    
+
+(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.438E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.307E-08
+    X_U1.Vlim-  -2.502E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.886E-04
+    X_U1.VIOUT2  -2.659E-04
+    X_U1.VIOUT3   7.728E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.884E-04
+    X_U1.VIOUTB2  -2.662E-04
+    X_U1.VIOUTB3   7.777E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.220E-13
+    X_U1.VI2     1.886E-04
+    X_U1.VIB1   -6.219E-13
+    X_U1.VIB2    1.884E-04
+    X_U1.Vfd+   -7.777E-05
+    X_U1.Vfd-   -7.728E-05
+    X_U1.Vbf1   -2.502E-08
+    X_U1.Vbf2   -2.308E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 320
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  320   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3728 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3747     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3472     
+
+(N01612)    0.0000 (N01622)    1.3490 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3747 (X_U1.5)    2.0760 (X_U1.6)    2.0760 (X_U1.13)    2.4989    
+
+(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.424E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.307E-08
+    X_U1.Vlim-  -2.503E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.887E-04
+    X_U1.VIOUT2  -2.658E-04
+    X_U1.VIOUT3   7.710E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.885E-04
+    X_U1.VIOUTB2  -2.661E-04
+    X_U1.VIOUTB3   7.758E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.220E-13
+    X_U1.VI2     1.887E-04
+    X_U1.VIB1   -6.219E-13
+    X_U1.VIB2    1.885E-04
+    X_U1.Vfd+   -7.758E-05
+    X_U1.Vfd-   -7.710E-05
+    X_U1.Vbf1   -2.503E-08
+    X_U1.Vbf2   -2.307E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 340
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  340   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3713 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3732     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3442     
+
+(N01612)    0.0000 (N01622)    1.3460 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3732 (X_U1.5)    2.0745 (X_U1.6)    2.0745 (X_U1.13)    2.4989    
+
+(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6120                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.410E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.307E-08
+    X_U1.Vlim-  -2.503E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.888E-04
+    X_U1.VIOUT2  -2.657E-04
+    X_U1.VIOUT3   7.692E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.886E-04
+    X_U1.VIOUTB2  -2.660E-04
+    X_U1.VIOUTB3   7.740E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.220E-13
+    X_U1.VI2     1.888E-04
+    X_U1.VIB1   -6.220E-13
+    X_U1.VIB2    1.886E-04
+    X_U1.Vfd+   -7.740E-05
+    X_U1.Vfd-   -7.692E-05
+    X_U1.Vbf1   -2.503E-08
+    X_U1.Vbf2   -2.307E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 360
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  360   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3698 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3717     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3412     
+
+(N01612)    0.0000 (N01622)    1.3430 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3717 (X_U1.5)    2.0731 (X_U1.6)    2.0731 (X_U1.13)    2.4989    
+
+(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6120                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.395E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.306E-08
+    X_U1.Vlim-  -2.504E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.889E-04
+    X_U1.VIOUT2  -2.656E-04
+    X_U1.VIOUT3   7.674E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.887E-04
+    X_U1.VIOUTB2  -2.659E-04
+    X_U1.VIOUTB3   7.723E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.220E-13
+    X_U1.VI2     1.889E-04
+    X_U1.VIB1   -6.220E-13
+    X_U1.VIB2    1.887E-04
+    X_U1.Vfd+   -7.723E-05
+    X_U1.Vfd-   -7.674E-05
+    X_U1.Vbf1   -2.504E-08
+    X_U1.Vbf2   -2.306E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 380
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  380   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3683 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3703     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3382     
+
+(N01612)    0.0000 (N01622)    1.3400 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3703 (X_U1.5)    2.0716 (X_U1.6)    2.0716 (X_U1.13)    2.4989    
+
+(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6120                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.381E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.306E-08
+    X_U1.Vlim-  -2.504E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.890E-04
+    X_U1.VIOUT2  -2.655E-04
+    X_U1.VIOUT3   7.654E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.888E-04
+    X_U1.VIOUTB2  -2.657E-04
+    X_U1.VIOUTB3   7.686E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.220E-13
+    X_U1.VI2     1.890E-04
+    X_U1.VIB1   -6.220E-13
+    X_U1.VIB2    1.888E-04
+    X_U1.Vfd+   -7.705E-05
+    X_U1.Vfd-   -7.656E-05
+    X_U1.Vbf1   -2.504E-08
+    X_U1.Vbf2   -2.306E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 400
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  400   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.3669 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3688     
+
+(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3352     
+
+(N01612)    0.0000 (N01622)    1.3370 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.3688 (X_U1.5)    2.0701 (X_U1.6)    2.0701 (X_U1.13)    2.4989    
+
+(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+
+(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+
+(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+
+(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+
+(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6120                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.985E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         6.367E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.305E-08
+    X_U1.Vlim-  -2.504E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.855E-13
+    X_U1.VO2    -1.885E-13
+    X_U1.VIOUT1  -1.891E-04
+    X_U1.VIOUT2  -2.655E-04
+    X_U1.VIOUT3   7.639E-05
+    X_U1.VO1b   -1.855E-13
+    X_U1.VO2b   -1.885E-13
+    X_U1.VIOUTB1  -1.888E-04
+    X_U1.VIOUTB2  -2.657E-04
+    X_U1.VIOUTB3   7.687E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.220E-13
+    X_U1.VI2     1.891E-04
+    X_U1.VIB1   -6.220E-13
+    X_U1.VIB2    1.888E-04
+    X_U1.Vfd+   -7.687E-05
+    X_U1.Vfd-   -7.639E-05
+    X_U1.Vbf1   -2.505E-08
+    X_U1.Vbf2   -2.306E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM X =  400   
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .53
+

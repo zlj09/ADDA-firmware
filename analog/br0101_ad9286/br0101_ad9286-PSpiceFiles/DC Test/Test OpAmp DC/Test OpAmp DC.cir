@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\SCHEMATIC1\Test OpAmp DC.sim ] 
+** Profile: "DC Test-Test OpAmp DC"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\dc test\test opamp dc.sim ] 
 
 ** Creating circuit file "Test OpAmp DC.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -14,7 +14,7 @@
 .TRAN  0 10ms 5ms 0.05ms 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
-.INC "..\SCHEMATIC1.net" 
+.INC "..\DC Test.net" 
 
 
 .END
