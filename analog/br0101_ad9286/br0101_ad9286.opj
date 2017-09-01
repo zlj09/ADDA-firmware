@@ -2,7 +2,9 @@
   (ProjectVersion "19981106")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
-    (Folder "Library")
+    (Folder "Library"
+      (File ".\models\ada4937_sim.olb"
+        (Type "Schematic Library")))
     (NoModify)
     (File ".\br0101_ad9286.dsn"
       (Type "Schematic Design"))
@@ -29,6 +31,10 @@
     (File ".\br0101_ad9286-pspicefiles\new design dc\new design dc.net"
       (Type "Report"))
     (File ".\br0101_ad9286-pspicefiles\plan a ac\plan a ac.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\plan b ac\plan b ac.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\plan b dc\plan b dc.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -60,11 +66,19 @@
          ".\br0101_ad9286-pspicefiles\plan a dc\dc sweep.sim"
         (DisplayName "Plan A DC-DC Sweep")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\br0101_ad9286-pspicefiles\plan a ac\ac sweep.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\br0101_ad9286-pspicefiles\plan a ac\ac sweep.sim"
         (DisplayName "Plan A AC-AC Sweep")
-        (Type "PSpice Profile")))
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9286-pspicefiles\plan b ac\freq test.sim"
+        (DisplayName "Plan B AC-Freq Test")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9286-pspicefiles\plan b dc\dc test.sim"
+        (DisplayName "Plan B DC-DC Test")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\br0101_ad9286-pspicefiles\fb mod\freq test.sim"))
     (Folder "Model Libraries"
       (Sort User)
       (File ".\models\ada4937.lib"
@@ -76,6 +90,30 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-R
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (ADA4937_sim
+      (FullPartName "ADA4937_sim.Normal")
+      (LibraryName
+         "F:\PROGRAMS\VERILOG\FPGA_GROUP\TEST_BR0101\ANALOG\BR0101_AD9286\MODELS\ADA4937_SIM.OLB")
+      (DeviceIndex "0"))
     (VAC
       (FullPartName "VAC.Normal")
       (LibraryName
@@ -86,24 +124,10 @@
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
       (DeviceIndex "0"))
-    (VDC
-      (FullPartName "VDC.Normal")
-      (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (0
-      (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (ADA4937
       (FullPartName "ADA4937.Normal")
@@ -123,7 +147,10 @@
          "Plan A AC")
       (Path "Design Resources"
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
-         "Plan A DC")
+         "Plan B DC")
+      (Path "Design Resources"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
+         "Plan B Sch")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Model Libraries")
@@ -133,15 +160,4 @@
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 0 200 0 385"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 156 1000 156 580")
-        (Scroll "0 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "F:\PROGRAMS\VERILOG\FPGA_GROUP\TEST_BR0101\ANALOG\BR0101_AD9286\BR0101_AD9286.DSN")
-      (Schematic "Plan A AC")
-      (Page "PAGE1"))))
+      (Tab 0))))

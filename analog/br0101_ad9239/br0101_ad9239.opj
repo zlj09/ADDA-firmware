@@ -1,0 +1,65 @@
+(ExpressProject "br0101_ad9239"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\br0101_ad9239.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\br0101_ad9239-pspicefiles\plan a ac\plan a ac.net"
+      (Type "Report"))
+    (File ".\br0101_ad9239-pspicefiles\plan a dc\plan a dc.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9239-pspicefiles\plan a ac\freq test.sim"
+        (DisplayName "Plan A AC-Freq Test")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\br0101_ad9239-pspicefiles\plan a dc\dc test.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9239-pspicefiles\plan a dc\dc test.sim"
+        (DisplayName "Plan A DC-DC Test")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "..\br0101_ad9286\models\ada4937.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\br0101_ad9286\models\ada4937.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9239\br0101_ad9239.dsn")
+      (Path "Design Resources"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9239\br0101_ad9239.dsn"
+         "Plan A DC")
+      (Path "Design Resources"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9239\br0101_ad9239.dsn"
+         "Plan A AC")
+      (Path "Design Resources"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9239\br0101_ad9239.dsn"
+         "Plan A Sch")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 385"))
+      (Tab 0))))

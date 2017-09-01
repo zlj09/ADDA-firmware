@@ -1,0 +1,53 @@
+
+**** 09/01/17 15:43:41 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan A AC-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9239\br0101_ad9239-PSpiceFiles\Plan 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Freq Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 200 10kHz 10GHz
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Plan A AC.net" 
+
+
+
+**** INCLUDING "Plan A AC.net" ****
+* source BR0101_AD9239
+R_R2         N04189 N04199  17.4k TC=0,0 
+V_V4         N04225 0 1.4V
+R_R3         N04091 N04099  3.9k TC=0,0 
+V_V3         0 N04041 0Vdc
+X_U1         N04015 N04099 N04007 N04091 N04235 N04041 VO+ VO- N04225 ADA4937 
+V_V5         N04189 0 DC 0Vdc AC 3.6V 
+R_R4         0 N04199  57.6k TC=0,0 
+R_R1         N04199 N04091  3.9k TC=0,0 
+R_R6         0 N04121  13.3k TC=0,0 
+V_V2         N04235 0 5V
+R_R5         N04121 N04007  3.9k TC=0,0 
+R_R7         N04007 N04015  3.9k TC=0,0 
+R_R8         VO+ VO-  1G TC=0,0 
+.PARAM  x=1
+
+**** RESUMING "Freq Test.cir" ****
+.END
+
+ERROR(ORPSIM-15108): Subcircuit ADA4937 used by X_U1 is undefined
+

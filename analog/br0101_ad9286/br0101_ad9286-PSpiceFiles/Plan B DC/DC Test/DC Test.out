@@ -1,0 +1,143 @@
+
+**** 09/01/17 13:59:24 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B DC-DC Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan B 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DC Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vi -3.63 3.57 0.05 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Plan B DC.net" 
+
+
+
+**** INCLUDING "Plan B DC.net" ****
+* source BR0101_AD9286
+R_R1         N05064 N04956  1k TC=0,0 
+R_R5         N04986 N04872  1k TC=0,0 
+V_V4         N05090 0 1.4V
+X_U1         N04880 N04964 N04872 N04956 N05100 N04906 VO+ VO- N05090 ADA4937 
+R_R2         N05054 N05064  4.75k TC=0,0 
+R_R8         VO+ VO-  1G TC=0,0 
+V_V2         N05100 0 5V
+R_R4         0 N05064  20k TC=0,0 
+R_R3         N04956 N04964  1k TC=0,0 
+R_R6         0 N04986  3.83k TC=0,0 
+V_V3         0 N04906 0Vdc
+R_R7         N04872 N04880  1k TC=0,0 
+V_Vi         N05054 0 0
+.PARAM  x=1
+
+**** RESUMING "DC Test.cir" ****
+.END
+
+**** 09/01/17 13:59:24 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B DC-DC Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan B 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Dx         
+          IS   10.000000E-15 
+
+
+**** 09/01/17 13:59:24 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B DC-DC Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan B 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               PNP             
+       LEVEL    1            
+          IS    1.000000E-15 
+          BF  228            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF   10.000000E-12 
+          AF    1.07         
+          CN    2.2          
+           D     .52         
+
+
+**** 09/01/17 13:59:24 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B DC-DC Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan B 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.RX1        X_U1.RX2        
+  T_Measured   27              27            
+   T_Current  -70             -70            
+           R    1               1            
+
+
+
+          JOB CONCLUDED
+
+**** 09/01/17 13:59:24 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B DC-DC Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan B 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

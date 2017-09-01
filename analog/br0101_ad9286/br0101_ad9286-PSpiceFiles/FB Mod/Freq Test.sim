@@ -3,7 +3,7 @@
 @Settings: 2 1
 @General:
 ProfileName= "Freq Test" 
-ProfileFile= "Freq Test.sim" 
+ProfileFile= "freq test.sim" 
 Connectivity= "FB Mod.net" 
 NetlistFile= "Freq Test.cir" 
 DataFile= "Freq Test.dat" 
@@ -68,8 +68,8 @@ SaveFile 0 ""
 +2 "" 
 +3 "" 
 +4 "200" 
-+5 "400" 
-+6 "20" 
++5 "4200" 
++6 "250" 
 +7 "" 
 @End Analysis
 @Analysis: 6 0
@@ -130,7 +130,7 @@ SaveFile 0 ""
 @End Analysis
 @Analysis: 17 0
 +0 "-1" 
-+1 "" 
++1 "-1" 
 +2 "-1" 
 +3 "-1" 
 +4 "1" 

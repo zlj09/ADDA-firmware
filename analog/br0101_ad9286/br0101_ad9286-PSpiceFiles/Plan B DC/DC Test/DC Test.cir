@@ -1,0 +1,20 @@
+** Profile: "Plan B DC-DC Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan B DC\DC Test.sim ] 
+
+** Creating circuit file "DC Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vi -3.63 3.57 0.05 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Plan B DC.net" 
+
+
+.END

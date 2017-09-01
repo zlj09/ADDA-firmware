@@ -1,0 +1,15 @@
+* source BR0101_AD9286
+X_U1         N04015 N04099 N04007 N04091 N04235 N04041 VO+ VO- N04225 ADA4937 
+R_R6         0 N04121  3.83k TC=0,0 
+V_V3         0 N04041 0Vdc
+R_R4         0 N04199  20k TC=0,0 
+V_V2         N04235 0 5V
+R_R7         N04007 N04015  1k TC=0,0 
+V_V5         N04189 0 DC 0Vdc AC 3.6V 
+R_R5         N04121 N04007  1k TC=0,0 
+R_R2         N04189 N04199  4.75k TC=0,0 
+R_R3         N04091 N04099  1k TC=0,0 
+V_V4         N04225 0 1.4V
+R_R1         N04199 N04091  1k TC=0,0 
+R_R8         VO+ VO-  1G TC=0,0 
+.PARAM  x=1

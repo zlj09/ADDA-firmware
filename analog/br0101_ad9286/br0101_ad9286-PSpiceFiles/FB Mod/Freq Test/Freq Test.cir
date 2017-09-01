@@ -1,4 +1,4 @@
-** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\Freq Test.sim ] 
+** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\freq test.sim ] 
 
 ** Creating circuit file "Freq Test.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -12,7 +12,7 @@
 
 *Analysis directives: 
 .AC DEC 200 10MegaHz 10GHz
-.STEP LIN PARAM x 200 400 20 
+.STEP LIN PARAM x 200 4200 250 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\FB Mod.net" 

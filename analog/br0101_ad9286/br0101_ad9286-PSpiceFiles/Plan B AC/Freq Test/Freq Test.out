@@ -1,0 +1,236 @@
+
+**** 09/01/17 13:54:37 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B AC-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Freq Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../models/ada4937.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 200 10kHz 10GHz
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Plan B AC.net" 
+
+
+
+**** INCLUDING "Plan B AC.net" ****
+* source BR0101_AD9286
+X_U1         N04015 N04099 N04007 N04091 N04235 N04041 VO+ VO- N04225 ADA4937 
+R_R6         0 N04121  3.83k TC=0,0 
+V_V3         0 N04041 0Vdc
+R_R4         0 N04199  20k TC=0,0 
+V_V2         N04235 0 5V
+R_R7         N04007 N04015  1k TC=0,0 
+V_V5         N04189 0 DC 0Vdc AC 3.6V 
+R_R5         N04121 N04007  1k TC=0,0 
+R_R2         N04189 N04199  4.75k TC=0,0 
+R_R3         N04091 N04099  1k TC=0,0 
+V_V4         N04225 0 1.4V
+R_R1         N04199 N04091  1k TC=0,0 
+R_R8         VO+ VO-  1G TC=0,0 
+.PARAM  x=1
+
+**** RESUMING "Freq Test.cir" ****
+.END
+
+**** 09/01/17 13:54:37 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B AC-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Dx         
+          IS   10.000000E-15 
+
+
+**** 09/01/17 13:54:37 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B AC-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               PNP             
+       LEVEL    1            
+          IS    1.000000E-15 
+          BF  228            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF   10.000000E-12 
+          AF    1.07         
+          CN    2.2          
+           D     .52         
+
+
+**** 09/01/17 13:54:37 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B AC-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.RX1        X_U1.RX2        
+  T_Measured   27              27            
+   T_Current  -70             -70            
+           R    1               1            
+
+
+**** 09/01/17 13:54:37 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B AC-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VO+)    1.3986  (  VO-)    1.3966  (N04007)    1.1592 (N04015)    1.3966     
+
+(N04041)    0.0000 (N04091)    1.1612 (N04099)    1.3986 (N04121)     .9192     
+
+(N04189)    0.0000 (N04199)     .9212 (N04225)    1.4000 (N04235)    5.0000     
+
+(X_U1.2)    1.1612 (X_U1.5)    1.8625 (X_U1.6)    1.8625 (X_U1.13)    2.4990    
+
+(X_U1.14)    2.5010                   (X_U1.70)    1.3966                       
+
+(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+
+(X_U1.84)    1.5736                   (X_U1.85)    1.2196                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.5977                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3986                      
+
+(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+
+(X_U1.84b)    1.5756                  (X_U1.85b)    1.2216                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.5977                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         4.001E-02
+    V_V2        -4.082E-02
+    V_V5         1.939E-04
+    V_V4         5.559E-06
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.315E-08
+    X_U1.Vlim-  -2.494E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.846E-13
+    X_U1.VO2    -1.894E-13
+    X_U1.VIOUT1  -1.086E-04
+    X_U1.VIOUT2  -3.460E-04
+    X_U1.VIOUT3   2.374E-04
+    X_U1.VO1b   -1.846E-13
+    X_U1.VO2b   -1.894E-13
+    X_U1.VIOUTB1  -1.086E-04
+    X_U1.VIOUTB2  -3.460E-04
+    X_U1.VIOUTB3   2.374E-04
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.077E-13
+    X_U1.VI2     1.086E-04
+    X_U1.VIB1   -6.077E-13
+    X_U1.VIB2    1.086E-04
+    X_U1.Vfd+   -2.374E-04
+    X_U1.Vfd-   -2.374E-04
+    X_U1.Vbf1   -2.495E-08
+    X_U1.Vbf2   -2.315E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/01/17 13:54:37 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Plan B AC-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .19
+

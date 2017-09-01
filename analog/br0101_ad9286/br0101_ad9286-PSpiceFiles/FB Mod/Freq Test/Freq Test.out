@@ -1,7 +1,7 @@
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     CIRCUIT DESCRIPTION
@@ -24,7 +24,7 @@
 
 *Analysis directives: 
 .AC DEC 200 10MegaHz 10GHz
-.STEP LIN PARAM x 200 400 20 
+.STEP LIN PARAM x 200 4200 250 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\FB Mod.net" 
@@ -35,15 +35,15 @@
 * source BR0101_AD9286
 V_V3         0 N01468 0Vdc
 R_R3         N01518 N01526  {x} TC=0,0 
-R_R4         0 N01622  84.5k TC=0,0 
-R_R2         N01612 N01622  21k TC=0,0 
+R_R4         0 N01622  22.1k TC=0,0 
+R_R2         N01612 N01622  84.5k TC=0,0 
 R_R5         N01546 N01434  {x} TC=0,0 
 R_R7         N01434 N01442  {x} TC=0,0 
 V_V2         N01656 0 5V
 R_R1         N01622 N01518  {x} TC=0,0 
 R_R8         N01532 N01538  1G TC=0,0 
 V_V4         N01646 0 1.4V
-R_R6         0 N01546  16.9k TC=0,0 
+R_R6         0 N01546  17.4k TC=0,0 
 X_U1         N01442 N01526 N01434 N01518 N01656 N01468 N01532 N01538 N01646
 +  ADA4937 
 V_V5         N01612 0 DC 0Vdc AC 3.6V 
@@ -52,9 +52,9 @@ V_V5         N01612 0 DC 0Vdc AC 3.6V
 **** RESUMING "Freq Test.cir" ****
 .END
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     Diode MODEL PARAMETERS
@@ -69,9 +69,9 @@ V_V5         N01612 0 DC 0Vdc AC 3.6V
           IS   10.000000E-15 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     BJT MODEL PARAMETERS
@@ -107,9 +107,9 @@ V_V5         N01612 0 DC 0Vdc AC 3.6V
            D     .52         
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     Resistor MODEL PARAMETERS
@@ -151,9 +151,9 @@ Model-Specific Temperatures During Sweep  Param value = 200
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -168,19 +168,19 @@ Model-Specific Temperatures During Sweep  Param value = 200
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3818 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3838     
+(N01434)    1.3824 (N01442)    1.3976 (N01468)    0.0000 (N01518)    1.3843     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3656     
+(N01526)    1.3994 (N01532)    1.3994 (N01538)    1.3976 (N01546)    1.3667     
 
-(N01612)    0.0000 (N01622)    1.3675 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.3687 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3838 (X_U1.5)    2.0851 (X_U1.6)    2.0851 (X_U1.13)    2.4990    
+(X_U1.2)    1.3843 (X_U1.5)    2.0856 (X_U1.6)    2.0856 (X_U1.13)    2.4991    
 
-(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5009                   (X_U1.70)    1.3976                       
 
-(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+(X_U1.75)    1.4009                   (X_U1.76)    1.3991                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5746                   (X_U1.85)    1.2206                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -188,13 +188,13 @@ Model-Specific Temperatures During Sweep  Param value = 200
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6121                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3994                      
 
-(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+(X_U1.75a)    1.4009                  (X_U1.76a)    1.3991                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5764                  (X_U1.85b)    1.2224                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -202,7 +202,7 @@ Model-Specific Temperatures During Sweep  Param value = 200
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6121                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -215,38 +215,38 @@ Model-Specific Temperatures During Sweep  Param value = 200
     V_V3         3.985E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.512E-05
+    V_V5         1.620E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.309E-08
-    X_U1.Vlim-  -2.500E-08
+    X_U1.Vlim   -2.318E-08
+    X_U1.Vlim-  -2.491E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
     X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.882E-04
-    X_U1.VIOUT2  -2.664E-04
-    X_U1.VIOUT3   7.819E-05
+    X_U1.VIOUT1  -1.893E-04
+    X_U1.VIOUT2  -2.652E-04
+    X_U1.VIOUT3   7.592E-05
     X_U1.VO1b   -1.855E-13
     X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.879E-04
-    X_U1.VIOUTB2  -2.666E-04
-    X_U1.VIOUTB3   7.868E-05
+    X_U1.VIOUTB1  -1.895E-04
+    X_U1.VIOUTB2  -2.650E-04
+    X_U1.VIOUTB3   7.551E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.219E-13
-    X_U1.VI2     1.882E-04
-    X_U1.VIB1   -6.219E-13
-    X_U1.VIB2    1.879E-04
-    X_U1.Vfd+   -7.868E-05
-    X_U1.Vfd-   -7.819E-05
-    X_U1.Vbf1   -2.500E-08
-    X_U1.Vbf2   -2.310E-08
+    X_U1.VI1    -6.221E-13
+    X_U1.VI2     1.893E-04
+    X_U1.VIB1   -6.221E-13
+    X_U1.VIB2    1.895E-04
+    X_U1.Vfd+   -7.551E-05
+    X_U1.Vfd-   -7.592E-05
+    X_U1.Vbf1   -2.491E-08
+    X_U1.Vbf2   -2.318E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 220
+Model-Specific Temperatures During Sweep  Param value = 450
 
  **** RESISTORS
 
@@ -271,14 +271,14 @@ Model-Specific Temperatures During Sweep  Param value = 220
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  220   
+ ****     CURRENT STEP                     PARAM X =  450   
 
 
 ******************************************************************************
@@ -288,19 +288,19 @@ Model-Specific Temperatures During Sweep  Param value = 220
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3803 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3822     
+(N01434)    1.3644 (N01442)    1.3976 (N01468)    0.0000 (N01518)    1.3663     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3625     
+(N01526)    1.3994 (N01532)    1.3994 (N01538)    1.3976 (N01546)    1.3300     
 
-(N01612)    0.0000 (N01622)    1.3644 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.3321 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3822 (X_U1.5)    2.0836 (X_U1.6)    2.0836 (X_U1.13)    2.4990    
+(X_U1.2)    1.3663 (X_U1.5)    2.0677 (X_U1.6)    2.0677 (X_U1.13)    2.4991    
 
-(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5009                   (X_U1.70)    1.3976                       
 
-(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+(X_U1.75)    1.4009                   (X_U1.76)    1.3991                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5746                   (X_U1.85)    1.2206                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -308,13 +308,13 @@ Model-Specific Temperatures During Sweep  Param value = 220
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6122                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3994                      
 
-(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+(X_U1.75a)    1.4009                  (X_U1.76a)    1.3991                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5764                  (X_U1.85b)    1.2224                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -322,7 +322,7 @@ Model-Specific Temperatures During Sweep  Param value = 220
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6122                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -335,38 +335,38 @@ Model-Specific Temperatures During Sweep  Param value = 220
     V_V3         3.985E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.497E-05
+    V_V5         1.576E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.309E-08
-    X_U1.Vlim-  -2.500E-08
+    X_U1.Vlim   -2.322E-08
+    X_U1.Vlim-  -2.486E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
     X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.883E-04
-    X_U1.VIOUT2  -2.663E-04
-    X_U1.VIOUT3   7.800E-05
+    X_U1.VIOUT1  -1.904E-04
+    X_U1.VIOUT2  -2.642E-04
+    X_U1.VIOUT3   7.382E-05
     X_U1.VO1b   -1.855E-13
     X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.880E-04
-    X_U1.VIOUTB2  -2.665E-04
-    X_U1.VIOUTB3   7.850E-05
+    X_U1.VIOUTB1  -1.906E-04
+    X_U1.VIOUTB2  -2.640E-04
+    X_U1.VIOUTB3   7.342E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.219E-13
-    X_U1.VI2     1.883E-04
-    X_U1.VIB1   -6.219E-13
-    X_U1.VIB2    1.880E-04
-    X_U1.Vfd+   -7.850E-05
-    X_U1.Vfd-   -7.800E-05
-    X_U1.Vbf1   -2.501E-08
-    X_U1.Vbf2   -2.309E-08
+    X_U1.VI1    -6.222E-13
+    X_U1.VI2     1.904E-04
+    X_U1.VIB1   -6.222E-13
+    X_U1.VIB2    1.906E-04
+    X_U1.Vfd+   -7.342E-05
+    X_U1.Vfd-   -7.382E-05
+    X_U1.Vbf1   -2.487E-08
+    X_U1.Vbf2   -2.322E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 240
+Model-Specific Temperatures During Sweep  Param value = 700
 
  **** RESISTORS
 
@@ -391,14 +391,14 @@ Model-Specific Temperatures During Sweep  Param value = 240
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  240   
+ ****     CURRENT STEP                     PARAM X =  700   
 
 
 ******************************************************************************
@@ -408,19 +408,19 @@ Model-Specific Temperatures During Sweep  Param value = 240
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3788 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3807     
+(N01434)    1.3474 (N01442)    1.3977 (N01468)    0.0000 (N01518)    1.3493     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3595     
+(N01526)    1.3993 (N01532)    1.3993 (N01538)    1.3977 (N01546)    1.2953     
 
-(N01612)    0.0000 (N01622)    1.3613 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.2975 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3807 (X_U1.5)    2.0820 (X_U1.6)    2.0820 (X_U1.13)    2.4990    
+(X_U1.2)    1.3493 (X_U1.5)    2.0507 (X_U1.6)    2.0507 (X_U1.13)    2.4992    
 
-(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5008                   (X_U1.70)    1.3977                       
 
-(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+(X_U1.75)    1.4008                   (X_U1.76)    1.3992                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5747                   (X_U1.85)    1.2207                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -428,13 +428,13 @@ Model-Specific Temperatures During Sweep  Param value = 240
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6123                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3993                      
 
-(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+(X_U1.75a)    1.4008                  (X_U1.76a)    1.3992                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5763                  (X_U1.85b)    1.2223                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -442,7 +442,7 @@ Model-Specific Temperatures During Sweep  Param value = 240
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6124                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -452,41 +452,41 @@ Model-Specific Temperatures During Sweep  Param value = 240
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.984E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.482E-05
+    V_V5         1.535E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.309E-08
-    X_U1.Vlim-  -2.501E-08
+    X_U1.Vlim   -2.326E-08
+    X_U1.Vlim-  -2.482E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
     X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.884E-04
-    X_U1.VIOUT2  -2.662E-04
-    X_U1.VIOUT3   7.782E-05
+    X_U1.VIOUT1  -1.914E-04
+    X_U1.VIOUT2  -2.632E-04
+    X_U1.VIOUT3   7.182E-05
     X_U1.VO1b   -1.855E-13
     X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.881E-04
-    X_U1.VIOUTB2  -2.664E-04
-    X_U1.VIOUTB3   7.831E-05
+    X_U1.VIOUTB1  -1.916E-04
+    X_U1.VIOUTB2  -2.630E-04
+    X_U1.VIOUTB3   7.144E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.219E-13
-    X_U1.VI2     1.884E-04
-    X_U1.VIB1   -6.219E-13
-    X_U1.VIB2    1.881E-04
-    X_U1.Vfd+   -7.831E-05
-    X_U1.Vfd-   -7.782E-05
-    X_U1.Vbf1   -2.501E-08
-    X_U1.Vbf2   -2.309E-08
+    X_U1.VI1    -6.223E-13
+    X_U1.VI2     1.914E-04
+    X_U1.VIB1   -6.224E-13
+    X_U1.VIB2    1.916E-04
+    X_U1.Vfd+   -7.144E-05
+    X_U1.Vfd-   -7.182E-05
+    X_U1.Vbf1   -2.482E-08
+    X_U1.Vbf2   -2.326E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 260
+Model-Specific Temperatures During Sweep  Param value = 950
 
  **** RESISTORS
 
@@ -511,14 +511,14 @@ Model-Specific Temperatures During Sweep  Param value = 260
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  260   
+ ****     CURRENT STEP                     PARAM X =  950   
 
 
 ******************************************************************************
@@ -528,19 +528,19 @@ Model-Specific Temperatures During Sweep  Param value = 260
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3772 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3792     
+(N01434)    1.3313 (N01442)    1.3977 (N01468)    0.0000 (N01518)    1.3332     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3564     
+(N01526)    1.3993 (N01532)    1.3993 (N01538)    1.3977 (N01546)    1.2624     
 
-(N01612)    0.0000 (N01622)    1.3582 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.2646 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3792 (X_U1.5)    2.0805 (X_U1.6)    2.0805 (X_U1.13)    2.4990    
+(X_U1.2)    1.3332 (X_U1.5)    2.0346 (X_U1.6)    2.0346 (X_U1.13)    2.4992    
 
-(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5008                   (X_U1.70)    1.3977                       
 
-(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+(X_U1.75)    1.4008                   (X_U1.76)    1.3992                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5747                   (X_U1.85)    1.2207                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -548,13 +548,13 @@ Model-Specific Temperatures During Sweep  Param value = 260
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6125                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3993                      
 
-(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+(X_U1.75a)    1.4008                  (X_U1.76a)    1.3992                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5763                  (X_U1.85b)    1.2223                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -562,7 +562,7 @@ Model-Specific Temperatures During Sweep  Param value = 260
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6125                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -572,41 +572,41 @@ Model-Specific Temperatures During Sweep  Param value = 260
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.984E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.468E-05
+    V_V5         1.497E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.308E-08
-    X_U1.Vlim-  -2.501E-08
+    X_U1.Vlim   -2.329E-08
+    X_U1.Vlim-  -2.479E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
     X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.885E-04
-    X_U1.VIOUT2  -2.661E-04
-    X_U1.VIOUT3   7.764E-05
+    X_U1.VIOUT1  -1.923E-04
+    X_U1.VIOUT2  -2.622E-04
+    X_U1.VIOUT3   6.993E-05
     X_U1.VO1b   -1.855E-13
     X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.882E-04
-    X_U1.VIOUTB2  -2.663E-04
-    X_U1.VIOUTB3   7.813E-05
+    X_U1.VIOUTB1  -1.925E-04
+    X_U1.VIOUTB2  -2.621E-04
+    X_U1.VIOUTB3   6.957E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.219E-13
-    X_U1.VI2     1.885E-04
-    X_U1.VIB1   -6.219E-13
-    X_U1.VIB2    1.882E-04
-    X_U1.Vfd+   -7.813E-05
-    X_U1.Vfd-   -7.764E-05
-    X_U1.Vbf1   -2.501E-08
-    X_U1.Vbf2   -2.308E-08
+    X_U1.VI1    -6.225E-13
+    X_U1.VI2     1.923E-04
+    X_U1.VIB1   -6.225E-13
+    X_U1.VIB2    1.925E-04
+    X_U1.Vfd+   -6.957E-05
+    X_U1.Vfd-   -6.993E-05
+    X_U1.Vbf1   -2.479E-08
+    X_U1.Vbf2   -2.330E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 280
+Model-Specific Temperatures During Sweep  Param value = 1200
 
  **** RESISTORS
 
@@ -631,14 +631,14 @@ Model-Specific Temperatures During Sweep  Param value = 280
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  280   
+ ****     CURRENT STEP                     PARAM X =    1.2000E+03
 
 
 ******************************************************************************
@@ -648,19 +648,19 @@ Model-Specific Temperatures During Sweep  Param value = 280
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3757 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3777     
+(N01434)    1.3160 (N01442)    1.3978 (N01468)    0.0000 (N01518)    1.3179     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3533     
+(N01526)    1.3993 (N01532)    1.3993 (N01538)    1.3978 (N01546)    1.2311     
 
-(N01612)    0.0000 (N01622)    1.3551 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.2335 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3777 (X_U1.5)    2.0790 (X_U1.6)    2.0790 (X_U1.13)    2.4990    
+(X_U1.2)    1.3179 (X_U1.5)    2.0193 (X_U1.6)    2.0193 (X_U1.13)    2.4992    
 
-(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5008                   (X_U1.70)    1.3978                       
 
-(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+(X_U1.75)    1.4008                   (X_U1.76)    1.3992                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5748                   (X_U1.85)    1.2208                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -668,13 +668,13 @@ Model-Specific Temperatures During Sweep  Param value = 280
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6119                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6126                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3993                      
 
-(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+(X_U1.75a)    1.4008                  (X_U1.76a)    1.3992                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5763                  (X_U1.85b)    1.2223                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -682,7 +682,7 @@ Model-Specific Temperatures During Sweep  Param value = 280
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6126                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -692,41 +692,41 @@ Model-Specific Temperatures During Sweep  Param value = 280
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.984E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.453E-05
+    V_V5         1.460E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.308E-08
-    X_U1.Vlim-  -2.502E-08
+    X_U1.Vlim   -2.333E-08
+    X_U1.Vlim-  -2.475E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
     X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.885E-04
-    X_U1.VIOUT2  -2.660E-04
-    X_U1.VIOUT3   7.746E-05
+    X_U1.VIOUT1  -1.932E-04
+    X_U1.VIOUT2  -2.613E-04
+    X_U1.VIOUT3   6.813E-05
     X_U1.VO1b   -1.855E-13
     X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.883E-04
-    X_U1.VIOUTB2  -2.662E-04
-    X_U1.VIOUTB3   7.795E-05
+    X_U1.VIOUTB1  -1.934E-04
+    X_U1.VIOUTB2  -2.612E-04
+    X_U1.VIOUTB3   6.779E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.219E-13
-    X_U1.VI2     1.885E-04
-    X_U1.VIB1   -6.219E-13
-    X_U1.VIB2    1.883E-04
-    X_U1.Vfd+   -7.795E-05
-    X_U1.Vfd-   -7.746E-05
-    X_U1.Vbf1   -2.502E-08
-    X_U1.Vbf2   -2.308E-08
+    X_U1.VI1    -6.226E-13
+    X_U1.VI2     1.932E-04
+    X_U1.VIB1   -6.226E-13
+    X_U1.VIB2    1.934E-04
+    X_U1.Vfd+   -6.779E-05
+    X_U1.Vfd-   -6.813E-05
+    X_U1.Vbf1   -2.475E-08
+    X_U1.Vbf2   -2.333E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 300
+Model-Specific Temperatures During Sweep  Param value = 1450
 
  **** RESISTORS
 
@@ -751,14 +751,14 @@ Model-Specific Temperatures During Sweep  Param value = 300
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  300   
+ ****     CURRENT STEP                     PARAM X =    1.4500E+03
 
 
 ******************************************************************************
@@ -768,19 +768,19 @@ Model-Specific Temperatures During Sweep  Param value = 300
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3742 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3762     
+(N01434)    1.3015 (N01442)    1.3978 (N01468)    0.0000 (N01518)    1.3034     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3503     
+(N01526)    1.3993 (N01532)    1.3993 (N01538)    1.3978 (N01546)    1.2014     
 
-(N01612)    0.0000 (N01622)    1.3521 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.2038 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3762 (X_U1.5)    2.0775 (X_U1.6)    2.0775 (X_U1.13)    2.4990    
+(X_U1.2)    1.3034 (X_U1.5)    2.0048 (X_U1.6)    2.0048 (X_U1.13)    2.4993    
 
-(X_U1.14)    2.5010                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5007                   (X_U1.70)    1.3978                       
 
-(X_U1.75)    1.4010                   (X_U1.76)    1.3990                       
+(X_U1.75)    1.4007                   (X_U1.76)    1.3993                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5748                   (X_U1.85)    1.2208                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -788,13 +788,13 @@ Model-Specific Temperatures During Sweep  Param value = 300
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6127                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3993                      
 
-(X_U1.75a)    1.4010                  (X_U1.76a)    1.3990                      
+(X_U1.75a)    1.4007                  (X_U1.76a)    1.3993                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5763                  (X_U1.85b)    1.2223                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -802,7 +802,7 @@ Model-Specific Temperatures During Sweep  Param value = 300
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6127                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -812,41 +812,41 @@ Model-Specific Temperatures During Sweep  Param value = 300
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.984E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.438E-05
+    V_V5         1.425E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.307E-08
-    X_U1.Vlim-  -2.502E-08
+    X_U1.Vlim   -2.336E-08
+    X_U1.Vlim-  -2.472E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
     X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.886E-04
-    X_U1.VIOUT2  -2.659E-04
-    X_U1.VIOUT3   7.728E-05
+    X_U1.VIOUT1  -1.940E-04
+    X_U1.VIOUT2  -2.606E-04
+    X_U1.VIOUT3   6.658E-05
     X_U1.VO1b   -1.855E-13
     X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.884E-04
-    X_U1.VIOUTB2  -2.662E-04
-    X_U1.VIOUTB3   7.777E-05
+    X_U1.VIOUTB1  -1.943E-04
+    X_U1.VIOUTB2  -2.602E-04
+    X_U1.VIOUTB3   6.594E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.220E-13
-    X_U1.VI2     1.886E-04
-    X_U1.VIB1   -6.219E-13
-    X_U1.VIB2    1.884E-04
-    X_U1.Vfd+   -7.777E-05
-    X_U1.Vfd-   -7.728E-05
-    X_U1.Vbf1   -2.502E-08
-    X_U1.Vbf2   -2.308E-08
+    X_U1.VI1    -6.227E-13
+    X_U1.VI2     1.940E-04
+    X_U1.VIB1   -6.227E-13
+    X_U1.VIB2    1.943E-04
+    X_U1.Vfd+   -6.610E-05
+    X_U1.Vfd-   -6.642E-05
+    X_U1.Vbf1   -2.472E-08
+    X_U1.Vbf2   -2.336E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 320
+Model-Specific Temperatures During Sweep  Param value = 1700
 
  **** RESISTORS
 
@@ -871,14 +871,14 @@ Model-Specific Temperatures During Sweep  Param value = 320
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  320   
+ ****     CURRENT STEP                     PARAM X =    1.7000E+03
 
 
 ******************************************************************************
@@ -888,19 +888,19 @@ Model-Specific Temperatures During Sweep  Param value = 320
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3728 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3747     
+(N01434)    1.2877 (N01442)    1.3978 (N01468)    0.0000 (N01518)    1.2896     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3472     
+(N01526)    1.3993 (N01532)    1.3993 (N01538)    1.3978 (N01546)    1.1731     
 
-(N01612)    0.0000 (N01622)    1.3490 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.1756 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3747 (X_U1.5)    2.0760 (X_U1.6)    2.0760 (X_U1.13)    2.4989    
+(X_U1.2)    1.2896 (X_U1.5)    1.9910 (X_U1.6)    1.9910 (X_U1.13)    2.4993    
 
-(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5007                   (X_U1.70)    1.3978                       
 
-(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+(X_U1.75)    1.4007                   (X_U1.76)    1.3993                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5748                   (X_U1.85)    1.2208                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -908,13 +908,13 @@ Model-Specific Temperatures During Sweep  Param value = 320
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6128                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3993                      
 
-(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+(X_U1.75a)    1.4007                  (X_U1.76a)    1.3993                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5763                  (X_U1.85b)    1.2223                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -922,7 +922,7 @@ Model-Specific Temperatures During Sweep  Param value = 320
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6119                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6128                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -932,41 +932,41 @@ Model-Specific Temperatures During Sweep  Param value = 320
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.984E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.424E-05
+    V_V5         1.391E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.307E-08
-    X_U1.Vlim-  -2.503E-08
+    X_U1.Vlim   -2.338E-08
+    X_U1.Vlim-  -2.469E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
-    X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.887E-04
-    X_U1.VIOUT2  -2.658E-04
-    X_U1.VIOUT3   7.710E-05
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -1.949E-04
+    X_U1.VIOUT2  -2.597E-04
+    X_U1.VIOUT3   6.480E-05
     X_U1.VO1b   -1.855E-13
-    X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.885E-04
-    X_U1.VIOUTB2  -2.661E-04
-    X_U1.VIOUTB3   7.758E-05
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -1.950E-04
+    X_U1.VIOUTB2  -2.595E-04
+    X_U1.VIOUTB3   6.448E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.220E-13
-    X_U1.VI2     1.887E-04
-    X_U1.VIB1   -6.219E-13
-    X_U1.VIB2    1.885E-04
-    X_U1.Vfd+   -7.758E-05
-    X_U1.Vfd-   -7.710E-05
-    X_U1.Vbf1   -2.503E-08
-    X_U1.Vbf2   -2.307E-08
+    X_U1.VI1    -6.228E-13
+    X_U1.VI2     1.949E-04
+    X_U1.VIB1   -6.228E-13
+    X_U1.VIB2    1.950E-04
+    X_U1.Vfd+   -6.448E-05
+    X_U1.Vfd-   -6.480E-05
+    X_U1.Vbf1   -2.470E-08
+    X_U1.Vbf2   -2.338E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 340
+Model-Specific Temperatures During Sweep  Param value = 1950
 
  **** RESISTORS
 
@@ -991,14 +991,14 @@ Model-Specific Temperatures During Sweep  Param value = 340
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  340   
+ ****     CURRENT STEP                     PARAM X =    1.9500E+03
 
 
 ******************************************************************************
@@ -1008,19 +1008,19 @@ Model-Specific Temperatures During Sweep  Param value = 340
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3713 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3732     
+(N01434)    1.2745 (N01442)    1.3979 (N01468)    0.0000 (N01518)    1.2765     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3442     
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3979 (N01546)    1.1461     
 
-(N01612)    0.0000 (N01622)    1.3460 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.1486 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3732 (X_U1.5)    2.0745 (X_U1.6)    2.0745 (X_U1.13)    2.4989    
+(X_U1.2)    1.2765 (X_U1.5)    1.9778 (X_U1.6)    1.9778 (X_U1.13)    2.4993    
 
-(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5007                   (X_U1.70)    1.3979                       
 
-(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+(X_U1.75)    1.4007                   (X_U1.76)    1.3993                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5749                   (X_U1.85)    1.2209                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -1028,13 +1028,13 @@ Model-Specific Temperatures During Sweep  Param value = 340
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6129                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
 
-(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+(X_U1.75a)    1.4007                  (X_U1.76a)    1.3993                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -1042,7 +1042,7 @@ Model-Specific Temperatures During Sweep  Param value = 340
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6120                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6129                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -1052,41 +1052,41 @@ Model-Specific Temperatures During Sweep  Param value = 340
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.983E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.410E-05
+    V_V5         1.359E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.307E-08
-    X_U1.Vlim-  -2.503E-08
+    X_U1.Vlim   -2.340E-08
+    X_U1.Vlim-  -2.467E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
-    X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.888E-04
-    X_U1.VIOUT2  -2.657E-04
-    X_U1.VIOUT3   7.692E-05
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -1.956E-04
+    X_U1.VIOUT2  -2.589E-04
+    X_U1.VIOUT3   6.325E-05
     X_U1.VO1b   -1.855E-13
-    X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.886E-04
-    X_U1.VIOUTB2  -2.660E-04
-    X_U1.VIOUTB3   7.740E-05
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -1.958E-04
+    X_U1.VIOUTB2  -2.587E-04
+    X_U1.VIOUTB3   6.295E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.220E-13
-    X_U1.VI2     1.888E-04
-    X_U1.VIB1   -6.220E-13
-    X_U1.VIB2    1.886E-04
-    X_U1.Vfd+   -7.740E-05
-    X_U1.Vfd-   -7.692E-05
-    X_U1.Vbf1   -2.503E-08
-    X_U1.Vbf2   -2.307E-08
+    X_U1.VI1    -6.229E-13
+    X_U1.VI2     1.956E-04
+    X_U1.VIB1   -6.229E-13
+    X_U1.VIB2    1.958E-04
+    X_U1.Vfd+   -6.295E-05
+    X_U1.Vfd-   -6.325E-05
+    X_U1.Vbf1   -2.467E-08
+    X_U1.Vbf2   -2.341E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 360
+Model-Specific Temperatures During Sweep  Param value = 2200
 
  **** RESISTORS
 
@@ -1111,14 +1111,14 @@ Model-Specific Temperatures During Sweep  Param value = 360
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  360   
+ ****     CURRENT STEP                     PARAM X =    2.2000E+03
 
 
 ******************************************************************************
@@ -1128,19 +1128,19 @@ Model-Specific Temperatures During Sweep  Param value = 360
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3698 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3717     
+(N01434)    1.2620 (N01442)    1.3979 (N01468)    0.0000 (N01518)    1.2640     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3412     
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3979 (N01546)    1.1204     
 
-(N01612)    0.0000 (N01622)    1.3430 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.1229 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3717 (X_U1.5)    2.0731 (X_U1.6)    2.0731 (X_U1.13)    2.4989    
+(X_U1.2)    1.2640 (X_U1.5)    1.9653 (X_U1.6)    1.9653 (X_U1.13)    2.4993    
 
-(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5007                   (X_U1.70)    1.3979                       
 
-(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+(X_U1.75)    1.4007                   (X_U1.76)    1.3993                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5749                   (X_U1.85)    1.2209                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -1148,13 +1148,13 @@ Model-Specific Temperatures During Sweep  Param value = 360
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6130                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
 
-(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+(X_U1.75a)    1.4007                  (X_U1.76a)    1.3993                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -1162,7 +1162,7 @@ Model-Specific Temperatures During Sweep  Param value = 360
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6120                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6130                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -1172,41 +1172,41 @@ Model-Specific Temperatures During Sweep  Param value = 360
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.983E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.395E-05
+    V_V5         1.329E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.306E-08
-    X_U1.Vlim-  -2.504E-08
+    X_U1.Vlim   -2.343E-08
+    X_U1.Vlim-  -2.465E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
     X_U1.VO1    -1.855E-13
-    X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.889E-04
-    X_U1.VIOUT2  -2.656E-04
-    X_U1.VIOUT3   7.674E-05
-    X_U1.VO1b   -1.855E-13
-    X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.887E-04
-    X_U1.VIOUTB2  -2.659E-04
-    X_U1.VIOUTB3   7.723E-05
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -1.964E-04
+    X_U1.VIOUT2  -2.582E-04
+    X_U1.VIOUT3   6.177E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -1.965E-04
+    X_U1.VIOUTB2  -2.580E-04
+    X_U1.VIOUTB3   6.148E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.220E-13
-    X_U1.VI2     1.889E-04
-    X_U1.VIB1   -6.220E-13
-    X_U1.VIB2    1.887E-04
-    X_U1.Vfd+   -7.723E-05
-    X_U1.Vfd-   -7.674E-05
-    X_U1.Vbf1   -2.504E-08
-    X_U1.Vbf2   -2.306E-08
+    X_U1.VI1    -6.230E-13
+    X_U1.VI2     1.964E-04
+    X_U1.VIB1   -6.230E-13
+    X_U1.VIB2    1.965E-04
+    X_U1.Vfd+   -6.148E-05
+    X_U1.Vfd-   -6.177E-05
+    X_U1.Vbf1   -2.465E-08
+    X_U1.Vbf2   -2.343E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 380
+Model-Specific Temperatures During Sweep  Param value = 2450
 
  **** RESISTORS
 
@@ -1231,14 +1231,14 @@ Model-Specific Temperatures During Sweep  Param value = 380
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  380   
+ ****     CURRENT STEP                     PARAM X =    2.4500E+03
 
 
 ******************************************************************************
@@ -1248,19 +1248,19 @@ Model-Specific Temperatures During Sweep  Param value = 380
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3683 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3703     
+(N01434)    1.2501 (N01442)    1.3979 (N01468)    0.0000 (N01518)    1.2520     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3382     
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3979 (N01546)    1.0958     
 
-(N01612)    0.0000 (N01622)    1.3400 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.0984 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3703 (X_U1.5)    2.0716 (X_U1.6)    2.0716 (X_U1.13)    2.4989    
+(X_U1.2)    1.2520 (X_U1.5)    1.9533 (X_U1.6)    1.9533 (X_U1.13)    2.4994    
 
-(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5006                   (X_U1.70)    1.3979                       
 
-(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+(X_U1.75)    1.4006                   (X_U1.76)    1.3994                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5749                   (X_U1.85)    1.2209                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -1268,13 +1268,13 @@ Model-Specific Temperatures During Sweep  Param value = 380
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6131                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
 
-(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+(X_U1.75a)    1.4006                  (X_U1.76a)    1.3994                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -1282,7 +1282,7 @@ Model-Specific Temperatures During Sweep  Param value = 380
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6120                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6131                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -1292,41 +1292,41 @@ Model-Specific Temperatures During Sweep  Param value = 380
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.983E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.381E-05
+    V_V5         1.300E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.306E-08
-    X_U1.Vlim-  -2.504E-08
+    X_U1.Vlim   -2.345E-08
+    X_U1.Vlim-  -2.463E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
-    X_U1.VO1    -1.855E-13
-    X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.890E-04
-    X_U1.VIOUT2  -2.655E-04
-    X_U1.VIOUT3   7.654E-05
-    X_U1.VO1b   -1.855E-13
-    X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.888E-04
-    X_U1.VIOUTB2  -2.657E-04
-    X_U1.VIOUTB3   7.686E-05
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -1.971E-04
+    X_U1.VIOUT2  -2.575E-04
+    X_U1.VIOUT3   6.036E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -1.973E-04
+    X_U1.VIOUTB2  -2.572E-04
+    X_U1.VIOUTB3   5.995E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.220E-13
-    X_U1.VI2     1.890E-04
-    X_U1.VIB1   -6.220E-13
-    X_U1.VIB2    1.888E-04
-    X_U1.Vfd+   -7.705E-05
-    X_U1.Vfd-   -7.656E-05
-    X_U1.Vbf1   -2.504E-08
-    X_U1.Vbf2   -2.306E-08
+    X_U1.VI1    -6.231E-13
+    X_U1.VI2     1.971E-04
+    X_U1.VIB1   -6.231E-13
+    X_U1.VIB2    1.973E-04
+    X_U1.Vfd+   -6.008E-05
+    X_U1.Vfd-   -6.036E-05
+    X_U1.Vbf1   -2.463E-08
+    X_U1.Vbf2   -2.345E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
 
-Model-Specific Temperatures During Sweep  Param value = 400
+Model-Specific Temperatures During Sweep  Param value = 2700
 
  **** RESISTORS
 
@@ -1351,14 +1351,14 @@ Model-Specific Temperatures During Sweep  Param value = 400
 
 
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
- ****     CURRENT STEP                     PARAM X =  400   
+ ****     CURRENT STEP                     PARAM X =    2.7000E+03
 
 
 ******************************************************************************
@@ -1368,19 +1368,19 @@ Model-Specific Temperatures During Sweep  Param value = 400
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01434)    1.3669 (N01442)    1.3974 (N01468)    0.0000 (N01518)    1.3688     
+(N01434)    1.2386 (N01442)    1.3980 (N01468)    0.0000 (N01518)    1.2406     
 
-(N01526)    1.3995 (N01532)    1.3995 (N01538)    1.3974 (N01546)    1.3352     
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3980 (N01546)    1.0723     
 
-(N01612)    0.0000 (N01622)    1.3370 (N01646)    1.4000 (N01656)    5.0000     
+(N01612)    0.0000 (N01622)    1.0749 (N01646)    1.4000 (N01656)    5.0000     
 
-(X_U1.2)    1.3688 (X_U1.5)    2.0701 (X_U1.6)    2.0701 (X_U1.13)    2.4989    
+(X_U1.2)    1.2406 (X_U1.5)    1.9419 (X_U1.6)    1.9419 (X_U1.13)    2.4994    
 
-(X_U1.14)    2.5011                   (X_U1.70)    1.3974                       
+(X_U1.14)    2.5006                   (X_U1.70)    1.3980                       
 
-(X_U1.75)    1.4011                   (X_U1.76)    1.3989                       
+(X_U1.75)    1.4006                   (X_U1.76)    1.3994                       
 
-(X_U1.84)    1.5744                   (X_U1.85)    1.2204                       
+(X_U1.84)    1.5750                   (X_U1.85)    1.2210                       
 
 (X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
 
@@ -1388,13 +1388,13 @@ Model-Specific Temperatures During Sweep  Param value = 400
 
 (X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
 
-(X_U1.400)    -.6120                  (X_U1.401)    0.0000                      
+(X_U1.400)    -.6132                  (X_U1.401)    0.0000                      
 
-(X_U1.402)    0.0000                  (X_U1.70b)    1.3995                      
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
 
-(X_U1.75a)    1.4011                  (X_U1.76a)    1.3989                      
+(X_U1.75a)    1.4006                  (X_U1.76a)    1.3994                      
 
-(X_U1.84b)    1.5765                  (X_U1.85b)    1.2225                      
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
 
 (X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
 
@@ -1402,7 +1402,7 @@ Model-Specific Temperatures During Sweep  Param value = 400
 
 (X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
 
-(X_U1.400B)    -.6120                 (X_U1.401B)    0.0000                     
+(X_U1.400B)    -.6132                 (X_U1.401B)    0.0000                     
 
 (X_U1.402B)    0.0000                 
 
@@ -1412,36 +1412,756 @@ Model-Specific Temperatures During Sweep  Param value = 400
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3         3.985E-02
+    V_V3         3.983E-02
     V_V2        -4.082E-02
     V_V4         5.559E-06
-    V_V5         6.367E-05
+    V_V5         1.272E-05
     X_U1.vos    -2.620E-06
     X_U1.Vlim+   1.829E-12
-    X_U1.Vlim   -2.305E-08
-    X_U1.Vlim-  -2.504E-08
+    X_U1.Vlim   -2.346E-08
+    X_U1.Vlim-  -2.461E-08
     X_U1.Vlim-B   1.831E-12
     X_U1.VOCMa   1.811E-12
     X_U1.VOCMb  -5.412E-08
-    X_U1.VO1    -1.855E-13
-    X_U1.VO2    -1.885E-13
-    X_U1.VIOUT1  -1.891E-04
-    X_U1.VIOUT2  -2.655E-04
-    X_U1.VIOUT3   7.639E-05
-    X_U1.VO1b   -1.855E-13
-    X_U1.VO2b   -1.885E-13
-    X_U1.VIOUTB1  -1.888E-04
-    X_U1.VIOUTB2  -2.657E-04
-    X_U1.VIOUTB3   7.687E-05
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -1.978E-04
+    X_U1.VIOUT2  -2.568E-04
+    X_U1.VIOUT3   5.900E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -1.979E-04
+    X_U1.VIOUTB2  -2.566E-04
+    X_U1.VIOUTB3   5.874E-05
     X_U1.Voffset   5.559E-06
-    X_U1.VI1    -6.220E-13
-    X_U1.VI2     1.891E-04
-    X_U1.VIB1   -6.220E-13
-    X_U1.VIB2    1.888E-04
-    X_U1.Vfd+   -7.687E-05
-    X_U1.Vfd-   -7.639E-05
-    X_U1.Vbf1   -2.505E-08
-    X_U1.Vbf2   -2.306E-08
+    X_U1.VI1    -6.232E-13
+    X_U1.VI2     1.978E-04
+    X_U1.VIB1   -6.232E-13
+    X_U1.VIB2    1.979E-04
+    X_U1.Vfd+   -5.874E-05
+    X_U1.Vfd-   -5.900E-05
+    X_U1.Vbf1   -2.461E-08
+    X_U1.Vbf2   -2.346E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 2950
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =    2.9500E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.2277 (N01442)    1.3980 (N01468)    0.0000 (N01518)    1.2297     
+
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3980 (N01546)    1.0498     
+
+(N01612)    0.0000 (N01622)    1.0525 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.2297 (X_U1.5)    1.9310 (X_U1.6)    1.9310 (X_U1.13)    2.4994    
+
+(X_U1.14)    2.5006                   (X_U1.70)    1.3980                       
+
+(X_U1.75)    1.4006                   (X_U1.76)    1.3994                       
+
+(X_U1.84)    1.5750                   (X_U1.85)    1.2210                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6133                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
+
+(X_U1.75a)    1.4006                  (X_U1.76a)    1.3994                      
+
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6133                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.983E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         1.246E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.348E-08
+    X_U1.Vlim-  -2.459E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -1.984E-04
+    X_U1.VIOUT2  -2.561E-04
+    X_U1.VIOUT3   5.771E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -1.985E-04
+    X_U1.VIOUTB2  -2.560E-04
+    X_U1.VIOUTB3   5.746E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.233E-13
+    X_U1.VI2     1.984E-04
+    X_U1.VIB1   -6.233E-13
+    X_U1.VIB2    1.985E-04
+    X_U1.Vfd+   -5.746E-05
+    X_U1.Vfd-   -5.771E-05
+    X_U1.Vbf1   -2.459E-08
+    X_U1.Vbf2   -2.348E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 3200
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =    3.2000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.2173 (N01442)    1.3980 (N01468)    0.0000 (N01518)    1.2192     
+
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3980 (N01546)    1.0282     
+
+(N01612)    0.0000 (N01622)    1.0309 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.2192 (X_U1.5)    1.9206 (X_U1.6)    1.9206 (X_U1.13)    2.4994    
+
+(X_U1.14)    2.5006                   (X_U1.70)    1.3980                       
+
+(X_U1.75)    1.4006                   (X_U1.76)    1.3994                       
+
+(X_U1.84)    1.5750                   (X_U1.85)    1.2210                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6133                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
+
+(X_U1.75a)    1.4006                  (X_U1.76a)    1.3994                      
+
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6134                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.983E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         1.220E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.349E-08
+    X_U1.Vlim-  -2.458E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -1.990E-04
+    X_U1.VIOUT2  -2.555E-04
+    X_U1.VIOUT3   5.647E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -1.992E-04
+    X_U1.VIOUTB2  -2.554E-04
+    X_U1.VIOUTB3   5.623E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.233E-13
+    X_U1.VI2     1.990E-04
+    X_U1.VIB1   -6.234E-13
+    X_U1.VIB2    1.992E-04
+    X_U1.Vfd+   -5.623E-05
+    X_U1.Vfd-   -5.647E-05
+    X_U1.Vbf1   -2.458E-08
+    X_U1.Vbf2   -2.349E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 3450
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =    3.4500E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.2073 (N01442)    1.3980 (N01468)    0.0000 (N01518)    1.2092     
+
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3980 (N01546)    1.0075     
+
+(N01612)    0.0000 (N01622)    1.0103 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.2092 (X_U1.5)    1.9106 (X_U1.6)    1.9106 (X_U1.13)    2.4994    
+
+(X_U1.14)    2.5006                   (X_U1.70)    1.3980                       
+
+(X_U1.75)    1.4006                   (X_U1.76)    1.3994                       
+
+(X_U1.84)    1.5750                   (X_U1.85)    1.2210                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6134                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
+
+(X_U1.75a)    1.4006                  (X_U1.76a)    1.3994                      
+
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6134                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.983E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         1.196E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.350E-08
+    X_U1.Vlim-  -2.456E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -1.996E-04
+    X_U1.VIOUT2  -2.549E-04
+    X_U1.VIOUT3   5.528E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -1.997E-04
+    X_U1.VIOUTB2  -2.548E-04
+    X_U1.VIOUTB3   5.505E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.234E-13
+    X_U1.VI2     1.996E-04
+    X_U1.VIB1   -6.234E-13
+    X_U1.VIB2    1.997E-04
+    X_U1.Vfd+   -5.505E-05
+    X_U1.Vfd-   -5.528E-05
+    X_U1.Vbf1   -2.457E-08
+    X_U1.Vbf2   -2.351E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 3700
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =    3.7000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.1977 (N01442)    1.3980 (N01468)    0.0000 (N01518)    1.1997     
+
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3980 (N01546)     .9877     
+
+(N01612)    0.0000 (N01622)     .9905 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.1997 (X_U1.5)    1.9010 (X_U1.6)    1.9010 (X_U1.13)    2.4994    
+
+(X_U1.14)    2.5006                   (X_U1.70)    1.3980                       
+
+(X_U1.75)    1.4006                   (X_U1.76)    1.3994                       
+
+(X_U1.84)    1.5750                   (X_U1.85)    1.2210                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6135                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
+
+(X_U1.75a)    1.4006                  (X_U1.76a)    1.3994                      
+
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6135                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.983E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         1.172E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.352E-08
+    X_U1.Vlim-  -2.455E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -2.002E-04
+    X_U1.VIOUT2  -2.543E-04
+    X_U1.VIOUT3   5.414E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -2.003E-04
+    X_U1.VIOUTB2  -2.542E-04
+    X_U1.VIOUTB3   5.392E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.235E-13
+    X_U1.VI2     2.002E-04
+    X_U1.VIB1   -6.235E-13
+    X_U1.VIB2    2.003E-04
+    X_U1.Vfd+   -5.392E-05
+    X_U1.Vfd-   -5.414E-05
+    X_U1.Vbf1   -2.455E-08
+    X_U1.Vbf2   -2.352E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 3950
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =    3.9500E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.1885 (N01442)    1.3981 (N01468)    0.0000 (N01518)    1.1905     
+
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3981 (N01546)     .9686     
+
+(N01612)    0.0000 (N01622)     .9714 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.1905 (X_U1.5)    1.8918 (X_U1.6)    1.8918 (X_U1.13)    2.4995    
+
+(X_U1.14)    2.5005                   (X_U1.70)    1.3981                       
+
+(X_U1.75)    1.4005                   (X_U1.76)    1.3995                       
+
+(X_U1.84)    1.5751                   (X_U1.85)    1.2211                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6136                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
+
+(X_U1.75a)    1.4005                  (X_U1.76a)    1.3995                      
+
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6136                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.982E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         1.150E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.353E-08
+    X_U1.Vlim-  -2.454E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -2.007E-04
+    X_U1.VIOUT2  -2.538E-04
+    X_U1.VIOUT3   5.307E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -2.008E-04
+    X_U1.VIOUTB2  -2.537E-04
+    X_U1.VIOUTB3   5.291E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.236E-13
+    X_U1.VI2     2.007E-04
+    X_U1.VIB1   -6.236E-13
+    X_U1.VIB2    2.008E-04
+    X_U1.Vfd+   -5.283E-05
+    X_U1.Vfd-   -5.305E-05
+    X_U1.Vbf1   -2.454E-08
+    X_U1.Vbf2   -2.353E-08
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 4200
+
+ **** RESISTORS
+
+               X_U1.r11 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                              X_U1.r12 <X_U1.RX1> (T_Current -70 T_Measured 27)
+                                             X_U1.RP1 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        2.500E+05      2.500E+05      1.000E+00  
+
+
+               X_U1.RP2 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO30 <X_U1.RX2> (T_Current -70 T_Measured 27)
+                                             X_U1.RO31 <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.000E+00      1.100E+01      1.100E+01  
+
+
+               X_U1.RO30b <X_U1.RX2> (T_Current -70 T_Measured 27)
+                              X_U1.RO31b <X_U1.RX2> (T_Current -70 T_Measured 27)
+
+          R        1.100E+01      1.100E+01  
+
+
+
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =    4.2000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01434)    1.1797 (N01442)    1.3981 (N01468)    0.0000 (N01518)    1.1816     
+
+(N01526)    1.3992 (N01532)    1.3992 (N01538)    1.3981 (N01546)     .9503     
+
+(N01612)    0.0000 (N01622)     .9531 (N01646)    1.4000 (N01656)    5.0000     
+
+(X_U1.2)    1.1816 (X_U1.5)    1.8830 (X_U1.6)    1.8830 (X_U1.13)    2.4995    
+
+(X_U1.14)    2.5005                   (X_U1.70)    1.3981                       
+
+(X_U1.75)    1.4005                   (X_U1.76)    1.3995                       
+
+(X_U1.84)    1.5751                   (X_U1.85)    1.2211                       
+
+(X_U1.98)    2.5000                   (X_U1.100)    1.3990                      
+
+(X_U1.13b)    1.7800                  (X_U1.13C)    3.2200                      
+
+(X_U1.14b)    3.2200                  (X_U1.14c)    1.7800                      
+
+(X_U1.400)    -.6136                  (X_U1.401)    0.0000                      
+
+(X_U1.402)    0.0000                  (X_U1.70b)    1.3992                      
+
+(X_U1.75a)    1.4005                  (X_U1.76a)    1.3995                      
+
+(X_U1.84b)    1.5762                  (X_U1.85b)    1.2222                      
+
+(X_U1.98c)    0.0000                  (X_U1.98d)    0.0000                      
+
+(X_U1.99c)    5.0000                  (X_U1.99d)    5.0000                      
+
+(X_U1.100a)    3.2000                 (X_U1.100b)    1.8000                     
+
+(X_U1.400B)    -.6137                 (X_U1.401B)    0.0000                     
+
+(X_U1.402B)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         3.982E-02
+    V_V2        -4.082E-02
+    V_V4         5.559E-06
+    V_V5         1.128E-05
+    X_U1.vos    -2.620E-06
+    X_U1.Vlim+   1.829E-12
+    X_U1.Vlim   -2.353E-08
+    X_U1.Vlim-  -2.453E-08
+    X_U1.Vlim-B   1.831E-12
+    X_U1.VOCMa   1.811E-12
+    X_U1.VOCMb  -5.412E-08
+    X_U1.VO1    -1.856E-13
+    X_U1.VO2    -1.884E-13
+    X_U1.VIOUT1  -2.013E-04
+    X_U1.VIOUT2  -2.533E-04
+    X_U1.VIOUT3   5.200E-05
+    X_U1.VO1b   -1.856E-13
+    X_U1.VO2b   -1.884E-13
+    X_U1.VIOUTB1  -2.014E-04
+    X_U1.VIOUTB2  -2.532E-04
+    X_U1.VIOUTB3   5.179E-05
+    X_U1.Voffset   5.559E-06
+    X_U1.VI1    -6.236E-13
+    X_U1.VI2     2.013E-04
+    X_U1.VIB1   -6.237E-13
+    X_U1.VIB2    2.014E-04
+    X_U1.Vfd+   -5.179E-05
+    X_U1.Vfd-   -5.200E-05
+    X_U1.Vbf1   -2.453E-08
+    X_U1.Vbf2   -2.354E-08
 
     TOTAL POWER DISSIPATION   2.04E-01  WATTS
 
@@ -1449,19 +2169,19 @@ Model-Specific Temperatures During Sweep  Param value = 400
 
           JOB CONCLUDED
 
-**** 08/30/17 16:05:19 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 15:12:45 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\FB Mod\F
+ ** Profile: "FB Mod-Freq Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\fb mod\f
 
 
  ****     JOB STATISTICS SUMMARY
 
- ****     CURRENT STEP                     PARAM X =  400   
+ ****     CURRENT STEP                     PARAM X =    4.2000E+03
 
 
 ******************************************************************************
 
 
 
-  Total job time (using Solver 1)   =         .53
+  Total job time (using Solver 1)   =         .84
 
