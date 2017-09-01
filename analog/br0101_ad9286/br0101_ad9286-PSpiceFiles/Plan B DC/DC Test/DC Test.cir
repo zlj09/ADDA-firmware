@@ -1,4 +1,4 @@
-** Profile: "Plan B DC-DC Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Plan B DC\DC Test.sim ] 
+** Profile: "Plan B DC-DC Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\plan b dc\dc test.sim ] 
 
 ** Creating circuit file "DC Test.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -11,7 +11,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.DC LIN V_Vi -3.63 3.57 0.05 
+.DC LIN V_Vi -3.63 3.68 0.05 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Plan B DC.net" 

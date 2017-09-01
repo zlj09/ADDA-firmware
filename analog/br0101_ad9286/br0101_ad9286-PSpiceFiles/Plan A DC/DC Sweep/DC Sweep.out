@@ -1,7 +1,7 @@
 
-**** 08/30/17 18:49:44 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 16:34:47 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "New Design DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Ne
+ ** Profile: "Plan A DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\plan a
 
 
  ****     CIRCUIT DESCRIPTION
@@ -23,14 +23,14 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.DC LIN V_Vi -3.63 3.57 0.05 
+.DC LIN V_Vi -3.63 3.68 0.05 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
-.INC "..\New Design DC.net" 
+.INC "..\Plan A DC.net" 
 
 
 
-**** INCLUDING "New Design DC.net" ****
+**** INCLUDING "Plan A DC.net" ****
 * source BR0101_AD9286
 V_V2         N02523 0 5V
 V_V3         0 N02331 0Vdc
@@ -50,9 +50,9 @@ V_Vi         N02479 0 {x}
 **** RESUMING "DC Sweep.cir" ****
 .END
 
-**** 08/30/17 18:49:44 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 16:34:47 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "New Design DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Ne
+ ** Profile: "Plan A DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\plan a
 
 
  ****     Diode MODEL PARAMETERS
@@ -67,9 +67,9 @@ V_Vi         N02479 0 {x}
           IS   10.000000E-15 
 
 
-**** 08/30/17 18:49:44 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 16:34:47 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "New Design DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Ne
+ ** Profile: "Plan A DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\plan a
 
 
  ****     BJT MODEL PARAMETERS
@@ -105,9 +105,9 @@ V_Vi         N02479 0 {x}
            D     .52         
 
 
-**** 08/30/17 18:49:44 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 16:34:47 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "New Design DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Ne
+ ** Profile: "Plan A DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\plan a
 
 
  ****     Resistor MODEL PARAMETERS
@@ -127,9 +127,9 @@ V_Vi         N02479 0 {x}
 
           JOB CONCLUDED
 
-**** 08/30/17 18:49:44 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/01/17 16:34:47 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
- ** Profile: "New Design DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-PSpiceFiles\Ne
+ ** Profile: "Plan A DC-DC Sweep"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286-pspicefiles\plan a
 
 
  ****     JOB STATISTICS SUMMARY
@@ -139,5 +139,5 @@ V_Vi         N02479 0 {x}
 
 
 
-  Total job time (using Solver 1)   =         .05
+  Total job time (using Solver 1)   =         .02
 

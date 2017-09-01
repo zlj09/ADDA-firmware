@@ -56,10 +56,25 @@
       (Path "Design Resources"
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9239\br0101_ad9239.dsn"
          "Plan A Sch")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9239\br0101_ad9239.dsn"
+         "Plan A DC" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 0 200 0 385"))
-      (Tab 0))))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 156 1293 156 580")
+        (Scroll "-158 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "F:\PROGRAMS\VERILOG\FPGA_GROUP\TEST_BR0101\ANALOG\BR0101_AD9239\BR0101_AD9239.DSN")
+      (Schematic "Plan A DC")
+      (Page "PAGE1")))
+  (MPSSessionName "admin"))

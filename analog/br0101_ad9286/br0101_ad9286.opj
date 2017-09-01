@@ -35,6 +35,8 @@
     (File ".\br0101_ad9286-pspicefiles\plan b ac\plan b ac.net"
       (Type "Report"))
     (File ".\br0101_ad9286-pspicefiles\plan b dc\plan b dc.net"
+      (Type "Report"))
+    (File ".\br0101_ad9286-pspicefiles\plan a dc\plan a dc.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -78,7 +80,7 @@
          ".\br0101_ad9286-pspicefiles\plan b dc\dc test.sim"
         (DisplayName "Plan B DC-DC Test")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\br0101_ad9286-pspicefiles\fb mod\freq test.sim"))
+      (ActiveProfile ".\br0101_ad9286-pspicefiles\plan b dc\dc test.sim"))
     (Folder "Model Libraries"
       (Sort User)
       (File ".\models\ada4937.lib"
@@ -144,10 +146,13 @@
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn")
       (Path "Design Resources"
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
+         "Plan B DC")
+      (Path "Design Resources"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
          "Plan A AC")
       (Path "Design Resources"
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
-         "Plan B DC")
+         "Plan A DC")
       (Path "Design Resources"
          "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9286\br0101_ad9286.dsn"
          "Plan B Sch")
@@ -159,5 +164,16 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 385"))
-      (Tab 0))))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 385"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1241 104 528")
+        (Scroll "-59 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "F:\PROGRAMS\VERILOG\FPGA_GROUP\TEST_BR0101\ANALOG\BR0101_AD9286\BR0101_AD9286.DSN")
+      (Schematic "Plan B DC")
+      (Page "PAGE1"))))
