@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.80 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.55 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.83 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.58 secs
  
 --> Reading design: plb_dac.prj
 
@@ -130,10 +130,12 @@ Architecture implementation of Entity plb_slave_attachment is up to date.
 Compiling vhdl file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
 Architecture implementation of Entity plbv46_slave_single is up to date.
 Compiling vhdl file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v2_00_a/hdl/vhdl/plb_dac.vhd" in Library work.
-Entity <plb_dac> compiled.
-Entity <plb_dac> (Architecture <imp>) compiled.
+Architecture imp of Entity plb_dac is up to date.
 Compiling verilog file "../../hdl/verilog/user_logic.v" in library work
 Module <user_logic> compiled
+Module <rect_wave_gen> compiled
+Module <saw_wave_gen> compiled
+Module <sine_wave_gen> compiled
 No errors in compilation
 Analysis of file <"plb_dac.prj"> succeeded.
  
@@ -197,6 +199,12 @@ Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_s
 	C_PLB_MID_WIDTH = 3
 	C_PLB_NUM_MASTERS = 8
 	C_SPLB_P2P = 0
+
+Analyzing hierarchy for module <rect_wave_gen> in library <work>.
+
+Analyzing hierarchy for module <saw_wave_gen> in library <work>.
+
+Analyzing hierarchy for module <sine_wave_gen> in library <work>.
 
 Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
 	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
@@ -441,6 +449,15 @@ INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that 
 INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Module <user_logic> is correct for synthesis.
  
+Analyzing module <rect_wave_gen> in library <work>.
+Module <rect_wave_gen> is correct for synthesis.
+ 
+Analyzing module <saw_wave_gen> in library <work>.
+Module <saw_wave_gen> is correct for synthesis.
+ 
+Analyzing module <sine_wave_gen> in library <work>.
+Module <sine_wave_gen> is correct for synthesis.
+ 
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -448,54 +465,6 @@ Module <user_logic> is correct for synthesis.
 
 Performing bidirectional port resolution...
 INFO:Xst:2679 - Register <byte_index> in unit <user_logic> has a constant value of 100 during circuit operation. The register is replaced by logic.
-
-Synthesizing Unit <user_logic>.
-    Related source file is "../../hdl/verilog/user_logic.v".
-WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found finite state machine <FSM_0> for signal <state_reg>.
-    -----------------------------------------------------------------------
-    | States             | 5                                              |
-    | Transitions        | 13                                             |
-    | Inputs             | 5                                              |
-    | Outputs            | 7                                              |
-    | Clock              | Bus2IP_Clk                (rising_edge)        |
-    | Reset              | Bus2IP_Reset              (positive)           |
-    | Reset type         | synchronous                                    |
-    | Reset State        | 000                                            |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 334.
-    Found 5-bit adder carry out for signal <COND_260$addsub0000>.
-    Found 1-bit register for signal <cs_reg>.
-    Found 1-bit register for signal <dac_clk_reg>.
-    Found 10-bit register for signal <dac_data_reg>.
-    Found 1-bit register for signal <dac_en>.
-    Found 1-bit register for signal <Mtridata_sdio_reg_o>.
-    Found 1-bit register for signal <Mtrien_sdio_reg_o>.
-    Found 1-bit register for signal <reset_reg>.
-    Found 1-bit register for signal <sclk_reg>.
-    Found 1-bit tristate buffer for signal <sdio_reg_o>.
-    Found 1-bit register for signal <sdio_reg_t>.
-    Found 32-bit register for signal <slv_reg0>.
-    Found 32-bit register for signal <slv_reg1>.
-    Found 32-bit register for signal <slv_reg2>.
-    Found 32-bit register for signal <slv_reg3>.
-    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 222.
-    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 222.
-    Found 32-bit register for signal <slv_reg4>.
-    Found 5-bit register for signal <spi_cnt>.
-    Found 5-bit adder for signal <spi_cnt$addsub0000>.
-    Found 1-bit register for signal <spi_state>.
-    Summary:
-	inferred   1 Finite State Machine(s).
-	inferred 184 D-type flip-flop(s).
-	inferred   2 Adder/Subtractor(s).
-	inferred   2 Comparator(s).
-	inferred   1 Multiplexer(s).
-	inferred   1 Tristate(s).
-Unit <user_logic> synthesized.
-
 
 Synthesizing Unit <counter_f>.
     Related source file is "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
@@ -557,6 +526,26 @@ Synthesizing Unit <or_muxcy>.
 Unit <or_muxcy> synthesized.
 
 
+Synthesizing Unit <rect_wave_gen>.
+    Related source file is "../../hdl/verilog/user_logic.v".
+    Found 8-bit comparator less for signal <rect_data$cmp_lt0000> created at line 455.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <rect_wave_gen> synthesized.
+
+
+Synthesizing Unit <saw_wave_gen>.
+    Related source file is "../../hdl/verilog/user_logic.v".
+Unit <saw_wave_gen> synthesized.
+
+
+Synthesizing Unit <sine_wave_gen>.
+    Related source file is "../../hdl/verilog/user_logic.v".
+WARNING:Xst:1305 - Output <sine_data> is never assigned. Tied to value 0000000000.
+WARNING:Xst:646 - Signal <sine_data_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <sine_wave_gen> synthesized.
+
+
 Synthesizing Unit <soft_reset>.
     Related source file is "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd".
 WARNING:Xst:647 - Input <Bus2IP_Data<0:27>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -567,6 +556,58 @@ WARNING:Xst:1780 - Signal <error_reply> is never used or assigned. This unconnec
     Summary:
 	inferred   2 D-type flip-flop(s).
 Unit <soft_reset> synthesized.
+
+
+Synthesizing Unit <user_logic>.
+    Related source file is "../../hdl/verilog/user_logic.v".
+WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <saw_index> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 7                                              |
+    | Clock              | Bus2IP_Clk                (rising_edge)        |
+    | Reset              | Bus2IP_Reset              (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 361.
+    Found 5-bit adder carry out for signal <COND_260$addsub0000>.
+    Found 1-bit register for signal <cs_reg>.
+    Found 1-bit register for signal <dac_clk_reg>.
+    Found 10-bit register for signal <dac_data_reg>.
+    Found 1-bit register for signal <dac_en>.
+    Found 1-bit register for signal <Mtridata_sdio_reg_o>.
+    Found 1-bit register for signal <Mtrien_sdio_reg_o>.
+    Found 1-bit register for signal <reset_reg>.
+    Found 1-bit register for signal <sclk_reg>.
+    Found 1-bit tristate buffer for signal <sdio_reg_o>.
+    Found 1-bit register for signal <sdio_reg_t>.
+    Found 32-bit register for signal <slv_reg0>.
+    Found 32-bit register for signal <slv_reg1>.
+    Found 32-bit register for signal <slv_reg2>.
+    Found 32-bit register for signal <slv_reg3>.
+    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 229.
+    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 229.
+    Found 32-bit register for signal <slv_reg4>.
+    Found 5-bit register for signal <spi_cnt>.
+    Found 5-bit adder for signal <spi_cnt$addsub0000>.
+    Found 1-bit register for signal <spi_state>.
+    Found 8-bit up accumulator for signal <wav_index>.
+    Found 4-bit adder for signal <wav_index$add0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Accumulator(s).
+	inferred 184 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <user_logic> synthesized.
 
 
 Synthesizing Unit <or_gate128>.
@@ -689,10 +730,13 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 1
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
  9-bit subtractor                                      : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
 # Registers                                            : 244
  1-bit register                                        : 230
  10-bit register                                       : 1
@@ -701,9 +745,10 @@ Macro Statistics
  4-bit register                                        : 3
  5-bit register                                        : 2
  9-bit register                                        : 1
-# Comparators                                          : 2
+# Comparators                                          : 3
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
+ 8-bit comparator less                                 : 1
 # Multiplexers                                         : 2
  1-bit 32-to-1 multiplexer                             : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -733,6 +778,10 @@ WARNING:Xst:1290 - Hierarchical block <MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I> is unconnected in block <I_DECODER>.
    It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <saw_wave_gen_1> is unconnected in block <USER_LOGIC_I>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <sine_wave_gen_1> is unconnected in block <USER_LOGIC_I>.
+   It will be removed from the design.
 WARNING:Xst:2677 - Node <addr_out_s_h_4> of sequential type is unconnected in block <I_DECODER>.
 WARNING:Xst:2677 - Node <addr_out_s_h_3> of sequential type is unconnected in block <I_DECODER>.
 WARNING:Xst:2677 - Node <addr_out_s_h_4> of sequential type is unconnected in block <plb_address_decoder>.
@@ -743,15 +792,19 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 1
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
  9-bit subtractor                                      : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
 # Registers                                            : 411
  Flip-Flops                                            : 411
-# Comparators                                          : 2
+# Comparators                                          : 3
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
+ 8-bit comparator less                                 : 1
 # Multiplexers                                         : 2
  1-bit 32-to-1 multiplexer                             : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -854,105 +907,97 @@ WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_30> 
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_29> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_28> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_27> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_27> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_26> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_26> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_25> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_25> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_24> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_24> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_23> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_23> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_22> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_22> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_21> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_21> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_21> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_21> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_21> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_20> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_20> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_20> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_20> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_20> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_19> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_19> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_19> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_19> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_18> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_18> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_18> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_19> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_19> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_19> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_18> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_17> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_17> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_17> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_18> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_18> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_18> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_17> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_16> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_16> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_16> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_17> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_17> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_17> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_16> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_15> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_15> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_15> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_16> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_16> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_16> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_15> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_14> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_14> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_14> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_15> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_15> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_15> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_14> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_13> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_13> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_13> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_14> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_14> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_14> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_13> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_12> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_12> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_12> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_13> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_13> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_13> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_12> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_11> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_11> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_11> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_12> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_12> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_12> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_11> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_10> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_10> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_10> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_11> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_11> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_11> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_10> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_9> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_9> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_9> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_10> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_10> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_10> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_9> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_8> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_8> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_8> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_9> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_9> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_9> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_8> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_7> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_7> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_7> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_8> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_8> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_8> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_7> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_6> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_6> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_6> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_7> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_7> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_7> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_6> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_5> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_5> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_5> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_6> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_6> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_6> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_5> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_4> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_4> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_4> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_5> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_5> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_5> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_4> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_3> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_3> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_3> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_4> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_4> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_4> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_3> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_2> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_2> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_2> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_3> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_3> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_3> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_2> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_1> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_1> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_1> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_2> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_2> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_2> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_1> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_0> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_0> is unconnected in block <plb_dac>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_0> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_1> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_1> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_1> is unconnected in block <plb_dac>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg2_0> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg4_0> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg0_0> is unconnected in block <plb_dac>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <USER_LOGIC_I/slv_reg1_0> is unconnected in block <plb_dac>.
 WARNING:Xst:2677 - Node <USER_LOGIC_I/spi_state> of sequential type is unconnected in block <plb_dac>.
 
 Mapping all equations...
@@ -965,8 +1010,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 232
- Flip-Flops                                            : 232
+# Registers                                            : 248
+ Flip-Flops                                            : 248
 
 =========================================================================
 
@@ -995,33 +1040,34 @@ Design Statistics
 # IOs                              : 451
 
 Cell Usage :
-# BELS                             : 360
+# BELS                             : 337
 #      GND                         : 1
-#      INV                         : 7
-#      LUT1                        : 1
-#      LUT2                        : 51
-#      LUT2_D                      : 2
-#      LUT2_L                      : 1
-#      LUT3                        : 67
-#      LUT3_D                      : 6
-#      LUT3_L                      : 4
-#      LUT4                        : 147
-#      LUT4_D                      : 24
-#      LUT4_L                      : 8
-#      MUXCY                       : 9
-#      MUXF5                       : 25
+#      INV                         : 3
+#      LUT1                        : 5
+#      LUT2                        : 30
+#      LUT2_L                      : 4
+#      LUT3                        : 57
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 161
+#      LUT4_D                      : 5
+#      LUT4_L                      : 2
+#      MUXCY                       : 16
+#      MUXF5                       : 31
 #      MUXF6                       : 4
 #      MUXF7                       : 2
+#      MUXF8                       : 1
 #      VCC                         : 1
-# FlipFlops/Latches                : 232
-#      FD                          : 40
+#      XORCY                       : 8
+# FlipFlops/Latches                : 248
+#      FD                          : 5
 #      FD_1                        : 10
 #      FDE                         : 1
-#      FDR                         : 101
-#      FDRE                        : 71
-#      FDRS                        : 2
+#      FDR                         : 113
+#      FDRE                        : 100
+#      FDRS                        : 5
 #      FDRSE                       : 5
-#      FDS                         : 2
+#      FDS                         : 9
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 288
@@ -1035,9 +1081,9 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                      216  out of  24576     0%  
- Number of Slice Flip Flops:            232  out of  49152     0%  
- Number of 4 input LUTs:                318  out of  49152     0%  
+ Number of Slices:                      214  out of  24576     0%  
+ Number of Slice Flip Flops:            248  out of  49152     0%  
+ Number of 4 input LUTs:                273  out of  49152     0%  
  Number of IOs:                         451
  Number of bonded IOBs:                 289  out of    640    45%  
  Number of GCLKs:                         1  out of     32     3%  
@@ -1063,7 +1109,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-SPLB_Clk                           | BUFGP                  | 232   |
+SPLB_Clk                           | BUFGP                  | 248   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1074,8 +1120,8 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 5.076ns (Maximum Frequency: 197.021MHz)
-   Minimum input arrival time before clock: 4.748ns
+   Minimum period: 6.752ns (Maximum Frequency: 148.106MHz)
+   Minimum input arrival time before clock: 5.291ns
    Maximum output required time after clock: 5.634ns
    Maximum combinational path delay: No path found
 
@@ -1085,46 +1131,46 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 5.076ns (frequency: 197.021MHz)
-  Total number of paths / destination ports: 2689 / 306
+  Clock period: 6.752ns (frequency: 148.106MHz)
+  Total number of paths / destination ports: 3202 / 405
 -------------------------------------------------------------------------
-Delay:               2.538ns (Levels of Logic = 2)
+Delay:               3.376ns (Levels of Logic = 1)
   Source:            SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (FF)
-  Destination:       USER_LOGIC_I/dac_data_reg_5 (FF)
+  Destination:       USER_LOGIC_I/wav_index_7 (FF)
   Source Clock:      SPLB_Clk rising
   Destination Clock: SPLB_Clk falling
 
-  Data Path: SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS to USER_LOGIC_I/dac_data_reg_5
+  Data Path: SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS to USER_LOGIC_I/wav_index_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRSE:C->Q            5   0.360   0.546  SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (SOFT_RESET_I/flop_q_chain<4>)
-     LUT2:I1->O           65   0.195   1.220  SOFT_RESET_I/Reset2IP_Reset1_2 (SOFT_RESET_I/Reset2IP_Reset1_1)
-     LUT4:I3->O            1   0.195   0.000  USER_LOGIC_I/dac_data_reg_5_rstpot (USER_LOGIC_I/dac_data_reg_5_rstpot)
-     FD_1:D                    0.022          USER_LOGIC_I/dac_data_reg_5
+     FDRSE:C->Q            3   0.360   0.538  SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (SOFT_RESET_I/flop_q_chain<4>)
+     LUT2:I1->O          107   0.195   1.221  SOFT_RESET_I/Reset2IP_Reset1 (rst_Bus2IP_Reset)
+     FDRE:R                    1.062          USER_LOGIC_I/wav_index_4
     ----------------------------------------
-    Total                      2.538ns (0.772ns logic, 1.766ns route)
-                                       (30.4% logic, 69.6% route)
+    Total                      3.376ns (1.617ns logic, 1.759ns route)
+                                       (47.9% logic, 52.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 344 / 320
+  Total number of paths / destination ports: 370 / 336
 -------------------------------------------------------------------------
-Offset:              4.748ns (Levels of Logic = 2)
+Offset:              5.291ns (Levels of Logic = 3)
   Source:            SPLB_Rst (PAD)
-  Destination:       USER_LOGIC_I/spi_cnt_4 (FF)
+  Destination:       USER_LOGIC_I/Mtrien_sdio_reg_o (FF)
   Destination Clock: SPLB_Clk rising
 
-  Data Path: SPLB_Rst to USER_LOGIC_I/spi_cnt_4
+  Data Path: SPLB_Rst to USER_LOGIC_I/Mtrien_sdio_reg_o
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           113   0.965   1.470  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
-     LUT2:I0->O           65   0.195   1.057  SOFT_RESET_I/Reset2IP_Reset1_2 (SOFT_RESET_I/Reset2IP_Reset1_1)
-     FDRE:R                    1.062          USER_LOGIC_I/slv_reg0_28
+     IBUF:I->O           104   0.965   1.434  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
+     LUT2:I0->O          107   0.195   1.602  SOFT_RESET_I/Reset2IP_Reset1 (rst_Bus2IP_Reset)
+     LUT4:I0->O            1   0.195   0.360  USER_LOGIC_I/Mtrien_sdio_reg_o_not0001 (USER_LOGIC_I/Mtrien_sdio_reg_o_not0001)
+     FDE:CE                    0.540          USER_LOGIC_I/Mtrien_sdio_reg_o
     ----------------------------------------
-    Total                      4.748ns (2.222ns logic, 2.526ns route)
-                                       (46.8% logic, 53.2% route)
+    Total                      5.291ns (1.895ns logic, 3.396ns route)
+                                       (35.8% logic, 64.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
@@ -1149,14 +1195,14 @@ Offset:              5.634ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 21.64 secs
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 29.72 secs
  
 --> 
 
-Total memory usage is 526024 kilobytes
+Total memory usage is 527660 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  241 (   0 filtered)
+Number of warnings :  239 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

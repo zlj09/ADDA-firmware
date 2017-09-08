@@ -105,6 +105,47 @@ module tb_plbdac200a_ul;
 		Bus2IP_Data = 32'h0000_0123;
 
 		#200;
+		Bus2IP_WrCE = 5'b00100;
+		Bus2IP_Data = 32'h0000_0000;
+
+		#200;
+		Bus2IP_WrCE = 5'b01000;
+		Bus2IP_Data = 32'h0000_0000;
+
+		#200;
+		Bus2IP_WrCE = 5'b10000;
+		Bus2IP_Data = 32'h0000_0011;
+
+		#10240;
+		Bus2IP_WrCE = 5'b10000;
+		Bus2IP_Data = 32'h0000_0021;		
+
+		#10240;
+		Bus2IP_WrCE = 5'b10000;
+		Bus2IP_Data = 32'h0000_0031;
+
+		#10240;
+		Bus2IP_WrCE = 5'b10000;
+		Bus2IP_Data = 32'h0000_0041;
+
+		#10240;
+		Bus2IP_WrCE = 5'b10000;
+		Bus2IP_Data = 32'h0000_0081;
+
+		#10240;
+		Bus2IP_WrCE = 5'b10000;
+		Bus2IP_Data = 32'h0000_00C1;
+
+		#10240;
+		Bus2IP_WrCE = 5'b10000;
+		Bus2IP_Data = 32'h0000_0121;
+
+		#10240;
+		Bus2IP_WrCE = 5'b10000;
+		Bus2IP_Data = 32'h0000_0821;
+
+
+		/*#200;
 		Bus2IP_WrCE = 5'b01000;
 		Bus2IP_Data = 32'h0000_0000;
 
@@ -138,6 +179,7 @@ module tb_plbdac200a_ul;
 		#200;
 		Bus2IP_WrCE = 5'b10000;
 		Bus2IP_Data = 32'h0000_0000;
+		*/
 
 	end
 
