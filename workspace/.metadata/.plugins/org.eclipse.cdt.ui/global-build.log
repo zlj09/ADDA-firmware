@@ -2120,3 +2120,670 @@ ELF file	: br0101.elf
 elfcheck passed.
 Finished building: br0101.elf.elfcheck
  
+15:03:59 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+15:05:19 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:6: warning: unused variable 'reg_data' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7086	    348	   2092	   9526	   2536	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+15:06:53 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+15:07:30 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+15:37:17 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:6: warning: unused variable 'reg_data' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7228	    348	   2096	   9672	   25c8	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+15:37:34 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+15:37:40 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:6: warning: unused variable 'reg_data' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7232	    348	   2092	   9672	   25c8	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+15:37:59 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+15:48:06 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:6: warning: unused variable 'reg_data' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7316	    348	   2096	   9760	   2620	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+15:48:29 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+15:55:56 **** Incremental Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+15:57:21 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:6: warning: unused variable 'reg_data' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7440	    348	   2092	   9880	   2698	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+15:57:37 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+16:18:57 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:6: warning: unused variable 'reg_data' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7484	    348	   2096	   9928	   26c8	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+16:25:03 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:268:7: warning: format '%x' expects argument of type 'unsigned int *', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:268:7: warning: format '%x' expects argument of type 'unsigned int *', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:268:12: warning: 'reg_data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: br0101.elf section `.text' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 21992 bytes
+collect2: ld returned 1 exit status
+make: *** [br0101.elf] ´íÎó 1
+16:25:24 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:268:7: warning: format '%x' expects argument of type 'unsigned int *', but argument 2 has type 'u32 *' [-Wformat]
+../src/helloworld.c:268:7: warning: format '%x' expects argument of type 'unsigned int *', but argument 2 has type 'u32 *' [-Wformat]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: br0101.elf section `.text' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 22000 bytes
+collect2: ld returned 1 exit status
+make: *** [br0101.elf] ´íÎó 1
+16:25:53 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:6: warning: unused variable 'reg_data' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7440	    348	   2092	   9880	   2698	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+16:27:22 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+16:28:25 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:6: warning: unused variable 'reg_data' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7480	    348	   2092	   9920	   26c0	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+16:28:41 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+16:50:18 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:276:7: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+../src/helloworld.c:286:69: error: expected expression before '/' token
+make: *** [src/helloworld.o] ´íÎó 1
+16:50:32 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:286:69: error: expected expression before '/' token
+make: *** [src/helloworld.o] ´íÎó 1
+16:50:40 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7784	    348	   2092	  10224	   27f0	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+16:50:58 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+16:51:47 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+16:55:40 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+16:59:04 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7848	    348	   2092	  10288	   2830	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+16:59:19 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+16:59:28 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7852	    348	   2096	  10296	   2838	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+16:59:45 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+17:01:22 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+17:08:37 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7892	    348	   2096	  10336	   2860	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+17:08:52 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+17:10:07 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7888	    348	   2092	  10328	   2858	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+17:10:22 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+17:58:32 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7888	    348	   2092	  10328	   2858	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+17:58:49 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+18:08:39 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:26: warning: unused variable 'wave_form' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7840	    348	   2092	  10280	   2828	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+18:09:05 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+18:11:39 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:26: warning: unused variable 'wave_form' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7960	    348	   2092	  10400	   28a0	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+18:11:55 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
+18:14:52 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:26: warning: unused variable 'wave_form' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7924	    348	   2096	  10368	   2880	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+18:15:09 **** Auto Build of project br0101_bsp ****
+make -k all 
+'Finished building libraries'
