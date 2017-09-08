@@ -7,7 +7,9 @@ src/helloworld.d: ../src/helloworld.c ../src/platform.h \
  ../../br0101_bsp/microblaze_0/include/xil_io.h \
  ../../br0101_bsp/microblaze_0/include/xil_types.h \
  ../../br0101_bsp/microblaze_0/include/mb_interface.h \
- ../../br0101_bsp/microblaze_0/include/xil_printf.h
+ ../../br0101_bsp/microblaze_0/include/xil_printf.h \
+ ../../br0101_bsp/microblaze_0/include/xuartlite.h \
+ ../../br0101_bsp/microblaze_0/include/xil_assert.h
 
 ../src/platform.h:
 
@@ -28,3 +30,7 @@ src/helloworld.d: ../src/helloworld.c ../src/platform.h \
 ../../br0101_bsp/microblaze_0/include/mb_interface.h:
 
 ../../br0101_bsp/microblaze_0/include/xil_printf.h:
+
+../../br0101_bsp/microblaze_0/include/xuartlite.h:
+
+../../br0101_bsp/microblaze_0/include/xil_assert.h:

@@ -5,28 +5,28 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m LOC = B5;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(72)]</arg>&apos;
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m LOC = B5;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(72)]</arg>&apos;
 </msg>
 
-<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m IOSTANDARD = LVCMOS25;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(73)]</arg>&apos;
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m IOSTANDARD = LVCMOS25;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(73)]</arg>&apos;
 </msg>
 
-<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m Drive = 2;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(74)]</arg>&apos;
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m Drive = 2;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(74)]</arg>&apos;
 </msg>
 
-<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m LOC = B10;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(76)]</arg>&apos;
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m LOC = B10;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(76)]</arg>&apos;
 </msg>
 
-<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m IOSTANDARD = LVCMOS25;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(77)]</arg>&apos;
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m IOSTANDARD = LVCMOS25;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(77)]</arg>&apos;
 </msg>
 
-<msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m Drive = 2;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(78)]</arg>&apos;
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m Drive = 2;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(78)]</arg>&apos;
 </msg>
 
 <msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">plb_dac_0_S_Format_O.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">microblaze_i/plb_dac_0_S_Format_O</arg>&apos;
@@ -105,13 +105,13 @@
 <msg type="warning" file="NgdBuild" num="1345" delta="old" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sys_clk_pin = PERIOD &quot;sys_clk_pin&quot; 100000.000000000 KHz HIGH 50.000000000 %;&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;&gt; [microblaze_top.ucf(2)]</arg>. The overriden constraint usually comes from the input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an error.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; DRIVE = 2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin Drive = 2;&gt; [microblaze_top.ucf(129)]</arg>.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; DRIVE = 2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin Drive = 2;&gt; [microblaze_top.ucf(129)]</arg>.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; IOSTANDARD = &quot;LVCMOS25&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;&gt; [microblaze_top.ucf(128)]</arg>.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; IOSTANDARD = &quot;LVCMOS25&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;&gt; [microblaze_top.ucf(128)]</arg>.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; LOC = A5&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin LOC = A5;&gt; [microblaze_top.ucf(127)]</arg>.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_generator_0/rst_reg&quot; LOC = A5&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">fpga_0_rst_1_sys_rst_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net fpga_0_rst_1_sys_rst_pin LOC = A5;&gt; [microblaze_top.ucf(127)]</arg>.
 </msg>
 
 <msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;plb_dac_0_S_PinMD_pin_OBUF&quot; IOSTANDARD = &quot;LVCMOS33&quot;&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">plb_dac_0_S_PinMD_pin</arg> by the constraint <arg fmt="%s" index="3">&lt;Net plb_dac_0_S_PinMD_pin IOSTANDARD = LVCMOS33;&gt; [microblaze_top.ucf(50)]</arg>.
@@ -243,7 +243,7 @@
 <msg type="warning" file="NgdBuild" num="1212" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">20.0000000000000000</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">100000 KHz.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N3</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N3</arg>&apos; has no driver
 </msg>
 
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N4</arg>&apos; has no driver

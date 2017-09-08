@@ -36,6 +36,7 @@
 
 #include "xparameters.h"
 #include "plb_dac.h"
+#include "xuartlite.h"
 
 void print(char *str);
 
@@ -158,7 +159,7 @@ int main()
 
     xil_printf("DAC 1 - Reg 0x1f: %x\r\n", reg_data);*/
 
-    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000001);
+    /*PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000001);
 
     //PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG3_OFFSET, 0x00000203);
     //while(PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET) & 0x2) ;
@@ -182,7 +183,7 @@ int main()
     reg_data = PLB_DAC_mReadReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG3_OFFSET) & 0xff;
     while(PLB_DAC_mReadReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG0_OFFSET) & 0x2) ;
 
-    xil_printf("DAC 1 - Reg 0x1f: %x\r\n", reg_data);
+    xil_printf("DAC 1 - Reg 0x1f: %x\r\n", reg_data);*/
    /* while(1)
     {
     	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x0000155);
@@ -193,6 +194,58 @@ int main()
     	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG2_OFFSET, 0x00002aa);
     	for (i = 0; i < 10000; i++) ;
     }*/
+
+    u8 msg, bit_pos = 9;
+    u32 smp_rate = 500, delay_time = 8400, dac_data = 0x00000000;
+
+    XUartLite xuart_1;
+
+    XUartLite_Initialize(&xuart_1, XPAR_UARTLITE_1_DEVICE_ID);
+
+    PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, 0x00000001);
+
+    while(1)
+    {
+    	dac_data = 1 << bit_pos;
+    	if (smp_rate == 500)
+    		delay_time = 8400;
+    	else
+    		if (smp_rate == 1000)
+    			delay_time = 4200;
+    	xil_printf("Change Bit: %d, DAC DATA: 0x%x, Sampling Rate: %d, Delay Time: %d\r\n", bit_pos, dac_data, smp_rate, delay_time);
+
+    	while(1)
+    	{
+    		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, 0x0000000);
+    		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG2_OFFSET, 0x0000000);
+    		for (i = 0; i < delay_time; i++) ;
+
+    		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, dac_data);
+    		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG2_OFFSET, dac_data);
+    		for (i = 0; i < delay_time; i++) ;
+
+    		msg = '\0';
+    		XUartLite_Recv(&xuart_1, &msg, 1);
+    		if (msg != '\0')
+    			break;
+    	}
+
+    	switch(msg)
+    	{
+    	case '0':case '1':case '2':case '3':case '4':case '5':case '6':case '7':case '8':case '9':
+    		bit_pos = msg - '0';
+    		break;
+    	case 'H':
+    		smp_rate = 1000;
+    		break;
+    	case 'L':
+    		smp_rate = 500;
+    		break;
+    	default:
+    		break;
+    	}
+    }
+
 
     return 0;
 }
