@@ -10,23 +10,23 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Thu Sep 07 13:44:33 2017
+Mapped Date    : Sat Sep 09 14:22:53 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    5
 Logic Utilization:
-  Number of Slice Flip Flops:         2,199 out of  49,152    4%
-  Number of 4 input LUTs:             3,805 out of  49,152    7%
+  Number of Slice Flip Flops:         2,215 out of  49,152    4%
+  Number of 4 input LUTs:             4,053 out of  49,152    8%
 Logic Distribution:
-  Number of occupied Slices:          2,682 out of  24,576   10%
-    Number of Slices containing only related logic:   2,682 out of   2,682 100%
-    Number of Slices containing unrelated logic:          0 out of   2,682   0%
+  Number of occupied Slices:          2,851 out of  24,576   11%
+    Number of Slices containing only related logic:   2,851 out of   2,851 100%
+    Number of Slices containing unrelated logic:          0 out of   2,851   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       3,928 out of  49,152    7%
-    Number used as logic:             3,290
-    Number used as a route-thru:        123
+  Total Number of 4 input LUTs:       4,184 out of  49,152    8%
+    Number used as logic:             3,538
+    Number used as a route-thru:        131
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:     131
@@ -42,11 +42,11 @@ Logic Distribution:
   Number of DCM_ADVs:                     1 out of       8   12%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                3.94
+Average Fanout of Non-Clock Nets:                4.07
 
-Peak Memory Usage:  497 MB
-Total REAL time to MAP completion:  29 secs 
-Total CPU time to MAP completion:   11 secs 
+Peak Memory Usage:  499 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   13 secs 
 
 NOTES:
 
@@ -134,9 +134,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-1188 block(s) removed
+1184 block(s) removed
  119 block(s) optimized away
-1244 signal(s) removed
+1240 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -176,17 +176,20 @@ loadless and has been removed.
     The signal "microblaze_i/mb_plb_Sl_MRdErr<7>" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1" (FF) removed.
+derr_i_1" (SFF) removed.
+      The signal "microblaze_i/plb_dac_0/plb_dac_0/ipif_IP2Bus_Error" is loadless and
+has been removed.
+       Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error" (ROM)
+removed.
+        The signal "microblaze_i/plb_dac_0/N02" is loadless and has been removed.
+         Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error_SW0"
+(ROM) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_rstpot" is loadless and has been removed.
+derr_i_1_or0000" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_rstpot" (ROM) removed.
-        The signal "microblaze_i/plb_dac_0/N203" is loadless and has been removed.
-         Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_rstpot_SW0" (ROM) removed.
+derr_i_1_or00001" (ROM) removed.
         The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/maste
 r_id<0>" is loadless and has been removed.
@@ -203,13 +206,6 @@ asterid_reg_0" (SFF) removed.
              Loadless block
 "microblaze_i/mb_plb/mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/PLB_masterID_0" (SFF)
 removed.
-        The signal "microblaze_i/plb_dac_0/plb_dac_0/ipif_IP2Bus_Error" is loadless and
-has been removed.
-         Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error" (ROM)
-removed.
-          The signal "microblaze_i/plb_dac_0/N01" is loadless and has been removed.
-           Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error_SW0"
-(ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MRdErr<5>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_1"
@@ -316,17 +312,20 @@ removed.
   The signal "microblaze_i/mb_plb_Sl_MRdErr<9>" is loadless and has been removed.
    Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1" (FF) removed.
+derr_i_1" (SFF) removed.
+    The signal "microblaze_i/plb_dac_1/plb_dac_1/ipif_IP2Bus_Error" is loadless and
+has been removed.
+     Loadless block "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error" (ROM)
+removed.
+      The signal "microblaze_i/plb_dac_1/N02" is loadless and has been removed.
+       Loadless block "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error_SW0"
+(ROM) removed.
     The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_rstpot" is loadless and has been removed.
+derr_i_1_or0000" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_rstpot" (ROM) removed.
-      The signal "microblaze_i/plb_dac_1/N203" is loadless and has been removed.
-       Loadless block
-"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_rstpot_SW0" (ROM) removed.
+derr_i_1_or00001" (ROM) removed.
       The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/maste
 r_id<0>" is loadless and has been removed.
@@ -339,13 +338,6 @@ asterid_reg<0>" is loadless and has been removed.
          Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_m
 asterid_reg_0" (SFF) removed.
-      The signal "microblaze_i/plb_dac_1/plb_dac_1/ipif_IP2Bus_Error" is loadless and
-has been removed.
-       Loadless block "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error" (ROM)
-removed.
-        The signal "microblaze_i/plb_dac_1/N01" is loadless and has been removed.
-         Loadless block "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error_SW0"
-(ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MBusy<0>" is loadless and has been removed.
  Loadless block
 "microblaze_i/mb_plb/mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_0_or0000_f5"
@@ -489,21 +481,13 @@ loadless and has been removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<7>" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1" (FF) removed.
+rerr_i_1" (SFF) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_rstpot" is loadless and has been removed.
+rerr_i_1_or0000" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_rstpot" (ROM) removed.
-        The signal "microblaze_i/plb_dac_0/N471" is loadless and has been removed.
-         Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or000021_SW0" (ROM) removed.
-        The signal "microblaze_i/plb_dac_0/N77" is loadless and has been removed.
-         Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_or00001_SW0" (ROM) removed.
+rerr_i_1_or00001" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<5>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_1"
@@ -532,21 +516,13 @@ loadless and has been removed.
   The signal "microblaze_i/mb_plb_Sl_MWrErr<9>" is loadless and has been removed.
    Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1" (FF) removed.
+rerr_i_1" (SFF) removed.
     The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_rstpot" is loadless and has been removed.
+rerr_i_1_or0000" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_rstpot" (ROM) removed.
-      The signal "microblaze_i/plb_dac_1/N471" is loadless and has been removed.
-       Loadless block
-"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or000021_SW0" (ROM) removed.
-      The signal "microblaze_i/plb_dac_1/N77" is loadless and has been removed.
-       Loadless block
-"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_or00001_SW0" (ROM) removed.
+rerr_i_1_or00001" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRdErr<0>" is loadless and has been removed.
  Loadless block
 "microblaze_i/mb_plb/mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/MRDERR_OR/Y_0_or0000_f5"
@@ -560,13 +536,19 @@ loadless and has been removed.
     The signal "microblaze_i/mb_plb_Sl_MRdErr<6>" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0" (FF) removed.
+derr_i_0" (SFF) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_rstpot" is loadless and has been removed.
+derr_i_0_or0000" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_rstpot" (ROM) removed.
+derr_i_0_or00001" (ROM) removed.
+        The signal
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N4"
+is loadless and has been removed.
+         Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
+derr_i_0_or000021" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MRdErr<4>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_0"
@@ -595,13 +577,19 @@ and has been removed.
   The signal "microblaze_i/mb_plb_Sl_MRdErr<8>" is loadless and has been removed.
    Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0" (FF) removed.
+derr_i_0" (SFF) removed.
     The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_rstpot" is loadless and has been removed.
+derr_i_0_or0000" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_rstpot" (ROM) removed.
+derr_i_0_or00001" (ROM) removed.
+      The signal
+"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N4"
+is loadless and has been removed.
+       Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
+derr_i_0_or000021" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRdBTerm<1>" is loadless and has been
 removed.
  Loadless block
@@ -635,17 +623,19 @@ loadless and has been removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<6>" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0" (FF) removed.
+rerr_i_0" (SFF) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_rstpot" is loadless and has been removed.
+rerr_i_0_or0000" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_rstpot" (ROM) removed.
-        The signal "microblaze_i/plb_dac_0/N49" is loadless and has been removed.
+rerr_i_0_or00001" (ROM) removed.
+        The signal
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N5"
+is loadless and has been removed.
          Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or000021_SW1" (ROM) removed.
+rerr_i_0_or000021" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<4>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0"
@@ -674,17 +664,19 @@ and has been removed.
   The signal "microblaze_i/mb_plb_Sl_MWrErr<8>" is loadless and has been removed.
    Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0" (FF) removed.
+rerr_i_0" (SFF) removed.
     The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_rstpot" is loadless and has been removed.
+rerr_i_0_or0000" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_rstpot" (ROM) removed.
-      The signal "microblaze_i/plb_dac_1/N49" is loadless and has been removed.
+rerr_i_0_or00001" (ROM) removed.
+      The signal
+"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N5"
+is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or000021_SW1" (ROM) removed.
+rerr_i_0_or000021" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRearbitrate<0>" is loadless and has been
 removed.
  Loadless block

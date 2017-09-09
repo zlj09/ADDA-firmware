@@ -239,6 +239,12 @@ Copying cache implementation netlist
 IPNAME:xps_intc INSTANCE:xps_intc_0 -
 F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 157 -
 Copying cache implementation netlist
+IPNAME:plb_dac INSTANCE:plb_dac_0 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 167 -
+Copying cache implementation netlist
+IPNAME:plb_dac INSTANCE:plb_dac_1 -
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 184 -
+Copying cache implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:lmb_bram -
@@ -254,7 +260,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -290,4 +296,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 100.00 seconds
+Total run time: 180.00 seconds

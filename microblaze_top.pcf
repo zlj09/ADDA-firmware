@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Sep 07 13:44:58 2017
+// Written by: Map P.20131013 on Sat Sep 09 14:23:11 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -3736,88 +3736,29 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_30"
         BEL
         "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_31"
+        BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/wav_index_3" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/wav_index_2" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/wav_index_1" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/wav_index_0" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_3" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_2" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_4" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_5" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_6" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_7" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/spi_state" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i"
         BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_27"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_26"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_25"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_24"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_23"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_22"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_21"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_20"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_19"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_18"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_17"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_16"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_15"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_14"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_13"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_12"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_11"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_10"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_9"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_8"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_7"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_6"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_5"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_4"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_3"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_2"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_1"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0"
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy"
         BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/state_reg_FSM_FFd2"
+        BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/state_reg_FSM_FFd1"
         BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/sdio_reg_t" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_23" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_30" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_29" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_31" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_27" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_26" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_28" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_25" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_24" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_22" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_21" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_19" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_18" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_20" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_16" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_17" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
@@ -3829,58 +3770,6 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_2"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_1"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_0"
-        BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_2" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_3" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_4" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_5" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_6" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_7" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_4"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_4"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_3"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_2"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_1"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_1"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_8"
-        BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
-        BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/spi_state" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy"
-        BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/state_reg_FSM_FFd1"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
         BEL
@@ -3952,6 +3841,70 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0"
         BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_27"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_26"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_25"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_24"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_23"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_22"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_21"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_20"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_19"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_18"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_17"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_16"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_15"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_14"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_13"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_12"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_11"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_10"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_9"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_8"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_7"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_6"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_5"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_4"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_3"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_2"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_1"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0"
+        BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_29"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_28"
@@ -4020,17 +3973,53 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/set_sl_busy"
         BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i"
+        BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/data_timeout"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_2"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_1"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_0"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_busy"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
         BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0"
+        BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_4"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_1"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_4"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_3"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_2"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_1"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h0_1"
+        BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_8"
         BEL
         "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/addr_out_s_h_0"
         BEL
@@ -4050,52 +4039,72 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS"
         BEL "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/FF_WRACK" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/state_reg_FSM_FFd3" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/wav_index_7" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/wav_index_6" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/wav_index_5" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/wav_index_4" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_30" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/Mtrien_sdio_reg_o" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/cs_reg" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/spi_cnt_4" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/spi_cnt_3" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/spi_cnt_2" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/spi_cnt_1" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/spi_cnt_0" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/cs_reg" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/Mtridata_sdio_reg_o"
-        BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/sclk_reg" BEL
+        BEL "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/reset_reg" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_en" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/reset_reg" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_31" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_30" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/sclk_reg" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_clk_reg" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_30" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_29" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_31" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_28" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_27" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_29" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_26" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_25" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_23" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_22" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_24" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_20" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_19" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_26" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_22" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_21" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_17" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_16" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_23" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_19" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_18" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_20" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_16" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_15" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_14" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_12" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_11" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_17" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_13" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_9" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_8" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_12" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_14" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_10" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_6" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_5" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_9" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_11" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_7" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_6" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_8" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_5" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_4" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_3" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_1" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_0" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_2" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_1" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_3" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_31" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_30" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg4_0" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_28" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_27" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_29" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_25" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_24" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_26" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_22" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_21" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_23" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_19" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_18" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_20" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_16" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_15" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_17" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_14" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_13" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_11" BEL
@@ -4130,52 +4139,52 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_14" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_13" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_15" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_12" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_11" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_9" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_8" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_10" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_6" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_5" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_12" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_8" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_7" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_3" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_2" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_9" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_5" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_4" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_6" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_2" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_1" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_3" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg2_0" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_30" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_29" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_31" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_27" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_26" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_29" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_28" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_24" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_23" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_30" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_26" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_25" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_27" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_23" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_22" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_21" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_19" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_18" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_24" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_20" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_16" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_15" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_19" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_21" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_17" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_13" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_12" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_16" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_18" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_14" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_13" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_15" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_11" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_10" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_8" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_7" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_12" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_9" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_5" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_4" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_8" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_6" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_2" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_1" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_5" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_7" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_3" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_2" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_4" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_0" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_31" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg1_1" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_29" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_28" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_26" BEL
@@ -4184,11 +4193,11 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_23" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_22" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_24" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_21" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_20" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_19" BEL
+        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_21" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_18" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_17" BEL
-        "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_19" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_15" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_14" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_16" BEL
@@ -4206,87 +4215,29 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_4" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_0" BEL
         "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg0_1" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31"
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/wav_index_3" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/wav_index_2" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/wav_index_1" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_0" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/wav_index_0" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_3" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_1" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_2" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_4" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_5" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_6" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_7" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_8" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_9" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/spi_state" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i"
         BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_27"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_26"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_25"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_24"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_23"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_22"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_21"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_20"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_19"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_18"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_17"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_16"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_15"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_14"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_13"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_12"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_11"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_10"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_9"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_8"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_7"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_6"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_5"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_4"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_3"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_2"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_1"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0"
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy"
         BEL "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/state_reg_FSM_FFd2"
+        BEL "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/state_reg_FSM_FFd1"
         BEL "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/sdio_reg_t" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_23" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_30" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_29" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_31" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_27" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_26" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_28" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_25" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_24" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_22" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_21" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_19" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_18" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_20" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_16" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_17" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
@@ -4298,58 +4249,6 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_2"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_1"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_0"
-        BEL "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_0" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_1" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_2" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_3" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_4" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_5" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_6" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_7" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_8" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_9" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_4"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_4"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_3"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_2"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_1"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_1"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_8"
-        BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
-        BEL "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/spi_state" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy"
-        BEL "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/state_reg_FSM_FFd1"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
         BEL
@@ -4421,6 +4320,70 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0"
         BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_27"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_26"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_25"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_24"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_23"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_22"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_21"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_20"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_19"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_18"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_17"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_16"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_15"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_14"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_13"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_12"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_11"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_10"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_9"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_8"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_7"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_6"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_5"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_4"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_3"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_2"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_1"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0"
+        BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_29"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_28"
@@ -4489,17 +4452,53 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/set_sl_busy"
         BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i"
+        BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/data_timeout"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_2"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_1"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_0"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_busy"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
         BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0"
+        BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_4"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_1"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_4"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_3"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_2"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_1"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h0_1"
+        BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_8"
         BEL
         "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/addr_out_s_h_0"
         BEL
@@ -4519,52 +4518,72 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS"
         BEL "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/FF_WRACK" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/state_reg_FSM_FFd3" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/wav_index_7" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/wav_index_6" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/wav_index_5" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/wav_index_4" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_30" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/Mtrien_sdio_reg_o" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/cs_reg" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/spi_cnt_4" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/spi_cnt_3" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/spi_cnt_2" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/spi_cnt_1" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/spi_cnt_0" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/cs_reg" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/Mtridata_sdio_reg_o"
-        BEL "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/sclk_reg" BEL
+        BEL "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/reset_reg" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_en" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/reset_reg" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_31" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_30" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/sclk_reg" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_clk_reg" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_30" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_29" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_31" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_28" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_27" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_29" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_26" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_25" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_23" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_22" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_24" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_20" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_19" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_26" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_22" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_21" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_17" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_16" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_23" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_19" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_18" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_20" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_16" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_15" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_14" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_12" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_11" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_17" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_13" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_9" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_8" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_12" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_14" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_10" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_6" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_5" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_9" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_11" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_7" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_6" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_8" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_5" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_4" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_3" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_1" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_0" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_2" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_1" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_3" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_31" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_30" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg4_0" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_28" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_27" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_29" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_25" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_24" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_26" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_22" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_21" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_23" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_19" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_18" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_20" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_16" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_15" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_17" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_14" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_13" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg3_11" BEL
@@ -4599,52 +4618,52 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_14" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_13" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_15" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_12" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_11" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_9" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_8" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_10" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_6" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_5" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_12" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_8" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_7" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_3" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_2" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_9" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_5" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_4" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_6" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_2" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_1" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_3" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg2_0" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_30" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_29" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_31" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_27" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_26" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_29" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_28" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_24" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_23" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_30" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_26" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_25" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_27" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_23" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_22" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_21" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_19" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_18" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_24" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_20" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_16" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_15" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_19" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_21" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_17" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_13" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_12" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_16" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_18" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_14" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_13" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_15" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_11" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_10" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_8" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_7" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_12" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_9" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_5" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_4" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_8" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_6" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_2" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_1" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_5" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_7" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_3" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_2" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_4" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_0" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_31" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg1_1" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_29" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_28" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_26" BEL
@@ -4653,11 +4672,11 @@ TIMEGRP microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PIN
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_23" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_22" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_24" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_21" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_20" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_19" BEL
+        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_21" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_18" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_17" BEL
-        "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_19" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_15" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_14" BEL
         "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/slv_reg0_16" BEL

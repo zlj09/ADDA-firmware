@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.46 secs
  
 --> 
 TABLE OF CONTENTS
@@ -252,6 +252,9 @@ Entity <microblaze_plb_dac_1_wrapper> compiled.
 Entity <microblaze_plb_dac_1_wrapper> (Architecture <STRUCTURE>) compiled.
 Compiling verilog file "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a/hdl/verilog/user_logic.v" in library plb_dac_v2_00_a
 Module <user_logic> compiled
+Module <rect_wave_gen> compiled
+Module <saw_wave_gen> compiled
+Module <sine_wave_gen> compiled
 No errors in compilation
 Analysis of file <"microblaze_plb_dac_1_wrapper_xst.prj"> succeeded.
  
@@ -317,6 +320,12 @@ Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_s
 	C_PLB_MID_WIDTH = 1
 	C_PLB_NUM_MASTERS = 2
 	C_SPLB_P2P = 0
+
+Analyzing hierarchy for module <rect_wave_gen> in library <plb_dac_v2_00_a>.
+
+Analyzing hierarchy for module <saw_wave_gen> in library <plb_dac_v2_00_a>.
+
+Analyzing hierarchy for module <sine_wave_gen> in library <plb_dac_v2_00_a>.
 
 Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
 	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011001001110000000000000000000000",
@@ -578,6 +587,15 @@ INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that 
 INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Module <user_logic> is correct for synthesis.
  
+Analyzing module <rect_wave_gen> in library <plb_dac_v2_00_a>.
+Module <rect_wave_gen> is correct for synthesis.
+ 
+Analyzing module <saw_wave_gen> in library <plb_dac_v2_00_a>.
+Module <saw_wave_gen> is correct for synthesis.
+ 
+Analyzing module <sine_wave_gen> in library <plb_dac_v2_00_a>.
+Module <sine_wave_gen> is correct for synthesis.
+ 
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -585,54 +603,6 @@ Module <user_logic> is correct for synthesis.
 
 Performing bidirectional port resolution...
 INFO:Xst:2679 - Register <byte_index> in unit <user_logic> has a constant value of 100 during circuit operation. The register is replaced by logic.
-
-Synthesizing Unit <user_logic>.
-    Related source file is "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a/hdl/verilog/user_logic.v".
-WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found finite state machine <FSM_0> for signal <state_reg>.
-    -----------------------------------------------------------------------
-    | States             | 5                                              |
-    | Transitions        | 13                                             |
-    | Inputs             | 5                                              |
-    | Outputs            | 7                                              |
-    | Clock              | Bus2IP_Clk                (rising_edge)        |
-    | Reset              | Bus2IP_Reset              (positive)           |
-    | Reset type         | synchronous                                    |
-    | Reset State        | 000                                            |
-    | Encoding           | automatic                                      |
-    | Implementation     | automatic                                      |
-    -----------------------------------------------------------------------
-    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 334.
-    Found 5-bit adder carry out for signal <COND_281$addsub0000>.
-    Found 1-bit register for signal <cs_reg>.
-    Found 1-bit register for signal <dac_clk_reg>.
-    Found 10-bit register for signal <dac_data_reg>.
-    Found 1-bit register for signal <dac_en>.
-    Found 1-bit register for signal <Mtridata_sdio_reg_o>.
-    Found 1-bit register for signal <Mtrien_sdio_reg_o>.
-    Found 1-bit register for signal <reset_reg>.
-    Found 1-bit register for signal <sclk_reg>.
-    Found 1-bit tristate buffer for signal <sdio_reg_o>.
-    Found 1-bit register for signal <sdio_reg_t>.
-    Found 32-bit register for signal <slv_reg0>.
-    Found 32-bit register for signal <slv_reg1>.
-    Found 32-bit register for signal <slv_reg2>.
-    Found 32-bit register for signal <slv_reg3>.
-    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 222.
-    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 222.
-    Found 32-bit register for signal <slv_reg4>.
-    Found 5-bit register for signal <spi_cnt>.
-    Found 5-bit adder for signal <spi_cnt$addsub0000>.
-    Found 1-bit register for signal <spi_state>.
-    Summary:
-	inferred   1 Finite State Machine(s).
-	inferred 184 D-type flip-flop(s).
-	inferred   2 Adder/Subtractor(s).
-	inferred   2 Comparator(s).
-	inferred   1 Multiplexer(s).
-	inferred   1 Tristate(s).
-Unit <user_logic> synthesized.
-
 
 Synthesizing Unit <counter_f>.
     Related source file is "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
@@ -701,6 +671,27 @@ Synthesizing Unit <or_muxcy>.
 Unit <or_muxcy> synthesized.
 
 
+Synthesizing Unit <rect_wave_gen>.
+    Related source file is "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a/hdl/verilog/user_logic.v".
+    Found 8-bit comparator less for signal <rect_data$cmp_lt0000> created at line 455.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <rect_wave_gen> synthesized.
+
+
+Synthesizing Unit <saw_wave_gen>.
+    Related source file is "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a/hdl/verilog/user_logic.v".
+Unit <saw_wave_gen> synthesized.
+
+
+Synthesizing Unit <sine_wave_gen>.
+    Related source file is "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a/hdl/verilog/user_logic.v".
+    Found 256x10-bit ROM for signal <sine_data_reg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <sine_wave_gen> synthesized.
+
+
 Synthesizing Unit <soft_reset>.
     Related source file is "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd".
 WARNING:Xst:647 - Input <Bus2IP_Data<0:27>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -711,6 +702,57 @@ WARNING:Xst:1780 - Signal <error_reply> is never used or assigned. This unconnec
     Summary:
 	inferred   2 D-type flip-flop(s).
 Unit <soft_reset> synthesized.
+
+
+Synthesizing Unit <user_logic>.
+    Related source file is "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a/hdl/verilog/user_logic.v".
+WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 7                                              |
+    | Clock              | Bus2IP_Clk                (rising_edge)        |
+    | Reset              | Bus2IP_Reset              (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 361.
+    Found 5-bit adder carry out for signal <COND_281$addsub0000>.
+    Found 1-bit register for signal <cs_reg>.
+    Found 1-bit register for signal <dac_clk_reg>.
+    Found 10-bit register for signal <dac_data_reg>.
+    Found 1-bit register for signal <dac_en>.
+    Found 1-bit register for signal <Mtridata_sdio_reg_o>.
+    Found 1-bit register for signal <Mtrien_sdio_reg_o>.
+    Found 1-bit register for signal <reset_reg>.
+    Found 1-bit register for signal <sclk_reg>.
+    Found 1-bit tristate buffer for signal <sdio_reg_o>.
+    Found 1-bit register for signal <sdio_reg_t>.
+    Found 32-bit register for signal <slv_reg0>.
+    Found 32-bit register for signal <slv_reg1>.
+    Found 32-bit register for signal <slv_reg2>.
+    Found 32-bit register for signal <slv_reg3>.
+    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 229.
+    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 229.
+    Found 32-bit register for signal <slv_reg4>.
+    Found 5-bit register for signal <spi_cnt>.
+    Found 5-bit adder for signal <spi_cnt$addsub0000>.
+    Found 1-bit register for signal <spi_state>.
+    Found 8-bit up accumulator for signal <wav_index>.
+    Found 4-bit adder for signal <wav_index$add0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Accumulator(s).
+	inferred 184 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <user_logic> synthesized.
 
 
 Synthesizing Unit <or_gate128>.
@@ -834,10 +876,15 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# ROMs                                                 : 1
+ 256x10-bit ROM                                        : 1
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 1
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
  9-bit subtractor                                      : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
 # Registers                                            : 226
  1-bit register                                        : 214
  10-bit register                                       : 1
@@ -846,9 +893,10 @@ Macro Statistics
  4-bit register                                        : 3
  5-bit register                                        : 2
  9-bit register                                        : 1
-# Comparators                                          : 2
+# Comparators                                          : 3
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
+ 8-bit comparator less                                 : 1
 # Multiplexers                                         : 1
  1-bit 32-to-1 multiplexer                             : 1
 # Tristates                                            : 1
@@ -879,15 +927,21 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Adders/Subtractors                                   : 3
+# ROMs                                                 : 1
+ 256x10-bit ROM                                        : 1
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 1
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
  9-bit subtractor                                      : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
 # Registers                                            : 389
  Flip-Flops                                            : 389
-# Comparators                                          : 2
+# Comparators                                          : 3
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
+ 8-bit comparator less                                 : 1
 # Multiplexers                                         : 1
  1-bit 32-to-1 multiplexer                             : 1
 
@@ -962,8 +1016,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 347
- Flip-Flops                                            : 347
+# Registers                                            : 355
+ Flip-Flops                                            : 355
 
 =========================================================================
 
@@ -991,32 +1045,35 @@ Design Statistics
 # IOs                              : 221
 
 Cell Usage :
-# BELS                             : 469
+# BELS                             : 734
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 41
-#      LUT2_D                      : 2
-#      LUT2_L                      : 2
-#      LUT3                        : 60
-#      LUT3_D                      : 7
-#      LUT3_L                      : 4
-#      LUT4                        : 250
-#      LUT4_D                      : 26
-#      LUT4_L                      : 51
-#      MUXCY                       : 6
-#      MUXF5                       : 11
-#      MUXF6                       : 4
-#      MUXF7                       : 2
+#      INV                         : 3
+#      LUT1                        : 4
+#      LUT2                        : 43
+#      LUT2_L                      : 4
+#      LUT3                        : 87
+#      LUT3_D                      : 6
+#      LUT3_L                      : 3
+#      LUT4                        : 376
+#      LUT4_D                      : 4
+#      LUT4_L                      : 39
+#      MUXCY                       : 13
+#      MUXF5                       : 88
+#      MUXF6                       : 32
+#      MUXF7                       : 15
+#      MUXF8                       : 7
 #      VCC                         : 1
-# FlipFlops/Latches                : 347
-#      FD                          : 62
-#      FD_1                        : 10
+#      XORCY                       : 8
+# FlipFlops/Latches                : 355
+#      FD                          : 5
+#      FD_1                        : 1
 #      FDE                         : 1
-#      FDR                         : 110
-#      FDRE                        : 155
-#      FDRS                        : 2
+#      FDR                         : 127
+#      FDR_1                       : 9
+#      FDRE                        : 193
+#      FDRS                        : 5
 #      FDRSE                       : 5
-#      FDS                         : 2
+#      FDS                         : 9
 # Tri-States                       : 1
 #      BUFT                        : 1
 =========================================================================
@@ -1026,9 +1083,9 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                      312  out of  24576     1%  
- Number of Slice Flip Flops:            347  out of  49152     0%  
- Number of 4 input LUTs:                444  out of  49152     0%  
+ Number of Slices:                      384  out of  24576     1%  
+ Number of Slice Flip Flops:            355  out of  49152     0%  
+ Number of 4 input LUTs:                569  out of  49152     1%  
  Number of IOs:                         221
  Number of bonded IOBs:                   0  out of    640     0%  
  Number of TBUFs:                         1  out of      0        (*) 
@@ -1056,7 +1113,7 @@ Clock Information:
 -----------------------------------+----------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                  | Load  |
 -----------------------------------+----------------------------------------+-------+
-SPLB_Clk                           | NONE(plb_dac_1/USER_LOGIC_I/slv_reg0_1)| 347   |
+SPLB_Clk                           | NONE(plb_dac_1/USER_LOGIC_I/slv_reg0_1)| 355   |
 -----------------------------------+----------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -1068,9 +1125,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 5.975ns (Maximum Frequency: 167.367MHz)
-   Minimum input arrival time before clock: 2.989ns
-   Maximum output required time after clock: 1.300ns
+   Minimum period: 7.422ns (Maximum Frequency: 134.732MHz)
+   Minimum input arrival time before clock: 3.039ns
+   Maximum output required time after clock: 1.311ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -1079,32 +1136,31 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 5.975ns (frequency: 167.367MHz)
-  Total number of paths / destination ports: 4243 / 620
+  Clock period: 7.422ns (frequency: 134.732MHz)
+  Total number of paths / destination ports: 5465 / 743
 -------------------------------------------------------------------------
-Delay:               2.987ns (Levels of Logic = 2)
+Delay:               3.711ns (Levels of Logic = 1)
   Source:            plb_dac_1/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (FF)
-  Destination:       plb_dac_1/USER_LOGIC_I/dac_data_reg_4 (FF)
+  Destination:       plb_dac_1/USER_LOGIC_I/wav_index_4 (FF)
   Source Clock:      SPLB_Clk rising
   Destination Clock: SPLB_Clk falling
 
-  Data Path: plb_dac_1/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS to plb_dac_1/USER_LOGIC_I/dac_data_reg_4
+  Data Path: plb_dac_1/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS to plb_dac_1/USER_LOGIC_I/wav_index_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRSE:C->Q            5   0.360   0.546  plb_dac_1/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (plb_dac_1/SOFT_RESET_I/flop_q_chain<4>)
-     LUT2:I1->O          180   0.195   1.669  plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_2 (plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1)
-     LUT4:I3->O            1   0.195   0.000  plb_dac_1/USER_LOGIC_I/dac_data_reg_4_rstpot (plb_dac_1/USER_LOGIC_I/dac_data_reg_4_rstpot)
-     FD_1:D                    0.022          plb_dac_1/USER_LOGIC_I/dac_data_reg_4
+     FDRSE:C->Q            4   0.360   0.537  plb_dac_1/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (plb_dac_1/SOFT_RESET_I/flop_q_chain<4>)
+     LUT2:I1->O          193   0.195   1.557  plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1 (plb_dac_1/rst_Bus2IP_Reset)
+     FDRE:R                    1.062          plb_dac_1/USER_LOGIC_I/wav_index_4
     ----------------------------------------
-    Total                      2.987ns (0.772ns logic, 2.215ns route)
-                                       (25.8% logic, 74.2% route)
+    Total                      3.711ns (1.617ns logic, 2.094ns route)
+                                       (43.6% logic, 56.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 429 / 428
+  Total number of paths / destination ports: 436 / 436
 -------------------------------------------------------------------------
-Offset:              2.989ns (Levels of Logic = 1)
+Offset:              3.039ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
   Destination:       plb_dac_1/USER_LOGIC_I/slv_reg0_1 (FF)
   Destination Clock: SPLB_Clk rising
@@ -1113,40 +1169,40 @@ Offset:              2.989ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT2:I0->O          180   0.195   1.507  plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_2 (plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1)
+     LUT2:I0->O          193   0.195   1.557  plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1 (plb_dac_1/rst_Bus2IP_Reset)
      FDRE:R                    1.062          plb_dac_1/USER_LOGIC_I/slv_reg0_1
     ----------------------------------------
-    Total                      2.989ns (1.482ns logic, 1.507ns route)
-                                       (49.6% logic, 50.4% route)
+    Total                      3.039ns (1.482ns logic, 1.557ns route)
+                                       (48.8% logic, 51.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
   Total number of paths / destination ports: 76 / 63
 -------------------------------------------------------------------------
-Offset:              1.300ns (Levels of Logic = 1)
-  Source:            plb_dac_1/USER_LOGIC_I/dac_en (FF)
+Offset:              1.311ns (Levels of Logic = 1)
+  Source:            plb_dac_1/USER_LOGIC_I/dac_clk_reg (FF)
   Destination:       S_DCLKIO (PAD)
   Source Clock:      SPLB_Clk rising
 
-  Data Path: plb_dac_1/USER_LOGIC_I/dac_en to S_DCLKIO
+  Data Path: plb_dac_1/USER_LOGIC_I/dac_clk_reg to S_DCLKIO
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             12   0.360   0.745  plb_dac_1/USER_LOGIC_I/dac_en (plb_dac_1/USER_LOGIC_I/dac_en)
-     LUT2:I0->O            0   0.195   0.000  plb_dac_1/USER_LOGIC_I/IP2DAC_Data<9>1 (S_Data<9>)
+     FDR:C->Q             18   0.360   0.756  plb_dac_1/USER_LOGIC_I/dac_clk_reg (plb_dac_1/USER_LOGIC_I/dac_clk_reg)
+     LUT2:I1->O            0   0.195   0.000  plb_dac_1/USER_LOGIC_I/IP2DAC_DCLKIO1 (S_Clkout)
     ----------------------------------------
-    Total                      1.300ns (0.555ns logic, 0.745ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      1.311ns (0.555ns logic, 0.756ns route)
+                                       (42.3% logic, 57.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 19.39 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 32.53 secs
  
 --> 
 
-Total memory usage is 516040 kilobytes
+Total memory usage is 548356 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  105 (   0 filtered)

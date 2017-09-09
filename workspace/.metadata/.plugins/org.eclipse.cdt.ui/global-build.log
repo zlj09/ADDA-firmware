@@ -2787,3 +2787,350 @@ elfcheck passed.
 18:15:09 **** Auto Build of project br0101_bsp ****
 make -k all 
 'Finished building libraries'
+14:27:33 **** Auto Build of project br0101_bsp ****
+make -k all 
+Finished building libraries
+14:27:39 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+14:30:45 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: br0101.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7924	    348	   2096	  10368	   2880	br0101.elf
+Finished building: br0101.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+Finished building: br0101.elf.elfcheck
+ 
+16:06:26 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:5: warning: implicit declaration of function 'XUartLite_EnableInterrup' [-Wimplicit-function-declaration]
+../src/helloworld.c:51:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/backups/helloworld - DB test, reg rw, uart polling.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backups/helloworld - DB test, reg rw, uart polling.d" -MT"src/backups/helloworld\ -\ DB\ test,\ reg\ rw,\ uart\ polling.d" -o "src/backups/helloworld - DB test, reg rw, uart polling.o" "../src/backups/helloworld - DB test, reg rw, uart polling.c"
+../src/backups/helloworld - DB test, reg rw, uart polling.c:35:22: fatal error: platform.h: No such file or directory
+compilation terminated.
+make: *** [src/backups/helloworld - DB test, reg rw, uart polling.o] ´íÎó 1
+16:11:00 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:5: warning: implicit declaration of function 'XUartLite_EnableInterrup' [-Wimplicit-function-declaration]
+../src/helloworld.c:53:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/backups/helloworld - DB test, reg rw, uart polling.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backups/helloworld - DB test, reg rw, uart polling.d" -MT"src/backups/helloworld\ -\ DB\ test,\ reg\ rw,\ uart\ polling.d" -o "src/backups/helloworld - DB test, reg rw, uart polling.o" "../src/backups/helloworld - DB test, reg rw, uart polling.c"
+../src/backups/helloworld - DB test, reg rw, uart polling.c:35:22: fatal error: platform.h: No such file or directory
+compilation terminated.
+make: *** [src/backups/helloworld - DB test, reg rw, uart polling.o] ´íÎó 1
+16:11:49 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:5: warning: implicit declaration of function 'XUartLite_EnableInterrup' [-Wimplicit-function-declaration]
+../src/helloworld.c:52:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/backups/helloworld - DB test, reg rw, uart polling.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backups/helloworld - DB test, reg rw, uart polling.d" -MT"src/backups/helloworld\ -\ DB\ test,\ reg\ rw,\ uart\ polling.d" -o "src/backups/helloworld - DB test, reg rw, uart polling.o" "../src/backups/helloworld - DB test, reg rw, uart polling.c"
+../src/backups/helloworld - DB test, reg rw, uart polling.c:35:22: fatal error: platform.h: No such file or directory
+compilation terminated.
+make: *** [src/backups/helloworld - DB test, reg rw, uart polling.o] ´íÎó 1
+16:13:39 **** Clean-only build of configuration Debug for project br0101 ****
+make clean 
+rm -rf  ./src/backups/helloworld\ -\ DB\ test,\ reg\ rw,\ uart\ polling.o  ./src/helloworld.o ./src/platform.o  ./src/backups/helloworld\ -\ DB\ test,\ reg\ rw,\ uart\ polling.d  ./src/helloworld.d ./src/platform.d  br0101.elf.size  br0101.elf.elfcheck  br0101.elf
+ 
+16:13:39 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:5: warning: implicit declaration of function 'XUartLite_EnableInterrup' [-Wimplicit-function-declaration]
+../src/helloworld.c:52:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+F:\Programs\Verilog\FPGA_Group\test_br0101\workspace\br0101\Debug/../src/helloworld.c:59: undefined reference to `XUartLite_EnableInterrup'
+collect2: ld returned 1 exit status
+make: *** [br0101.elf] ´íÎó 1
+16:13:57 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:5: warning: implicit declaration of function 'XUartLite_EnableInterrup' [-Wimplicit-function-declaration]
+../src/helloworld.c:54:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+F:\Programs\Verilog\FPGA_Group\test_br0101\workspace\br0101\Debug/../src/helloworld.c:61: undefined reference to `XUartLite_EnableInterrup'
+collect2: ld returned 1 exit status
+make: *** [br0101.elf] ´íÎó 1
+16:14:44 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:54:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: br0101.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8108	    348	   2096	  10552	   2938	br0101.elf
+Finished building: br0101.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+Finished building: br0101.elf.elfcheck
+ 
+16:19:21 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:20: error: 'xinc_0' undeclared (first use in this function)
+../src/helloworld.c:63:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:63:29: error: 'XPAR_INTC_0_UARTLITE_0_VEC_ID' undeclared (first use in this function)
+../src/helloworld.c:54:26: warning: unused variable 'wave_form' [-Wunused-variable]
+make: *** [src/helloworld.o] ´íÎó 1
+16:21:07 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:20: error: 'xinc_0' undeclared (first use in this function)
+../src/helloworld.c:63:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:54:26: warning: unused variable 'wave_form' [-Wunused-variable]
+make: *** [src/helloworld.o] ´íÎó 1
+16:21:18 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:54:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: br0101.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9352	    348	   2220	  11920	   2e90	br0101.elf
+Finished building: br0101.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+Finished building: br0101.elf.elfcheck
+ 
+16:26:34 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:74:28: error: 'UARTLITE_INT_IRQ_ID' undeclared (first use in this function)
+../src/helloworld.c:74:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:54:26: warning: unused variable 'wave_form' [-Wunused-variable]
+make: *** [src/helloworld.o] ´íÎó 1
+16:27:35 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:54:26: warning: unused variable 'wave_form' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: br0101.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10120	    348	   2220	  12688	   3190	br0101.elf
+Finished building: br0101.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+Finished building: br0101.elf.elfcheck
+ 
+16:37:50 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:44: warning: unused variable 'dac_data' [-Wunused-variable]
+../src/helloworld.c:58:25: warning: unused variable 'delay_time' [-Wunused-variable]
+../src/helloworld.c:58:9: warning: unused variable 'smp_rate' [-Wunused-variable]
+../src/helloworld.c:57:18: warning: unused variable 'reg_val' [-Wunused-variable]
+../src/helloworld.c:57:8: warning: unused variable 'reg_addr' [-Wunused-variable]
+../src/helloworld.c:56:26: warning: unused variable 'wave_form' [-Wunused-variable]
+../src/helloworld.c:56:13: warning: unused variable 'bit_pos' [-Wunused-variable]
+../src/helloworld.c:56:8: warning: unused variable 'msg' [-Wunused-variable]
+../src/helloworld.c:50:16: warning: unused variable 'i' [-Wunused-variable]
+../src/helloworld.c:50:6: warning: unused variable 'reg_data' [-Wunused-variable]
+../src/helloworld.c: In function 'uart1_sendhandler':
+../src/helloworld.c:110:2: warning: passing argument 1 of 'XUartLite_Recv' from incompatible pointer type [enabled by default]
+../../br0101_bsp/microblaze_0/include/xuartlite.h:250:14: note: expected 'struct XUartLite *' but argument is of type 'void **'
+Finished building: ../src/helloworld.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: br0101.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9626	    348	   2226	  12200	   2fa8	br0101.elf
+Finished building: br0101.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+Finished building: br0101.elf.elfcheck
+ 
+16:38:03 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:44: warning: unused variable 'dac_data' [-Wunused-variable]
+../src/helloworld.c:58:25: warning: unused variable 'delay_time' [-Wunused-variable]
+../src/helloworld.c:58:9: warning: unused variable 'smp_rate' [-Wunused-variable]
+../src/helloworld.c:57:18: warning: unused variable 'reg_val' [-Wunused-variable]
+../src/helloworld.c:57:8: warning: unused variable 'reg_addr' [-Wunused-variable]
+../src/helloworld.c:56:26: warning: unused variable 'wave_form' [-Wunused-variable]
+../src/helloworld.c:56:13: warning: unused variable 'bit_pos' [-Wunused-variable]
+../src/helloworld.c:56:8: warning: unused variable 'msg' [-Wunused-variable]
+../src/helloworld.c:50:16: warning: unused variable 'i' [-Wunused-variable]
+../src/helloworld.c:50:6: warning: unused variable 'reg_data' [-Wunused-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: br0101.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: br0101.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9622	    348	   2220	  12190	   2f9e	br0101.elf
+Finished building: br0101.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+Finished building: br0101.elf.elfcheck
+ 

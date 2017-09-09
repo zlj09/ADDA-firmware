@@ -9,7 +9,11 @@ src/helloworld.d: ../src/helloworld.c ../src/platform.h \
  ../../br0101_bsp/microblaze_0/include/mb_interface.h \
  ../../br0101_bsp/microblaze_0/include/xil_printf.h \
  ../../br0101_bsp/microblaze_0/include/xuartlite.h \
- ../../br0101_bsp/microblaze_0/include/xil_assert.h
+ ../../br0101_bsp/microblaze_0/include/xil_assert.h \
+ ../../br0101_bsp/microblaze_0/include/xintc.h \
+ ../../br0101_bsp/microblaze_0/include/xparameters.h \
+ ../../br0101_bsp/microblaze_0/include/xintc_l.h \
+ ../../br0101_bsp/microblaze_0/include/xil_exception.h
 
 ../src/platform.h:
 
@@ -34,3 +38,11 @@ src/helloworld.d: ../src/helloworld.c ../src/platform.h \
 ../../br0101_bsp/microblaze_0/include/xuartlite.h:
 
 ../../br0101_bsp/microblaze_0/include/xil_assert.h:
+
+../../br0101_bsp/microblaze_0/include/xintc.h:
+
+../../br0101_bsp/microblaze_0/include/xparameters.h:
+
+../../br0101_bsp/microblaze_0/include/xintc_l.h:
+
+../../br0101_bsp/microblaze_0/include/xil_exception.h:
