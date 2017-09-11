@@ -304,7 +304,7 @@ output                                    IP2Bus_Error;
     end
     else begin
       case ( state_reg )
-        3'd0 : begin
+        3'd0 : begin    //Idle State
           if (slv_reg0[31] == 1'b1) begin
             state_reg <= 3'd1;
             dac_en <= 1'b1;
@@ -316,7 +316,7 @@ output                                    IP2Bus_Error;
             reset_reg <= reset_reg;
           end
         end
-        3'd1 : begin
+        3'd1 : begin    //Ready State
           reset_reg <= 1'b0;
           sclk_reg <= 1'b1;
           cs_reg <= 1'b1;
@@ -339,7 +339,7 @@ output                                    IP2Bus_Error;
             end
           end
         end
-        3'd2 : begin
+        3'd2 : begin    //Judge State
           spi_state <= 1'b1;
           if (slv_reg3[16] == 1'b1) begin
             state_reg <= 3'd3;
@@ -350,7 +350,7 @@ output                                    IP2Bus_Error;
             cs_reg <= 1'b0;
           end
         end
-        3'd3 : begin
+        3'd3 : begin    //Read State
           if (sclk_reg == 1'b1) begin
             if (spi_cnt == 5'd16) begin
               state_reg <= 3'd1;
@@ -375,7 +375,7 @@ output                                    IP2Bus_Error;
             spi_cnt <= spi_cnt + 1'b1;
           end
         end
-        3'd4 : begin
+        3'd4 : begin    //Write State
           if (sclk_reg == 1'b1) begin
             if (spi_cnt == 5'd16) begin
               state_reg <= 3'd1;
