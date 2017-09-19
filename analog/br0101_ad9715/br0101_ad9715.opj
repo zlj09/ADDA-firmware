@@ -54,6 +54,8 @@
       (Type "Report"))
     (File
        ".\br0101_ad9715-pspicefiles\plan a with disable\plan a with disable.net"
+      (Type "Report"))
+    (File ".\br0101_ad9715-pspicefiles\rect wav test\rect wav test.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Model Libraries"
@@ -91,14 +93,28 @@
          ".\br0101_ad9715-pspicefiles\plan a with capacitors\test high freq.sim"
         (DisplayName "Plan A with Capacitors-Test High Freq")
         (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\br0101_ad9715-pspicefiles\plan a with disable\test disable.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\br0101_ad9715-pspicefiles\plan a with disable\test disable.sim"
         (DisplayName "Plan A with Disable-Test DIsable")
-        (Type "PSpice Profile"))))
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\br0101_ad9715-pspicefiles\rect wav test\time dom test.sim"
+        (DisplayName "Rect Wav Test-Time Dom Test")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\br0101_ad9715-pspicefiles\rect wav test\time dom test.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (IPULSE
+      (FullPartName "IPULSE.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (0
       (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -142,11 +158,6 @@
       (DeviceIndex "0"))
     (VSIN
       (FullPartName "VSIN.Normal")
-      (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (IDC
-      (FullPartName "IDC.Normal")
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
@@ -195,24 +206,15 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn")
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715.dsn")
       (Path "Design Resources"
-         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
-         "Plan A with Disable")
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715.dsn"
+         "Rect Wav Test")
       (Path "Design Resources"
-         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
-         "Optional Combination")
-      (Path "Design Resources"
-         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
-         "Optional Output Circut")
-      (Path "Design Resources"
-         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715.dsn"
          "Output Plan A")
       (Path "Design Resources"
-         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
-         "Output Plan B")
-      (Path "Design Resources"
-         "F:\DESIGN\CIRCUITS\OrCAD\FPGA\BR0101\br0101_ad9715\br0101_ad9715.dsn"
+         "F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715.dsn"
          "Plan A with Capacitors")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library"
@@ -225,16 +227,16 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 385"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 385"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 844 0 424")
-        (Scroll "244 269")
-        (Zoom "156")
+        (Placement "44 0 1 -1 -1 -8 -31 156 1293 156 580")
+        (Scroll "-59 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "F:\DESIGN\CIRCUITS\ORCAD\FPGA\BR0101\BR0101_AD9715\BR0101_AD9715.DSN")
-      (Schematic "Plan A with Disable")
+         "F:\PROGRAMS\VERILOG\FPGA_GROUP\TEST_BR0101\ANALOG\BR0101_AD9715\BR0101_AD9715.DSN")
+      (Schematic "Rect Wav Test")
       (Page "PAGE1"))))

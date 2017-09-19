@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (39.9,-8.4) circle (3);
+\draw (39.9,-8.4) node {$Idle$};
+\draw [black] (39.9,-40.9) circle (3);
+\draw (39.9,-40.9) node {$Judge$};
+\draw [black] (11.6,-40.9) circle (3);
+\draw (11.6,-40.9) node {$Read$};
+\draw [black] (65.8,-40.9) circle (3);
+\draw (65.8,-40.9) node {$Write$};
+\draw [black] (39.9,-23.3) circle (3);
+\draw (39.9,-23.3) node {$Ready$};
+\draw [black] (36.9,-40.9) -- (14.6,-40.9);
+\fill [black] (14.6,-40.9) -- (15.4,-41.4) -- (15.4,-40.4);
+\draw (25.75,-40.4) node [above] {$slv_reg3[16]\mbox{ }=\mbox{ }1$};
+\draw [black] (42.9,-40.9) -- (62.8,-40.9);
+\fill [black] (62.8,-40.9) -- (62,-40.4) -- (62,-41.4);
+\draw (52.85,-41.4) node [below] {$slv_reg3[16]\mbox{ }=\mbox{ }0$};
+\draw [black] (38.326,-20.755) arc (-155.51979:-204.48021:11.838);
+\fill [black] (38.33,-20.76) -- (38.45,-19.82) -- (37.54,-20.23);
+\draw (36.76,-15.85) node [left] {$DAC_EN\mbox{ }=\mbox{ }1$};
+\draw [black] (42.698,-24.35) arc (97.15239:-190.84761:2.25);
+\draw (51.53,-28.71) node [below] {$Q_DATA/I_DATA$};
+\fill [black] (40.77,-26.16) -- (40.37,-27.02) -- (41.36,-26.89);
+\draw [black] (41.605,-10.857) arc (26.9491:-26.9491:11.017);
+\fill [black] (41.6,-10.86) -- (41.52,-11.8) -- (42.41,-11.34);
+\draw (43.3,-15.85) node [right] {$DAC_EN\mbox{ }=\mbox{ }0$};
+\draw [black] (39.9,-26.3) -- (39.9,-37.9);
+\fill [black] (39.9,-37.9) -- (40.4,-37.1) -- (39.4,-37.1);
+\draw (39.4,-32.1) node [left] {$slv_reg_sel\mbox{ }=\mbox{ }5'b00010$};
+\draw [black] (12.658,-38.095) arc (155.96332:87.79232:25.486);
+\fill [black] (36.92,-23.01) -- (36.14,-22.48) -- (36.1,-23.48);
+\draw [black] (42.894,-23.14) arc (89.47693:22.12797:23.935);
+\fill [black] (42.89,-23.14) -- (43.69,-23.65) -- (43.7,-22.65);
+\draw [black] (67.123,-43.58) arc (54:-234:2.25);
+\draw (65.8,-48.15) node [below] {$sdio_o$};
+\fill [black] (64.48,-43.58) -- (63.6,-43.93) -- (64.41,-44.52);
+\draw [black] (12.464,-43.761) arc (44.53768:-243.46232:2.25);
+\draw (7.43,-48.71) node [below] {$sdio_o/sdio_i$};
+\fill [black] (9.85,-43.33) -- (8.93,-43.53) -- (9.64,-44.24);
+\end{tikzpicture}
+\end{center}
+
+\end{document}

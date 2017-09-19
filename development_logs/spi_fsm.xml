@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="399.5" cy="84.5" rx="30" ry="30"/>
+	<text x="379.5" y="90.5" font-family="Times New Roman" font-size="20">Idle</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="399.5" cy="409.5" rx="30" ry="30"/>
+	<text x="374.5" y="415.5" font-family="Times New Roman" font-size="20">Judge</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="116.5" cy="409.5" rx="30" ry="30"/>
+	<text x="96.5" y="415.5" font-family="Times New Roman" font-size="20">Read</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="658.5" cy="409.5" rx="30" ry="30"/>
+	<text x="633.5" y="415.5" font-family="Times New Roman" font-size="20">Write</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="399.5" cy="233.5" rx="30" ry="30"/>
+	<text x="374.5" y="239.5" font-family="Times New Roman" font-size="20">Ready</text>
+	<polygon stroke="black" stroke-width="1" points="369.5,409.5 146.5,409.5"/>
+	<polygon fill="black" stroke-width="1" points="146.5,409.5 154.5,414.5 154.5,404.5"/>
+	<text x="178.5" y="400.5" font-family="Times New Roman" font-size="20">slv_reg3[16] = 1</text>
+	<polygon stroke="black" stroke-width="1" points="429.5,409.5 628.5,409.5"/>
+	<polygon fill="black" stroke-width="1" points="628.5,409.5 620.5,404.5 620.5,414.5"/>
+	<text x="449.5" y="430.5" font-family="Times New Roman" font-size="20">slv_reg3[16] = 0</text>
+	<path stroke="black" stroke-width="1" fill="none" d="M 383.76,208.055 A 118.382,118.382 0 0 1 383.76,109.945"/>
+	<polygon fill="black" stroke-width="1" points="383.76,208.055 384.996,198.702 375.895,202.846"/>
+	<text x="268.5" y="165.5" font-family="Times New Roman" font-size="20">DAC_EN = 1</text>
+	<path stroke="black" stroke-width="1" fill="none" d="M 427.476,244.004 A 22.5,22.5 0 1 1 408.179,262.095"/>
+	<text x="450.5" y="303.5" font-family="Times New Roman" font-size="20">Q_DATA/I_DATA</text>
+	<polygon fill="black" stroke-width="1" points="408.179,262.095 404.214,270.655 414.137,269.41"/>
+	<path stroke="black" stroke-width="1" fill="none" d="M 416.547,109.073 A 110.165,110.165 0 0 1 416.547,208.927"/>
+	<polygon fill="black" stroke-width="1" points="416.547,109.073 415.716,118.47 424.63,113.938"/>
+	<text x="433.5" y="164.5" font-family="Times New Roman" font-size="20">DAC_EN = 0</text>
+	<polygon stroke="black" stroke-width="1" points="399.5,263.5 399.5,379.5"/>
+	<polygon fill="black" stroke-width="1" points="399.5,379.5 404.5,371.5 394.5,371.5"/>
+	<text x="174.5" y="327.5" font-family="Times New Roman" font-size="20">slv_reg_sel = 5'b00010</text>
+	<path stroke="black" stroke-width="1" fill="none" d="M 127.081,381.446 A 254.861,254.861 0 0 1 369.659,230.585"/>
+	<polygon fill="black" stroke-width="1" points="369.659,230.585 361.858,225.28 361.473,235.273"/>
+	<path stroke="black" stroke-width="1" fill="none" d="M 429.437,231.896 A 239.345,239.345 0 0 1 648.969,381.075"/>
+	<polygon fill="black" stroke-width="1" points="429.437,231.896 437.391,236.968 437.483,226.969"/>
+	<path stroke="black" stroke-width="1" fill="none" d="M 671.725,436.297 A 22.5,22.5 0 1 1 645.275,436.297"/>
+	<text x="628.5" y="498.5" font-family="Times New Roman" font-size="20">sdio_o</text>
+	<polygon fill="black" stroke-width="1" points="645.275,436.297 636.527,439.83 644.618,445.708"/>
+	<path stroke="black" stroke-width="1" fill="none" d="M 125.14,438.107 A 22.5,22.5 0 1 1 99.049,433.758"/>
+	<text x="9.5" y="503.5" font-family="Times New Roman" font-size="20">sdio_o/sdio_i</text>
+	<polygon fill="black" stroke-width="1" points="99.049,433.758 89.84,435.805 96.854,442.933"/>
+</svg>

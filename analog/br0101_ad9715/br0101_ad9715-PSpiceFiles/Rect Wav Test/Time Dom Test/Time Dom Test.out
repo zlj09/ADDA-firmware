@@ -1,0 +1,382 @@
+
+**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Time Dom Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ada4899.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 60us 10us 0.5us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Rect Wav Test.net" 
+
+
+
+**** INCLUDING "Rect Wav Test.net" ****
+* source BR0101_AD9715
+X_U3         N14873 N15107 N14939 N14791 VON VON N14939 ADA4899 
+V_V1         0 N14791 5V
+R_R4         0 N15107  681 TC=0,0 
+R_R1         0 N14729  681 TC=0,0 
+R_R2         N14729 VOP  1.8k TC=0,0 
+V_V3         N14643 0 1V
+X_U2         N14873 N14729 N14939 N14791 VOP VOP N14939 ADA4899 
+V_V2         N14939 0 5V
+R_R3         N15107 VON  1.8k TC=0,0 
+R_R5         N14873 N14643  10k TC=0,0 
+I_I1         N14729 0 DC 0Adc AC 0Aac
++PULSE 0 2mA 0 0 0 5.12us 10.24us
+I_I2         N15107 0 DC 0Adc AC 0Aac
++PULSE 2mA 0 0 0 0 5.12us 10.24us
+.PARAM  x=1m
+
+**** RESUMING "Time Dom Test.cir" ****
+.END
+
+**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.diode      X_U3.DzVoutP    X_U3.DzVoutN    X_U3.DVnoisy    
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   37.500000E-18 
+          BV  100               4.3             4.3                          
+          KF                                                  323.000000E-18 
+
+
+               X_U3.DINnoisy   X_U3.DIPnoisy   X_U2.diode      X_U2.DzVoutP    
+          IS  250.000000E-18  250.000000E-18   10.000000E-15   10.000000E-15 
+          BV                                  100               4.3          
+          KF  986.000000E-18  986.000000E-18                                 
+
+
+               X_U2.DzVoutN    X_U2.DVnoisy    X_U2.DINnoisy   X_U2.DIPnoisy   
+          IS   10.000000E-15   37.500000E-18  250.000000E-18  250.000000E-18 
+          BV    4.3                                                          
+          KF                  323.000000E-18  986.000000E-18  986.000000E-18 
+
+
+**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Rideal     X_U2.Rideal     
+  T_Measured   27              27            
+   T_Current -273            -273            
+           R    1               1            
+
+
+**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Switch     X_U3.Sswitch    X_U2.Switch     X_U2.Sswitch    
+         RON    1.000000E-03    1.000000E+03    1.000000E-03    1.000000E+03 
+        ROFF    1.000000E+06    1.000000E+06    1.000000E+06    1.000000E+06 
+         VON     .105           4.5              .105           4.5          
+        VOFF     .095            .1              .095            .1          
+
+
+**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VON)    3.3650  (  VOP)     .8364  (N14643)    1.0000 (N14729)     .2266     
+
+(N14791)   -5.0000 (N14873)     .2267 (N14939)    5.0000 (N15107)    -.0352     
+
+(X_U2.1)     .2267 (X_U2.2)     .2266 (X_U2.3)     .2266 (X_U2.5)     .2266     
+
+(X_U2.6)     .2288 (X_U2.7)     .2266 (X_U2.9)     .2266 (X_U3.1)     .2267     
+
+(X_U3.2)     .2266 (X_U3.3)     .2266 (X_U3.5)     .2266 (X_U3.6)     .2288     
+
+(X_U3.7)     .2266 (X_U3.9)    -.0352 (X_U2.10)     .2266                       
+
+(X_U2.11) 22.66E-09                   (X_U2.12) 22.66E-09                       
+
+(X_U2.20)    0.0000                   (X_U2.21)     .6500                       
+
+(X_U2.22)    0.0000                   (X_U2.23)     .6500                       
+
+(X_U2.30)     .6500                   (X_U2.31)    0.0000                       
+
+(X_U2.32)     .6500                   (X_U2.33)    0.0000                       
+
+(X_U2.40)     .2266                   (X_U2.41)    3.2400                       
+
+(X_U2.42)   -3.2400                   (X_U2.50)     .6500                       
+
+(X_U2.51)    0.0000                   (X_U2.52)     .6500                       
+
+(X_U2.53)    0.0000                   (X_U2.60)     .8442                       
+
+(X_U2.61)    -.8707                   (X_U2.62)     .9502                       
+
+(X_U2.63)   -1.0020                   (X_U2.64)    1.0020                       
+
+(X_U2.65)    6.1500                   (X_U2.66)   -6.1500                       
+
+(X_U2.73)    2.6150                   (X_U2.74)   -2.6150                       
+
+(X_U2.75)     .8364                   (X_U2.80)    2.6000                       
+
+(X_U2.81)     .1000                   (X_U2.82)     .1000                       
+
+(X_U2.83)    5.0000                   (X_U2.96)    1.0000                       
+
+(X_U2.97)    2.0000                   (X_U2.98)   -5.0000                       
+
+(X_U2.99)    0.0000                   (X_U3.10)     .0957                       
+
+(X_U3.11) 9.574E-09                   (X_U3.12) 9.574E-09                       
+
+(X_U3.20)    0.0000                   (X_U3.21)     .6500                       
+
+(X_U3.22)    0.0000                   (X_U3.23)     .6500                       
+
+(X_U3.30)     .6500                   (X_U3.31)    0.0000                       
+
+(X_U3.32)     .6500                   (X_U3.33)    0.0000                       
+
+(X_U3.40)     .2266                   (X_U3.41)    3.2400                       
+
+(X_U3.42)   -3.2400                   (X_U3.50)     .6500                       
+
+(X_U3.51)    0.0000                   (X_U3.52)     .6500                       
+
+(X_U3.53)    0.0000                   (X_U3.60)    4.3104                       
+
+(X_U3.61)    -.3767                   (X_U3.62)    4.1626                       
+
+(X_U3.63)   -1.0020                   (X_U3.64)    1.0020                       
+
+(X_U3.65)    6.1500                   (X_U3.66)   -6.1500                       
+
+(X_U3.73)    2.6150                   (X_U3.74)   -2.6150                       
+
+(X_U3.75)    3.3650                   (X_U3.80)    2.6000                       
+
+(X_U3.81)     .1000                   (X_U3.82)     .1000                       
+
+(X_U3.83)    5.0000                   (X_U3.96)    1.0000                       
+
+(X_U3.97)    2.0000                   (X_U3.98)   -5.0000                       
+
+(X_U3.99)    0.0000                   (X_U2.110)    0.0000                      
+
+(X_U2.111)    5.0000                  (X_U2.112)   -5.0000                      
+
+(X_U2.113)    2.5000                  (X_U2.200)-75.25E-06                      
+
+(X_U2.210)     .8442                  (X_U2.220)    -.8442                      
+
+(X_U2.230)     .8442                  (X_U2.240)    -.8442                      
+
+(X_U2.245)     .8442                  (X_U2.250)    -.8442                      
+
+(X_U2.255)     .8442                  (X_U2.260)    -.8442                      
+
+(X_U2.265)     .8442                  (X_U2.270)    -.8442                      
+
+(X_U2.280)    -.8442                  (X_U2.281)    -.8442                      
+
+(X_U2.282)    0.0000                  (X_U2.285)    -.8442                      
+
+(X_U2.290)    -.8442                  (X_U2.292)    -.8442                      
+
+(X_U2.295)    -.8442                  (X_U2.300)     .8442                      
+
+(X_U2.301)     .8442                  (X_U2.302)     .8442                      
+
+(X_U2.303)     .8364                  (X_U2.304)     .8103                      
+
+(X_U2.305)    8.6463                  (X_U2.306)   -5.8257                      
+
+(X_U2.307)     .8442                  (X_U2.310)     .8364                      
+
+(X_U2.311)     .8364                  (X_U2.312)     .8364                      
+
+(X_U2.313)     .8364                  (X_U2.314)    4.3729                      
+
+(X_U2.315) -100.3900                  (X_U3.110)    0.0000                      
+
+(X_U3.111)    5.0000                  (X_U3.112)   -5.0000                      
+
+(X_U3.113)    2.5000                  (X_U3.200)    -.2618                      
+
+(X_U3.210)    4.3104                  (X_U3.220)   -4.3104                      
+
+(X_U3.230)    4.3104                  (X_U3.240)   -4.3104                      
+
+(X_U3.245)    4.3104                  (X_U3.250)   -4.3104                      
+
+(X_U3.255)    4.3104                  (X_U3.260)   -4.3104                      
+
+(X_U3.265)    4.3104                  (X_U3.270)   -4.3104                      
+
+(X_U3.280)   -4.3104                  (X_U3.281)   -4.3104                      
+
+(X_U3.282)    0.0000                  (X_U3.285)   -4.3104                      
+
+(X_U3.290)   -4.3104                  (X_U3.292)   -4.3104                      
+
+(X_U3.295)   -4.3104                  (X_U3.300)    4.3104                      
+
+(X_U3.301)    4.3104                  (X_U3.302)    4.3104                      
+
+(X_U3.303)    3.3650                  (X_U3.304)     .2000                      
+
+(X_U3.305)    8.0360                  (X_U3.306)   -6.4360                      
+
+(X_U3.307)    4.3104                  (X_U3.310)    3.3650                      
+
+(X_U3.311)    3.3650                  (X_U3.312)    3.3650                      
+
+(X_U3.313)    3.3650                  (X_U3.314)    4.3285                      
+
+(X_U3.315) -100.4300                  (X_U2.1020)    5.0000                     
+
+(X_U2.1030)   -5.0000                 (X_U3.1020)    5.0000                     
+
+(X_U3.1030)   -5.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.940E-02
+    V_V3        -7.733E-05
+    V_V2        -3.163E-02
+    X_U3.V2     -1.000E-03
+    X_U3.VOS     7.138E-05
+    X_U3.VinP    3.023E-12
+    X_U3.VinN    3.477E-12
+    X_U3.Vmeas1   3.079E-06
+    X_U3.Vvn    -3.079E-06
+    X_U3.Vmeas2   3.079E-06
+    X_U3.Vvn1   -3.079E-06
+    X_U3.Vmeas3   2.053E-05
+    X_U3.VnIN   -2.053E-05
+    X_U3.Vmeas4   2.053E-05
+    X_U3.VnIN1  -2.053E-05
+    X_U3.Vmeas5   2.053E-05
+    X_U3.VnIP   -2.053E-05
+    X_U3.Vmeas6   2.053E-05
+    X_U3.VnIP1  -2.053E-05
+    X_U3.VPD    -1.250E-11
+    X_U3.VPD1   -1.000E-04
+    X_U3.VoutP  -3.163E-04
+    X_U3.VoutN   3.171E-12
+    X_U3.Vsense1   4.110E-02
+    X_U3.VIoutP  -3.736E-12
+    X_U3.VIoutN  -1.076E-11
+    X_U3.VoutP1  -3.922E-02
+    X_U3.VoutN1   5.990E-12
+    X_U3.Vmeas8   1.889E-03
+    X_U3.Vmeas9   1.889E-03
+    X_U2.V2     -1.000E-03
+    X_U2.VOS     5.949E-06
+    X_U2.VinP    3.023E-12
+    X_U2.VinN    3.477E-12
+    X_U2.Vmeas1   3.079E-06
+    X_U2.Vvn    -3.079E-06
+    X_U2.Vmeas2   3.079E-06
+    X_U2.Vvn1   -3.079E-06
+    X_U2.Vmeas3   2.053E-05
+    X_U2.VnIN   -2.053E-05
+    X_U2.Vmeas4   2.053E-05
+    X_U2.VnIN1  -2.053E-05
+    X_U2.Vmeas5   2.053E-05
+    X_U2.VnIP   -2.053E-05
+    X_U2.Vmeas6   2.053E-05
+    X_U2.VnIP1  -2.053E-05
+    X_U2.VPD    -1.250E-11
+    X_U2.VPD1   -1.000E-04
+    X_U2.VoutP  -1.725E-12
+    X_U2.VoutN  -1.158E-13
+    X_U2.Vsense1   3.388E-04
+    X_U2.VIoutP  -7.812E-12
+    X_U2.VIoutN  -6.680E-12
+    X_U2.VoutP1   1.789E-12
+    X_U2.VoutN1   3.461E-12
+    X_U2.Vmeas8   3.388E-04
+    X_U2.Vmeas9   3.388E-04
+
+    TOTAL POWER DISSIPATION   4.05E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+ ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .45
+

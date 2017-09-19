@@ -1,0 +1,20 @@
+** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefiles\rect wav test\time dom test.sim ] 
+
+** Creating circuit file "Time Dom Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "F:/Academic/FPGA/BR0101/Development/DAC/model/ada4899.lib" 
+* From [PSPICE NETLIST] section of G:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.0.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 60us 10us 0.5us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Rect Wav Test.net" 
+
+
+.END
