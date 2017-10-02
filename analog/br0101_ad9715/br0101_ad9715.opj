@@ -105,6 +105,11 @@
          ".\br0101_ad9715-pspicefiles\rect wav test\time dom test.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
       (LibraryName
@@ -113,11 +118,6 @@
     (0
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (IPULSE
       (FullPartName "IPULSE.Normal")
@@ -234,7 +234,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 156 1293 156 580")
-        (Scroll "-158 46")
+        (Scroll "-158 130")
         (Zoom "100")
         (Occurrence "/"))
       (Path

@@ -13,6 +13,10 @@ R_R3            R3(1=N15107 2=VON ) CN @BR0101_AD9715.Rect Wav Test(sch_1):INS15
 R_R5            R5(1=N14873 2=N14643 ) CN @BR0101_AD9715.Rect Wav Test(sch_1):INS14773@ANALOG.R.Normal(chips)
 I_I1            I1(+=N14729 -=0 ) CN @BR0101_AD9715.Rect Wav Test(sch_1):INS16227@SOURCE.IPULSE.Normal(chips)
 I_I2            I2(+=N15107 -=0 ) CN @BR0101_AD9715.Rect Wav Test(sch_1):INS16287@SOURCE.IPULSE.Normal(chips)
+C_C1            C1(1=VOP 2=0 ) CN @BR0101_AD9715.Rect Wav Test(sch_1):INS19661@ANALOG.C.Normal(chips)
+C_C2            C2(1=VON 2=0 ) CN @BR0101_AD9715.Rect Wav Test(sch_1):INS19677@ANALOG.C.Normal(chips)
+R_R6            R6(1=VOP 2=0 ) CN @BR0101_AD9715.Rect Wav Test(sch_1):INS19873@ANALOG.R.Normal(chips)
+R_R7            R7(1=VON 2=0 ) CN @BR0101_AD9715.Rect Wav Test(sch_1):INS19889@ANALOG.R.Normal(chips)
 _    _(Von=VON)
 _    _(Vop=VOP)
 .ENDALIASES
