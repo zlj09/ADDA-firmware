@@ -11,7 +11,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 60us 10us 0.5us 
+.TRAN  0 60us 10us 0.2us 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Rect Wav Test.net" 

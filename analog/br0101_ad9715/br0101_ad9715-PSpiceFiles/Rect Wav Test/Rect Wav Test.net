@@ -10,7 +10,7 @@ V_V2         N14939 0 5V
 R_R3         N15107 VON  1.8k TC=0,0 
 R_R5         N14873 N14643  10k TC=0,0 
 I_I1         N14729 0 DC 0Adc AC 0Aac
-+PULSE 0 2mA 0 0 0 5.12us 10.24us
++PULSE 0 2mA 0 0 0 1us 2us
 I_I2         N15107 0 DC 0Adc AC 0Aac
-+PULSE 2mA 0 0 0 0 5.12us 10.24us
++PULSE 2mA 0 0 0 0 1us 2us
 .PARAM  x=1m

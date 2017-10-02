@@ -123,10 +123,12 @@ int main()
 void genDACCtrl()
 {
 	dac1_ctrl = PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET);
-	dac1_ctrl &= 0xfffff0Cf;
+	dac1_ctrl &= 0xfffff00f;
 	dac1_ctrl |= waveform << 4;
+	dac1_ctrl |= waveform << 6;
 	dac1_ctrl |= step_ctrl << 8;
 	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, dac1_ctrl);
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, dac1_ctrl);
 }
 
 void prtDACState()

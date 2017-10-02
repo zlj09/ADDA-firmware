@@ -105,6 +105,20 @@
          ".\br0101_ad9715-pspicefiles\rect wav test\time dom test.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
     (IPULSE
       (FullPartName "IPULSE.Normal")
       (LibraryName
@@ -115,9 +129,6 @@
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
-    (0
-      (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     (VCC_BAR
       (LibraryName "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -125,11 +136,6 @@
       (FullPartName "QbreakN.Normal")
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (IAC
       (FullPartName "IAC.Normal")
@@ -145,11 +151,6 @@
       (FullPartName "PARAM.Normal")
       (LibraryName
          "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
-      (DeviceIndex "0"))
-    (C
-      (FullPartName "C.Normal")
-      (LibraryName
-         "G:\CADENCE\SPB_17_0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (ISIN
       (FullPartName "ISIN.Normal")
@@ -227,13 +228,13 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 385"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 385"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 156 1293 156 580")
-        (Scroll "-59 0")
+        (Placement "44 2 3 -1 -1 -8 -31 156 1293 156 580")
+        (Scroll "-158 46")
         (Zoom "100")
         (Occurrence "/"))
       (Path

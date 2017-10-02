@@ -1,5 +1,5 @@
-
-**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+
+**** 09/25/17 10:58:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
  ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
 
@@ -23,7 +23,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 60us 10us 0.5us 
+.TRAN  0 60us 10us 0.2us 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Rect Wav Test.net" 
@@ -43,15 +43,15 @@ V_V2         N14939 0 5V
 R_R3         N15107 VON  1.8k TC=0,0 
 R_R5         N14873 N14643  10k TC=0,0 
 I_I1         N14729 0 DC 0Adc AC 0Aac
-+PULSE 0 2mA 0 0 0 5.12us 10.24us
++PULSE 0 2mA 0 0 0 1us 2us
 I_I2         N15107 0 DC 0Adc AC 0Aac
-+PULSE 2mA 0 0 0 0 5.12us 10.24us
++PULSE 2mA 0 0 0 0 1us 2us
 .PARAM  x=1m
 
 **** RESUMING "Time Dom Test.cir" ****
 .END
 
-**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/25/17 10:58:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
  ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
 
@@ -82,7 +82,7 @@ I_I2         N15107 0 DC 0Adc AC 0Aac
           KF                  323.000000E-18  986.000000E-18  986.000000E-18 
 
 
-**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/25/17 10:58:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
  ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
 
@@ -101,7 +101,7 @@ I_I2         N15107 0 DC 0Adc AC 0Aac
            R    1               1            
 
 
-**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/25/17 10:58:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
  ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
 
@@ -121,7 +121,7 @@ I_I2         N15107 0 DC 0Adc AC 0Aac
         VOFF     .095            .1              .095            .1          
 
 
-**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/25/17 10:58:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
  ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
 
@@ -366,7 +366,7 @@ I_I2         N15107 0 DC 0Adc AC 0Aac
 
           JOB CONCLUDED
 
-**** 09/17/17 10:24:56 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
+**** 09/25/17 10:58:02 ****** PSpice 17.0.0 (March 2014) ****** ID# 0 ********
 
  ** Profile: "Rect Wav Test-Time Dom Test"  [ F:\Programs\Verilog\FPGA_Group\test_br0101\analog\br0101_ad9715\br0101_ad9715-pspicefil
 
@@ -378,5 +378,5 @@ I_I2         N15107 0 DC 0Adc AC 0Aac
 
 
 
-  Total job time (using Solver 1)   =         .45
+  Total job time (using Solver 1)   =        1.42
 

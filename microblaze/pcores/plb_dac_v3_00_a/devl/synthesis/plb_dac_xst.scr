@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\devl\synthesis\plb_dac_xst.prj"
+-top plb_dac
+-p virtex6
+-ofn "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\devl\synthesis\plb_dac_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib plb_dac_v3_00_a

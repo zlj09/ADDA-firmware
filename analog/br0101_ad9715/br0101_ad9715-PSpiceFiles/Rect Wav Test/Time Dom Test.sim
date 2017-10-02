@@ -3,7 +3,7 @@
 @Settings: 0 1
 @General:
 ProfileName= "Time Dom Test" 
-ProfileFile= "Time Dom Test.sim" 
+ProfileFile= "time dom test.sim" 
 Connectivity= "Rect Wav Test.net" 
 NetlistFile= "Time Dom Test.cir" 
 DataFile= "Time Dom Test.dat" 
@@ -17,7 +17,7 @@ Notes=
 +0 "60us" 
 +1 "" 
 +2 "10us" 
-+3 "0.5us" 
++3 "0.2us" 
 +4 "" 
 +5 "" 
 +6 "" 
@@ -130,7 +130,7 @@ SaveFile 0 ""
 @End Analysis
 @Analysis: 17 0
 +0 "-1" 
-+1 "" 
++1 "-1" 
 +2 "-1" 
 +3 "-1" 
 +4 "1" 
