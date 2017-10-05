@@ -62,7 +62,9 @@ DEFAULT_SIM_SCRIPT = $(BEHAVIORAL_SIM_SCRIPT)
 SIMGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(BRAMINIT_ELF_SIM_FILE_ARGS) -msg __xps/ise/xmsgprops.lst -s isim -X F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/
 
 
-CORE_STATE_DEVELOPMENT_FILES = G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd \
+CORE_STATE_DEVELOPMENT_FILES = pcores/plb_dac_v3_00_a/netlist/ip_dds.ngc \
+pcores/plb_dac_v3_00_a/netlist/ip_dds.ngc \
+G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd \
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd \
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd \
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd \
@@ -124,8 +126,9 @@ G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd \
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd \
 G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd \
-pcores/plb_dac_v2_00_a/hdl/verilog/user_logic.v \
-pcores/plb_dac_v2_00_a/hdl/vhdl/plb_dac.vhd
+pcores/plb_dac_v3_00_a/hdl/verilog/user_logic.v \
+pcores/plb_dac_v3_00_a/hdl/vhdl/plb_dac.vhd \
+pcores/plb_dac_v3_00_a/hdl/verilog/ip_dds.v
 
 WRAPPER_NGC_FILES = implementation/microblaze_microblaze_0_wrapper.ngc \
 implementation/microblaze_mb_plb_wrapper.ngc \

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.39 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.39 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: microblaze_top.prj
 
@@ -107,7 +107,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "H:/ljzhu/test_br0101/microblaze/hdl/microblaze.v" in library work
+Compiling verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/microblaze.v" in library work
 Module <microblaze> compiled
 Module <microblaze_microblaze_0_wrapper> compiled
 Module <microblaze_mb_plb_wrapper> compiled
@@ -126,7 +126,6 @@ Compiling verilog file "microblaze/microblaze_top.v" in library work
 Module <microblaze_plb_dac_1_wrapper> compiled
 Module <microblaze_top> compiled
 Module <rst_generator> compiled
-Module <clk_generator> compiled
 No errors in compilation
 Analysis of file <"microblaze_top.prj"> succeeded.
  
@@ -138,8 +137,6 @@ Analyzing hierarchy for module <microblaze_top> in library <work>.
 
 Analyzing hierarchy for module <rst_generator> in library <work>.
 
-Analyzing hierarchy for module <clk_generator> in library <work>.
-
 
 =========================================================================
 *                            HDL Analysis                               *
@@ -150,9 +147,6 @@ Module <microblaze_top> is correct for synthesis.
     Set property "BOX_TYPE = user_black_box" for instance <microblaze_i> in unit <microblaze_top>.
 Analyzing module <rst_generator> in library <work>.
 Module <rst_generator> is correct for synthesis.
- 
-Analyzing module <clk_generator> in library <work>.
-Module <clk_generator> is correct for synthesis.
  
 
 =========================================================================
@@ -166,21 +160,12 @@ Synthesizing Unit <rst_generator>.
     Found 1-bit register for signal <cnt_start>.
     Found 10-bit up counter for signal <rst_cnt>.
     Found 1-bit register for signal <rst_reg>.
-    Found 10-bit comparator greatequal for signal <rst_reg$cmp_ge0000> created at line 137.
+    Found 10-bit comparator greatequal for signal <rst_reg$cmp_ge0000> created at line 129.
     Summary:
 	inferred   1 Counter(s).
 	inferred   2 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <rst_generator> synthesized.
-
-
-Synthesizing Unit <clk_generator>.
-    Related source file is "microblaze/microblaze_top.v".
-WARNING:Xst:647 - Input <rst_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <clk_reg>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <clk_generator> synthesized.
 
 
 Synthesizing Unit <microblaze_top>.
@@ -194,8 +179,8 @@ HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  10-bit up counter                                     : 1
-# Registers                                            : 3
- 1-bit register                                        : 3
+# Registers                                            : 2
+ 1-bit register                                        : 2
 # Comparators                                          : 1
  10-bit comparator greatequal                          : 1
 
@@ -244,8 +229,8 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  10-bit up counter                                     : 1
-# Registers                                            : 3
- Flip-Flops                                            : 3
+# Registers                                            : 2
+ Flip-Flops                                            : 2
 # Comparators                                          : 1
  10-bit comparator greatequal                          : 1
 
@@ -261,7 +246,7 @@ Optimizing unit <microblaze_top> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block microblaze_top, actual ratio is 12.
+Found area constraint ratio of 100 (+ 5) on block microblaze_top, actual ratio is 13.
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
@@ -269,6 +254,8 @@ INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODE
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <plb_dac_0/USER_LOGIC_I/dac_clk_reg> in Unit <plb_dac_0> is equivalent to the following FF/Latch : <plb_dac_0/USER_LOGIC_I/dac_clk_reg_1> 
+INFO:Xst:2260 - The FF/Latch <plb_dac_1/USER_LOGIC_I/dac_clk_reg> in Unit <plb_dac_1> is equivalent to the following FF/Latch : <plb_dac_1/USER_LOGIC_I/dac_clk_reg_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
@@ -276,6 +263,8 @@ INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODE
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <plb_dac_0/USER_LOGIC_I/dac_clk_reg> in Unit <plb_dac_0> is equivalent to the following FF/Latch : <plb_dac_0/USER_LOGIC_I/dac_clk_reg_1> 
+INFO:Xst:2260 - The FF/Latch <plb_dac_1/USER_LOGIC_I/dac_clk_reg> in Unit <plb_dac_1> is equivalent to the following FF/Latch : <plb_dac_1/USER_LOGIC_I/dac_clk_reg_1> 
 
 Final Macro Processing ...
 
@@ -283,8 +272,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 13
- Flip-Flops                                            : 13
+# Registers                                            : 12
+ Flip-Flops                                            : 12
 
 =========================================================================
 
@@ -310,50 +299,50 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 44
+# IOs                              : 43
 
 Cell Usage :
-# BELS                             : 4822
-#      GND                         : 17
-#      INV                         : 51
-#      LUT1                        : 116
-#      LUT2                        : 319
+# BELS                             : 5250
+#      GND                         : 19
+#      INV                         : 70
+#      LUT1                        : 145
+#      LUT2                        : 400
 #      LUT2_D                      : 15
-#      LUT2_L                      : 13
-#      LUT3                        : 1099
-#      LUT3_D                      : 93
-#      LUT3_L                      : 25
-#      LUT4                        : 1776
-#      LUT4_D                      : 103
-#      LUT4_L                      : 157
+#      LUT2_L                      : 9
+#      LUT3                        : 1206
+#      LUT3_D                      : 94
+#      LUT3_L                      : 84
+#      LUT4                        : 1807
+#      LUT4_D                      : 74
+#      LUT4_L                      : 129
 #      MULT_AND                    : 34
-#      MUXCY                       : 119
+#      MUXCY                       : 161
 #      MUXCY_L                     : 171
-#      MUXF5                       : 543
+#      MUXF5                       : 602
 #      MUXF6                       : 14
 #      MUXF7                       : 6
-#      MUXF8                       : 1
-#      VCC                         : 11
-#      XORCY                       : 139
-# FlipFlops/Latches                : 3001
-#      FD                          : 239
+#      MUXF8                       : 3
+#      VCC                         : 13
+#      XORCY                       : 194
+# FlipFlops/Latches                : 3269
+#      FD                          : 253
 #      FD_1                        : 20
 #      FDC                         : 21
 #      FDC_1                       : 5
 #      FDCE                        : 15
-#      FDE                         : 331
+#      FDE                         : 395
 #      FDE_1                       : 8
 #      FDP                         : 9
-#      FDR                         : 1148
-#      FDRE                        : 1060
+#      FDR                         : 1172
+#      FDRE                        : 1206
 #      FDRE_1                      : 1
-#      FDRS                        : 18
+#      FDRS                        : 26
 #      FDRSE                       : 16
-#      FDS                         : 58
+#      FDS                         : 70
 #      FDSE                        : 52
-# RAMS                             : 224
+# RAMS                             : 226
 #      RAM16X1D                    : 192
-#      RAMB16                      : 32
+#      RAMB16                      : 34
 # Shift Registers                  : 133
 #      SRL16                       : 7
 #      SRL16E                      : 118
@@ -361,12 +350,12 @@ Cell Usage :
 # Tri-States                       : 2
 #      BUFT                        : 2
 # Clock Buffers                    : 7
-#      BUFG                        : 6
-#      BUFGP                       : 1
+#      BUFG                        : 7
 # IO Buffers                       : 43
 #      IBUF                        : 1
+#      IBUFG                       : 1
 #      IOBUF                       : 2
-#      OBUF                        : 40
+#      OBUF                        : 39
 # DCM_ADVs                         : 1
 #      DCM_ADV                     : 1
 # DSPs                             : 3
@@ -380,17 +369,17 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                     3099  out of  24576    12%  
- Number of Slice Flip Flops:           3001  out of  49152     6%  
- Number of 4 input LUTs:               4284  out of  49152     8%  
-    Number used as logic:              3767
+ Number of Slices:                     3332  out of  24576    13%  
+ Number of Slice Flip Flops:           3269  out of  49152     6%  
+ Number of 4 input LUTs:               4550  out of  49152     9%  
+    Number used as logic:              4033
     Number used as Shift registers:     133
     Number used as RAMs:                384
- Number of IOs:                          44
- Number of bonded IOBs:                  44  out of    640     6%  
+ Number of IOs:                          43
+ Number of bonded IOBs:                  43  out of    640     6%  
  Number of TBUFs:                         2  out of      0        (*) 
- Number of FIFO16/RAMB16s:               32  out of    320    10%  
-    Number used as RAMB16s:              32
+ Number of FIFO16/RAMB16s:               34  out of    320    10%  
+    Number used as RAMB16s:              34
  Number of GCLKs:                         7  out of     32    21%  
  Number of DCM_ADVs:                      1  out of      8    12%  
  Number of DSP48s:                        3  out of    512     0%  
@@ -418,11 +407,11 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                           | Load  |
 -----------------------------------+-----------------------------------------------------------------+-------+
-clk_generator_0/clk_reg            | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0     | 3092  |
+fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0     | 3302  |
 microblaze_i/mdm_0/mdm_0/drck_i    | BUFG                                                            | 212   |
 microblaze_i/mdm_0/mdm_0/update1   | BUFG                                                            | 43    |
+fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLKDV    | 73    |
 microblaze_i/RS232/Interrupt       | NONE(microblaze_i/xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)| 1     |
-fpga_0_clk_1_sys_clk_pin           | BUFGP                                                           | 13    |
 -----------------------------------+-----------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -451,7 +440,7 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 9.456ns (Maximum Frequency: 105.755MHz)
+   Minimum period: 9.523ns (Maximum Frequency: 105.014MHz)
    Minimum input arrival time before clock: 3.293ns
    Maximum output required time after clock: 8.978ns
    Maximum combinational path delay: No path found
@@ -461,32 +450,30 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_generator_0/clk_reg'
-  Clock period: 8.026ns (frequency: 124.599MHz)
-  Total number of paths / destination ports: 413153 / 10129
+Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
+  Clock period: 9.523ns (frequency: 105.014MHz)
+  Total number of paths / destination ports: 420763 / 10839
 -------------------------------------------------------------------------
-Delay:               8.026ns (Levels of Logic = 7)
-  Source:            microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[8].Gen_Instr_DFF (FF)
-  Destination:       microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/sel_input_4 (FF)
-  Source Clock:      clk_generator_0/clk_reg rising
-  Destination Clock: clk_generator_0/clk_reg rising
+Delay:               4.761ns (Levels of Logic = 4)
+  Source:            microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST (FF)
+  Destination:       microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9 (FF)
+  Source Clock:      fpga_0_clk_1_sys_clk_pin rising
+  Destination Clock: fpga_0_clk_1_sys_clk_pin falling
 
-  Data Path: microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[8].Gen_Instr_DFF to microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/sel_input_4
+  Data Path: microblaze_i/mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST to microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             77   0.360   1.267  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[8].Gen_Instr_DFF (microblaze_0/MicroBlaze_Core_I/of_gpr_op3_rd_addr<2>)
-     LUT4:I3->O            1   0.195   0.523  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_ex_write_op3_conflict_0_and000046 (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_ex_write_op3_conflict_0_and000046)
-     LUT4:I3->O            1   0.195   0.523  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_ex_write_op3_conflict_0_and000089_SW0 (N726)
-     LUT4_D:I3->O          2   0.195   0.540  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_ex_write_op3_conflict_0_and000089 (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_ex_write_op3_conflict)
-     LUT3:I2->O            1   0.195   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_pipe_ctrl_9_mux00001 (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_pipe_ctrl<9>)
-     MUXCY_L:S->LO         1   0.366   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[9].OF_Piperun_Stage/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<9>)
-     MUXCY_L:CI->LO      390   0.045   2.491  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[10].OF_Piperun_Stage/Using_FPGA.MUXCY_I (Trace_OF_PipeRun)
-     LUT4:I3->O            6   0.195   0.397  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/sel_input_not0001 (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/sel_input_not0001)
-     FDSE:CE                   0.540          microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/sel_input_4
+     FDS:C->Q            116   0.360   1.481  mb_plb/GEN_SPLB_RST[3].I_SPLB_RST (SPLB_Rst<3>)
+     end scope: 'mb_plb'
+     begin scope: 'plb_dac_0'
+     LUT2:I0->O          241   0.195   2.126  plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 (plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1)
+     LUT4:I0->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot12 (plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot12)
+     MUXF5:I0->O           1   0.382   0.000  plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot1_f5 (plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot1)
+     FD_1:D                    0.022          plb_dac_0/USER_LOGIC_I/dac_data_reg_9
     ----------------------------------------
-    Total                      8.026ns (2.286ns logic, 5.740ns route)
-                                       (28.5% logic, 71.5% route)
+    Total                      4.761ns (1.154ns logic, 3.607ns route)
+                                       (24.2% logic, 75.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'microblaze_i/mdm_0/mdm_0/drck_i'
@@ -544,30 +531,6 @@ Delay:               4.728ns (Levels of Logic = 6)
                                        (34.4% logic, 65.6% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Clock period: 4.197ns (frequency: 238.248MHz)
-  Total number of paths / destination ports: 146 / 24
--------------------------------------------------------------------------
-Delay:               4.197ns (Levels of Logic = 3)
-  Source:            rst_generator_0/rst_cnt_6 (FF)
-  Destination:       rst_generator_0/rst_reg (FF)
-  Source Clock:      fpga_0_clk_1_sys_clk_pin rising
-  Destination Clock: fpga_0_clk_1_sys_clk_pin rising
-
-  Data Path: rst_generator_0/rst_cnt_6 to rst_generator_0/rst_reg
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              2   0.360   0.602  rst_generator_0/rst_cnt_6 (rst_generator_0/rst_cnt_6)
-     LUT2:I0->O            1   0.195   0.688  rst_generator_0/rst_reg_cmp_ge000016 (rst_generator_0/rst_reg_cmp_ge000016)
-     LUT4:I1->O            2   0.195   0.540  rst_generator_0/rst_reg_cmp_ge000019 (rst_generator_0/rst_reg_cmp_ge000019)
-     LUT4:I3->O            1   0.195   0.360  rst_generator_0/rst_reg_cmp_ge0000111 (rst_generator_0/rst_reg_cmp_ge0000)
-     FDSE:S                    1.062          rst_generator_0/rst_reg
-    ----------------------------------------
-    Total                      4.197ns (2.007ns logic, 2.190ns route)
-                                       (47.8% logic, 52.2% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'microblaze_i/mdm_0/mdm_0/drck_i'
   Total number of paths / destination ports: 123 / 99
 -------------------------------------------------------------------------
@@ -593,13 +556,13 @@ Offset:              3.293ns (Levels of Logic = 4)
                                        (72.2% logic, 27.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generator_0/clk_reg'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_clk_1_sys_clk_pin'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              1.347ns (Levels of Logic = 2)
   Source:            fpga_0_RS232_RX_pin (PAD)
   Destination:       microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/rx_1 (FF)
-  Destination Clock: clk_generator_0/clk_reg rising
+  Destination Clock: fpga_0_clk_1_sys_clk_pin rising
 
   Data Path: fpga_0_RS232_RX_pin to microblaze_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_RX_I/rx_1
                                 Gate     Net
@@ -636,45 +599,26 @@ Offset:              2.753ns (Levels of Logic = 3)
                                        (59.4% logic, 40.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_generator_0/clk_reg'
-  Total number of paths / destination ports: 70 / 40
+Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_clk_1_sys_clk_pin'
+  Total number of paths / destination ports: 71 / 41
 -------------------------------------------------------------------------
-Offset:              5.634ns (Levels of Logic = 3)
-  Source:            microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_en (FF)
+Offset:              5.793ns (Levels of Logic = 3)
+  Source:            microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_clk_reg (FF)
   Destination:       plb_dac_1_S_DCLKIO_pin (PAD)
-  Source Clock:      clk_generator_0/clk_reg rising
+  Source Clock:      fpga_0_clk_1_sys_clk_pin rising
 
-  Data Path: microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_en to plb_dac_1_S_DCLKIO_pin
+  Data Path: microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_clk_reg to plb_dac_1_S_DCLKIO_pin
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             12   0.360   0.745  plb_dac_1/USER_LOGIC_I/dac_en (plb_dac_1/USER_LOGIC_I/dac_en)
-     LUT2:I0->O            2   0.195   0.377  plb_dac_1/USER_LOGIC_I/IP2DAC_DCLKIO1 (S_Clkout)
+     FDR:C->Q             23   0.360   0.904  plb_dac_1/USER_LOGIC_I/dac_clk_reg (plb_dac_1/USER_LOGIC_I/dac_clk_reg)
+     LUT2:I1->O            2   0.195   0.377  plb_dac_1/USER_LOGIC_I/IP2DAC_DCLKIO1 (S_Clkout)
      end scope: 'plb_dac_1'
      end scope: 'microblaze_i'
      OBUF:I->O                 3.957          plb_dac_1_S_Clkout_pin_OBUF (plb_dac_1_S_Clkout_pin)
     ----------------------------------------
-    Total                      5.634ns (4.512ns logic, 1.122ns route)
-                                       (80.1% logic, 19.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 2 / 2
--------------------------------------------------------------------------
-Offset:              4.714ns (Levels of Logic = 1)
-  Source:            clk_generator_0/clk_reg (FF)
-  Destination:       sys_clk_50m (PAD)
-  Source Clock:      fpga_0_clk_1_sys_clk_pin rising
-
-  Data Path: clk_generator_0/clk_reg to sys_clk_50m
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              6   0.360   0.397  clk_generator_0/clk_reg (clk_generator_0/clk_reg)
-     OBUF:I->O                 3.957          sys_clk_50m_OBUF (sys_clk_50m)
-    ----------------------------------------
-    Total                      4.714ns (4.317ns logic, 0.397ns route)
-                                       (91.6% logic, 8.4% route)
+    Total                      5.793ns (4.512ns logic, 1.281ns route)
+                                       (77.9% logic, 22.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'microblaze_i/mdm_0/mdm_0/drck_i'
@@ -743,14 +687,14 @@ Offset:              5.861ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 41.00 secs
-Total CPU time to Xst completion: 41.39 secs
+Total REAL time to Xst completion: 42.00 secs
+Total CPU time to Xst completion: 42.74 secs
  
 --> 
 
-Total memory usage is 319096 kilobytes
+Total memory usage is 422912 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
-Number of infos    :   15 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
 

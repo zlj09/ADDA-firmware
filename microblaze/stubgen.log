@@ -30,6 +30,8 @@ Address Map for Processor microblaze_0
   (0x84400000-0x8440ffff) mdm_0	mb_plb
   (0xc9c00000-0xc9c0ffff) plb_dac_1	mb_plb
   (0xc9c20000-0xc9c2ffff) plb_dac_0	mb_plb
+  (0xcb600000-0xcb60ffff) plb_dac_1	mb_plb
+  (0xcb620000-0xcb62ffff) plb_dac_0	mb_plb
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
    C_PLBV46_NUM_MASTERS value to 2 -
    G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
@@ -76,28 +78,28 @@ INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding
    a\xps_intc_v2_1_0.mpd line 83 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
    PARAMETER C_SPLB_DWIDTH value to 32 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
-   data\plb_dac_v2_1_0.mpd line 28 
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
    PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
-   data\plb_dac_v2_1_0.mpd line 29 
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
    PARAMETER C_SPLB_MID_WIDTH value to 1 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
-   data\plb_dac_v2_1_0.mpd line 30 
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
    PARAMETER C_SPLB_DWIDTH value to 32 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
-   data\plb_dac_v2_1_0.mpd line 28 
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
    PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
-   data\plb_dac_v2_1_0.mpd line 29 
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
 INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
    PARAMETER C_SPLB_MID_WIDTH value to 1 -
-   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v2_00_a\
-   data\plb_dac_v2_1_0.mpd line 30 
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
 
 Checking platform address map ...
 

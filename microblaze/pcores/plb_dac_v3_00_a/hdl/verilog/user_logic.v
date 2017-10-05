@@ -52,6 +52,18 @@ module user_logic
 (
   // -- ADD USER PORTS BELOW THIS LINE ---------------
   // --USER ports added here 
+  IP2DAC_Data,               //IP to DAC data bus
+  IP2DAC_DCLKIO,             //IP to DAC digital clock
+  IP2DAC_Clkout,             //IP to DAC analog clock
+  IP2DAC_PinMD,              //IP to DAC SPI reset
+  IP2DAC_ClkMD,              //IP to DAC SPI SCLK
+  //IP2DAC_Format,             //IP to DAC SPI SDIO
+  IP2DAC_Format_I,
+  IP2DAC_Format_O,
+  IP2DAC_Format_T,
+  IP2DAC_PWRDN,              //IP to DAC SPI CS
+  IP2DAC_OpEnI,              //IP to DAC output op amp I enable
+  IP2DAC_OpEnQ,              //IP to DAC output op amp Q enable
   // -- ADD USER PORTS ABOVE THIS LINE ---------------
 
   // -- DO NOT EDIT BELOW THIS LINE ------------------
@@ -74,6 +86,8 @@ module user_logic
 
 // -- ADD USER PARAMETERS BELOW THIS LINE ------------
 // --USER parameters added here 
+parameter DAC_WIDTH                     = 10;
+parameter PHASE_WIDTH                   = 16;
 // -- ADD USER PARAMETERS ABOVE THIS LINE ------------
 
 // -- DO NOT EDIT BELOW THIS LINE --------------------
@@ -86,6 +100,17 @@ parameter C_NUM_MEM                      = 1;
 
 // -- ADD USER PORTS BELOW THIS LINE -----------------
 // --USER ports added here 
+output     [0 : DAC_WIDTH-1]              IP2DAC_Data;
+output                                    IP2DAC_DCLKIO;
+output                                    IP2DAC_Clkout;
+output                                    IP2DAC_PinMD;
+output                                    IP2DAC_ClkMD;
+input                                     IP2DAC_Format_I;
+output                                    IP2DAC_Format_O;
+output                                    IP2DAC_Format_T;
+output                                    IP2DAC_PWRDN;
+output                                    IP2DAC_OpEnI;
+output                                    IP2DAC_OpEnQ;
 // -- ADD USER PORTS ABOVE THIS LINE -----------------
 
 // -- DO NOT EDIT BELOW THIS LINE --------------------
@@ -110,6 +135,25 @@ output                                    IP2Bus_Error;
 //----------------------------------------------------------------------------
 
   // --USER nets declarations added here, as needed for user logic
+  reg                                       dac_clk_reg;
+  reg        [0 : DAC_WIDTH-1]              dac_data_reg;
+  reg                                       reset_reg;
+  reg                                       sclk_reg;
+  reg                                       cs_reg;
+  reg                                       sdio_reg_o;
+  reg                                       sdio_reg_t;
+  reg        [2 : 0]                        state_reg;
+  reg                                       dac_en;
+  reg                                       spi_state;
+  reg                                       spi_start_flag;
+  reg        [4 : 0]                        spi_cnt;
+  wire       [1 : 0]                        i_waveform;
+  wire       [1 : 0]                        q_waveform;
+  wire       [9 : 0]                        rect_data;
+  wire       [9 : 0]                        saw_data;
+  wire       [9 : 0]                        sine_data;
+  wire       [PHASE_WIDTH-1 : 0]            phase_out;
+  wire       [PHASE_WIDTH-1 : 0]            step_ctl;
 
   // Nets for user logic slave model s/w accessible register example
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg0;
@@ -207,6 +251,11 @@ output                                    IP2Bus_Error;
           default : ;
         endcase
 
+        if (state_reg == 3'd3 && sclk_reg == 1'b0 && spi_cnt >= 5'd8)
+          slv_reg3[16 + spi_cnt] <= IP2DAC_Format_I;
+
+        slv_reg0[30] <= spi_state;
+
     end // SLAVE_REG_WRITE_PROC
 
   // implement slave model register read mux
@@ -226,6 +275,176 @@ output                                    IP2Bus_Error;
 
     end // SLAVE_REG_READ_PROC
 
+
+    // generate DAC clock here, with a frequency divider imposed on the bus clock
+  always @(posedge Bus2IP_Clk)
+    begin
+      if (Bus2IP_Reset == 1)
+        dac_clk_reg <= 1'b0;
+      else 
+        dac_clk_reg <= ~dac_clk_reg;
+    end
+
+  //Get DAC data from slv_reg1. slv_reg1[0] is MSB. slv_reg1[31] is LSB.
+  //slv_reg2[22 : 31] is for Q DAC, output when DCLKIO is at high voltage, latched at the negative edge.
+  //slv_reg1[22 : 31] is for I DAC, output when DCLKIO is at low voltage, latched at the positive edge.
+  always @(negedge Bus2IP_Clk)
+    begin
+      if (Bus2IP_Reset == 1) begin
+        dac_data_reg <= 10'b0;
+      end
+      else begin
+        if (dac_clk_reg == 1'b1) begin
+          case (q_waveform)
+          2'd0: dac_data_reg <= slv_reg2[22: 31];
+          2'd1: dac_data_reg <= rect_data;
+          2'd2: dac_data_reg <= saw_data;
+          2'd3: dac_data_reg <= sine_data;
+          default: dac_data_reg <= dac_data_reg;
+          endcase
+        end
+        else begin
+          case (i_waveform)
+          2'd0: dac_data_reg <= slv_reg1[22: 31];
+          2'd1: dac_data_reg <= rect_data;
+          2'd2: dac_data_reg <= saw_data;
+          2'd3: dac_data_reg <= sine_data;
+          default: dac_data_reg <= dac_data_reg;
+          endcase
+        end
+      end
+    end
+
+  always @( posedge Bus2IP_Clk )
+    if ( Bus2IP_Reset == 1 ) begin
+      state_reg <= 3'd0;
+      dac_en <= 1'b0;
+      reset_reg <= 1'b0;
+      sclk_reg <= 1'b1;
+      sdio_reg_o <= 1'b0;
+      sdio_reg_t <= 1'b0;
+      cs_reg <= 1'b1;
+      spi_cnt <= 5'd0;
+      spi_state <= 1'b0;
+    end
+    else begin
+      case ( state_reg )
+        3'd0 : begin    //Idle State
+          if (slv_reg0[31] == 1'b1) begin
+            state_reg <= 3'd1;
+            dac_en <= 1'b1;
+            reset_reg <= 1'b1;
+          end
+          else begin
+            state_reg <= state_reg;
+            dac_en <= dac_en;
+            reset_reg <= reset_reg;
+          end
+        end
+        3'd1 : begin    //Ready State
+          reset_reg <= 1'b0;
+          sclk_reg <= 1'b1;
+          cs_reg <= 1'b1;
+          sdio_reg_o <= 1'b0;
+          sdio_reg_t <= 1'b0;
+          spi_cnt <= 5'd0;
+          spi_state <= 1'b0;
+          if (slv_reg0[31] == 1'b0) begin
+            state_reg <= 3'd0;
+            dac_en <= 1'b0;
+          end
+          else begin
+            if (slv_reg_write_sel == 7'b0001000) begin
+              state_reg <= 3'd2;
+              dac_en <= dac_en;
+            end
+            else begin
+              state_reg <= state_reg;
+              dac_en <= dac_en;
+            end
+          end
+        end
+        3'd2 : begin    //Judge State
+          spi_state <= 1'b1;
+          if (slv_reg3[16] == 1'b1) begin
+            state_reg <= 3'd3;
+            cs_reg <= 1'b0;
+          end
+          else begin
+            state_reg <= 3'd4;
+            cs_reg <= 1'b0;
+          end
+        end
+        3'd3 : begin    //Read State
+          if (sclk_reg == 1'b1) begin
+            if (spi_cnt == 5'd16) begin
+              state_reg <= 3'd1;
+            end
+            else begin
+              sclk_reg <= ~sclk_reg;
+              if (spi_cnt < 5'd8) begin
+                sdio_reg_o <= slv_reg3[16 + spi_cnt];
+                sdio_reg_t <= 1'b0;
+              end
+              else begin
+                sdio_reg_o <= 1'dz;
+                sdio_reg_t <= 1'b1;
+              end
+            end
+          end
+          else begin
+            state_reg <= state_reg;
+            sclk_reg <= ~sclk_reg;
+            sdio_reg_o <= sdio_reg_o;
+            sdio_reg_t <= sdio_reg_t;
+            spi_cnt <= spi_cnt + 1'b1;
+          end
+        end
+        3'd4 : begin    //Write State
+          if (sclk_reg == 1'b1) begin
+            if (spi_cnt == 5'd16) begin
+              state_reg <= 3'd1;
+            end
+            else begin
+              sclk_reg <= ~sclk_reg;
+              sdio_reg_o <= slv_reg3[16 + spi_cnt];
+              sdio_reg_t <= 1'b0;
+            end
+          end
+          else begin
+            state_reg <= state_reg;
+            sclk_reg <= ~sclk_reg;
+            sdio_reg_o <= sdio_reg_o;
+            sdio_reg_t <= sdio_reg_t;
+            spi_cnt <= spi_cnt + 1'b1;
+          end
+        end
+        default : state_reg <= 3'd0;
+      endcase
+    end
+
+
+  ip_dds ip_dds_q (
+    .clk(Bus2IP_Clk), 
+    .we(1'b1), 
+    .phase_out(phase_out), 
+    .cosine(), 
+    .sine(sine_data), 
+    .data(step_ctl)
+  );
+
+
+  // ------------------------------------------------------------
+  // Example code to drive IP to Bus signals
+  // ------------------------------------------------------------
+
+  assign i_waveform = slv_reg0[26 : 27];
+  assign q_waveform = slv_reg0[24 : 25];
+  assign step_ctl = slv_reg0[0 : 15] + 1'b1;
+
+  assign rect_data = (phase_out < 16'h8000) ? (10'h3ff) : (10'h0);
+  assign saw_data = phase_out[15 : 6];
+
   // ------------------------------------------------------------
   // Example code to drive IP to Bus signals
   // ------------------------------------------------------------
@@ -233,6 +452,18 @@ output                                    IP2Bus_Error;
   assign IP2Bus_Data    = slv_ip2bus_data;
   assign IP2Bus_WrAck   = slv_write_ack;
   assign IP2Bus_RdAck   = slv_read_ack;
-  assign IP2Bus_Error   = 0;
+  assign IP2Bus_Error   = 0; 
+
+  assign IP2DAC_Data =  (dac_en) ? (dac_data_reg) : (10'b0);
+  assign IP2DAC_DCLKIO = (dac_en) ? (dac_clk_reg) : (1'b0);
+  assign IP2DAC_Clkout = (dac_en) ? (dac_clk_reg) : (1'b0);
+
+  assign IP2DAC_PinMD = reset_reg;
+  assign IP2DAC_ClkMD = sclk_reg;
+  assign IP2DAC_Format_O = sdio_reg_o;
+  assign IP2DAC_Format_T = sdio_reg_t;
+  assign IP2DAC_PWRDN = cs_reg;
+  assign IP2DAC_OpEnI = slv_reg0[29];
+  assign IP2DAC_OpEnQ = slv_reg0[28]; 
 
 endmodule

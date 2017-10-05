@@ -7,8 +7,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 
-library plb_dac_v2_00_a;
-use plb_dac_v2_00_a.all;
+library plb_dac_v3_00_a;
+use plb_dac_v3_00_a.all;
 
 entity microblaze_plb_dac_0_wrapper is
   port (
@@ -85,6 +85,8 @@ architecture STRUCTURE of microblaze_plb_dac_0_wrapper is
       C_SPLB_CLK_PERIOD_PS : INTEGER;
       C_INCLUDE_DPHASE_TIMER : INTEGER;
       C_FAMILY : STRING;
+      C_MEM0_BASEADDR : std_logic_vector;
+      C_MEM0_HIGHADDR : std_logic_vector;
       DAC_WIDTH : INTEGER
     );
     port (
@@ -161,6 +163,8 @@ begin
       C_SPLB_CLK_PERIOD_PS => 20000,
       C_INCLUDE_DPHASE_TIMER => 1,
       C_FAMILY => "virtex4",
+      C_MEM0_BASEADDR => X"cb620000",
+      C_MEM0_HIGHADDR => X"cb62ffff",
       DAC_WIDTH => 10
     )
     port map (

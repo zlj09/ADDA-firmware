@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">PLB_wrPrim</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">178</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">PLB_rdBurst,
+PLB_SAValid,
+PLB_wrPendReq,
+PLB_rdPendReq,
+PLB_busLock</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="797" delta="new" >Your design is targeting <arg fmt="%s" index="1">LX/SX Production Step 0/1/ES</arg> devices. Please note that there are new specifications for the DCMs to guarantee maximum frequency performance. If the DCM input clock might stop or if the DCM reset might be asserted for an extended time, then use of the dcm_standby macro may be required. Please see Answer Record 21127.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+</messages>
+

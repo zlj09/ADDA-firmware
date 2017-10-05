@@ -196,3 +196,11 @@ map -intstyle ise -p xc4vsx55-ff1148-10 -global_opt off -cm area -ir off -pr off
 par -w -intstyle ise -ol high -t 1 microblaze_top_map.ncd microblaze_top.ncd microblaze_top.pcf 
 trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml microblaze_top.twx microblaze_top.ncd -o microblaze_top.twr microblaze_top.pcf -ucf microblaze_top.ucf 
 bitgen -intstyle ise -f microblaze_top.ut microblaze_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc microblaze_top.ucf -bm edkBmmFile.bmm -p xc4vsx55-ff1148-10 microblaze_top.ngc microblaze_top.ngd  
+xst -intstyle ise -ifn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.xst" -ofn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.syr" 
+xst -intstyle ise -ifn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.xst" -ofn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc microblaze_top.ucf -bm edkBmmFile.bmm -p xc4vsx55-ff1148-10 microblaze_top.ngc microblaze_top.ngd  
+map -intstyle ise -p xc4vsx55-ff1148-10 -global_opt off -cm area -ir off -pr off -c 100 -o microblaze_top_map.ncd microblaze_top.ngd microblaze_top.pcf 
+par -w -intstyle ise -ol high -t 1 microblaze_top_map.ncd microblaze_top.ncd microblaze_top.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml microblaze_top.twx microblaze_top.ncd -o microblaze_top.twr microblaze_top.pcf -ucf microblaze_top.ucf 
+bitgen -intstyle ise -f microblaze_top.ut microblaze_top.ncd 

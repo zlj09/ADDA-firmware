@@ -14,8 +14,5 @@
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">microblaze_i/dlmb_LMB_ABus&lt;30&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="1245" delta="old" >Unexpected DCM_ADV configuration. The signal <arg fmt="%s" index="1">clk_generator_0/clk_reg</arg> on the CLKIN pin of DCM_ADV comp <arg fmt="%s" index="2">microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg> is not driven by an IOB, BUFG or BUFGCTRL therefore the phase relationship of output clocks to CLKIN cannot be guaranteed.
-</msg>
-
 </messages>
 

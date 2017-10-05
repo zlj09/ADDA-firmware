@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.64 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -104,7 +104,7 @@ Analyzing hierarchy for entity <dcm_module> in library <clock_generator_v4_03_a>
 	C_CLKFX_MULTIPLY = 4
 	C_CLKIN_BUF = false
 	C_CLKIN_DIVIDE_BY_2 = false
-	C_CLKIN_PERIOD = 20.000000
+	C_CLKIN_PERIOD = 10.000000
 	C_CLKOUT_PHASE_SHIFT = "NONE"
 	C_CLK_FEEDBACK = "1X"
 	C_DESKEW_ADJUST = "SYSTEM_SYNCHRONOUS"
@@ -152,7 +152,7 @@ Analyzing generic Entity <dcm_module> in library <clock_generator_v4_03_a> (Arch
 	C_CLKFX_MULTIPLY = 4
 	C_CLKIN_BUF = false
 	C_CLKIN_DIVIDE_BY_2 = false
-	C_CLKIN_PERIOD = 20.000000
+	C_CLKIN_PERIOD = 10.000000
 	C_CLKOUT_PHASE_SHIFT = "NONE"
 	C_CLK_FEEDBACK = "1X"
 	C_DESKEW_ADJUST = "SYSTEM_SYNCHRONOUS"
@@ -170,7 +170,7 @@ WARNING:Xst:819 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/cloc
     Set user-defined property "CLKFX_DIVIDE =  1" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
     Set user-defined property "CLKFX_MULTIPLY =  4" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
     Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
-    Set user-defined property "CLKIN_PERIOD =  20.0000000000000000" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
+    Set user-defined property "CLKIN_PERIOD =  10.0000000000000000" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
     Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
     Set user-defined property "CLK_FEEDBACK =  1X" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
     Set user-defined property "DCM_AUTOCALIBRATION =  TRUE" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
@@ -314,8 +314,8 @@ Cell Usage :
 #      INV                         : 1
 # FlipFlops/Latches                : 4
 #      FDP                         : 4
-# Clock Buffers                    : 3
-#      BUFG                        : 3
+# Clock Buffers                    : 4
+#      BUFG                        : 4
 # DCM_ADVs                         : 1
 #      DCM_ADV                     : 1
 =========================================================================
@@ -330,7 +330,7 @@ Selected Device : 4vsx55ff1148-10
  Number of 4 input LUTs:                  1  out of  49152     0%  
  Number of IOs:                          25
  Number of bonded IOBs:                   0  out of    640     0%  
- Number of GCLKs:                         3  out of     32     9%  
+ Number of GCLKs:                         4  out of     32    12%  
  Number of DCM_ADVs:                      1  out of      8    12%  
 
 ---------------------------
@@ -403,12 +403,12 @@ Delay:               0.742ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.97 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.66 secs
  
 --> 
 
-Total memory usage is 329596 kilobytes
+Total memory usage is 329660 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   31 (   0 filtered)

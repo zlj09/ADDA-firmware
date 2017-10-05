@@ -8,15 +8,6 @@ module microblaze
     fpga_0_RS232_TX_pin,
     fpga_0_clk_1_sys_clk_pin,
     fpga_0_rst_1_sys_rst_pin,
-    plb_dac_0_S_Data_pin,
-    plb_dac_0_S_DCLKIO_pin,
-    plb_dac_0_S_Clkout_pin,
-    plb_dac_0_S_PinMD_pin,
-    plb_dac_0_S_ClkMD_pin,
-    plb_dac_0_S_Format_pin,
-    plb_dac_0_S_PWRDN_pin,
-    plb_dac_0_S_OpEnI_pin,
-    plb_dac_0_S_OpEnQ_pin,
     plb_dac_1_S_Data_pin,
     plb_dac_1_S_DCLKIO_pin,
     plb_dac_1_S_Clkout_pin,
@@ -25,21 +16,21 @@ module microblaze
     plb_dac_1_S_Format_pin,
     plb_dac_1_S_PWRDN_pin,
     plb_dac_1_S_OpEnI_pin,
-    plb_dac_1_S_OpEnQ_pin
+    plb_dac_1_S_OpEnQ_pin,
+    plb_dac_0_S_Data_pin,
+    plb_dac_0_S_DCLKIO_pin,
+    plb_dac_0_S_Clkout_pin,
+    plb_dac_0_S_PinMD_pin,
+    plb_dac_0_S_ClkMD_pin,
+    plb_dac_0_S_Format_pin,
+    plb_dac_0_S_PWRDN_pin,
+    plb_dac_0_S_OpEnQ_pin,
+    plb_dac_0_S_OpEnI_pin
   );
   input fpga_0_RS232_RX_pin;
   output fpga_0_RS232_TX_pin;
   input fpga_0_clk_1_sys_clk_pin;
   input fpga_0_rst_1_sys_rst_pin;
-  output [0:9] plb_dac_0_S_Data_pin;
-  output plb_dac_0_S_DCLKIO_pin;
-  output plb_dac_0_S_Clkout_pin;
-  output plb_dac_0_S_PinMD_pin;
-  output plb_dac_0_S_ClkMD_pin;
-  inout plb_dac_0_S_Format_pin;
-  output plb_dac_0_S_PWRDN_pin;
-  output plb_dac_0_S_OpEnI_pin;
-  output plb_dac_0_S_OpEnQ_pin;
   output [0:9] plb_dac_1_S_Data_pin;
   output plb_dac_1_S_DCLKIO_pin;
   output plb_dac_1_S_Clkout_pin;
@@ -49,6 +40,15 @@ module microblaze
   output plb_dac_1_S_PWRDN_pin;
   output plb_dac_1_S_OpEnI_pin;
   output plb_dac_1_S_OpEnQ_pin;
+  output [0:9] plb_dac_0_S_Data_pin;
+  output plb_dac_0_S_DCLKIO_pin;
+  output plb_dac_0_S_Clkout_pin;
+  output plb_dac_0_S_PinMD_pin;
+  output plb_dac_0_S_ClkMD_pin;
+  inout plb_dac_0_S_Format_pin;
+  output plb_dac_0_S_PWRDN_pin;
+  output plb_dac_0_S_OpEnQ_pin;
+  output plb_dac_0_S_OpEnI_pin;
 
   // Internal signals
 
@@ -59,6 +59,7 @@ module microblaze
   wire Ext_NM_BRK;
   wire [0:0] RS232_Interrupt;
   wire clk_50_0000MHz;
+  wire clk_100_0000MHz;
   wire [0:31] dlmb_LMB_ABus;
   wire dlmb_LMB_AddrStrobe;
   wire [0:3] dlmb_LMB_BE;
@@ -236,14 +237,6 @@ module microblaze
 
   assign CLK_S = fpga_0_clk_1_sys_clk_pin;
   assign sys_rst_s = fpga_0_rst_1_sys_rst_pin;
-  assign plb_dac_0_S_Data_pin = plb_dac_0_S_Data;
-  assign plb_dac_0_S_DCLKIO_pin = plb_dac_0_S_DCLKIO;
-  assign plb_dac_0_S_Clkout_pin = plb_dac_0_S_Clkout;
-  assign plb_dac_0_S_PinMD_pin = plb_dac_0_S_PinMD;
-  assign plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD;
-  assign plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN;
-  assign plb_dac_0_S_OpEnI_pin = plb_dac_0_S_OpEnI;
-  assign plb_dac_0_S_OpEnQ_pin = plb_dac_0_S_OpEnQ;
   assign plb_dac_1_S_Data_pin = plb_dac_1_S_Data;
   assign plb_dac_1_S_DCLKIO_pin = plb_dac_1_S_DCLKIO;
   assign plb_dac_1_S_Clkout_pin = plb_dac_1_S_Clkout;
@@ -252,6 +245,14 @@ module microblaze
   assign plb_dac_1_S_PWRDN_pin = plb_dac_1_S_PWRDN;
   assign plb_dac_1_S_OpEnI_pin = plb_dac_1_S_OpEnI;
   assign plb_dac_1_S_OpEnQ_pin = plb_dac_1_S_OpEnQ;
+  assign plb_dac_0_S_Data_pin = plb_dac_0_S_Data;
+  assign plb_dac_0_S_DCLKIO_pin = plb_dac_0_S_DCLKIO;
+  assign plb_dac_0_S_Clkout_pin = plb_dac_0_S_Clkout;
+  assign plb_dac_0_S_PinMD_pin = plb_dac_0_S_PinMD;
+  assign plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD;
+  assign plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN;
+  assign plb_dac_0_S_OpEnQ_pin = plb_dac_0_S_OpEnQ;
+  assign plb_dac_0_S_OpEnI_pin = plb_dac_0_S_OpEnI;
   assign net_gnd0 = 1'b0;
   assign net_gnd1[0:0] = 1'b0;
   assign net_gnd10[0:9] = 10'b0000000000;
@@ -266,7 +267,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_microblaze_0_wrapper
     microblaze_0 (
-      .CLK ( clk_50_0000MHz ),
+      .CLK ( clk_100_0000MHz ),
       .RESET ( dlmb_LMB_Rst ),
       .MB_RESET ( mb_reset ),
       .INTERRUPT ( microblaze_0_Interrupt ),
@@ -911,7 +912,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_mb_plb_wrapper
     mb_plb (
-      .PLB_Clk ( clk_50_0000MHz ),
+      .PLB_Clk ( clk_100_0000MHz ),
       .SYS_Rst ( sys_bus_reset[0] ),
       .PLB_Rst (  ),
       .SPLB_Rst ( mb_plb_SPLB_Rst ),
@@ -1013,7 +1014,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_ilmb_wrapper
     ilmb (
-      .LMB_Clk ( clk_50_0000MHz ),
+      .LMB_Clk ( clk_100_0000MHz ),
       .SYS_Rst ( sys_bus_reset[0] ),
       .LMB_Rst ( ilmb_LMB_Rst ),
       .M_ABus ( ilmb_M_ABus ),
@@ -1043,7 +1044,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_dlmb_wrapper
     dlmb (
-      .LMB_Clk ( clk_50_0000MHz ),
+      .LMB_Clk ( clk_100_0000MHz ),
       .SYS_Rst ( sys_bus_reset[0] ),
       .LMB_Rst ( dlmb_LMB_Rst ),
       .M_ABus ( dlmb_M_ABus ),
@@ -1073,7 +1074,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_dlmb_cntlr_wrapper
     dlmb_cntlr (
-      .LMB_Clk ( clk_50_0000MHz ),
+      .LMB_Clk ( clk_100_0000MHz ),
       .LMB_Rst ( dlmb_LMB_Rst ),
       .LMB_ABus ( dlmb_LMB_ABus ),
       .LMB_WriteDBus ( dlmb_LMB_WriteDBus ),
@@ -1193,7 +1194,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_ilmb_cntlr_wrapper
     ilmb_cntlr (
-      .LMB_Clk ( clk_50_0000MHz ),
+      .LMB_Clk ( clk_100_0000MHz ),
       .LMB_Rst ( ilmb_LMB_Rst ),
       .LMB_ABus ( ilmb_LMB_ABus ),
       .LMB_WriteDBus ( ilmb_LMB_WriteDBus ),
@@ -1332,7 +1333,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_rs232_wrapper
     RS232 (
-      .SPLB_Clk ( clk_50_0000MHz ),
+      .SPLB_Clk ( clk_100_0000MHz ),
       .SPLB_Rst ( mb_plb_SPLB_Rst[0] ),
       .PLB_ABus ( mb_plb_PLB_ABus ),
       .PLB_PAValid ( mb_plb_PLB_PAValid ),
@@ -1384,7 +1385,7 @@ module microblaze
     clock_generator_0 (
       .CLKIN ( CLK_S ),
       .CLKOUT0 ( clk_50_0000MHz ),
-      .CLKOUT1 (  ),
+      .CLKOUT1 ( clk_100_0000MHz ),
       .CLKOUT2 (  ),
       .CLKOUT3 (  ),
       .CLKOUT4 (  ),
@@ -1435,7 +1436,7 @@ module microblaze
       .S_AXI_RRESP (  ),
       .S_AXI_RVALID (  ),
       .S_AXI_RREADY ( net_gnd0 ),
-      .SPLB_Clk ( clk_50_0000MHz ),
+      .SPLB_Clk ( clk_100_0000MHz ),
       .SPLB_Rst ( mb_plb_SPLB_Rst[1] ),
       .PLB_ABus ( mb_plb_PLB_ABus ),
       .PLB_UABus ( mb_plb_PLB_UABus ),
@@ -1789,7 +1790,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_xps_intc_0_wrapper
     xps_intc_0 (
-      .SPLB_Clk ( clk_50_0000MHz ),
+      .SPLB_Clk ( clk_100_0000MHz ),
       .SPLB_Rst ( mb_plb_SPLB_Rst[2] ),
       .PLB_ABus ( mb_plb_PLB_ABus ),
       .PLB_PAValid ( mb_plb_PLB_PAValid ),
@@ -1838,7 +1839,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_plb_dac_0_wrapper
     plb_dac_0 (
-      .SPLB_Clk ( clk_50_0000MHz ),
+      .SPLB_Clk ( clk_100_0000MHz ),
       .SPLB_Rst ( mb_plb_SPLB_Rst[3] ),
       .PLB_ABus ( mb_plb_PLB_ABus ),
       .PLB_UABus ( mb_plb_PLB_UABus ),
@@ -1896,7 +1897,7 @@ module microblaze
   (* BOX_TYPE = "user_black_box" *)
   microblaze_plb_dac_1_wrapper
     plb_dac_1 (
-      .SPLB_Clk ( clk_50_0000MHz ),
+      .SPLB_Clk ( clk_100_0000MHz ),
       .SPLB_Rst ( mb_plb_SPLB_Rst[4] ),
       .PLB_ABus ( mb_plb_PLB_ABus ),
       .PLB_UABus ( mb_plb_PLB_UABus ),
@@ -1953,18 +1954,18 @@ module microblaze
 
   IOBUF
     iobuf_0 (
-      .I ( plb_dac_0_S_Format_O ),
-      .IO ( plb_dac_0_S_Format_pin ),
-      .O ( plb_dac_0_S_Format_I ),
-      .T ( plb_dac_0_S_Format_T )
-    );
-
-  IOBUF
-    iobuf_1 (
       .I ( plb_dac_1_S_Format_O ),
       .IO ( plb_dac_1_S_Format_pin ),
       .O ( plb_dac_1_S_Format_I ),
       .T ( plb_dac_1_S_Format_T )
+    );
+
+  IOBUF
+    iobuf_1 (
+      .I ( plb_dac_0_S_Format_O ),
+      .IO ( plb_dac_0_S_Format_pin ),
+      .O ( plb_dac_0_S_Format_I ),
+      .T ( plb_dac_0_S_Format_T )
     );
 
 endmodule

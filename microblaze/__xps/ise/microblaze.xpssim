@@ -5,6 +5,8 @@
   <Version XPSPNVER="1.0" EDKVER="14.7" />
   <FPGA family="virtex4" device="xc4vsx55" package="ff1148" speedgrade="-10" />
   <File Type="MHS" URL="../../microblaze.mhs" />
+  <File Type="CSDEV" URL="../../pcores/plb_dac_v3_00_a/netlist/ip_dds.ngc" />
+  <File Type="CSDEV" URL="../../pcores/plb_dac_v3_00_a/netlist/ip_dds.ngc" />
   <File Type="CSDEV" URL="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" />
   <File Type="CSDEV" URL="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" />
   <File Type="CSDEV" URL="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" />
@@ -67,8 +69,9 @@
   <File Type="CSDEV" URL="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" />
   <File Type="CSDEV" URL="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" />
   <File Type="CSDEV" URL="G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" />
-  <File Type="CSDEV" URL="../../pcores/plb_dac_v2_00_a/hdl/verilog/user_logic.v" />
-  <File Type="CSDEV" URL="../../pcores/plb_dac_v2_00_a/hdl/vhdl/plb_dac.vhd" />
+  <File Type="CSDEV" URL="../../pcores/plb_dac_v3_00_a/hdl/verilog/user_logic.v" />
+  <File Type="CSDEV" URL="../../pcores/plb_dac_v3_00_a/hdl/vhdl/plb_dac.vhd" />
+  <File Type="CSDEV" URL="../../pcores/plb_dac_v3_00_a/hdl/verilog/ip_dds.v" />
 
 
 </Simulation_deps>

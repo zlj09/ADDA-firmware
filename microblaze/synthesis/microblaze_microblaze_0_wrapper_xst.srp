@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.55 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> 
 TABLE OF CONTENTS
@@ -403,7 +403,7 @@ Analyzing hierarchy for entity <microblaze> in library <microblaze_v8_50_c> (arc
 	C_FAMILY = "virtex4"
 	C_FAULT_TOLERANT = 0
 	C_FPU_EXCEPTION = 0
-	C_FREQ = 50000000
+	C_FREQ = 100000000
 	C_FSL_DATA_SIZE = 32
 	C_FSL_EXCEPTION = 0
 	C_FSL_LINKS = 0
@@ -566,7 +566,7 @@ Analyzing hierarchy for entity <MicroBlaze_Core> in library <Microblaze_v8_50_c>
 	C_FAMILY = "virtex4"
 	C_FAULT_TOLERANT = 0
 	C_FPU_EXCEPTION = 0
-	C_FREQ = 50000000
+	C_FREQ = 100000000
 	C_FSL_DATA_SIZE = 32
 	C_FSL_EXCEPTION = 0
 	C_FSL_LINKS = 0
@@ -1290,7 +1290,7 @@ Analyzing generic Entity <microblaze> in library <microblaze_v8_50_c> (Architect
 	C_FAMILY = "virtex4"
 	C_FAULT_TOLERANT = 0
 	C_FPU_EXCEPTION = 0
-	C_FREQ = 50000000
+	C_FREQ = 100000000
 	C_FSL_DATA_SIZE = 32
 	C_FSL_EXCEPTION = 0
 	C_FSL_LINKS = 0
@@ -1766,7 +1766,7 @@ Analyzing generic Entity <MicroBlaze_Core> in library <Microblaze_v8_50_c> (Arch
 	C_FAMILY = "virtex4"
 	C_FAULT_TOLERANT = 0
 	C_FPU_EXCEPTION = 0
-	C_FREQ = 50000000
+	C_FREQ = 100000000
 	C_FSL_DATA_SIZE = 32
 	C_FSL_EXCEPTION = 0
 	C_FSL_LINKS = 0
@@ -8769,12 +8769,12 @@ Delay:               2.994ns (Levels of Logic = 5)
 =========================================================================
 
 
-Total REAL time to Xst completion: 268.00 secs
-Total CPU time to Xst completion: 267.60 secs
+Total REAL time to Xst completion: 272.00 secs
+Total CPU time to Xst completion: 271.84 secs
  
 --> 
 
-Total memory usage is 472736 kilobytes
+Total memory usage is 470332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 4662 (   0 filtered)

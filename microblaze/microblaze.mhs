@@ -17,17 +17,8 @@
 
  PORT fpga_0_RS232_RX_pin = fpga_0_RS232_RX_pin, DIR = I
  PORT fpga_0_RS232_TX_pin = fpga_0_RS232_TX_pin, DIR = O
- PORT fpga_0_clk_1_sys_clk_pin = CLK_S, DIR = I, SIGIS = CLK, CLK_FREQ = 50000000
+ PORT fpga_0_clk_1_sys_clk_pin = CLK_S, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
  PORT fpga_0_rst_1_sys_rst_pin = sys_rst_s, DIR = I, SIGIS = RST, RST_POLARITY = 0
- PORT plb_dac_0_S_Data_pin = plb_dac_0_S_Data, DIR = O, VEC = [0:9]
- PORT plb_dac_0_S_DCLKIO_pin = plb_dac_0_S_DCLKIO, DIR = O
- PORT plb_dac_0_S_Clkout_pin = plb_dac_0_S_Clkout, DIR = O
- PORT plb_dac_0_S_PinMD_pin = plb_dac_0_S_PinMD, DIR = O
- PORT plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD, DIR = O
- PORT plb_dac_0_S_Format_pin = plb_dac_0_S_Format, DIR = IO
- PORT plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN, DIR = O
- PORT plb_dac_0_S_OpEnI_pin = plb_dac_0_S_OpEnI, DIR = O
- PORT plb_dac_0_S_OpEnQ_pin = plb_dac_0_S_OpEnQ, DIR = O
  PORT plb_dac_1_S_Data_pin = plb_dac_1_S_Data, DIR = O, VEC = [0:9]
  PORT plb_dac_1_S_DCLKIO_pin = plb_dac_1_S_DCLKIO, DIR = O
  PORT plb_dac_1_S_Clkout_pin = plb_dac_1_S_Clkout, DIR = O
@@ -37,6 +28,15 @@
  PORT plb_dac_1_S_PWRDN_pin = plb_dac_1_S_PWRDN, DIR = O
  PORT plb_dac_1_S_OpEnI_pin = plb_dac_1_S_OpEnI, DIR = O
  PORT plb_dac_1_S_OpEnQ_pin = plb_dac_1_S_OpEnQ, DIR = O
+ PORT plb_dac_0_S_Data_pin = plb_dac_0_S_Data, DIR = O, VEC = [0:9]
+ PORT plb_dac_0_S_DCLKIO_pin = plb_dac_0_S_DCLKIO, DIR = O
+ PORT plb_dac_0_S_Clkout_pin = plb_dac_0_S_Clkout, DIR = O
+ PORT plb_dac_0_S_PinMD_pin = plb_dac_0_S_PinMD, DIR = O
+ PORT plb_dac_0_S_ClkMD_pin = plb_dac_0_S_ClkMD, DIR = O
+ PORT plb_dac_0_S_Format_pin = plb_dac_0_S_Format, DIR = IO
+ PORT plb_dac_0_S_PWRDN_pin = plb_dac_0_S_PWRDN, DIR = O
+ PORT plb_dac_0_S_OpEnQ_pin = plb_dac_0_S_OpEnQ, DIR = O
+ PORT plb_dac_0_S_OpEnI_pin = plb_dac_0_S_OpEnI, DIR = O
 
 
 BEGIN microblaze
@@ -56,21 +56,21 @@ END
 BEGIN plb_v46
  PARAMETER INSTANCE = mb_plb
  PARAMETER HW_VER = 1.05.a
- PORT PLB_Clk = clk_50_0000MHz
+ PORT PLB_Clk = clk_100_0000MHz
  PORT SYS_Rst = sys_bus_reset
 END
 
 BEGIN lmb_v10
  PARAMETER INSTANCE = ilmb
  PARAMETER HW_VER = 2.00.b
- PORT LMB_Clk = clk_50_0000MHz
+ PORT LMB_Clk = clk_100_0000MHz
  PORT SYS_Rst = sys_bus_reset
 END
 
 BEGIN lmb_v10
  PARAMETER INSTANCE = dlmb
  PARAMETER HW_VER = 2.00.b
- PORT LMB_Clk = clk_50_0000MHz
+ PORT LMB_Clk = clk_100_0000MHz
  PORT SYS_Rst = sys_bus_reset
 END
 
@@ -101,7 +101,7 @@ END
 
 BEGIN xps_uartlite
  PARAMETER INSTANCE = RS232
- PARAMETER C_BAUDRATE = 9600
+ PARAMETER C_BAUDRATE = 115200
  PARAMETER C_DATA_BITS = 8
  PARAMETER C_USE_PARITY = 0
  PARAMETER C_ODD_PARITY = 0
@@ -116,17 +116,22 @@ END
 
 BEGIN clock_generator
  PARAMETER INSTANCE = clock_generator_0
- PARAMETER C_CLKIN_FREQ = 50000000
+ PARAMETER C_CLKIN_FREQ = 100000000
  PARAMETER C_CLKOUT0_FREQ = 50000000
  PARAMETER C_CLKOUT0_PHASE = 0
  PARAMETER C_CLKOUT0_GROUP = NONE
  PARAMETER C_CLKOUT0_BUF = TRUE
  PARAMETER C_EXT_RESET_HIGH = 0
  PARAMETER HW_VER = 4.03.a
+ PARAMETER C_CLKOUT1_FREQ = 100000000
+ PARAMETER C_CLKOUT1_PHASE = 0
+ PARAMETER C_CLKOUT1_GROUP = NONE
+ PARAMETER C_CLKOUT1_BUF = TRUE
  PORT CLKIN = CLK_S
  PORT CLKOUT0 = clk_50_0000MHz
  PORT RST = sys_rst_s
  PORT LOCKED = Dcm_all_locked
+ PORT CLKOUT1 = clk_100_0000MHz
 END
 
 BEGIN mdm
@@ -166,9 +171,11 @@ END
 
 BEGIN plb_dac
  PARAMETER INSTANCE = plb_dac_0
- PARAMETER HW_VER = 2.00.a
+ PARAMETER HW_VER = 3.00.a
  PARAMETER C_BASEADDR = 0xc9c20000
  PARAMETER C_HIGHADDR = 0xc9c2ffff
+ PARAMETER C_MEM0_BASEADDR = 0xcb620000
+ PARAMETER C_MEM0_HIGHADDR = 0xcb62ffff
  BUS_INTERFACE SPLB = mb_plb
  PORT S_Data = plb_dac_0_S_Data
  PORT S_DCLKIO = plb_dac_0_S_DCLKIO
@@ -177,15 +184,17 @@ BEGIN plb_dac
  PORT S_ClkMD = plb_dac_0_S_ClkMD
  PORT S_Format = plb_dac_0_S_Format
  PORT S_PWRDN = plb_dac_0_S_PWRDN
- PORT S_OpEnI = plb_dac_0_S_OpEnI
  PORT S_OpEnQ = plb_dac_0_S_OpEnQ
+ PORT S_OpEnI = plb_dac_0_S_OpEnI
 END
 
 BEGIN plb_dac
  PARAMETER INSTANCE = plb_dac_1
- PARAMETER HW_VER = 2.00.a
+ PARAMETER HW_VER = 3.00.a
  PARAMETER C_BASEADDR = 0xc9c00000
  PARAMETER C_HIGHADDR = 0xc9c0ffff
+ PARAMETER C_MEM0_BASEADDR = 0xcb600000
+ PARAMETER C_MEM0_HIGHADDR = 0xcb60ffff
  BUS_INTERFACE SPLB = mb_plb
  PORT S_Data = plb_dac_1_S_Data
  PORT S_DCLKIO = plb_dac_1_S_DCLKIO
