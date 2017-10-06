@@ -9,236 +9,20 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Thu Oct 05 22:21:23 2017
+Mapped Date    : Fri Oct 06 18:08:56 2017
 
 Mapping design into LUTs...
 Running directed packing...
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[9].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[8].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[7].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[6].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[5].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[4].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[3].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[31].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[30].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[2].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[29].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[27].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[26].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[25].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[24].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[23].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[22].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[21].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[20].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[1].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[19].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[18].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[17].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[16].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[15].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[14].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[13].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[12].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[11].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[10].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
-   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
-   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
-   used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B>:<R
-   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
-   must be used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B>:<R
-   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
-   must be used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T>:<R
-   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
-   must be used.
-WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
-   on
-   block:<USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk
-   _mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T>:<R
-   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
-   must be used.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   36
+Number of warnings:    0
 Logic Utilization:
   Number of Slice Flip Flops:           511 out of  49,152    1%
   Number of 4 input LUTs:               738 out of  49,152    1%
@@ -259,10 +43,10 @@ Logic Distribution:
   Number of FIFO16/RAMB16s:              37 out of     320   11%
     Number used as RAMB16s:              37
 
-Average Fanout of Non-Clock Nets:                2.97
+Average Fanout of Non-Clock Nets:                3.16
 
-Peak Memory Usage:  477 MB
-Total REAL time to MAP completion:  19 secs 
+Peak Memory Usage:  478 MB
+Total REAL time to MAP completion:  15 secs 
 Total CPU time to MAP completion:   7 secs 
 
 NOTES:

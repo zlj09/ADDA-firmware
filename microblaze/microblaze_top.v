@@ -34,8 +34,8 @@ module microblaze_top
   input fpga_0_RS232_RX_pin;
   output fpga_0_RS232_TX_pin;
   input fpga_0_clk_1_sys_clk_pin;
-  //input fpga_0_rst_1_sys_rst_pin;
-  output fpga_0_rst_1_sys_rst_pin;
+  input fpga_0_rst_1_sys_rst_pin;
+  //output fpga_0_rst_1_sys_rst_pin;
   output [0:9] plb_dac_0_S_Data_pin;
   output plb_dac_0_S_DCLKIO_pin;
   output plb_dac_0_S_Clkout_pin;
@@ -86,11 +86,11 @@ module microblaze_top
       .plb_dac_1_S_OpEnQ_pin ( plb_dac_1_S_OpEnQ_pin )
     );
   
-  rst_generator
+  /*rst_generator
     rst_generator_0(
       .clk ( fpga_0_clk_1_sys_clk_pin ),
       .rst ( fpga_0_rst_1_sys_rst_pin )
-    );
+    );*/
    
 
   assign dac_0_pwrdn = plb_dac_0_S_PWRDN_pin;

@@ -47,7 +47,7 @@ typedef struct{
 	u8 openq;
 	u8 waveform_i;
 	u8 waveform_q;
-	u8 step_ctrl;
+	u8 freq_ctrl;
 } DACCtrl;
 
 void print(char *str);
@@ -61,7 +61,7 @@ XUartLite xuart_1;
 XIntc xintc_0;
 
 u32 dac1_ctrl;
-u32 waveform, step_ctrl;
+u32 waveform, freq_ctrl;
 
 
 int main()
@@ -106,8 +106,8 @@ int main()
     PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG3_OFFSET, 0x00000880);
     while(PLB_DAC_mReadReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG0_OFFSET) & 0x2) ;
 
-    waveform = 2;
-    step_ctrl = 0;
+    waveform = 4;
+    freq_ctrl = 0x1f4;
     genDACCtrl();
     prtDACState();
 
@@ -126,7 +126,7 @@ void genDACCtrl()
 	dac1_ctrl &= 0x000000ff;
 	dac1_ctrl |= waveform << 8;
 	dac1_ctrl |= waveform << 12;
-	dac1_ctrl |= step_ctrl << 16;
+	dac1_ctrl |= freq_ctrl << 16;
 	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, dac1_ctrl);
 	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, dac1_ctrl);
 }
@@ -134,8 +134,8 @@ void genDACCtrl()
 void prtDACState()
 {
 	char waveform_strs[5][10] = {"DC", "Rect", "Saw", "Cos", "Arb"};
-	u32 period = 40 * 256 / (step_ctrl + 1);
-	xil_printf("DAC 1 Channel I, Waveform: %s, Step Length: %d, Period: %dns\r\n", waveform_strs[waveform], step_ctrl, period);
+	u32 freq = 1530 * (freq_ctrl + 1);
+	xil_printf("DAC 1 Channel I, Waveform: %s, Phase Increasment: %d, freq: %dns\r\n", waveform_strs[waveform], freq_ctrl, freq);
 	xil_printf("D: DC\r\nR: Rect\r\nS: Saw\r\nC: Cos\r\nA: Arb\r\n+: inc freq\r\n-: dec freq\r\n*: mult freq\r\n/: divd freq\r\n");
 }
 
@@ -186,33 +186,33 @@ void uart1_recvhandler(void *CallBackRef, unsigned int EventData)
 		msg_state = 1;
 		break;
 	case '+':
-		if (step_ctrl < 65536)
+		if (freq_ctrl < 65536)
 		{
-			++step_ctrl;
+			++freq_ctrl;
 			genDACCtrl();
 		}
 		msg_state = 1;
 		break;
 	case '*':
-		if (step_ctrl < 32768)
+		if (freq_ctrl < 32768)
 		{
-			step_ctrl <<= 1;
+			freq_ctrl <<= 1;
 			genDACCtrl();
 		}
 		msg_state = 1;
 		break;
 	case '-':
-		if (step_ctrl > 0)
+		if (freq_ctrl > 0)
 		{
-			--step_ctrl;
+			--freq_ctrl;
 			genDACCtrl();
 		}
 		msg_state = 1;
 		break;
 	case '/':
-		if (step_ctrl > 0)
+		if (freq_ctrl > 0)
 		{
-			step_ctrl >>= 1;
+			freq_ctrl >>= 1;
 			genDACCtrl();
 		}
 		msg_state = 1;

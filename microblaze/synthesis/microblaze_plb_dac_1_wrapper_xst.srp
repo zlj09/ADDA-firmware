@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.73 secs
  
 --> 
 TABLE OF CONTENTS
@@ -612,8 +612,8 @@ Analyzing module <user_logic> in library <plb_dac_v3_00_a>.
 	PHASE_WIDTH = 32'sb00000000000000000000000000010000
 INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:2211 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/ip_dds.v" line 430: Instantiating black box module <ip_dds>.
-WARNING:Xst:2211 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/bram_arb.v" line 439: Instantiating black box module <bram_arb>.
+WARNING:Xst:2211 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/ip_dds.v" line 433: Instantiating black box module <ip_dds>.
+WARNING:Xst:2211 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/bram_arb.v" line 450: Instantiating black box module <bram_arb>.
 Module <user_logic> is correct for synthesis.
  
     Set user-defined property "SYN_BLACK_BOX =  1" for instance <ip_dds_q> in unit <user_logic>.
@@ -717,7 +717,10 @@ Synthesizing Unit <user_logic>.
 WARNING:Xst:647 - Input <Bus2IP_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_Addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_CS<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <unsigned_sine_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <bram_wea> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_0> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -731,7 +734,7 @@ WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This uncon
     | Encoding           | automatic                                      |
     | Implementation     | automatic                                      |
     -----------------------------------------------------------------------
-    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 389.
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 392.
     Found 5-bit adder carry out for signal <COND_304$addsub0000>.
     Found 1-bit register for signal <cs_reg>.
     Found 1-bit register for signal <dac_clk_reg>.
@@ -739,7 +742,7 @@ WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This uncon
     Found 1-bit register for signal <dac_en>.
     Found 1-bit register for signal <Mtridata_sdio_reg_o>.
     Found 1-bit register for signal <Mtrien_sdio_reg_o>.
-    Found 16-bit comparator less for signal <rect_data$cmp_lt0000> created at line 456.
+    Found 16-bit comparator less for signal <rect_data$cmp_lt0000> created at line 470.
     Found 1-bit register for signal <reset_reg>.
     Found 1-bit register for signal <sclk_reg>.
     Found 1-bit tristate buffer for signal <sdio_reg_o>.
@@ -748,8 +751,8 @@ WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This uncon
     Found 32-bit register for signal <slv_reg1>.
     Found 32-bit register for signal <slv_reg2>.
     Found 32-bit register for signal <slv_reg3>.
-    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 255.
-    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 255.
+    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 258.
+    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 258.
     Found 32-bit register for signal <slv_reg4>.
     Found 32-bit register for signal <slv_reg5>.
     Found 32-bit register for signal <slv_reg6>.
@@ -1242,14 +1245,14 @@ WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to plb_dac_1/
 WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to plb_dac_1/USER_LOGIC_I/ip_dds_q.
 
 
-Total REAL time to Xst completion: 28.00 secs
-Total CPU time to Xst completion: 28.11 secs
+Total REAL time to Xst completion: 50.00 secs
+Total CPU time to Xst completion: 49.95 secs
  
 --> 
 
-Total memory usage is 530492 kilobytes
+Total memory usage is 530684 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  111 (   0 filtered)
+Number of warnings :  113 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

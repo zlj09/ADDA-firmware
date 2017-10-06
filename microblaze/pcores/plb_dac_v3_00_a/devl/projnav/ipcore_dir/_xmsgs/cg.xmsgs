@@ -23,6 +23,33 @@
 <msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
 </msg>
 
+<msg type="warning" file="coreutil" num="0" delta="new" >WARNING:TclTasksC:project_006: Exception detected while executing [project new].
+Type [help project new] for more information.
+
+    while executing
+&quot;project new $isefile&quot;
+    (procedure &quot;core2ise&quot; line 48)
+    invoked from within
+&quot;core2ise $corename&quot;
+    invoked from within
+&quot;if {[info exists argc]} {
+   if {$argc==1} {
+      set corename [lindex $argv 0]
+      core2ise $corename
+   } elseif {$argc==2} {
+      set corepath ...&quot;
+    (file &quot;G:\Xilinx\14.7\ISE_DS\ISE\coregen\tcl\core2ise.tcl&quot; line 250)
+</msg>
+
+<msg type="error" file="coreutil" num="1012" delta="new" >Command &apos;<arg fmt="%s" index="1">G:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\xtclsh.exe &quot;G:\Xilinx\14.7\ISE_DS\ISE\coregen\tcl\core2ise.tcl&quot; &quot;./tmp/_cg/&quot; &quot;bram_arb&quot; </arg>&apos; returned a non-zero exit code &apos;<arg fmt="%x" index="2">1</arg>&apos;
+</msg>
+
+<msg type="warning" file="sim" num="968" delta="new" >ISE project &apos;<arg fmt="%s" index="1">./tmp/_cg/bram_arb.xise</arg>&apos; will not be released.
+</msg>
+
+<msg type="warning" file="sim" num="0" delta="new" >ISE file could not be generated.
+</msg>
+
 <msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
 </msg>
 

@@ -152,9 +152,12 @@ output                                    IP2Bus_Error;
   wire       [9 : 0]                        rect_data;
   wire       [9 : 0]                        saw_data;
   wire       [9 : 0]                        sine_data;
+  wire       [9 : 0]                        unsigned_sine_data;
   wire       [9 : 0]                        arb_data;
   wire       [PHASE_WIDTH-1 : 0]            phase_out;
   wire       [PHASE_WIDTH-1 : 0]            step_ctl;
+  wire       [15 : 0]                       bram_addr;
+  wire                                      bram_wea;
 
   // Nets for user logic slave model s/w accessible register example
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg0;
@@ -436,11 +439,19 @@ output                                    IP2Bus_Error;
     .data(step_ctl)
   );
 
+  /*bram_arb bram_arb_1 (
+    .clka(Bus2IP_Clk), 
+    .wea(bram_wea), 
+    .addra(bram_addr), 
+    .dina(Bus2IP_Data[22 : 31]), 
+    .douta(arb_data)
+  );*/
+
   bram_arb bram_arb_1 (
     .clka(Bus2IP_Clk), 
     .wea(1'b0), 
     .addra(phase_out), 
-    .dina(Bus2IP_Data), 
+    .dina(Bus2IP_Data[22 : 31]), 
     .douta(arb_data)
   );
 
@@ -449,12 +460,16 @@ output                                    IP2Bus_Error;
   // Example code to drive IP to Bus signals
   // ------------------------------------------------------------
 
+  //assign bram_wea = Bus2IP_CS[0] & Bus2IP_RNW;
+  //assign bram_addr = (bram_wea) ? (Bus2IP_Addr[16: 31]) : (phase_out);
+
   assign i_waveform = slv_reg0[20 : 23];
   assign q_waveform = slv_reg0[16 : 19];
   assign step_ctl = slv_reg0[0 : 15] + 1'b1;
 
   assign rect_data = (phase_out < 16'h8000) ? (10'h3ff) : (10'h0);
   assign saw_data = phase_out[15 : 6];
+  assign unsigned_sine_data = (sine_data[9]) ? (sine_data - 10'd512) : (sine_data + 10'd512);
 
   // ------------------------------------------------------------
   // Example code to drive IP to Bus signals

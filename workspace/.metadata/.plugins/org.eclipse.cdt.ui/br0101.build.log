@@ -1,4 +1,4 @@
-23:16:34 **** Auto Build of configuration Debug for project br0101 ****
+19:09:46 **** Auto Build of configuration Debug for project br0101 ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: MicroBlaze gcc compiler
@@ -13,7 +13,7 @@ Finished building target: br0101.elf
 Invoking: MicroBlaze Print Size
 mb-size br0101.elf  |tee "br0101.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  11448	    348	   2340	  14136	   3738	br0101.elf
+  11440	    348	   2340	  14128	   3730	br0101.elf
 Finished building: br0101.elf.size
  
 Invoking: Xilinx ELF Check
@@ -30,5 +30,5 @@ elfcheck passed.
 Finished building: br0101.elf.elfcheck
  
 
-23:16:36 Build Finished (took 2s.206ms)
+19:09:49 Build Finished (took 3s.390ms)
 

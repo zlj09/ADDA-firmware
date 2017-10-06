@@ -1,0 +1,56 @@
+# Reading G:/Modelsim/modeltech_10.1a/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1a Feb 22 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {tb_ip_dds.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module ip_dds
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	ip_dds
+# 	glbl
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module tb_ip_dds
+# 
+# Top level modules:
+# 	tb_ip_dds
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.tb_ip_dds glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.tb_ip_dds(fast)
+# Loading work.ip_dds(fast)
+# Loading unisims_ver.GND(fast)
+# Loading unisims_ver.VCC(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.FDE(fast)
+# Loading unisims_ver.FDE(fast__1)
+# Loading unisims_ver.XORCY(fast)
+# Loading unisims_ver.MUXCY(fast)
+# Loading unisims_ver.LUT2(fast)
+# Loading unisims_ver.INV(fast)
+# Loading unisims_ver.RAMB16(fast)
+# Loading unisims_ver.ARAMB36_INTERNAL(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+run
+run
+run
+run
+run
+run
