@@ -1,0 +1,1565 @@
+
+Started : "XPS Process: Synthesize XPS Source".
+Qt: Untested Windows version 6.2 detected!
+
+Xilinx Platform Studio
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+XPS% Evaluating file F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze.synth.tcl
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr  dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr  ilmb
+  (0x81800000-0x8180ffff) xps_intc_0  mb_plb
+  (0x84000000-0x8400ffff) RS232 mb_plb
+  (0x84400000-0x8440ffff) mdm_0 mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1 mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0 mb_plb
+  (0xcb600000-0xcb60ffff) plb_dac_1 mb_plb
+  (0xcb620000-0xcb62ffff) plb_dac_0 mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
+
+Checking platform address map ...
+make: Nothing to be done for `netlist'.
+
+Process "XPS Process: Synthesize XPS Source" completed successfully
+
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.xst" -ofn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.syr"
+Reading design: microblaze_top.prj
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/microblaze.v" in library work
+Module <microblaze> compiled
+Module <microblaze_microblaze_0_wrapper> compiled
+Module <microblaze_mb_plb_wrapper> compiled
+Module <microblaze_ilmb_wrapper> compiled
+Module <microblaze_dlmb_wrapper> compiled
+Module <microblaze_dlmb_cntlr_wrapper> compiled
+Module <microblaze_ilmb_cntlr_wrapper> compiled
+Module <microblaze_lmb_bram_wrapper> compiled
+Module <microblaze_rs232_wrapper> compiled
+Module <microblaze_clock_generator_0_wrapper> compiled
+Module <microblaze_mdm_0_wrapper> compiled
+Module <microblaze_proc_sys_reset_0_wrapper> compiled
+Module <microblaze_xps_intc_0_wrapper> compiled
+Module <microblaze_plb_dac_0_wrapper> compiled
+Compiling verilog file "microblaze/microblaze_top.v" in library work
+Module <microblaze_plb_dac_1_wrapper> compiled
+Module <microblaze_top> compiled
+Module <rst_generator> compiled
+No errors in compilation
+Analysis of file <"microblaze_top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <microblaze_top> in library <work>.
+
+Analyzing hierarchy for module <rst_generator> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <microblaze_top>.
+Module <microblaze_top> is correct for synthesis.
+ 
+    Set property "BOX_TYPE = user_black_box" for instance <microblaze_i> in unit <microblaze_top>.
+Analyzing module <rst_generator> in library <work>.
+Module <rst_generator> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rst_generator>.
+    Related source file is "microblaze/microblaze_top.v".
+    Found 1-bit register for signal <cnt_start>.
+    Found 10-bit up counter for signal <rst_cnt>.
+    Found 1-bit register for signal <rst_reg>.
+    Found 10-bit comparator greatequal for signal <rst_reg$cmp_ge0000> created at line 129.
+    Summary:
+  inferred   1 Counter(s).
+  inferred   2 D-type flip-flop(s).
+  inferred   1 Comparator(s).
+Unit <rst_generator> synthesized.
+
+
+Synthesizing Unit <microblaze_top>.
+    Related source file is "microblaze/microblaze_top.v".
+Unit <microblaze_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 2
+# Comparators                                          : 1
+ 10-bit comparator greatequal                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <microblaze.ngc>.
+Reading core <microblaze_microblaze_0_wrapper.ngc>.
+Reading core <microblaze_mb_plb_wrapper.ngc>.
+Reading core <microblaze_ilmb_wrapper.ngc>.
+Reading core <microblaze_dlmb_wrapper.ngc>.
+Reading core <microblaze_dlmb_cntlr_wrapper.ngc>.
+Reading core <microblaze_ilmb_cntlr_wrapper.ngc>.
+Reading core <microblaze_lmb_bram_wrapper.ngc>.
+Reading core <microblaze_rs232_wrapper.ngc>.
+Reading core <microblaze_clock_generator_0_wrapper.ngc>.
+Reading core <microblaze_mdm_0_wrapper.ngc>.
+Reading core <microblaze_proc_sys_reset_0_wrapper.ngc>.
+Reading core <microblaze_xps_intc_0_wrapper.ngc>.
+Reading core <microblaze_plb_dac_0_wrapper.ngc>.
+Reading core <microblaze_plb_dac_1_wrapper.ngc>.
+Loading core <microblaze_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
+Loading core <microblaze_mb_plb_wrapper> for timing and area information for instance <mb_plb>.
+Loading core <microblaze_ilmb_wrapper> for timing and area information for instance <ilmb>.
+Loading core <microblaze_dlmb_wrapper> for timing and area information for instance <dlmb>.
+Loading core <microblaze_dlmb_cntlr_wrapper> for timing and area information for instance <dlmb_cntlr>.
+Loading core <microblaze_ilmb_cntlr_wrapper> for timing and area information for instance <ilmb_cntlr>.
+Loading core <microblaze_lmb_bram_wrapper> for timing and area information for instance <lmb_bram>.
+Loading core <microblaze_rs232_wrapper> for timing and area information for instance <RS232>.
+Loading core <microblaze_clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
+Loading core <microblaze_mdm_0_wrapper> for timing and area information for instance <mdm_0>.
+Loading core <microblaze_proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading core <microblaze_xps_intc_0_wrapper> for timing and area information for instance <xps_intc_0>.
+Loading core <microblaze_plb_dac_0_wrapper> for timing and area information for instance <plb_dac_0>.
+Loading core <microblaze_plb_dac_1_wrapper> for timing and area information for instance <plb_dac_1>.
+Loading core <microblaze> for timing and area information for instance <microblaze_i>.
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_start hinder the constant cleaning in the block rst_generator_0.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 1
+ 10-bit comparator greatequal                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_start hinder the constant cleaning in the block rst_generator.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <microblaze_top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block microblaze_top, actual ratio is 14.
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+Clock Information:
+------------------
+-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                               | Clock buffer(FF name)                                                                                                                                                                 | Load  |
+-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+fpga_0_clk_1_sys_clk_pin                                   | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0                                                                                                                           | 3386  |
+microblaze_i/mdm_0/mdm_0/drck_i                            | BUFG                                                                                                                                                                                  | 212   |
+microblaze_i/mdm_0/mdm_0/update1                           | BUFG                                                                                                                                                                                  | 43    |
+fpga_0_clk_1_sys_clk_pin                                   | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLKDV                                                                                                                          | 73    |
+microblaze_i/RS232/Interrupt                               | NONE(microblaze_i/xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)                                                                                                                      | 1     |
+microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/N1| NONE(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 36    |
+microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/N1| NONE(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 36    |
+-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                                                                                       | Buffer(FF name)                                                                                                                               
+                                        | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------+-------+
+microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/N1(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/XST_GND:G)                                                                                                                                                                                                                                      | NONE(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram
+.r/v4_init.ram/SP.SINGLE_PRIM.SP)       | 136   |
+microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/N1(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/XST_GND:G)                                                                                                                                                                                                                                      | NONE(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram
+.r/v4_init.ram/SP.SINGLE_PRIM.SP)       | 136   |
+microblaze_i/lmb_bram/lmb_bram/pgassign100<10>(microblaze_i/lmb_bram/lmb_bram/XST_GND:G)                                                                                                                                                                                                                                                                             | NONE(microblaze_i/lmb_bram/lmb_bram/ramb16_0)                                                                                                 
+                                        | 64    |
+microblaze_i/mdm_0/mdm_0/MDM_Core_I1/Config_Reg_Acst_inv(microblaze_i/mdm_0/mdm_0/MDM_Core_I1/Config_Reg_Acst_inv1_INV_0:O)                                                                                                                                                                                                                                          | NONE(microblaze_i/mdm_0/mdm_0/MDM_Core_I1/Config_Reg_0)                                                                                       
+                                        | 23    |
+microblaze_i/mdm_0/mdm_0/MDM_Core_I1/SEL_inv(microblaze_i/mdm_0/mdm_0/MDM_Core_I1/SEL_inv1_INV_0:O)                                                                                                                                                                                                                                                                  | NONE(microblaze_i/mdm_0/mdm_0/MDM_Core_I1/PORT_Selector_0)                                                                                    
+                                        | 12    |
+microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/reset(microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/reset1_INV_0:O)                                                                                                                                                                                                                          | NONE(microblaze_i/clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_0)                                                                  
+                                        | 4     |
+microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_clear(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_clear:Q)                                                                                                       | NONE(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)               
+                                        | 2     |
+microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeina_tmp(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ra
+m.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeinb_tmp(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ra
+m.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeina_tmp(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ra
+m.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeinb_tmp(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ra
+m.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeina_tmp(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ra
+m.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeinb_tmp(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ra
+m.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeina_tmp(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ra
+m.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeinb_tmp(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ra
+m.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+                                                                     | 1     |
+microblaze_i/mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/local_sel_n3(microblaze_i/mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay:O)                                                                                                                                                                                                                   | NONE(microblaze_i/mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I)                                                                               
+                                        | 1     |
+microblaze_i/mdm_0/mdm_0/update1(microblaze_i/mdm_0/mdm_0/Use_Virtex4.BSCAN_VIRTEX4_I:UPDATE)                                                                                                                                                                                                                                                                        | BUFG(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/running_clock)               
+                                        | 1     |
+microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk:Q)                                                                                                       | NONE(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk_TClk)      
+                                        | 1     |
+microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_cmd_i(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_cmd_i:Q)                                                                                                         | NONE(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk)             
+                                        | 1     |
+microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/no_sleeping(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/no_sleeping1_INV_0:O)                                                                                                            | NONE(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/dbg_wakeup_i)                
+                                        | 1     |
+microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_cmd_i(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_cmd_i:Q)                                                                                                       | NONE(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_TClk)            
+                                        | 1     |
+microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step:Q)                                                                                                       | NONE(microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk)            
+                                        | 1     |
+microblaze_i/xps_intc_0/xps_intc_0/INTC_CORE_I/iar_0_or0000(microblaze_i/xps_intc_0/xps_intc_0/INTC_CORE_I/iar_0_or00001:O)                                                                                                                                                                                                                                          | NONE(microblaze_i/xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)                                                                              
+                                        | 1     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 12.140ns (Maximum Frequency: 82.374MHz)
+   Minimum input arrival time before clock: 3.293ns
+   Maximum output required time after clock: 8.978ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully
+
+Started : "Translate".
+Using "F:/Programs/Verilog/FPGA_Group/test_br0101/edkBmmFile.bmm" as BMM file associated with XPS design.
+INFO: copied F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/data/microblaze.ucf to Project Navigator project directory as microblaze.ncf.
+Running ngdbuild...
+Command Line: ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc microblaze_top.ucf -bm edkBmmFile.bmm -p xc4vsx55-ff1148-10 microblaze_top.ngc microblaze_top.ngd
+
+microblaze_i/mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd_inv(microblaze_i/mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd_inv1_INV_0:O)                                                                                                                                                                                                                          | NONE(microblaze_i/mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/execute)                                                Command Line: G:\Xilinx\14.7\
+ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc microblaze_top.ucf -bm edkBmmFile.bmm -p
+xc4vsx55-ff1148-10 microblaze_top.ngc microblaze_top.ngd
+
+Reading NGO file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.ngc"
+...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_microblaze_0_wrapper.ngc"
+...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_mb_plb_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_ilmb_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_dlmb_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_dlmb_cntlr_wrapper.ngc"..
+.
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_ilmb_cntlr_wrapper.ngc"..
+.
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_lmb_bram_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_rs232_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_clock_generator_0_wrapper
+.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_mdm_0_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_proc_sys_reset_0_wrapper.
+ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_xps_intc_0_wrapper.ngc"..
+.
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_plb_dac_0_wrapper.ngc"...
+Loading design module
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze_plb_dac_1_wrapper.ngc"...
+Applying constraints in
+"F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf" to module
+"microblaze_i"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "microblaze_top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "rst_generator_0/rst_reg" LOC = A5>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_PinMD_pin_OBUF" LOC = M10>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_PWRDN_pin_OBUF" LOC = J2>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_OpEnQ_pin_OBUF" LOC = AA8>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_OpEnI_pin_OBUF" LOC = AB12>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Format_pin" LOC = J1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_9_OBUF" LOC = G15>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_8_OBUF" LOC = F4>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_7_OBUF" LOC = F3>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_6_OBUF" LOC = D2>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_5_OBUF" LOC = D1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_4_OBUF" LOC = E1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_3_OBUF" LOC = F1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_2_OBUF" LOC = G1>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_1_OBUF" LOC = J14>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Data_pin_0_OBUF" LOC = G5>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_Clkout_pin_OBUF" LOC = P5>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "plb_dac_0_S_ClkMD_pin_OBUF" LOC = E2>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "fpga_0_clk_1_sys_clk_pin_IBUFG" LOC = F18>' could not be found and so
+   the Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "fpga_0_RS232_TX_pin_OBUF" LOC = AG21>' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "fpga_0_RS232_RX_pin_IBUF" LOC = AF20>' could not be found and so the
+   Locate constraint will be removed.
+
+
+
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   "sys_clk_pin" 100000.000000000 KHz HIGH 50.000000000 %;> is overridden by the
+   constraint <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;>
+   [microblaze_top.ucf(2)]. The overriden constraint usually comes from the
+   input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
+   promote this message to an error.
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" DRIVE = 2>
+   is overridden on the design object fpga_0_rst_1_sys_rst_pin by the constraint
+   <Net fpga_0_rst_1_sys_rst_pin Drive = 2;> [microblaze_top.ucf(129)].
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" IOSTANDARD
+   = "LVCMOS25"> is overridden on the design object fpga_0_rst_1_sys_rst_pin by
+   the constraint <Net fpga_0_rst_1_sys_rst_pin IOSTANDARD = LVCMOS25;>
+   [microblaze_top.ucf(128)].
+WARNING:NgdBuild:1012 - The constraint <NET "rst_generator_0/rst_reg" LOC = A5>
+   is overridden on the design object fpga_0_rst_1_sys_rst_pin by the constraint
+   <Net fpga_0_rst_1_sys_rst_pin LOC = A5;> [microblaze_top.ucf(127)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PinMD_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_PinMD_pin by the constraint <Net plb_dac_0_S_PinMD_pin IOSTANDARD
+   = LVCMOS33;> [microblaze_top.ucf(50)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PinMD_pin_OBUF" LOC =
+   M10> is overridden on the design object plb_dac_0_S_PinMD_pin by the
+   constraint <Net plb_dac_0_S_PinMD_pin LOC = M10;> [microblaze_top.ucf(49)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PWRDN_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_PWRDN_pin by the constraint <Net plb_dac_0_S_PWRDN_pin IOSTANDARD
+   = LVCMOS33;> [microblaze_top.ucf(59)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_PWRDN_pin_OBUF" LOC =
+   J2> is overridden on the design object plb_dac_0_S_PWRDN_pin by the
+   constraint <Net plb_dac_0_S_PWRDN_pin LOC = J2;> [microblaze_top.ucf(58)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnQ_pin_OBUF" DRIVE =
+   2> is overridden on the design object plb_dac_0_S_OpEnQ_pin by the constraint
+   <Net plb_dac_0_S_OpEnQ_pin Drive = 2;> [microblaze_top.ucf(66)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnQ_pin_OBUF"
+   IOSTANDARD = "LVCMOS15"> is overridden on the design object
+   plb_dac_0_S_OpEnQ_pin by the constraint <Net plb_dac_0_S_OpEnQ_pin IOSTANDARD
+   = LVCMOS15;> [microblaze_top.ucf(65)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnQ_pin_OBUF" LOC =
+   AA8> is overridden on the design object plb_dac_0_S_OpEnQ_pin by the
+   constraint <Net plb_dac_0_S_OpEnQ_pin LOC = AA8;> [microblaze_top.ucf(64)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnI_pin_OBUF" DRIVE =
+   2> is overridden on the design object plb_dac_0_S_OpEnI_pin by the constraint
+   <Net plb_dac_0_S_OpEnI_pin Drive = 2;> [microblaze_top.ucf(63)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnI_pin_OBUF"
+   IOSTANDARD = "LVCMOS15"> is overridden on the design object
+   plb_dac_0_S_OpEnI_pin by the constraint <Net plb_dac_0_S_OpEnI_pin IOSTANDARD
+   = LVCMOS15;> [microblaze_top.ucf(62)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_OpEnI_pin_OBUF" LOC =
+   AB12> is overridden on the design object plb_dac_0_S_OpEnI_pin by the
+   constraint <Net plb_dac_0_S_OpEnI_pin LOC = AB12;> [microblaze_top.ucf(61)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Format_pin" IOSTANDARD
+   = "LVCMOS33"> is overridden on the design object plb_dac_0_S_Format_pin by
+   the constraint <Net plb_dac_0_S_Format_pin IOSTANDARD = LVCMOS33;>
+   [microblaze_top.ucf(56)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Format_pin" LOC = J1>
+   is overridden on the design object plb_dac_0_S_Format_pin by the constraint
+   <Net plb_dac_0_S_Format_pin LOC = J1;> [microblaze_top.ucf(55)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_9_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<9> by the constraint <Net plb_dac_0_S_Data_pin<9>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(41)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_9_OBUF" LOC =
+   G15> is overridden on the design object plb_dac_0_S_Data_pin<9> by the
+   constraint <Net plb_dac_0_S_Data_pin<9> LOC = G15;> [microblaze_top.ucf(40)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_8_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<8> by the constraint <Net plb_dac_0_S_Data_pin<8>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(38)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_8_OBUF" LOC =
+   F4> is overridden on the design object plb_dac_0_S_Data_pin<8> by the
+   constraint <Net plb_dac_0_S_Data_pin<8> LOC = F4;> [microblaze_top.ucf(37)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_7_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<7> by the constraint <Net plb_dac_0_S_Data_pin<7>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(35)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_7_OBUF" LOC =
+   F3> is overridden on the design object plb_dac_0_S_Data_pin<7> by the
+   constraint <Net plb_dac_0_S_Data_pin<7> LOC = F3;> [microblaze_top.ucf(34)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_6_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<6> by the constraint <Net plb_dac_0_S_Data_pin<6>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(32)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_6_OBUF" LOC =
+   D2> is overridden on the design object plb_dac_0_S_Data_pin<6> by the
+   constraint <Net plb_dac_0_S_Data_pin<6> LOC = D2;> [microblaze_top.ucf(31)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_5_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<5> by the constraint <Net plb_dac_0_S_Data_pin<5>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(29)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_5_OBUF" LOC =
+   D1> is overridden on the design object plb_dac_0_S_Data_pin<5> by the
+   constraint <Net plb_dac_0_S_Data_pin<5> LOC = D1;> [microblaze_top.ucf(28)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_4_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<4> by the constraint <Net plb_dac_0_S_Data_pin<4>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(26)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_4_OBUF" LOC =
+   E1> is overridden on the design object plb_dac_0_S_Data_pin<4> by the
+   constraint <Net plb_dac_0_S_Data_pin<4> LOC = E1;> [microblaze_top.ucf(25)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_3_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<3> by the constraint <Net plb_dac_0_S_Data_pin<3>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(23)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_3_OBUF" LOC =
+   F1> is overridden on the design object plb_dac_0_S_Data_pin<3> by the
+   constraint <Net plb_dac_0_S_Data_pin<3> LOC = F1;> [microblaze_top.ucf(22)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_2_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<2> by the constraint <Net plb_dac_0_S_Data_pin<2>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(20)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_2_OBUF" LOC =
+   G1> is overridden on the design object plb_dac_0_S_Data_pin<2> by the
+   constraint <Net plb_dac_0_S_Data_pin<2> LOC = G1;> [microblaze_top.ucf(19)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_1_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<1> by the constraint <Net plb_dac_0_S_Data_pin<1>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(17)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_1_OBUF" LOC =
+   J14> is overridden on the design object plb_dac_0_S_Data_pin<1> by the
+   constraint <Net plb_dac_0_S_Data_pin<1> LOC = J14;> [microblaze_top.ucf(16)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_0_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_Data_pin<0> by the constraint <Net plb_dac_0_S_Data_pin<0>
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(14)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Data_pin_0_OBUF" LOC =
+   G5> is overridden on the design object plb_dac_0_S_Data_pin<0> by the
+   constraint <Net plb_dac_0_S_Data_pin<0> LOC = G5;> [microblaze_top.ucf(13)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Clkout_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_DCLKIO_pin by the constraint <Net plb_dac_0_S_DCLKIO_pin
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(44)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_Clkout_pin_OBUF" LOC =
+   P5> is overridden on the design object plb_dac_0_S_DCLKIO_pin by the
+   constraint <Net plb_dac_0_S_DCLKIO_pin LOC = M6;> [microblaze_top.ucf(43)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_ClkMD_pin_OBUF"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   plb_dac_0_S_ClkMD_pin by the constraint <Net plb_dac_0_S_ClkMD_pin IOSTANDARD
+   = LVCMOS33;> [microblaze_top.ucf(53)].
+WARNING:NgdBuild:1012 - The constraint <NET "plb_dac_0_S_ClkMD_pin_OBUF" LOC =
+   E2> is overridden on the design object plb_dac_0_S_ClkMD_pin by the
+   constraint <Net plb_dac_0_S_ClkMD_pin LOC = E2;> [microblaze_top.ucf(52)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_clk_1_sys_clk_pin_IBUFG"
+   IOSTANDARD = "LVCMOS33"> is overridden on the design object
+   fpga_0_clk_1_sys_clk_pin by the constraint <Net fpga_0_clk_1_sys_clk_pin
+   IOSTANDARD = LVCMOS33;> [microblaze_top.ucf(5)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_clk_1_sys_clk_pin_IBUFG" LOC
+   = F18> is overridden on the design object fpga_0_clk_1_sys_clk_pin by the
+   constraint <Net fpga_0_clk_1_sys_clk_pin LOC = F18;> [microblaze_top.ucf(4)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_TX_pin_OBUF"
+   IOSTANDARD = "LVCMOS25"> is overridden on the design object
+   fpga_0_RS232_TX_pin by the constraint <Net fpga_0_RS232_TX_pin IOSTANDARD =
+   LVCMOS25;> [microblaze_top.ucf(8)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_TX_pin_OBUF" LOC =
+   AG21> is overridden on the design object fpga_0_RS232_TX_pin by the
+   constraint <Net fpga_0_RS232_TX_pin LOC = AG21;> [microblaze_top.ucf(7)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_RX_pin_IBUF"
+   IOSTANDARD = "LVCMOS25"> is overridden on the design object
+   fpga_0_RS232_RX_pin by the constraint <Net fpga_0_RS232_RX_pin IOSTANDARD =
+   LVCMOS25;> [microblaze_top.ucf(11)].
+WARNING:NgdBuild:1012 - The constraint <NET "fpga_0_RS232_RX_pin_IBUF" LOC =
+   AF20> is overridden on the design object fpga_0_RS232_RX_pin by the
+   constraint <Net fpga_0_RS232_RX_pin LOC = AF20;> [microblaze_top.ucf(10)].
+Done...
+
+Processing BMM file "edkBmmFile.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'N3' has no driver
+WARNING:NgdBuild:452 - logical net 'N4' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  69
+
+Writing NGD file "microblaze_top.ngd" ...
+Total REAL time to NGDBUILD completion:  34 sec
+Total CPU time to NGDBUILD completion:   30 sec
+
+Writing NGDBUILD log file "microblaze_top.bld"...
+
+NGDBUILD done.
+
+Process "Translate" completed successfully
+
+Started : "Map".
+Running map...
+Command Line: map -intstyle ise -p xc4vsx55-ff1148-10 -global_opt off -cm area -ir off -pr off -c 100 -o microblaze_top_map.ncd microblaze_top.ngd microblaze_top.pcf
+Using target part "4vsx55ff1148-10".
+Mapping design into LUTs...
+WARNING:MapLib:163 - Bus microblaze_i/plb_dac_0_S_Format_O driven by tbufs will
+   be transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus microblaze_i/plb_dac_1_S_Format_O driven by tbufs will
+   be transformed to use combinational drivers.
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<31>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<30>> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    4
+Logic Utilization:
+  Number of Slice Flip Flops:         2,477 out of  49,152    5%
+  Number of 4 input LUTs:             4,350 out of  49,152    8%
+Logic Distribution:
+  Number of occupied Slices:          3,109 out of  24,576   12%
+    Number of Slices containing only related logic:   3,109 out of   3,109 100%
+    Number of Slices containing unrelated logic:          0 out of   3,109   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       4,503 out of  49,152    9%
+    Number used as logic:             3,835
+    Number used as a route-thru:        153
+    Number used for Dual Port RAMs:     384
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     131
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  Number of bonded IOBs:                 43 out of     640    6%
+  Number of BUFG/BUFGCTRLs:               3 out of      32    9%
+    Number used as BUFGs:                 3
+  Number of FIFO16/RAMB16s:             106 out of     320   33%
+    Number used as RAMB16s:             106
+  Number of DSP48s:                       3 out of     512    1%
+  Number of DCM_ADVs:                     1 out of       8   12%
+  Number of BSCAN_VIRTEX4s:               1 out of       4   25%
+
+Average Fanout of Non-Clock Nets:                3.75
+
+Peak Memory Usage:  508 MB
+Total REAL time to MAP completion:  17 secs 
+Total CPU time to MAP completion:   13 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "microblaze_top_map.mrp" for details.
+
+Process "Map" completed successfully
+
+Started : "Place & Route".
+Running par...
+Command Line: par -w -intstyle ise -ol high -t 1 microblaze_top_map.ncd microblaze_top.ncd microblaze_top.pcf
+
+
+
+Constraints file: microblaze_top.pcf.
+Loading device for application Rf_Device from file '4vsx55.nph' in environment G:\Xilinx\14.7\ISE_DS\ISE\.
+   "microblaze_top" is an NCD, version 3.2, device xc4vsx55, package ff1148, speed -10
+This design is using the default stepping level (major silicon revision) for this device (1). Unless your design is
+targeted at devices of this stepping level, it is recommended that you explicitly specify the stepping level of the
+parts you will be using. This will allow the tools to take advantage of any available performance and functional
+enhancements for this device. The latest stepping level for this device is '2'. Additional information on "stepping
+level" is available at support.xilinx.com.
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.71 2013-10-13".
+
+
+Device Utilization Summary:
+
+   Number of BSCANs                          1 out of 4      25%
+   Number of BUFGs                           3 out of 32      9%
+   Number of DCM_ADVs                        1 out of 8      12%
+   Number of DSP48s                          3 out of 512     1%
+   Number of External IOBs                  43 out of 640     6%
+      Number of LOCed IOBs                  43 out of 43    100%
+
+   Number of RAMB16s                       106 out of 320    33%
+   Number of Slices                       3109 out of 24576  12%
+      Number of SLICEMs                    345 out of 12288   2%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 14 secs 
+Finished initial Timing Analysis.  REAL time: 14 secs 
+
+WARNING:Par:288 - The signal microblaze_i/dlmb_LMB_ABus<31> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal microblaze_i/dlmb_LMB_ABus<30> has no load.  PAR will not attempt to route this signal.
+
+Starting Placer
+Total REAL time at the beginning of Placer: 14 secs 
+Total CPU  time at the beginning of Placer: 12 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:be037957) REAL time: 17 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:be037957) REAL time: 17 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:d6888b37) REAL time: 17 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:92225db6) REAL time: 18 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:92225db6) REAL time: 18 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:92225db6) REAL time: 18 secs 
+
+Phase 7.3  Local Placement Optimization
+Phase 7.3  Local Placement Optimization (Checksum:92225db6) REAL time: 18 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:92225db6) REAL time: 18 secs 
+
+Phase 9.8  Global Placement
+.......................................................................................
+..................................
+...............................................................................
+
+.....................................................................................................
+..................................................................................
+Phase 9.8  Global Placement (Checksum:e1321fea) REAL time: 35 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:e1321fea) REAL time: 36 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:35cf3753) REAL time: 1 mins 20 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:35cf3753) REAL time: 1 mins 20 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:35cf3753) REAL time: 1 mins 20 secs 
+
+Total REAL time to Placer completion: 1 mins 20 secs 
+Total CPU  time to Placer completion: 1 mins 16 secs 
+Writing design to file microblaze_top.ncd
+
+
+
+Starting Router
+
+
+     REAL time: 1 mins 24 secs 
+Phase  1  : 27822 unrouted; 
+     REAL time: 1 mins 24 secs 
+Phase  2  : 22697 unrouted; 
+     REAL time: 1 mins 28 secs 
+Phase  3  : 7474 unrouted; 
+(Setup:27569, Hold:9895, Component Switching Limit:0)     REAL time: 1 mins 45 secs 
+Phase  4  : 8298 unrouted; 
+Updating file: microblaze_top.ncd with current fully routed design.
+
+(Setup:28066, Hold:9615, Component Switching Limit:0)     REAL time: 2 mins 10 secs 
+Phase  5  : 0 unrouted; 
+(Setup:26887, Hold:9615, Component Switching Limit:0)     REAL time: 4 mins 
+Phase  6  : 0 unrouted; 
+Updating file: microblaze_top.ncd with current fully routed design.
+
+Phase  7  : 0 unrouted;      REAL time: 5 mins 4 secs 
+
+(Setup:26868, Hold:9615, Component Switching Limit:0)Updating file: microblaze_top.ncd with current fully routed design.
+
+(Setup:26868, Hold:9615, Component Switching Limit:0)     REAL time: 5 mins 37 secs 
+Phase  8  : 0 unrouted; 
+(Setup:26868, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 37 secs 
+Phase  9  : 0 unrouted; 
+(Setup:26209, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 39 secs 
+Phase 10  : 0 unrouted; Total REAL time to Router completion: 5 mins 39 secs 
+Total CPU time to Router completion: 5 mins 30 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|microblaze_i/clk_100 |              |      |      |            |             |
+  3.404      |
++---------------------+--------------+------+------+------------+-------------+
+microblaze_i/clk_50_ |              |      |      |            |             |
+|   |   24 |  0.320     |  2.998      |
++---------------------+--------------+------+------+------------+-------------+
+|microblaze_i/mdm_0/D |              |      |      |            |             |
+ |  0.613     |  3.206      |
++---------------------+--------------+------+------+------------+-------------+
+|microblaze_i/mdm_0/D |              |      |      |            |             |
+|         bg_Update_1 |         Local|      |   28 |  2.287     |  4.473      |
++---------------------+--------------+------+------+------------+-------------+
+|microblaze_i/RS232_I |              |      |      |            |             |
+|            nterrupt |         Local|      |    1 |  0.000     |  1.581      |
++---------------------+--------------+------+------+------------+-------------+
+|fpga_0_clk_1_sys_clk |              |      |      |            |             |
+|          _pin_IBUFG |         Local|      |   11 |  1.470     |  2.638      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+|             0000MHz ||            bg_Clk_1 | BUFGCTRL_X0Y0| No   |  115the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 26209 (Setup: 26209, Hold: 0, Component Switching Limit: 0)
+
+WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in
+   your design.
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to
+   ensure the best options are set in the tools for timing closure.
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go to
+   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
+   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+is reported in TRCE timing report. Clock Skew is Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_microblaze_i_clock_generator_0_clock_g | SETUP       |    -1.905ns|    13.810ns|      19|       26209
+|            _0000MHz |BUFGCTRL_X0Y30| No   | 1897 |  0.822     |BUFGCTRL_X0Y31| No  enerator_0_SIG_DCM0_CLK0 = PERIOD         | HOLD        |     0.371ns|            |       0|           0
+   TIMEGRP         "microblaze_i_clock_gene |             |            |            |        |            
+  rator_0_clock_generator_0_SIG_DCM0_CLK0"  |             |            |            |        |            
+          TS_sys_clk_pin HIGH 50%           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |     5.427ns|     4.573ns|       0|           0
+  pin" 100 MHz HIGH 50%                     | HOLD        |     0.322ns|            |       0|           0
+                                            | MINPERIOD   |     3.334ns|     6.666ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_microblaze_i_clock_generator_0_clock_g | SETUP       |     4.643ns|    10.714ns|       0|           0
+  enerator_0_SIG_DCM0_CLKDV = PERIOD        | HOLD        |     0.531ns|            |       0|           0
+    TIMEGRP         "microblaze_i_clock_gen |             |            |            |        |            
+  erator_0_clock_generator_0_SIG_DCM0_CLKDV |             |            |            |        |            
+  "         TS_sys_clk_pin / 2 HIGH 50%     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|      6.666ns|     13.810ns|            0|           19|          148|       371428|
+| TS_microblaze_i_clock_generato|     10.000ns|     13.810ns|          N/A|           19|            0|       371341|            0|
+| r_0_clock_generator_0_SIG_DCM0|             |             |             |             |             |             |             |
+| _CLK0                         |             |             |             |             |             |             |             |
+| TS_microblaze_i_clock_generato|     20.000ns|     10.714ns|          N/A|            0|            0|           87|            0|
+| r_0_clock_generator_0_SIG_DCM0|             |             |             |             |             |             |             |
+| _CLKDV                        |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 5 mins 45 secs 
+Total CPU time to PAR completion: 5 mins 36 secs 
+
+Peak Memory Usage:  773 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - 19 errors found.
+
+0
+Number of warning messages: 5
+Number of info messages: 0
+
+Writing design to file microblaze_top.ncd
+
+
+
+PAR done!
+
+Process "Place & Route" completed successfully
+
+Started : "Generate Post-Place & Route Static Timing".
+Running trce...
+Command Line: trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml microblaze_top.twx microblaze_top.ncd -o microblaze_top.twr microblaze_top.pcf -ucf microblaze_top.ucf
+Loading device for application Rf_Device from file '4vsx55.nph' in environment
+G:\Xilinx\14.7\ISE_DS\ISE\.
+   "microblaze_top" is an NCD, version 3.2, device xc4vsx55, package ff1148,
+speed -10
+Number of error messages: This design is using the default stepping level (major silicon revision) for
+this device (1). Unless your design is targeted at devices of this stepping
+level, it is recommended that you explicitly specify the stepping level of the
+parts you will be using. This will allow the tools to take advantage of any
+available performance and functional enhancements for this device. The latest
+stepping level for this device is '2'. Additional information on "stepping
+level" is available at support.xilinx.com.
+
+Analysis completed Thu Oct 05 23:06:08 2017
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 16 secs 
+
+Process "Generate Post-Place & Route Static Timing" completed successfully
+
+Started : "Generate Programming File".
+Running bitgen...
+Command Line: bitgen -intstyle ise -f microblaze_top.ut microblaze_top.ncd
+INFO:Bitgen:40 - Replacing "Auto" with "NoWait" for option "Match_cycle".  Most
+   commonly, bitgen has determined and will use a specific value instead of the
+   generic command-line value of "Auto".  Alternately, this message appears if
+   the same option is specified multiple times on the command-line.  In this
+   case, the option listed last will be used.
+WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<31>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<30>> is
+   incomplete. The signal does not drive any load pins in the design.
+Qt: Untested Windows version 6.2 detected!
+
+Xilinx Platform Studio
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+XPS% Evaluating file
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze.init_bram.tcl
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr  dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr  ilmb
+  (0x81800000-0x8180ffff) xps_intc_0  mb_plb
+  (0x84000000-0x8400ffff) RS232 mb_plb
+  (0x84400000-0x8440ffff) mdm_0 mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1 mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0 mb_plb
+  (0xcb600000-0xcb60ffff) plb_dac_1 mb_plb
+  (0xcb620000-0xcb62ffff) plb_dac_0 mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
+
+Checking platform address map ...
+"*********************************************"
+"Initializing BRAM contents of the bitstream"
+"*********************************************"
+bitinit -p xc4vsx55ff1148-10 microblaze.mhs   -pe microblaze_0 ../workspace/br0101/Debug/br0101.elf \
+  -bt implementation/microblaze.bit -o implementation/download.bit
+
+bitinit version Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File microblaze.mhs...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr  dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr  ilmb
+  (0x81800000-0x8180ffff) xps_intc_0  mb_plb
+  (0x84000000-0x8400ffff) RS232 mb_plb
+  (0x84400000-0x8440ffff) mdm_0 mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1 mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0 mb_plb
+  (0xcb600000-0xcb60ffff) plb_dac_1 mb_plb
+  (0xcb620000-0xcb62ffff) plb_dac_0 mb_plb
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
+INFO:EDK:4130 - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
+
+Checking platform address map ...
+
+Initializing Memory...
+Running Data2Mem with the following command:
+data2mem -bm "implementation/microblaze_bd" -p xc4vsx55ff1148-10 -bt
+"implementation/microblaze.bit"  -bd "../workspace/br0101/Debug/br0101.elf" tag
+microblaze_0  -o b implementation/download.bit 
+Memory Initialization completed successfully.
+
+
+Process "Generate Programming File" completed successfully
+
+Started : "Export Hardware Design To SDK with Bitstream".
+Qt: Untested Windows version 6.2 detected!
+
+Xilinx Platform Studio
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+XPS% Evaluating file
+F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.exportToSDK.tcl
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr  dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr  ilmb
+  (0x81800000-0x8180ffff) xps_intc_0  mb_plb
+  (0x84000000-0x8400ffff) RS232 mb_plb
+  (0x84400000-0x8440ffff) mdm_0 mb_plb
+  (0xc9c00000-0xc9c0ffff) plb_dac_1 mb_plb
+  (0xc9c20000-0xc9c2ffff) plb_dac_0 mb_plb
+  (0xcb600000-0xcb60ffff) plb_dac_1 mb_plb
+  (0xcb620000-0xcb62ffff) plb_dac_0 mb_plb
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x10000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 31 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 32 
+INFO:EDK - IPNAME: plb_dac, INSTANCE:plb_dac_1 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a\
+   data\plb_dac_v2_1_0.mpd line 33 
+
+Checking platform address map ...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp microblaze.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/microblaze.xml 
+Qt: Untested Windows version 6.2 detected!
+Release 14.7 - psf2Edward EDK_P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 5 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+   floating connection -
+   F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\microblaze.mhs line 159
+    
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_INTERRUPT value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 401 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x80000000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x80000000 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_NUM_INTR_INPUTS value to 1 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 87 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 88 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 89 
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_LVL value to 0b11111111111111111111111111111111 -
+   G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 90 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen -inp microblaze.xmp -report SDK\SDK_Export\hw/microblaze.html  -make_docs_local
+Qt: Untested Windows version 6.2 detected!
+Release 14.7 - xdsgen EDK_P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=plb_v46;v=v1_05_a;d=plb_v46.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v2_00_b;d=pg087-lmb-v10.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v2_00_b;d=pg087-lmb-v10.
+   pdf
+
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=bram_block;v=v1_00_a;d=bram_block.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=xps_uartlite;v=v1_02_a;d=xps_uartl
+   ite.pdf
+
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clock_generator;v=v4_03_a;d=clock_
+   generator.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=mdm;v=v2_10_a;d=pg062-mdm.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=proc_sys_reset;v=v3_00_a;d=proc_sy
+   s_reset.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=xps_intc;v=v2_01_a;d=xps_intc.pdf
+Generated Block Diagram.
+Rasterizing microblaze_0.jpg.....
+Rasterizing mb_plb.jpg.....
+Rasterizing ilmb.jpg.....
+Rasterizing dlmb.jpg.....
+Rasterizing dlmb_cntlr.jpg.....
+Rasterizing ilmb_cntlr.jpg.....
+Rasterizing lmb_bram.jpg.....
+Rasterizing RS232.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing mdm_0.jpg.....
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing xps_intc_0.jpg.....
+Rasterizing plb_dac_0.jpg.....
+Rasterizing plb_dac_1.jpg.....
+Rasterizing microblaze_blkd.jpg.....
+Report generated.
+Report generation completed.
+Copying placed bmm file F:/Programs/Verilog/FPGA_Group/test_br0101/edkBmmFile_bd.bmm to F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw
+Copying bit file F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_top.bit to F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw
+
+WARNING:EDK:878 - Could not find IP docProcess "Export Hardware Design To SDK with Bitstream" completed successfully
+SDK launched; it should be up in a moment.

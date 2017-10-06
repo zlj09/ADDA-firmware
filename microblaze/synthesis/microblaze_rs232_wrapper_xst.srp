@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.14 secs
  
 --> 
@@ -270,7 +270,7 @@ Analyzing hierarchy for entity <microblaze_rs232_wrapper> in library <work> (arc
 
 Analyzing hierarchy for entity <xps_uartlite> in library <xps_uartlite_v1_02_a> (architecture <imp>) with generics.
 	C_BASEADDR = "10000100000000000000000000000000"
-	C_BAUDRATE = 115200
+	C_BAUDRATE = 9600
 	C_DATA_BITS = 8
 	C_FAMILY = "virtex4"
 	C_HIGHADDR = "10000100000000001111111111111111"
@@ -286,7 +286,7 @@ Analyzing hierarchy for entity <xps_uartlite> in library <xps_uartlite_v1_02_a> 
 	C_USE_PARITY = 0
 
 Analyzing hierarchy for entity <uartlite_core> in library <xps_uartlite_v1_02_a> (architecture <imp>) with generics.
-	C_BAUDRATE = 115200
+	C_BAUDRATE = 9600
 	C_DATA_BITS = 8
 	C_FAMILY = "virtex4"
 	C_ODD_PARITY = 0
@@ -308,7 +308,7 @@ Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_si
 	C_SPLB_P2P = 0
 
 Analyzing hierarchy for entity <baudrate> in library <xps_uartlite_v1_02_a> (architecture <imp>) with generics.
-	C_RATIO = 54
+	C_RATIO = 651
 
 Analyzing hierarchy for entity <uartlite_rx> in library <xps_uartlite_v1_02_a> (architecture <imp>) with generics.
 	C_DATA_BITS = 8
@@ -445,7 +445,7 @@ Entity <microblaze_rs232_wrapper> analyzed. Unit <microblaze_rs232_wrapper> gene
 
 Analyzing generic Entity <xps_uartlite> in library <xps_uartlite_v1_02_a> (Architecture <imp>).
 	C_BASEADDR = "10000100000000000000000000000000"
-	C_BAUDRATE = 115200
+	C_BAUDRATE = 9600
 	C_DATA_BITS = 8
 	C_FAMILY = "virtex4"
 	C_HIGHADDR = "10000100000000001111111111111111"
@@ -466,7 +466,7 @@ WARNING:Xst:753 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_
 Entity <xps_uartlite> analyzed. Unit <xps_uartlite> generated.
 
 Analyzing generic Entity <uartlite_core> in library <xps_uartlite_v1_02_a> (Architecture <imp>).
-	C_BAUDRATE = 115200
+	C_BAUDRATE = 9600
 	C_DATA_BITS = 8
 	C_FAMILY = "virtex4"
 	C_ODD_PARITY = 0
@@ -475,7 +475,7 @@ Analyzing generic Entity <uartlite_core> in library <xps_uartlite_v1_02_a> (Arch
 Entity <uartlite_core> analyzed. Unit <uartlite_core> generated.
 
 Analyzing generic Entity <baudrate> in library <xps_uartlite_v1_02_a> (Architecture <imp>).
-	C_RATIO = 54
+	C_RATIO = 651
 Entity <baudrate> analyzed. Unit <baudrate> generated.
 
 Analyzing generic Entity <uartlite_rx> in library <xps_uartlite_v1_02_a> (Architecture <imp>).
@@ -653,7 +653,7 @@ Performing bidirectional port resolution...
 Synthesizing Unit <baudrate>.
     Related source file is "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/hdl/vhdl/baudrate.vhd".
     Found 1-bit register for signal <EN_16x_Baud>.
-    Found 6-bit down counter for signal <count>.
+    Found 10-bit down counter for signal <count>.
     Summary:
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
@@ -927,8 +927,8 @@ Macro Statistics
 # Adders/Subtractors                                   : 1
  9-bit subtractor                                      : 1
 # Counters                                             : 2
+ 10-bit down counter                                   : 1
  3-bit down counter                                    : 1
- 6-bit down counter                                    : 1
 # Registers                                            : 158
  1-bit register                                        : 116
  3-bit register                                        : 1
@@ -979,8 +979,8 @@ Macro Statistics
 # Adders/Subtractors                                   : 1
  9-bit subtractor                                      : 1
 # Counters                                             : 2
+ 10-bit down counter                                   : 1
  3-bit down counter                                    : 1
- 6-bit down counter                                    : 1
 # Registers                                            : 232
  Flip-Flops                                            : 232
 # Shift Registers                                      : 19
@@ -1100,8 +1100,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 144
- Flip-Flops                                            : 144
+# Registers                                            : 148
+ Flip-Flops                                            : 148
 
 =========================================================================
 
@@ -1129,25 +1129,24 @@ Design Statistics
 # IOs                              : 204
 
 Cell Usage :
-# BELS                             : 147
+# BELS                             : 170
 #      GND                         : 1
-#      INV                         : 4
-#      LUT2                        : 26
+#      INV                         : 12
+#      LUT1                        : 1
+#      LUT2                        : 24
 #      LUT2_L                      : 2
-#      LUT3                        : 33
-#      LUT3_D                      : 1
-#      LUT3_L                      : 2
-#      LUT4                        : 41
-#      LUT4_D                      : 5
-#      LUT4_L                      : 1
-#      MUXCY                       : 8
+#      LUT3                        : 32
+#      LUT4                        : 42
+#      LUT4_D                      : 4
+#      LUT4_L                      : 2
+#      MUXCY                       : 17
 #      MUXCY_L                     : 10
 #      MUXF5                       : 2
 #      VCC                         : 1
-#      XORCY                       : 10
-# FlipFlops/Latches                : 144
+#      XORCY                       : 20
+# FlipFlops/Latches                : 148
 #      FD                          : 2
-#      FDR                         : 80
+#      FDR                         : 84
 #      FDRE                        : 31
 #      FDRS                        : 2
 #      FDS                         : 25
@@ -1161,10 +1160,10 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                      109  out of  24576     0%  
- Number of Slice Flip Flops:            144  out of  49152     0%  
- Number of 4 input LUTs:                134  out of  49152     0%  
-    Number used as logic:               115
+ Number of Slices:                      112  out of  24576     0%  
+ Number of Slice Flip Flops:            148  out of  49152     0%  
+ Number of 4 input LUTs:                138  out of  49152     0%  
+    Number used as logic:               119
     Number used as Shift registers:      19
  Number of IOs:                         204
  Number of bonded IOBs:                   0  out of    640     0%  
@@ -1190,7 +1189,7 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                    | Load  |
 -----------------------------------+----------------------------------------------------------+-------+
-SPLB_Clk                           | NONE(RS232/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/rnw_s_h)| 163   |
+SPLB_Clk                           | NONE(RS232/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/rnw_s_h)| 167   |
 -----------------------------------+----------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -1214,7 +1213,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
   Clock period: 4.567ns (frequency: 218.948MHz)
-  Total number of paths / destination ports: 1414 / 299
+  Total number of paths / destination ports: 1516 / 307
 -------------------------------------------------------------------------
 Delay:               4.567ns (Levels of Logic = 1)
   Source:            RS232/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_sample_Point_0 (FF)
@@ -1274,8 +1273,8 @@ Offset:              0.360ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 23.17 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.36 secs
  
 --> 
 

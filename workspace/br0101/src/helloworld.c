@@ -123,20 +123,20 @@ int main()
 void genDACCtrl()
 {
 	dac1_ctrl = PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET);
-	dac1_ctrl &= 0xfffff00f;
-	dac1_ctrl |= waveform << 4;
-	dac1_ctrl |= waveform << 6;
-	dac1_ctrl |= step_ctrl << 8;
+	dac1_ctrl &= 0x000000ff;
+	dac1_ctrl |= waveform << 8;
+	dac1_ctrl |= waveform << 12;
+	dac1_ctrl |= step_ctrl << 16;
 	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, dac1_ctrl);
 	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, dac1_ctrl);
 }
 
 void prtDACState()
 {
-	char waveform_strs[4][10] = {"DC", "Rect", "Saw", "Cos"};
+	char waveform_strs[5][10] = {"DC", "Rect", "Saw", "Cos", "Arb"};
 	u32 period = 40 * 256 / (step_ctrl + 1);
 	xil_printf("DAC 1 Channel I, Waveform: %s, Step Length: %d, Period: %dns\r\n", waveform_strs[waveform], step_ctrl, period);
-	xil_printf("D: DC\r\nR: Rect\r\nS: Saw\r\nC: Cos\r\n+: inc freq\r\n-: dec freq\r\n");
+	xil_printf("D: DC\r\nR: Rect\r\nS: Saw\r\nC: Cos\r\nA: Arb\r\n+: inc freq\r\n-: dec freq\r\n*: mult freq\r\n/: divd freq\r\n");
 }
 
 void uart1_sendhandler(void *CallBackRef, unsigned int EventData)
@@ -180,10 +180,23 @@ void uart1_recvhandler(void *CallBackRef, unsigned int EventData)
 		genDACCtrl();
 		msg_state = 1;
 		break;
+	case 'A':
+		waveform = 4;
+		genDACCtrl();
+		msg_state = 1;
+		break;
 	case '+':
-		if (step_ctrl < 14)
+		if (step_ctrl < 65536)
 		{
 			++step_ctrl;
+			genDACCtrl();
+		}
+		msg_state = 1;
+		break;
+	case '*':
+		if (step_ctrl < 32768)
+		{
+			step_ctrl <<= 1;
 			genDACCtrl();
 		}
 		msg_state = 1;
@@ -192,6 +205,14 @@ void uart1_recvhandler(void *CallBackRef, unsigned int EventData)
 		if (step_ctrl > 0)
 		{
 			--step_ctrl;
+			genDACCtrl();
+		}
+		msg_state = 1;
+		break;
+	case '/':
+		if (step_ctrl > 0)
+		{
+			step_ctrl >>= 1;
 			genDACCtrl();
 		}
 		msg_state = 1;

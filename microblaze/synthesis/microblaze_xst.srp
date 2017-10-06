@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> 
 TABLE OF CONTENTS
@@ -190,8 +190,6 @@ INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODE
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
-INFO:Xst:2260 - The FF/Latch <plb_dac_0/USER_LOGIC_I/dac_clk_reg> in Unit <plb_dac_0> is equivalent to the following FF/Latch : <plb_dac_0/USER_LOGIC_I/dac_clk_reg_1> 
-INFO:Xst:2260 - The FF/Latch <plb_dac_1/USER_LOGIC_I/dac_clk_reg> in Unit <plb_dac_1> is equivalent to the following FF/Latch : <plb_dac_1/USER_LOGIC_I/dac_clk_reg_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
@@ -199,8 +197,6 @@ INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
 INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 7 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
-INFO:Xst:2260 - The FF/Latch <plb_dac_0/USER_LOGIC_I/dac_clk_reg> in Unit <plb_dac_0> is equivalent to the following FF/Latch : <plb_dac_0/USER_LOGIC_I/dac_clk_reg_1> 
-INFO:Xst:2260 - The FF/Latch <plb_dac_1/USER_LOGIC_I/dac_clk_reg> in Unit <plb_dac_1> is equivalent to the following FF/Latch : <plb_dac_1/USER_LOGIC_I/dac_clk_reg_1> 
 
 Final Macro Processing ...
 
@@ -234,47 +230,47 @@ Design Statistics
 # IOs                              : 40
 
 Cell Usage :
-# BELS                             : 5214
-#      GND                         : 18
-#      INV                         : 68
-#      LUT1                        : 136
-#      LUT2                        : 400
+# BELS                             : 5775
+#      GND                         : 20
+#      INV                         : 58
+#      LUT1                        : 137
+#      LUT2                        : 462
 #      LUT2_D                      : 15
 #      LUT2_L                      : 9
-#      LUT3                        : 1206
-#      LUT3_D                      : 94
-#      LUT3_L                      : 84
-#      LUT4                        : 1804
-#      LUT4_D                      : 74
-#      LUT4_L                      : 129
+#      LUT3                        : 1393
+#      LUT3_D                      : 89
+#      LUT3_L                      : 20
+#      LUT4                        : 1925
+#      LUT4_D                      : 69
+#      LUT4_L                      : 148
 #      MULT_AND                    : 34
-#      MUXCY                       : 152
+#      MUXCY                       : 161
 #      MUXCY_L                     : 171
-#      MUXF5                       : 601
-#      MUXF6                       : 14
-#      MUXF7                       : 6
-#      MUXF8                       : 3
-#      VCC                         : 12
-#      XORCY                       : 184
-# FlipFlops/Latches                : 3257
-#      FD                          : 253
-#      FD_1                        : 20
+#      MUXF5                       : 707
+#      MUXF6                       : 86
+#      MUXF7                       : 42
+#      MUXF8                       : 21
+#      VCC                         : 14
+#      XORCY                       : 194
+# FlipFlops/Latches                : 3269
+#      FD                          : 217
 #      FDC                         : 21
 #      FDC_1                       : 5
 #      FDCE                        : 15
-#      FDE                         : 384
+#      FDE                         : 394
 #      FDE_1                       : 8
 #      FDP                         : 9
-#      FDR                         : 1172
-#      FDRE                        : 1206
+#      FDR                         : 1180
+#      FDR_1                       : 20
+#      FDRE                        : 1236
 #      FDRE_1                      : 1
-#      FDRS                        : 26
+#      FDRS                        : 24
 #      FDRSE                       : 16
-#      FDS                         : 70
+#      FDS                         : 72
 #      FDSE                        : 51
-# RAMS                             : 226
+# RAMS                             : 298
 #      RAM16X1D                    : 192
-#      RAMB16                      : 34
+#      RAMB16                      : 106
 # Shift Registers                  : 133
 #      SRL16                       : 7
 #      SRL16E                      : 118
@@ -298,17 +294,17 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                     3324  out of  24576    13%  
- Number of Slice Flip Flops:           3257  out of  49152     6%  
- Number of 4 input LUTs:               4536  out of  49152     9%  
-    Number used as logic:              4019
+ Number of Slices:                     3493  out of  24576    14%  
+ Number of Slice Flip Flops:           3269  out of  49152     6%  
+ Number of 4 input LUTs:               4842  out of  49152     9%  
+    Number used as logic:              4325
     Number used as Shift registers:     133
     Number used as RAMs:                384
  Number of IOs:                          40
  Number of bonded IOBs:                   2  out of    640     0%  
  Number of TBUFs:                         2  out of      0        (*) 
- Number of FIFO16/RAMB16s:               34  out of    320    10%  
-    Number used as RAMB16s:              34
+ Number of FIFO16/RAMB16s:              106  out of    320    33%  
+    Number used as RAMB16s:             106
  Number of GCLKs:                         7  out of     32    21%  
  Number of DCM_ADVs:                      1  out of      8    12%  
  Number of DSP48s:                        3  out of    512     0%  
@@ -333,44 +329,56 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+-------------------------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                                       | Load  |
------------------------------------+-------------------------------------------------------------+-------+
-fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0 | 3290  |
-mdm_0/mdm_0/drck_i                 | BUFG                                                        | 212   |
-mdm_0/mdm_0/update1                | BUFG                                                        | 43    |
-fpga_0_clk_1_sys_clk_pin           | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLKDV| 73    |
-RS232/Interrupt                    | NONE(xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)         | 1     |
------------------------------------+-------------------------------------------------------------+-------+
+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                  | Clock buffer(FF name)                                                                                                                                                    | Load  |
+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+fpga_0_clk_1_sys_clk_pin                      | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLK0                                                                                                              | 3374  |
+mdm_0/mdm_0/drck_i                            | BUFG                                                                                                                                                                     | 212   |
+mdm_0/mdm_0/update1                           | BUFG                                                                                                                                                                     | 43    |
+fpga_0_clk_1_sys_clk_pin                      | clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST:CLKDV                                                                                                             | 73    |
+RS232/Interrupt                               | NONE(xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)                                                                                                                      | 1     |
+plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/N1| NONE(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 36    |
+plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/N1| NONE(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 36    |
+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
-Control Signal                                                                                                                                                                                                                      | Buffer(FF name)                                                                                                            | Load  |
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
-lmb_bram/lmb_bram/pgassign100<10>(lmb_bram/lmb_bram/XST_GND:G)                                                                                                                                                                      | NONE(lmb_bram/lmb_bram/ramb16_0)                                                                                           | 64    |
-mdm_0/mdm_0/MDM_Core_I1/Config_Reg_Acst_inv(mdm_0/mdm_0/MDM_Core_I1/Config_Reg_Acst_inv1_INV_0:O)                                                                                                                                   | NONE(mdm_0/mdm_0/MDM_Core_I1/Config_Reg_0)                                                                                 | 23    |
-mdm_0/mdm_0/MDM_Core_I1/SEL_inv(mdm_0/mdm_0/MDM_Core_I1/SEL_inv1_INV_0:O)                                                                                                                                                           | NONE(mdm_0/mdm_0/MDM_Core_I1/PORT_Selector_0)                                                                              | 12    |
-clock_generator_0/clock_generator_0/DCM0_INST/reset(clock_generator_0/clock_generator_0/DCM0_INST/reset1_INV_0:O)                                                                                                                   | NONE(clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_0)                                                            | 4     |
-microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_clear(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_clear:Q)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)         | 2     |
-mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd_inv(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd_inv1_INV_0:O)                                                                                                                   | NONE(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/execute)                                                                       | 1     |
-mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/local_sel_n3(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay:O)                                                                                                            | NONE(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I)                                                                         | 1     |
-mdm_0/mdm_0/update1(mdm_0/mdm_0/Use_Virtex4.BSCAN_VIRTEX4_I:UPDATE)                                                                                                                                                                 | BUFG(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/running_clock)         | 1     |
-microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk:Q)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk_TClk)| 1     |
-microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_cmd_i(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_cmd_i:Q)  | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk)       | 1     |
-microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/no_sleeping(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/no_sleeping1_INV_0:O)     | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/dbg_wakeup_i)          | 1     |
-microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_cmd_i(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_cmd_i:Q)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_TClk)      | 1     |
-microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step:Q)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk)      | 1     |
-xps_intc_0/xps_intc_0/INTC_CORE_I/iar_0_or0000(xps_intc_0/xps_intc_0/INTC_CORE_I/iar_0_or00001:O)                                                                                                                                   | NONE(xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)                                                                        | 1     |
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                                                             | Buffer(FF name)                                                                                                                                                          | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/N1(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/XST_GND:G)                                                                                                                                                                                                                                      | NONE(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP)       | 136   |
+plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/N1(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/XST_GND:G)                                                                                                                                                                                                                                      | NONE(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP)       | 136   |
+lmb_bram/lmb_bram/pgassign100<10>(lmb_bram/lmb_bram/XST_GND:G)                                                                                                                                                                                                                                                                             | NONE(lmb_bram/lmb_bram/ramb16_0)                                                                                                                                         | 64    |
+mdm_0/mdm_0/MDM_Core_I1/Config_Reg_Acst_inv(mdm_0/mdm_0/MDM_Core_I1/Config_Reg_Acst_inv1_INV_0:O)                                                                                                                                                                                                                                          | NONE(mdm_0/mdm_0/MDM_Core_I1/Config_Reg_0)                                                                                                                               | 23    |
+mdm_0/mdm_0/MDM_Core_I1/SEL_inv(mdm_0/mdm_0/MDM_Core_I1/SEL_inv1_INV_0:O)                                                                                                                                                                                                                                                                  | NONE(mdm_0/mdm_0/MDM_Core_I1/PORT_Selector_0)                                                                                                                            | 12    |
+clock_generator_0/clock_generator_0/DCM0_INST/reset(clock_generator_0/clock_generator_0/DCM0_INST/reset1_INV_0:O)                                                                                                                                                                                                                          | NONE(clock_generator_0/clock_generator_0/DCM0_INST/rst_delay_0)                                                                                                          | 4     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_clear(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_clear:Q)                                                                                                       | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)                                                       | 2     |
+plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeina_tmp(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeinb_tmp(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeina_tmp(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeinb_tmp(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeina_tmp(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeinb_tmp(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeina_tmp(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeinb_tmp(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd_inv(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd_inv1_INV_0:O)                                                                                                                                                                                                                          | NONE(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/execute)                                                                                                                     | 1     |
+mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/local_sel_n3(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay:O)                                                                                                                                                                                                                   | NONE(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I)                                                                                                                       | 1     |
+mdm_0/mdm_0/update1(mdm_0/mdm_0/Use_Virtex4.BSCAN_VIRTEX4_I:UPDATE)                                                                                                                                                                                                                                                                        | BUFG(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/running_clock)                                                       | 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk:Q)                                                                                                       | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk_TClk)                                              | 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_cmd_i(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_cmd_i:Q)                                                                                                         | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk)                                                     | 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/no_sleeping(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/no_sleeping1_INV_0:O)                                                                                                            | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/dbg_wakeup_i)                                                        | 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_cmd_i(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_cmd_i:Q)                                                                                                       | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_TClk)                                                    | 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step:Q)                                                                                                       | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk)                                                    | 1     |
+xps_intc_0/xps_intc_0/INTC_CORE_I/iar_0_or0000(xps_intc_0/xps_intc_0/INTC_CORE_I/iar_0_or00001:O)                                                                                                                                                                                                                                          | NONE(xps_intc_0/xps_intc_0/INTC_CORE_I/intr_sync_0)                                                                                                                      | 1     |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 9.523ns (Maximum Frequency: 105.014MHz)
-   Minimum input arrival time before clock: 3.525ns
+   Minimum period: 12.140ns (Maximum Frequency: 82.374MHz)
+   Minimum input arrival time before clock: 3.293ns
    Maximum output required time after clock: 8.978ns
    Maximum combinational path delay: No path found
 
@@ -380,29 +388,32 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Clock period: 9.523ns (frequency: 105.014MHz)
-  Total number of paths / destination ports: 420617 / 10815
+  Clock period: 12.140ns (frequency: 82.374MHz)
+  Total number of paths / destination ports: 424059 / 12393
 -------------------------------------------------------------------------
-Delay:               4.761ns (Levels of Logic = 4)
-  Source:            mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST (FF)
+Delay:               6.070ns (Levels of Logic = 8)
+  Source:            plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (RAM)
   Destination:       plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9 (FF)
   Source Clock:      fpga_0_clk_1_sys_clk_pin rising
   Destination Clock: fpga_0_clk_1_sys_clk_pin falling
 
-  Data Path: mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST to plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9
+  Data Path: plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP to plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            116   0.360   1.481  mb_plb/GEN_SPLB_RST[3].I_SPLB_RST (SPLB_Rst<3>)
-     end scope: 'mb_plb'
-     begin scope: 'plb_dac_0'
-     LUT2:I0->O          241   0.195   2.126  plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 (plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1)
-     LUT4:I0->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot12 (plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot12)
-     MUXF5:I0->O           1   0.382   0.000  plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot1_f5 (plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot1)
-     FD_1:D                    0.022          plb_dac_0/USER_LOGIC_I/dac_data_reg_9
+     RAMB16:CLKA->DOA0     1   2.100   0.585  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.ram_douta<0>)
+     LUT3:I1->O            1   0.195   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_7)
+     MUXF5:I0->O           1   0.382   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_5_f5 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_5_f5)
+     MUXF6:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f6 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f6)
+     MUXF7:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7)
+     MUXF8:I1->O           1   0.395   0.688  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f8 (douta<0>)
+     end scope: 'plb_dac_0/USER_LOGIC_I/bram_arb_1'
+     LUT4:I1->O            1   0.195   0.523  plb_dac_0/USER_LOGIC_I/dac_data_reg_mux0000<31>18 (plb_dac_0/USER_LOGIC_I/dac_data_reg_mux0000<31>18)
+     LUT4:I3->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot (plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot)
+     FDR_1:D                   0.022          plb_dac_0/USER_LOGIC_I/dac_data_reg_9
     ----------------------------------------
-    Total                      4.761ns (1.154ns logic, 3.607ns route)
-                                       (24.2% logic, 75.8% route)
+    Total                      6.070ns (4.274ns logic, 1.796ns route)
+                                       (70.4% logic, 29.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'mdm_0/mdm_0/drck_i'
@@ -486,9 +497,9 @@ Offset:              3.293ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 38 / 34
+  Total number of paths / destination ports: 34 / 34
 -------------------------------------------------------------------------
-Offset:              3.525ns (Levels of Logic = 5)
+Offset:              2.103ns (Levels of Logic = 3)
   Source:            plb_dac_0_S_Format_pin (PAD)
   Destination:       plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_23 (FF)
   Destination Clock: fpga_0_clk_1_sys_clk_pin rising
@@ -497,15 +508,13 @@ Offset:              3.525ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           1   0.965   0.688  iobuf_1 (plb_dac_0_S_Format_I)
+     IOBUF:IO->O          16   0.965   0.921  iobuf_1 (plb_dac_0_S_Format_I)
      begin scope: 'plb_dac_0'
-     LUT3_D:I0->O         17   0.195   0.743  plb_dac_0/USER_LOGIC_I/slv_reg3_16_mux000021 (N18)
-     LUT4:I3->O            1   0.195   0.523  plb_dac_0/USER_LOGIC_I/slv_reg3_23_mux0000_SW1 (N72)
-     LUT4:I3->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/slv_reg3_23_mux0000 (plb_dac_0/USER_LOGIC_I/slv_reg3_23_mux0000)
-     FDE:D                     0.022          plb_dac_0/USER_LOGIC_I/slv_reg3_23
+     LUT4:I1->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000 (plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000)
+     FDE:D                     0.022          plb_dac_0/USER_LOGIC_I/slv_reg3_31
     ----------------------------------------
-    Total                      3.525ns (1.572ns logic, 1.954ns route)
-                                       (44.6% logic, 55.4% route)
+    Total                      2.103ns (1.182ns logic, 0.921ns route)
+                                       (56.2% logic, 43.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/mdm_0/update1'
@@ -617,14 +626,14 @@ Offset:              5.861ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 38.00 secs
-Total CPU time to Xst completion: 37.65 secs
+Total REAL time to Xst completion: 47.00 secs
+Total CPU time to Xst completion: 46.58 secs
  
 --> 
 
-Total memory usage is 388348 kilobytes
+Total memory usage is 393148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
-Number of infos    :   19 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
 

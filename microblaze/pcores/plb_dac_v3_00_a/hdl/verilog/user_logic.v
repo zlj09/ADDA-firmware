@@ -147,11 +147,12 @@ output                                    IP2Bus_Error;
   reg                                       spi_state;
   reg                                       spi_start_flag;
   reg        [4 : 0]                        spi_cnt;
-  wire       [1 : 0]                        i_waveform;
-  wire       [1 : 0]                        q_waveform;
+  wire       [3 : 0]                        i_waveform;
+  wire       [3 : 0]                        q_waveform;
   wire       [9 : 0]                        rect_data;
   wire       [9 : 0]                        saw_data;
   wire       [9 : 0]                        sine_data;
+  wire       [9 : 0]                        arb_data;
   wire       [PHASE_WIDTH-1 : 0]            phase_out;
   wire       [PHASE_WIDTH-1 : 0]            step_ctl;
 
@@ -296,19 +297,21 @@ output                                    IP2Bus_Error;
       else begin
         if (dac_clk_reg == 1'b1) begin
           case (q_waveform)
-          2'd0: dac_data_reg <= slv_reg2[22: 31];
-          2'd1: dac_data_reg <= rect_data;
-          2'd2: dac_data_reg <= saw_data;
-          2'd3: dac_data_reg <= sine_data;
+          4'd0: dac_data_reg <= slv_reg2[22: 31];
+          4'd1: dac_data_reg <= rect_data;
+          4'd2: dac_data_reg <= saw_data;
+          4'd3: dac_data_reg <= sine_data;
+          4'd4: dac_data_reg <= arb_data;
           default: dac_data_reg <= dac_data_reg;
           endcase
         end
         else begin
           case (i_waveform)
-          2'd0: dac_data_reg <= slv_reg1[22: 31];
-          2'd1: dac_data_reg <= rect_data;
-          2'd2: dac_data_reg <= saw_data;
-          2'd3: dac_data_reg <= sine_data;
+          4'd0: dac_data_reg <= slv_reg1[22: 31];
+          4'd1: dac_data_reg <= rect_data;
+          4'd2: dac_data_reg <= saw_data;
+          4'd3: dac_data_reg <= sine_data;
+          4'd4: dac_data_reg <= arb_data;
           default: dac_data_reg <= dac_data_reg;
           endcase
         end
@@ -433,13 +436,21 @@ output                                    IP2Bus_Error;
     .data(step_ctl)
   );
 
+  bram_arb bram_arb_1 (
+    .clka(Bus2IP_Clk), 
+    .wea(1'b0), 
+    .addra(phase_out), 
+    .dina(Bus2IP_Data), 
+    .douta(arb_data)
+  );
+
 
   // ------------------------------------------------------------
   // Example code to drive IP to Bus signals
   // ------------------------------------------------------------
 
-  assign i_waveform = slv_reg0[26 : 27];
-  assign q_waveform = slv_reg0[24 : 25];
+  assign i_waveform = slv_reg0[20 : 23];
+  assign q_waveform = slv_reg0[16 : 19];
   assign step_ctl = slv_reg0[0 : 15] + 1'b1;
 
   assign rect_data = (phase_out < 16'h8000) ? (10'h3ff) : (10'h0);

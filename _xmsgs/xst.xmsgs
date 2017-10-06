@@ -5,72 +5,60 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">cnt_start</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">rst_generator_0</arg>.
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">cnt_start</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">rst_generator_0</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">cnt_start</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">rst_generator</arg>.
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">cnt_start</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">rst_generator</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/sync_reset</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/sync_reset_1&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/sync_reset</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/sync_reset_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_MPLB_RST[1].I_MPLB_RST</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_MPLB_RST[0].I_MPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[4].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[3].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[2].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[1].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[0].I_SPLB_RST&gt; &lt;mb_plb/I_PLB_RST&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_MPLB_RST[1].I_MPLB_RST</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_MPLB_RST[0].I_MPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[4].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[3].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[2].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[1].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[0].I_SPLB_RST&gt; &lt;mb_plb/I_PLB_RST&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_dac_0/USER_LOGIC_I/dac_clk_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_dac_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;plb_dac_0/USER_LOGIC_I/dac_clk_reg_1&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/sync_reset</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/sync_reset_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_dac_1/USER_LOGIC_I/dac_clk_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_dac_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;plb_dac_1/USER_LOGIC_I/dac_clk_reg_1&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/sync_reset</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/sync_reset_1&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_MPLB_RST[1].I_MPLB_RST</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_MPLB_RST[0].I_MPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[4].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[3].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[2].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[1].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[0].I_SPLB_RST&gt; &lt;mb_plb/I_PLB_RST&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_MPLB_RST[1].I_MPLB_RST</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_MPLB_RST[0].I_MPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[4].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[3].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[2].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[1].I_SPLB_RST&gt; &lt;mb_plb/GEN_SPLB_RST[0].I_SPLB_RST&gt; &lt;mb_plb/I_PLB_RST&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2&gt; &lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1&gt; </arg>
+<msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mb_plb</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_dac_0/USER_LOGIC_I/dac_clk_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_dac_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;plb_dac_0/USER_LOGIC_I/dac_clk_reg_1&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_dac_1/USER_LOGIC_I/dac_clk_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_dac_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;plb_dac_1/USER_LOGIC_I/dac_clk_reg_1&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
-</msg>
-
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

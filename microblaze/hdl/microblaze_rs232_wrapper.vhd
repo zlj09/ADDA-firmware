@@ -148,7 +148,7 @@ begin
       C_SPLB_NUM_MASTERS => 2,
       C_SPLB_SUPPORT_BURSTS => 0,
       C_SPLB_NATIVE_DWIDTH => 32,
-      C_BAUDRATE => 115200,
+      C_BAUDRATE => 9600,
       C_DATA_BITS => 8,
       C_USE_PARITY => 0,
       C_ODD_PARITY => 0

@@ -1,167 +1,18 @@
-09:44:05.966 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
-09:44:23.972 INFO  - Restoring global repository preferences: 
+15:28:05.645 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+15:28:21.461 INFO  - Restoring global repository preferences: 
 		 C:\edk_user_repository\MyProcessorIPLib 
-13:33:12.371 INFO  - Processing command line option -hwspec H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
-13:36:23.955 ERROR - FPGA Configuration failed.Connection to Board Failed
-
-
-    Failed to Open JTAG Cable
-    Cable target is not connected to the host
- 
-13:36:38.158 ERROR - FPGA Configuration failed.Connection to Board Failed
-
-
-    Failed to connect to Xilinx hw_server. Check if the
-    hw_server is running and correct TCP port is used.
- 
-13:42:40.648 INFO  - Updating .bit and .bmm files from XPS's export folder. 
-13:43:00.616 INFO  - Copied contents of H:\ljzhu\test_br0101\microblaze\SDK\SDK_Export\hw\microblaze_top.bit into \microblaze_hw_platform\system.bit. 
-13:43:00.616 INFO  - Copied contents of H:\ljzhu\test_br0101\microblaze\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \microblaze_hw_platform\system_bd.bmm. 
-13:43:07.418 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
-13:43:26.603 INFO  - Processing command line option -hwspec H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
-13:44:12.984 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-13:44:50.785 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-13:49:46.508 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-13:51:00.447 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-13:54:06.510 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-13:57:02.777 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-13:59:03.866 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:18:40.513 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:20:14.322 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:32:37.961 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:34:29.137 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:38:54.572 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:39:57.695 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:44:30.090 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:46:02.800 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:54:04.158 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-14:56:59.960 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:01:56.326 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:10:20.774 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:12:15.477 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:13:04.547 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:16:38.225 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:19:44.087 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:24:00.785 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:33:55.344 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:36:45.710 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:37:16.819 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:39:02.099 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:40:06.314 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:42:02.309 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:46:46.811 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:47:19.277 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:50:15.104 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:54:27.451 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:03:13.306 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:08:42.481 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:11:14.438 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:20:30.449 ERROR - FPGA Configuration failed.Failed to download the bit file
-
-    DONE bit didn't go HIGH after programming FPGA
- 
-16:20:57.077 ERROR - FPGA Configuration failed.Failed to download the bit file
-
-    DONE bit didn't go HIGH after programming FPGA
- 
-16:21:37.735 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:29:48.572 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:31:28.873 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:32:56.722 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:34:10.941 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:35:05.269 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:36:16.632 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:37:04.675 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:38:42.028 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:40:11.380 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:40:56.257 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:47:55.302 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
-13:48:56.491 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
-13:50:40.656 INFO  - Restoring global repository preferences: 
+23:10:29.731 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+23:10:32.731 INFO  - The hardware specification for project 'microblaze_hw_platform' is different from F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+23:10:33.260 INFO  - Copied contents of F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml into \microblaze_hw_platform\system.xml. 
+23:10:33.291 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\microblaze_top.bit into \microblaze_hw_platform\system.bit. 
+23:10:33.294 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \microblaze_hw_platform\system_bd.bmm. 
+23:10:33.492 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:10:36.573 INFO  - Restoring global repository preferences: 
 		 C:\edk_user_repository\MyProcessorIPLib 
-15:03:52.155 INFO  - Processing command line option -hwspec H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
-15:04:27.304 ERROR - FPGA Configuration failed.Connection to Board Failed
+23:10:38.065 INFO  - Updating hardware inferred compiler options for br0101. 
+23:10:38.092 INFO  - Clearing existing target manager status. 
+23:39:43.503 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
 
-
-    ERROR:Cse - A reference voltage has not been detected on the ribbon cable interface to the target system ( pin 2 ).  Check that power is applied to the target system and that the ribbon cable is properly seated at both ends.  The status LED on Platform Cable USB will be GREEN if target voltage is in the proper range and applied to the correct pin.
-
-    Failed to Open JTAG Cable
-    Cable target is not connected to the host
- 
-15:05:39.865 ERROR - FPGA Configuration failed.Connection to Board Failed
-
-
-    ERROR:Cse - A reference voltage has not been detected on the ribbon cable interface to the target system ( pin 2 ).  Check that power is applied to the target system and that the ribbon cable is properly seated at both ends.  The status LED on Platform Cable USB will be GREEN if target voltage is in the proper range and applied to the correct pin.
-
-    ERROR:Cse - A reference voltage has not been detected on the ribbon cable interface to the target system ( pin 2 ).  Check that power is applied to the target system and that the ribbon cable is properly seated at both ends.  The status LED on Platform Cable USB will be GREEN if target voltage is in the proper range and applied to the correct pin.
-
-    Failed to Open JTAG Cable
-    Cable target is not connected to the host
- 
-15:06:52.679 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:07:29.169 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:37:33.372 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:37:58.927 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:48:28.078 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:57:36.962 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:19:09.083 ERROR - FPGA Configuration failed.Connection to Board Failed
-
-
-    ERROR:Cse - A reference voltage has not been detected on the ribbon cable interface to the target system ( pin 2 ).  Check that power is applied to the target system and that the ribbon cable is properly seated at both ends.  The status LED on Platform Cable USB will be GREEN if target voltage is in the proper range and applied to the correct pin.
-
-    ERROR:Cse - A reference voltage has not been detected on the ribbon cable interface to the target system ( pin 2 ).  Check that power is applied to the target system and that the ribbon cable is properly seated at both ends.  The status LED on Platform Cable USB will be GREEN if target voltage is in the proper range and applied to the correct pin.
-
-    ERROR:Cse - A reference voltage has not been detected on the ribbon cable interface to the target system ( pin 2 ).  Check that power is applied to the target system and that the ribbon cable is properly seated at both ends.  The status LED on Platform Cable USB will be GREEN if target voltage is in the proper range and applied to the correct pin.
-
-    Failed to Open JTAG Cable
-    Cable target is not connected to the host
- 
-16:27:21.209 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:28:40.984 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:50:57.456 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:51:46.691 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:55:39.492 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:59:18.693 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:59:44.757 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:01:21.729 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:08:51.343 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:10:21.401 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:58:48.288 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:09:04.729 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:11:54.146 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:15:08.460 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:18:28.619 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
-14:27:23.154 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
-14:27:29.348 INFO  - Updating .bit and .bmm files from XPS's export folder. 
-14:27:33.242 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\microblaze_top.bit into \microblaze_hw_platform\system.bit. 
-14:27:33.245 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \microblaze_hw_platform\system_bd.bmm. 
-14:30:57.172 INFO  - Restoring global repository preferences: 
-		 C:\edk_user_repository\MyProcessorIPLib 
-15:36:45.447 INFO  - Processing command line option -hwspec H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
-15:37:33.980 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:42:22.161 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:43:45.764 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:46:11.704 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:48:13.870 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:49:19.298 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:49:41.062 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:51:08.800 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:53:53.053 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-15:55:57.840 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-16:18:34.608 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:24:53.998 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:28:16.319 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:40:38.997 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:41:51.258 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:48:11.984 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-17:58:51.035 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:00:18.085 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:03:45.398 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:09:21.926 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:11:01.689 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:14:08.439 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:14:35.246 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:15:03.672 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:16:18.533 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
-18:20:40.574 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
-15:09:28.407 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+23:39:43.503 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

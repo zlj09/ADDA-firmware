@@ -10,7 +10,7 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Thu Oct 05 15:19:26 2017
+Mapped Date    : Thu Oct 05 22:59:38 2017
 
 Mapping design into LUTs...
 WARNING:MapLib:163 - Bus microblaze_i/plb_dac_0_S_Format_O driven by tbufs will
@@ -18,96 +18,6 @@ WARNING:MapLib:163 - Bus microblaze_i/plb_dac_0_S_Format_O driven by tbufs will
 WARNING:MapLib:163 - Bus microblaze_i/plb_dac_1_S_Format_O driven by tbufs will
    be transformed to use combinational drivers.
 Running directed packing...
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_9_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_0_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_0_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_5_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_5_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_1_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_1_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_6_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_6_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_2_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_2_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_7_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_7_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_3_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_3_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/dac_data_reg_8_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator
-   microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 failed to
-   merge with F5 multiplexer
-   microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_8_rstpot1_f5. 
-   There is more than one F5MUX.  The design will exhibit suboptimal timing.
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
@@ -121,18 +31,18 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   22
+Number of warnings:    4
 Logic Utilization:
-  Number of Slice Flip Flops:         2,441 out of  49,152    4%
-  Number of 4 input LUTs:             4,024 out of  49,152    8%
+  Number of Slice Flip Flops:         2,477 out of  49,152    5%
+  Number of 4 input LUTs:             4,350 out of  49,152    8%
 Logic Distribution:
-  Number of occupied Slices:          2,937 out of  24,576   11%
-    Number of Slices containing only related logic:   2,937 out of   2,937 100%
-    Number of Slices containing unrelated logic:          0 out of   2,937   0%
+  Number of occupied Slices:          3,109 out of  24,576   12%
+    Number of Slices containing only related logic:   3,109 out of   3,109 100%
+    Number of Slices containing unrelated logic:          0 out of   3,109   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,194 out of  49,152    8%
-    Number used as logic:             3,509
-    Number used as a route-thru:        170
+  Total Number of 4 input LUTs:       4,503 out of  49,152    9%
+    Number used as logic:             3,835
+    Number used as a route-thru:        153
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:     131
@@ -142,17 +52,17 @@ Logic Distribution:
   Number of bonded IOBs:                 43 out of     640    6%
   Number of BUFG/BUFGCTRLs:               3 out of      32    9%
     Number used as BUFGs:                 3
-  Number of FIFO16/RAMB16s:              34 out of     320   10%
-    Number used as RAMB16s:              34
+  Number of FIFO16/RAMB16s:             106 out of     320   33%
+    Number used as RAMB16s:             106
   Number of DSP48s:                       3 out of     512    1%
   Number of DCM_ADVs:                     1 out of       8   12%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                3.85
+Average Fanout of Non-Clock Nets:                3.75
 
-Peak Memory Usage:  501 MB
-Total REAL time to MAP completion:  19 secs 
-Total CPU time to MAP completion:   11 secs 
+Peak Memory Usage:  508 MB
+Total REAL time to MAP completion:  17 secs 
+Total CPU time to MAP completion:   13 secs 
 
 NOTES:
 
