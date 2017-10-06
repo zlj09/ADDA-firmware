@@ -260,7 +260,7 @@ begin
       C_CLKFX_MULTIPLY => 4,
       C_CLKFX_DIVIDE => 1,
       C_CLKDV_DIVIDE => 2.0,
-      C_CLKIN_PERIOD => 20.000000,
+      C_CLKIN_PERIOD => 10.000000,
       C_DESKEW_ADJUST => "SYSTEM_SYNCHRONOUS",
       C_CLKIN_BUF => false,
       C_CLKFB_BUF => false,
@@ -326,7 +326,11 @@ begin
   -- wrapper of clkout : CLKDV and clkinv : CLKDV180
 
 
-  SIG_DCM0_CLKDV_BUF <= SIG_DCM0_CLKDV;
+  DCM0_CLKDV_BUFG_INST : BUFG
+    port map (
+      I => SIG_DCM0_CLKDV,
+      O => SIG_DCM0_CLKDV_BUF
+      );
 
 
   SIG_DCM0_CLKDV180 <= NOT SIG_DCM0_CLKDV;
@@ -414,11 +418,11 @@ begin
   -- CLKGEN CLKOUT
 
   
-  CLKOUT0 <= SIG_DCM0_CLK0_BUF;
+  CLKOUT0 <= SIG_DCM0_CLKDV_BUF;
              
-
-  CLKOUT1 <= '0';
-
+  
+  CLKOUT1 <= SIG_DCM0_CLK0_BUF;
+             
 
   CLKOUT2 <= '0';
 
@@ -533,14 +537,14 @@ end architecture STRUCTURE;
 
 ----------------------------------------
 
--- C_CLKIN_FREQ = 50000000
+-- C_CLKIN_FREQ = 100000000
 
 -- C_CLKOUT0_FREQ = 50000000
 -- C_CLKOUT0_PHASE = 0
 -- C_CLKOUT0_GROUP = NONE
 -- C_CLKOUT0_BUF = TRUE
 -- C_CLKOUT0_VARIABLE_PHASE = FALSE
--- C_CLKOUT1_FREQ = 0
+-- C_CLKOUT1_FREQ = 100000000
 -- C_CLKOUT1_PHASE = 0
 -- C_CLKOUT1_GROUP = NONE
 -- C_CLKOUT1_BUF = TRUE
@@ -634,9 +638,9 @@ end architecture STRUCTURE;
 ------------------------------------------------------------------------------
 
 -- C_CLKOUT0_MODULE = DCM0
--- C_CLKOUT0_PORT = CLK0B
--- C_CLKOUT1_MODULE = NONE
--- C_CLKOUT1_PORT = NONE
+-- C_CLKOUT0_PORT = CLKDVB
+-- C_CLKOUT1_MODULE = DCM0
+-- C_CLKOUT1_PORT = CLK0B
 -- C_CLKOUT2_MODULE = NONE
 -- C_CLKOUT2_PORT = NONE
 -- C_CLKOUT3_MODULE = NONE
@@ -690,7 +694,7 @@ end architecture STRUCTURE;
 -- C_DCM0_CLKFX_MULTIPLY = 4
 -- C_DCM0_CLKFX_DIVIDE = 1
 -- C_DCM0_CLKDV_DIVIDE = 2.0
--- C_DCM0_CLKIN_PERIOD = 20.000000
+-- C_DCM0_CLKIN_PERIOD = 10.000000
 -- C_DCM0_DESKEW_ADJUST = "SYSTEM_SYNCHRONOUS"
 -- C_DCM0_CLKIN_BUF = false
 -- C_DCM0_CLKFB_BUF = false
@@ -698,7 +702,7 @@ end architecture STRUCTURE;
 -- C_DCM0_CLK90_BUF = false
 -- C_DCM0_CLK180_BUF = false
 -- C_DCM0_CLK270_BUF = false
--- C_DCM0_CLKDV_BUF = false
+-- C_DCM0_CLKDV_BUF = TRUE
 -- C_DCM0_CLK2X_BUF = false
 -- C_DCM0_CLK2X180_BUF = false
 -- C_DCM0_CLKFX_BUF = false

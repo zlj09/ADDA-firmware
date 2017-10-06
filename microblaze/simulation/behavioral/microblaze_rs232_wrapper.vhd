@@ -134,7 +134,7 @@ begin
   RS232 : xps_uartlite
     generic map (
       C_FAMILY => "virtex4",
-      C_SPLB_CLK_FREQ_HZ => 50000000,
+      C_SPLB_CLK_FREQ_HZ => 100000000,
       C_BASEADDR => X"84000000",
       C_HIGHADDR => X"8400ffff",
       C_SPLB_AWIDTH => 32,
