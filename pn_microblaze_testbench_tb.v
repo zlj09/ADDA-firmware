@@ -22,8 +22,8 @@ module testbench
 
   // END USER CODE (Do not remove this line)
 
-  real fpga_0_clk_1_sys_clk_pin_PERIOD = 20000.000000;
-  real fpga_0_rst_1_sys_rst_pin_LENGTH = 320000;
+  real fpga_0_clk_1_sys_clk_pin_PERIOD = 10000.000000;
+  real fpga_0_rst_1_sys_rst_pin_LENGTH = 160000;
 
   // Internal signals
 
@@ -56,15 +56,6 @@ module testbench
       .fpga_0_RS232_TX_pin ( fpga_0_RS232_TX_pin ),
       .fpga_0_clk_1_sys_clk_pin ( fpga_0_clk_1_sys_clk_pin ),
       .fpga_0_rst_1_sys_rst_pin ( fpga_0_rst_1_sys_rst_pin ),
-      .plb_dac_0_S_Data_pin ( plb_dac_0_S_Data_pin ),
-      .plb_dac_0_S_DCLKIO_pin ( plb_dac_0_S_DCLKIO_pin ),
-      .plb_dac_0_S_Clkout_pin ( plb_dac_0_S_Clkout_pin ),
-      .plb_dac_0_S_PinMD_pin ( plb_dac_0_S_PinMD_pin ),
-      .plb_dac_0_S_ClkMD_pin ( plb_dac_0_S_ClkMD_pin ),
-      .plb_dac_0_S_Format_pin ( plb_dac_0_S_Format_pin ),
-      .plb_dac_0_S_PWRDN_pin ( plb_dac_0_S_PWRDN_pin ),
-      .plb_dac_0_S_OpEnI_pin ( plb_dac_0_S_OpEnI_pin ),
-      .plb_dac_0_S_OpEnQ_pin ( plb_dac_0_S_OpEnQ_pin ),
       .plb_dac_1_S_Data_pin ( plb_dac_1_S_Data_pin ),
       .plb_dac_1_S_DCLKIO_pin ( plb_dac_1_S_DCLKIO_pin ),
       .plb_dac_1_S_Clkout_pin ( plb_dac_1_S_Clkout_pin ),
@@ -73,7 +64,16 @@ module testbench
       .plb_dac_1_S_Format_pin ( plb_dac_1_S_Format_pin ),
       .plb_dac_1_S_PWRDN_pin ( plb_dac_1_S_PWRDN_pin ),
       .plb_dac_1_S_OpEnI_pin ( plb_dac_1_S_OpEnI_pin ),
-      .plb_dac_1_S_OpEnQ_pin ( plb_dac_1_S_OpEnQ_pin )
+      .plb_dac_1_S_OpEnQ_pin ( plb_dac_1_S_OpEnQ_pin ),
+      .plb_dac_0_S_Data_pin ( plb_dac_0_S_Data_pin ),
+      .plb_dac_0_S_DCLKIO_pin ( plb_dac_0_S_DCLKIO_pin ),
+      .plb_dac_0_S_Clkout_pin ( plb_dac_0_S_Clkout_pin ),
+      .plb_dac_0_S_PinMD_pin ( plb_dac_0_S_PinMD_pin ),
+      .plb_dac_0_S_ClkMD_pin ( plb_dac_0_S_ClkMD_pin ),
+      .plb_dac_0_S_Format_pin ( plb_dac_0_S_Format_pin ),
+      .plb_dac_0_S_PWRDN_pin ( plb_dac_0_S_PWRDN_pin ),
+      .plb_dac_0_S_OpEnQ_pin ( plb_dac_0_S_OpEnQ_pin ),
+      .plb_dac_0_S_OpEnI_pin ( plb_dac_0_S_OpEnI_pin )
     );
 
   // Clock generator for fpga_0_clk_1_sys_clk_pin

@@ -11,6 +11,9 @@
 <msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/debug.vhd" Line 1975: Range is empty (null range)
 </msg>
 
+<msg type="error" file="HDLCompiler" num="1654" delta="unknown" >"F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_0_wrapper.v" Line 119: Instantiating &lt;<arg fmt="%s" index="1">plb_dac_0</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">plb_dac</arg>&gt;
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1171: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
 </msg>
 
@@ -96,6 +99,9 @@
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 2580: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">dopb_buf</arg> is out of bounds
+</msg>
+
+<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
 </msg>
 
 </messages>

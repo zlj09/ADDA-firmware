@@ -2,7 +2,7 @@
 --  Xilinx EDK 14.7 EDK_P.20131013
 --  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --
---  File     microblaze.prj (Sun Aug 27 10:07:55 2017)
+--  File     microblaze.prj (Fri Oct 06 19:53:26 2017)
 --
 vhdl microblaze_v8_50_c "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_types_pkg.vhd"
 vhdl microblaze_v8_50_c "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_types_pkg_body.vhd"
@@ -223,8 +223,10 @@ vhdl proc_sys_reset_v3_00_a "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/p
 vhdl proc_sys_reset_v3_00_a "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/proc_sys_reset.vhd"
 vhdl xps_intc_v2_01_a "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/intc_core.vhd"
 vhdl xps_intc_v2_01_a "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/xps_intc.vhd"
-verilog plb_dac_v2_00_a "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v2_00_a/hdl/verilog/user_logic.v" -i "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v2_00_a/hdl/verilog/" -i "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/" -i "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" -i "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/"
-vhdl plb_dac_v2_00_a "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v2_00_a/hdl/vhdl/plb_dac.vhd"
+verilog plb_dac_v3_00_a "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/user_logic.v" -i "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/" -i "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/" -i "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" -i "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/"
+vhdl plb_dac_v3_00_a "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/vhdl/plb_dac.vhd"
+verilog plb_dac_v3_00_a "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/ip_dds.v" -i "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/" -i "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/" -i "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" -i "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/"
+verilog plb_dac_v3_00_a "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/bram_arb.v" -i "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/" -i "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/" -i "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" -i "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/"
 vhdl work "microblaze_microblaze_0_wrapper.vhd"
 vhdl work "microblaze_mb_plb_wrapper.vhd"
 vhdl work "microblaze_ilmb_wrapper.vhd"
@@ -237,8 +239,8 @@ vhdl work "microblaze_clock_generator_0_wrapper.vhd"
 vhdl work "microblaze_mdm_0_wrapper.vhd"
 vhdl work "microblaze_proc_sys_reset_0_wrapper.vhd"
 vhdl work "microblaze_xps_intc_0_wrapper.vhd"
-vhdl work "microblaze_plb_dac_0_wrapper.vhd"
-vhdl work "microblaze_plb_dac_1_wrapper.vhd"
+verilog work "microblaze_plb_dac_0_wrapper.v"
+verilog work "microblaze_plb_dac_1_wrapper.v"
 verilog work "microblaze.v"
 verilog work "microblaze_tb.v"
 verilog work "G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v" -i "G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/"

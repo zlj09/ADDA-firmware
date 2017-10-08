@@ -221,8 +221,10 @@ Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc
 Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v3_00_a
 Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/intc_core.vhd" into library xps_intc_v2_01_a
 Parsing VHDL file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/hdl/vhdl/xps_intc.vhd" into library xps_intc_v2_01_a
-Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v2_00_a/hdl/verilog/user_logic.v" into library plb_dac_v2_00_a
-Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v2_00_a/hdl/vhdl/plb_dac.vhd" into library plb_dac_v2_00_a
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/user_logic.v" into library plb_dac_v3_00_a
+Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/vhdl/plb_dac.vhd" into library plb_dac_v3_00_a
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/ip_dds.v" into library plb_dac_v3_00_a
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/verilog/bram_arb.v" into library plb_dac_v3_00_a
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_microblaze_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_mb_plb_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_ilmb_wrapper.vhd" into library work
@@ -236,9 +238,10 @@ Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_clock_g
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_mdm_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_proc_sys_reset_0_wrapper.vhd" into library work
 Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_xps_intc_0_wrapper.vhd" into library work
-Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_0_wrapper.vhd" into library work
-Parsing VHDL file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_1_wrapper.vhd" into library work
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_0_wrapper.v" into library work
+Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_1_wrapper.v" into library work
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze.v" into library work
+      Resolving module IOBUF
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_tb.v" into library work
 Analyzing Verilog file "G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v" into library work
 Analyzing Verilog file "F:/Programs/Verilog/FPGA_Group/test_br0101/pn_microblaze_testbench_tb.v" into library work
@@ -246,6 +249,7 @@ Analyzing Verilog file "G:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into libr
 WARNING:HDLCompiler:687 - "G:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
 Starting static elaboration
 WARNING:HDLCompiler:746 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/debug.vhd" Line 1975: Range is empty (null range)
+ERROR:HDLCompiler:1654 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze_plb_dac_0_wrapper.v" Line 119: Instantiating <plb_dac_0> from unknown module <plb_dac>
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1171: Element index 7 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1183: Element index 15 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1198: Element index 7 into mem is out of bounds
@@ -275,289 +279,4 @@ WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERN
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1422: Element index 55 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index 63 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 2580: Element index 7 into dopb_buf is out of bounds
-Completed static elaboration
-Fuse Memory Usage: 261068 KB
-Fuse CPU Usage: 14608 ms
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module ARAMB36_INTERNAL(DOA_REG=0,DOB_R...
-Compiling module RAMB16(INIT_FILE="lmb_bram_combi...
-Compiling module lmb_bram_elaborate
-Compiling module microblaze_lmb_bram_wrapper
-Compiling module user_logic(10,32,5)
-Compiling module IOBUF
-Compiling module microblaze
-Compiling module testbench
-Compiling module glbl
-Compiling package standard
-Compiling package std_logic_1164
-Compiling package vcomponents
-Compiling package numeric_std
-Compiling package microblaze_types
-Compiling package microblaze_isa
-Compiling package mmu_types
-Compiling architecture imp of entity interrupt_mode_converter [\interrupt_mode_converter(false,...]
-Compiling architecture muxcy_l_v of entity MUXCY_L [muxcy_l_default]
-Compiling architecture xorcy_v of entity XORCY [xorcy_default]
-Compiling architecture muxf5_v of entity MUXF5 [muxf5_default]
-Compiling architecture fdr_v of entity FDR [\FDR('0')\]
-Compiling architecture imp of entity PC_Module_gti [\PC_Module_gti(virtex4,true,0,fa...]
-Compiling architecture imp of entity PreFetch_Buffer_gti [\PreFetch_Buffer_gti(true,virtex...]
-Compiling architecture imp of entity carry_and [\carry_and(virtex4)\]
-Compiling architecture imp of entity jump_logic [\jump_logic(virtex4)\]
-Compiling architecture fdre_v of entity FDRE [\FDRE('0')\]
-Compiling architecture imp of entity carry_or [\carry_or(virtex4)\]
-Compiling architecture imp of entity Decode_gti [\Decode_gti(virtex4,true,('0','0...]
-Compiling architecture imp of entity Register_File_gti [\Register_File_gti(virtex4,"yes"...]
-Compiling architecture imp of entity Operand_Select_gti [\Operand_Select_gti(true,virtex4...]
-Compiling package textio
-Compiling package vital_timing
-Compiling package vital_primitives
-Compiling package vpkg
-Compiling architecture lut3_v of entity LUT3 [\LUT3("11110000")(0,7)\]
-Compiling architecture mult_and_v of entity MULT_AND [mult_and_default]
-Compiling architecture lut4_v of entity LUT4 [\LUT4("1010011001111000")(0,15)\]
-Compiling architecture imp of entity ALU_Bit [\ALU_Bit(virtex4,true,false)\]
-Compiling architecture imp of entity ALU_Bit [\ALU_Bit(virtex4,true,true)\]
-Compiling architecture imp of entity ALU [\ALU(0,true,virtex4)\]
-Compiling architecture imp of entity count_leading_zeros [count_leading_zeros_default]
-Compiling architecture imp of entity carry_equal [\carry_equal(virtex4,8)\]
-Compiling architecture imp of entity Shift_Logic_Module_gti [\Shift_Logic_Module_gti(true,tru...]
-Compiling package std_logic_arith
-Compiling package std_logic_signed
-Compiling architecture dsp48_v of entity DSP48 [\DSP48(0,"DIRECT",0,0,0,0,"MULT1...]
-Compiling architecture imp of entity dsp_module [\dsp_module(virtex4,18,18,48,0,0...]
-Compiling architecture dsp48_v of entity DSP48 [\DSP48(0,"DIRECT",0,0,0,0,"MULT1...]
-Compiling architecture imp of entity dsp_module [\dsp_module(virtex4,18,18,48,0,1...]
-Compiling architecture dsp48_v of entity DSP48 [\DSP48(1,"DIRECT",1,0,0,0,"MULT1...]
-Compiling architecture imp of entity dsp_module [\dsp_module(virtex4,18,18,48,1,1...]
-Compiling architecture imp of entity mul_unit [\mul_unit(virtex4,true,false)\]
-Compiling architecture imp of entity Barrel_Shifter_gti [\Barrel_Shifter_gti(virtex4,true...]
-Compiling architecture imp of entity WB_Mux_Bit [\WB_Mux_Bit(virtex4,4,3)\]
-Compiling architecture imp of entity WB_Mux [\WB_Mux(virtex4,false,false,fals...]
-Compiling architecture imp of entity Zero_Detect_gti [\Zero_Detect_gti(virtex4)\]
-Compiling architecture imp of entity Byte_Doublet_Handle_gti [\Byte_Doublet_Handle_gti(virtex4...]
-Compiling architecture imp of entity Data_Flow_Logic [\Data_Flow_Logic(virtex4,0,16)\]
-Compiling architecture msr_reg of entity msr_reg_gti [\msr_reg_gti(virtex4,('0','0','0...]
-Compiling architecture imp of entity exception_registers_gti [\exception_registers_gti(virtex4...]
-Compiling architecture imp of entity Fpu [\Fpu(virtex4,0,0,"yes")(1,3)\]
-Compiling architecture imp of entity PVR [\PVR(0,('0','0','0','1','1','1',...]
-Compiling architecture imp of entity Data_Flow_gti [\Data_Flow_gti(32,virtex4,true,0...]
-Compiling architecture imp of entity read_data_mux [\read_data_mux(true,true,false)\]
-Compiling architecture imp of entity DPLB_Interface [\DPLB_Interface(32,false,false)\]
-Compiling architecture imp of entity instr_mux [\instr_mux(virtex4,true,true,fal...]
-Compiling architecture imp of entity IPLB_Interface [\IPLB_Interface(32)\]
-Compiling architecture srl16e_v of entity SRL16E [\SRL16E("0000000000011011")(15,0...]
-Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000000000...]
-Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000000100...]
-Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"111111111...]
-Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"001111111...]
-Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000000000...]
-Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000010000...]
-Compiling architecture imp of entity MB_SRL16E [\MB_SRL16E("yes",true,"000111100...]
-Compiling architecture srlc16e_v of entity SRLC16E [\SRLC16E("0000000000000000")(0,1...]
-Compiling architecture imp of entity MB_SRLC16E [\MB_SRLC16E("yes","0000000000000...]
-Compiling architecture muxcy_v of entity MUXCY [muxcy_default]
-Compiling architecture imp of entity address_hit [\address_hit(virtex4,true,"yes",...]
-Compiling architecture imp of entity Debug [\Debug(('0','0','0','0','0','0',...]
-Compiling architecture imp of entity MMU [\MMU(virtex4,true,0,0,4,2,false,...]
-Compiling architecture imp of entity MicroBlaze_Core [\MicroBlaze_Core(0,50000000,0,0,...]
-Compiling architecture imp of entity MicroBlaze [\MicroBlaze(0,50000000,0,0,0,0,0...]
-Compiling architecture structure of entity microblaze_microblaze_0_wrapper [microblaze_microblaze_0_wrapper_...]
-Compiling package std_logic_unsigned
-Compiling package proc_common_pkg
-Compiling architecture fds_v of entity FDS [\FDS('1')\]
-Compiling package family_support
-Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(32,2,"virtex4")(1,...]
-Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(4,2,"virtex4")(1,7...]
-Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(3,2,"virtex4")(1,7...]
-Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(16,2,"virtex4")(1,...]
-Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(1,2,"virtex4")(1,7...]
-Compiling architecture imp of entity mux_onehot_f [\mux_onehot_f(2,2,"virtex4")(1,7...]
-Compiling architecture implementation of entity plb_addrpath [\plb_addrpath(2,32,32,"virtex4")...]
-Compiling architecture simulation of entity plb_wr_datapath [\plb_wr_datapath(2,32,"virtex4")...]
-Compiling architecture simulation of entity plb_rd_datapath [\plb_rd_datapath(2,32)\]
-Compiling architecture imp of entity or_gate [\or_gate(5,1,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(5,2,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(5,32,true)\]
-Compiling architecture imp of entity or_gate [\or_gate(5,4,true)\]
-Compiling architecture implementation of entity plb_slave_ors [\plb_slave_ors(2,5,32,"virtex4")...]
-Compiling architecture simulation of entity qual_request [qual_request_default]
-Compiling architecture simulation of entity priority_encoder [\priority_encoder(4)\]
-Compiling architecture qual_priority of entity qual_priority [qual_priority_default]
-Compiling architecture simulation of entity pending_priority [\pending_priority(2)\]
-Compiling architecture simulation of entity pend_request [\pend_request(2)\]
-Compiling architecture implementation of entity plb_arb_encoder [\plb_arb_encoder(2,4,true,"virte...]
-Compiling architecture simulation of entity arb_control_sm [\arb_control_sm(2,true,1,0)\]
-Compiling architecture simulation of entity gen_qual_req [\gen_qual_req(2)\]
-Compiling architecture implementation of entity or_bits [\or_bits(2,2,4)\]
-Compiling architecture implementation of entity or_bits [\or_bits(1,1,4)\]
-Compiling architecture implementation of entity or_bits [\or_bits(1,3,4)\]
-Compiling architecture implementation of entity muxed_signals [\muxed_signals(2,4,1,"virtex4")(...]
-Compiling architecture simulation of entity down_counter [\down_counter(4)\]
-Compiling architecture simulation of entity watchdog_timer [\watchdog_timer(4)\]
-Compiling architecture plb_interrupt of entity plb_interrupt [\plb_interrupt('1')\]
-Compiling architecture implementation of entity plb_arbiter_logic [\plb_arbiter_logic(2,5,1,32,32,0...]
-Compiling architecture simulation of entity plb_v46 [\plb_v46(2,5,1,32,32,0,('1','1',...]
-Compiling architecture structure of entity microblaze_mb_plb_wrapper [microblaze_mb_plb_wrapper_defaul...]
-Compiling architecture imp of entity lmb_v10 [\lmb_v10(1,32,32,1)\]
-Compiling architecture structure of entity microblaze_ilmb_wrapper [microblaze_ilmb_wrapper_default]
-Compiling architecture structure of entity microblaze_dlmb_wrapper [microblaze_dlmb_wrapper_default]
-Compiling package lmb_bram_if_funcs
-Compiling architecture imp of entity pselect_mask [\pselect_mask(32,('0','0','0','0...]
-Compiling architecture imp of entity lmb_mux [\lmb_mux(('0','0','0','0','0','0...]
-Compiling architecture imp of entity lmb_bram_if_cntlr [\lmb_bram_if_cntlr("virtex4",('0...]
-Compiling architecture structure of entity microblaze_dlmb_cntlr_wrapper [microblaze_dlmb_cntlr_wrapper_de...]
-Compiling architecture structure of entity microblaze_ilmb_cntlr_wrapper [microblaze_ilmb_cntlr_wrapper_de...]
-Compiling package ipif_pkg
-Compiling package attributes
-Compiling package std_logic_misc
-Compiling architecture imp of entity baudrate [\baudrate(326)\]
-Compiling architecture behavioral of entity dynshreg_i_f [\dynshreg_i_f(16,1,"0","virtex4"...]
-Compiling architecture imp of entity cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(5,"virtex...]
-Compiling architecture behavioral of entity dynshreg_f [\dynshreg_f(16,8,"virtex4")(1,7)...]
-Compiling architecture imp of entity srl_fifo_rbu_f [\srl_fifo_rbu_f(8,16,"virtex4")(...]
-Compiling architecture imp of entity srl_fifo_f [\srl_fifo_f(8,16,"virtex4")(1,7)...]
-Compiling architecture imp of entity uartlite_rx [\uartlite_rx(8,0,0,"virtex4")(1,...]
-Compiling architecture behavioral of entity dynshreg_i_f [\dynshreg_i_f(16,1,"100000000000...]
-Compiling architecture imp of entity uartlite_tx [\uartlite_tx(8,0,0,"virtex4")(1,...]
-Compiling architecture imp of entity uartlite_core [\uartlite_core(8,50000000,9600,0...]
-Compiling architecture imp of entity pselect_f [\pselect_f(28,32,('1','0','0','0...]
-Compiling architecture imp of entity pselect_f [\pselect_f(2,2,('0','0'),"nofami...]
-Compiling architecture imp of entity pselect_f [\pselect_f(2,2,('0','1'),"nofami...]
-Compiling architecture imp of entity pselect_f [\pselect_f(2,2,('1','0'),"nofami...]
-Compiling architecture imp of entity pselect_f [\pselect_f(2,2,('1','1'),"nofami...]
-Compiling architecture implementation of entity or_muxcy [\or_muxcy(1)\]
-Compiling architecture imp of entity or_gate128 [\or_gate128(1,1,false)\]
-Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
-Compiling architecture imp of entity counter_f [\counter_f(8,"nofamily")(1,8)\]
-Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
-Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
-Compiling architecture imp of entity xps_uartlite [\xps_uartlite("virtex4",50000000...]
-Compiling architecture structure of entity microblaze_rs232_wrapper [microblaze_rs232_wrapper_default]
-Compiling architecture dcm_adv_clock_divide_by_2_v of entity dcm_adv_clock_divide_by_2 [dcm_adv_clock_divide_by_2_defaul...]
-Compiling architecture dcm_adv_maximum_period_check_v of entity dcm_adv_maximum_period_check [\dcm_adv_maximum_period_check(" ...]
-Compiling architecture dcm_adv_maximum_period_check_v of entity dcm_adv_maximum_period_check [\dcm_adv_maximum_period_check(" ...]
-Compiling architecture dcm_adv_clock_lost_v of entity dcm_adv_clock_lost [dcm_adv_clock_lost_default]
-Compiling architecture dcm_adv_v of entity DCM_ADV [\DCM_ADV(true," ",true,false,2.0...]
-Compiling architecture struct of entity dcm_module [\dcm_module("LOW","LOW",true,fal...]
-Compiling architecture bufg_v of entity BUFG [bufg_default]
-Compiling architecture structure of entity clock_generator [\clock_generator("virtex4","4vsx...]
-Compiling architecture structure of entity microblaze_clock_generator_0_wrapper [microblaze_clock_generator_0_wra...]
-Compiling architecture bscan_virtex4_v of entity BSCAN_VIRTEX4 [\BSCAN_VIRTEX4(2)\]
-Compiling architecture imp of entity pselect [\pselect(16,32,('1','0','0','0',...]
-Compiling architecture fdc_1_v of entity FDC_1 [\FDC_1('0')\]
-Compiling architecture fdre_1_v of entity FDRE_1 [\FDRE_1('0')\]
-Compiling architecture fdrse_v of entity FDRSE [\FDRSE('0')\]
-Compiling architecture imp of entity SRL_FIFO [\SRL_FIFO(8,16)\]
-Compiling architecture imp of entity JTAG_CONTROL [\JTAG_CONTROL(1,0,1,8,1)\]
-Compiling architecture imp of entity MDM_Core [\MDM_Core(0,('1','0','0','0','0'...]
-Compiling architecture imp of entity MDM [\MDM("virtex4",2,0,0,1,('1','0',...]
-Compiling architecture structure of entity microblaze_mdm_0_wrapper [microblaze_mdm_0_wrapper_default]
-Compiling architecture imp of entity upcnt_n [\upcnt_n(4)\]
-Compiling architecture srl16_v of entity SRL16 [\SRL16("1111111111111111")(0,15)...]
-Compiling architecture imp of entity lpf [\lpf(4,4,'0','1')\]
-Compiling architecture imp of entity upcnt_n [\upcnt_n(6)\]
-Compiling architecture imp of entity sequence [sequence_default]
-Compiling architecture imp of entity proc_sys_reset [\proc_sys_reset(4,4,'0','1',1,1,...]
-Compiling architecture structure of entity microblaze_proc_sys_reset_0_wrapper [microblaze_proc_sys_reset_0_wrap...]
-Compiling architecture imp of entity intc_core [\intc_core(32,1,('1','1','1','1'...]
-Compiling architecture imp of entity pselect_f [\pselect_f(27,32,('1','0','0','0...]
-Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('0','0','0'),"no...]
-Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('0','0','1'),"no...]
-Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('0','1','0'),"no...]
-Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('0','1','1'),"no...]
-Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('1','0','0'),"no...]
-Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('1','0','1'),"no...]
-Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('1','1','0'),"no...]
-Compiling architecture imp of entity pselect_f [\pselect_f(3,3,('1','1','1'),"no...]
-Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
-Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
-Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
-Compiling architecture imp of entity xps_intc [\xps_intc("virtex4",('1','0','0'...]
-Compiling architecture structure of entity microblaze_xps_intc_0_wrapper [microblaze_xps_intc_0_wrapper_de...]
-Compiling package vl_types
-Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','1','0','0...]
-Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','1','0','0...]
-Compiling architecture implementation of entity or_muxcy [\or_muxcy(2)\]
-Compiling architecture imp of entity or_gate128 [\or_gate128(2,1,false)\]
-Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
-Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
-Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
-Compiling architecture implementation of entity soft_reset [\soft_reset(32,4)\]
-Compiling architecture imp of entity plb_dac [\plb_dac(10,('1','1','0','0','1'...]
-Compiling architecture structure of entity microblaze_plb_dac_0_wrapper [microblaze_plb_dac_0_wrapper_def...]
-Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','1','0','0...]
-Compiling architecture imp of entity pselect_f [\pselect_f(24,32,('1','1','0','0...]
-Compiling architecture imp of entity plb_address_decoder [\plb_address_decoder(32,(('0','0...]
-Compiling architecture implementation of entity plb_slave_attachment [\plb_slave_attachment((('0','0',...]
-Compiling architecture implementation of entity plbv46_slave_single [\plbv46_slave_single((('0','0','...]
-Compiling architecture imp of entity plb_dac [\plb_dac(10,('1','1','0','0','1'...]
-Compiling architecture structure of entity microblaze_plb_dac_1_wrapper [microblaze_plb_dac_1_wrapper_def...]
-Time Resolution for simulation is 100fs.
-Waiting for 215 sub-compilation(s) to finish...
-Compiled 425 VHDL Units
-Compiled 71 Verilog Units
-Built simulation executable F:/Programs/Verilog/FPGA_Group/test_br0101/testbench_isim_beh.exe
-Fuse Memory Usage: 340756 KB
-Fuse CPU Usage: 38468 ms
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

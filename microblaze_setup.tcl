@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     microblaze_setup.tcl (Sun Aug 27 10:07:55 2017)
+#  File     microblaze_setup.tcl (Fri Oct 06 19:53:26 2017)
 #
 #  ISE Simulator Setup Script File
 #
