@@ -7,7 +7,7 @@
 // \   \   \/     Version: P.20131013
 //  \   \         Application: netgen
 //  /   /         Filename: ip_dds.v
-// /___/   /\     Timestamp: Thu Oct 05 11:47:55 2017
+// /___/   /\     Timestamp: Fri Oct 27 09:29:18 2017
 // \   \  /  \ 
 //  \___\/\___\
 //             
@@ -34,10 +34,11 @@
 `timescale 1 ns/1 ps
 
 module ip_dds (
-  clk, we, phase_out, cosine, sine, data
+  clk, we, sclr, phase_out, cosine, sine, data
 )/* synthesis syn_black_box syn_noprune=1 */;
   input clk;
   input we;
+  input sclr;
   output [15 : 0] phase_out;
   output [9 : 0] cosine;
   output [9 : 0] sine;
@@ -303,123 +304,140 @@ module ip_dds (
   VCC   blk00000002 (
     .P(sig00000002)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000003 (
     .C(clk),
     .D(sig00000003),
+    .R(sclr),
     .Q(sig00000023)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000004 (
     .C(clk),
     .D(sig0000000a),
+    .R(sclr),
     .Q(sig0000002b)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000005 (
     .C(clk),
     .D(sig0000000b),
+    .R(sclr),
     .Q(sig0000002c)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000006 (
     .C(clk),
     .D(sig0000000c),
+    .R(sclr),
     .Q(sig0000002d)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000007 (
     .C(clk),
     .D(sig0000000d),
+    .R(sclr),
     .Q(sig0000002e)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000008 (
     .C(clk),
     .D(sig0000000e),
+    .R(sclr),
     .Q(sig0000002f)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000009 (
     .C(clk),
     .D(sig0000000f),
+    .R(sclr),
     .Q(sig00000030)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk0000000a (
     .C(clk),
     .D(sig00000010),
+    .R(sclr),
     .Q(sig00000031)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk0000000b (
     .C(clk),
     .D(sig00000011),
+    .R(sclr),
     .Q(sig00000032)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk0000000c (
     .C(clk),
     .D(sig00000012),
+    .R(sclr),
     .Q(sig00000033)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk0000000d (
     .C(clk),
     .D(sig00000004),
+    .R(sclr),
     .Q(sig00000024)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk0000000e (
     .C(clk),
     .D(sig00000005),
+    .R(sclr),
     .Q(sig00000025)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk0000000f (
     .C(clk),
     .D(sig00000006),
+    .R(sclr),
     .Q(sig00000026)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000010 (
     .C(clk),
     .D(sig00000007),
+    .R(sclr),
     .Q(sig00000027)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000011 (
     .C(clk),
     .D(sig00000008),
+    .R(sclr),
     .Q(sig00000028)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000012 (
     .C(clk),
     .D(sig00000009),
+    .R(sclr),
     .Q(sig00000029)
   );
-  FD #(
+  FDR #(
     .INIT ( 1'b0 ))
   blk00000013 (
     .C(clk),
     .D(sig0000003a),
+    .R(sclr),
     .Q(sig0000002a)
   );
   FDE #(

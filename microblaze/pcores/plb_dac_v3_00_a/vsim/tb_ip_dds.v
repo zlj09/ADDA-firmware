@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   10:53:19 10/06/2017
+// Create Date:   09:31:41 10/27/2017
 // Design Name:   ip_dds
 // Module Name:   F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/vsim/tb_ip_dds.v
 // Project Name:  plb_dac
@@ -27,6 +27,7 @@ module tb_ip_dds;
 	// Inputs
 	reg clk;
 	reg we;
+	reg sclr;
 	reg [15:0] data;
 
 	// Outputs
@@ -38,6 +39,7 @@ module tb_ip_dds;
 	ip_dds uut (
 		.clk(clk), 
 		.we(we), 
+		.sclr(sclr), 
 		.phase_out(phase_out), 
 		.cosine(cosine), 
 		.sine(sine), 
@@ -49,15 +51,24 @@ module tb_ip_dds;
 		clk = 0;
 		we = 0;
 		data = 0;
+		sclr = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
 		we = 1;
-		data = 16'h1;
+		//data = 16'h028f;
+		data = 16'h020a;
         
 		// Add stimulus here
 
 	end
+
+	always @(phase_out)
+		if (phase_out > 16'hffff - 3 * data + 1 && phase_out < 16'hffff - 2 * data + 1)
+			sclr <= 1'b1;
+		else begin
+			sclr <= 1'b0;
+		end
 
 	always @(clk) #5 clk <= ~clk;
       

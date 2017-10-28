@@ -103,7 +103,7 @@ module tb_pdv3ul;
 
 		#200;
 		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h01f4_4401;
+		Bus2IP_Data = 32'h028f_4401;
 
 		/*Bus2IP_WrCE = 7'b1000000;
 		Bus2IP_Data = 32'h0000_0001;

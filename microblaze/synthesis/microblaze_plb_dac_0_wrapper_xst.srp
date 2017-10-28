@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -612,8 +612,10 @@ Analyzing module <user_logic> in library <plb_dac_v3_00_a>.
 	PHASE_WIDTH = 32'sb00000000000000000000000000010000
 INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:2211 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/ip_dds.v" line 433: Instantiating black box module <ip_dds>.
-WARNING:Xst:2211 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/bram_arb.v" line 450: Instantiating black box module <bram_arb>.
+WARNING:Xst:905 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/user_logic.v" line 435: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Bus2IP_Reset>, <step_ctl>
+WARNING:Xst:2211 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/ip_dds.v" line 443: Instantiating black box module <ip_dds>.
+WARNING:Xst:2211 - "F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\plb_dac_v3_00_a/hdl/verilog/bram_arb.v" line 461: Instantiating black box module <bram_arb>.
 Module <user_logic> is correct for synthesis.
  
     Set user-defined property "SYN_BLACK_BOX =  1" for instance <ip_dds_q> in unit <user_logic>.
@@ -734,15 +736,22 @@ WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnecte
     | Encoding           | automatic                                      |
     | Implementation     | automatic                                      |
     -----------------------------------------------------------------------
-    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 392.
+    Found 20-bit adder for signal <$add0000> created at line 438.
+    Found 20-bit adder for signal <$add0001> created at line 438.
+    Found 16x2-bit multiplier for signal <$mult0000> created at line 438.
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 393.
+    Found 20-bit adder for signal <add0000$sub0000> created at line 438.
+    Found 20-bit adder for signal <add0001$sub0000> created at line 438.
     Found 5-bit adder carry out for signal <COND_304$addsub0000>.
     Found 1-bit register for signal <cs_reg>.
     Found 1-bit register for signal <dac_clk_reg>.
     Found 10-bit register for signal <dac_data_reg>.
     Found 1-bit register for signal <dac_en>.
+    Found 21-bit comparator greater for signal <dds_sclr$cmp_gt0000> created at line 438.
+    Found 21-bit comparator less for signal <dds_sclr$cmp_lt0000> created at line 438.
     Found 1-bit register for signal <Mtridata_sdio_reg_o>.
     Found 1-bit register for signal <Mtrien_sdio_reg_o>.
-    Found 16-bit comparator less for signal <rect_data$cmp_lt0000> created at line 470.
+    Found 16-bit comparator less for signal <rect_data$cmp_lt0000> created at line 481.
     Found 1-bit register for signal <reset_reg>.
     Found 1-bit register for signal <sclk_reg>.
     Found 1-bit tristate buffer for signal <sdio_reg_o>.
@@ -751,8 +760,8 @@ WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnecte
     Found 32-bit register for signal <slv_reg1>.
     Found 32-bit register for signal <slv_reg2>.
     Found 32-bit register for signal <slv_reg3>.
-    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 258.
-    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 258.
+    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 259.
+    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 259.
     Found 32-bit register for signal <slv_reg4>.
     Found 32-bit register for signal <slv_reg5>.
     Found 32-bit register for signal <slv_reg6>.
@@ -763,8 +772,9 @@ WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnecte
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred 248 D-type flip-flop(s).
-	inferred   3 Adder/Subtractor(s).
-	inferred   3 Comparator(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   5 Comparator(s).
 	inferred   1 Multiplexer(s).
 	inferred   1 Tristate(s).
 Unit <user_logic> synthesized.
@@ -893,8 +903,11 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
+# Multipliers                                          : 1
+ 16x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 8
  16-bit adder                                          : 1
+ 20-bit adder                                          : 4
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
  9-bit subtractor                                      : 1
@@ -906,8 +919,10 @@ Macro Statistics
  4-bit register                                        : 3
  5-bit register                                        : 2
  9-bit register                                        : 1
-# Comparators                                          : 3
+# Comparators                                          : 5
  16-bit comparator less                                : 1
+ 21-bit comparator greater                             : 1
+ 21-bit comparator less                                : 1
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
 # Multiplexers                                         : 1
@@ -940,15 +955,20 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Adders/Subtractors                                   : 4
+# Multipliers                                          : 1
+ 16x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 6
  16-bit adder                                          : 1
+ 20-bit adder carry in                                 : 2
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
  9-bit subtractor                                      : 1
 # Registers                                            : 457
  Flip-Flops                                            : 457
-# Comparators                                          : 3
+# Comparators                                          : 5
  16-bit comparator less                                : 1
+ 21-bit comparator greater                             : 1
+ 21-bit comparator less                                : 1
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
 # Multiplexers                                         : 1
@@ -1052,25 +1072,26 @@ Design Statistics
 # IOs                              : 221
 
 Cell Usage :
-# BELS                             : 591
+# BELS                             : 833
 #      GND                         : 1
-#      INV                         : 3
-#      LUT1                        : 15
-#      LUT2                        : 92
+#      INV                         : 35
+#      LUT1                        : 18
+#      LUT2                        : 111
 #      LUT2_D                      : 2
-#      LUT3                        : 62
+#      LUT2_L                      : 1
+#      LUT3                        : 56
 #      LUT3_D                      : 5
-#      LUT3_L                      : 2
-#      LUT4                        : 294
-#      LUT4_D                      : 9
-#      LUT4_L                      : 46
-#      MUXCY                       : 15
-#      MUXF5                       : 21
+#      LUT3_L                      : 16
+#      LUT4                        : 336
+#      LUT4_D                      : 7
+#      LUT4_L                      : 37
+#      MUXCY                       : 100
+#      MUXF5                       : 30
 #      MUXF6                       : 4
 #      MUXF7                       : 2
 #      MUXF8                       : 1
 #      VCC                         : 1
-#      XORCY                       : 16
+#      XORCY                       : 70
 # FlipFlops/Latches                : 417
 #      FD                          : 2
 #      FDE                         : 17
@@ -1092,9 +1113,9 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                      336  out of  24576     1%  
+ Number of Slices:                      406  out of  24576     1%  
  Number of Slice Flip Flops:            417  out of  49152     0%  
- Number of 4 input LUTs:                530  out of  49152     1%  
+ Number of 4 input LUTs:                624  out of  49152     1%  
  Number of IOs:                         221
  Number of bonded IOBs:                   0  out of    640     0%  
  Number of TBUFs:                         1  out of      0        (*) 
@@ -1134,10 +1155,10 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 8.257ns (Maximum Frequency: 121.115MHz)
-   Minimum input arrival time before clock: 3.315ns
-   Maximum output required time after clock: 2.444ns
-   Maximum combinational path delay: 0.377ns
+   Minimum period: 8.111ns (Maximum Frequency: 123.286MHz)
+   Minimum input arrival time before clock: 3.427ns
+   Maximum output required time after clock: 7.771ns
+   Maximum combinational path delay: 2.901ns
 
 Timing Detail:
 --------------
@@ -1145,10 +1166,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 8.257ns (frequency: 121.115MHz)
-  Total number of paths / destination ports: 7495 / 921
+  Clock period: 8.111ns (frequency: 123.286MHz)
+  Total number of paths / destination ports: 7637 / 921
 -------------------------------------------------------------------------
-Delay:               4.128ns (Levels of Logic = 1)
+Delay:               4.056ns (Levels of Logic = 1)
   Source:            plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (FF)
   Destination:       plb_dac_0/USER_LOGIC_I/dac_data_reg_9 (FF)
   Source Clock:      SPLB_Clk rising
@@ -1158,44 +1179,43 @@ Delay:               4.128ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRSE:C->Q           20   0.360   0.809  plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (plb_dac_0/SOFT_RESET_I/flop_q_chain<4>)
-     LUT2:I1->O          230   0.195   1.702  plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1_1 (plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1)
+     FDRSE:C->Q           13   0.360   0.690  plb_dac_0/SOFT_RESET_I/RESET_FLOPS[3].RST_FLOPS (plb_dac_0/SOFT_RESET_I/flop_q_chain<4>)
+     LUT2:I1->O          242   0.195   1.749  plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1 (plb_dac_0/rst_Bus2IP_Reset)
      FDR_1:R                   1.062          plb_dac_0/USER_LOGIC_I/dac_data_reg_9
     ----------------------------------------
-    Total                      4.128ns (1.617ns logic, 2.511ns route)
-                                       (39.2% logic, 60.8% route)
+    Total                      4.056ns (1.617ns logic, 2.439ns route)
+                                       (39.9% logic, 60.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 553 / 507
+  Total number of paths / destination ports: 555 / 507
 -------------------------------------------------------------------------
-Offset:              3.315ns (Levels of Logic = 3)
+Offset:              3.427ns (Levels of Logic = 2)
   Source:            SPLB_Rst (PAD)
-  Destination:       plb_dac_0/USER_LOGIC_I/slv_reg3_16 (FF)
+  Destination:       plb_dac_0/USER_LOGIC_I/Mtrien_sdio_reg_o (FF)
   Destination Clock: SPLB_Clk rising
 
-  Data Path: SPLB_Rst to plb_dac_0/USER_LOGIC_I/slv_reg3_16
+  Data Path: SPLB_Rst to plb_dac_0/USER_LOGIC_I/Mtrien_sdio_reg_o
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT4:I0->O            2   0.195   0.705  plb_dac_0/USER_LOGIC_I/slv_reg3_16_not000121 (N13)
-     LUT3_D:I0->O          7   0.195   0.744  plb_dac_0/USER_LOGIC_I/slv_reg3_24_not000111 (N15)
-     LUT3:I0->O            1   0.195   0.360  plb_dac_0/USER_LOGIC_I/slv_reg3_28_not00011 (plb_dac_0/USER_LOGIC_I/slv_reg3_28_not0001)
-     FDE:CE                    0.540          plb_dac_0/USER_LOGIC_I/slv_reg3_28
+     LUT2:I0->O          242   0.195   1.912  plb_dac_0/SOFT_RESET_I/Reset2IP_Reset1 (plb_dac_0/rst_Bus2IP_Reset)
+     LUT4:I3->O            1   0.195   0.360  plb_dac_0/USER_LOGIC_I/Mtrien_sdio_reg_o_not0001 (plb_dac_0/USER_LOGIC_I/Mtrien_sdio_reg_o_not0001)
+     FDE:CE                    0.540          plb_dac_0/USER_LOGIC_I/Mtrien_sdio_reg_o
     ----------------------------------------
-    Total                      3.315ns (1.506ns logic, 1.809ns route)
-                                       (45.4% logic, 54.6% route)
+    Total                      3.427ns (1.155ns logic, 2.272ns route)
+                                       (33.7% logic, 66.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 222 / 89
+  Total number of paths / destination ports: 32249 / 90
 -------------------------------------------------------------------------
-Offset:              2.444ns (Levels of Logic = 17)
+Offset:              7.771ns (Levels of Logic = 25)
   Source:            plb_dac_0/USER_LOGIC_I/slv_reg0_15 (FF)
-  Destination:       plb_dac_0/USER_LOGIC_I/ip_dds_q:data<15> (PAD)
+  Destination:       plb_dac_0/USER_LOGIC_I/ip_dds_q:sclr (PAD)
   Source Clock:      SPLB_Clk rising
 
-  Data Path: plb_dac_0/USER_LOGIC_I/slv_reg0_15 to plb_dac_0/USER_LOGIC_I/ip_dds_q:data<15>
+  Data Path: plb_dac_0/USER_LOGIC_I/slv_reg0_15 to plb_dac_0/USER_LOGIC_I/ip_dds_q:sclr
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1215,44 +1235,71 @@ Offset:              2.444ns (Levels of Logic = 17)
      MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Madd_step_ctl_cy<11> (plb_dac_0/USER_LOGIC_I/Madd_step_ctl_cy<11>)
      MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Madd_step_ctl_cy<12> (plb_dac_0/USER_LOGIC_I/Madd_step_ctl_cy<12>)
      MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Madd_step_ctl_cy<13> (plb_dac_0/USER_LOGIC_I/Madd_step_ctl_cy<13>)
-     MUXCY:CI->O           0   0.044   0.000  plb_dac_0/USER_LOGIC_I/Madd_step_ctl_cy<14> (plb_dac_0/USER_LOGIC_I/Madd_step_ctl_cy<14>)
-     XORCY:CI->O           0   0.360   0.000  plb_dac_0/USER_LOGIC_I/Madd_step_ctl_xor<15> (plb_dac_0/USER_LOGIC_I/step_ctl<15>)
-    ip_dds:data<15>            0.000          plb_dac_0/USER_LOGIC_I/ip_dds_q
+     XORCY:CI->O           3   0.360   0.600  plb_dac_0/USER_LOGIC_I/Madd_step_ctl_xor<14> (plb_dac_0/USER_LOGIC_I/step_ctl<14>)
+     LUT2:I0->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/Mmult__mult0000_Madd_lut<14> (plb_dac_0/USER_LOGIC_I/Mmult__mult0000_Madd_lut<14>)
+     MUXCY:S->O            1   0.366   0.000  plb_dac_0/USER_LOGIC_I/Mmult__mult0000_Madd_cy<14> (plb_dac_0/USER_LOGIC_I/Mmult__mult0000_Madd_cy<14>)
+     XORCY:CI->O           1   0.360   0.360  plb_dac_0/USER_LOGIC_I/Mmult__mult0000_Madd_xor<15> (plb_dac_0/USER_LOGIC_I/_mult0000<15>)
+     INV:I->O              1   0.358   0.000  plb_dac_0/USER_LOGIC_I/add0000_not0000<15>1_INV_0 (plb_dac_0/USER_LOGIC_I/add0000_not0000<15>)
+     MUXCY:S->O            1   0.366   0.000  plb_dac_0/USER_LOGIC_I/Madd__add0000_Madd_cy<15> (plb_dac_0/USER_LOGIC_I/Madd__add0000_Madd_cy<15>)
+     XORCY:CI->O           1   0.360   0.741  plb_dac_0/USER_LOGIC_I/Madd__add0000_Madd_xor<16> (plb_dac_0/USER_LOGIC_I/_add0000<16>)
+     LUT4:I0->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_lut<16> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_lut<16>)
+     MUXCY:S->O            1   0.691   0.585  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<16> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<16>)
+     LUT4:I2->O            0   0.195   0.000  plb_dac_0/USER_LOGIC_I/dds_sclr1 (plb_dac_0/USER_LOGIC_I/dds_sclr)
+    ip_dds:sclr                0.000          plb_dac_0/USER_LOGIC_I/ip_dds_q
     ----------------------------------------
-    Total                      2.444ns (2.067ns logic, 0.377ns route)
-                                       (84.6% logic, 15.4% route)
+    Total                      7.771ns (5.108ns logic, 2.663ns route)
+                                       (65.7% logic, 34.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 18 / 18
+  Total number of paths / destination ports: 65 / 19
 -------------------------------------------------------------------------
-Delay:               0.377ns (Levels of Logic = 0)
-  Source:            plb_dac_0/USER_LOGIC_I/ip_dds_q:phase_out<15> (PAD)
-  Destination:       plb_dac_0/USER_LOGIC_I/bram_arb_1:addra<15> (PAD)
+Delay:               2.901ns (Levels of Logic = 19)
+  Source:            plb_dac_0/USER_LOGIC_I/ip_dds_q:phase_out<0> (PAD)
+  Destination:       plb_dac_0/USER_LOGIC_I/ip_dds_q:sclr (PAD)
 
-  Data Path: plb_dac_0/USER_LOGIC_I/ip_dds_q:phase_out<15> to plb_dac_0/USER_LOGIC_I/bram_arb_1:addra<15>
+  Data Path: plb_dac_0/USER_LOGIC_I/ip_dds_q:phase_out<0> to plb_dac_0/USER_LOGIC_I/ip_dds_q:sclr
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    ip_dds:phase_out<15>    2   0.000   0.377  plb_dac_0/USER_LOGIC_I/ip_dds_q (plb_dac_0/USER_LOGIC_I/phase_out<15>)
-    bram_arb:addra<15>         0.000          plb_dac_0/USER_LOGIC_I/bram_arb_1
+    ip_dds:phase_out<0>    1   0.000   0.523  plb_dac_0/USER_LOGIC_I/ip_dds_q (plb_dac_0/USER_LOGIC_I/phase_out<0>)
+     LUT2:I1->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_lut<0> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.366   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<0> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<1> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<2> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<3> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<4> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<5> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<6> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<7> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<8> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<9> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<10> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<11> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<12> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<13> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<14> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<14>)
+     MUXCY:CI->O           1   0.044   0.000  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<15> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<15>)
+     MUXCY:CI->O           1   0.369   0.585  plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<16> (plb_dac_0/USER_LOGIC_I/Mcompar_dds_sclr_cmp_gt0000_cy<16>)
+     LUT4:I2->O            0   0.195   0.000  plb_dac_0/USER_LOGIC_I/dds_sclr1 (plb_dac_0/USER_LOGIC_I/dds_sclr)
+    ip_dds:sclr                0.000          plb_dac_0/USER_LOGIC_I/ip_dds_q
     ----------------------------------------
-    Total                      0.377ns (0.000ns logic, 0.377ns route)
-                                       (0.0% logic, 100.0% route)
+    Total                      2.901ns (1.793ns logic, 1.108ns route)
+                                       (61.8% logic, 38.2% route)
 
 =========================================================================
 WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to plb_dac_0/USER_LOGIC_I/ip_dds_q.
 WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to plb_dac_0/USER_LOGIC_I/ip_dds_q.
 
 
-Total REAL time to Xst completion: 38.00 secs
-Total CPU time to Xst completion: 37.78 secs
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 27.49 secs
  
 --> 
 
-Total memory usage is 562684 kilobytes
+Total memory usage is 530388 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  113 (   0 filtered)
+Number of warnings :  114 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

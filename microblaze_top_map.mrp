@@ -10,7 +10,7 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Fri Oct 06 20:05:37 2017
+Mapped Date    : Sat Oct 28 20:12:12 2017
 
 Design Summary
 --------------
@@ -18,15 +18,15 @@ Number of errors:      0
 Number of warnings:    4
 Logic Utilization:
   Number of Slice Flip Flops:         2,477 out of  49,152    5%
-  Number of 4 input LUTs:             4,350 out of  49,152    8%
+  Number of 4 input LUTs:             4,540 out of  49,152    9%
 Logic Distribution:
-  Number of occupied Slices:          3,109 out of  24,576   12%
-    Number of Slices containing only related logic:   3,109 out of   3,109 100%
-    Number of Slices containing unrelated logic:          0 out of   3,109   0%
+  Number of occupied Slices:          3,202 out of  24,576   13%
+    Number of Slices containing only related logic:   3,202 out of   3,202 100%
+    Number of Slices containing unrelated logic:          0 out of   3,202   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,503 out of  49,152    9%
-    Number used as logic:             3,835
-    Number used as a route-thru:        153
+  Total Number of 4 input LUTs:       4,699 out of  49,152    9%
+    Number used as logic:             4,025
+    Number used as a route-thru:        159
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:     131
@@ -42,11 +42,11 @@ Logic Distribution:
   Number of DCM_ADVs:                     1 out of       8   12%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                3.75
+Average Fanout of Non-Clock Nets:                3.71
 
-Peak Memory Usage:  508 MB
-Total REAL time to MAP completion:  17 secs 
-Total CPU time to MAP completion:   12 secs 
+Peak Memory Usage:  511 MB
+Total REAL time to MAP completion:  27 secs 
+Total CPU time to MAP completion:   14 secs 
 
 NOTES:
 
@@ -483,6 +483,12 @@ rerr_i_1_or0000" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
 rerr_i_1_or00001" (ROM) removed.
+        The signal
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N5"
+is loadless and has been removed.
+         Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
+rerr_i_0_or000021" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<5>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_1"
@@ -518,6 +524,12 @@ rerr_i_1_or0000" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
 rerr_i_1_or00001" (ROM) removed.
+      The signal
+"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N5"
+is loadless and has been removed.
+       Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
+rerr_i_0_or000021" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRdErr<0>" is loadless and has been removed.
  Loadless block
 "microblaze_i/mb_plb/mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/MRDERR_OR/Y_0_or0000_f5"
@@ -625,12 +637,6 @@ rerr_i_0_or0000" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
 rerr_i_0_or00001" (ROM) removed.
-        The signal
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N5"
-is loadless and has been removed.
-         Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or000021" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<4>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0"
@@ -666,12 +672,6 @@ rerr_i_0_or0000" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
 rerr_i_0_or00001" (ROM) removed.
-      The signal
-"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N5"
-is loadless and has been removed.
-       Loadless block
-"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or000021" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRearbitrate<0>" is loadless and has been
 removed.
  Loadless block
@@ -4935,7 +4935,7 @@ loadless and has been removed.
 The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig0000002a"
 is loadless and has been removed.
  Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000013" (FF)
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000013" (SFF)
 removed.
   The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig0000003a"
 is loadless and has been removed.
@@ -4965,7 +4965,7 @@ loadless and has been removed.
 The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig0000002a"
 is loadless and has been removed.
  Loadless block
-"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000013" (FF)
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000013" (SFF)
 removed.
   The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig0000003a"
 is loadless and has been removed.

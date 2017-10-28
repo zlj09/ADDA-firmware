@@ -67,6 +67,7 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 ip_dds your_instance_name (
   .clk(clk), // input clk
+  .sclr(sclr), // input sclr
   .we(we), // input we
   .data(data), // input [15 : 0] data
   .cosine(cosine), // output [9 : 0] cosine

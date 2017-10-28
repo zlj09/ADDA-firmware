@@ -147,6 +147,7 @@ output                                    IP2Bus_Error;
   reg                                       spi_state;
   reg                                       spi_start_flag;
   reg        [4 : 0]                        spi_cnt;
+  reg                                       dds_sclr;
   wire       [3 : 0]                        i_waveform;
   wire       [3 : 0]                        q_waveform;
   wire       [9 : 0]                        rect_data;
@@ -430,13 +431,23 @@ output                                    IP2Bus_Error;
     end
 
 
+  always @(phase_out)
+    if (Bus2IP_Reset == 1)
+      dds_sclr <= 1'b0;
+    else
+      if (phase_out > 16'hffff - 3 * step_ctl + 1 && phase_out < 16'hffff - 2 * step_ctl + 1)
+        dds_sclr <= 1'b1;
+      else
+        dds_sclr <= 1'b0;
+
   ip_dds ip_dds_q (
     .clk(Bus2IP_Clk), 
     .we(1'b1), 
     .phase_out(phase_out), 
     .cosine(), 
     .sine(sine_data), 
-    .data(step_ctl)
+    .data(step_ctl),
+    .sclr(dds_sclr)
   );
 
   /*bram_arb bram_arb_1 (

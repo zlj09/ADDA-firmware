@@ -1,0 +1,565 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: user_logic.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "user_logic.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "user_logic"
+Output Format                      : NGC
+Target Device                      : xc4vsx55-10-ff1148
+
+---- Source Options
+Top Module Name                    : user_logic
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/ip_dds.v" in library work
+Compiling verilog file "ipcore_dir/bram_arb.v" in library work
+Module <ip_dds> compiled
+Compiling verilog file "../../hdl/verilog/user_logic.v" in library work
+Module <bram_arb> compiled
+Module <user_logic> compiled
+No errors in compilation
+Analysis of file <"user_logic.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <user_logic> in library <work> with parameters.
+	C_NUM_MEM = "00000000000000000000000000000001"
+	C_NUM_REG = "00000000000000000000000000000111"
+	C_SLV_AWIDTH = "00000000000000000000000000100000"
+	C_SLV_DWIDTH = "00000000000000000000000000100000"
+	DAC_WIDTH = "00000000000000000000000000001010"
+	PHASE_WIDTH = "00000000000000000000000000010000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <user_logic>.
+	C_NUM_MEM = 32'sb00000000000000000000000000000001
+	C_NUM_REG = 32'sb00000000000000000000000000000111
+	C_SLV_AWIDTH = 32'sb00000000000000000000000000100000
+	C_SLV_DWIDTH = 32'sb00000000000000000000000000100000
+	DAC_WIDTH = 32'sb00000000000000000000000000001010
+	PHASE_WIDTH = 32'sb00000000000000000000000000010000
+INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:905 - "../../hdl/verilog/user_logic.v" line 435: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Bus2IP_Reset>, <step_ctl>
+WARNING:Xst:2211 - "ipcore_dir/ip_dds.v" line 443: Instantiating black box module <ip_dds>.
+WARNING:Xst:2211 - "ipcore_dir/bram_arb.v" line 461: Instantiating black box module <bram_arb>.
+Module <user_logic> is correct for synthesis.
+ 
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <ip_dds_q> in unit <user_logic>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <ip_dds_q> in unit <user_logic>.
+    Set property "SYN_NOPRUNE = 1" for unit <ip_dds>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <byte_index> in unit <user_logic> has a constant value of 100 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "../../hdl/verilog/user_logic.v".
+WARNING:Xst:647 - Input <Bus2IP_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_Addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_CS<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <unsigned_sine_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <bram_wea> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 7                                              |
+    | Clock              | Bus2IP_Clk                (rising_edge)        |
+    | Reset              | Bus2IP_Reset              (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit adder for signal <$add0000> created at line 438.
+    Found 20-bit adder for signal <$add0001> created at line 438.
+    Found 16x2-bit multiplier for signal <$mult0000> created at line 438.
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 393.
+    Found 20-bit adder for signal <add0000$sub0000> created at line 438.
+    Found 20-bit adder for signal <add0001$sub0000> created at line 438.
+    Found 5-bit adder carry out for signal <COND_4$addsub0000>.
+    Found 1-bit register for signal <cs_reg>.
+    Found 1-bit register for signal <dac_clk_reg>.
+    Found 10-bit register for signal <dac_data_reg>.
+    Found 1-bit register for signal <dac_en>.
+    Found 21-bit comparator greater for signal <dds_sclr$cmp_gt0000> created at line 438.
+    Found 21-bit comparator less for signal <dds_sclr$cmp_lt0000> created at line 438.
+    Found 1-bit register for signal <Mtridata_sdio_reg_o>.
+    Found 1-bit register for signal <Mtrien_sdio_reg_o>.
+    Found 16-bit comparator less for signal <rect_data$cmp_lt0000> created at line 481.
+    Found 1-bit register for signal <reset_reg>.
+    Found 1-bit register for signal <sclk_reg>.
+    Found 1-bit tristate buffer for signal <sdio_reg_o>.
+    Found 1-bit register for signal <sdio_reg_t>.
+    Found 32-bit register for signal <slv_reg0>.
+    Found 32-bit register for signal <slv_reg1>.
+    Found 32-bit register for signal <slv_reg2>.
+    Found 32-bit register for signal <slv_reg3>.
+    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 259.
+    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 259.
+    Found 32-bit register for signal <slv_reg4>.
+    Found 32-bit register for signal <slv_reg5>.
+    Found 32-bit register for signal <slv_reg6>.
+    Found 5-bit register for signal <spi_cnt>.
+    Found 5-bit adder for signal <spi_cnt$addsub0000>.
+    Found 1-bit register for signal <spi_state>.
+    Found 16-bit adder for signal <step_ctl>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 248 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   5 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <user_logic> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 16x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 7
+ 16-bit adder                                          : 1
+ 20-bit adder                                          : 4
+ 5-bit adder                                           : 1
+ 5-bit adder carry out                                 : 1
+# Registers                                            : 235
+ 1-bit register                                        : 233
+ 10-bit register                                       : 1
+ 5-bit register                                        : 1
+# Comparators                                          : 5
+ 16-bit comparator less                                : 1
+ 21-bit comparator greater                             : 1
+ 21-bit comparator less                                : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state_reg/FSM> on signal <state_reg[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 100   | 110
+-------------------
+Reading core <ipcore_dir/ip_dds.ngc>.
+Reading core <ipcore_dir/bram_arb.ngc>.
+Loading core <ip_dds> for timing and area information for instance <ip_dds_q>.
+Loading core <bram_arb> for timing and area information for instance <bram_arb_1>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Multipliers                                          : 1
+ 16x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 5
+ 16-bit adder                                          : 1
+ 20-bit adder carry in                                 : 2
+ 5-bit adder                                           : 1
+ 5-bit adder carry out                                 : 1
+# Registers                                            : 248
+ Flip-Flops                                            : 248
+# Comparators                                          : 5
+ 16-bit comparator less                                : 1
+ 21-bit comparator greater                             : 1
+ 21-bit comparator less                                : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <user_logic> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block user_logic, actual ratio is 1.
+FlipFlop slv_reg0_29 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop slv_reg0_28 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 253
+ Flip-Flops                                            : 253
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : user_logic.ngr
+Top Level Output File Name         : user_logic
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 141
+
+Cell Usage :
+# BELS                             : 1090
+#      GND                         : 3
+#      INV                         : 37
+#      LUT1                        : 18
+#      LUT2                        : 145
+#      LUT2_D                      : 3
+#      LUT2_L                      : 11
+#      LUT3                        : 194
+#      LUT4                        : 302
+#      LUT4_L                      : 2
+#      MUXCY                       : 116
+#      MUXF5                       : 100
+#      MUXF6                       : 40
+#      MUXF7                       : 20
+#      MUXF8                       : 10
+#      VCC                         : 3
+#      XORCY                       : 86
+# FlipFlops/Latches                : 323
+#      FD                          : 33
+#      FDE                         : 38
+#      FDR                         : 26
+#      FDR_1                       : 1
+#      FDRE                        : 211
+#      FDRS                        : 3
+#      FDRS_1                      : 9
+#      FDS                         : 2
+# RAMS                             : 37
+#      RAMB16                      : 37
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 106
+#      IBUF                        : 52
+#      OBUF                        : 53
+#      OBUFT                       : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vsx55ff1148-10 
+
+ Number of Slices:                      405  out of  24576     1%  
+ Number of Slice Flip Flops:            321  out of  49152     0%  
+ Number of 4 input LUTs:                712  out of  49152     1%  
+ Number of IOs:                         141
+ Number of bonded IOBs:                 107  out of    640    16%  
+    IOB Flip Flops:                       2
+ Number of FIFO16/RAMB16s:               37  out of    320    11%  
+    Number used as RAMB16s:              37
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                   | Load  |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+Bus2IP_Clk                         | BUFGP                                                                                                                                   | 360   |
+bram_arb_1/N1                      | NONE(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 36    |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                           | Buffer(FF name)                                                                                                                         | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+bram_arb_1/N1(bram_arb_1/XST_GND:G)                                                                                                                                                                                                                                      | NONE(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP)       | 136   |
+bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeina_tmp(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeinb_tmp(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeina_tmp(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeinb_tmp(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 10.374ns (Maximum Frequency: 96.397MHz)
+   Minimum input arrival time before clock: 5.265ns
+   Maximum output required time after clock: 7.344ns
+   Maximum combinational path delay: 10.256ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Bus2IP_Clk'
+  Clock period: 10.374ns (frequency: 96.397MHz)
+  Total number of paths / destination ports: 548201 / 631
+-------------------------------------------------------------------------
+Delay:               5.187ns (Levels of Logic = 7)
+  Source:            bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (RAM)
+  Destination:       dac_data_reg_9 (FF)
+  Source Clock:      Bus2IP_Clk rising
+  Destination Clock: Bus2IP_Clk falling
+
+  Data Path: bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP to dac_data_reg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16:CLKA->DOA0     1   2.100   0.585  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.ram_douta<0>)
+     LUT3:I1->O            1   0.195   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_7)
+     MUXF5:I0->O           1   0.382   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_5_f5 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_5_f5)
+     MUXF6:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f6 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f6)
+     MUXF7:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7)
+     MUXF8:I1->O           1   0.395   0.523  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f8 (douta<0>)
+     end scope: 'bram_arb_1'
+     LUT4:I3->O            1   0.195   0.000  dac_data_reg_mux0000<31>371 (dac_data_reg_mux0000<31>37)
+     FDRS_1:D                  0.022          dac_data_reg_9
+    ----------------------------------------
+    Total                      5.187ns (4.079ns logic, 1.108ns route)
+                                       (78.6% logic, 21.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Bus2IP_Clk'
+  Total number of paths / destination ports: 2642 / 997
+-------------------------------------------------------------------------
+Offset:              5.265ns (Levels of Logic = 5)
+  Source:            Bus2IP_WrCE<0> (PAD)
+  Destination:       slv_reg3_16 (FF)
+  Destination Clock: Bus2IP_Clk rising
+
+  Data Path: Bus2IP_WrCE<0> to slv_reg3_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.965   0.778  Bus2IP_WrCE_0_IBUF (Bus2IP_WrCE_0_IBUF)
+     LUT4:I0->O            1   0.195   0.523  state_reg_cmp_eq0000_SW0 (N31)
+     LUT4:I3->O            5   0.195   0.546  state_reg_cmp_eq0000 (state_reg_cmp_eq0000)
+     LUT3:I2->O            8   0.195   0.773  slv_reg3_24_not000111 (N14)
+     LUT3:I0->O            1   0.195   0.360  slv_reg3_30_not00011 (slv_reg3_30_not0001)
+     FDE:CE                    0.540          slv_reg3_30
+    ----------------------------------------
+    Total                      5.265ns (2.285ns logic, 2.980ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Bus2IP_Clk'
+  Total number of paths / destination ports: 256 / 51
+-------------------------------------------------------------------------
+Offset:              7.344ns (Levels of Logic = 4)
+  Source:            slv_reg0_21 (FF)
+  Destination:       IP2Bus_Data<21> (PAD)
+  Source Clock:      Bus2IP_Clk rising
+
+  Data Path: slv_reg0_21 to IP2Bus_Data<21>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            16   0.360   0.756  slv_reg0_21 (slv_reg0_21)
+     LUT4:I3->O            1   0.195   0.741  slv_ip2bus_data<21>15 (slv_ip2bus_data<21>15)
+     LUT4:I0->O            1   0.195   0.585  slv_ip2bus_data<21>17 (slv_ip2bus_data<21>17)
+     LUT2:I0->O            1   0.195   0.360  slv_ip2bus_data<21>30 (IP2Bus_Data_21_OBUF)
+     OBUF:I->O                 3.957          IP2Bus_Data_21_OBUF (IP2Bus_Data<21>)
+    ----------------------------------------
+    Total                      7.344ns (4.902ns logic, 2.442ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1582 / 34
+-------------------------------------------------------------------------
+Delay:               10.256ns (Levels of Logic = 7)
+  Source:            Bus2IP_RdCE<4> (PAD)
+  Destination:       IP2Bus_Data<0> (PAD)
+
+  Data Path: Bus2IP_RdCE<4> to IP2Bus_Data<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.965   0.764  Bus2IP_RdCE_4_IBUF (Bus2IP_RdCE_4_IBUF)
+     LUT4:I0->O            3   0.195   0.600  slv_ip2bus_data_cmp_eq000011 (N9)
+     LUT4:I2->O           32   0.195   1.309  slv_ip2bus_data_cmp_eq00011 (slv_ip2bus_data_cmp_eq0001)
+     LUT4:I0->O            1   0.195   0.741  slv_ip2bus_data<9>15 (slv_ip2bus_data<9>15)
+     LUT4:I0->O            1   0.195   0.585  slv_ip2bus_data<9>17 (slv_ip2bus_data<9>17)
+     LUT2:I0->O            1   0.195   0.360  slv_ip2bus_data<9>30 (IP2Bus_Data_9_OBUF)
+     OBUF:I->O                 3.957          IP2Bus_Data_9_OBUF (IP2Bus_Data<9>)
+    ----------------------------------------
+    Total                     10.256ns (5.897ns logic, 4.359ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to ip_dds_q.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to ip_dds_q.
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.11 secs
+ 
+--> 
+
+Total memory usage is 333332 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

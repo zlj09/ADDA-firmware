@@ -35,3 +35,18 @@
 20:14:45.518 INFO  - Updating .bit and .bmm files from XPS's export folder. 
 20:15:18.759 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\microblaze_top.bit into \microblaze_hw_platform\system.bit. 
 20:15:18.765 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \microblaze_hw_platform\system_bd.bmm. 
+20:23:28.988 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+20:23:32.426 INFO  - The hardware specification for project 'microblaze_hw_platform' is different from F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+20:23:32.910 INFO  - Copied contents of F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml into \microblaze_hw_platform\system.xml. 
+20:23:32.941 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\microblaze_top.bit into \microblaze_hw_platform\system.bit. 
+20:23:32.941 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \microblaze_hw_platform\system_bd.bmm. 
+20:23:33.270 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:23:37.489 INFO  - Restoring global repository preferences: 
+		 C:\edk_user_repository\MyProcessorIPLib 
+20:23:39.840 INFO  - Updating hardware inferred compiler options for br0101. 
+20:23:39.871 INFO  - Clearing existing target manager status. 
+21:16:36.459 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+21:16:36.459 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

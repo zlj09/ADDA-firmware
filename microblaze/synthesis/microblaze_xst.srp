@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.67 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -230,37 +230,37 @@ Design Statistics
 # IOs                              : 40
 
 Cell Usage :
-# BELS                             : 5775
+# BELS                             : 6259
 #      GND                         : 20
-#      INV                         : 58
-#      LUT1                        : 137
-#      LUT2                        : 462
+#      INV                         : 122
+#      LUT1                        : 143
+#      LUT2                        : 500
 #      LUT2_D                      : 15
-#      LUT2_L                      : 9
-#      LUT3                        : 1393
+#      LUT2_L                      : 11
+#      LUT3                        : 1381
 #      LUT3_D                      : 89
-#      LUT3_L                      : 20
-#      LUT4                        : 1925
-#      LUT4_D                      : 69
-#      LUT4_L                      : 148
+#      LUT3_L                      : 48
+#      LUT4                        : 2009
+#      LUT4_D                      : 65
+#      LUT4_L                      : 130
 #      MULT_AND                    : 34
-#      MUXCY                       : 161
+#      MUXCY                       : 331
 #      MUXCY_L                     : 171
-#      MUXF5                       : 707
+#      MUXF5                       : 725
 #      MUXF6                       : 86
 #      MUXF7                       : 42
 #      MUXF8                       : 21
 #      VCC                         : 14
-#      XORCY                       : 194
+#      XORCY                       : 302
 # FlipFlops/Latches                : 3269
-#      FD                          : 217
+#      FD                          : 183
 #      FDC                         : 21
 #      FDC_1                       : 5
 #      FDCE                        : 15
 #      FDE                         : 394
 #      FDE_1                       : 8
 #      FDP                         : 9
-#      FDR                         : 1180
+#      FDR                         : 1214
 #      FDR_1                       : 20
 #      FDRE                        : 1236
 #      FDRE_1                      : 1
@@ -294,10 +294,10 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                     3493  out of  24576    14%  
+ Number of Slices:                     3589  out of  24576    14%  
  Number of Slice Flip Flops:           3269  out of  49152     6%  
- Number of 4 input LUTs:               4842  out of  49152     9%  
-    Number used as logic:              4325
+ Number of 4 input LUTs:               5030  out of  49152    10%  
+    Number used as logic:              4513
     Number used as Shift registers:     133
     Number used as RAMs:                384
  Number of IOs:                          40
@@ -378,7 +378,7 @@ Timing Summary:
 Speed Grade: -10
 
    Minimum period: 12.140ns (Maximum Frequency: 82.374MHz)
-   Minimum input arrival time before clock: 3.293ns
+   Minimum input arrival time before clock: 3.525ns
    Maximum output required time after clock: 8.978ns
    Maximum combinational path delay: No path found
 
@@ -389,7 +389,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
   Clock period: 12.140ns (frequency: 82.374MHz)
-  Total number of paths / destination ports: 424059 / 12393
+  Total number of paths / destination ports: 1514859 / 12427
 -------------------------------------------------------------------------
 Delay:               6.070ns (Levels of Logic = 8)
   Source:            plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (RAM)
@@ -497,9 +497,9 @@ Offset:              3.293ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 34 / 34
+  Total number of paths / destination ports: 38 / 34
 -------------------------------------------------------------------------
-Offset:              2.103ns (Levels of Logic = 3)
+Offset:              3.525ns (Levels of Logic = 5)
   Source:            plb_dac_0_S_Format_pin (PAD)
   Destination:       plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_23 (FF)
   Destination Clock: fpga_0_clk_1_sys_clk_pin rising
@@ -508,13 +508,15 @@ Offset:              2.103ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O          16   0.965   0.921  iobuf_1 (plb_dac_0_S_Format_I)
+     IOBUF:IO->O           1   0.965   0.688  iobuf_1 (plb_dac_0_S_Format_I)
      begin scope: 'plb_dac_0'
-     LUT4:I1->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000 (plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000)
+     LUT3_D:I0->O         17   0.195   0.743  plb_dac_0/USER_LOGIC_I/slv_reg3_16_mux000021 (N20)
+     LUT4:I3->O            1   0.195   0.523  plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000_SW1 (N72)
+     LUT4:I3->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000 (plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000)
      FDE:D                     0.022          plb_dac_0/USER_LOGIC_I/slv_reg3_31
     ----------------------------------------
-    Total                      2.103ns (1.182ns logic, 0.921ns route)
-                                       (56.2% logic, 43.8% route)
+    Total                      3.525ns (1.572ns logic, 1.954ns route)
+                                       (44.6% logic, 55.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/mdm_0/update1'
@@ -626,12 +628,12 @@ Offset:              5.861ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 50.00 secs
-Total CPU time to Xst completion: 49.52 secs
+Total REAL time to Xst completion: 45.00 secs
+Total CPU time to Xst completion: 45.17 secs
  
 --> 
 
-Total memory usage is 393532 kilobytes
+Total memory usage is 394452 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

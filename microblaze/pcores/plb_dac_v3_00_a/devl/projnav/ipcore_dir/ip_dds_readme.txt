@@ -56,6 +56,7 @@ Generate ISE project file:
    ISE Project Navigator support files. These are generated files and should not
    be edited directly.
 
+   * _xmsgs/pn_parser.xmsgs
    * ip_dds.gise
    * ip_dds.xise
 
