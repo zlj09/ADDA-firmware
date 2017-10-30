@@ -337,3 +337,410 @@ Finished building libraries
 20:23:33 **** Auto Build of project br0101_bsp ****
 make -k all 
 Finished building libraries
+13:17:39 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+13:18:31 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11440	    348	   2340	  14128	   3730	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+13:30:40 **** Auto Build of project br0101_bsp ****
+make -k all 
+libgen -hw ../microblaze_hw_platform/system.xml\
+	       -lp C:/edk_user_repository/MyProcessorIPLib\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../microblaze_hw_platform/system.xml -lp
+C:/edk_user_repository/MyProcessorIPLib -pe microblaze_0 -log libgen.log
+system.mss 
+
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 39 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 45 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+INFO:EDK:772 - Check the following for possible causes of not finding MDD:
+  - If DRIVER_VER is specified in MSS, it must follow literal form X.YY.Z
+  - There is no driver with given name
+  - Driver exists but not that version
+  - Driver and version (directory) exist but no MDD is available
+
+ERROR:EDK:1204 - Errors occured while creating Software System.
+make: *** [microblaze_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+13:30:44 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+13:47:42 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../br0101_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: br0101.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../br0101_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "br0101.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br0101.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size br0101.elf  |tee "br0101.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11440	    348	   2340	  14128	   3730	br0101.elf
+'Finished building: br0101.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck br0101.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "br0101.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 br0101.elf 
+
+ELF file	: br0101.elf
+elfcheck passed.
+'Finished building: br0101.elf.elfcheck'
+' '
+13:48:03 **** Auto Build of project br0101_bsp ****
+make -k all 
+libgen -hw ../microblaze_hw_platform/system.xml\
+	       -lp C:/edk_user_repository/MyProcessorIPLib\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../microblaze_hw_platform/system.xml -lp
+C:/edk_user_repository/MyProcessorIPLib -pe microblaze_0 -log libgen.log
+system.mss 
+
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 39 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 45 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+INFO:EDK:772 - Check the following for possible causes of not finding MDD:
+  - If DRIVER_VER is specified in MSS, it must follow literal form X.YY.Z
+  - There is no driver with given name
+  - Driver exists but not that version
+  - Driver and version (directory) exist but no MDD is available
+
+ERROR:EDK:1204 - Errors occured while creating Software System.
+make: *** [microblaze_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+13:48:05 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+14:36:55 **** Auto Build of project br0101_bsp ****
+make -k all 
+libgen -hw ../microblaze_hw_platform/system.xml\
+	       -lp C:/edk_user_repository/MyProcessorIPLib\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../microblaze_hw_platform/system.xml -lp
+C:/edk_user_repository/MyProcessorIPLib -pe microblaze_0 -log libgen.log
+system.mss 
+
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 39 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 45 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+INFO:EDK:772 - Check the following for possible causes of not finding MDD:
+  - If DRIVER_VER is specified in MSS, it must follow literal form X.YY.Z
+  - There is no driver with given name
+  - Driver exists but not that version
+  - Driver and version (directory) exist but no MDD is available
+
+ERROR:EDK:1204 - Errors occured while creating Software System.
+make: *** [microblaze_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+14:36:58 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+14:37:50 **** Auto Build of project br0101_bsp ****
+make -k all 
+libgen -hw ../microblaze_hw_platform/system.xml\
+	       -lp C:/edk_user_repository/MyProcessorIPLib\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../microblaze_hw_platform/system.xml -lp
+C:/edk_user_repository/MyProcessorIPLib -pe microblaze_0 -log libgen.log
+system.mss 
+
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 39 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 45 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+INFO:EDK:772 - Check the following for possible causes of not finding MDD:
+  - If DRIVER_VER is specified in MSS, it must follow literal form X.YY.Z
+  - There is no driver with given name
+  - Driver exists but not that version
+  - Driver and version (directory) exist but no MDD is available
+
+ERROR:EDK:1204 - Errors occured while creating Software System.
+make: *** [microblaze_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+14:37:51 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+16:08:30 **** Auto Build of project br0101_bsp ****
+make -k all 
+libgen -hw ../microblaze_hw_platform/system.xml\
+	       -lp C:/edk_user_repository/MyProcessorIPLib\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../microblaze_hw_platform/system.xml -lp
+C:/edk_user_repository/MyProcessorIPLib -pe microblaze_0 -log libgen.log
+system.mss 
+
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 39 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 45 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+INFO:EDK:772 - Check the following for possible causes of not finding MDD:
+  - If DRIVER_VER is specified in MSS, it must follow literal form X.YY.Z
+  - There is no driver with given name
+  - Driver exists but not that version
+  - Driver and version (directory) exist but no MDD is available
+
+ERROR:EDK:1204 - Errors occured while creating Software System.
+make: *** [microblaze_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+16:08:33 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.
+16:09:28 **** Auto Build of project br0101_bsp ****
+make -k all 
+libgen -hw ../microblaze_hw_platform/system.xml\
+	       -lp C:/edk_user_repository/MyProcessorIPLib\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../microblaze_hw_platform/system.xml -lp
+C:/edk_user_repository/MyProcessorIPLib -pe microblaze_0 -log libgen.log
+system.mss 
+
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 39 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+ERROR:EDK:3323 - H:\ljzhu\test_br0101\workspace\br0101_bsp\system.mss line 45 -
+   Cannot find MDD file plb_dac_v2_1_0.mdd for the driver plb_dac 3.00.a
+INFO:EDK:1040 - Directories Searched :
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\drivers/plb_dac_v3_00_a/data
+  - H:\ljzhu\test_br0101\workspace\br0101_bsp\pcores/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  - C:\edk_user_repository\MyProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/plb_dac_v3_00_a/data
+  -
+F:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/plb_dac_v3_00_a/data
+  - F:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/plb_dac_v3_00_a/data
+INFO:EDK:772 - Check the following for possible causes of not finding MDD:
+  - If DRIVER_VER is specified in MSS, it must follow literal form X.YY.Z
+  - There is no driver with given name
+  - Driver exists but not that version
+  - Driver and version (directory) exist but no MDD is available
+
+ERROR:EDK:1204 - Errors occured while creating Software System.
+make: *** [microblaze_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+16:09:30 **** Auto Build of configuration Debug for project br0101 ****
+make all 
+make: Nothing to be done for `all'.

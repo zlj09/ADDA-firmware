@@ -1,10 +1,10 @@
 Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to H:\ljzhu\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.63 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 TABLE OF CONTENTS
@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "microblaze_clock_generator_0_wrapper_xst.prj"
-Verilog Include Directory          : {"F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"H:\ljzhu\test_br0101\microblaze\pcores\" "F:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "F:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc4vsx55ff1148-10
@@ -57,22 +57,22 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" in Library clock_generator_v4_03_a.
+Compiling vhdl file "F:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" in Library clock_generator_v4_03_a.
 Entity <dcm_module> compiled.
 Entity <dcm_module> (Architecture <STRUCT>) compiled.
-Compiling vhdl file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/pll_module.vhd" in Library clock_generator_v4_03_a.
+Compiling vhdl file "F:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/pll_module.vhd" in Library clock_generator_v4_03_a.
 Entity <pll_module> compiled.
 Entity <pll_module> (Architecture <STRUCT>) compiled.
-Compiling vhdl file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd" in Library clock_generator_v4_03_a.
+Compiling vhdl file "F:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd" in Library clock_generator_v4_03_a.
 Entity <mmcm_module> compiled.
 Entity <mmcm_module> (Architecture <STRUCT>) compiled.
-Compiling vhdl file "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd" in Library clock_generator_v4_03_a.
+Compiling vhdl file "F:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd" in Library clock_generator_v4_03_a.
 Entity <plle2_module> compiled.
 Entity <plle2_module> (Architecture <STRUCT>) compiled.
-Compiling vhdl file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" in Library clock_generator_0_v4_03_a.
+Compiling vhdl file "H:/ljzhu/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" in Library clock_generator_0_v4_03_a.
 Entity <clock_generator> compiled.
 Entity <clock_generator> (Architecture <STRUCTURE>) compiled.
-Compiling vhdl file "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/microblaze_clock_generator_0_wrapper.vhd" in Library work.
+Compiling vhdl file "H:/ljzhu/test_br0101/microblaze/hdl/microblaze_clock_generator_0_wrapper.vhd" in Library work.
 Entity <microblaze_clock_generator_0_wrapper> compiled.
 Entity <microblaze_clock_generator_0_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -130,10 +130,10 @@ Analyzing generic Entity <clock_generator> in library <clock_generator_0_v4_03_a
 	C_FAMILY = "virtex4"
 	C_PACKAGE = "ff1148"
 	C_SPEEDGRADE = "-10"
-WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 249: Unconnected output port 'CLK180' of component 'dcm_module'.
-WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 249: Unconnected output port 'CLK2X180' of component 'dcm_module'.
-WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 249: Unconnected output port 'CLKFX180' of component 'dcm_module'.
-WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 249: Unconnected output port 'STATUS' of component 'dcm_module'.
+WARNING:Xst:753 - "H:/ljzhu/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 249: Unconnected output port 'CLK180' of component 'dcm_module'.
+WARNING:Xst:753 - "H:/ljzhu/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 249: Unconnected output port 'CLK2X180' of component 'dcm_module'.
+WARNING:Xst:753 - "H:/ljzhu/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 249: Unconnected output port 'CLKFX180' of component 'dcm_module'.
+WARNING:Xst:753 - "H:/ljzhu/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 249: Unconnected output port 'STATUS' of component 'dcm_module'.
 Entity <clock_generator> analyzed. Unit <clock_generator> generated.
 
 Analyzing generic Entity <dcm_module> in library <clock_generator_v4_03_a> (Architecture <STRUCT>).
@@ -164,7 +164,7 @@ Analyzing generic Entity <dcm_module> in library <clock_generator_v4_03_a> (Arch
 	C_FAMILY = "virtex4"
 	C_PHASE_SHIFT = 0
 	C_STARTUP_WAIT = false
-WARNING:Xst:819 - "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" line 259: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "F:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" line 259: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <reset>
     Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
     Set user-defined property "CLKFX_DIVIDE =  1" for instance <Using_DCM_ADV.DCM_ADV_INST> in unit <dcm_module>.
@@ -193,7 +193,7 @@ Entity <dcm_module> analyzed. Unit <dcm_module> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <dcm_module>.
-    Related source file is "G:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd".
+    Related source file is "F:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd".
 WARNING:Xst:647 - Input <DSSEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <rst_delay>.
     Found 1-bit register for signal <rsti>.
@@ -203,7 +203,7 @@ Unit <dcm_module> synthesized.
 
 
 Synthesizing Unit <clock_generator>.
-    Related source file is "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd".
+    Related source file is "H:/ljzhu/test_br0101/microblaze/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd".
 WARNING:Xst:1305 - Output <CLKFBOUT> is never assigned. Tied to value 0.
 WARNING:Xst:647 - Input <PSEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1305 - Output <PSDONE> is never assigned. Tied to value 0.
@@ -233,7 +233,7 @@ Unit <clock_generator> synthesized.
 
 
 Synthesizing Unit <microblaze_clock_generator_0_wrapper>.
-    Related source file is "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/hdl/microblaze_clock_generator_0_wrapper.vhd".
+    Related source file is "H:/ljzhu/test_br0101/microblaze/hdl/microblaze_clock_generator_0_wrapper.vhd".
 Unit <microblaze_clock_generator_0_wrapper> synthesized.
 
 
@@ -403,12 +403,12 @@ Delay:               0.742ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.98 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.38 secs
  
 --> 
 
-Total memory usage is 330004 kilobytes
+Total memory usage is 229428 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   31 (   0 filtered)

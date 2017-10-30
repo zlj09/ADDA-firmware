@@ -1,4 +1,4 @@
-set -tmpdir F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
+set -tmpdir H:\ljzhu\test_br0101\microblaze\synthesis\xst_temp_dir\
 run
 -opt_mode speed
 -netlist_hierarchy as_optimized
@@ -12,4 +12,4 @@ run
 -iobuf NO
 -max_fanout 10000
 -sd {../implementation}
--vlgincdir {"F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+-vlgincdir {"H:\ljzhu\test_br0101\microblaze\pcores\" "F:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "F:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

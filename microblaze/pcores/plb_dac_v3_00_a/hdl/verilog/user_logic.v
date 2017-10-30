@@ -304,7 +304,7 @@ output                                    IP2Bus_Error;
           4'd0: dac_data_reg <= slv_reg2[22: 31];
           4'd1: dac_data_reg <= rect_data;
           4'd2: dac_data_reg <= saw_data;
-          4'd3: dac_data_reg <= sine_data;
+          4'd3: dac_data_reg <= unsigned_sine_data;
           4'd4: dac_data_reg <= arb_data;
           default: dac_data_reg <= dac_data_reg;
           endcase
@@ -314,7 +314,7 @@ output                                    IP2Bus_Error;
           4'd0: dac_data_reg <= slv_reg1[22: 31];
           4'd1: dac_data_reg <= rect_data;
           4'd2: dac_data_reg <= saw_data;
-          4'd3: dac_data_reg <= sine_data;
+          4'd3: dac_data_reg <= unsigned_sine_data;
           4'd4: dac_data_reg <= arb_data;
           default: dac_data_reg <= dac_data_reg;
           endcase
@@ -431,15 +431,6 @@ output                                    IP2Bus_Error;
     end
 
 
-  always @(phase_out)
-    if (Bus2IP_Reset == 1)
-      dds_sclr <= 1'b0;
-    else
-      if (phase_out > 16'hffff - 3 * step_ctl + 1 && phase_out < 16'hffff - 2 * step_ctl + 1)
-        dds_sclr <= 1'b1;
-      else
-        dds_sclr <= 1'b0;
-
   ip_dds ip_dds_q (
     .clk(Bus2IP_Clk), 
     .we(1'b1), 
@@ -447,16 +438,8 @@ output                                    IP2Bus_Error;
     .cosine(), 
     .sine(sine_data), 
     .data(step_ctl),
-    .sclr(dds_sclr)
+	.sclr(1'b0)
   );
-
-  /*bram_arb bram_arb_1 (
-    .clka(Bus2IP_Clk), 
-    .wea(bram_wea), 
-    .addra(bram_addr), 
-    .dina(Bus2IP_Data[22 : 31]), 
-    .douta(arb_data)
-  );*/
 
   bram_arb bram_arb_1 (
     .clka(Bus2IP_Clk), 
@@ -471,8 +454,6 @@ output                                    IP2Bus_Error;
   // Example code to drive IP to Bus signals
   // ------------------------------------------------------------
 
-  //assign bram_wea = Bus2IP_CS[0] & Bus2IP_RNW;
-  //assign bram_addr = (bram_wea) ? (Bus2IP_Addr[16: 31]) : (phase_out);
 
   assign i_waveform = slv_reg0[20 : 23];
   assign q_waveform = slv_reg0[16 : 19];

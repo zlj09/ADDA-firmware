@@ -1,10 +1,10 @@
 Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to H:\ljzhu\test_br0101\microblaze\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 TABLE OF CONTENTS
@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "microblaze_xst.prj"
-Verilog Include Directory          : {"F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "G:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"H:\ljzhu\test_br0101\microblaze\pcores\" "F:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "F:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc4vsx55ff1148-10
@@ -230,28 +230,28 @@ Design Statistics
 # IOs                              : 40
 
 Cell Usage :
-# BELS                             : 6259
+# BELS                             : 5791
 #      GND                         : 20
-#      INV                         : 122
-#      LUT1                        : 143
-#      LUT2                        : 500
-#      LUT2_D                      : 15
+#      INV                         : 58
+#      LUT1                        : 137
+#      LUT2                        : 402
+#      LUT2_D                      : 17
 #      LUT2_L                      : 11
-#      LUT3                        : 1381
-#      LUT3_D                      : 89
-#      LUT3_L                      : 48
-#      LUT4                        : 2009
-#      LUT4_D                      : 65
-#      LUT4_L                      : 130
+#      LUT3                        : 1399
+#      LUT3_D                      : 87
+#      LUT3_L                      : 30
+#      LUT4                        : 1991
+#      LUT4_D                      : 71
+#      LUT4_L                      : 138
 #      MULT_AND                    : 34
-#      MUXCY                       : 331
+#      MUXCY                       : 161
 #      MUXCY_L                     : 171
-#      MUXF5                       : 725
+#      MUXF5                       : 707
 #      MUXF6                       : 86
 #      MUXF7                       : 42
 #      MUXF8                       : 21
 #      VCC                         : 14
-#      XORCY                       : 302
+#      XORCY                       : 194
 # FlipFlops/Latches                : 3269
 #      FD                          : 183
 #      FDC                         : 21
@@ -294,10 +294,10 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                     3589  out of  24576    14%  
+ Number of Slices:                     3499  out of  24576    14%  
  Number of Slice Flip Flops:           3269  out of  49152     6%  
- Number of 4 input LUTs:               5030  out of  49152    10%  
-    Number used as logic:              4513
+ Number of 4 input LUTs:               4858  out of  49152     9%  
+    Number used as logic:              4341
     Number used as Shift registers:     133
     Number used as RAMs:                384
  Number of IOs:                          40
@@ -377,8 +377,8 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 12.140ns (Maximum Frequency: 82.374MHz)
-   Minimum input arrival time before clock: 3.525ns
+   Minimum period: 12.576ns (Maximum Frequency: 79.518MHz)
+   Minimum input arrival time before clock: 3.293ns
    Maximum output required time after clock: 8.978ns
    Maximum combinational path delay: No path found
 
@@ -388,32 +388,32 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Clock period: 12.140ns (frequency: 82.374MHz)
-  Total number of paths / destination ports: 1514859 / 12427
+  Clock period: 12.576ns (frequency: 79.518MHz)
+  Total number of paths / destination ports: 424059 / 12393
 -------------------------------------------------------------------------
-Delay:               6.070ns (Levels of Logic = 8)
+Delay:               6.288ns (Levels of Logic = 8)
   Source:            plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (RAM)
-  Destination:       plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9 (FF)
+  Destination:       plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_4 (FF)
   Source Clock:      fpga_0_clk_1_sys_clk_pin rising
   Destination Clock: fpga_0_clk_1_sys_clk_pin falling
 
-  Data Path: plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP to plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_9
+  Data Path: plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP to plb_dac_0/plb_dac_0/USER_LOGIC_I/dac_data_reg_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16:CLKA->DOA0     1   2.100   0.585  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.ram_douta<0>)
-     LUT3:I1->O            1   0.195   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_7)
-     MUXF5:I0->O           1   0.382   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_5_f5 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_5_f5)
-     MUXF6:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f6 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f6)
-     MUXF7:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7)
-     MUXF8:I1->O           1   0.395   0.688  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f8 (douta<0>)
+     RAMB16:CLKA->DOA5     1   2.100   0.585  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.ram_douta<5>)
+     LUT3:I1->O            1   0.195   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_720 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_720)
+     MUXF5:I0->O           1   0.382   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_5_f5_4 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_5_f55)
+     MUXF6:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f6_4 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f65)
+     MUXF7:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7_4 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f75)
+     MUXF8:I1->O           1   0.395   0.741  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f8_4 (douta<5>)
      end scope: 'plb_dac_0/USER_LOGIC_I/bram_arb_1'
-     LUT4:I1->O            1   0.195   0.523  plb_dac_0/USER_LOGIC_I/dac_data_reg_mux0000<31>18 (plb_dac_0/USER_LOGIC_I/dac_data_reg_mux0000<31>18)
-     LUT4:I3->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot (plb_dac_0/USER_LOGIC_I/dac_data_reg_9_rstpot)
-     FDR_1:D                   0.022          plb_dac_0/USER_LOGIC_I/dac_data_reg_9
+     LUT4:I0->O            1   0.195   0.688  plb_dac_0/USER_LOGIC_I/dac_data_reg_mux0000<26>3 (plb_dac_0/USER_LOGIC_I/dac_data_reg_mux0000<26>3)
+     LUT4:I1->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/dac_data_reg_4_rstpot (plb_dac_0/USER_LOGIC_I/dac_data_reg_4_rstpot)
+     FDR_1:D                   0.022          plb_dac_0/USER_LOGIC_I/dac_data_reg_4
     ----------------------------------------
-    Total                      6.070ns (4.274ns logic, 1.796ns route)
-                                       (70.4% logic, 29.6% route)
+    Total                      6.288ns (4.274ns logic, 2.014ns route)
+                                       (68.0% logic, 32.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'mdm_0/mdm_0/drck_i'
@@ -497,9 +497,9 @@ Offset:              3.293ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_clk_1_sys_clk_pin'
-  Total number of paths / destination ports: 38 / 34
+  Total number of paths / destination ports: 34 / 34
 -------------------------------------------------------------------------
-Offset:              3.525ns (Levels of Logic = 5)
+Offset:              2.103ns (Levels of Logic = 3)
   Source:            plb_dac_0_S_Format_pin (PAD)
   Destination:       plb_dac_0/plb_dac_0/USER_LOGIC_I/slv_reg3_23 (FF)
   Destination Clock: fpga_0_clk_1_sys_clk_pin rising
@@ -508,15 +508,13 @@ Offset:              3.525ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           1   0.965   0.688  iobuf_1 (plb_dac_0_S_Format_I)
+     IOBUF:IO->O          16   0.965   0.921  iobuf_1 (plb_dac_0_S_Format_I)
      begin scope: 'plb_dac_0'
-     LUT3_D:I0->O         17   0.195   0.743  plb_dac_0/USER_LOGIC_I/slv_reg3_16_mux000021 (N20)
-     LUT4:I3->O            1   0.195   0.523  plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000_SW1 (N72)
-     LUT4:I3->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000 (plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000)
+     LUT4:I1->O            1   0.195   0.000  plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000 (plb_dac_0/USER_LOGIC_I/slv_reg3_31_mux0000)
      FDE:D                     0.022          plb_dac_0/USER_LOGIC_I/slv_reg3_31
     ----------------------------------------
-    Total                      3.525ns (1.572ns logic, 1.954ns route)
-                                       (44.6% logic, 55.4% route)
+    Total                      2.103ns (1.182ns logic, 0.921ns route)
+                                       (56.2% logic, 43.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/mdm_0/update1'
@@ -628,12 +626,12 @@ Offset:              5.861ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 45.00 secs
-Total CPU time to Xst completion: 45.17 secs
+Total REAL time to Xst completion: 44.00 secs
+Total CPU time to Xst completion: 44.68 secs
  
 --> 
 
-Total memory usage is 394452 kilobytes
+Total memory usage is 293428 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

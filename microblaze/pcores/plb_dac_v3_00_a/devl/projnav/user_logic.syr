@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: user_logic.prj
@@ -144,10 +144,8 @@ Analyzing top module <user_logic>.
 	PHASE_WIDTH = 32'sb00000000000000000000000000010000
 INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:905 - "../../hdl/verilog/user_logic.v" line 435: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <Bus2IP_Reset>, <step_ctl>
-WARNING:Xst:2211 - "ipcore_dir/ip_dds.v" line 443: Instantiating black box module <ip_dds>.
-WARNING:Xst:2211 - "ipcore_dir/bram_arb.v" line 461: Instantiating black box module <bram_arb>.
+WARNING:Xst:2211 - "ipcore_dir/ip_dds.v" line 444: Instantiating black box module <ip_dds>.
+WARNING:Xst:2211 - "ipcore_dir/bram_arb.v" line 463: Instantiating black box module <bram_arb>.
 Module <user_logic> is correct for synthesis.
  
     Set user-defined property "SYN_BLACK_BOX =  1" for instance <ip_dds_q> in unit <user_logic>.
@@ -166,8 +164,8 @@ Synthesizing Unit <user_logic>.
 WARNING:Xst:647 - Input <Bus2IP_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_Addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_CS<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:646 - Signal <unsigned_sine_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dds_sclr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <bram_wea> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_0> for signal <state_reg>.
@@ -183,19 +181,12 @@ WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnecte
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 20-bit adder for signal <$add0000> created at line 438.
-    Found 20-bit adder for signal <$add0001> created at line 438.
-    Found 16x2-bit multiplier for signal <$mult0000> created at line 438.
     Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 393.
-    Found 20-bit adder for signal <add0000$sub0000> created at line 438.
-    Found 20-bit adder for signal <add0001$sub0000> created at line 438.
     Found 5-bit adder carry out for signal <COND_4$addsub0000>.
     Found 1-bit register for signal <cs_reg>.
     Found 1-bit register for signal <dac_clk_reg>.
     Found 10-bit register for signal <dac_data_reg>.
     Found 1-bit register for signal <dac_en>.
-    Found 21-bit comparator greater for signal <dds_sclr$cmp_gt0000> created at line 438.
-    Found 21-bit comparator less for signal <dds_sclr$cmp_lt0000> created at line 438.
     Found 1-bit register for signal <Mtridata_sdio_reg_o>.
     Found 1-bit register for signal <Mtrien_sdio_reg_o>.
     Found 16-bit comparator less for signal <rect_data$cmp_lt0000> created at line 481.
@@ -216,12 +207,12 @@ WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnecte
     Found 5-bit adder for signal <spi_cnt$addsub0000>.
     Found 1-bit register for signal <spi_state>.
     Found 16-bit adder for signal <step_ctl>.
+    Found 10-bit addsub for signal <unsigned_sine_data>.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred 248 D-type flip-flop(s).
-	inferred   7 Adder/Subtractor(s).
-	inferred   1 Multiplier(s).
-	inferred   5 Comparator(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
 	inferred   1 Multiplexer(s).
 	inferred   1 Tristate(s).
 Unit <user_logic> synthesized.
@@ -232,21 +223,17 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 1
- 16x2-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 7
+# Adders/Subtractors                                   : 4
+ 10-bit addsub                                         : 1
  16-bit adder                                          : 1
- 20-bit adder                                          : 4
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
 # Registers                                            : 235
  1-bit register                                        : 233
  10-bit register                                       : 1
  5-bit register                                        : 1
-# Comparators                                          : 5
+# Comparators                                          : 3
  16-bit comparator less                                : 1
- 21-bit comparator greater                             : 1
- 21-bit comparator less                                : 1
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
 # Multiplexers                                         : 1
@@ -281,19 +268,15 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Multipliers                                          : 1
- 16x2-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 5
+# Adders/Subtractors                                   : 4
+ 10-bit addsub                                         : 1
  16-bit adder                                          : 1
- 20-bit adder carry in                                 : 2
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
 # Registers                                            : 248
  Flip-Flops                                            : 248
-# Comparators                                          : 5
+# Comparators                                          : 3
  16-bit comparator less                                : 1
- 21-bit comparator greater                             : 1
- 21-bit comparator less                                : 1
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
 # Multiplexers                                         : 1
@@ -349,31 +332,30 @@ Design Statistics
 # IOs                              : 141
 
 Cell Usage :
-# BELS                             : 1090
+# BELS                             : 863
 #      GND                         : 3
-#      INV                         : 37
-#      LUT1                        : 18
-#      LUT2                        : 145
+#      INV                         : 5
+#      LUT1                        : 15
+#      LUT2                        : 98
 #      LUT2_D                      : 3
-#      LUT2_L                      : 11
-#      LUT3                        : 194
-#      LUT4                        : 302
-#      LUT4_L                      : 2
-#      MUXCY                       : 116
-#      MUXF5                       : 100
+#      LUT3                        : 193
+#      LUT4                        : 291
+#      LUT4_D                      : 5
+#      LUT4_L                      : 16
+#      MUXCY                       : 31
+#      MUXF5                       : 98
 #      MUXF6                       : 40
 #      MUXF7                       : 20
 #      MUXF8                       : 10
 #      VCC                         : 3
-#      XORCY                       : 86
+#      XORCY                       : 32
 # FlipFlops/Latches                : 323
 #      FD                          : 33
 #      FDE                         : 38
 #      FDR                         : 26
-#      FDR_1                       : 1
+#      FDR_1                       : 10
 #      FDRE                        : 211
 #      FDRS                        : 3
-#      FDRS_1                      : 9
 #      FDS                         : 2
 # RAMS                             : 37
 #      RAMB16                      : 37
@@ -390,9 +372,9 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                      405  out of  24576     1%  
+ Number of Slices:                      358  out of  24576     1%  
  Number of Slice Flip Flops:            321  out of  49152     0%  
- Number of 4 input LUTs:                712  out of  49152     1%  
+ Number of 4 input LUTs:                626  out of  49152     1%  
  Number of IOs:                         141
  Number of bonded IOBs:                 107  out of    640    16%  
     IOB Flip Flops:                       2
@@ -442,10 +424,10 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 10.374ns (Maximum Frequency: 96.397MHz)
+   Minimum period: 11.090ns (Maximum Frequency: 90.173MHz)
    Minimum input arrival time before clock: 5.265ns
-   Maximum output required time after clock: 7.344ns
-   Maximum combinational path delay: 10.256ns
+   Maximum output required time after clock: 7.293ns
+   Maximum combinational path delay: 10.270ns
 
 Timing Detail:
 --------------
@@ -453,10 +435,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Bus2IP_Clk'
-  Clock period: 10.374ns (frequency: 96.397MHz)
-  Total number of paths / destination ports: 548201 / 631
+  Clock period: 11.090ns (frequency: 90.173MHz)
+  Total number of paths / destination ports: 2997 / 605
 -------------------------------------------------------------------------
-Delay:               5.187ns (Levels of Logic = 7)
+Delay:               5.545ns (Levels of Logic = 8)
   Source:            bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (RAM)
   Destination:       dac_data_reg_9 (FF)
   Source Clock:      Bus2IP_Clk rising
@@ -473,15 +455,16 @@ Delay:               5.187ns (Levels of Logic = 7)
      MUXF7:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7)
      MUXF8:I1->O           1   0.395   0.523  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f8 (douta<0>)
      end scope: 'bram_arb_1'
-     LUT4:I3->O            1   0.195   0.000  dac_data_reg_mux0000<31>371 (dac_data_reg_mux0000<31>37)
-     FDRS_1:D                  0.022          dac_data_reg_9
+     LUT4_L:I3->LO         1   0.195   0.163  dac_data_reg_mux0000<31>561 (dac_data_reg_mux0000<31>56)
+     LUT2:I1->O            1   0.195   0.000  dac_data_reg_9_rstpot (dac_data_reg_9_rstpot)
+     FDR_1:D                   0.022          dac_data_reg_9
     ----------------------------------------
-    Total                      5.187ns (4.079ns logic, 1.108ns route)
-                                       (78.6% logic, 21.4% route)
+    Total                      5.545ns (4.274ns logic, 1.271ns route)
+                                       (77.1% logic, 22.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Bus2IP_Clk'
-  Total number of paths / destination ports: 2642 / 997
+  Total number of paths / destination ports: 2625 / 980
 -------------------------------------------------------------------------
 Offset:              5.265ns (Levels of Logic = 5)
   Source:            Bus2IP_WrCE<0> (PAD)
@@ -506,60 +489,60 @@ Offset:              5.265ns (Levels of Logic = 5)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Bus2IP_Clk'
   Total number of paths / destination ports: 256 / 51
 -------------------------------------------------------------------------
-Offset:              7.344ns (Levels of Logic = 4)
-  Source:            slv_reg0_21 (FF)
-  Destination:       IP2Bus_Data<21> (PAD)
+Offset:              7.293ns (Levels of Logic = 4)
+  Source:            slv_reg1_22 (FF)
+  Destination:       IP2Bus_Data<22> (PAD)
   Source Clock:      Bus2IP_Clk rising
 
-  Data Path: slv_reg0_21 to IP2Bus_Data<21>
+  Data Path: slv_reg1_22 to IP2Bus_Data<22>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            16   0.360   0.756  slv_reg0_21 (slv_reg0_21)
-     LUT4:I3->O            1   0.195   0.741  slv_ip2bus_data<21>15 (slv_ip2bus_data<21>15)
-     LUT4:I0->O            1   0.195   0.585  slv_ip2bus_data<21>17 (slv_ip2bus_data<21>17)
-     LUT2:I0->O            1   0.195   0.360  slv_ip2bus_data<21>30 (IP2Bus_Data_21_OBUF)
-     OBUF:I->O                 3.957          IP2Bus_Data_21_OBUF (IP2Bus_Data<21>)
+     FDRE:C->Q             2   0.360   0.705  slv_reg1_22 (slv_reg1_22)
+     LUT4:I1->O            1   0.195   0.741  slv_ip2bus_data<22>15 (slv_ip2bus_data<22>15)
+     LUT4:I0->O            1   0.195   0.585  slv_ip2bus_data<22>17 (slv_ip2bus_data<22>17)
+     LUT2:I0->O            1   0.195   0.360  slv_ip2bus_data<22>30 (IP2Bus_Data_22_OBUF)
+     OBUF:I->O                 3.957          IP2Bus_Data_22_OBUF (IP2Bus_Data<22>)
     ----------------------------------------
-    Total                      7.344ns (4.902ns logic, 2.442ns route)
-                                       (66.7% logic, 33.3% route)
+    Total                      7.293ns (4.902ns logic, 2.391ns route)
+                                       (67.2% logic, 32.8% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1582 / 34
 -------------------------------------------------------------------------
-Delay:               10.256ns (Levels of Logic = 7)
+Delay:               10.270ns (Levels of Logic = 7)
   Source:            Bus2IP_RdCE<4> (PAD)
-  Destination:       IP2Bus_Data<0> (PAD)
+  Destination:       IP2Bus_Data<1> (PAD)
 
-  Data Path: Bus2IP_RdCE<4> to IP2Bus_Data<0>
+  Data Path: Bus2IP_RdCE<4> to IP2Bus_Data<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   0.965   0.764  Bus2IP_RdCE_4_IBUF (Bus2IP_RdCE_4_IBUF)
-     LUT4:I0->O            3   0.195   0.600  slv_ip2bus_data_cmp_eq000011 (N9)
+     IBUF:I->O            14   0.965   0.778  Bus2IP_RdCE_4_IBUF (Bus2IP_RdCE_4_IBUF)
+     LUT4:I2->O            3   0.195   0.600  slv_ip2bus_data_cmp_eq000011 (N9)
      LUT4:I2->O           32   0.195   1.309  slv_ip2bus_data_cmp_eq00011 (slv_ip2bus_data_cmp_eq0001)
      LUT4:I0->O            1   0.195   0.741  slv_ip2bus_data<9>15 (slv_ip2bus_data<9>15)
      LUT4:I0->O            1   0.195   0.585  slv_ip2bus_data<9>17 (slv_ip2bus_data<9>17)
      LUT2:I0->O            1   0.195   0.360  slv_ip2bus_data<9>30 (IP2Bus_Data_9_OBUF)
      OBUF:I->O                 3.957          IP2Bus_Data_9_OBUF (IP2Bus_Data<9>)
     ----------------------------------------
-    Total                     10.256ns (5.897ns logic, 4.359ns route)
-                                       (57.5% logic, 42.5% route)
+    Total                     10.270ns (5.897ns logic, 4.373ns route)
+                                       (57.4% logic, 42.6% route)
 
 =========================================================================
 WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to ip_dds_q.
 WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to ip_dds_q.
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 17.11 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.05 secs
  
 --> 
 
-Total memory usage is 333332 kilobytes
+Total memory usage is 231924 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   12 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

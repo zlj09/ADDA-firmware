@@ -323,11 +323,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1509192617" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="7480728271909770058" xil_pn:start_ts="1509192616">
+    <transform xil_pn:end_ts="1509263923" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="7480728271909770058" xil_pn:start_ts="1509263923">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1509192627" xil_pn:in_ck="-6172246470216933969" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1714143295736313172" xil_pn:start_ts="1509192617">
+    <transform xil_pn:end_ts="1509263929" xil_pn:in_ck="-6172246470216933969" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1714143295736313172" xil_pn:start_ts="1509263923">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -355,7 +355,7 @@
       <outfile xil_pn:name="microblaze_xps_iic_0_wrapper.ngc"/>
       <outfile xil_pn:name="microblaze_xps_intc_0_wrapper.ngc"/>
     </transform>
-    <transform xil_pn:end_ts="1509192692" xil_pn:in_ck="8895586743438979285" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="1827746143291061842" xil_pn:start_ts="1509192627">
+    <transform xil_pn:end_ts="1509263990" xil_pn:in_ck="8895586743438979285" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="1827746143291061842" xil_pn:start_ts="1509263929">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -377,7 +377,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1509192725" xil_pn:in_ck="720405285304984836" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7071410598792602934" xil_pn:start_ts="1509192692">
+    <transform xil_pn:end_ts="1509264020" xil_pn:in_ck="720405285304984836" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7071410598792602934" xil_pn:start_ts="1509263990">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -388,12 +388,10 @@
       <outfile xil_pn:name="microblaze_top.ngd"/>
       <outfile xil_pn:name="microblaze_top_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1509192762" xil_pn:in_ck="-4750817036178130809" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1509192725">
+    <transform xil_pn:end_ts="1509264040" xil_pn:in_ck="-4750817036178130809" xil_pn:name="TRANEXT_map_virtex4" xil_pn:prop_ck="6981343974347972874" xil_pn:start_ts="1509264020">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="microblaze_top.pcf"/>
       <outfile xil_pn:name="microblaze_top_map.map"/>
@@ -404,7 +402,7 @@
       <outfile xil_pn:name="microblaze_top_summary.xml"/>
       <outfile xil_pn:name="microblaze_top_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1509193222" xil_pn:in_ck="659924303052972640" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1509192762">
+    <transform xil_pn:end_ts="1509264382" xil_pn:in_ck="659924303052972640" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-922234097610180571" xil_pn:start_ts="1509264040">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -419,7 +417,7 @@
       <outfile xil_pn:name="microblaze_top_pad.txt"/>
       <outfile xil_pn:name="microblaze_top_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1509193298" xil_pn:in_ck="-1982953399006320131" xil_pn:name="TRANEXT_bitFile_virtex4" xil_pn:prop_ck="-5292315604690234831" xil_pn:start_ts="1509193222">
+    <transform xil_pn:end_ts="1509264439" xil_pn:in_ck="-1982953399006320131" xil_pn:name="TRANEXT_bitFile_virtex4" xil_pn:prop_ck="-5292315604690234831" xil_pn:start_ts="1509264382">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -432,7 +430,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1509193353" xil_pn:in_ck="-2558171203062321156" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="4296800" xil_pn:start_ts="1509193298">
+    <transform xil_pn:end_ts="1509264465" xil_pn:in_ck="-2558171203062321156" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="4296800" xil_pn:start_ts="1509264439">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -445,7 +443,7 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1509193222" xil_pn:in_ck="-338131537883185405" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1509193191">
+    <transform xil_pn:end_ts="1509264382" xil_pn:in_ck="-338131537883185405" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817529" xil_pn:start_ts="1509264366">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -453,12 +451,10 @@
       <outfile xil_pn:name="microblaze_top.twx"/>
     </transform>
     <transform xil_pn:end_ts="1503190618" xil_pn:in_ck="187386646448590357" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1503190612">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:name="TRAN_exportToSDKnobit">
       <status xil_pn:value="SuccessfullyRun"/>

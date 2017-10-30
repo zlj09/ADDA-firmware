@@ -135,7 +135,7 @@ void prtDACState()
 {
 	char waveform_strs[5][10] = {"DC", "Rect", "Saw", "Cos", "Arb"};
 	u32 freq = 1530 * (freq_ctrl + 1);
-	xil_printf("DAC 1 Channel I, Waveform: %s, Phase Increasment: %d, freq: %dns\r\n", waveform_strs[waveform], freq_ctrl, freq);
+	xil_printf("DAC 1 Channel I, Waveform: %s, Phase Increasment: %d, freq: %dHz\r\n", waveform_strs[waveform], freq_ctrl, freq);
 	xil_printf("D: DC\r\nR: Rect\r\nS: Saw\r\nC: Cos\r\nA: Arb\r\n+: inc freq\r\n-: dec freq\r\n*: mult freq\r\n/: divd freq\r\n");
 }
 

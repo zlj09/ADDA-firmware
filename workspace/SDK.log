@@ -50,3 +50,46 @@
 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
 
 21:16:36.459 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+13:17:31.711 INFO  - Processing command line option -hwspec H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+13:28:13.987 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    ERROR:Cse - A reference voltage has not been detected on the ribbon cable interface to the target system ( pin 2 ).  Check that power is applied to the target system and that the ribbon cable is properly seated at both ends.  The status LED on Platform Cable USB will be GREEN if target voltage is in the proper range and applied to the correct pin.
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:30:39.709 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
+13:48:02.577 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
+14:18:00.450 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:36:53.616 INFO  - Processing command line option -hwspec H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+14:36:54.942 INFO  - The hardware specification for project 'microblaze_hw_platform' is different from H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+14:36:55.192 INFO  - Copied contents of H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml into \microblaze_hw_platform\system.xml. 
+14:36:55.207 INFO  - Copied contents of H:\ljzhu\test_br0101\microblaze\SDK\SDK_Export\hw\microblaze_top.bit into \microblaze_hw_platform\system.bit. 
+14:36:55.207 INFO  - Copied contents of H:\ljzhu\test_br0101\microblaze\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \microblaze_hw_platform\system_bd.bmm. 
+14:36:55.582 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:36:58.078 INFO  - Restoring global repository preferences: 
+		 C:\my_user_ipcores 
+14:36:59.529 INFO  - Updating hardware inferred compiler options for br0101. 
+14:36:59.544 INFO  - Clearing existing target manager status. 
+14:37:49.295 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
+15:28:05.503 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:08:28.961 INFO  - Processing command line option -hwspec H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+16:08:30.396 INFO  - The hardware specification for project 'microblaze_hw_platform' is different from H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+16:08:30.630 INFO  - Copied contents of H:/ljzhu/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml into \microblaze_hw_platform\system.xml. 
+16:08:30.630 INFO  - Copied contents of H:\ljzhu\test_br0101\microblaze\SDK\SDK_Export\hw\microblaze_top.bit into \microblaze_hw_platform\system.bit. 
+16:08:30.630 INFO  - Copied contents of H:\ljzhu\test_br0101\microblaze\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \microblaze_hw_platform\system_bd.bmm. 
+16:08:31.051 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:08:33.688 INFO  - Restoring global repository preferences: 
+		 C:\my_user_ipcores 
+16:08:35.310 INFO  - Updating hardware inferred compiler options for br0101. 
+16:08:35.326 INFO  - Clearing existing target manager status. 
+16:09:02.180 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    ERROR:Cse - A reference voltage has not been detected on the ribbon cable interface to the target system ( pin 2 ).  Check that power is applied to the target system and that the ribbon cable is properly seated at both ends.  The status LED on Platform Cable USB will be GREEN if target voltage is in the proper range and applied to the correct pin.
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+16:09:27.956 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
