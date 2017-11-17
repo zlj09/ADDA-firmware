@@ -1,4 +1,4 @@
-16:09:28 **** Auto Build of project br0101_bsp ****
+21:01:36 **** Auto Build of project br0101_bsp ****
 make -k all 
 libgen -hw ../microblaze_hw_platform/system.xml\
 	       -lp C:/edk_user_repository/MyProcessorIPLib\
@@ -53,5 +53,5 @@ ERROR:EDK:1204 - Errors occured while creating Software System.
 make: *** [microblaze_0/lib/libxil.a] 错误 2
 make: 由于错误目标“all”并未重新创建。
 
-16:09:30 Build Finished (took 1s.794ms)
+21:01:38 Build Finished (took 1s.638ms)
 

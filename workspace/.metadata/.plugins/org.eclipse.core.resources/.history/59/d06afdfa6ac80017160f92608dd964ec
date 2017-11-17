@@ -61,7 +61,7 @@ XUartLite xuart_1;
 XIntc xintc_0;
 
 u32 dac1_ctrl;
-u32 waveform, freq_ctrl;
+u32 waveform, freq_ctrl, level = 0;
 
 
 int main()
@@ -129,13 +129,19 @@ void genDACCtrl()
 	dac1_ctrl |= freq_ctrl << 16;
 	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, dac1_ctrl);
 	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG0_OFFSET, dac1_ctrl);
+
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, level);
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG2_OFFSET, level);
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG1_OFFSET, level);
+	PLB_DAC_mWriteReg(XPAR_PLB_DAC_1_BASEADDR, PLB_DAC_SLV_REG2_OFFSET, level);
 }
 
 void prtDACState()
 {
 	char waveform_strs[5][10] = {"DC", "Rect", "Saw", "Cos", "Arb"};
 	u32 freq = 1530 * (freq_ctrl + 1);
-	xil_printf("DAC 1 Channel I, Waveform: %s, Phase Increasment: %d, freq: %dns\r\n", waveform_strs[waveform], freq_ctrl, freq);
+	xil_printf("DAC 1 Channel I, Waveform: %s, Phase Increasment: %d, freq: %dHz\r\n", waveform_strs[waveform], freq_ctrl, freq);
+	xil_printf("DC Level Code: %x\r\n", level);
 	xil_printf("D: DC\r\nR: Rect\r\nS: Saw\r\nC: Cos\r\nA: Arb\r\n+: inc freq\r\n-: dec freq\r\n*: mult freq\r\n/: divd freq\r\n");
 }
 
@@ -146,17 +152,60 @@ void uart1_sendhandler(void *CallBackRef, unsigned int EventData)
 
 u8 msg_state = 0;
 //u32 spi_msg;
-u8 msg = 0, p_msg, pp_msg = 0;
+#define qlen 20
+u8 msg = 0, msg_queue[qlen], head = qlen, tail = qlen;
+
+u8 msg_pop()
+{
+	u8 pop_msg = 0;
+	if (head == qlen)
+		return 0;
+	else
+	{
+		pop_msg = msg_queue[head];
+		if (head == tail)
+			head = tail = qlen;
+		else
+			head = (head + 1) % qlen;
+		return(pop_msg);
+	}
+}
+
+void msg_push(u8 new_msg)
+{
+	if ((tail + 1) % qlen == head){
+		msg_pop();
+		msg_push(new_msg);
+	}
+	else
+		if (head == qlen){
+			head = 0;
+			tail = 0;
+			msg_queue[tail] = new_msg;
+		}
+		else{
+			tail = (tail + 1) % qlen;
+			msg_queue[tail] = new_msg;
+		}
+}
+
+void msg_clr()
+{
+	head = tail = qlen;
+}
+
+u8 data_pop()
+{
+	return(msg_pop() - '0');
+}
 
 void uart1_recvhandler(void *CallBackRef, unsigned int EventData)
 {
 	u32 reg_data, reg_addr, reg_val;
 
-	pp_msg = p_msg;
-	p_msg = msg;
-
 	XUartLite_Recv(CallBackRef, &msg, 1);
 	xil_printf("%c\r\n", msg);
+	msg_push(msg);
 
 	switch(msg)
 	{
@@ -217,32 +266,9 @@ void uart1_recvhandler(void *CallBackRef, unsigned int EventData)
 		}
 		msg_state = 1;
 		break;
-	case 'W':
-		//wr_flag = 1;
-		//spi_msg = 0;
-		/*
-		//for (i = 0; i < 1000000; i++) ;
-		reg_addr = 0;
-		XUartLite_Recv(CallBackRef, &reg_addr, 1);
-		reg_val = 0;
-		XUartLite_Recv(CallBackRef, &reg_val, 1);
-		reg_data = (reg_addr << 8) + reg_val;
-		xil_printf("SPI DATA: %x\r\n", reg_data);
-		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG3_OFFSET, reg_data);
-		while(PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET) & 0x2) ;
-
-		reg_data = 0x8000 | (reg_addr << 8);
-		xil_printf("SPI DATA: %x\r\n", reg_data);
-		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG3_OFFSET, reg_data);
-		while(PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET) & 0x2) ;
-		    reg_val = PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG3_OFFSET) & 0xff;
-		    while(PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET) & 0x2) ;
-
-		    xil_printf("DAC 0 - Reg 0x%x: %x\r\n", reg_addr, reg_val);*/
-		break;
 	case ';':
-		reg_addr = pp_msg;
-		reg_val = p_msg;
+		reg_addr = data_pop() * 16 + data_pop();
+		reg_val = data_pop() * 16 + data_pop();
 		reg_data = (reg_addr << 8) + reg_val;
 		xil_printf("SPI DATA: %x\r\n", reg_data);
 		PLB_DAC_mWriteReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG3_OFFSET, reg_data);
@@ -255,7 +281,12 @@ void uart1_recvhandler(void *CallBackRef, unsigned int EventData)
 		reg_val = PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG3_OFFSET) & 0xff;
 		while(PLB_DAC_mReadReg(XPAR_PLB_DAC_0_BASEADDR, PLB_DAC_SLV_REG0_OFFSET) & 0x2) ;
 		xil_printf("DAC 0 - Reg 0x%x: %x\r\n", reg_addr, reg_val);
-
+		break;
+	case '.':
+		level = data_pop() * 256 + data_pop() * 16 + data_pop();
+		msg_clr();
+		genDACCtrl();
+		msg_state = 1;
 		break;
 	default:
 		msg_state = 0;
