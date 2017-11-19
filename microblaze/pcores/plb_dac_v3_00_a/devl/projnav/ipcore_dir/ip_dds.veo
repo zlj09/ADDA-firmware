@@ -69,10 +69,9 @@ ip_dds your_instance_name (
   .clk(clk), // input clk
   .sclr(sclr), // input sclr
   .we(we), // input we
-  .data(data), // input [15 : 0] data
-  .cosine(cosine), // output [9 : 0] cosine
+  .data(data), // input [31 : 0] data
   .sine(sine), // output [9 : 0] sine
-  .phase_out(phase_out) // output [15 : 0] phase_out
+  .phase_out(phase_out) // output [31 : 0] phase_out
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

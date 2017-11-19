@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   12:14:19 10/05/2017
+// Create Date:   22:53:43 11/18/2017
 // Design Name:   user_logic
-// Module Name:   F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/devl/projnav/tb_pdv3ul.v
+// Module Name:   F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/vsim/tb_pdv3ul.v
 // Project Name:  plb_dac
 // Target Device:  
 // Tool versions:  
@@ -26,6 +26,7 @@ module tb_pdv3ul;
 
 	// Inputs
 	reg IP2DAC_Format_I;
+	reg CLKGEN_Clk;
 	reg Bus2IP_Clk;
 	reg Bus2IP_Reset;
 	reg [0:31] Bus2IP_Addr;
@@ -65,6 +66,7 @@ module tb_pdv3ul;
 		.IP2DAC_PWRDN(IP2DAC_PWRDN), 
 		.IP2DAC_OpEnI(IP2DAC_OpEnI), 
 		.IP2DAC_OpEnQ(IP2DAC_OpEnQ), 
+		.CLKGEN_Clk(CLKGEN_Clk), 
 		.Bus2IP_Clk(Bus2IP_Clk), 
 		.Bus2IP_Reset(Bus2IP_Reset), 
 		.Bus2IP_Addr(Bus2IP_Addr), 
@@ -83,6 +85,7 @@ module tb_pdv3ul;
 	initial begin
 		// Initialize Inputs
 		IP2DAC_Format_I = 0;
+		CLKGEN_Clk = 0;
 		Bus2IP_Clk = 0;
 		Bus2IP_Reset = 1;
 		Bus2IP_Addr = 0;
@@ -103,63 +106,20 @@ module tb_pdv3ul;
 
 		#200;
 		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h028f_4401;
+		Bus2IP_Data = 32'h0000_2281;
 
-		/*Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h0000_0001;
+		#20;
+		Bus2IP_WrCE = 7'b0000010;
+		Bus2IP_Data = 32'h3b9a_ca00;
 
-		#200;
-		Bus2IP_WrCE = 7'b0100000;
-		Bus2IP_Data = 32'h0000_1234;
-
-		#200;
-		Bus2IP_WrCE = 7'b0010000;
-		Bus2IP_Data = 32'h0000_0123;
-
-		#200;
-		Bus2IP_WrCE = 7'b0010000;
-		Bus2IP_Data = 32'h0000_0000;
-
-		#200;
-		Bus2IP_WrCE = 7'b0100000;
-		Bus2IP_Data = 32'h0000_0000;
-
-		#200;
-		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h0032_0011;
-
-		#10240;
-		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h0032_0021;		
-
-		#10240;
-		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h0032_0031;
-
-		#10240;
-		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h0032_0041;
-
-		#10240;
-		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h0032_0081;
-
-		#10240;
-		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h0032_00C1;
-
-		#10240;
-		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h0064_0021;
-
-		#10240;
-		Bus2IP_WrCE = 7'b1000000;
-		Bus2IP_Data = 32'h00C8_0021;*/
-
+		#20;
+		Bus2IP_WrCE = 7'b0000001;
+		Bus2IP_Data = 32'h11e1_a300;
 	end
 
-	always @(Bus2IP_Clk)
-		#5 Bus2IP_Clk <= ~Bus2IP_Clk;
+	always @(Bus2IP_Clk) #10 Bus2IP_Clk <= ~Bus2IP_Clk;
 
+	always @(CLKGEN_Clk) #2 CLKGEN_Clk <= ~CLKGEN_Clk;
+      
 endmodule
 

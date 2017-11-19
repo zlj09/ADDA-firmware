@@ -14,3 +14,9 @@ map -intstyle ise -p xc4vsx55-ff1148-10 -global_opt off -cm area -ir off -pr off
 par -w -intstyle ise -ol high -t 1 plb_dac_map.ncd plb_dac.ncd plb_dac.pcf 
 trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml plb_dac.twx plb_dac.ncd -o plb_dac.twr plb_dac.pcf 
 xst -intstyle ise -ifn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/devl/projnav/plb_dac.xst" -ofn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/devl/projnav/plb_dac.syr" 
+xst -intstyle ise -ifn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/devl/projnav/plb_dac.xst" -ofn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/devl/projnav/plb_dac.syr" 
+xst -intstyle ise -ifn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/devl/projnav/plb_dac.xst" -ofn "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/devl/projnav/plb_dac.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc4vsx55-ff1148-10 plb_dac.ngc plb_dac.ngd  
+map -intstyle ise -p xc4vsx55-ff1148-10 -global_opt off -cm area -ir off -pr off -c 100 -o plb_dac_map.ncd plb_dac.ngd plb_dac.pcf 
+par -w -intstyle ise -ol high -t 1 plb_dac_map.ncd plb_dac.ncd plb_dac.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml plb_dac.twx plb_dac.ncd -o plb_dac.twr plb_dac.pcf 

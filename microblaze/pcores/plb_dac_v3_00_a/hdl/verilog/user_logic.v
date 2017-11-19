@@ -64,6 +64,7 @@ module user_logic
   IP2DAC_PWRDN,              //IP to DAC SPI CS
   IP2DAC_OpEnI,              //IP to DAC output op amp I enable
   IP2DAC_OpEnQ,              //IP to DAC output op amp Q enable
+  CLKGEN_Clk,                //High speed clock from clock generator
   // -- ADD USER PORTS ABOVE THIS LINE ---------------
 
   // -- DO NOT EDIT BELOW THIS LINE ------------------
@@ -87,7 +88,7 @@ module user_logic
 // -- ADD USER PARAMETERS BELOW THIS LINE ------------
 // --USER parameters added here 
 parameter DAC_WIDTH                     = 10;
-parameter PHASE_WIDTH                   = 16;
+parameter PHASE_WIDTH                   = 32;
 // -- ADD USER PARAMETERS ABOVE THIS LINE ------------
 
 // -- DO NOT EDIT BELOW THIS LINE --------------------
@@ -111,6 +112,7 @@ output                                    IP2DAC_Format_T;
 output                                    IP2DAC_PWRDN;
 output                                    IP2DAC_OpEnI;
 output                                    IP2DAC_OpEnQ;
+input                                     CLKGEN_Clk;
 // -- ADD USER PORTS ABOVE THIS LINE -----------------
 
 // -- DO NOT EDIT BELOW THIS LINE --------------------
@@ -150,15 +152,21 @@ output                                    IP2Bus_Error;
   reg                                       dds_sclr;
   wire       [3 : 0]                        i_waveform;
   wire       [3 : 0]                        q_waveform;
-  wire       [9 : 0]                        rect_data;
-  wire       [9 : 0]                        saw_data;
-  wire       [9 : 0]                        sine_data;
-  wire       [9 : 0]                        unsigned_sine_data;
-  wire       [9 : 0]                        arb_data;
-  wire       [PHASE_WIDTH-1 : 0]            phase_out;
-  wire       [PHASE_WIDTH-1 : 0]            step_ctl;
-  wire       [15 : 0]                       bram_addr;
-  wire                                      bram_wea;
+  wire       [PHASE_WIDTH-1 : 0]            i_phase_out;
+  wire       [PHASE_WIDTH-1 : 0]            i_freq_ctl;
+  wire       [PHASE_WIDTH-1 : 0]            q_phase_out;
+  wire       [PHASE_WIDTH-1 : 0]            q_freq_ctl;
+  wire       [DAC_WIDTH-1 : 0]              i_rect_data;
+  wire       [DAC_WIDTH-1 : 0]              i_saw_data;
+  wire       [DAC_WIDTH-1 : 0]              i_sine_data;
+  wire       [DAC_WIDTH-1 : 0]              i_unsigned_sine_data;
+  wire       [DAC_WIDTH-1 : 0]              i_arb_data;
+  wire       [DAC_WIDTH-1 : 0]              q_rect_data;
+  wire       [DAC_WIDTH-1 : 0]              q_saw_data;
+  wire       [DAC_WIDTH-1 : 0]              q_sine_data;
+  wire       [DAC_WIDTH-1 : 0]              q_unsigned_sine_data;
+  wire       [DAC_WIDTH-1 : 0]              q_arb_data;
+
 
   // Nets for user logic slave model s/w accessible register example
   reg        [0 : C_SLV_DWIDTH-1]           slv_reg0;
@@ -257,7 +265,7 @@ output                                    IP2Bus_Error;
         endcase
 
         if (state_reg == 3'd3 && sclk_reg == 1'b0 && spi_cnt >= 5'd8)
-          slv_reg3[16 + spi_cnt] <= IP2DAC_Format_I;
+          slv_reg1[16 + spi_cnt] <= IP2DAC_Format_I;
 
         slv_reg0[30] <= spi_state;
 
@@ -282,7 +290,7 @@ output                                    IP2Bus_Error;
 
 
     // generate DAC clock here, with a frequency divider imposed on the bus clock
-  always @(posedge Bus2IP_Clk)
+  always @(posedge CLKGEN_Clk)
     begin
       if (Bus2IP_Reset == 1)
         dac_clk_reg <= 1'b0;
@@ -291,9 +299,9 @@ output                                    IP2Bus_Error;
     end
 
   //Get DAC data from slv_reg1. slv_reg1[0] is MSB. slv_reg1[31] is LSB.
-  //slv_reg2[22 : 31] is for Q DAC, output when DCLKIO is at high voltage, latched at the negative edge.
-  //slv_reg1[22 : 31] is for I DAC, output when DCLKIO is at low voltage, latched at the positive edge.
-  always @(negedge Bus2IP_Clk)
+  //slv_reg4[22 : 31] is for Q DAC, output when DCLKIO is at high voltage, latched at the negative edge.
+  //slv_reg3[22 : 31] is for I DAC, output when DCLKIO is at low voltage, latched at the positive edge.
+  always @(negedge CLKGEN_Clk)
     begin
       if (Bus2IP_Reset == 1) begin
         dac_data_reg <= 10'b0;
@@ -301,21 +309,21 @@ output                                    IP2Bus_Error;
       else begin
         if (dac_clk_reg == 1'b1) begin
           case (q_waveform)
-          4'd0: dac_data_reg <= slv_reg2[22: 31];
-          4'd1: dac_data_reg <= rect_data;
-          4'd2: dac_data_reg <= saw_data;
-          4'd3: dac_data_reg <= unsigned_sine_data;
-          4'd4: dac_data_reg <= arb_data;
+          4'd0: dac_data_reg <= slv_reg4[22: 31];
+          4'd1: dac_data_reg <= i_rect_data;
+          4'd2: dac_data_reg <= i_saw_data;
+          4'd3: dac_data_reg <= i_unsigned_sine_data;
+          4'd4: dac_data_reg <= i_arb_data;
           default: dac_data_reg <= dac_data_reg;
           endcase
         end
         else begin
           case (i_waveform)
-          4'd0: dac_data_reg <= slv_reg1[22: 31];
-          4'd1: dac_data_reg <= rect_data;
-          4'd2: dac_data_reg <= saw_data;
-          4'd3: dac_data_reg <= unsigned_sine_data;
-          4'd4: dac_data_reg <= arb_data;
+          4'd0: dac_data_reg <= slv_reg3[22: 31];
+          4'd1: dac_data_reg <= q_rect_data;
+          4'd2: dac_data_reg <= q_saw_data;
+          4'd3: dac_data_reg <= q_unsigned_sine_data;
+          4'd4: dac_data_reg <= q_arb_data;
           default: dac_data_reg <= dac_data_reg;
           endcase
         end
@@ -361,7 +369,7 @@ output                                    IP2Bus_Error;
             dac_en <= 1'b0;
           end
           else begin
-            if (slv_reg_write_sel == 7'b0001000) begin
+            if (slv_reg_write_sel == 7'b0100000) begin
               state_reg <= 3'd2;
               dac_en <= dac_en;
             end
@@ -373,7 +381,7 @@ output                                    IP2Bus_Error;
         end
         3'd2 : begin    //Judge State
           spi_state <= 1'b1;
-          if (slv_reg3[16] == 1'b1) begin
+          if (slv_reg1[16] == 1'b1) begin
             state_reg <= 3'd3;
             cs_reg <= 1'b0;
           end
@@ -390,7 +398,7 @@ output                                    IP2Bus_Error;
             else begin
               sclk_reg <= ~sclk_reg;
               if (spi_cnt < 5'd8) begin
-                sdio_reg_o <= slv_reg3[16 + spi_cnt];
+                sdio_reg_o <= slv_reg1[16 + spi_cnt];
                 sdio_reg_t <= 1'b0;
               end
               else begin
@@ -414,7 +422,7 @@ output                                    IP2Bus_Error;
             end
             else begin
               sclk_reg <= ~sclk_reg;
-              sdio_reg_o <= slv_reg3[16 + spi_cnt];
+              sdio_reg_o <= slv_reg1[16 + spi_cnt];
               sdio_reg_t <= 1'b0;
             end
           end
@@ -431,22 +439,38 @@ output                                    IP2Bus_Error;
     end
 
 
-  ip_dds ip_dds_q (
-    .clk(Bus2IP_Clk), 
+  ip_dds ip_dds_i (
+    .clk(CLKGEN_Clk), 
     .we(1'b1), 
-    .phase_out(phase_out), 
-    .cosine(), 
-    .sine(sine_data), 
-    .data(step_ctl),
-	.sclr(1'b0)
+    .phase_out(i_phase_out), 
+    .sine(i_sine_data), 
+    .data(i_freq_ctl),
+    .sclr(1'b0)
+  );
+  
+  ip_dds ip_dds_q (
+    .clk(CLKGEN_Clk), 
+    .we(1'b1), 
+    .phase_out(q_phase_out), 
+    .sine(q_sine_data), 
+    .data(q_freq_ctl),
+	  .sclr(1'b0)
   );
 
-  bram_arb bram_arb_1 (
-    .clka(Bus2IP_Clk), 
+  bram_arb bram_arb_i (
+    .clka(CLKGEN_Clk), 
     .wea(1'b0), 
-    .addra(phase_out), 
-    .dina(Bus2IP_Data[22 : 31]), 
-    .douta(arb_data)
+    .addra(i_phase_out[31 : 16]), 
+    .dina(), 
+    .douta(i_arb_data)
+  );
+
+  bram_arb bram_arb_q (
+    .clka(CLKGEN_Clk), 
+    .wea(1'b0), 
+    .addra(q_phase_out[31 : 16]), 
+    .dina(), 
+    .douta(q_arb_data)
   );
 
 
@@ -454,14 +478,19 @@ output                                    IP2Bus_Error;
   // Example code to drive IP to Bus signals
   // ------------------------------------------------------------
 
+  assign simul_mod = slv_reg0[24];
 
   assign i_waveform = slv_reg0[20 : 23];
-  assign q_waveform = slv_reg0[16 : 19];
-  assign step_ctl = slv_reg0[0 : 15] + 1'b1;
+  assign q_waveform = (simul_mod) ? (i_waveform) : (slv_reg0[16 : 19]);
+  assign i_freq_ctl = slv_reg5[0 : 31];
+  assign q_freq_ctl = (simul_mod) ? (i_freq_ctl) : (slv_reg6[0 : 31]);
 
-  assign rect_data = (phase_out < 16'h8000) ? (10'h3ff) : (10'h0);
-  assign saw_data = phase_out[15 : 6];
-  assign unsigned_sine_data = (sine_data[9]) ? (sine_data - 10'd512) : (sine_data + 10'd512);
+  assign i_rect_data = (i_phase_out < 32'h8000_0000) ? (10'h3ff) : (10'h0);
+  assign i_saw_data = i_phase_out[31 : 22];
+  assign i_unsigned_sine_data = (i_sine_data[9]) ? (i_sine_data - 10'd512) : (i_sine_data + 10'd512);
+  assign q_rect_data = (q_phase_out < 32'h8000_0000) ? (10'h3ff) : (10'h0);
+  assign q_saw_data = q_phase_out[31 : 22];
+  assign q_unsigned_sine_data = (q_sine_data[9]) ? (q_sine_data - 10'd512) : (q_sine_data + 10'd512);
 
   // ------------------------------------------------------------
   // Example code to drive IP to Bus signals

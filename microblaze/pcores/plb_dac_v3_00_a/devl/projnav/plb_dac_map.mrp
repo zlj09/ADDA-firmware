@@ -9,37 +9,37 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Fri Oct 06 18:08:56 2017
+Mapped Date    : Sun Nov 19 12:07:22 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:   72
 Logic Utilization:
-  Number of Slice Flip Flops:           511 out of  49,152    1%
-  Number of 4 input LUTs:               738 out of  49,152    1%
+  Number of Slice Flip Flops:           644 out of  49,152    1%
+  Number of 4 input LUTs:             1,008 out of  49,152    2%
 Logic Distribution:
-  Number of occupied Slices:            602 out of  24,576    2%
-    Number of Slices containing only related logic:     602 out of     602 100%
-    Number of Slices containing unrelated logic:          0 out of     602   0%
+  Number of occupied Slices:            771 out of  24,576    3%
+    Number of Slices containing only related logic:     771 out of     771 100%
+    Number of Slices containing unrelated logic:          0 out of     771   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         755 out of  49,152    1%
-    Number used as logic:               738
-    Number used as a route-thru:         17
+  Total Number of 4 input LUTs:       1,010 out of  49,152    2%
+    Number used as logic:             1,008
+    Number used as a route-thru:          2
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
-  Number of bonded IOBs:                289 out of     640   45%
-  Number of BUFG/BUFGCTRLs:               1 out of      32    3%
-    Number used as BUFGs:                 1
-  Number of FIFO16/RAMB16s:              37 out of     320   11%
-    Number used as RAMB16s:              37
+  Number of bonded IOBs:                290 out of     640   45%
+  Number of BUFG/BUFGCTRLs:               2 out of      32    6%
+    Number used as BUFGs:                 2
+  Number of FIFO16/RAMB16s:              74 out of     320   23%
+    Number used as RAMB16s:              74
 
-Average Fanout of Non-Clock Nets:                3.16
+Average Fanout of Non-Clock Nets:                2.89
 
-Peak Memory Usage:  478 MB
-Total REAL time to MAP completion:  15 secs 
-Total CPU time to MAP completion:   7 secs 
+Peak Memory Usage:  504 MB
+Total REAL time to MAP completion:  20 secs 
+Total CPU time to MAP completion:   9 secs 
 
 NOTES:
 
@@ -80,11 +80,443 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[9].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[8].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[7].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[6].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[5].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[4].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[3].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[31].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[30].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[2].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[29].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[27].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[26].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[25].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[24].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[23].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[22].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[21].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[20].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[1].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[19].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[18].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[17].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[16].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[15].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[14].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[13].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[12].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[11].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[10].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[9].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[8].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[7].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[6].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[5].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[4].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[3].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[31].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[30].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[2].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[29].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[27].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[26].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[25].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[24].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[23].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[22].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[21].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[20].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[1].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[19].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[18].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[17].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[16].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[15].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[14].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[13].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[12].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[11].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[10].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_
+   RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP>:<RAMB16_R
+   AMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins must be
+   used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B>:<R
+   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
+   must be used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B>:<R
+   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
+   must be used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B>:<R
+   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
+   must be used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B>:<R
+   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
+   must be used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T>:<R
+   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
+   must be used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T>:<R
+   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
+   must be used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T>:<R
+   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
+   must be used.
+WARNING:PhysDesignRules:1221 - Issue with pin connections and/or configuration
+   on
+   block:<USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T>:<R
+   AMB16_RAMB16>.  If port A WRITE_WIDTH_A is used then the CLKA and DIA0 pins
+   must be used.
 
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network PLB_wrPrim has no load.
-INFO:LIT:395 - The above info message is repeated 172 more times for the
+INFO:LIT:395 - The above info message is repeated 195 more times for the
    following (max. 5 shown):
    PLB_rdBurst,
    PLB_SAValid,
@@ -104,9 +536,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   2 block(s) removed
-   6 block(s) optimized away
-  13 signal(s) removed
+  68 block(s) removed
+  10 block(s) optimized away
+  90 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -121,28 +553,241 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-The signal "USER_LOGIC_I/bram_arb_1/N0" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<9>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<8>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<7>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<6>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<5>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<4>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<3>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<2>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<1>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/cosine<0>" is sourceless and has been removed.
-The signal "USER_LOGIC_I/ip_dds_q/sig0000003a" is sourceless and has been
+The signal "USER_LOGIC_I/bram_arb_q/dina<9>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<8>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<7>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<6>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<5>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<4>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<3>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<2>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<1>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/dina<0>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_q/N0" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<9>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<8>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<7>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<6>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<5>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<4>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<3>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<2>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<1>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/dina<0>" is sourceless and has been removed.
+The signal "USER_LOGIC_I/bram_arb_i/N0" is sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_15" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_14" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_13" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_12" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_11" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_10" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_9" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_8" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_7" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_6" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_5" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_4" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_3" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_2" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_1" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.del/pipe_2_0" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig0000007c" is sourceless and has been
 removed.
- Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000013" (FF) removed.
-  The signal "USER_LOGIC_I/ip_dds_q/sig0000002a" is sourceless and has been
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000023" (SFF) removed.
+  The signal "USER_LOGIC_I/ip_dds_q/sig0000005c" is sourceless and has been
 removed.
-Unused block "USER_LOGIC_I/ip_dds_q/blk00000045" (MUX) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000a4" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000064" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000af" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000065" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000ba" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000066" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000bd" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000067" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000be" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000068" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000bf" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000069" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000c0" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk0000006a" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000c1" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk0000006b" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000c2" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk0000006c" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000c3" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk0000006d" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000a5" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk0000006e" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000a6" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk0000006f" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000a7" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000070" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000a8" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000071" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000a9" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000072" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_q/sig000000aa" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_q/blk00000073" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_15" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_14" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_13" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_12" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_11" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_10" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_9" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_8" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_7" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_6" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_5" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_4" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_3" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_2" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_1" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.del/pipe_2_0" is
+sourceless and has been removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig0000007c" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000023" (SFF) removed.
+  The signal "USER_LOGIC_I/ip_dds_i/sig0000005c" is sourceless and has been
+removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000a4" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000064" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000af" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000065" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000ba" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000066" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000bd" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000067" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000be" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000068" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000bf" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000069" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000c0" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk0000006a" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000c1" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk0000006b" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000c2" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk0000006c" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000c3" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk0000006d" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000a5" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk0000006e" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000a6" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk0000006f" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000a7" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000070" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000a8" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000071" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000a9" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000072" (FF) removed.
+The signal "USER_LOGIC_I/ip_dds_i/sig000000aa" is sourceless and has been
+removed.
+ Sourceless block "USER_LOGIC_I/ip_dds_i/blk00000073" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000044" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000045" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000046" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000047" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000048" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000049" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk0000004a" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk0000004b" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk0000004c" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk0000004d" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk0000004e" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk0000004f" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000050" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000051" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000052" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000053" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000044" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000045" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000046" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000047" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000048" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000049" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk0000004a" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk0000004b" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk0000004c" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk0000004d" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk0000004e" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk0000004f" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000050" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000051" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000052" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000053" (FF) removed.
+Unused block "USER_LOGIC_I/ip_dds_i/blk00000085" (MUX) removed.
+Unused block "USER_LOGIC_I/ip_dds_q/blk00000085" (MUX) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-GND 		USER_LOGIC_I/bram_arb_1/XST_GND
-VCC 		USER_LOGIC_I/bram_arb_1/XST_VCC
+GND 		USER_LOGIC_I/bram_arb_i/XST_GND
+VCC 		USER_LOGIC_I/bram_arb_i/XST_VCC
+GND 		USER_LOGIC_I/bram_arb_q/XST_GND
+VCC 		USER_LOGIC_I/bram_arb_q/XST_VCC
+GND 		USER_LOGIC_I/ip_dds_i/blk00000001
+VCC 		USER_LOGIC_I/ip_dds_i/blk00000002
 GND 		USER_LOGIC_I/ip_dds_q/blk00000001
 VCC 		USER_LOGIC_I/ip_dds_q/blk00000002
 GND 		XST_GND
@@ -158,6 +803,7 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLKGEN_Clk                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | PLB_ABus<0>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | PLB_ABus<1>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | PLB_ABus<2>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |

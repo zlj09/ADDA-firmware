@@ -41,8 +41,6 @@
 # vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.tb_pdv3ul glbl 
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # 
-# ** Note: (vopt-143) Recognized 1 FSM in module "user_logic(fast)".
-# 
 # Loading work.tb_pdv3ul(fast)
 # Loading work.user_logic(fast)
 # Loading work.ip_dds(fast)
@@ -55,7 +53,6 @@
 # Loading unisims_ver.XORCY(fast)
 # Loading unisims_ver.MUXCY(fast)
 # Loading unisims_ver.LUT2(fast)
-# Loading unisims_ver.INV(fast)
 # Loading unisims_ver.RAMB16(fast)
 # Loading unisims_ver.ARAMB36_INTERNAL(fast)
 # Loading work.bram_arb(fast)
@@ -69,11 +66,7 @@
 # .main_pane.objects.interior.cs.body.tree
 #  Block Memory Generator CORE Generator module loading initial data...
 #  Block Memory Generator data initialization complete.
-# Block Memory Generator CORE Generator module tb_pdv3ul.uut.bram_arb_1.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-run
-run
-run
-run
-run
-run
-run
+# Block Memory Generator CORE Generator module tb_pdv3ul.uut.bram_arb_i.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator CORE Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator CORE Generator module tb_pdv3ul.uut.bram_arb_q.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.

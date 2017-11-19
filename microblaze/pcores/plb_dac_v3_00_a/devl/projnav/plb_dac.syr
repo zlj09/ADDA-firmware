@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.72 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.72 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: plb_dac.prj
 
@@ -193,7 +193,7 @@ Analyzing hierarchy for module <user_logic> in library <work> with parameters.
 	C_SLV_AWIDTH = "00000000000000000000000000100000"
 	C_SLV_DWIDTH = "00000000000000000000000000100000"
 	DAC_WIDTH = "00000000000000000000000000001010"
-	PHASE_WIDTH = "00000000000000000000000000010000"
+	PHASE_WIDTH = "00000000000000000000000000100000"
 
 Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
 	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
@@ -320,7 +320,7 @@ Analyzing generic Entity <plb_dac> in library <work> (Architecture <imp>).
 	DAC_WIDTH = 10
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/vhdl/plb_dac.vhd" line 476: Unconnected output port 'Reset2Bus_ToutSup' of component 'soft_reset'.
+WARNING:Xst:753 - "F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/pcores/plb_dac_v3_00_a/hdl/vhdl/plb_dac.vhd" line 478: Unconnected output port 'Reset2Bus_ToutSup' of component 'soft_reset'.
 Entity <plb_dac> analyzed. Unit <plb_dac> generated.
 
 Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
@@ -477,15 +477,20 @@ Analyzing module <user_logic> in library <work>.
 	C_SLV_AWIDTH = 32'sb00000000000000000000000000100000
 	C_SLV_DWIDTH = 32'sb00000000000000000000000000100000
 	DAC_WIDTH = 32'sb00000000000000000000000000001010
-	PHASE_WIDTH = 32'sb00000000000000000000000000010000
-INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-INFO:Xst:1433 - Contents of array <slv_reg3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:2211 - "ipcore_dir/ip_dds.v" line 433: Instantiating black box module <ip_dds>.
-WARNING:Xst:2211 - "ipcore_dir/bram_arb.v" line 450: Instantiating black box module <bram_arb>.
+	PHASE_WIDTH = 32'sb00000000000000000000000000100000
+INFO:Xst:1433 - Contents of array <slv_reg1> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <slv_reg1> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:2211 - "ipcore_dir/ip_dds.v" line 442: Instantiating black box module <ip_dds>.
+WARNING:Xst:2211 - "ipcore_dir/ip_dds.v" line 451: Instantiating black box module <ip_dds>.
+WARNING:Xst:2211 - "ipcore_dir/bram_arb.v" line 460: Instantiating black box module <bram_arb>.
+WARNING:Xst:2211 - "ipcore_dir/bram_arb.v" line 468: Instantiating black box module <bram_arb>.
 Module <user_logic> is correct for synthesis.
  
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <ip_dds_i> in unit <user_logic>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <ip_dds_i> in unit <user_logic>.
     Set user-defined property "SYN_BLACK_BOX =  1" for instance <ip_dds_q> in unit <user_logic>.
     Set user-defined property "SYN_NOPRUNE =  1" for instance <ip_dds_q> in unit <user_logic>.
+    Set property "SYN_NOPRUNE = 1" for unit <ip_dds>.
     Set property "SYN_NOPRUNE = 1" for unit <ip_dds>.
 
 =========================================================================
@@ -578,10 +583,8 @@ Synthesizing Unit <user_logic>.
 WARNING:Xst:647 - Input <Bus2IP_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_Addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_CS<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:646 - Signal <unsigned_sine_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <spi_start_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <bram_wea> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dds_sclr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_0> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -595,37 +598,39 @@ WARNING:Xst:1780 - Signal <bram_addr> is never used or assigned. This unconnecte
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 392.
+    Found 1-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 401.
     Found 5-bit adder carry out for signal <COND_283$addsub0000>.
     Found 1-bit register for signal <cs_reg>.
     Found 1-bit register for signal <dac_clk_reg>.
     Found 10-bit register for signal <dac_data_reg>.
     Found 1-bit register for signal <dac_en>.
+    Found 32-bit comparator less for signal <i_rect_data$cmp_lt0000> created at line 488.
+    Found 10-bit addsub for signal <i_unsigned_sine_data>.
     Found 1-bit register for signal <Mtridata_sdio_reg_o>.
     Found 1-bit register for signal <Mtrien_sdio_reg_o>.
-    Found 16-bit comparator less for signal <rect_data$cmp_lt0000> created at line 470.
+    Found 32-bit comparator less for signal <q_rect_data$cmp_lt0000> created at line 491.
+    Found 10-bit addsub for signal <q_unsigned_sine_data>.
     Found 1-bit register for signal <reset_reg>.
     Found 1-bit register for signal <sclk_reg>.
     Found 1-bit tristate buffer for signal <sdio_reg_o>.
     Found 1-bit register for signal <sdio_reg_t>.
     Found 32-bit register for signal <slv_reg0>.
     Found 32-bit register for signal <slv_reg1>.
+    Found 5-bit comparator greatequal for signal <slv_reg1_16$cmp_ge0000> created at line 267.
+    Found 5-bit comparator less for signal <slv_reg1_16$cmp_lt0000> created at line 267.
     Found 32-bit register for signal <slv_reg2>.
     Found 32-bit register for signal <slv_reg3>.
-    Found 5-bit comparator greatequal for signal <slv_reg3_16$cmp_ge0000> created at line 258.
-    Found 5-bit comparator less for signal <slv_reg3_16$cmp_lt0000> created at line 258.
     Found 32-bit register for signal <slv_reg4>.
     Found 32-bit register for signal <slv_reg5>.
     Found 32-bit register for signal <slv_reg6>.
     Found 5-bit register for signal <spi_cnt>.
     Found 5-bit adder for signal <spi_cnt$addsub0000>.
     Found 1-bit register for signal <spi_state>.
-    Found 16-bit adder for signal <step_ctl>.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred 248 D-type flip-flop(s).
-	inferred   3 Adder/Subtractor(s).
-	inferred   3 Comparator(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
 	inferred   1 Multiplexer(s).
 	inferred   1 Tristate(s).
 Unit <user_logic> synthesized.
@@ -753,8 +758,8 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
- 16-bit adder                                          : 1
+# Adders/Subtractors                                   : 5
+ 10-bit addsub                                         : 2
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
  9-bit subtractor                                      : 1
@@ -766,8 +771,8 @@ Macro Statistics
  4-bit register                                        : 3
  5-bit register                                        : 2
  9-bit register                                        : 1
-# Comparators                                          : 3
- 16-bit comparator less                                : 1
+# Comparators                                          : 4
+ 32-bit comparator less                                : 2
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
 # Multiplexers                                         : 2
@@ -795,8 +800,10 @@ Optimizing FSM <USER_LOGIC_I/state_reg/FSM> on signal <state_reg[1:3]> with gray
 -------------------
 Reading core <ipcore_dir/ip_dds.ngc>.
 Reading core <ipcore_dir/bram_arb.ngc>.
+Loading core <ip_dds> for timing and area information for instance <ip_dds_i>.
 Loading core <ip_dds> for timing and area information for instance <ip_dds_q>.
-Loading core <bram_arb> for timing and area information for instance <bram_arb_1>.
+Loading core <bram_arb> for timing and area information for instance <bram_arb_i>.
+Loading core <bram_arb> for timing and area information for instance <bram_arb_q>.
 WARNING:Xst:1290 - Hierarchical block <MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I> is unconnected in block <I_DECODER>.
    It will be removed from the design.
 WARNING:Xst:2677 - Node <addr_out_s_h_4> of sequential type is unconnected in block <I_DECODER>.
@@ -809,15 +816,15 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Adders/Subtractors                                   : 4
- 16-bit adder                                          : 1
+# Adders/Subtractors                                   : 5
+ 10-bit addsub                                         : 2
  5-bit adder                                           : 1
  5-bit adder carry out                                 : 1
  9-bit subtractor                                      : 1
 # Registers                                            : 479
  Flip-Flops                                            : 479
-# Comparators                                          : 3
- 16-bit comparator less                                : 1
+# Comparators                                          : 4
+ 32-bit comparator less                                : 2
  5-bit comparator greatequal                           : 1
  5-bit comparator less                                 : 1
 # Multiplexers                                         : 2
@@ -883,7 +890,7 @@ WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block plb_dac, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block plb_dac, actual ratio is 3.
 
 Final Macro Processing ...
 
@@ -918,40 +925,40 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 451
+# IOs                              : 452
 
 Cell Usage :
-# BELS                             : 999
-#      GND                         : 3
-#      INV                         : 5
-#      LUT1                        : 16
-#      LUT2                        : 103
-#      LUT2_D                      : 2
-#      LUT3                        : 254
-#      LUT4                        : 357
-#      LUT4_D                      : 2
-#      LUT4_L                      : 12
-#      MUXCY                       : 40
-#      MUXF5                       : 100
-#      MUXF6                       : 40
-#      MUXF7                       : 20
-#      MUXF8                       : 10
-#      VCC                         : 3
-#      XORCY                       : 32
-# FlipFlops/Latches                : 512
-#      FD                          : 51
-#      FDE                         : 38
-#      FDR                         : 144
-#      FDR_1                       : 1
+# BELS                             : 1464
+#      GND                         : 5
+#      INV                         : 4
+#      LUT1                        : 1
+#      LUT2                        : 111
+#      LUT2_D                      : 1
+#      LUT3                        : 414
+#      LUT3_L                      : 10
+#      LUT4                        : 457
+#      LUT4_D                      : 1
+#      LUT4_L                      : 8
+#      MUXCY                       : 73
+#      MUXF5                       : 177
+#      MUXF6                       : 76
+#      MUXF7                       : 38
+#      MUXF8                       : 19
+#      VCC                         : 5
+#      XORCY                       : 64
+# FlipFlops/Latches                : 710
+#      FD                          : 130
+#      FDE                         : 91
+#      FDR                         : 211
 #      FDRE                        : 249
-#      FDRS                        : 6
-#      FDRS_1                      : 9
+#      FDRS                        : 5
+#      FDRS_1                      : 10
 #      FDRSE                       : 5
 #      FDS                         : 9
-# RAMS                             : 37
-#      RAMB16                      : 37
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
+# RAMS                             : 74
+#      RAMB16                      : 74
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
 # IO Buffers                       : 288
 #      IBUF                        : 94
 #      OBUF                        : 193
@@ -963,14 +970,14 @@ Device utilization summary:
 
 Selected Device : 4vsx55ff1148-10 
 
- Number of Slices:                      548  out of  24576     2%  
- Number of Slice Flip Flops:            512  out of  49152     1%  
- Number of 4 input LUTs:                751  out of  49152     1%  
- Number of IOs:                         451
- Number of bonded IOBs:                 289  out of    640    45%  
- Number of FIFO16/RAMB16s:               37  out of    320    11%  
-    Number used as RAMB16s:              37
- Number of GCLKs:                         1  out of     32     3%  
+ Number of Slices:                      715  out of  24576     2%  
+ Number of Slice Flip Flops:            710  out of  49152     1%  
+ Number of 4 input LUTs:               1007  out of  49152     2%  
+ Number of IOs:                         452
+ Number of bonded IOBs:                 290  out of    640    45%  
+ Number of FIFO16/RAMB16s:               74  out of    320    23%  
+    Number used as RAMB16s:              74
+ Number of GCLKs:                         2  out of     32     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -993,8 +1000,10 @@ Clock Information:
 -----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                                                | Load  |
 -----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-SPLB_Clk                           | BUFGP                                                                                                                                                | 549   |
-USER_LOGIC_I/bram_arb_1/N1         | NONE(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 36    |
+SPLB_Clk                           | BUFGP                                                                                                                                                | 431   |
+CLKGEN_Clk                         | BUFGP                                                                                                                                                | 353   |
+USER_LOGIC_I/bram_arb_q/N1         | NONE(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 36    |
+USER_LOGIC_I/bram_arb_i/N1         | NONE(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 36    |
 -----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -1003,19 +1012,24 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                                                     | Buffer(FF name)                                                                                                                                      | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-USER_LOGIC_I/bram_arb_1/N1(USER_LOGIC_I/bram_arb_1/XST_GND:G)                                                                                                                                                                                                                                      | NONE(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP)       | 136   |
-USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeina_tmp(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
-USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeinb_tmp(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
-USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeina_tmp(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
-USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeinb_tmp(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+USER_LOGIC_I/bram_arb_i/N1(USER_LOGIC_I/bram_arb_i/XST_GND:G)                                                                                                                                                                                                                                      | NONE(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP)       | 136   |
+USER_LOGIC_I/bram_arb_q/N1(USER_LOGIC_I/bram_arb_q/XST_GND:G)                                                                                                                                                                                                                                      | NONE(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP)       | 136   |
+USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeina_tmp(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeinb_tmp(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeina_tmp(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeinb_tmp(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeina_tmp(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/cascadeinb_tmp(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeina_tmp(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTA)| NONE(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
+USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/cascadeinb_tmp(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_B:CASCADEOUTB)| NONE(USER_LOGIC_I/bram_arb_q/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/v4_init.ram/SP.CASCADED_PRIM.C_SP_T)| 2     |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 10.374ns (Maximum Frequency: 96.397MHz)
-   Minimum input arrival time before clock: 5.862ns
+   Minimum period: 11.810ns (Maximum Frequency: 84.676MHz)
+   Minimum input arrival time before clock: 5.874ns
    Maximum output required time after clock: 5.634ns
    Maximum combinational path delay: No path found
 
@@ -1025,16 +1039,42 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 10.374ns (frequency: 96.397MHz)
-  Total number of paths / destination ports: 9764 / 1795
+  Clock period: 5.948ns (frequency: 168.115MHz)
+  Total number of paths / destination ports: 7064 / 933
 -------------------------------------------------------------------------
-Delay:               5.187ns (Levels of Logic = 7)
-  Source:            USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (RAM)
-  Destination:       USER_LOGIC_I/dac_data_reg_1 (FF)
+Delay:               5.948ns (Levels of Logic = 5)
+  Source:            PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_29 (FF)
+  Destination:       PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_7 (FF)
   Source Clock:      SPLB_Clk rising
-  Destination Clock: SPLB_Clk falling
+  Destination Clock: SPLB_Clk rising
 
-  Data Path: USER_LOGIC_I/bram_arb_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP to USER_LOGIC_I/dac_data_reg_1
+  Data Path: PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_29 to PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             10   0.360   0.869  PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_29 (PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_29)
+     LUT4:I0->O            1   0.195   0.000  ipif_IP2Bus_WrAck321 (ipif_IP2Bus_WrAck321)
+     MUXF5:I0->O           1   0.382   0.585  ipif_IP2Bus_WrAck32_f5 (ipif_IP2Bus_WrAck32)
+     LUT4:I2->O            6   0.195   0.725  ipif_IP2Bus_WrAck45 (ipif_IP2Bus_WrAck)
+     LUT4:I1->O            8   0.195   0.826  PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0_or000021 (PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N4)
+     LUT4:I0->O            1   0.195   0.360  PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_7_or00001 (PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_7_or0000)
+     FDR:R                     1.062          PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_7
+    ----------------------------------------
+    Total                      5.948ns (2.584ns logic, 3.364ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKGEN_Clk'
+  Clock period: 11.810ns (frequency: 84.676MHz)
+  Total number of paths / destination ports: 5869 / 1141
+-------------------------------------------------------------------------
+Delay:               5.905ns (Levels of Logic = 8)
+  Source:            USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP (RAM)
+  Destination:       USER_LOGIC_I/dac_data_reg_1 (FF)
+  Source Clock:      CLKGEN_Clk rising
+  Destination Clock: CLKGEN_Clk falling
+
+  Data Path: USER_LOGIC_I/bram_arb_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v4_init.ram/SP.SINGLE_PRIM.SP to USER_LOGIC_I/dac_data_reg_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1044,18 +1084,19 @@ Delay:               5.187ns (Levels of Logic = 7)
      MUXF6:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f6_7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_4_f68)
      MUXF7:I1->O           1   0.395   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7_7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f78)
      MUXF8:I1->O           1   0.395   0.523  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f8_7 (douta<8>)
-     end scope: 'USER_LOGIC_I/bram_arb_1'
-     LUT4:I3->O            1   0.195   0.000  USER_LOGIC_I/dac_data_reg_mux0000<23>371 (USER_LOGIC_I/dac_data_reg_mux0000<23>37)
+     end scope: 'USER_LOGIC_I/bram_arb_i'
+     LUT4:I3->O            1   0.195   0.523  USER_LOGIC_I/dac_data_reg_mux0000<23>37 (USER_LOGIC_I/dac_data_reg_mux0000<23>37)
+     LUT4:I3->O            1   0.195   0.000  USER_LOGIC_I/dac_data_reg_mux0000<23>1241 (USER_LOGIC_I/dac_data_reg_mux0000<23>124)
      FDRS_1:D                  0.022          USER_LOGIC_I/dac_data_reg_1
     ----------------------------------------
-    Total                      5.187ns (4.079ns logic, 1.108ns route)
-                                       (78.6% logic, 21.4% route)
+    Total                      5.905ns (4.274ns logic, 1.631ns route)
+                                       (72.4% logic, 27.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 572 / 529
+  Total number of paths / destination ports: 572 / 518
 -------------------------------------------------------------------------
-Offset:              5.862ns (Levels of Logic = 3)
+Offset:              5.874ns (Levels of Logic = 3)
   Source:            SPLB_Rst (PAD)
   Destination:       USER_LOGIC_I/Mtrien_sdio_reg_o (FF)
   Destination Clock: SPLB_Clk rising
@@ -1064,17 +1105,37 @@ Offset:              5.862ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           116   0.965   1.481  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
-     LUT2:I0->O          241   0.195   2.126  SOFT_RESET_I/Reset2IP_Reset1 (rst_Bus2IP_Reset)
+     IBUF:I->O           113   0.965   1.470  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
+     LUT2:I0->O          247   0.195   2.149  SOFT_RESET_I/Reset2IP_Reset1 (rst_Bus2IP_Reset)
      LUT4:I0->O            1   0.195   0.360  USER_LOGIC_I/Mtrien_sdio_reg_o_not0001 (USER_LOGIC_I/Mtrien_sdio_reg_o_not0001)
      FDE:CE                    0.540          USER_LOGIC_I/Mtrien_sdio_reg_o
     ----------------------------------------
-    Total                      5.862ns (1.895ns logic, 3.967ns route)
+    Total                      5.874ns (1.895ns logic, 3.979ns route)
                                        (32.3% logic, 67.7% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKGEN_Clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              5.460ns (Levels of Logic = 2)
+  Source:            SPLB_Rst (PAD)
+  Destination:       USER_LOGIC_I/dac_clk_reg (FF)
+  Destination Clock: CLKGEN_Clk rising
+
+  Data Path: SPLB_Rst to USER_LOGIC_I/dac_clk_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.965   1.470  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
+     LUT2:I0->O          247   0.195   1.768  SOFT_RESET_I/Reset2IP_Reset1 (rst_Bus2IP_Reset)
+     FDR:R                     1.062          USER_LOGIC_I/dac_clk_reg
+    ----------------------------------------
+    Total                      5.460ns (2.222ns logic, 3.238ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 190 / 177
+  Total number of paths / destination ports: 178 / 177
 -------------------------------------------------------------------------
 Offset:              5.634ns (Levels of Logic = 2)
   Source:            USER_LOGIC_I/dac_en (FF)
@@ -1093,18 +1154,40 @@ Offset:              5.634ns (Levels of Logic = 2)
                                        (80.1% logic, 19.9% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKGEN_Clk'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              5.497ns (Levels of Logic = 2)
+  Source:            USER_LOGIC_I/dac_clk_reg (FF)
+  Destination:       S_DCLKIO (PAD)
+  Source Clock:      CLKGEN_Clk rising
+
+  Data Path: USER_LOGIC_I/dac_clk_reg to S_DCLKIO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.360   0.608  USER_LOGIC_I/dac_clk_reg (USER_LOGIC_I/dac_clk_reg)
+     LUT2:I1->O            2   0.195   0.377  USER_LOGIC_I/IP2DAC_DCLKIO1 (S_Clkout_OBUF)
+     OBUF:I->O                 3.957          S_DCLKIO_OBUF (S_DCLKIO)
+    ----------------------------------------
+    Total                      5.497ns (4.512ns logic, 0.985ns route)
+                                       (82.1% logic, 17.9% route)
+
+=========================================================================
 WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to USER_LOGIC_I/ip_dds_q.
 WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to USER_LOGIC_I/ip_dds_q.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to USER_LOGIC_I/ip_dds_i.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to USER_LOGIC_I/ip_dds_i.
 
 
-Total REAL time to Xst completion: 31.00 secs
-Total CPU time to Xst completion: 30.76 secs
+Total REAL time to Xst completion: 46.00 secs
+Total CPU time to Xst completion: 45.95 secs
  
 --> 
 
-Total memory usage is 544508 kilobytes
+Total memory usage is 558204 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  109 (   0 filtered)
+Number of warnings :  111 (   0 filtered)
 Number of infos    :    9 (   0 filtered)
 
