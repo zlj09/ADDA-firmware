@@ -6,27 +6,27 @@
      users do not edit the contents of this file. -->
 <messages>
 <msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m LOC = B5;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(72)]</arg>&apos;
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m LOC = B5;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(72)]</arg>&apos;
 </msg>
 
 <msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m IOSTANDARD = LVCMOS25;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(73)]</arg>&apos;
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m IOSTANDARD = LVCMOS25;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(73)]</arg>&apos;
 </msg>
 
 <msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m Drive = 2;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(74)]</arg>&apos;
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_50m Drive = 2;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(74)]</arg>&apos;
 </msg>
 
 <msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m LOC = B10;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(76)]</arg>&apos;
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m LOC = B10;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(76)]</arg>&apos;
 </msg>
 
 <msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m IOSTANDARD = LVCMOS25;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(77)]</arg>&apos;
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m IOSTANDARD = LVCMOS25;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(77)]</arg>&apos;
 </msg>
 
 <msg type="info" file="NgdBuild" num="981" delta="old" >Could not find any associations for the following constraint:
-    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m Drive = 2;&gt; [H:\ljzhu\test_br0101/microblaze.ncf(78)]</arg>&apos;
+    &apos;<arg fmt="%s" index="1">&lt;Net sys_clk_100m Drive = 2;&gt; [F:\Programs\Verilog\FPGA_Group\test_br0101/microblaze.ncf(78)]</arg>&apos;
 </msg>
 
 <msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">plb_dac_1_S_Format_O.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">microblaze_i/plb_dac_1_S_Format_O</arg>&apos;
@@ -100,6 +100,10 @@
 
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
 <arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PERIOD &quot;microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0&quot; TS_sys_clk_pin HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK2X</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK2X = PERIOD &quot;microblaze_i_clock_generator_0_clock_generator_0_SIG_DCM0_CLK2X&quot; TS_sys_clk_pin * 2 HIGH 50%&gt;</arg>
 </msg>
 
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 

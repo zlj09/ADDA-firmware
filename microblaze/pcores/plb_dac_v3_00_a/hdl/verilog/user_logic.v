@@ -461,7 +461,7 @@ output                                    IP2Bus_Error;
     .clka(CLKGEN_Clk), 
     .wea(1'b0), 
     .addra(i_phase_out[31 : 16]), 
-    .dina(), 
+    .dina(slv_reg2[22 : 31]), 
     .douta(i_arb_data)
   );
 
@@ -469,7 +469,7 @@ output                                    IP2Bus_Error;
     .clka(CLKGEN_Clk), 
     .wea(1'b0), 
     .addra(q_phase_out[31 : 16]), 
-    .dina(), 
+    .dina(slv_reg2[22 : 31]), 
     .douta(q_arb_data)
   );
 

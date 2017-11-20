@@ -10,23 +10,23 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Sun Oct 29 16:00:23 2017
+Mapped Date    : Sun Nov 19 14:17:19 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    4
 Logic Utilization:
-  Number of Slice Flip Flops:         2,477 out of  49,152    5%
-  Number of 4 input LUTs:             4,366 out of  49,152    8%
+  Number of Slice Flip Flops:         2,745 out of  49,152    5%
+  Number of 4 input LUTs:             5,076 out of  49,152   10%
 Logic Distribution:
-  Number of occupied Slices:          3,119 out of  24,576   12%
-    Number of Slices containing only related logic:   3,119 out of   3,119 100%
-    Number of Slices containing unrelated logic:          0 out of   3,119   0%
+  Number of occupied Slices:          3,527 out of  24,576   14%
+    Number of Slices containing only related logic:   3,527 out of   3,527 100%
+    Number of Slices containing unrelated logic:          0 out of   3,527   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,519 out of  49,152    9%
-    Number used as logic:             3,851
-    Number used as a route-thru:        153
+  Total Number of 4 input LUTs:       5,199 out of  49,152   10%
+    Number used as logic:             4,561
+    Number used as a route-thru:        123
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:     131
@@ -34,19 +34,19 @@ Logic Distribution:
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
   Number of bonded IOBs:                 43 out of     640    6%
-  Number of BUFG/BUFGCTRLs:               3 out of      32    9%
-    Number used as BUFGs:                 3
-  Number of FIFO16/RAMB16s:             106 out of     320   33%
-    Number used as RAMB16s:             106
+  Number of BUFG/BUFGCTRLs:               4 out of      32   12%
+    Number used as BUFGs:                 4
+  Number of FIFO16/RAMB16s:             180 out of     320   56%
+    Number used as RAMB16s:             180
   Number of DSP48s:                       3 out of     512    1%
   Number of DCM_ADVs:                     1 out of       8   12%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                3.76
+Average Fanout of Non-Clock Nets:                3.65
 
-Peak Memory Usage:  341 MB
-Total REAL time to MAP completion:  14 secs 
-Total CPU time to MAP completion:   11 secs 
+Peak Memory Usage:  542 MB
+Total REAL time to MAP completion:  20 secs 
+Total CPU time to MAP completion:   16 secs 
 
 NOTES:
 
@@ -99,7 +99,7 @@ WARNING:PhysDesignRules:367 - The signal <microblaze_i/dlmb_LMB_ABus<30>> is
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network N3 has no load.
-INFO:LIT:395 - The above info message is repeated 721 more times for the
+INFO:LIT:395 - The above info message is repeated 767 more times for the
    following (max. 5 shown):
    N4,
    microblaze_i/N1,
@@ -129,9 +129,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-1188 block(s) removed
- 129 block(s) optimized away
-1266 signal(s) removed
+1324 block(s) removed
+ 139 block(s) optimized away
+1384 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -171,20 +171,13 @@ loadless and has been removed.
     The signal "microblaze_i/mb_plb_Sl_MRdErr<7>" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1" (SFF) removed.
-      The signal "microblaze_i/plb_dac_0/plb_dac_0/ipif_IP2Bus_Error" is loadless and
-has been removed.
-       Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error" (ROM)
-removed.
-        The signal "microblaze_i/plb_dac_0/N01" is loadless and has been removed.
-         Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error_SW0"
-(ROM) removed.
+derr_i_1" (FF) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_or0000" is loadless and has been removed.
+derr_i_1_rstpot" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_or00001" (ROM) removed.
+derr_i_1_rstpot" (ROM) removed.
         The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/maste
 r_id<0>" is loadless and has been removed.
@@ -201,6 +194,14 @@ asterid_reg_0" (SFF) removed.
              Loadless block
 "microblaze_i/mb_plb/mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/PLB_masterID_0" (SFF)
 removed.
+        The signal "microblaze_i/plb_dac_0/plb_dac_0/ipif_IP2Bus_Error" is loadless and
+has been removed.
+         Loadless block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error" (ROM)
+removed.
+        The signal "microblaze_i/plb_dac_0/N405" is loadless and has been removed.
+         Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
+derr_i_1_rstpot_SW0" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MRdErr<5>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_1"
@@ -307,20 +308,13 @@ removed.
   The signal "microblaze_i/mb_plb_Sl_MRdErr<9>" is loadless and has been removed.
    Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1" (SFF) removed.
-    The signal "microblaze_i/plb_dac_1/plb_dac_1/ipif_IP2Bus_Error" is loadless and
-has been removed.
-     Loadless block "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error" (ROM)
-removed.
-      The signal "microblaze_i/plb_dac_1/N01" is loadless and has been removed.
-       Loadless block "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error_SW0"
-(ROM) removed.
+derr_i_1" (FF) removed.
     The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_or0000" is loadless and has been removed.
+derr_i_1_rstpot" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_1_or00001" (ROM) removed.
+derr_i_1_rstpot" (ROM) removed.
       The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/maste
 r_id<0>" is loadless and has been removed.
@@ -333,6 +327,14 @@ asterid_reg<0>" is loadless and has been removed.
          Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_m
 asterid_reg_0" (SFF) removed.
+      The signal "microblaze_i/plb_dac_1/plb_dac_1/ipif_IP2Bus_Error" is loadless and
+has been removed.
+       Loadless block "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error" (ROM)
+removed.
+      The signal "microblaze_i/plb_dac_1/N405" is loadless and has been removed.
+       Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
+derr_i_1_rstpot_SW0" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MBusy<0>" is loadless and has been removed.
  Loadless block
 "microblaze_i/mb_plb/mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_0_or0000_f5"
@@ -476,13 +478,21 @@ loadless and has been removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<7>" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1" (SFF) removed.
+rerr_i_1" (FF) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_or0000" is loadless and has been removed.
+rerr_i_1_rstpot" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_or00001" (ROM) removed.
+rerr_i_1_rstpot" (ROM) removed.
+        The signal "microblaze_i/plb_dac_0/N104" is loadless and has been removed.
+         Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
+rerr_i_0_or000021_SW0" (ROM) removed.
+        The signal "microblaze_i/plb_dac_0/N279" is loadless and has been removed.
+         Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
+rerr_i_1_or00001_SW0" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<5>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_1"
@@ -511,13 +521,21 @@ loadless and has been removed.
   The signal "microblaze_i/mb_plb_Sl_MWrErr<9>" is loadless and has been removed.
    Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1" (SFF) removed.
+rerr_i_1" (FF) removed.
     The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_or0000" is loadless and has been removed.
+rerr_i_1_rstpot" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_1_or00001" (ROM) removed.
+rerr_i_1_rstpot" (ROM) removed.
+      The signal "microblaze_i/plb_dac_1/N104" is loadless and has been removed.
+       Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
+rerr_i_0_or000021_SW0" (ROM) removed.
+      The signal "microblaze_i/plb_dac_1/N279" is loadless and has been removed.
+       Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
+rerr_i_1_or00001_SW0" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRdErr<0>" is loadless and has been removed.
  Loadless block
 "microblaze_i/mb_plb/mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/MRDERR_OR/Y_0_or0000_f5"
@@ -531,19 +549,13 @@ loadless and has been removed.
     The signal "microblaze_i/mb_plb_Sl_MRdErr<6>" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0" (SFF) removed.
+derr_i_0" (FF) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_or0000" is loadless and has been removed.
+derr_i_0_rstpot" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_or00001" (ROM) removed.
-        The signal
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N4"
-is loadless and has been removed.
-         Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_or000021" (ROM) removed.
+derr_i_0_rstpot" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MRdErr<4>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_0"
@@ -572,19 +584,13 @@ and has been removed.
   The signal "microblaze_i/mb_plb_Sl_MRdErr<8>" is loadless and has been removed.
    Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0" (SFF) removed.
+derr_i_0" (FF) removed.
     The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_or0000" is loadless and has been removed.
+derr_i_0_rstpot" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_or00001" (ROM) removed.
-      The signal
-"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N4"
-is loadless and has been removed.
-       Loadless block
-"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mr
-derr_i_0_or000021" (ROM) removed.
+derr_i_0_rstpot" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRdBTerm<1>" is loadless and has been
 removed.
  Loadless block
@@ -618,19 +624,17 @@ loadless and has been removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<6>" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0" (SFF) removed.
+rerr_i_0" (FF) removed.
       The signal
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or0000" is loadless and has been removed.
+rerr_i_0_rstpot" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or00001" (ROM) removed.
-        The signal
-"microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N5"
-is loadless and has been removed.
+rerr_i_0_rstpot" (ROM) removed.
+        The signal "microblaze_i/plb_dac_0/N106" is loadless and has been removed.
          Loadless block
 "microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or000021" (ROM) removed.
+rerr_i_0_or000021_SW1" (ROM) removed.
     The signal "microblaze_i/mb_plb_Sl_MWrErr<4>" is loadless and has been removed.
      Loadless block
 "microblaze_i/xps_intc_0/xps_intc_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0"
@@ -659,19 +663,17 @@ and has been removed.
   The signal "microblaze_i/mb_plb_Sl_MWrErr<8>" is loadless and has been removed.
    Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0" (SFF) removed.
+rerr_i_0" (FF) removed.
     The signal
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or0000" is loadless and has been removed.
+rerr_i_0_rstpot" is loadless and has been removed.
      Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or00001" (ROM) removed.
-      The signal
-"microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/N5"
-is loadless and has been removed.
+rerr_i_0_rstpot" (ROM) removed.
+      The signal "microblaze_i/plb_dac_1/N106" is loadless and has been removed.
        Loadless block
 "microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mw
-rerr_i_0_or000021" (ROM) removed.
+rerr_i_0_or000021_SW1" (ROM) removed.
 The signal "microblaze_i/mb_plb_PLB_MRearbitrate<0>" is loadless and has been
 removed.
  Loadless block
@@ -4912,65 +4914,749 @@ loadless and has been removed.
    Loadless block
 "microblaze_i/proc_sys_reset_0/proc_sys_reset_0/Peripheral_aresetn_0_not00011_IN
 V_0" (BUF) removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<9>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<8>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<7>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<6>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<5>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<4>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<3>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<2>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<1>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/cosine<0>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig0000002a"
-is loadless and has been removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_15" is loadless and has been removed.
  Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000013" (SFF)
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000073" (FF)
 removed.
-  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig0000003a"
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000aa"
 is loadless and has been removed.
    Loadless block
-"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000045" (MUX)
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000053" (FF)
 removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<9>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<8>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<7>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<6>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<5>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<4>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<3>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<2>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<1>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/cosine<0>" is
-loadless and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig0000002a"
-is loadless and has been removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_14" is loadless and has been removed.
  Loadless block
-"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000013" (SFF)
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000072" (FF)
 removed.
-  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig0000003a"
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000a9"
 is loadless and has been removed.
    Loadless block
-"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000045" (MUX)
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000052" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_13" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000071" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000a8"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000051" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_12" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000070" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000a7"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000050" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_11" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000006f" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000a6"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000004f" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_10" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000006e" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000a5"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000004e" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_9" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000006d" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000c3"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000004d" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_8" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000006c" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000c2"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000004c" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_7" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000006b" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000c1"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000004b" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_6" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000006a" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000c0"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk0000004a" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_5" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000069" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000bf"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000049" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_4" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000068" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000be"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000048" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_3" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000067" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000bd"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000047" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_2" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000066" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000ba"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000046" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_1" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000065" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000af"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000045" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_0" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000064" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig000000a4"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000044" (FF)
+removed.
+The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig0000005c"
+is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000023" (SFF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/sig0000007c"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000085" (MUX)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_15" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000073" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000aa"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000053" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_14" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000072" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000a9"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000052" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_13" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000071" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000a8"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000051" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_12" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000070" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000a7"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000050" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_11" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000006f" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000a6"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000004f" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_10" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000006e" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000a5"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000004e" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_9" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000006d" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000c3"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000004d" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_8" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000006c" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000c2"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000004c" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_7" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000006b" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000c1"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000004b" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_6" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000006a" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000c0"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk0000004a" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_5" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000069" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000bf"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000049" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_4" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000068" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000be"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000048" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_3" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000067" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000bd"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000047" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_2" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000066" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000ba"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000046" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_1" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000065" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000af"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000045" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_0" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000064" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig000000a4"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000044" (FF)
+removed.
+The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig0000005c"
+is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000023" (SFF)
+removed.
+  The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/sig0000007c"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000085" (MUX)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_15" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000073" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000aa"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000053" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_14" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000072" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000a9"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000052" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_13" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000071" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000a8"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000051" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_12" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000070" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000a7"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000050" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_11" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000006f" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000a6"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000004f" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_10" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000006e" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000a5"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000004e" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_9" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000006d" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000c3"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000004d" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_8" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000006c" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000c2"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000004c" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_7" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000006b" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000c1"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000004b" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_6" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000006a" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000c0"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk0000004a" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_5" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000069" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000bf"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000049" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_4" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000068" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000be"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000048" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_3" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000067" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000bd"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000047" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_2" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000066" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000ba"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000046" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_1" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000065" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000af"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000045" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/U0/i_synth/i_phase_out.d
+el/pipe_2_0" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000064" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig000000a4"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000044" (FF)
+removed.
+The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig0000005c"
+is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000023" (SFF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/sig0000007c"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000085" (MUX)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_15" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000073" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000aa"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000053" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_14" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000072" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000a9"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000052" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_13" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000071" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000a8"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000051" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_12" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000070" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000a7"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000050" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_11" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000006f" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000a6"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000004f" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_10" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000006e" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000a5"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000004e" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_9" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000006d" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000c3"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000004d" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_8" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000006c" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000c2"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000004c" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_7" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000006b" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000c1"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000004b" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_6" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000006a" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000c0"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk0000004a" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_5" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000069" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000bf"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000049" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_4" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000068" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000be"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000048" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_3" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000067" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000bd"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000047" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_2" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000066" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000ba"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000046" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_1" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000065" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000af"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000045" (FF)
+removed.
+The signal
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/U0/i_synth/i_phase_out.d
+el/pipe_2_0" is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000064" (FF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig000000a4"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000044" (FF)
+removed.
+The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig0000005c"
+is loadless and has been removed.
+ Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000023" (SFF)
+removed.
+  The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/sig0000007c"
+is loadless and has been removed.
+   Loadless block
+"microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000085" (MUX)
 removed.
 Loadless block
 "microblaze_i/clock_generator_0/clock_generator_0/DCM0_CLK270_BUFG_INST" (CKBUF)
@@ -6170,9 +6856,21 @@ is unused and has been removed.
  Unused block
 "microblaze_i/proc_sys_reset_0/proc_sys_reset_0/Mshreg_Core_Reset_Req_0_d2/VCC"
 (ONE) removed.
-The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/N0" is
+The signal "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error_SW0/O" is
 unused and has been removed.
-The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/N0" is
+ Unused block "microblaze_i/plb_dac_0/plb_dac_0/SOFT_RESET_I/reset_error_SW0"
+(ROM) removed.
+The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_i/N0" is
+unused and has been removed.
+The signal "microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_q/N0" is
+unused and has been removed.
+The signal "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error_SW0/O" is
+unused and has been removed.
+ Unused block "microblaze_i/plb_dac_1/plb_dac_1/SOFT_RESET_I/reset_error_SW0"
+(ROM) removed.
+The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_i/N0" is
+unused and has been removed.
+The signal "microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_q/N0" is
 unused and has been removed.
 Unused block
 "microblaze_i/proc_sys_reset_0/proc_sys_reset_0/Mshreg_Core_Reset_Req_0_d2/SRL16
@@ -6423,12 +7121,19 @@ FDR
 		microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_
 type_reg_2
    optimized to 0
-LUT2
+LUT2_L
 		microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_r
 earbitrate_ns111
    optimized to 1
-GND 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/XST_GND
-VCC 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_1/XST_VCC
+LOCALBUF
+		microblaze_i/plb_dac_0/plb_dac_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_r
+earbitrate_ns111/LUT2_L_BUF
+GND 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_i/XST_GND
+VCC 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_i/XST_VCC
+GND 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_q/XST_GND
+VCC 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/bram_arb_q/XST_VCC
+GND 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000001
+VCC 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_i/blk00000002
 GND 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000001
 VCC 		microblaze_i/plb_dac_0/plb_dac_0/USER_LOGIC_I/ip_dds_q/blk00000002
 GND 		microblaze_i/plb_dac_1/XST_GND
@@ -6461,12 +7166,19 @@ FDR
 		microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_
 type_reg_2
    optimized to 0
-LUT2
+LUT2_L
 		microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_r
 earbitrate_ns111
    optimized to 1
-GND 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/XST_GND
-VCC 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_1/XST_VCC
+LOCALBUF
+		microblaze_i/plb_dac_1/plb_dac_1/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_r
+earbitrate_ns111/LUT2_L_BUF
+GND 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_i/XST_GND
+VCC 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_i/XST_VCC
+GND 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_q/XST_GND
+VCC 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/bram_arb_q/XST_VCC
+GND 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000001
+VCC 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_i/blk00000002
 GND 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000001
 VCC 		microblaze_i/plb_dac_1/plb_dac_1/USER_LOGIC_I/ip_dds_q/blk00000002
 GND 		microblaze_i/proc_sys_reset_0/XST_GND

@@ -56,7 +56,8 @@ module microblaze_plb_dac_0_wrapper
     S_Format_T,
     S_PWRDN,
     S_OpEnI,
-    S_OpEnQ
+    S_OpEnQ,
+    CLKGEN_Clk
   );
   input SPLB_Clk;
   input SPLB_Rst;
@@ -111,6 +112,7 @@ module microblaze_plb_dac_0_wrapper
   output S_PWRDN;
   output S_OpEnI;
   output S_OpEnQ;
+  input CLKGEN_Clk;
 
   plb_dac
     #(
@@ -184,7 +186,8 @@ module microblaze_plb_dac_0_wrapper
       .S_Format_T ( S_Format_T ),
       .S_PWRDN ( S_PWRDN ),
       .S_OpEnI ( S_OpEnI ),
-      .S_OpEnQ ( S_OpEnQ )
+      .S_OpEnQ ( S_OpEnQ ),
+      .CLKGEN_Clk ( CLKGEN_Clk )
     );
 
 endmodule

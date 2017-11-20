@@ -188,7 +188,7 @@ BEGIN plb_dac
  PORT S_PWRDN = plb_dac_0_S_PWRDN
  PORT S_OpEnQ = plb_dac_0_S_OpEnQ
  PORT S_OpEnI = plb_dac_0_S_OpEnI
- PORT CLKGEN_Clk = Dcm_all_locked
+ PORT CLKGEN_Clk = clock_generator_0_CLKOUT2
 END
 
 BEGIN plb_dac
@@ -208,5 +208,6 @@ BEGIN plb_dac
  PORT S_PWRDN = plb_dac_1_S_PWRDN
  PORT S_OpEnI = plb_dac_1_S_OpEnI
  PORT S_OpEnQ = plb_dac_1_S_OpEnQ
+ PORT CLKGEN_Clk = clock_generator_0_CLKOUT2
 END
 

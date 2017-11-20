@@ -10,7 +10,7 @@ Target Device  : xc4vsx55
 Target Package : ff1148
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Sun Oct 29 16:00:23 2017
+Mapped Date    : Sun Nov 19 14:17:19 2017
 
 Mapping design into LUTs...
 WARNING:MapLib:163 - Bus microblaze_i/plb_dac_0_S_Format_O driven by tbufs will
@@ -33,16 +33,16 @@ Design Summary:
 Number of errors:      0
 Number of warnings:    4
 Logic Utilization:
-  Number of Slice Flip Flops:         2,477 out of  49,152    5%
-  Number of 4 input LUTs:             4,366 out of  49,152    8%
+  Number of Slice Flip Flops:         2,745 out of  49,152    5%
+  Number of 4 input LUTs:             5,076 out of  49,152   10%
 Logic Distribution:
-  Number of occupied Slices:          3,119 out of  24,576   12%
-    Number of Slices containing only related logic:   3,119 out of   3,119 100%
-    Number of Slices containing unrelated logic:          0 out of   3,119   0%
+  Number of occupied Slices:          3,527 out of  24,576   14%
+    Number of Slices containing only related logic:   3,527 out of   3,527 100%
+    Number of Slices containing unrelated logic:          0 out of   3,527   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,519 out of  49,152    9%
-    Number used as logic:             3,851
-    Number used as a route-thru:        153
+  Total Number of 4 input LUTs:       5,199 out of  49,152   10%
+    Number used as logic:             4,561
+    Number used as a route-thru:        123
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:     131
@@ -50,19 +50,19 @@ Logic Distribution:
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
   Number of bonded IOBs:                 43 out of     640    6%
-  Number of BUFG/BUFGCTRLs:               3 out of      32    9%
-    Number used as BUFGs:                 3
-  Number of FIFO16/RAMB16s:             106 out of     320   33%
-    Number used as RAMB16s:             106
+  Number of BUFG/BUFGCTRLs:               4 out of      32   12%
+    Number used as BUFGs:                 4
+  Number of FIFO16/RAMB16s:             180 out of     320   56%
+    Number used as RAMB16s:             180
   Number of DSP48s:                       3 out of     512    1%
   Number of DCM_ADVs:                     1 out of       8   12%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                3.76
+Average Fanout of Non-Clock Nets:                3.65
 
-Peak Memory Usage:  341 MB
-Total REAL time to MAP completion:  14 secs 
-Total CPU time to MAP completion:   11 secs 
+Peak Memory Usage:  542 MB
+Total REAL time to MAP completion:  20 secs 
+Total CPU time to MAP completion:   16 secs 
 
 NOTES:
 

@@ -64,6 +64,7 @@ module microblaze
   wire [0:0] RS232_Interrupt;
   wire clk_50_0000MHz;
   wire clk_100_0000MHz;
+  wire clock_generator_0_CLKOUT2;
   wire [0:31] dlmb_LMB_ABus;
   wire dlmb_LMB_AddrStrobe;
   wire [0:3] dlmb_LMB_BE;
@@ -1381,7 +1382,7 @@ module microblaze
       .CLKIN ( CLK_S ),
       .CLKOUT0 ( clk_50_0000MHz ),
       .CLKOUT1 ( clk_100_0000MHz ),
-      .CLKOUT2 (  ),
+      .CLKOUT2 ( clock_generator_0_CLKOUT2 ),
       .CLKOUT3 (  ),
       .CLKOUT4 (  ),
       .CLKOUT5 (  ),
@@ -1882,7 +1883,8 @@ module microblaze
       .S_Format_T ( plb_dac_0_S_Format_T ),
       .S_PWRDN ( plb_dac_0_S_PWRDN ),
       .S_OpEnI ( plb_dac_0_S_OpEnI ),
-      .S_OpEnQ ( plb_dac_0_S_OpEnQ )
+      .S_OpEnQ ( plb_dac_0_S_OpEnQ ),
+      .CLKGEN_Clk ( clock_generator_0_CLKOUT2 )
     );
 
   microblaze_plb_dac_1_wrapper
@@ -1939,7 +1941,8 @@ module microblaze
       .S_Format_T ( plb_dac_1_S_Format_T ),
       .S_PWRDN ( plb_dac_1_S_PWRDN ),
       .S_OpEnI ( plb_dac_1_S_OpEnI ),
-      .S_OpEnQ ( plb_dac_1_S_OpEnQ )
+      .S_OpEnQ ( plb_dac_1_S_OpEnQ ),
+      .CLKGEN_Clk ( clock_generator_0_CLKOUT2 )
     );
 
   IOBUF

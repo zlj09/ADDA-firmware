@@ -129,3 +129,25 @@ Failed to Scan JTAG Chain
 20:37:03.861 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
 21:01:35.944 INFO  - FPGA configured successfully with bitstream "H:/ljzhu/test_br0101/workspace/microblaze_hw_platform/download.bit" 
 23:03:48.074 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:26:59.026 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+14:27:03.583 INFO  - The hardware specification for project 'microblaze_hw_platform' is different from F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+14:27:04.005 INFO  - Copied contents of F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml into \microblaze_hw_platform\system.xml. 
+14:27:04.100 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\microblaze_top.bit into \microblaze_hw_platform\system.bit. 
+14:27:04.135 INFO  - Copied contents of F:\Programs\Verilog\FPGA_Group\test_br0101\microblaze\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \microblaze_hw_platform\system_bd.bmm. 
+14:27:04.442 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:28:10.407 INFO  - Restoring global repository preferences: 
+		 C:\edk_user_repository\MyProcessorIPLib 
+14:28:12.359 INFO  - Updating hardware inferred compiler options for br0101. 
+14:28:12.387 INFO  - Clearing existing target manager status. 
+20:28:58.360 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+20:28:58.360 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+19:24:48.793 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+19:28:22.254 INFO  - Restoring global repository preferences: 
+		 C:\edk_user_repository\MyProcessorIPLib 
+21:15:14.395 INFO  - Saving repository preferences. 
+21:16:16.011 INFO  - Processing command line option -hwspec F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+21:16:56.452 INFO  - Restoring global repository preferences: 
+		 C:\edk_user_repository\MyProcessorIPLib 

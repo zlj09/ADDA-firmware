@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sun Nov 19 12:17:11 2017">
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sun Nov 19 14:07:46 2017">
 
   <SYSTEMINFO ARCH="virtex4" DEVICE="xc4vsx55" PACKAGE="ff1148" PART="xc4vsx55ff1148-10" SOURCE="F:/Programs/Verilog/FPGA_Group/test_br0101/microblaze/microblaze.xmp" SPEEDGRADE="-10"/>
 
@@ -5119,7 +5119,6 @@
         <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="24" NAME="LOCKED" SIGNAME="Dcm_all_locked">
           <CONNECTIONS>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="Dcm_locked"/>
-            <CONNECTION INSTANCE="plb_dac_0" PORT="CLKGEN_Clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="4" MPD_INDEX="2" NAME="CLKOUT1" SIGIS="CLK" SIGNAME="clk_100_0000MHz">
@@ -5137,8 +5136,11 @@
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="plb_dac_1" PORT="SPLB_Clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="200000000" DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="3" NAME="CLKOUT2" SIGIS="CLK" SIGNAME="clock_generator_0_CLKOUT2">
-          <CONNECTIONS/>
+        <PORT CLKFREQUENCY="200000000" DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="5" MPD_INDEX="3" NAME="CLKOUT2" SIGIS="CLK" SIGNAME="clock_generator_0_CLKOUT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_dac_0" PORT="CLKGEN_Clk"/>
+            <CONNECTION INSTANCE="plb_dac_1" PORT="CLKGEN_Clk"/>
+          </CONNECTIONS>
         </PORT>
         <PORT DIR="O" IS_VALID="FALSE" MPD_INDEX="4" NAME="CLKOUT3" SIGIS="CLK" SIGNAME="__NOC__">
           <CONNECTIONS/>
@@ -6793,6 +6795,11 @@
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_0_S_OpEnI_pin"/>
           </CONNECTIONS>
         </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="9" MPD_INDEX="54" NAME="CLKGEN_Clk" SIGIS="CLK" SIGNAME="clock_generator_0_CLKOUT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_generator_0" PORT="CLKOUT2"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT BUS="SPLB" CLKFREQUENCY="100000000" DEF_SIGNAME="clk_100_0000MHz" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="clk_100_0000MHz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clock_generator_0" PORT="CLKOUT1"/>
@@ -7011,11 +7018,6 @@
         </PORT>
         <PORT DIR="O" MPD_INDEX="50" NAME="S_Format_T" SIGNAME="__NOC__">
           <CONNECTIONS/>
-        </PORT>
-        <PORT DIR="I" IS_INSTANTIATED="TRUE" MPD_INDEX="54" NAME="CLKGEN_Clk" SIGNAME="Dcm_all_locked">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clock_generator_0" PORT="LOCKED"/>
-          </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
@@ -7146,6 +7148,11 @@
             <CONNECTION INSTANCE="External Ports" PORT="plb_dac_1_S_OpEnQ_pin"/>
           </CONNECTIONS>
         </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="9" MPD_INDEX="54" NAME="CLKGEN_Clk" SIGIS="CLK" SIGNAME="clock_generator_0_CLKOUT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_generator_0" PORT="CLKOUT2"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT BUS="SPLB" CLKFREQUENCY="100000000" DEF_SIGNAME="clk_100_0000MHz" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="clk_100_0000MHz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clock_generator_0" PORT="CLKOUT1"/>
@@ -7363,9 +7370,6 @@
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" MPD_INDEX="50" NAME="S_Format_T" SIGNAME="__NOC__">
-          <CONNECTIONS/>
-        </PORT>
-        <PORT DIR="I" MPD_INDEX="54" NAME="CLKGEN_Clk" SIGNAME="__NOC__">
           <CONNECTIONS/>
         </PORT>
       </PORTS>
